@@ -9,7 +9,7 @@ FSHOnly: false
 id: uk.nhs.england
 canonical: https://fhir.nhs.uk/England
 name: NHSEnglandInteroperability
-title: Interoperability Standards - Discovery
+title: Interoperability Standards Demographics - Discovery
 # description: Example Implementation Guide for getting started with SUSHI
 status: draft
 version: 0.0.1
@@ -51,6 +51,7 @@ menu:
     Testing: testing.html
   Build:
     FHIR Validation: validation.html
+    National Proxy Service: national-proxy-service.html
   FHIR Assets: artifacts.html
   Support:
     Downloads: downloads.html
