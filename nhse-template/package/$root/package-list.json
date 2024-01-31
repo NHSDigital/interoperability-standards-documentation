@@ -1,0 +1,15 @@
+{
+  "package-id" : "nhse.uk.stu1",
+  "title" : "NHS England Implementation Guide",
+  "canonical" : "http://nhs.fhir.uk/England",
+  "introduction" : "This guide describes how the Laboratory Report can be represented for the purpose of the HL7 Europe project experimantions.",
+  "list" : [
+    {
+      "version" : "current",
+      "desc" : "(TODO)Continuous Integration Build (latest in version control)",
+      "path" : "http://build.nhs.fhir.uk/England",
+      "status" : "ci-build",
+      "current" : true
+    }
+  ]
+}
