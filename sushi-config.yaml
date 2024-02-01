@@ -58,7 +58,6 @@ menu:
     Conformance and Testing (FHIR): testing.html
   Build:
     FHIR Validation: validation.html
-    National Proxy Service: national-proxy-service.html
   FHIR Assets: artifacts.html
   Support:
     Downloads: downloads.html
