@@ -9,7 +9,7 @@ FSHOnly: false
 id: uk.nhs.england
 canonical: https://fhir.nhs.uk/England
 name: NHSEnglandInteroperability
-title: Interoperability Standards - Discovery
+title: Interoperability Standards Documentation - Discovery
 # description: Example Implementation Guide for getting started with SUSHI
 status: draft
 version: 0.0.1
@@ -17,7 +17,7 @@ fhirVersion: 4.0.1
 copyrightYear: 2024+
 releaseLabel: ci-build
 license: Apache-2.0
-jurisdiction: urn:iso:std:iso:3166#GB "United Kingdom of Great Britain and Northern Ireland"
+jurisdiction: urn:iso:std:iso:3166#GB-ENG "England"
 publisher:
   name: NHS England
   url: https://www.england.nhs.uk/
@@ -34,7 +34,9 @@ dependencies:
   fhir.r4.nhsengland.stu1:
     uri: https://simplifier.net/guide/nhs-england-implementation-guide-version-history
     version: 1.1.0
-
+ # hl7.fhir.uv.sdc: 3.0.0
+ # ihe.iti.pdqm: 2.4.0
+ # hl7.fhir.eu.laboratory: 0.1.0-ballot
 
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │ The menu property will be used to generate the input/menu.xml file. The menu is represented    │
@@ -48,10 +50,13 @@ menu:
   Home: index.html
   Table of Contents: toc.html
   Design:
-    Testing: testing.html
+    Background: background.html
+    Interoperability Standards: interoperability-standards.html
+    Documents Interoperability: documents.html
+    Conformance and Testing (FHIR): testing.html
   Build:
     FHIR Validation: validation.html
-  FHIR Assets: artifacts.html
+##  FHIR Assets: artifacts.html
   Support:
     Downloads: downloads.html
 

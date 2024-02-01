@@ -1,0 +1,19 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "https://fhir.hl7.org.uk/ValueSet/UKCore-OrganizationType",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "UKCoreOrganizationType",
+      "title" : "UK Core Organization Type",
+      "description" : "A set of codes that can be used to indicate a type of organization.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/organization-type",
+        "https://fhir.hl7.org.uk/CodeSystem/UKCore-OrganizationTypeGenomics"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-UKCore-Organization.html" : "UK Core Organization"
+    }
+  ]
+}

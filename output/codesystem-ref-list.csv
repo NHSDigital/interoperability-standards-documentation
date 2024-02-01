@@ -1,0 +1,3 @@
+URL,Version,Status,OIDs,Name,Title,Descriptino,Used
+http://terminology.hl7.org/CodeSystem/organization-type,0.1.0,draft,"2.16.840.1.113883.4.642.1.1128",OrganizationType,Organization type,"This example value set defines a set of codes that can be used to indicate a type of organization.","ValueSet/UKCore-OrganizationType"
+https://fhir.hl7.org.uk/CodeSystem/UKCore-OrganizationTypeGenomics,1.0.0,active,,UKCoreOrganizationTypeGenomics,UK Core Organization Type Genomics,"A set of codes to define additional genomic lab concepts for an organisation type.","ValueSet/UKCore-OrganizationType"
