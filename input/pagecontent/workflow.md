@@ -19,4 +19,5 @@ This is the key concept behind [FHIR Workflow](https://hl7.org/fhir/R4/workflow.
 
 Explain diagram - ideally refer to proxy documentation
 
-{% include national-proxy.svg %}
+
+{% include national-proxy-sequence-diagram.svg %}
