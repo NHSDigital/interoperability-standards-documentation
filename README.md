@@ -1,10 +1,13 @@
-# instructions
+# Interoperability Standards Discovery
 
-Sushi require packages with snapshots - work around with UKCore is to follow these instructions
+This is an discovery site exploring different aspects of implementing HL7 FHIR.
 
-https://fshschool.org/docs/sushi/running/#structure-definition-is-missing-snapshot-error
+This not representative of any NHS England Interoperability Standard. 
 
-Then run (windows only and on simplifier generated packages only)
+NHS England Interoperabilty Standards can be found on: 
 
-fhir inflate --package fhir.r4.nhsengland.stu1
-fhir inflate --package fhir.r4.ukcore.stu3.currentbuild
+https://simplifier.net/guide/nhs-england-implementation-guide-version-history
+
+The website for this repository is:
+
+https://nhsdigital.github.io/interoperability-standards-discovery/
