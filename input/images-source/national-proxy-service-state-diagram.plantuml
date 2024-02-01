@@ -1,5 +1,7 @@
 @startuml
 
+skin rose
+
 [*] --> NationalProxyRelationshipVerificationRequest
 NationalProxyRelationshipVerificationRequest --> Task.status.requested
 Task.status.requested --> Task.status.accepted

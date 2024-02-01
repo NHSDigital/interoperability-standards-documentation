@@ -1,0 +1,23 @@
+@startuml
+
+skin rose
+
+title National Proxy Service
+
+
+class RelatedPerson {
+  +patient.identifier: NHSNumber
+  +identifier : NHSNumber
+  +relationship
+  +extension: ProxyType
+}
+
+class Patient {
+  +identifier : NHSNumber
+}
+
+
+RelatedPerson "1" *-up- "many" Patient: patient.identifier
+RelatedPerson "1" *-up- "1" Patient: identifier
+
+@enduml
