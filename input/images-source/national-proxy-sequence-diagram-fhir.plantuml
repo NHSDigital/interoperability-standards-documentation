@@ -1,0 +1,6 @@
+@startuml
+
+NationalProxy -> GP: POST /Task (Can you check this proxy relationship request?)
+GP -> NationalProxy: PUT /Task/{id} (Yes that is fine)
+
+@enduml

@@ -1,10 +1,6 @@
 @startuml
 
-skinparam Shadowing false
-
-
 NationalProxy -> GP: Can you check this proxy relationship request?
 GP -> NationalProxy: Yes that is fine
 
-'!include ../../plantuml-styles/ae-copyright-footer.txt
 @enduml
