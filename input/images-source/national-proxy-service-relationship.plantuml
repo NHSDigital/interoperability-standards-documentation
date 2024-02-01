@@ -17,7 +17,13 @@ class Patient {
 }
 
 
-RelatedPerson "1" *-up- "many" Patient: patient.identifier
-RelatedPerson "1" *-up- "1" Patient: identifier
+
+object "proxy:Patient" as p2 {
+  identifier: NHSNumber
+}
+
+
+RelatedPerson "1" -up- "1" p2: patient.identifier
+RelatedPerson "1" -up- "1" Patient: identifier
 
 @enduml
