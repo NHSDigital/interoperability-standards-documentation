@@ -1,0 +1,20 @@
+@startuml
+
+[*] --> NationalProxyRelationshipVerificationRequest
+NationalProxyRelationshipVerificationRequest --> Task.status.requested
+Task.status.requested --> Task.status.accepted
+Task.status.requested --> Task.status.rejected
+Task.status.accepted --> Task.status.inprogress
+Task.status.accepted --> Task.status.cancelled
+Task.status.inprogress --> Task.status.completed
+Task.status.inprogress --> Task.status.cancelled
+Task.status.requested --> Task.status.cancelled
+Task.status.completed --> RelatedPerson
+Task.status.rejected --> [*]
+Task.status.cancelled --> [*]
+RelatedPerson --> [*]
+
+RelatedPerson : [created or updated]
+NationalProxyRelationshipVerificationRequest : [FHIR QuestionnaireResponse?]
+
+@enduml

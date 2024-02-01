@@ -22,3 +22,7 @@ Explain diagram - ideally refer to proxy documentation
 {% include national-proxy-sequence-diagram.svg %}
 
 {% include national-proxy-sequence-diagram-fhir.svg %}
+
+{% include national-proxy-service-state-diagram.svg %}
+
+
