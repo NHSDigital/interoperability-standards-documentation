@@ -25,4 +25,4 @@ Explain diagram - ideally refer to proxy documentation
 
 {% include national-proxy-service-state-diagram.svg %}
 
-{% include national-proxy-service-relationship.svg %}
+
