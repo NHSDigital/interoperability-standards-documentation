@@ -55,6 +55,7 @@ menu:
     Background: background.html
     Interoperability Standards: interoperability-standards.html
     Documents Interoperability: documents.html
+    Workflow: workflow.html
     Conformance and Testing (FHIR): testing.html
   Build:
     FHIR Validation: validation.html
