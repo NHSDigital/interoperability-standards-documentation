@@ -39,7 +39,8 @@ HL7 have several versions and which are based on the common technical standards 
 #### HL7 v2
 HL7 v2 it's data format is a variation of CSV, called [pipe and hat](https://en.wikipedia.org/wiki/Health_Level_7#Version_2_messaging), it is transmitted over TCP/IP using the MLLP protocol. It is most often used to support **Laboratory Ordering** (ORU/ORM) and **Health Administration (ADT)** processes via event messaging. This version is in high use in the NHS Acute sector with near 100% adoption, this has issues in the UK around the use of Terminology, Coding and Classifications. Although HL7 v2 can support data queries, its use in this area is limited and has technical limitations. NHS standards include:
 
-  - [NHS England (ADT) ITK HL7 v2 (2.4) Message Specification](https://github.com/NHSDigital/IOPS-Frameworks/blob/main/documents/HSCIC%20ITK%20HL7%20V2%20Message%20Specifications.pdf)
+  - <a href="HSCIC ITK HL7 V2 Message Specifications.pdf" target="_blank">NHS England (ADT) ITK HL7 v2 (2.4) Message Specification</a>
+  - <a href="HSCIC ITK HL7 V2 Reference Tables.pdf" target="_blank">NHS England (ADT) ITK HL7 v2 Reference Tables</a>
   - NHS Wales (ORU) HL7 v2 (2.5.1)  Message Specification
 
 #### HL7 v3
@@ -61,22 +62,26 @@ FHIR resources are particularly suited to RESTful API's and most common (popular
 
 ###### RESTful API 
 
-[RESTful API](https://hl7.org/fhir/R4/http.html) - which is particularly useful in sharing health data. 
+[RESTful API](https://hl7.org/fhir/R4/http.html) is particularly useful in sharing health data. 
   
 - INTEROPen and HL7 UK standards include:
-  - [Care Connect RESTful API (FHIR STU3)](https://nhsconnect.github.io/CareConnectAPI/index.html) which defines a minimum/base API contract for FHIR RESTful servers for sharing read only patient data and documents.
   - [UK Core FHIR Access](https://build.fhir.org/ig/HL7-UK/UK-Core-Access/) This HL7 FHIR Implementation Guide specifies the requirements for a RESTful endpoint providing read-only access for direct care and subject of care access within the UK (covering patient demographics and medications).
+  - [Care Connect RESTful API (FHIR STU3)](https://nhsconnect.github.io/CareConnectAPI/index.html) which defines a minimum/base API contract for FHIR RESTful servers for sharing read only patient data and documents.
+- International standards include: 
+  - [International Patient Access](https://build.fhir.org/ig/HL7/fhir-ipa/index.html) This specification describes how an application acting on behalf of a patient can access information about the patient from a clinical records system using a FHIR R4 based API. The clinical records system may be supporting a clinical care provider (e.g., a hospital or a general practitioner), a health data exchange, or other system managing patient records, including a national health record system.
+  - see also [IHE QEDm](#ihe--hl7-fhir)
 
 ###### Messaging
 
-[Messaging](https://hl7.org/fhir/R4/messaging.html) which is often used as a like for like replacement of HL7 v2 and HL7 v3 messages. NHS England is likely to discourage the use of **Messaging** with a recommendation to refactor messages into two parts: a shared part (using **RESTful API**) and a notification part focused around [FHIR Workflow](https://hl7.org/fhir/R4/workflow-module.html)/clinical workflow. 
+[Messaging](https://hl7.org/fhir/R4/messaging.html) is often used as a like for like replacement of HL7 v2 and HL7 v3 messages. NHS England is likely to discourage the use of **Messaging** with a recommendation to refactor messages into two parts: a shared part (using **RESTful API**) and a notification part focused around [FHIR Workflow](https://hl7.org/fhir/R4/workflow-module.html)/clinical workflow. 
   
 - NHS England standards include:
   - [ITK3 (FHIR STU3)](https://nhsconnect.github.io/ITK3-FHIR-Messaging-Distribution/)
+  - [National Event Management System (FHIR STU3)](https://developer.nhs.uk/apis/ems-beta/index.html)
 
 ###### Documents
 
-[Documents](https://hl7.org/fhir/R4/documents.html) which is a replacement for HL7 CDA. Like CDA this is suited to document sharing (e.g. IHE XDS). 
+[Documents](https://hl7.org/fhir/R4/documents.html) is a replacement for HL7 CDA. Like CDA this is suited to document sharing (e.g. IHE XDS). 
 
 See [Document Interoperability](documents.html) for more details.
    
