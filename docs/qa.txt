@@ -1,0 +1,65 @@
+NHSEnglandInteroperability : Validation Results
+=========================================
+
+err = 12, warn = 13, info = 13
+IG Publisher Version: 1.5.16
+Generated Thu Feb 01 14:02:59 GMT 2024. FHIR version 4.0.1 for uk.nhs.england#0.0.1 (canonical = https://fhir.nhs.uk/England)
+ Build Errors : 0 / 7 / 0
+ /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/fsh-generated/resources/ImplementationGuide-uk.nhs.england : 1 / 0 / 1
+ /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/fsh-generated/resources/StructureDefinition-Observation : 1 / 1 / 1
+ /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/fsh-generated/resources/StructureDefinition-Organization : 1 / 1 / 1
+ /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/fsh-generated/resources/StructureDefinition-PatientPDS : 1 / 1 / 1
+ /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/input/examples/Patient-example : 0 / 0 / 1
+ /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/input/history/h1 : 1 / 1 / 2
+ /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/input/resources/CareConnect-CapabilityStatement : 3 / 0 / 14
+ /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/input/resources/StructureDefinition-Patient : 1 / 1 / 1
+ /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/input/resources/UKCore-Organization : 3 / 1 / 1
+</table>
+== n/a ==
+WARNING: ImplementationGuide.dependency[2].url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
+WARNING: ImplementationGuide.dependency[3].url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/example.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/h1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/ImplementationGuide-uk.nhs.england.json ==
+ERROR: ImplementationGuide/uk.nhs.england: ImplementationGuide.jurisdiction[0].coding[0].code: Unknown code 'GB-ENG' in the CodeSystem 'urn:iso:std:iso:3166' version '2018'
+== fsh-generated/resources/StructureDefinition-Observation.json ==
+ERROR: StructureDefinition/Observation: StructureDefinition.jurisdiction[0].coding[0].code: Unknown code 'GB-ENG' in the CodeSystem 'urn:iso:std:iso:3166' version '2018'
+WARNING: StructureDefinition.where(url = 'https://fhir.nhs.uk/England/StructureDefinition/Observation'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-Organization.json ==
+ERROR: StructureDefinition/Organization: StructureDefinition.jurisdiction[0].coding[0].code: Unknown code 'GB-ENG' in the CodeSystem 'urn:iso:std:iso:3166' version '2018'
+WARNING: StructureDefinition.where(url = 'https://fhir.nhs.uk/England/StructureDefinition/Organization'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-PatientPDS.json ==
+ERROR: StructureDefinition/PatientPDS: StructureDefinition.jurisdiction[0].coding[0].code: Unknown code 'GB-ENG' in the CodeSystem 'urn:iso:std:iso:3166' version '2018'
+WARNING: StructureDefinition.where(url = 'https://fhir.nhs.uk/England/StructureDefinition/PatientPDS'): The Implementation Guide contains no examples for this profile
+== input/examples/Patient-example.json ==
+== input/history/h1.json ==
+ERROR: Bundle/h1: Bundle.entry[0].resource/*Provenance/h1-1*/.target[0]: Unable to resolve resource with reference 'StructureDefinition/myObservation'
+WARNING: Bundle/h1: Bundle.entry[0].resource/*Provenance/h1-1*/.reason[0]: No code provided, and a code should be provided from the value set 'PurposeOfUse' (http://terminology.hl7.org/ValueSet/v3-PurposeOfUse|2.0.0)
+== input/resources/CareConnect-CapabilityStatement.json ==
+ERROR: CapabilityStatement.where(url = 'https://fhir.nhs.uk/CapabilityStatement/INTEROPen-CareConnect-API-server'): Conformance resource /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/input/resources/CareConnect-CapabilityStatement.json - the canonical URL (https://fhir.nhs.uk/England/CapabilityStatement/careconnect) does not match the URL (https://fhir.nhs.uk/CapabilityStatement/INTEROPen-CareConnect-API-server)
+ERROR: CapabilityStatement/careconnect: CapabilityStatement.jurisdiction[0].coding[0].code: Unknown code 'GB-ENG' in the CodeSystem 'urn:iso:std:iso:3166' version '2018'
+INFORMATION: CapabilityStatement/careconnect: CapabilityStatement.rest[0].resource[3].extension[1].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: CapabilityStatement/careconnect: CapabilityStatement.rest[0].resource[3].extension[2].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: CapabilityStatement/careconnect: CapabilityStatement.rest[0].resource[4].extension[1].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: CapabilityStatement/careconnect: CapabilityStatement.rest[0].resource[9].extension[1].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: CapabilityStatement/careconnect: CapabilityStatement.rest[0].resource[11].extension[1].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: CapabilityStatement/careconnect: CapabilityStatement.rest[0].resource[11].extension[2].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: CapabilityStatement/careconnect: CapabilityStatement.rest[0].resource[11].extension[3].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: CapabilityStatement/careconnect: CapabilityStatement.rest[0].resource[11].extension[4].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: CapabilityStatement/careconnect: CapabilityStatement.rest[0].resource[13].extension[1].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: CapabilityStatement/careconnect: CapabilityStatement.rest[0].resource[13].extension[2].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: CapabilityStatement/careconnect: CapabilityStatement.rest[0].resource[13].extension[3].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: CapabilityStatement/careconnect: CapabilityStatement.rest[0].resource[13].extension[4].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: CapabilityStatement/careconnect: CapabilityStatement.rest[0].resource[16].extension[1].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
+ERROR: /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/input/resources/CareConnect-CapabilityStatement: URL Mismatch https://fhir.nhs.uk/England/CapabilityStatement/careconnect vs https://fhir.nhs.uk/CapabilityStatement/INTEROPen-CareConnect-API-server
+== input/resources/StructureDefinition-Patient.json ==
+ERROR: StructureDefinition/Patient: StructureDefinition.jurisdiction[0].coding[0].code: Unknown code 'GB-ENG' in the CodeSystem 'urn:iso:std:iso:3166' version '2018'
+WARNING: StructureDefinition.where(url = 'https://fhir.nhs.uk/England/StructureDefinition/Patient'): The Implementation Guide contains no examples for this profile
+== input/resources/UKCore-Organization.json ==
+ERROR: StructureDefinition.where(url = 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization'): Conformance resource /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/input/resources/UKCore-Organization.json - the canonical URL (https://fhir.nhs.uk/England/StructureDefinition/UKCore-Organization) does not match the URL (https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization)
+ERROR: StructureDefinition/UKCore-Organization: StructureDefinition.jurisdiction[0].coding[0].code: Unknown code 'GB-ENG' in the CodeSystem 'urn:iso:std:iso:3166' version '2018'
+WARNING: StructureDefinition.where(url = 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization'): The Implementation Guide contains no examples for this profile
+ERROR: /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/input/resources/UKCore-Organization: URL Mismatch https://fhir.nhs.uk/England/StructureDefinition/UKCore-Organization vs https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization

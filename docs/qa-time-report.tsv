@@ -1,0 +1,10 @@
+Source File	Size	loadResources	load-configure	scan	loadDepInfo	loadInfo	load	generateSnapshots	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
+/fsh-generated/resources/ImplementationGuide-uk.nhs.england.json	5282	-	0	0	0	0	0	0	3	71	0	0	0	0	0	0	0	1	0	0	169	94	0	0	0	3	0	1
+fsh-generated/resources/StructureDefinition-Observation.json	1788	8	0	0	0	0	0	176	0	169	0	0	0	0	0	0	0	1	0	0	679	2831	0	0	0	9	0	0
+fsh-generated/resources/StructureDefinition-Organization.json	1223	4	0	0	0	0	0	487	0	184	0	0	0	0	0	0	0	1	0	0	776	987	0	0	0	12	0	1
+fsh-generated/resources/StructureDefinition-PatientPDS.json	1744	5	0	0	0	0	0	366	0	188	0	0	1	0	0	0	0	0	0	0	748	839	0	0	0	7	0	2
+input/examples/Patient-example.json	1224	4	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	24	35	0	0	0	0	0	0
+input/history/h1.json	1487	5	1	0	0	0	9	0	0	76	0	0	0	0	0	0	0	0	0	3	46	37	0	0	0	0	0	0
+input/resources/CareConnect-CapabilityStatement.json	50421	65	0	0	0	0	0	0	2	126	0	0	0	0	0	0	0	0	0	0	608	109	0	0	0	6	0	0
+input/resources/StructureDefinition-Patient.json	145466	129	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	592	623	0	0	0	9	0	1
+input/resources/UKCore-Organization.json	140730	240	0	0	0	0	0	0	1	295	0	0	0	0	0	0	0	0	0	0	935	824	0	0	0	22	0	0
