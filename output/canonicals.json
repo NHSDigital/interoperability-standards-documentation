@@ -1,0 +1,50 @@
+[
+  {
+    "id" : "UKCore-Organization",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization",
+    "version" : "0.0.1",
+    "name" : "UKCoreOrganization"
+  },
+  {
+    "id" : "careconnect",
+    "type" : "CapabilityStatement",
+    "url" : "https://fhir.nhs.uk/CapabilityStatement/INTEROPen-CareConnect-API-server",
+    "version" : "0.0.1"
+  },
+  {
+    "id" : "uk.nhs.england",
+    "type" : "ImplementationGuide",
+    "url" : "https://fhir.nhs.uk/England/ImplementationGuide/uk.nhs.england",
+    "version" : "0.0.1",
+    "name" : "NHSEnglandInteroperability"
+  },
+  {
+    "id" : "Observation",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.nhs.uk/England/StructureDefinition/Observation",
+    "version" : "0.0.1",
+    "name" : "Observation"
+  },
+  {
+    "id" : "Organization",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.nhs.uk/England/StructureDefinition/Organization",
+    "version" : "0.0.1",
+    "name" : "Organization"
+  },
+  {
+    "id" : "Patient",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.nhs.uk/England/StructureDefinition/Patient",
+    "version" : "0.0.1",
+    "name" : "Patient"
+  },
+  {
+    "id" : "PatientPDS",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.nhs.uk/England/StructureDefinition/PatientPDS",
+    "version" : "0.0.1",
+    "name" : "PatientPDS"
+  }
+]
