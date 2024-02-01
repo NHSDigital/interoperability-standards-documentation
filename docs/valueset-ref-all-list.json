@@ -12,8 +12,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.1"],
       "uses" : {
       },
-      "StructureDefinition-Patient.html" : "Patient",
-      "StructureDefinition-PatientPDS.html" : "PatientPDS"
+      "StructureDefinition-PatientPDS.html" : "PatientPDS",
+      "StructureDefinition-Patient.html" : "Patient"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/body-site",
@@ -41,8 +41,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.416"],
       "uses" : {
       },
-      "StructureDefinition-UKCore-Organization.html" : "UK Core Organization",
-      "StructureDefinition-Organization.html" : "Organization"
+      "StructureDefinition-Organization.html" : "Organization",
+      "StructureDefinition-UKCore-Organization.html" : "UK Core Organization"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/data-absent-reason",
@@ -70,10 +70,10 @@
       "sources" : ["2.16.840.1.113883.4.642.3.45"],
       "uses" : {
       },
-      "StructureDefinition-UKCore-Organization.html" : "UK Core Organization",
-      "StructureDefinition-Patient.html" : "Patient",
       "StructureDefinition-PatientPDS.html" : "PatientPDS",
-      "StructureDefinition-Organization.html" : "Organization"
+      "StructureDefinition-Organization.html" : "Organization",
+      "StructureDefinition-Patient.html" : "Patient",
+      "StructureDefinition-UKCore-Organization.html" : "UK Core Organization"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
@@ -87,10 +87,10 @@
       "sources" : ["2.16.840.1.113883.4.642.3.57"],
       "uses" : {
       },
-      "StructureDefinition-UKCore-Organization.html" : "UK Core Organization",
-      "StructureDefinition-Patient.html" : "Patient",
       "StructureDefinition-PatientPDS.html" : "PatientPDS",
-      "StructureDefinition-Organization.html" : "Organization"
+      "StructureDefinition-Organization.html" : "Organization",
+      "StructureDefinition-Patient.html" : "Patient",
+      "StructureDefinition-UKCore-Organization.html" : "UK Core Organization"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/languages",
@@ -104,11 +104,11 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-UKCore-Organization.html" : "UK Core Organization",
-      "StructureDefinition-Patient.html" : "Patient",
+      "StructureDefinition-Observation.html" : "Observation",
       "StructureDefinition-PatientPDS.html" : "PatientPDS",
       "StructureDefinition-Organization.html" : "Organization",
-      "StructureDefinition-Observation.html" : "Observation"
+      "StructureDefinition-Patient.html" : "Patient",
+      "StructureDefinition-UKCore-Organization.html" : "UK Core Organization"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/link-type",
@@ -122,8 +122,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.423"],
       "uses" : {
       },
-      "StructureDefinition-Patient.html" : "Patient",
-      "StructureDefinition-PatientPDS.html" : "PatientPDS"
+      "StructureDefinition-PatientPDS.html" : "PatientPDS",
+      "StructureDefinition-Patient.html" : "Patient"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/marital-status",
@@ -140,8 +140,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.29"],
       "uses" : {
       },
-      "StructureDefinition-Patient.html" : "Patient",
-      "StructureDefinition-PatientPDS.html" : "PatientPDS"
+      "StructureDefinition-PatientPDS.html" : "PatientPDS",
+      "StructureDefinition-Patient.html" : "Patient"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-category",
@@ -227,8 +227,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.1130"],
       "uses" : {
       },
-      "StructureDefinition-Patient.html" : "Patient",
-      "StructureDefinition-PatientPDS.html" : "PatientPDS"
+      "StructureDefinition-PatientPDS.html" : "PatientPDS",
+      "StructureDefinition-Patient.html" : "Patient"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/referencerange-appliesto",
@@ -275,9 +275,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.27"],
       "uses" : {
       },
-      "StructureDefinition-UKCore-Organization.html" : "UK Core Organization",
       "StructureDefinition-PatientPDS.html" : "PatientPDS",
-      "StructureDefinition-Organization.html" : "Organization"
+      "StructureDefinition-Organization.html" : "Organization",
+      "StructureDefinition-UKCore-Organization.html" : "UK Core Organization"
     },
     {
       "url" : "https://fhir.hl7.org.uk/ValueSet/UKCore-OrganizationType",
@@ -292,8 +292,8 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-UKCore-Organization.html" : "UK Core Organization",
-      "StructureDefinition-Organization.html" : "Organization"
+      "StructureDefinition-Organization.html" : "Organization",
+      "StructureDefinition-UKCore-Organization.html" : "UK Core Organization"
     }
   ]
 }
