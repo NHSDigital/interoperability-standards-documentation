@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "NHSEnglandInteroperability"] ; # 
   fhir:title [ fhir:v "Interoperability Standards Documentation - Discovery"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-02-01T08:58:39+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-02-01T14:02:06+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "NHS England"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "NHS England" ] ;
