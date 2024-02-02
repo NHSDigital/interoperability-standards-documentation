@@ -18,7 +18,7 @@ class Patient {
 }
 
 class RelatedPerson {
-  identifier : !NHSNumber is not present
+  identifier : not present
   * name
   * address
   * telecom
@@ -33,12 +33,13 @@ class PharmacyPreferences {
   * extension.medicalApplianceSupplierPharmacy
 }
 
+RelatedPerson "patient.identifier" }|--||> "identifier" Patient : Related person
 RelatedPerson "identifier" }o--||> "identifier" Patient: The Patient/RelatedPerson linkage
-RelatedPerson "patient.identifier" }o--||> "identifier" Patient : Related person
 PharmacyPreferences |o--|| Patient
 
-note "The NHS number of the RelatedPerson is missing in PDS, identifier should be populated." as PDS
+note "PDS may have redefined the definition RelatedPerson.patient.identifier from FHIR definition, it probably should be using RelatedPerson.identifier instead." as PDS
 
 PDS .. RelatedPerson
+PDS .. Patient
 
 @enduml
