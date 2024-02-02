@@ -36,7 +36,7 @@ dependencies:
   fhir.r4.nhsengland.stu1:
     uri: https://simplifier.net/guide/nhs-england-implementation-guide-version-history
     version: 1.1.0
- # hl7.fhir.uv.sdc: 3.0.0
+  hl7.fhir.uv.sdc: 3.0.0
  # ihe.iti.pdqm: 2.4.0
  # hl7.fhir.eu.laboratory: 0.1.0-ballot
 
@@ -55,6 +55,7 @@ menu:
     Background: background.html
     Interoperability Standards: interoperability-standards.html
     Documents Interoperability: documents.html
+    Workflow: workflow.html
     Conformance and Testing (FHIR): testing.html
   Build:
     FHIR Validation: validation.html

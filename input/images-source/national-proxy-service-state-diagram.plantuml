@@ -1,0 +1,23 @@
+@startuml
+
+skin rose
+
+[*] --> Consent.status.proposed
+Consent.status.proposed --> Task.status.requested
+Task.status.requested --> Task.status.accepted: internal provider Workflow
+Task.status.requested --> Task.status.rejected
+Task.status.accepted --> Task.status.inprogress: internal provider Workflow
+Task.status.accepted --> Task.status.cancelled
+Task.status.inprogress --> Task.status.completed
+Task.status.inprogress --> Task.status.cancelled
+Task.status.requested --> Task.status.cancelled
+Task.status.completed --> Consent.status.active
+Task.status.rejected --> Consent.status.rejected
+Task.status.cancelled --> [*]
+Consent.status.active --> RelatedPerson
+Consent.status.rejected --> [*]
+RelatedPerson --> [*]
+
+RelatedPerson : [created or updated]
+
+@enduml

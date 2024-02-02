@@ -1,0 +1,86 @@
+@startuml
+
+skin rose
+
+title National Proxy Service
+
+class Consent {
+  * status: proposed | active | rejected
+  * scope : TBD
+  * category: code to represent Proxy Access
+  * policyRule: code to represent type of Proxy Access
+  * dateTime: Data of consent
+  * patient.identifier: NHSNumber of the subject of the proxy access request
+  * performer: who agreed to the proxy access
+  * organization: custodian of the consent, NHS England?
+  * source: proxy access request form (ProxyAccessRequest:QuestionnaireResponse)
+  * provision.type: permit
+  provision.period: timeframe this proxy request is valid (and then needs to be reviewed)
+  * provision.actor.reference.identifier: NHSNumber of the person making the proxy access request (RelatedPerson)
+}
+
+class RelatedPerson {
+  * patient.identifier: NHSNumber of the subject of the proxy access request
+  name: may be useful to prevent call to PDS just to retrieve the name
+  * identifier : NHS Number of the person making the proxy access request
+  * relationship: mother, father, etc
+  extension.consent: Proxy Acccess Request - should not be present when no consent is present
+}
+
+class Patient {
+  * identifier : NHSNumber
+}
+
+class QuestionnaireResponse {
+  * id
+}
+
+class Questionnaire {
+  * url
+}
+
+class Task {
+
+}
+
+object "ProxyAccessRequestValidation:Task" as task1 {
+    use _history for a record of the conversations
+    * focus: Consent
+    * requester: NHS England
+    * owner: GP, etc who needs to validate the Consent request
+    * code: 'validation' of Consent request (code TBD)
+    * for: can add NHSNumber of the subject of the proxy access request
+    note: use this for communication, i.e. the conversation
+}
+
+object "ProxyAccessRequest:QuestionnaireResponse" as qr1 {
+    * questionnaire: url of the ProxyAccessRequestFormDefinition
+}
+
+object "ProxyAccessRequestFormDefinition:Questionnaire" as q1 {
+    * url: url of the ProxyAccessRequestFormDefinition
+}
+
+object "Proxy:Patient" as p1 {
+  * identifier: NHSNumber
+}
+
+Consent ||--||> RelatedPerson: provision.actor.reference.identifier to identifier
+Consent ||--||> Patient: patient.identifier
+Consent ||--||> qr1: source
+
+RelatedPerson ||--||> p1: identifier
+RelatedPerson ||--||> Patient: patient.identifier
+
+q1 <--* qr1: questionnaire
+
+task1 ||--||> Consent: Task.code
+
+note "This is essentially the same as PDS but with a Consent" as PDSOverlap
+note "This is retrieved via PDS" as PDS
+
+PDS .. Patient
+PDS .. p1
+PDSOverlap .. RelatedPerson
+
+@enduml

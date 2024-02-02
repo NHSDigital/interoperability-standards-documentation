@@ -82,7 +82,8 @@ See [Document Interoperability](documents.html) for more details.
 ##### Workflow
 
 [Workflow](https://hl7.org/fhir/R4/workflow.html) is the modern approach for event/workflow support present in HL7 v2.
-This is based around a [conversation patterns](https://www.enterpriseintegrationpatterns.com/patterns/conversation/index.html) which often resemble real life conversations.
+
+see [Workflow](workflow.html)
 
 #### Conformance and Data Standards
 
