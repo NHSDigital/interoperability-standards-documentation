@@ -74,9 +74,9 @@ Note once the supplier (e.g. GP) has changed the `completed` the Consent is auto
 
 ### View a relationship
 
-| FHIR/IHE Framework                                        |
-|-----------------------------------------------------------|
-| [FHIR RESTful API](https://hl7.org/fhir/R4/http.html) |
+| FHIR/IHE Framework | FHIR Interaction                | FHIR Profile                                               |
+|--------------------|---------------------------------|------------------------------------------------------------|
+| n/a | [RESTful API](restful-api.html) |  [UKCore-RelatedPerson](StructureDefinition-RelatedPerson) | 
 
 [Confluence Link](https://nhsd-confluence.digital.nhs.uk/display/NPA/View+a+relationship)
 
@@ -110,10 +110,7 @@ Would expect this to be a POST /Task from the GP and would follow a similar patt
 
 Would expect this to be a POST /Task from the GP to request the relationship is ended and would follow a similar pattern to [Validate a relationship](#validate-a-relationship)
 
-### API Specification
-
-This is a test to see if branches work
-
+### API Documentation (CapabilityStatement)
 
 1. Copy the JSON version of [CapabilityStatement-Validated-Relationship-Service-Provider](CapabilityStatement-Validated-Relationship-Service-Provider.html)
 
