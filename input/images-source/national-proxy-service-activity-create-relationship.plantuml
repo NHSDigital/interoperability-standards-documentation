@@ -1,0 +1,14 @@
+@startuml
+
+skin rose
+
+:Create a relationship;
+if (Needs Validating?) is (validate) then
+:Validate Relationship;
+else
+:Automatically Validated;
+endif
+:Relationship is created;
+:View a relationship;
+
+@enduml

@@ -9,7 +9,6 @@ This is the key concept behind [FHIR Workflow](https://hl7.org/fhir/R4/workflow.
 
 #### Example National Proxy Service
 
-[Internal Confluence Page](https://nhsd-confluence.digital.nhs.uk/display/NPA/Overview)
 
 <div>
 <img src="National-Proxy-Validation.png"  alt="National Proxy Validation" width="60%">

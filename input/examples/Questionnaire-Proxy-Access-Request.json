@@ -1,0 +1,169 @@
+{
+  "id": "Questionnaire-Proxy-Access-Request",
+  "resourceType": "Questionnaire",
+  "url": "https://fhir.nhs.uk/England/Questionnaire/Proxy-Access-Request",
+  "title": "Proxy Access Request Form",
+  "status": "draft",
+  "purpose": "To request proxy access",
+  "code": [
+    {
+      "system": "https://fhir.nhs.uk/England/CodeSystem/ToBeDetermind",
+      "code": "TBD",
+      "display": "Do we need a SNOMED CT code to represent this request?"
+    }
+  ],
+  "item": [
+    {
+      "type": "integer",
+      "extension": [
+        {
+          "valueBoolean": true,
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract"
+        }
+      ],
+      "definition" : "http://hl7.org/fhir/StructureDefinition/Consent#Consent.provision.actor.reference.identifier.value",
+      "linkId": "proxyNHSNumber",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "398225001"
+        }
+      ],
+      "text": "NHS Number of the person requesting proxy access",
+      "required": true,
+      "item": [
+        {
+          "text": "This must be a verified NHS number (ideally verified using PDS)",
+          "type": "display",
+          "linkId": "proxyNHSNumber_helpText",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "text": "Help-Button",
+                "coding": [
+                  {
+                    "code": "help",
+                    "display": "Help-Button",
+                    "system": "http://hl7.org/fhir/questionnaire-item-control"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "integer",
+      "linkId": "patientNHSNumber",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "398225001"
+        }
+      ],
+      "definition" : "http://hl7.org/fhir/StructureDefinition/Consent#Consent.patient.identifier.value",
+      "text": "NHS Number of the patient who the proxy will be acting on behalf of",
+      "required": true,
+      "item": [
+        {
+          "text": "This must be a verified NHS number (ideally verified using PDS)",
+          "type": "display",
+          "linkId": "patientNHSNumber_helpText",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "text": "Help-Button",
+                "coding": [
+                  {
+                    "code": "help",
+                    "display": "Help-Button",
+                    "system": "http://hl7.org/fhir/questionnaire-item-control"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "choice",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/questionnaire-item-control",
+                "code": "drop-down",
+                "display": "Drop down"
+              }
+            ]
+          }
+        },
+        {
+          "valueBoolean": true,
+          "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract"
+        }
+      ],
+      "linkId": "proxyRelationship",
+      "code": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "722011000000106"
+        }
+      ],
+      "definition" : "http://hl7.org/fhir/StructureDefinition/RelatedPerson#RelatedPerson.relationship",
+      "text": "What is the relationship of the proxy to the patient",
+      "required": true,
+      "answerValueSet": "https://fhir.hl7.org.uk/ValueSet/UKCore-PersonRelationshipType"
+    },
+    {
+      "type": "choice",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/questionnaire-item-control",
+                "code": "drop-down",
+                "display": "Drop down"
+              }
+            ]
+          }
+        }
+      ],
+      "linkId": "proxyBasis",
+      "definition" : "http://hl7.org/fhir/StructureDefinition/Consent#Consent.policyRule",
+      "text": "What is the basic of this proxy request",
+      "required": true,
+      "answerOption": [
+        {
+          "valueCoding": {
+            "system": "https://fhir.nhs.uk/England/CodeSystem/ToBeDetermind",
+            "code": "patient-consent",
+            "display": "patient consent"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://fhir.nhs.uk/England/CodeSystem/ToBeDetermind",
+            "code": "parental-responsibility",
+            "display": "parental responsibility"
+          }
+        },
+        {
+          "valueCoding": {
+            "system": "https://fhir.nhs.uk/England/CodeSystem/ToBeDetermind",
+            "code": "patient-lacks-capacity",
+            "display": "patient lacks capacity"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+@startuml
+
+skin rose
+
+start
+switch (Mange Relationship?)
+case ( Manage )
+  :Manage the lifecycle of a relationship;
+case ( Revoke )
+  :Revoke a relationship;
+endswitch
+stop
+
+@enduml

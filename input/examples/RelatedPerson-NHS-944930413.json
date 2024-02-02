@@ -1,6 +1,6 @@
 {
   "resourceType": "RelatedPerson",
-  "id": "RelatedPerson_NHS_9449304130",
+  "id": "RelatedPerson-NHS-9449304130",
   "identifier": [
     {
       "system": "https://fhir.nhs.uk/Id/nhs-number",
