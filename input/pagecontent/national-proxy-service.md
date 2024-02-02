@@ -18,7 +18,7 @@
 
 {% include national-proxy-service-activity-manage-relationship.svg %}
 
-#### Entity Relationship Diagram
+### Entity Relationship Diagram
 
 {% include national-proxy-service-relationship.svg %}
 

@@ -31,17 +31,10 @@ class Patient {
   * identifier : NHSNumber
 }
 
-class QuestionnaireResponse {
-  * id
+object "RelatedPerson:Patient" as p1 {
+  * identifier: NHSNumber
 }
 
-class Questionnaire {
-  * url
-}
-
-class Task {
-
-}
 
 object "ProxyAccessRequestValidation:Task" as task1 {
     use _history for a record of the conversations
@@ -61,18 +54,14 @@ object "ProxyAccessRequestFormDefinition:Questionnaire" as q1 {
     * url: url of the ProxyAccessRequestFormDefinition
 }
 
-object "Proxy:Patient" as p1 {
-  * identifier: NHSNumber
-}
+Consent "provision.actor.reference.identifier" ||--||> "identifier" RelatedPerson
+Consent "patient.identifier" }|--||> "identifier" Patient
+Consent "source" ||--||> "id" qr1
 
-Consent ||--||> RelatedPerson: provision.actor.reference.identifier to identifier
-Consent ||--||> Patient: patient.identifier
-Consent ||--||> qr1: source
+RelatedPerson "identifier" ||--||> "identifier" p1
+RelatedPerson "patient.identifier" }|--||> "identifier" Patient
 
-RelatedPerson ||--||> p1: identifier
-RelatedPerson ||--||> Patient: patient.identifier
-
-q1 <--* qr1: questionnaire
+q1 "url"  <--* "questionnaire" qr1
 
 task1 ||--||> Consent: Task.code
 

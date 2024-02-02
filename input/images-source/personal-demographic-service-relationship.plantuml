@@ -1,0 +1,39 @@
+@startuml
+
+skin rose
+
+title Personal Demographic Service
+
+class Patient {
+  * identifier : NHSNumber
+  * name
+  * address
+  * telecom
+  * gender
+  * birthDate
+  * deceasedDateTime
+  * contact
+  * generalPractitioner
+  * managingOrganization
+}
+
+class RelatedPerson {
+  identifier : !NHSNumber is not present
+  * name
+  * address
+  * telecom
+  * gender
+  * patient.identifier: NHSNumber of the related person
+  * period
+}
+
+class PharmacyPreferences {
+  * extension.nominatedPharmacy
+  * extension.dispensingDoctorPharmacy
+  * extension.medicalApplianceSupplierPharmacy
+}
+
+RelatedPerson "patient.identifier" }o--||> "identifier" Patient
+PharmacyPreferences |o--|| Patient
+
+@enduml

@@ -3,6 +3,11 @@
 See [Personal Demographics Service - FHIR API](https://digital.nhs.uk/developer/api-catalogue/personal-demographics-service-fhir)
 Note: This is API's OAS
 
+### Entity Relationship Diagram
+
+{% include personal-demographic-service-relationship.svg %}
+
+
 ### Search For a patient
 
 | FHIR/IHE Framework                                                                                                                  | FHIR Interaction                              | FHIR Profile                                                |
