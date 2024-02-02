@@ -33,7 +33,12 @@ class PharmacyPreferences {
   * extension.medicalApplianceSupplierPharmacy
 }
 
-RelatedPerson "patient.identifier" }o--||> "identifier" Patient
+RelatedPerson "identifier" }o--||> "identifier" Patient: The Patient/RelatedPerson linkage
+RelatedPerson "patient.identifier" }o--||> "identifier" Patient : Related person
 PharmacyPreferences |o--|| Patient
+
+note "The NHS number of the RelatedPerson is missing in PDS, identifier should be populated." as PDS
+
+PDS .. RelatedPerson
 
 @enduml
