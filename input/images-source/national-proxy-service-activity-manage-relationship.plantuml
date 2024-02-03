@@ -2,6 +2,8 @@
 
 skin rose
 
+title Manage Relationship
+
 start
 switch (Mange Relationship?)
 case ( Manage )

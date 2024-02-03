@@ -2,6 +2,8 @@
 
 skin rose
 
+title Create Relationship
+
 :Create a relationship;
 if (Needs Validating?) is (validate) then
 :Validate Relationship;
