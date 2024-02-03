@@ -13,11 +13,11 @@ participant "PDS Supplier" as PDSSupplier
 
 == FHIR RESTful API - create ==
 
-PDSConsumer -> PDSSupplier : NHS Number allocation request (POST /Patient - FHIR Patient)
+PDSConsumer -> PDSSupplier : NHS Number allocation request \n\n Patient Identity Feed FHIR [ITI-104] \n\n PUT /Patient
 alt found
 PDSSupplier -> PDSConsumer : error response (FHIR OperationOutcome)
 else not found
-PDSSupplier -> PDSConsumer : response (FHIR Paatient)
+PDSSupplier -> PDSConsumer : response (FHIR Patient)
 end
 
 @enduml

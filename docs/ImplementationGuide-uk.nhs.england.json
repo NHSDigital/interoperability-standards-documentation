@@ -10,7 +10,7 @@
   "name" : "NHSEnglandInteroperability",
   "title" : "Interoperability Standards - Discovery",
   "status" : "draft",
-  "date" : "2024-02-03T08:02:03+00:00",
+  "date" : "2024-02-03T10:52:31+00:00",
   "publisher" : "NHS England",
   "contact" : [{
     "name" : "NHS England",
@@ -890,6 +890,15 @@
         }],
         "nameUrl" : "interoperability-standards.html",
         "title" : "Interoperability Standards",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "multicast-notification-service.html"
+        }],
+        "nameUrl" : "multicast-notification-service.html",
+        "title" : "Multicast Notification Service",
         "generation" : "markdown"
       },
       {
