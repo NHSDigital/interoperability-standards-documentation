@@ -12,15 +12,18 @@
 
 #### Create Relationship
 
-{% include national-proxy-service-activity-create-relationship.svg %}
+<figure>{% include national-proxy-service-activity-create-relationship.svg %}</figure>
+<br clear="all"/>
 
 #### Manage Relationship
 
-{% include national-proxy-service-activity-manage-relationship.svg %}
+<figure>{% include national-proxy-service-activity-manage-relationship.svg %}</figure>
+<br clear="all"/>
 
 ### Entity Relationship Diagram
 
-{% include national-proxy-service-relationship.svg %}
+<figure>{% include national-proxy-service-relationship.svg %}</figure>
+<br clear="all"/>
 
 ### Create a relationship
 
@@ -66,13 +69,15 @@ Not all the FHIR Consent needs to be mapped to this model. What we probably do n
 
 From a workflow perspective we would be asked a GP (or other) to validate the consent, this could be done via the FHIR Task resource
 
-{% include national-proxy-service-sequence-diagram-fhir.svg %}
+<figure>{% include national-proxy-service-sequence-diagram-fhir.svg %}</figure>
+<br clear="all"/>
 
 This `conversation` results in state changes as shown below. 
 Steps labelled `internal provider workflow` are for information purposes and do not result in interactions between National Proxy Service and the supplier (e.g. GP). These represent supplier workflow
 Note once the supplier (e.g. GP) has changed the `completed` the Consent is automatically updated from `proposed` to `active` and the RelatedPerson entry is visible on the API with the current status. 
 
-{% include national-proxy-service-state-diagram.svg %}
+<figure>{% include national-proxy-service-state-diagram.svg %}</figure>
+<br clear="all"/>
 
 ### View a relationship
 

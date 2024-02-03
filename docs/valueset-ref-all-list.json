@@ -12,9 +12,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.1"],
       "uses" : {
       },
-      "StructureDefinition-UKCore-RelatedPerson.html" : "UK Core RelatedPerson",
-      "StructureDefinition-RelatedPerson.html" : "RelatedPerson",
       "StructureDefinition-PatientPDS.html" : "PatientPDS",
+      "StructureDefinition-RelatedPerson.html" : "RelatedPerson",
+      "StructureDefinition-UKCore-RelatedPerson.html" : "UK Core RelatedPerson",
       "StructureDefinition-PatientPDSNHSNumberAllocation.html" : "PatientPDSNHSNumberAllocation",
       "StructureDefinition-Patient.html" : "Patient"
     },
@@ -44,8 +44,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.71"],
       "uses" : {
       },
-      "StructureDefinition-UKCore-RelatedPerson.html" : "UK Core RelatedPerson",
-      "StructureDefinition-RelatedPerson.html" : "RelatedPerson"
+      "StructureDefinition-RelatedPerson.html" : "RelatedPerson",
+      "StructureDefinition-UKCore-RelatedPerson.html" : "UK Core RelatedPerson"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/contact-point-use",
@@ -59,8 +59,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.73"],
       "uses" : {
       },
-      "StructureDefinition-UKCore-RelatedPerson.html" : "UK Core RelatedPerson",
-      "StructureDefinition-RelatedPerson.html" : "RelatedPerson"
+      "StructureDefinition-RelatedPerson.html" : "RelatedPerson",
+      "StructureDefinition-UKCore-RelatedPerson.html" : "UK Core RelatedPerson"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/contactentity-type",
@@ -74,8 +74,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.416"],
       "uses" : {
       },
-      "StructureDefinition-Organization.html" : "Organization",
-      "StructureDefinition-UKCore-Organization.html" : "UK Core Organization"
+      "StructureDefinition-UKCore-Organization.html" : "UK Core Organization",
+      "StructureDefinition-Organization.html" : "Organization"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/data-absent-reason",
@@ -103,13 +103,13 @@
       "sources" : ["2.16.840.1.113883.4.642.3.45"],
       "uses" : {
       },
-      "StructureDefinition-UKCore-RelatedPerson.html" : "UK Core RelatedPerson",
-      "StructureDefinition-RelatedPerson.html" : "RelatedPerson",
+      "StructureDefinition-UKCore-Organization.html" : "UK Core Organization",
       "StructureDefinition-PatientPDS.html" : "PatientPDS",
-      "StructureDefinition-PatientPDSNHSNumberAllocation.html" : "PatientPDSNHSNumberAllocation",
       "StructureDefinition-Organization.html" : "Organization",
-      "StructureDefinition-Patient.html" : "Patient",
-      "StructureDefinition-UKCore-Organization.html" : "UK Core Organization"
+      "StructureDefinition-RelatedPerson.html" : "RelatedPerson",
+      "StructureDefinition-UKCore-RelatedPerson.html" : "UK Core RelatedPerson",
+      "StructureDefinition-PatientPDSNHSNumberAllocation.html" : "PatientPDSNHSNumberAllocation",
+      "StructureDefinition-Patient.html" : "Patient"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
@@ -123,13 +123,13 @@
       "sources" : ["2.16.840.1.113883.4.642.3.57"],
       "uses" : {
       },
-      "StructureDefinition-UKCore-RelatedPerson.html" : "UK Core RelatedPerson",
-      "StructureDefinition-RelatedPerson.html" : "RelatedPerson",
+      "StructureDefinition-UKCore-Organization.html" : "UK Core Organization",
       "StructureDefinition-PatientPDS.html" : "PatientPDS",
-      "StructureDefinition-PatientPDSNHSNumberAllocation.html" : "PatientPDSNHSNumberAllocation",
       "StructureDefinition-Organization.html" : "Organization",
-      "StructureDefinition-Patient.html" : "Patient",
-      "StructureDefinition-UKCore-Organization.html" : "UK Core Organization"
+      "StructureDefinition-RelatedPerson.html" : "RelatedPerson",
+      "StructureDefinition-UKCore-RelatedPerson.html" : "UK Core RelatedPerson",
+      "StructureDefinition-PatientPDSNHSNumberAllocation.html" : "PatientPDSNHSNumberAllocation",
+      "StructureDefinition-Patient.html" : "Patient"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/languages",
@@ -143,14 +143,14 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-Observation.html" : "Observation",
-      "StructureDefinition-UKCore-RelatedPerson.html" : "UK Core RelatedPerson",
-      "StructureDefinition-RelatedPerson.html" : "RelatedPerson",
+      "StructureDefinition-UKCore-Organization.html" : "UK Core Organization",
       "StructureDefinition-PatientPDS.html" : "PatientPDS",
-      "StructureDefinition-PatientPDSNHSNumberAllocation.html" : "PatientPDSNHSNumberAllocation",
+      "StructureDefinition-Observation.html" : "Observation",
       "StructureDefinition-Organization.html" : "Organization",
-      "StructureDefinition-Patient.html" : "Patient",
-      "StructureDefinition-UKCore-Organization.html" : "UK Core Organization"
+      "StructureDefinition-RelatedPerson.html" : "RelatedPerson",
+      "StructureDefinition-UKCore-RelatedPerson.html" : "UK Core RelatedPerson",
+      "StructureDefinition-PatientPDSNHSNumberAllocation.html" : "PatientPDSNHSNumberAllocation",
+      "StructureDefinition-Patient.html" : "Patient"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/link-type",
@@ -320,12 +320,12 @@
       "sources" : ["2.16.840.1.113883.4.642.3.27"],
       "uses" : {
       },
-      "StructureDefinition-UKCore-RelatedPerson.html" : "UK Core RelatedPerson",
-      "StructureDefinition-RelatedPerson.html" : "RelatedPerson",
+      "StructureDefinition-UKCore-Organization.html" : "UK Core Organization",
       "StructureDefinition-PatientPDS.html" : "PatientPDS",
-      "StructureDefinition-PatientPDSNHSNumberAllocation.html" : "PatientPDSNHSNumberAllocation",
       "StructureDefinition-Organization.html" : "Organization",
-      "StructureDefinition-UKCore-Organization.html" : "UK Core Organization"
+      "StructureDefinition-RelatedPerson.html" : "RelatedPerson",
+      "StructureDefinition-UKCore-RelatedPerson.html" : "UK Core RelatedPerson",
+      "StructureDefinition-PatientPDSNHSNumberAllocation.html" : "PatientPDSNHSNumberAllocation"
     },
     {
       "url" : "https://fhir.hl7.org.uk/ValueSet/UKCore-OrganizationType",
@@ -340,8 +340,8 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-Organization.html" : "Organization",
-      "StructureDefinition-UKCore-Organization.html" : "UK Core Organization"
+      "StructureDefinition-UKCore-Organization.html" : "UK Core Organization",
+      "StructureDefinition-Organization.html" : "Organization"
     },
     {
       "url" : "https://fhir.hl7.org.uk/ValueSet/UKCore-PersonRelationshipType",

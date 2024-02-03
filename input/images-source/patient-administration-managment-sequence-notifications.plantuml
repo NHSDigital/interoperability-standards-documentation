@@ -2,10 +2,7 @@
 
 hide footbox
 
-skin rose
-
 title "Patient Identity Feed plus Notifications"
-
 
 participant "Patient Identity Source" as PIXSource
 participant "Patient Identifier Cross-reference Manager (e.g. PDS or PAS)" as PIXManager
