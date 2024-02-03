@@ -10,7 +10,7 @@
   <name value="NHSEnglandInteroperability"/>
   <title value="Interoperability Standards - Discovery"/>
   <status value="draft"/>
-  <date value="2024-02-03T08:02:03+00:00"/>
+  <date value="2024-02-03T10:52:31+00:00"/>
   <publisher value="NHS England"/>
   <contact>
     <name value="NHS England"/>
@@ -707,6 +707,14 @@
         </extension>
         <nameUrl value="interoperability-standards.html"/>
         <title value="Interoperability Standards"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="multicast-notification-service.html"/>
+        </extension>
+        <nameUrl value="multicast-notification-service.html"/>
+        <title value="Multicast Notification Service"/>
         <generation value="markdown"/>
       </page>
       <page>

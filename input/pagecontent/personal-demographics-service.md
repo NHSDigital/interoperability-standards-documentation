@@ -1,7 +1,7 @@
 ### Overview
 
 See [Personal Demographics Service - FHIR API](https://digital.nhs.uk/developer/api-catalogue/personal-demographics-service-fhir)
-Note: This is API's OAS
+This is API is described using OAS
 
 ### Entity Relationship Diagram
 
