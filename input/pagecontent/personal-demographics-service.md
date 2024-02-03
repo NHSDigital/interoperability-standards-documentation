@@ -16,6 +16,8 @@ Note: This is API's OAS
 
 [Search For a patient](https://digital.nhs.uk/developer/api-catalogue/personal-demographics-service-fhir#get-/Patient)
 
+{% include personal-demographic-service-sequence-search-for-a-patient.svg %}
+
 ### Get patient details
 
 | FHIR/IHE Framework | FHIR Interaction                              | FHIR Profile                                                |
@@ -23,6 +25,8 @@ Note: This is API's OAS
 | n/a | [RESTful API](restful-api.html) | [PatientPDS](StructureDefinition-PatientPDS.html) | 
 
 [Get patient details](https://digital.nhs.uk/developer/api-catalogue/personal-demographics-service-fhir#get-/Patient/-id-)
+
+{% include personal-demographic-service-sequence-get-patient-details.svg %}
 
 ### Update patient details
 
@@ -32,6 +36,8 @@ Note: This is API's OAS
 
 [Update patient details](https://digital.nhs.uk/developer/api-catalogue/personal-demographics-service-fhir#patch-/Patient/-id-)
 
+{% include personal-demographic-service-sequence-update-patient-details.svg %}
+
 ### Get a patient's related people
 
 | FHIR/IHE Framework | FHIR Interaction                              | FHIR Profile                                                   |
@@ -39,6 +45,9 @@ Note: This is API's OAS
 | n/a | [RESTful API](restful-api.html) | [UKCore-RelatedPerson](StructureDefinition-RelatedPerson.html) | 
 
 [Get a patient's related people](https://digital.nhs.uk/developer/api-catalogue/personal-demographics-service-fhir#get-/Patient/-id-/RelatedPerson)
+
+{% include personal-demographic-service-sequence-get-a-patients-related-people.svg %}
+
 
 ### API Documentation (CapabilityStatement) 
 

@@ -1,0 +1,21 @@
+@startuml
+
+hide footbox
+
+skin rose
+
+title "Get a patient's related people"
+
+
+participant "PDS Consumer" as PDSConsumer
+participant "PDS Supplier" as PDSSupplier
+
+
+== FHIR RESTful API - search ==
+
+PDSConsumer -> PDSSupplier : GET /Patient/{id}/RelatedPerson
+note over PDSConsumer,PDSSupplier : believed to be equivalent of GET /RelatedPerson?patient:identifier={id}
+PDSSupplier -> PDSConsumer : response (collection of FHIR RelatedPerson)
+
+
+@enduml

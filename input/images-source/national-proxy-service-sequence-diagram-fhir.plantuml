@@ -2,7 +2,14 @@
 
 skin rose
 
+hide footbox
+
+== FHIR RESTful API - create ==
+
 NationalProxy -> GP: POST /Task (Can you check this proxy relationship request?)
+
+== FHIR RESTful API - update ==
+
 GP -> NationalProxy: PUT /Task/{id} (Yes that is fine)
 
 @enduml
