@@ -1,0 +1,76 @@
+@startuml
+
+title Scheduling and Appointments
+
+
+  class Patient {
+    identifier: NHS Number
+  }
+
+  class Practitioner {
+    identifier: GMC, GMP, etc code
+  }
+
+
+    class HealthcareService {
+      providedBy
+      location
+    }
+
+
+    class Location {
+      managingOrganization
+    }
+
+
+
+  class Encounter {
+   subject
+   episodeOfCare
+   serviceProvider
+   appointment
+  }
+
+
+
+package Scheduling <<Frame>> as "Scheduling and Appointments" {
+  class Schedule {
+    actor
+  }
+
+  class Slot {
+    schedule
+  }
+
+  class Appointment {
+    slot
+    participant.actor
+  }
+
+  class AppointmentResponse {
+    appointment
+    actor
+  }
+
+}
+
+
+Encounter "appointment" }o--o| Appointment
+Schedule "actor" }o--o|  Practitioner
+Schedule "actor" }o--o|  HealthcareService
+Schedule "actor" }o--o|  Location
+
+Slot "schedule" }o--o| Schedule
+Appointment "slot" |o--o{ Slot
+Appointment "participant.actor" }o--o{ Patient
+Appointment "participant.actor" }o--o{ Practitioner
+Appointment "participant.actor" }o--o{ Location
+Appointment "participant.actor" }o--o{ RelatedPerson
+
+AppointmentResponse "appointment" ||--o{ Appointment
+AppointmentResponse "actor" }o--o{ Patient
+AppointmentResponse "actor" }o--o{ Practitioner
+AppointmentResponse "actor" }o--o{ RelatedPerson
+
+
+@enduml

@@ -3,7 +3,7 @@ NHSEnglandInteroperability : Validation Results
 
 err = 32, warn = 20, info = 32
 IG Publisher Version: 1.5.16
-Generated Sat Feb 03 14:01:01 GMT 2024. FHIR version 4.0.1 for uk.nhs.england#0.0.1 (canonical = https://fhir.nhs.uk/England)
+Generated Sat Feb 03 20:16:39 GMT 2024. FHIR version 4.0.1 for uk.nhs.england#0.0.1 (canonical = https://fhir.nhs.uk/England)
  Build Errors : 3 / 12 / 0
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/fsh-generated/resources/CapabilityStatement-Personal-Demographics-Service-Provider : 1 / 0 / 1
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/fsh-generated/resources/CapabilityStatement-Validated-Relationship-Service-Provider : 1 / 0 / 1
@@ -36,9 +36,9 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource RelatedPerson/RelatedPerson-NHS-9449304130-Jane-Smith.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource RelatedPerson/RelatedPerson-PDS-NHS-90000000009-Jane-Smith.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/h1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/output/multicast-notification-service.html#/html/body/div/div/div/div/div/p/a at Line 294, column 455: The link 'interoperability-standards.html#messagaing' for "Messaging" cannot be resolved (valid targets: 47 targets)
-ERROR: /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/output/national-proxy-service.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 370, column 12: The link 'StructureDefinition-RelatedPerson' for "UKCore-RelatedPerson" cannot be resolved
-ERROR: /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/output/restful-api.html#/html/body/div/div/div/div/div/ul/li/ul/li/a at Line 259, column 21: The link '#ihe--hl7-fhir' for "IHE QEDm" cannot be resolved (valid targets: [project-logo, segment-header, project-nav, publish-box, bottom, segment-post-footer, family-nav, ig-status, top, restful-api, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])
+ERROR: /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/output/multicast-notification-service.html#/html/body/div/div/div/div/div/p/a at Line 311, column 455: The link 'interoperability-standards.html#messagaing' for "Messaging" cannot be resolved (valid targets: 47 targets)
+ERROR: /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/output/national-proxy-service.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 387, column 12: The link 'StructureDefinition-RelatedPerson' for "UKCore-RelatedPerson" cannot be resolved
+ERROR: /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/output/restful-api.html#/html/body/div/div/div/div/div/ul/li/ul/li/a at Line 276, column 21: The link '#ihe--hl7-fhir' for "IHE QEDm" cannot be resolved (valid targets: [project-logo, segment-header, project-nav, publish-box, bottom, segment-post-footer, family-nav, ig-status, top, restful-api, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide

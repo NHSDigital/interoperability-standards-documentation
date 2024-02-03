@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "NHSEnglandInteroperability"] ; # 
   fhir:title [ fhir:v "Interoperability Standards - Discovery"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-02-03T13:59:18+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-02-03T20:15:25+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "NHS England"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "NHS England" ] ;
@@ -794,6 +794,14 @@
          ] ) ;
          fhir:name [ fhir:v "index.html"^^xsd:anyURI ] ;
          fhir:title [ fhir:v "Home" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "administration-module.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "administration-module.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Administration Module" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:extension ( [

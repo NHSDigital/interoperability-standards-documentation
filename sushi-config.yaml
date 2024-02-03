@@ -51,18 +51,21 @@ dependencies:
 menu:
   Home: index.html
   Table of Contents: toc.html
-  Design:
+  Introduction:
     Background: background.html
     Interoperability Standards: interoperability-standards.html
     RESTful API: restful-api.html
-    Documents Interoperability: documents.html
+  Design:
+    Administration : administration-module.html
+    Documents: documents.html
     Workflow: workflow.html
-    Conformance and Testing (FHIR): testing.html
   Build:
-    FHIR Validation: validation.html
     National Proxy Service: national-proxy-service.html
     Personal Demographics Service: personal-demographics-service.html
     Multicast Notification Service: multicast-notification-service.html
+  Test:
+    Conformance and Testing (FHIR): testing.html
+    FHIR Validation: validation.html
   FHIR Assets: artifacts.html
   Support:
     Downloads: downloads.html

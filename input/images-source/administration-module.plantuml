@@ -1,0 +1,107 @@
+@startuml
+
+title Administration
+
+
+package PatientRegisters <<Frame>> as "Patient Registers" {
+  class Patient implements Person {
+    identifier: NHS Number
+  }
+  class RelatedPerson implements Person {
+    patient
+  }
+  class Practitioner implements Person {
+    identifier: GMC, GMP, etc code
+  }
+  class Person
+
+
+
+}
+
+package ProviderDirectory <<Frame>> as "Provider Directory" {
+    class Organization {
+      identifier: ODS Code
+    }
+
+    class HealthcareService {
+      providedBy
+      location
+    }
+    class PractitionerRole {
+      identifier: sdsRoleProfileID
+      practitioner
+      organization
+      healthcareService
+    }
+
+    class Endpoint {
+      managingOrganization
+    }
+    class Location {
+      managingOrganization
+    }
+}
+
+package ClinicalCategorization <<Frame>> as "Clinical Categorization" {
+    class EpisodeOfCare {
+      patient
+      managingOrganization
+    }
+
+    class Encounter {
+     subject
+     episodeOfCare
+     serviceProvider
+     appointment
+    }
+
+    class Flag {
+    subject
+    }
+
+}
+
+package Scheduling <<Frame>> as "Scheduling and Appointments" {
+  class Schedule {
+    actor
+  }
+
+  class Slot {
+    schedule
+  }
+
+  class Appointment {
+    slot
+  }
+
+  class AppointmentResponse {
+    appointment
+  }
+
+}
+
+RelatedPerson "patient" }o--o|  Patient
+HealthcareService "providedBy" }o--o|  Organization
+HealthcareService "location" }o--o|  Location
+Location "managingOrganization" }o--o|  Organization
+Endpoint "managingOrganization" }o--o|  Organization
+PractitionerRole "organization" }o--o|  Organization
+PractitionerRole "healthcareService" }o--o|  HealthcareService
+PractitionerRole "practitioner" }o--o|  Practitioner
+
+EpisodeOfCare "patient" }o--o|  Patient
+EpisodeOfCare "managingOrganizationr" }o--o|  Organization
+Encounter "subject" }o--o|  Patient
+Encounter "serviceProvider" }o--o|  Organization
+Encounter "appointment" }o--o| Appointment
+Flag "subject" }o--o|  Patient
+
+Schedule "actor" }o--o|  Practitioner
+Schedule "actor" }o--o|  HealthcareService
+
+Slot "schedule" }o--o| Schedule
+Appointment "slot" |o--o{ Slot
+AppointmentResponse "appointment" ||--o{ Appointment
+
+@enduml

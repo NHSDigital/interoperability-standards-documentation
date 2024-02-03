@@ -1,0 +1,44 @@
+@startuml
+
+title Service Provider Directory Resources
+
+
+  class Practitioner {
+    identifier: GMC, GMP, etc code
+  }
+
+
+package ProviderDirectory <<Frame>> as "Provider Directory" {
+    class Organization {
+      identifier: ODS Code
+    }
+
+    class HealthcareService {
+      providedBy
+      location
+    }
+    class PractitionerRole {
+      identifier: sdsRoleProfileID
+      practitioner
+      organization
+      healthcareService
+    }
+
+    class Endpoint {
+      managingOrganization
+    }
+    class Location {
+      managingOrganization
+    }
+}
+
+HealthcareService "providedBy" }o--o|  Organization
+HealthcareService "location" }o--o|  Location
+Location "managingOrganization" }o--o|  Organization
+Endpoint "managingOrganization" }o--o|  Organization
+PractitionerRole "organization" }o--o|  Organization
+PractitionerRole "healthcareService" }o--o|  HealthcareService
+PractitionerRole "practitioner" }o--o|  Practitioner
+
+
+@enduml

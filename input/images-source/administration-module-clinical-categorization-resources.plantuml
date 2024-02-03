@@ -1,0 +1,42 @@
+@startuml
+
+
+title Clinical Categorization Resources
+
+  class Patient {
+    identifier: NHS Number
+  }
+
+    class Organization {
+      identifier: ODS Code
+    }
+
+package ClinicalCategorization <<Frame>> as "Clinical Categorization" {
+    class EpisodeOfCare {
+      patient
+      managingOrganization
+    }
+
+    class Encounter {
+     subject
+     episodeOfCare
+     serviceProvider
+     appointment
+    }
+
+    class Flag {
+    subject
+    }
+
+}
+
+
+EpisodeOfCare "patient" }o--o|  Patient
+EpisodeOfCare "managingOrganizationr" }o--o|  Organization
+Encounter "subject" }o--o|  Patient
+Encounter "serviceProvider" }o--o|  Organization
+Encounter "appointment" }o--o| Appointment
+Flag "subject" }o--o|  Patient
+
+
+@enduml
