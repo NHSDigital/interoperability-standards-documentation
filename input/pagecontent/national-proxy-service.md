@@ -18,7 +18,7 @@
 
 {% include national-proxy-service-activity-manage-relationship.svg %}
 
-#### Entity Relationship Diagram
+### Entity Relationship Diagram
 
 {% include national-proxy-service-relationship.svg %}
 
@@ -66,17 +66,19 @@ Not all the FHIR Consent needs to be mapped to this model. What we probably do n
 
 From a workflow perspective we would be asked a GP (or other) to validate the consent, this could be done via the FHIR Task resource
 
-{% include national-proxy-sequence-diagram-fhir.svg %}
+{% include national-proxy-service-sequence-diagram-fhir.svg %}
 
 This `conversation` results in state changes as shown below. 
 Steps labelled `internal provider workflow` are for information purposes and do not result in interactions between National Proxy Service and the supplier (e.g. GP). These represent supplier workflow
 Note once the supplier (e.g. GP) has changed the `completed` the Consent is automatically updated from `proposed` to `active` and the RelatedPerson entry is visible on the API with the current status. 
 
+{% include national-proxy-service-state-diagram.svg %}
+
 ### View a relationship
 
-| FHIR/IHE Framework                                        |
-|-----------------------------------------------------------|
-| [FHIR RESTful API](https://hl7.org/fhir/R4/http.html) |
+| FHIR/IHE Framework | FHIR Interaction                | FHIR Profile                                               |
+|--------------------|---------------------------------|------------------------------------------------------------|
+| n/a | [RESTful API](restful-api.html) |  [UKCore-RelatedPerson](StructureDefinition-RelatedPerson) | 
 
 [Confluence Link](https://nhsd-confluence.digital.nhs.uk/display/NPA/View+a+relationship)
 
@@ -110,10 +112,7 @@ Would expect this to be a POST /Task from the GP and would follow a similar patt
 
 Would expect this to be a POST /Task from the GP to request the relationship is ended and would follow a similar pattern to [Validate a relationship](#validate-a-relationship)
 
-### API Specification
-
-This is a test to see if branches work
-
+### API Documentation (CapabilityStatement)
 
 1. Copy the JSON version of [CapabilityStatement-Validated-Relationship-Service-Provider](CapabilityStatement-Validated-Relationship-Service-Provider.html)
 

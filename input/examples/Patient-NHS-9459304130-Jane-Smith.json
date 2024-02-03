@@ -1,6 +1,6 @@
 {
   "resourceType": "Patient",
-  "id": "Patient-NHS-9459304130",
+  "id": "Patient-NHS-9459304130-Jane-Smith",
   "identifier": [
     {
       "system": "https://fhir.nhs.uk/Id/nhs-number",

@@ -1,0 +1,45 @@
+@startuml
+
+skin rose
+
+title Personal Demographic Service
+
+class Patient {
+  * identifier : NHSNumber
+  * name
+  * address
+  * telecom
+  * gender
+  * birthDate
+  * deceasedDateTime
+  * contact
+  * generalPractitioner
+  * managingOrganization
+}
+
+class RelatedPerson {
+  identifier : not present
+  * name
+  * address
+  * telecom
+  * gender
+  * patient.identifier: NHSNumber of the related person
+  * period
+}
+
+class PharmacyPreferences {
+  * extension.nominatedPharmacy
+  * extension.dispensingDoctorPharmacy
+  * extension.medicalApplianceSupplierPharmacy
+}
+
+RelatedPerson "patient.identifier" }|--||> "identifier" Patient : Related person
+RelatedPerson "identifier" }o--||> "identifier" Patient: The Patient/RelatedPerson linkage
+PharmacyPreferences |o--|| Patient
+
+note "PDS may have redefined the definition RelatedPerson.patient.identifier from FHIR definition, it probably should be using RelatedPerson.identifier instead." as PDS
+
+PDS .. RelatedPerson
+PDS .. Patient
+
+@enduml

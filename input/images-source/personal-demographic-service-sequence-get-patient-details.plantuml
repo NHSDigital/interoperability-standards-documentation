@@ -1,0 +1,20 @@
+@startuml
+
+hide footbox
+
+skin rose
+
+title "Get patient details"
+
+
+participant "PDS Consumer" as PDSConsumer
+participant "PDS Supplier" as PDSSupplier
+
+
+== FHIR RESTful API - read ==
+
+PDSConsumer -> PDSSupplier : GET /Patient/{id}
+PDSSupplier -> PDSConsumer : response (FHIR Patient)
+
+
+@enduml

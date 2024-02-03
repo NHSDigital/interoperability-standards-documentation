@@ -1,6 +1,6 @@
 {
   "resourceType": "RelatedPerson",
-  "id": "RelatedPerson-NHS-9449304130",
+  "id": "RelatedPerson-NHS-9449304130-Jane-Smith",
   "identifier": [
     {
       "system": "https://fhir.nhs.uk/Id/nhs-number",
