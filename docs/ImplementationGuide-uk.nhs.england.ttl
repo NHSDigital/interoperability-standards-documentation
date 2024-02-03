@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "NHSEnglandInteroperability"] ; # 
   fhir:title [ fhir:v "Interoperability Standards - Discovery"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-02-03T07:42:11+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-02-03T08:02:03+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "NHS England"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "NHS England" ] ;
@@ -656,6 +656,18 @@
        ] ;
        fhir:name [ fhir:v "PatientPDS" ] ;
        fhir:description [ fhir:v "England Patient PDS" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.nhs.uk/England/StructureDefinition/PatientPDSNHSNumberAllocation> ;
+         fhir:reference [ fhir:v "StructureDefinition/PatientPDSNHSNumberAllocation" ]
+       ] ;
+       fhir:name [ fhir:v "PatientPDSNHSNumberAllocation" ] ;
+       fhir:description [ fhir:v "England Patient PDS NHS Number Allocation - this is a mock up for elaboration purposes see [NHS Number Allocation - submit request data fields](https://nhsd-confluence.digital.nhs.uk/display/DEMGRPH/NHS+Number+Allocation+-+submit+request+data+fields)" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [

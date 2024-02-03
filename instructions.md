@@ -14,7 +14,8 @@ After running the igPublisher (_genonce.sh/_genonce.bat)
 
 1. delete `docs` folder
 2. rename `output` folder to `docs`
-3. rename `index.html` to `404.html`
+3. ensure all contents of `docs` are in git
+4. commit change
 
 ## Install
 

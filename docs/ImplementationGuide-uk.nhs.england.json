@@ -10,7 +10,7 @@
   "name" : "NHSEnglandInteroperability",
   "title" : "Interoperability Standards - Discovery",
   "status" : "draft",
-  "date" : "2024-02-03T07:42:11+00:00",
+  "date" : "2024-02-03T08:02:03+00:00",
   "publisher" : "NHS England",
   "contact" : [{
     "name" : "NHS England",
@@ -737,6 +737,18 @@
       },
       "name" : "PatientPDS",
       "description" : "England Patient PDS",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/PatientPDSNHSNumberAllocation"
+      },
+      "name" : "PatientPDSNHSNumberAllocation",
+      "description" : "England Patient PDS NHS Number Allocation - this is a mock up for elaboration purposes see [NHS Number Allocation - submit request data fields](https://nhsd-confluence.digital.nhs.uk/display/DEMGRPH/NHS+Number+Allocation+-+submit+request+data+fields)",
       "exampleBoolean" : false
     },
     {

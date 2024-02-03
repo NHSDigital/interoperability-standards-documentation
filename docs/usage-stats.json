@@ -31,6 +31,10 @@
       {
         "url": "https://fhir.nhs.uk/England/StructureDefinition/PatientPDS",
         "title": "PatientPDS"
+      },
+      {
+        "url": "https://fhir.nhs.uk/England/StructureDefinition/PatientPDSNHSNumberAllocation",
+        "title": "PatientPDSNHSNumberAllocation"
       }
     ]
   },

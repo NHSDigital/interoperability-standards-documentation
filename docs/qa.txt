@@ -1,9 +1,9 @@
 NHSEnglandInteroperability : Validation Results
 =========================================
 
-err = 27, warn = 21, info = 31
+err = 28, warn = 22, info = 31
 IG Publisher Version: 1.5.16
-Generated Sat Feb 03 07:43:43 GMT 2024. FHIR version 4.0.1 for uk.nhs.england#0.0.1 (canonical = https://fhir.nhs.uk/England)
+Generated Sat Feb 03 08:03:47 GMT 2024. FHIR version 4.0.1 for uk.nhs.england#0.0.1 (canonical = https://fhir.nhs.uk/England)
  Build Errors : 2 / 12 / 0
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/fsh-generated/resources/CapabilityStatement-Personal-Demographics-Service-Provider : 1 / 0 / 1
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/fsh-generated/resources/CapabilityStatement-Validated-Relationship-Service-Provider : 1 / 0 / 1
@@ -11,6 +11,7 @@ Generated Sat Feb 03 07:43:43 GMT 2024. FHIR version 4.0.1 for uk.nhs.england#0.
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/fsh-generated/resources/StructureDefinition-Observation : 1 / 1 / 1
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/fsh-generated/resources/StructureDefinition-Organization : 1 / 1 / 1
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/fsh-generated/resources/StructureDefinition-PatientPDS : 1 / 1 / 1
+ /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/fsh-generated/resources/StructureDefinition-PatientPDSNHSNumberAllocation : 1 / 1 / 1
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/fsh-generated/resources/StructureDefinition-RelatedPerson : 1 / 1 / 1
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/input/examples/Patient-NHS-9459304130-Jane-Smith : 0 / 0 / 1
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/input/examples/Patient-NHS-9912003814-Michael-SMITHIES : 0 / 0 / 1
@@ -54,6 +55,9 @@ WARNING: StructureDefinition.where(url = 'https://fhir.nhs.uk/England/StructureD
 == fsh-generated/resources/StructureDefinition-PatientPDS.json ==
 ERROR: StructureDefinition/PatientPDS: StructureDefinition.jurisdiction[0].coding[0].code: Unknown code 'GB-ENG' in the CodeSystem 'urn:iso:std:iso:3166' version '2018'
 WARNING: StructureDefinition.where(url = 'https://fhir.nhs.uk/England/StructureDefinition/PatientPDS'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-PatientPDSNHSNumberAllocation.json ==
+ERROR: StructureDefinition/PatientPDSNHSNumberAllocation: StructureDefinition.jurisdiction[0].coding[0].code: Unknown code 'GB-ENG' in the CodeSystem 'urn:iso:std:iso:3166' version '2018'
+WARNING: StructureDefinition.where(url = 'https://fhir.nhs.uk/England/StructureDefinition/PatientPDSNHSNumberAllocation'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-RelatedPerson.json ==
 ERROR: StructureDefinition/RelatedPerson: StructureDefinition.jurisdiction[0].coding[0].code: Unknown code 'GB-ENG' in the CodeSystem 'urn:iso:std:iso:3166' version '2018'
 WARNING: StructureDefinition.where(url = 'https://fhir.nhs.uk/England/StructureDefinition/RelatedPerson'): The Implementation Guide contains no examples for this profile

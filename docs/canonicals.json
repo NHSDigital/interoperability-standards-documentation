@@ -73,6 +73,13 @@
     "name" : "PatientPDS"
   },
   {
+    "id" : "PatientPDSNHSNumberAllocation",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.nhs.uk/England/StructureDefinition/PatientPDSNHSNumberAllocation",
+    "version" : "0.0.1",
+    "name" : "PatientPDSNHSNumberAllocation"
+  },
+  {
     "id" : "RelatedPerson",
     "type" : "StructureDefinition",
     "url" : "https://fhir.nhs.uk/England/StructureDefinition/RelatedPerson",
