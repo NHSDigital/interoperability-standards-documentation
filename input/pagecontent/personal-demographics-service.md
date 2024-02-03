@@ -48,6 +48,22 @@ Note: This is API's OAS
 
 {% include personal-demographic-service-sequence-get-a-patients-related-people.svg %}
 
+### NHS Number Allocation (NEW Request)
+
+[Confluence NHS Number Allocation](https://nhsd-confluence.digital.nhs.uk/display/DEMGRPH/PDS+FHIR+-+NHS+Number+Allocation+Analysis)
+
+| FHIR/IHE Framework | FHIR Interaction                              | FHIR Profile                                                                                                                                                     |
+|--------------------|-----------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| For background info, [Patient Identifier Cross-referencing for mobile (PIXm))](https://profiles.ihe.net/ITI/PIXm/index.html) | [RESTful API](restful-api.html) | [PatientPDSNHSNumberAllocation](StructureDefinition-PatientPDSNHSNumberAllocation.html) API has specific rules for content for supplier **new profile required** | 
+
+#### Activity Diagram 
+
+{% include personal-demographic-service-activity-nhs-number-allocation.svg %}
+
+#### Sequence Diagram
+
+{% include personal-demographic-service-sequence-nhs-number-allocation.svg %}
+
 
 ### API Documentation (CapabilityStatement) 
 
