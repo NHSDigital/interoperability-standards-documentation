@@ -1,6 +1,9 @@
 {
   "resourceType" : "Patient",
   "id" : "Patient-NHS-9459304130-Jane-Smith",
+  "meta" : {
+    "profile" : ["https://fhir.nhs.uk/England/StructureDefinition/Patient"]
+  },
   "text" : {
     "status" : "generated",
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Jane Marie Anne Smith </b> (no stated gender), DoB: 2010-10-22 ( <code>https://fhir.nhs.uk/Id/nhs-number</code>/9459304130)</p><hr/></div>"

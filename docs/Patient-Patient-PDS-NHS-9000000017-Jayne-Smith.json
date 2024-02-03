@@ -3,6 +3,7 @@
   "id" : "Patient-PDS-NHS-9000000017-Jayne-Smith",
   "meta" : {
     "versionId" : "2",
+    "profile" : ["https://fhir.nhs.uk/England/StructureDefinition/PatientPDS"],
     "security" : [{
       "system" : "http://terminology.hl7.org/CodeSystem/v3-Confidentiality",
       "code" : "U",

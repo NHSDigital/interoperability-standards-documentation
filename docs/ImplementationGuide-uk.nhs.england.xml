@@ -10,7 +10,7 @@
   <name value="NHSEnglandInteroperability"/>
   <title value="Interoperability Standards - Discovery"/>
   <status value="draft"/>
-  <date value="2024-02-03T12:20:16+00:00"/>
+  <date value="2024-02-03T13:59:18+00:00"/>
   <publisher value="NHS England"/>
   <contact>
     <name value="NHS England"/>
@@ -477,6 +477,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="RelatedPerson"/>
+      </extension>
+      <reference>
+        <reference value="RelatedPerson/RelatedPerson-NHS-91000000009"/>
+      </reference>
+      <name value="National Proxy Related Person Mother Example"/>
+      <description value="An example of a Related Person who is the mother of the subject/patient (Jane Smith)."/>
+      <exampleCanonical value="https://fhir.nhs.uk/England/StructureDefinition/RelatedPerson"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="CapabilityStatement"/>
       </extension>
       <reference>
@@ -538,7 +549,7 @@
         <reference value="Patient/Patient-NHS-9459304130-Jane-Smith"/>
       </reference>
       <name value="Patient-NHS-9459304130-Jane-Smith"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="https://fhir.nhs.uk/England/StructureDefinition/Patient"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -548,7 +559,7 @@
         <reference value="Patient/Patient-NHS-9912003814-Michael-SMITHIES"/>
       </reference>
       <name value="Patient-NHS-9912003814-Michael-SMITHIES"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="https://fhir.nhs.uk/England/StructureDefinition/Patient"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -558,7 +569,7 @@
         <reference value="Patient/Patient-PDS-NHS-9000000017-Jayne-Smith"/>
       </reference>
       <name value="Patient-PDS-NHS-9000000017-Jayne-Smith"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="https://fhir.nhs.uk/England/StructureDefinition/PatientPDS"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -611,7 +622,7 @@
         <reference value="RelatedPerson/RelatedPerson-NHS-9449304130-Jane-Smith"/>
       </reference>
       <name value="RelatedPerson-NHS-9449304130-Jane-Smith"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="https://fhir.nhs.uk/England/StructureDefinition/RelatedPerson"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -621,7 +632,7 @@
         <reference value="RelatedPerson/RelatedPerson-PDS-NHS-90000000009-Jane-Smith"/>
       </reference>
       <name value="RelatedPerson-PDS-NHS-90000000009-Jane-Smith"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="https://fhir.nhs.uk/England/StructureDefinition/RelatedPerson"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

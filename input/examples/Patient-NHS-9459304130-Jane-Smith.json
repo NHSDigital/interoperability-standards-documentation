@@ -1,6 +1,11 @@
 {
   "resourceType": "Patient",
   "id": "Patient-NHS-9459304130-Jane-Smith",
+  "meta" : {
+    "profile" : [
+      "https://fhir.nhs.uk/England/StructureDefinition/Patient"
+    ]
+  },
   "identifier": [
     {
       "system": "https://fhir.nhs.uk/Id/nhs-number",

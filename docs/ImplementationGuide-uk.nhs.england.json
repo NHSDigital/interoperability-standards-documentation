@@ -10,7 +10,7 @@
   "name" : "NHSEnglandInteroperability",
   "title" : "Interoperability Standards - Discovery",
   "status" : "draft",
-  "date" : "2024-02-03T12:20:16+00:00",
+  "date" : "2024-02-03T13:59:18+00:00",
   "publisher" : "NHS England",
   "contact" : [{
     "name" : "NHS England",
@@ -637,6 +637,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/RelatedPerson-NHS-91000000009"
+      },
+      "name" : "National Proxy Related Person Mother Example",
+      "description" : "An example of a Related Person who is the mother of the subject/patient (Jane Smith).",
+      "exampleCanonical" : "https://fhir.nhs.uk/England/StructureDefinition/RelatedPerson"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CapabilityStatement"
       }],
       "reference" : {
@@ -703,7 +715,7 @@
         "reference" : "Patient/Patient-NHS-9459304130-Jane-Smith"
       },
       "name" : "Patient-NHS-9459304130-Jane-Smith",
-      "exampleBoolean" : true
+      "exampleCanonical" : "https://fhir.nhs.uk/England/StructureDefinition/Patient"
     },
     {
       "extension" : [{
@@ -714,7 +726,7 @@
         "reference" : "Patient/Patient-NHS-9912003814-Michael-SMITHIES"
       },
       "name" : "Patient-NHS-9912003814-Michael-SMITHIES",
-      "exampleBoolean" : true
+      "exampleCanonical" : "https://fhir.nhs.uk/England/StructureDefinition/Patient"
     },
     {
       "extension" : [{
@@ -725,7 +737,7 @@
         "reference" : "Patient/Patient-PDS-NHS-9000000017-Jayne-Smith"
       },
       "name" : "Patient-PDS-NHS-9000000017-Jayne-Smith",
-      "exampleBoolean" : true
+      "exampleCanonical" : "https://fhir.nhs.uk/England/StructureDefinition/PatientPDS"
     },
     {
       "extension" : [{
@@ -783,7 +795,7 @@
         "reference" : "RelatedPerson/RelatedPerson-NHS-9449304130-Jane-Smith"
       },
       "name" : "RelatedPerson-NHS-9449304130-Jane-Smith",
-      "exampleBoolean" : true
+      "exampleCanonical" : "https://fhir.nhs.uk/England/StructureDefinition/RelatedPerson"
     },
     {
       "extension" : [{
@@ -794,7 +806,7 @@
         "reference" : "RelatedPerson/RelatedPerson-PDS-NHS-90000000009-Jane-Smith"
       },
       "name" : "RelatedPerson-PDS-NHS-90000000009-Jane-Smith",
-      "exampleBoolean" : true
+      "exampleCanonical" : "https://fhir.nhs.uk/England/StructureDefinition/RelatedPerson"
     },
     {
       "extension" : [{

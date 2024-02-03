@@ -4,6 +4,7 @@
   <id value="Patient-PDS-NHS-9000000017-Jayne-Smith"/>
   <meta>
     <versionId value="2"/>
+    <profile value="https://fhir.nhs.uk/England/StructureDefinition/PatientPDS"/>
     <security>
       <system value="http://terminology.hl7.org/CodeSystem/v3-Confidentiality"/>
       <code value="U"/>

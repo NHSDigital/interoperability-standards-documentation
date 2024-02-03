@@ -1,6 +1,11 @@
 {
   "id": "RelatedPerson-PDS-NHS-90000000009-Jane-Smith",
   "resourceType": "RelatedPerson",
+  "meta" : {
+    "profile" : [
+      "https://fhir.nhs.uk/England/StructureDefinition/RelatedPerson"
+    ]
+  },
   "patient": {
     "identifier": {
       "system": "https://fhir.nhs.uk/Id/nhs-number",

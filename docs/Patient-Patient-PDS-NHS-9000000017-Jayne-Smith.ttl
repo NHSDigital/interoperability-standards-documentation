@@ -10,6 +10,10 @@
   fhir:id [ fhir:v "Patient-PDS-NHS-9000000017-Jayne-Smith"] ; # 
   fhir:meta [
      fhir:versionId [ fhir:v "2" ] ;
+     fhir:profile ( [
+       fhir:v "https://fhir.nhs.uk/England/StructureDefinition/PatientPDS"^^xsd:anyURI ;
+       fhir:link <https://fhir.nhs.uk/England/StructureDefinition/PatientPDS>
+     ] ) ;
      fhir:security ( [
        fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-Confidentiality"^^xsd:anyURI ] ;
        fhir:code [ fhir:v "U" ] ;

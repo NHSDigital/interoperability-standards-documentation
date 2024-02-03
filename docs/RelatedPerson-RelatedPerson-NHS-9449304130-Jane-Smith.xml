@@ -2,8 +2,11 @@
 
 <RelatedPerson xmlns="http://hl7.org/fhir">
   <id value="RelatedPerson-NHS-9449304130-Jane-Smith"/>
+  <meta>
+    <profile value="https://fhir.nhs.uk/England/StructureDefinition/RelatedPerson"/>
+  </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: RelatedPerson</b><a name="RelatedPerson-NHS-9449304130-Jane-Smith"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource RelatedPerson &quot;RelatedPerson-NHS-9449304130-Jane-Smith&quot; </p></div><p><b>identifier</b>: <code>https://fhir.nhs.uk/Id/nhs-number</code>/9449304130</p><p><b>patient</b>: <a href="https://simplifier.net/resolve?scope=fhir.r4.ukcore.stu3.currentbuild@0.0.6-pre-release&amp;canonical=https://simplifier.net/guide/ukcoreversionhistory/Patient/Patient_NHS_9459304130">Patient/Patient_NHS_9459304130</a></p><p><b>relationship</b>: mother <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-RoleCode.html">RoleCode</a>#MTH)</span></p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: RelatedPerson</b><a name="RelatedPerson-NHS-9449304130-Jane-Smith"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource RelatedPerson &quot;RelatedPerson-NHS-9449304130-Jane-Smith&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-RelatedPerson.html">RelatedPerson</a></p></div><p><b>identifier</b>: <code>https://fhir.nhs.uk/Id/nhs-number</code>/9449304130</p><p><b>patient</b>: <a href="https://simplifier.net/resolve?scope=fhir.r4.ukcore.stu3.currentbuild@0.0.6-pre-release&amp;canonical=https://simplifier.net/guide/ukcoreversionhistory/Patient/Patient_NHS_9459304130">Patient/Patient_NHS_9459304130</a></p><p><b>relationship</b>: mother <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-RoleCode.html">RoleCode</a>#MTH)</span></p></div>
   </text>
   <identifier>
     <system value="https://fhir.nhs.uk/Id/nhs-number"/>
