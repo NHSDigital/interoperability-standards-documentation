@@ -5,7 +5,8 @@ This is API is described using OAS
 
 ### Entity Relationship Diagram
 
-{% include personal-demographic-service-relationship.svg %}
+<figure>{% include personal-demographic-service-relationship.svg %}</figure>
+<br clear="all"/>
 
 
 ### Search For a patient
@@ -16,7 +17,8 @@ This is API is described using OAS
 
 [Search For a patient](https://digital.nhs.uk/developer/api-catalogue/personal-demographics-service-fhir#get-/Patient)
 
-{% include personal-demographic-service-sequence-search-for-a-patient.svg %}
+<figure>{% include personal-demographic-service-sequence-search-for-a-patient.svg %}</figure>
+<br clear="all"/>
 
 ### Get patient details
 
@@ -26,7 +28,8 @@ This is API is described using OAS
 
 [Get patient details](https://digital.nhs.uk/developer/api-catalogue/personal-demographics-service-fhir#get-/Patient/-id-)
 
-{% include personal-demographic-service-sequence-get-patient-details.svg %}
+<figure>{% include personal-demographic-service-sequence-get-patient-details.svg %}</figure>
+<br clear="all"/>
 
 ### Update patient details
 
@@ -36,7 +39,8 @@ This is API is described using OAS
 
 [Update patient details](https://digital.nhs.uk/developer/api-catalogue/personal-demographics-service-fhir#patch-/Patient/-id-)
 
-{% include personal-demographic-service-sequence-update-patient-details.svg %}
+<figure>{% include personal-demographic-service-sequence-update-patient-details.svg %}</figure>
+<br clear="all"/>
 
 ### Get a patient's related people
 
@@ -46,7 +50,8 @@ This is API is described using OAS
 
 [Get a patient's related people](https://digital.nhs.uk/developer/api-catalogue/personal-demographics-service-fhir#get-/Patient/-id-/RelatedPerson)
 
-{% include personal-demographic-service-sequence-get-a-patients-related-people.svg %}
+<figure>{% include personal-demographic-service-sequence-get-a-patients-related-people.svg %}</figure>
+<br clear="all"/>
 
 ### NHS Number Allocation (NEW Request)
 
@@ -58,11 +63,13 @@ This is API is described using OAS
 
 #### Activity Diagram 
 
-{% include personal-demographic-service-activity-nhs-number-allocation.svg %}
+<figure>{% include personal-demographic-service-activity-nhs-number-allocation.svg %}</figure>
+<br clear="all"/>
 
 #### Sequence Diagram
 
-{% include personal-demographic-service-sequence-nhs-number-allocation.svg %}
+<figure>{% include personal-demographic-service-sequence-nhs-number-allocation.svg %}</figure>
+<br clear="all"/>
 
 
 ### API Documentation (CapabilityStatement) 

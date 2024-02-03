@@ -18,10 +18,13 @@ This is the key concept behind [FHIR Workflow](https://hl7.org/fhir/R4/workflow.
 
 Explain diagram - ideally refer to proxy documentation
 
-{% include national-proxy-service-sequence-diagram.svg %}
+<figure>{% include national-proxy-service-sequence-diagram.svg %}</figure>
+<br clear="all"/>
 
-{% include national-proxy-service-sequence-diagram-fhir.svg %}
+<figure>{% include national-proxy-service-sequence-diagram-fhir.svg %}</figure>
+<br clear="all"/>
 
-{% include national-proxy-service-state-diagram.svg %}
+<figure>{% include national-proxy-service-state-diagram.svg %}</figure>
+<br clear="all"/>
 
 

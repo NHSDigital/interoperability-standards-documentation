@@ -1,6 +1,5 @@
 @startuml
 
-skin rose
 hide footbox
 
 NationalProxy -> GP: Can you check this proxy relationship request?

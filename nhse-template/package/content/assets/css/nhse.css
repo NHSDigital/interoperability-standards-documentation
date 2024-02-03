@@ -1,5 +1,16 @@
 /* Define colors here */
 
+figure figcaption {
+  text-align: center;
+}
+figure {
+  max-width: 100%;
+  align-content: center;
+}
+svg {
+  max-width:100%;
+}
+
 :root {
 
   --ig-status-text-color: #002060; /* 1. IG Title and status text color */

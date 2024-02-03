@@ -21,7 +21,10 @@ This section is based around the use case of `GP Registration Change events`, wh
 
 As both of these standards are based on **messaging** it is likely we will have a recommendation to use [RESTful API](restful-api.html) and a candidate to base implementation on would be [IHE Patient Identifier Cross-referencing for mobile (PIXm) - Patient Identity Feed FHIR [ITI-104]](https://profiles.ihe.net/ITI/PIXm/ITI-104.html) which is consistent with the NHS England approach for HL7 v2 ADT.
 
-{% include patient-administration-managment-sequence-notifications.svg %}
+<figure>{% include patient-administration-managment-sequence-notifications.svg %}
+ <figcaption>Patient Administration - Notifications</figcaption>
+</figure>
+<br clear="all"/>
 
 All methods on this diagram are using the equivalent of a single [Patient](StructureDefinition-Patient.html) resource plus optional metadata, this is also true for HL7 v2 ADT A28/A31). This may not be true for the existing [Personal Demographics Service Notifications - FHIR](https://digital.nhs.uk/developer/api-catalogue/personal-demographics-service-notifications-fhir)
 

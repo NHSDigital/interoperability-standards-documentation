@@ -1,6 +1,5 @@
 @startuml
 
-skin rose
 
 [*] --> Consent.status.proposed
 Consent.status.proposed --> Task.status.requested
