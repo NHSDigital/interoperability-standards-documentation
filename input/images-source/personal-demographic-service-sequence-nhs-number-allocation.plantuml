@@ -15,7 +15,7 @@ participant "PDS Supplier" as PDSSupplier
 
 PDSConsumer -> PDSSupplier : NHS Number allocation request (POST /Patient - FHIR Patient)
 alt found
-PDSSupplier -> PDSConsumer : response (FHIR OperationOutcome)
+PDSSupplier -> PDSConsumer : error response (FHIR OperationOutcome)
 else not found
 PDSSupplier -> PDSConsumer : response (FHIR Paatient)
 end
