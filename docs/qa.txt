@@ -1,28 +1,48 @@
 NHSEnglandInteroperability : Validation Results
 =========================================
 
-err = 12, warn = 13, info = 13
+err = 27, warn = 21, info = 31
 IG Publisher Version: 1.5.16
-Generated Thu Feb 01 14:02:59 GMT 2024. FHIR version 4.0.1 for uk.nhs.england#0.0.1 (canonical = https://fhir.nhs.uk/England)
- Build Errors : 0 / 7 / 0
+Generated Sat Feb 03 07:43:43 GMT 2024. FHIR version 4.0.1 for uk.nhs.england#0.0.1 (canonical = https://fhir.nhs.uk/England)
+ Build Errors : 2 / 12 / 0
+ /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/fsh-generated/resources/CapabilityStatement-Personal-Demographics-Service-Provider : 1 / 0 / 1
+ /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/fsh-generated/resources/CapabilityStatement-Validated-Relationship-Service-Provider : 1 / 0 / 1
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/fsh-generated/resources/ImplementationGuide-uk.nhs.england : 1 / 0 / 1
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/fsh-generated/resources/StructureDefinition-Observation : 1 / 1 / 1
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/fsh-generated/resources/StructureDefinition-Organization : 1 / 1 / 1
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/fsh-generated/resources/StructureDefinition-PatientPDS : 1 / 1 / 1
- /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/input/examples/Patient-example : 0 / 0 / 1
+ /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/fsh-generated/resources/StructureDefinition-RelatedPerson : 1 / 1 / 1
+ /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/input/examples/Patient-NHS-9459304130-Jane-Smith : 0 / 0 / 1
+ /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/input/examples/Patient-NHS-9912003814-Michael-SMITHIES : 0 / 0 / 1
+ /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/input/examples/Patient-PDS-NHS-9000000017-Jayne-Smith : 3 / 1 / 8
+ /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/input/examples/Questionnaire-Proxy-Access-Request : 3 / 0 / 9
+ /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/input/examples/RelatedPerson-NHS-9449304130-Jane-Smith : 1 / 0 / 1
+ /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/input/examples/RelatedPerson-PDS-NHS-90000000009-Jane-Smith : 2 / 0 / 4
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/input/history/h1 : 1 / 1 / 2
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/input/resources/CareConnect-CapabilityStatement : 3 / 0 / 14
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/input/resources/StructureDefinition-Patient : 1 / 1 / 1
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/input/resources/UKCore-Organization : 3 / 1 / 1
+ /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/input/resources/UKCore-RelatedPerson : 3 / 1 / 1
 </table>
 == n/a ==
 WARNING: ImplementationGuide.dependency[2].url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
 WARNING: ImplementationGuide.dependency[3].url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/example.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/Patient-NHS-9459304130-Jane-Smith.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/Patient-NHS-9912003814-Michael-SMITHIES.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/Patient-PDS-NHS-9000000017-Jayne-Smith.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Questionnaire/Questionnaire-Proxy-Access-Request.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource RelatedPerson/RelatedPerson-NHS-9449304130-Jane-Smith.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource RelatedPerson/RelatedPerson-PDS-NHS-90000000009-Jane-Smith.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/h1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/output/national-proxy-service.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 362, column 12: The link 'StructureDefinition-RelatedPerson' for "UKCore-RelatedPerson" cannot be resolved
+ERROR: /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/output/restful-api.html#/html/body/div/div/div/div/div/ul/li/ul/li/a at Line 256, column 21: The link '#ihe--hl7-fhir' for "IHE QEDm" cannot be resolved (valid targets: [project-logo, segment-header, project-nav, publish-box, bottom, segment-post-footer, family-nav, ig-status, top, restful-api, stripe, segment-footer, segment-navbar, segment-content, segment-breadcrumb])
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/CapabilityStatement-Personal-Demographics-Service-Provider.json ==
+ERROR: CapabilityStatement/Personal-Demographics-Service-Provider: CapabilityStatement.jurisdiction[0].coding[0].code: Unknown code 'GB-ENG' in the CodeSystem 'urn:iso:std:iso:3166' version '2018'
+== fsh-generated/resources/CapabilityStatement-Validated-Relationship-Service-Provider.json ==
+ERROR: CapabilityStatement/Validated-Relationship-Service-Provider: CapabilityStatement.jurisdiction[0].coding[0].code: Unknown code 'GB-ENG' in the CodeSystem 'urn:iso:std:iso:3166' version '2018'
 == fsh-generated/resources/ImplementationGuide-uk.nhs.england.json ==
 ERROR: ImplementationGuide/uk.nhs.england: ImplementationGuide.jurisdiction[0].coding[0].code: Unknown code 'GB-ENG' in the CodeSystem 'urn:iso:std:iso:3166' version '2018'
 == fsh-generated/resources/StructureDefinition-Observation.json ==
@@ -34,7 +54,43 @@ WARNING: StructureDefinition.where(url = 'https://fhir.nhs.uk/England/StructureD
 == fsh-generated/resources/StructureDefinition-PatientPDS.json ==
 ERROR: StructureDefinition/PatientPDS: StructureDefinition.jurisdiction[0].coding[0].code: Unknown code 'GB-ENG' in the CodeSystem 'urn:iso:std:iso:3166' version '2018'
 WARNING: StructureDefinition.where(url = 'https://fhir.nhs.uk/England/StructureDefinition/PatientPDS'): The Implementation Guide contains no examples for this profile
-== input/examples/Patient-example.json ==
+== fsh-generated/resources/StructureDefinition-RelatedPerson.json ==
+ERROR: StructureDefinition/RelatedPerson: StructureDefinition.jurisdiction[0].coding[0].code: Unknown code 'GB-ENG' in the CodeSystem 'urn:iso:std:iso:3166' version '2018'
+WARNING: StructureDefinition.where(url = 'https://fhir.nhs.uk/England/StructureDefinition/RelatedPerson'): The Implementation Guide contains no examples for this profile
+== input/examples/Patient-NHS-9459304130-Jane-Smith.json ==
+== input/examples/Patient-NHS-9912003814-Michael-SMITHIES.json ==
+== input/examples/Patient-PDS-NHS-9000000017-Jayne-Smith.json ==
+INFORMATION: Patient/Patient-PDS-NHS-9000000017-Jayne-Smith: Patient.extension[0]: The extension https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NominatedPharmacy|2.0.0 is retired
+INFORMATION: Patient/Patient-PDS-NHS-9000000017-Jayne-Smith: Patient.extension[1]: The extension https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-PreferredDispenserOrganization|2.0.0 is retired
+INFORMATION: Patient/Patient-PDS-NHS-9000000017-Jayne-Smith: Patient.extension[2]: The extension https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicalApplianceSupplier|2.0.0 is retired
+INFORMATION: Patient/Patient-PDS-NHS-9000000017-Jayne-Smith: Patient.extension[3].extension[0].value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'https://fhir.hl7.org.uk/CodeSystem/UKCore-DeathNotificationStatus' version '1.0.0' could not be found, so the code cannot be validated. Valid versions: []
+INFORMATION: Patient/Patient-PDS-NHS-9000000017-Jayne-Smith: Patient.extension[4]: The extension https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSCommunication|2.0.0 is retired
+INFORMATION: Patient/Patient-PDS-NHS-9000000017-Jayne-Smith: Patient.extension[4].extension[0].value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage' version '1.0.0' could not be found, so the code cannot be validated. Valid versions: []
+ERROR: Patient/Patient-PDS-NHS-9000000017-Jayne-Smith: Patient.extension[7]: The extension https://fhir.nhs.uk/StructureDefinition/Extension-PDS-RemovalFromRegistration could not be found so is not allowed here
+INFORMATION: Patient/Patient-PDS-NHS-9000000017-Jayne-Smith: Patient.extension[7].extension[0].value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'https://fhir.nhs.uk/CodeSystem/PDS-RemovalReasonExitCode' could not be found, so the code cannot be validated
+WARNING: Patient/Patient-PDS-NHS-9000000017-Jayne-Smith: Patient.identifier[0].extension[0].value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatus' version '1.0.0' could not be found, so the code cannot be validated. Valid versions: []
+ERROR: Patient/Patient-PDS-NHS-9000000017-Jayne-Smith: Patient.identifier[0].extension[0].value.ofType(CodeableConcept): None of the codings provided are in the value set 'UK Core NHS Number Verification Status' (https://fhir.hl7.org.uk/ValueSet/UKCore-NHSNumberVerificationStatus|2.2.0), and a coding from this value set is required) (codes = https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatus#01)
+ERROR: Patient/Patient-PDS-NHS-9000000017-Jayne-Smith: Patient.telecom[2]: The extension https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-OtherContactSystem is not allowed to be used at this point (allowed = e:ContactPoint.system; this element is [ContactPoint, Patient.telecom])
+== input/examples/Questionnaire-Proxy-Access-Request.json ==
+ERROR: Questionnaire.url: Resource id/url mismatch: Questionnaire-Proxy-Access-Request/https://fhir.nhs.uk/England/Questionnaire/Proxy-Access-Request
+ERROR: Questionnaire/Questionnaire-Proxy-Access-Request: Questionnaire.jurisdiction[0].coding[0].code: Unknown code 'GB-ENG' in the CodeSystem 'urn:iso:std:iso:3166' version '2018'
+INFORMATION: Questionnaire/Questionnaire-Proxy-Access-Request: Questionnaire.code[0]: A definition for CodeSystem 'https://fhir.nhs.uk/England/CodeSystem/ToBeDetermind' could not be found, so the code cannot be validated
+INFORMATION: Questionnaire/Questionnaire-Proxy-Access-Request: Questionnaire.item[0].item[0].extension[0].value.ofType(CodeableConcept): Reference to draft CodeSystem http://hl7.org/fhir/questionnaire-item-control|4.0.1
+INFORMATION: Questionnaire/Questionnaire-Proxy-Access-Request: Questionnaire.item[1].item[0].extension[0].value.ofType(CodeableConcept): Reference to draft CodeSystem http://hl7.org/fhir/questionnaire-item-control|4.0.1
+INFORMATION: Questionnaire/Questionnaire-Proxy-Access-Request: Questionnaire.item[2].extension[0].value.ofType(CodeableConcept): Reference to draft CodeSystem http://hl7.org/fhir/questionnaire-item-control|4.0.1
+ERROR: Questionnaire/Questionnaire-Proxy-Access-Request: Questionnaire.item[2].code[0].code: Unknown code '722011000000106' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20230901'
+INFORMATION: Questionnaire/Questionnaire-Proxy-Access-Request: Questionnaire.item[3].extension[0].value.ofType(CodeableConcept): Reference to draft CodeSystem http://hl7.org/fhir/questionnaire-item-control|4.0.1
+INFORMATION: Questionnaire/Questionnaire-Proxy-Access-Request: Questionnaire.item[3].answerOption[0].value.ofType(Coding): A definition for CodeSystem 'https://fhir.nhs.uk/England/CodeSystem/ToBeDetermind' could not be found, so the code cannot be validated
+INFORMATION: Questionnaire/Questionnaire-Proxy-Access-Request: Questionnaire.item[3].answerOption[1].value.ofType(Coding): A definition for CodeSystem 'https://fhir.nhs.uk/England/CodeSystem/ToBeDetermind' could not be found, so the code cannot be validated
+INFORMATION: Questionnaire/Questionnaire-Proxy-Access-Request: Questionnaire.item[3].answerOption[2].value.ofType(Coding): A definition for CodeSystem 'https://fhir.nhs.uk/England/CodeSystem/ToBeDetermind' could not be found, so the code cannot be validated
+== input/examples/RelatedPerson-NHS-9449304130-Jane-Smith.json ==
+ERROR: RelatedPerson/RelatedPerson-NHS-9449304130-Jane-Smith: RelatedPerson.patient: Unable to resolve resource with reference 'Patient/Patient_NHS_9459304130'
+== input/examples/RelatedPerson-PDS-NHS-90000000009-Jane-Smith.json ==
+ERROR: RelatedPerson/RelatedPerson-PDS-NHS-90000000009-Jane-Smith: RelatedPerson.extension[0]: The extension https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-CopyCorrespondenceIndicator could not be found so is not allowed here
+ERROR: RelatedPerson/RelatedPerson-PDS-NHS-90000000009-Jane-Smith: RelatedPerson.extension[1]: The extension https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-ContactRank could not be found so is not allowed here
+INFORMATION: RelatedPerson/RelatedPerson-PDS-NHS-90000000009-Jane-Smith: RelatedPerson.extension[3].extension[0].value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage' version '1.0.0' could not be found, so the code cannot be validated. Valid versions: []
+INFORMATION: RelatedPerson/RelatedPerson-PDS-NHS-90000000009-Jane-Smith: RelatedPerson.relationship[0].coding[0].system: A definition for CodeSystem 'https://fhir.nhs.uk/R4/CodeSystem/UKCore-AdditionalRelatedPersonRole' could not be found, so the code cannot be validated
+INFORMATION: RelatedPerson/RelatedPerson-PDS-NHS-90000000009-Jane-Smith: RelatedPerson.relationship[0]: None of the codings provided are in the value set 'Patient relationship type' (http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype|4.0.1), and a coding is recommended to come from this value set) (codes = https://fhir.nhs.uk/R4/CodeSystem/UKCore-AdditionalRelatedPersonRole#Guardian)
 == input/history/h1.json ==
 ERROR: Bundle/h1: Bundle.entry[0].resource/*Provenance/h1-1*/.target[0]: Unable to resolve resource with reference 'StructureDefinition/myObservation'
 WARNING: Bundle/h1: Bundle.entry[0].resource/*Provenance/h1-1*/.reason[0]: No code provided, and a code should be provided from the value set 'PurposeOfUse' (http://terminology.hl7.org/ValueSet/v3-PurposeOfUse|2.0.0)
@@ -63,3 +119,8 @@ ERROR: StructureDefinition.where(url = 'https://fhir.hl7.org.uk/StructureDefinit
 ERROR: StructureDefinition/UKCore-Organization: StructureDefinition.jurisdiction[0].coding[0].code: Unknown code 'GB-ENG' in the CodeSystem 'urn:iso:std:iso:3166' version '2018'
 WARNING: StructureDefinition.where(url = 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization'): The Implementation Guide contains no examples for this profile
 ERROR: /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/input/resources/UKCore-Organization: URL Mismatch https://fhir.nhs.uk/England/StructureDefinition/UKCore-Organization vs https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization
+== input/resources/UKCore-RelatedPerson.json ==
+ERROR: StructureDefinition.where(url = 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson'): Conformance resource /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/input/resources/UKCore-RelatedPerson.json - the canonical URL (https://fhir.nhs.uk/England/StructureDefinition/UKCore-RelatedPerson) does not match the URL (https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson)
+ERROR: StructureDefinition/UKCore-RelatedPerson: StructureDefinition.jurisdiction[0].coding[0].code: Unknown code 'GB-ENG' in the CodeSystem 'urn:iso:std:iso:3166' version '2018'
+WARNING: StructureDefinition.where(url = 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson'): The Implementation Guide contains no examples for this profile
+ERROR: /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/input/resources/UKCore-RelatedPerson: URL Mismatch https://fhir.nhs.uk/England/StructureDefinition/UKCore-RelatedPerson vs https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson

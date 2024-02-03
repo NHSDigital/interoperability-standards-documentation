@@ -14,6 +14,23 @@
       "uses" : {
       },
       "StructureDefinition-UKCore-Organization.html" : "UK Core Organization"
+    },
+    {
+      "url" : "https://fhir.hl7.org.uk/ValueSet/UKCore-PersonRelationshipType",
+      "version" : "2.1.0",
+      "status" : "active",
+      "name" : "UKCorePersonRelationshipType",
+      "title" : "UK Core Person Relationship Type",
+      "description" : "A set of codes that define the type of relationship a person has to a patient.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+        "http://terminology.hl7.org/CodeSystem/v2-0131",
+        "https://fhir.hl7.org.uk/CodeSystem/UKCore-AdditionalPersonRelationshipRole"
+      ],
+      "uses" : {
+      },
+      "Questionnaire-Questionnaire-Proxy-Access-Request.html" : "Proxy Access Request Form",
+      "StructureDefinition-UKCore-RelatedPerson.html" : "UK Core RelatedPerson"
     }
   ]
 }

@@ -11,6 +11,12 @@
         "title": "Organization"
       }
     ],
+    "RelatedPerson": [
+      {
+        "url": "https://fhir.nhs.uk/England/StructureDefinition/RelatedPerson",
+        "title": "RelatedPerson"
+      }
+    ],
     "Observation": [
       {
         "url": "https://fhir.nhs.uk/England/StructureDefinition/Observation",
@@ -55,6 +61,16 @@
     "http://hl7.org/fhir/StructureDefinition/organization-period": [
       "Organization"
     ],
+    "http://hl7.org/fhir/StructureDefinition/patient-birthPlace": [
+      "Patient"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl": [
+      "Questionnaire.item",
+      "Questionnaire.item.item"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/regex": [
+      "StructureDefinition.snapshot.element.type"
+    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
       "StructureDefinition.snapshot.element"
     ],
@@ -86,11 +102,54 @@
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
     ],
+    "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract": [
+      "Questionnaire.item"
+    ],
+    "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AddressKey": [
+      "Patient.address",
+      "RelatedPerson.address"
+    ],
+    "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ContactPreference": [
+      "Patient",
+      "RelatedPerson"
+    ],
+    "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CopyCorrespondenceIndicator": [
+      "RelatedPerson"
+    ],
+    "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-DeathNotificationStatus": [
+      "Patient"
+    ],
     "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MainLocation": [
       "Organization"
     ],
+    "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicalApplianceSupplier": [
+      "Patient"
+    ],
+    "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSCommunication": [
+      "Patient",
+      "RelatedPerson"
+    ],
     "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus": [
       "Patient.identifier"
+    ],
+    "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NominatedPharmacy": [
+      "Patient"
+    ],
+    "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-OtherContactSystem": [
+      "Patient.telecom",
+      "RelatedPerson.telecom.system"
+    ],
+    "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-PreferredDispenserOrganization": [
+      "Patient"
+    ],
+    "https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-ContactRank": [
+      "RelatedPerson"
+    ],
+    "https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-CopyCorrespondenceIndicator": [
+      "RelatedPerson"
+    ],
+    "https://fhir.nhs.uk/StructureDefinition/Extension-PDS-RemovalFromRegistration": [
+      "Patient"
     ]
   }
 }

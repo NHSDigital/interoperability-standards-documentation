@@ -1,2 +1,3 @@
 URL,Version,Status,OIDs,Name,Title,Descriptino,Uses,Used,Sources
 https://fhir.hl7.org.uk/ValueSet/UKCore-OrganizationType,1.0.0,active,,UKCoreOrganizationType,UK Core Organization Type,"A set of codes that can be used to indicate a type of organization.","StructureDefinition/UKCore-Organization","THO,fhir.r4.ukcore.stu3.currentbuild"
+https://fhir.hl7.org.uk/ValueSet/UKCore-PersonRelationshipType,2.1.0,active,,UKCorePersonRelationshipType,UK Core Person Relationship Type,"A set of codes that define the type of relationship a person has to a patient.","StructureDefinition/UKCore-RelatedPerson,Questionnaire/Questionnaire-Proxy-Access-Request","THO (V3),THO (V2),fhir.r4.ukcore.stu3.currentbuild"

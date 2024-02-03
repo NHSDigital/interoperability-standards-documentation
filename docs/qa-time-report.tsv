@@ -1,10 +1,19 @@
-Source File	Size	loadResources	load-configure	scan	loadDepInfo	loadInfo	load	generateSnapshots	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
-/fsh-generated/resources/ImplementationGuide-uk.nhs.england.json	5282	-	0	0	0	0	0	0	3	71	0	0	0	0	0	0	0	1	0	0	169	94	0	0	0	3	0	1
-fsh-generated/resources/StructureDefinition-Observation.json	1788	8	0	0	0	0	0	176	0	169	0	0	0	0	0	0	0	1	0	0	679	2831	0	0	0	9	0	0
-fsh-generated/resources/StructureDefinition-Organization.json	1223	4	0	0	0	0	0	487	0	184	0	0	0	0	0	0	0	1	0	0	776	987	0	0	0	12	0	1
-fsh-generated/resources/StructureDefinition-PatientPDS.json	1744	5	0	0	0	0	0	366	0	188	0	0	1	0	0	0	0	0	0	0	748	839	0	0	0	7	0	2
-input/examples/Patient-example.json	1224	4	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	24	35	0	0	0	0	0	0
-input/history/h1.json	1487	5	1	0	0	0	9	0	0	76	0	0	0	0	0	0	0	0	0	3	46	37	0	0	0	0	0	0
-input/resources/CareConnect-CapabilityStatement.json	50421	65	0	0	0	0	0	0	2	126	0	0	0	0	0	0	0	0	0	0	608	109	0	0	0	6	0	0
-input/resources/StructureDefinition-Patient.json	145466	129	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	592	623	0	0	0	9	0	1
-input/resources/UKCore-Organization.json	140730	240	0	0	0	0	0	0	1	295	0	0	0	0	0	0	0	0	0	0	935	824	0	0	0	22	0	0
+Source File	Size	loadResources	load-configure	scan	loadDepInfo	loadInfo	load	generateSnapshots	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	responsesForQuestionnaire	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
+/fsh-generated/resources/ImplementationGuide-uk.nhs.england.json	8482	-	0	0	0	0	0	0	4	85	0	0	0	0	0	0	0	1	0	0	203	204	0	0	1	0	3	0	0
+fsh-generated/resources/CapabilityStatement-Personal-Demographics-Service-Provider.json	7200	13	1	0	0	1	0	0	1	44	0	0	0	0	0	0	0	0	0	0	95	152	0	0	0	0	1	0	1
+fsh-generated/resources/CapabilityStatement-Validated-Relationship-Service-Provider.json	2016	4	0	0	0	0	0	0	0	14	0	0	0	0	0	0	0	0	0	0	52	92	0	0	0	0	0	0	0
+fsh-generated/resources/StructureDefinition-Observation.json	1788	5	0	0	0	0	0	179	0	211	0	0	0	0	0	0	0	1	0	0	595	2857	0	0	0	0	6	0	1
+fsh-generated/resources/StructureDefinition-Organization.json	1223	5	0	0	0	0	0	446	0	190	0	0	0	0	0	0	0	1	0	0	867	1353	0	0	0	0	7	0	0
+fsh-generated/resources/StructureDefinition-PatientPDS.json	1744	5	0	0	0	0	0	355	0	167	0	0	0	0	0	0	0	1	0	0	760	1102	0	0	0	0	12	0	3
+fsh-generated/resources/StructureDefinition-RelatedPerson.json	1297	4	0	0	0	0	0	324	0	144	0	0	0	0	0	0	0	1	0	0	622	1017	0	0	0	0	7	0	0
+input/examples/Patient-NHS-9459304130-Jane-Smith.json	551	3	0	0	0	0	0	0	0	290	0	0	0	0	0	0	0	0	0	0	13	71	0	0	0	0	0	0	0
+input/examples/Patient-NHS-9912003814-Michael-SMITHIES.json	1256	3	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	15	60	0	0	0	0	0	0	0
+input/examples/Patient-PDS-NHS-9000000017-Jayne-Smith.json	9989	19	0	0	0	0	0	0	1	18	0	0	0	0	0	0	0	0	0	0	99	91	0	0	0	0	0	0	0
+input/examples/Questionnaire-Proxy-Access-Request.json	5289	8	0	0	0	0	0	0	0	25	0	0	0	0	0	0	0	0	0	0	134	153	0	0	0	0	1	0	0
+input/examples/RelatedPerson-NHS-9449304130-Jane-Smith.json	617	4	0	0	0	0	0	0	0	30	0	0	0	0	0	0	0	0	0	0	20	62	0	0	0	0	0	0	0
+input/examples/RelatedPerson-PDS-NHS-90000000009-Jane-Smith.json	4143	8	0	0	0	0	0	0	0	16	0	0	0	0	0	0	0	0	0	0	48	84	0	0	0	0	0	0	0
+input/history/h1.json	1487	4	1	0	0	0	11	0	0	83	0	0	0	0	0	0	0	0	0	3	33	58	0	0	0	0	0	0	0
+input/resources/CareConnect-CapabilityStatement.json	50421	66	0	0	0	0	0	0	2	104	0	0	0	0	0	0	0	0	0	0	510	158	0	0	0	0	11	0	1
+input/resources/StructureDefinition-Patient.json	145466	131	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	642	990	0	0	0	0	6	0	0
+input/resources/UKCore-Organization.json	140730	242	0	0	0	0	0	0	0	250	0	0	1	0	0	0	0	0	0	0	1005	1155	0	0	0	0	16	1	1
+input/resources/UKCore-RelatedPerson.json	105923	194	0	0	0	0	0	0	0	164	0	0	0	0	0	0	0	1	0	0	741	989	0	0	0	0	19	0	0

@@ -1,0 +1,329 @@
+{
+  "resourceType" : "Patient",
+  "id" : "Patient-PDS-NHS-9000000017-Jayne-Smith",
+  "meta" : {
+    "versionId" : "2",
+    "security" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-Confidentiality",
+      "code" : "U",
+      "display" : "unrestricted"
+    }]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Jayne Smyth </b> female, DoB: 2010-10-22 ( <code>https://fhir.nhs.uk/Id/nhs-number</code>/9000000017)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Known status of Patient\">Deceased:</td><td>2010-10-22 00:00:00+0000</td><td style=\"background-color: #f3f5da\" title=\"Known multipleBirth status of Patient\">Multiple Birth:</td><td colspan=\"3\">1</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Details:</td><td colspan=\"3\"><ul><li>ph: 01632960587(HOME)</li><li><a href=\"mailto:jayne.smyth@example.com\">jayne.smyth@example.com</a></li><li>01632960587(HOME)</li><li>1 Trevelyan Square Boar Lane City Centre Leeds West Yorkshire LS1 6AE (HOME)</li><li>Student Accommodation(TEMP)</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Nominated Contact: Emergency Contact\">Emergency Contact:</td><td colspan=\"3\"><ul><li>ph: 01632960587</li><li>Valid Period: 2020-01-01 --&gt; 2021-12-31</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Patient Links\">Links:</td><td colspan=\"3\"><ul><li>General Practitioner: <span><code>https://fhir.nhs.uk/Id/ods-organization-code</code>/Y12345\u00a0(period:\u00a02020-01-01 --&gt; 2021-12-31)</span></li><li>Managing Organization: <span><code>https://fhir.nhs.uk/Id/ods-organization-code</code>/Y12345\u00a0(period:\u00a02020-01-01 --&gt; 2021-12-31)</span></li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"The patient's death notification status.\">Extension UK Core Death Notification Status:</td><td colspan=\"3\"><ul><li>deathNotificationStatus: <span title=\"Codes: {https://fhir.hl7.org.uk/CodeSystem/UKCore-DeathNotificationStatus 2}\">Formal - death notice received from Registrar of Deaths</span></li><li>systemEffectiveDate: 2010-10-22 00:00:00+0000</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Information about the patient's preferred dispenser organisation.\"><a href=\"https://simplifier.net/resolve?scope=fhir.r4.ukcore.stu3.currentbuild@0.0.6-pre-release&amp;canonical=https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-PreferredDispenserOrganization\">Extension UK Core Preferred Dispenser Organization:</a></td><td colspan=\"3\"><ul><li><span><code>https://fhir.nhs.uk/Id/ods-organization-code</code>/Y23456</span></li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"The registered place of birth of the patient. A sytem may use the address.text if they don't store the birthPlace address in discrete elements.\"><a href=\"http://hl7.org/fhir/R4/extension-patient-birthplace.html\">Birth Place:</a></td><td colspan=\"3\"><ul><li>Manchester GBR </li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"The preferred method of contact, contact times and written communication format given by a Patient or Related Person.\">Extension UK Core Contact Preference:</td><td colspan=\"3\"><ul><li>PreferredWrittenCommunicationFormat: <span title=\"Codes: {https://fhir.hl7.org.uk/CodeSystem/UKCore-PreferredWrittenCommunicationFormat 12}\">Braille</span></li><li>PreferredContactMethod: <span title=\"Codes: {https://fhir.hl7.org.uk/CodeSystem/UKCore-PreferredContactMethod 1}\">Letter</span></li><li>PreferredContactTimes: Not after 7pm</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Information about the patient's nominated medical appliance supplier.\"><a href=\"https://simplifier.net/resolve?scope=fhir.r4.ukcore.stu3.currentbuild@0.0.6-pre-release&amp;canonical=https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicalApplianceSupplier\">Extension UK Core Medical Appliance Supplier:</a></td><td colspan=\"3\"><ul><li><span><code>https://fhir.nhs.uk/Id/ods-organization-code</code>/Y34567</span></li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Individual's nominated pharmacy.\"><a href=\"https://simplifier.net/resolve?scope=fhir.r4.ukcore.stu3.currentbuild@0.0.6-pre-release&amp;canonical=https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NominatedPharmacy\">Extension UK Core Nominated Pharmacy:</a></td><td colspan=\"3\"><ul><li><span><code>https://fhir.nhs.uk/Id/ods-organization-code</code>/Y12345</span></li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Information that describes the patient's communication preferences.\">Extension UK Core NHS Communication:</td><td colspan=\"3\"><ul><li>language: <span title=\"Codes: {https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage fr}\">French</span></li><li>interpreterRequired: true</li></ul></td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NominatedPharmacy",
+    "valueReference" : {
+      "identifier" : {
+        "system" : "https://fhir.nhs.uk/Id/ods-organization-code",
+        "value" : "Y12345"
+      }
+    }
+  },
+  {
+    "url" : "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-PreferredDispenserOrganization",
+    "valueReference" : {
+      "identifier" : {
+        "system" : "https://fhir.nhs.uk/Id/ods-organization-code",
+        "value" : "Y23456"
+      }
+    }
+  },
+  {
+    "url" : "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicalApplianceSupplier",
+    "valueReference" : {
+      "identifier" : {
+        "system" : "https://fhir.nhs.uk/Id/ods-organization-code",
+        "value" : "Y34567"
+      }
+    }
+  },
+  {
+    "extension" : [{
+      "url" : "deathNotificationStatus",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://fhir.hl7.org.uk/CodeSystem/UKCore-DeathNotificationStatus",
+          "version" : "1.0.0",
+          "code" : "2",
+          "display" : "Formal - death notice received from Registrar of Deaths"
+        }]
+      }
+    },
+    {
+      "url" : "systemEffectiveDate",
+      "valueDateTime" : "2010-10-22T00:00:00+00:00"
+    }],
+    "url" : "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-DeathNotificationStatus"
+  },
+  {
+    "extension" : [{
+      "url" : "language",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage",
+          "version" : "1.0.0",
+          "code" : "fr",
+          "display" : "French"
+        }]
+      }
+    },
+    {
+      "url" : "interpreterRequired",
+      "valueBoolean" : true
+    }],
+    "url" : "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSCommunication"
+  },
+  {
+    "extension" : [{
+      "url" : "PreferredWrittenCommunicationFormat",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://fhir.hl7.org.uk/CodeSystem/UKCore-PreferredWrittenCommunicationFormat",
+          "code" : "12",
+          "display" : "Braille"
+        }]
+      }
+    },
+    {
+      "url" : "PreferredContactMethod",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://fhir.hl7.org.uk/CodeSystem/UKCore-PreferredContactMethod",
+          "code" : "1",
+          "display" : "Letter"
+        }]
+      }
+    },
+    {
+      "url" : "PreferredContactTimes",
+      "valueString" : "Not after 7pm"
+    }],
+    "url" : "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ContactPreference"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+    "valueAddress" : {
+      "city" : "Manchester",
+      "district" : "Greater Manchester",
+      "country" : "GBR"
+    }
+  },
+  {
+    "extension" : [{
+      "url" : "removalFromRegistrationCode",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://fhir.nhs.uk/CodeSystem/PDS-RemovalReasonExitCode",
+          "code" : "SCT",
+          "display" : "Transferred to Scotland"
+        }]
+      }
+    },
+    {
+      "url" : "effectiveTime",
+      "valuePeriod" : {
+        "start" : "2020-01-01T00:00:00+00:00",
+        "end" : "2021-12-31T00:00:00+00:00"
+      }
+    }],
+    "url" : "https://fhir.nhs.uk/StructureDefinition/Extension-PDS-RemovalFromRegistration"
+  }],
+  "identifier" : [{
+    "extension" : [{
+      "url" : "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatus",
+          "version" : "1.0.0",
+          "code" : "01",
+          "display" : "Number present and verified"
+        }]
+      }
+    }],
+    "system" : "https://fhir.nhs.uk/Id/nhs-number",
+    "value" : "9000000017"
+  }],
+  "name" : [{
+    "id" : "123",
+    "use" : "usual",
+    "family" : "Smyth",
+    "given" : ["Jayne"],
+    "prefix" : ["Mrs"],
+    "suffix" : ["MBE"],
+    "period" : {
+      "start" : "2020-01-01",
+      "end" : "2021-12-31"
+    }
+  }],
+  "telecom" : [{
+    "id" : "789",
+    "system" : "phone",
+    "value" : "01632960587",
+    "use" : "home",
+    "period" : {
+      "start" : "2020-01-01",
+      "end" : "2021-12-31"
+    }
+  },
+  {
+    "id" : "790",
+    "system" : "email",
+    "value" : "jayne.smyth@example.com",
+    "use" : "home",
+    "period" : {
+      "start" : "2019-01-01",
+      "end" : "2022-12-31"
+    }
+  },
+  {
+    "id" : "OC789",
+    "extension" : [{
+      "url" : "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-OtherContactSystem",
+      "valueCoding" : {
+        "system" : "https://fhir.hl7.org.uk/CodeSystem/UKCore-OtherContactSystem",
+        "code" : "textphone",
+        "display" : "Minicom (Textphone)"
+      }
+    }],
+    "system" : "other",
+    "value" : "01632960587",
+    "use" : "home",
+    "period" : {
+      "start" : "2020-01-01",
+      "end" : "2021-12-31"
+    }
+  }],
+  "gender" : "female",
+  "birthDate" : "2010-10-22",
+  "deceasedDateTime" : "2010-10-22T00:00:00+00:00",
+  "address" : [{
+    "id" : "456",
+    "extension" : [{
+      "extension" : [{
+        "url" : "type",
+        "valueCoding" : {
+          "system" : "https://fhir.hl7.org.uk/CodeSystem/UKCore-AddressKeyType",
+          "code" : "PAF"
+        }
+      },
+      {
+        "url" : "value",
+        "valueString" : "12345678"
+      }],
+      "url" : "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AddressKey"
+    },
+    {
+      "extension" : [{
+        "url" : "type",
+        "valueCoding" : {
+          "system" : "https://fhir.hl7.org.uk/CodeSystem/UKCore-AddressKeyType",
+          "code" : "UPRN"
+        }
+      },
+      {
+        "url" : "value",
+        "valueString" : "123456789012"
+      }],
+      "url" : "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AddressKey"
+    }],
+    "use" : "home",
+    "line" : ["1 Trevelyan Square",
+    "Boar Lane",
+    "City Centre",
+    "Leeds",
+    "West Yorkshire"],
+    "postalCode" : "LS1 6AE",
+    "period" : {
+      "start" : "2020-01-01",
+      "end" : "2021-12-31"
+    }
+  },
+  {
+    "id" : "T456",
+    "extension" : [{
+      "extension" : [{
+        "url" : "type",
+        "valueCoding" : {
+          "system" : "https://fhir.hl7.org.uk/CodeSystem/UKCore-AddressKeyType",
+          "code" : "PAF"
+        }
+      },
+      {
+        "url" : "value",
+        "valueString" : "12345678"
+      }],
+      "url" : "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AddressKey"
+    },
+    {
+      "extension" : [{
+        "url" : "type",
+        "valueCoding" : {
+          "system" : "https://fhir.hl7.org.uk/CodeSystem/UKCore-AddressKeyType",
+          "code" : "UPRN"
+        }
+      },
+      {
+        "url" : "value",
+        "valueString" : "123456789012"
+      }],
+      "url" : "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AddressKey"
+    }],
+    "use" : "temp",
+    "text" : "Student Accommodation",
+    "line" : ["1 Trevelyan Square",
+    "Boar Lane",
+    "City Centre",
+    "Leeds",
+    "West Yorkshire"],
+    "postalCode" : "LS1 6AE",
+    "period" : {
+      "start" : "2020-01-01",
+      "end" : "2021-12-31"
+    }
+  }],
+  "multipleBirthInteger" : 1,
+  "contact" : [{
+    "id" : "C123",
+    "relationship" : [{
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v2-0131",
+        "code" : "C",
+        "display" : "Emergency Contact"
+      }]
+    }],
+    "telecom" : [{
+      "system" : "phone",
+      "value" : "01632960587"
+    }],
+    "period" : {
+      "start" : "2020-01-01",
+      "end" : "2021-12-31"
+    }
+  }],
+  "generalPractitioner" : [{
+    "id" : "254406A3",
+    "type" : "Organization",
+    "identifier" : {
+      "system" : "https://fhir.nhs.uk/Id/ods-organization-code",
+      "value" : "Y12345",
+      "period" : {
+        "start" : "2020-01-01",
+        "end" : "2021-12-31"
+      }
+    }
+  }],
+  "managingOrganization" : {
+    "type" : "Organization",
+    "identifier" : {
+      "system" : "https://fhir.nhs.uk/Id/ods-organization-code",
+      "value" : "Y12345",
+      "period" : {
+        "start" : "2020-01-01",
+        "end" : "2021-12-31"
+      }
+    }
+  }
+}

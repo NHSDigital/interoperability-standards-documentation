@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Artifacts Summary - Interoperability Standards Documentation - Discovery v0.0.1</title>
+    <title>Artifacts Summary - Interoperability Standards - Discovery v0.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -21,7 +21,7 @@
     <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
   	<link href="assets/css/prism.css" rel="stylesheet" />
     <!-- Placeholder for child template CSS declarations -->
-<!-- Project extras -->
+<!-- Project extras
 <link
         type="font/woff2"
         href="assets/fonts/FrutigerLTW01-55Roman.woff2"
@@ -36,8 +36,9 @@
         as="font"
         crossorigin
 />
-
 <link href="assets/css/nhsuk.css" rel="stylesheet" />
+-->
+
 <!-- Bootstrap core CSS overrides to bootstrap-fhir.css -->
 <link href="assets/css/nhse.css" rel="stylesheet"/>
 
@@ -62,8 +63,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"9"}
-    h3,h4,h5,h6{--heading-prefix:"9.0"}</style>
+    <style type="text/css">h2{--heading-prefix:"13"}
+    h3,h4,h5,h6{--heading-prefix:"13.0"}</style>
     <div id="segment-header" class="segment nhsuk-header">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -94,7 +95,7 @@
 
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">Interoperability Standards Documentation - Discovery</span>
+          <p><span style="font-size:12pt;font-weight:bold">Interoperability Standards - Discovery</span>
             <br/>
             <span style="display:inline-block;">0.0.1 - ci-build
 
@@ -145,7 +146,13 @@
         <a href="interoperability-standards.html">Interoperability Standards</a>
       </li>
       <li>
+        <a href="restful-api.html">RESTful API</a>
+      </li>
+      <li>
         <a href="documents.html">Documents Interoperability</a>
+      </li>
+      <li>
+        <a href="workflow.html">Workflow</a>
       </li>
       <li>
         <a href="testing.html">Conformance and Testing (FHIR)</a>
@@ -160,7 +167,16 @@
       <li>
         <a href="validation.html">FHIR Validation</a>
       </li>
+      <li>
+        <a href="national-proxy-service.html">National Proxy Service</a>
+      </li>
+      <li>
+        <a href="personal-demographics-service.html">Personal Demographics Service</a>
+      </li>
     </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">FHIR Assets</a>
   </li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
@@ -204,7 +220,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">Interoperability Standards Documentation - Discovery - Local Development build (v0.0.1) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://fhir.nhs.uk/England/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">Interoperability Standards - Discovery - Local Development build (v0.0.1) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://fhir.nhs.uk/England/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Artifacts Summary</h2>
   
   
@@ -254,6 +270,24 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>The INTEROPen vision is to create a library of nationally defined HL7® FHIR® resources and interaction patterns that implementers can adopt to simplify integration and interoperability within UK health and social care.</p>
 </td>
          </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CapabilityStatement-Personal-Demographics-Service-Provider.html"
+                  title="CapabilityStatement/Personal-Demographics-Service-Provider">NHS England Personal Demographics Service Provider</a>
+            </td>
+            <td>
+<p>NHS England Personal Demographics Service Provider  which has an API on Patient and RelatedPerson</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CapabilityStatement-Validated-Relationship-Service-Provider.html"
+                  title="CapabilityStatement/Validated-Relationship-Service-Provider">NHS England Validated Relationship Service Provider</a>
+            </td>
+            <td>
+<p>This is an Open API specification for the Validated Relationship Service which has an API on RelatedPerson</p>
+</td>
+         </tr>
       </tbody>
    </table>
    <a name="2"> </a>
@@ -300,11 +334,29 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-RelatedPerson.html"
+                  title="StructureDefinition/RelatedPerson">RelatedPerson</a>
+            </td>
+            <td>
+<p>England RelatedPerson</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-UKCore-Organization.html"
                   title="StructureDefinition/UKCore-Organization">UK Core Organization</a>
             </td>
             <td>
 <p>This profile defines the UK constraints and extensions on the International FHIR resource <a href="https://hl7.org/fhir/R4/Organization.html">Organization</a>.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-UKCore-RelatedPerson.html"
+                  title="StructureDefinition/UKCore-RelatedPerson">UK Core RelatedPerson</a>
+            </td>
+            <td>
+<p>This profile defines the UK constraints and extensions on the International FHIR resource <a href="https://hl7.org/fhir/R4/RelatedPerson.html">RelatedPerson</a>.</p>
 </td>
          </tr>
       </tbody>
@@ -317,7 +369,38 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <tbody>
          <tr>
             <td style="column-width:30%">
-               <a href="Patient-example.html" title="Patient/example">example</a>
+               <a href="Patient-Patient-NHS-9459304130-Jane-Smith.html"
+                  title="Patient/Patient-NHS-9459304130-Jane-Smith">Patient-NHS-9459304130-Jane-Smith</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-Patient-NHS-9912003814-Michael-SMITHIES.html"
+                  title="Patient/Patient-NHS-9912003814-Michael-SMITHIES">Patient-NHS-9912003814-Michael-SMITHIES</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-Patient-PDS-NHS-9000000017-Jayne-Smith.html"
+                  title="Patient/Patient-PDS-NHS-9000000017-Jayne-Smith">Patient-PDS-NHS-9000000017-Jayne-Smith</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Questionnaire-Questionnaire-Proxy-Access-Request.html"
+                  title="Questionnaire/Questionnaire-Proxy-Access-Request">Proxy Access Request Form</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="RelatedPerson-RelatedPerson-NHS-9449304130-Jane-Smith.html"
+                  title="RelatedPerson/RelatedPerson-NHS-9449304130-Jane-Smith">RelatedPerson-NHS-9449304130-Jane-Smith</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="RelatedPerson-RelatedPerson-PDS-NHS-90000000009-Jane-Smith.html"
+                  title="RelatedPerson/RelatedPerson-PDS-NHS-90000000009-Jane-Smith">RelatedPerson-PDS-NHS-90000000009-Jane-Smith</a>
             </td>
          </tr>
       </tbody>
@@ -359,7 +442,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.england.nhs.uk/">NHS England</a>.  Package uk.nhs.england#0.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Feb 1, 2024 14:02+0000">2024-02-01</span>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.england.nhs.uk/">NHS England</a>.  Package uk.nhs.england#0.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Feb 3, 2024 07:42+0000">2024-02-03</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <div style="color: #333333" >

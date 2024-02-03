@@ -13,6 +13,8 @@
       "uses" : {
       },
       "StructureDefinition-PatientPDS.html" : "PatientPDS",
+      "StructureDefinition-UKCore-RelatedPerson.html" : "UK Core RelatedPerson",
+      "StructureDefinition-RelatedPerson.html" : "RelatedPerson",
       "StructureDefinition-Patient.html" : "Patient"
     },
     {
@@ -30,6 +32,36 @@
       "StructureDefinition-Observation.html" : "Observation"
     },
     {
+      "url" : "http://hl7.org/fhir/ValueSet/contact-point-system",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ContactPointSystem",
+      "title" : "ContactPointSystem",
+      "description" : "Telecommunications form for contact point.",
+      "systems" : ["http://hl7.org/fhir/contact-point-system"],
+      "oids" : ["2.16.840.1.113883.4.642.3.71"],
+      "sources" : ["2.16.840.1.113883.4.642.3.71"],
+      "uses" : {
+      },
+      "StructureDefinition-UKCore-RelatedPerson.html" : "UK Core RelatedPerson",
+      "StructureDefinition-RelatedPerson.html" : "RelatedPerson"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/contact-point-use",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ContactPointUse",
+      "title" : "ContactPointUse",
+      "description" : "Use of contact point.",
+      "systems" : ["http://hl7.org/fhir/contact-point-use"],
+      "oids" : ["2.16.840.1.113883.4.642.3.73"],
+      "sources" : ["2.16.840.1.113883.4.642.3.73"],
+      "uses" : {
+      },
+      "StructureDefinition-UKCore-RelatedPerson.html" : "UK Core RelatedPerson",
+      "StructureDefinition-RelatedPerson.html" : "RelatedPerson"
+    },
+    {
       "url" : "http://hl7.org/fhir/ValueSet/contactentity-type",
       "version" : "4.0.1",
       "status" : "draft",
@@ -41,8 +73,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.416"],
       "uses" : {
       },
-      "StructureDefinition-Organization.html" : "Organization",
-      "StructureDefinition-UKCore-Organization.html" : "UK Core Organization"
+      "StructureDefinition-UKCore-Organization.html" : "UK Core Organization",
+      "StructureDefinition-Organization.html" : "Organization"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/data-absent-reason",
@@ -70,10 +102,12 @@
       "sources" : ["2.16.840.1.113883.4.642.3.45"],
       "uses" : {
       },
+      "StructureDefinition-UKCore-Organization.html" : "UK Core Organization",
       "StructureDefinition-PatientPDS.html" : "PatientPDS",
+      "StructureDefinition-UKCore-RelatedPerson.html" : "UK Core RelatedPerson",
+      "StructureDefinition-RelatedPerson.html" : "RelatedPerson",
       "StructureDefinition-Organization.html" : "Organization",
-      "StructureDefinition-Patient.html" : "Patient",
-      "StructureDefinition-UKCore-Organization.html" : "UK Core Organization"
+      "StructureDefinition-Patient.html" : "Patient"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
@@ -87,10 +121,12 @@
       "sources" : ["2.16.840.1.113883.4.642.3.57"],
       "uses" : {
       },
+      "StructureDefinition-UKCore-Organization.html" : "UK Core Organization",
       "StructureDefinition-PatientPDS.html" : "PatientPDS",
+      "StructureDefinition-UKCore-RelatedPerson.html" : "UK Core RelatedPerson",
+      "StructureDefinition-RelatedPerson.html" : "RelatedPerson",
       "StructureDefinition-Organization.html" : "Organization",
-      "StructureDefinition-Patient.html" : "Patient",
-      "StructureDefinition-UKCore-Organization.html" : "UK Core Organization"
+      "StructureDefinition-Patient.html" : "Patient"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/languages",
@@ -104,11 +140,13 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-Observation.html" : "Observation",
+      "StructureDefinition-UKCore-Organization.html" : "UK Core Organization",
       "StructureDefinition-PatientPDS.html" : "PatientPDS",
+      "StructureDefinition-UKCore-RelatedPerson.html" : "UK Core RelatedPerson",
+      "StructureDefinition-RelatedPerson.html" : "RelatedPerson",
+      "StructureDefinition-Observation.html" : "Observation",
       "StructureDefinition-Organization.html" : "Organization",
-      "StructureDefinition-Patient.html" : "Patient",
-      "StructureDefinition-UKCore-Organization.html" : "UK Core Organization"
+      "StructureDefinition-Patient.html" : "Patient"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/link-type",
@@ -275,9 +313,11 @@
       "sources" : ["2.16.840.1.113883.4.642.3.27"],
       "uses" : {
       },
+      "StructureDefinition-UKCore-Organization.html" : "UK Core Organization",
       "StructureDefinition-PatientPDS.html" : "PatientPDS",
-      "StructureDefinition-Organization.html" : "Organization",
-      "StructureDefinition-UKCore-Organization.html" : "UK Core Organization"
+      "StructureDefinition-UKCore-RelatedPerson.html" : "UK Core RelatedPerson",
+      "StructureDefinition-RelatedPerson.html" : "RelatedPerson",
+      "StructureDefinition-Organization.html" : "Organization"
     },
     {
       "url" : "https://fhir.hl7.org.uk/ValueSet/UKCore-OrganizationType",
@@ -292,8 +332,26 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-Organization.html" : "Organization",
-      "StructureDefinition-UKCore-Organization.html" : "UK Core Organization"
+      "StructureDefinition-UKCore-Organization.html" : "UK Core Organization",
+      "StructureDefinition-Organization.html" : "Organization"
+    },
+    {
+      "url" : "https://fhir.hl7.org.uk/ValueSet/UKCore-PersonRelationshipType",
+      "version" : "2.1.0",
+      "status" : "active",
+      "name" : "UKCorePersonRelationshipType",
+      "title" : "UK Core Person Relationship Type",
+      "description" : "A set of codes that define the type of relationship a person has to a patient.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+        "http://terminology.hl7.org/CodeSystem/v2-0131",
+        "https://fhir.hl7.org.uk/CodeSystem/UKCore-AdditionalPersonRelationshipRole"
+      ],
+      "uses" : {
+      },
+      "Questionnaire-Questionnaire-Proxy-Access-Request.html" : "Proxy Access Request Form",
+      "StructureDefinition-UKCore-RelatedPerson.html" : "UK Core RelatedPerson",
+      "StructureDefinition-RelatedPerson.html" : "RelatedPerson"
     }
   ]
 }

@@ -1,16 +1,16 @@
 {
   "url" : "https://fhir.nhs.uk/England/ImplementationGuide/uk.nhs.england",
   "name" : "NHSEnglandInteroperability",
-  "title" : "Interoperability Standards Documentation - Discovery",
+  "title" : "Interoperability Standards - Discovery",
   "description" : null,
   "status" : "draft",
   "package-id" : "uk.nhs.england",
   "ig-ver" : "0.0.1",
-  "date" : "Thu, 01 Feb, 2024 14:02:06 +0000",
-  "errs" : 12,
-  "warnings" : 13,
-  "hints" : 13,
+  "date" : "Sat, 03 Feb, 2024 07:42:11 +0000",
+  "errs" : 27,
+  "warnings" : 21,
+  "hints" : 31,
   "version" : "4.0.1",
   "tool" : "5.0.0 (3)",
-  "maxMemory" : 1366393832
+  "maxMemory" : 2016127568
 }

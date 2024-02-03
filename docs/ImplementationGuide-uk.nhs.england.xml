@@ -8,9 +8,9 @@
   <url value="https://fhir.nhs.uk/England/ImplementationGuide/uk.nhs.england"/>
   <version value="0.0.1"/>
   <name value="NHSEnglandInteroperability"/>
-  <title value="Interoperability Standards Documentation - Discovery"/>
+  <title value="Interoperability Standards - Discovery"/>
   <status value="draft"/>
-  <date value="2024-02-01T14:02:06+00:00"/>
+  <date value="2024-02-03T07:42:11+00:00"/>
   <publisher value="NHS England"/>
   <contact>
     <name value="NHS England"/>
@@ -54,6 +54,11 @@
     <uri value="https://simplifier.net/guide/nhs-england-implementation-guide-version-history"/>
     <packageId value="fhir.r4.nhsengland.stu1"/>
     <version value="1.1.0"/>
+  </dependsOn>
+  <dependsOn id="hl7_fhir_uv_sdc">
+    <uri value="http://hl7.org/fhir/uv/sdc/ImplementationGuide/hl7.fhir.uv.sdc"/>
+    <packageId value="hl7.fhir.uv.sdc"/>
+    <version value="3.0.0"/>
   </dependsOn>
   <definition>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -472,13 +477,25 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Patient"/>
+        <valueString value="CapabilityStatement"/>
       </extension>
       <reference>
-        <reference value="Patient/example"/>
+        <reference value="CapabilityStatement/Personal-Demographics-Service-Provider"/>
       </reference>
-      <name value="example"/>
-      <exampleBoolean value="true"/>
+      <name value="NHS England Personal Demographics Service Provider"/>
+      <description value="NHS England Personal Demographics Service Provider  which has an API on Patient and RelatedPerson"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CapabilityStatement"/>
+      </extension>
+      <reference>
+        <reference value="CapabilityStatement/Validated-Relationship-Service-Provider"/>
+      </reference>
+      <name value="NHS England Validated Relationship Service Provider"/>
+      <description value="This is an Open API specification for the Validated Relationship Service which has an API on RelatedPerson"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -515,6 +532,36 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/Patient-NHS-9459304130-Jane-Smith"/>
+      </reference>
+      <name value="Patient-NHS-9459304130-Jane-Smith"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/Patient-NHS-9912003814-Michael-SMITHIES"/>
+      </reference>
+      <name value="Patient-NHS-9912003814-Michael-SMITHIES"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/Patient-PDS-NHS-9000000017-Jayne-Smith"/>
+      </reference>
+      <name value="Patient-PDS-NHS-9000000017-Jayne-Smith"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -526,6 +573,47 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/Questionnaire-Proxy-Access-Request"/>
+      </reference>
+      <name value="Proxy Access Request Form"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/RelatedPerson"/>
+      </reference>
+      <name value="RelatedPerson"/>
+      <description value="England RelatedPerson"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="RelatedPerson"/>
+      </extension>
+      <reference>
+        <reference value="RelatedPerson/RelatedPerson-NHS-9449304130-Jane-Smith"/>
+      </reference>
+      <name value="RelatedPerson-NHS-9449304130-Jane-Smith"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="RelatedPerson"/>
+      </extension>
+      <reference>
+        <reference value="RelatedPerson/RelatedPerson-PDS-NHS-90000000009-Jane-Smith"/>
+      </reference>
+      <name value="RelatedPerson-PDS-NHS-90000000009-Jane-Smith"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -533,6 +621,17 @@
       </reference>
       <name value="UK Core Organization"/>
       <description value="This profile defines the UK constraints and extensions on the International FHIR resource [Organization](https://hl7.org/fhir/R4/Organization.html)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/UKCore-RelatedPerson"/>
+      </reference>
+      <name value="UK Core RelatedPerson"/>
+      <description value="This profile defines the UK constraints and extensions on the International FHIR resource [RelatedPerson](https://hl7.org/fhir/R4/RelatedPerson.html)."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -601,6 +700,30 @@
       </page>
       <page>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="national-proxy-service.html"/>
+        </extension>
+        <nameUrl value="national-proxy-service.html"/>
+        <title value="National Proxy Service"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="personal-demographics-service.html"/>
+        </extension>
+        <nameUrl value="personal-demographics-service.html"/>
+        <title value="Personal Demographics Service"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="restful-api.html"/>
+        </extension>
+        <nameUrl value="restful-api.html"/>
+        <title value="Restful Api"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
           <valueUrl value="testing.html"/>
         </extension>
         <nameUrl value="testing.html"/>
@@ -613,6 +736,14 @@
         </extension>
         <nameUrl value="validation.html"/>
         <title value="Validation"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="workflow.html"/>
+        </extension>
+        <nameUrl value="workflow.html"/>
+        <title value="Workflow"/>
         <generation value="markdown"/>
       </page>
     </page>

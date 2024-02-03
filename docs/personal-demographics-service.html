@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Personal Demographics Service - Interoperability Standards - Discovery v0.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+
+    <!--  <script src="assets/nhsuk.js" defer></script> -->
+
+      <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<!-- Project extras
+<link
+        type="font/woff2"
+        href="assets/fonts/FrutigerLTW01-55Roman.woff2"
+        rel="preload"
+        as="font"
+        crossorigin
+/>
+<link
+        type="font/woff2"
+        href="assets/fonts/FrutigerLTW01-65Bold.woff2"
+        rel="preload"
+        as="font"
+        crossorigin
+/>
+<link href="assets/css/nhsuk.css" rel="stylesheet" />
+-->
+
+<!-- Bootstrap core CSS overrides to bootstrap-fhir.css -->
+<link href="assets/css/nhse.css" rel="stylesheet"/>
+
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/favicons/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"8"}
+    h3,h4,h5,h6{--heading-prefix:"8"}</style>
+    <div id="segment-header" class="segment nhsuk-header">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+<!-- Left logo - typically the publisher's logo - project or affiliate -->
+        <div id="project-nav">
+          <a id="project-logo" no-external="true" href="https://www.england.nhs.uk">
+            <img height="61" alt="Project home" src="assets/images/nhse-logo.png"/>
+          </a>
+        </div>
+
+<!-- Right logo - for example the FHIR logo -->
+<!-- Make sure you have authorization to use the FHIR logo -->
+
+        <div id="family-nav">
+            <!--
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="60" alt="FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+          -->
+        </div> 
+      
+
+<!-- search icon - if you want -->
+<!--
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+-->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Interoperability Standards - Discovery</span>
+            <br/>
+            <span style="display:inline-block;">0.0.1 - ci-build
+
+
+
+   <img alt="England flag" src="assets/images/GB-ENG.svg" height="16" title="England"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Design
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="background.html">Background</a>
+      </li>
+      <li>
+        <a href="interoperability-standards.html">Interoperability Standards</a>
+      </li>
+      <li>
+        <a href="restful-api.html">RESTful API</a>
+      </li>
+      <li>
+        <a href="documents.html">Documents Interoperability</a>
+      </li>
+      <li>
+        <a href="workflow.html">Workflow</a>
+      </li>
+      <li>
+        <a href="testing.html">Conformance and Testing (FHIR)</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Build
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="validation.html">FHIR Validation</a>
+      </li>
+      <li>
+        <a href="national-proxy-service.html">National Proxy Service</a>
+      </li>
+      <li>
+        <a href="personal-demographics-service.html">Personal Demographics Service</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">FHIR Assets</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Personal Demographics Service</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Interoperability Standards - Discovery - Local Development build (v0.0.1) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://fhir.nhs.uk/England/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Personal Demographics Service</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#overview" id="markdown-toc-overview">Overview</a></li>
+  <li><a href="#entity-relationship-diagram" id="markdown-toc-entity-relationship-diagram">Entity Relationship Diagram</a></li>
+  <li><a href="#search-for-a-patient" id="markdown-toc-search-for-a-patient">Search For a patient</a></li>
+  <li><a href="#get-patient-details" id="markdown-toc-get-patient-details">Get patient details</a></li>
+  <li><a href="#update-patient-details" id="markdown-toc-update-patient-details">Update patient details</a></li>
+  <li><a href="#get-a-patients-related-people" id="markdown-toc-get-a-patients-related-people">Get a patient’s related people</a></li>
+  <li><a href="#api-documentation-capabilitystatement" id="markdown-toc-api-documentation-capabilitystatement">API Documentation (CapabilityStatement)</a></li>
+</ul>
+
+</div>
+<h3 id="overview">Overview</h3>
+
+<p>See <a href="https://digital.nhs.uk/developer/api-catalogue/personal-demographics-service-fhir">Personal Demographics Service - FHIR API</a>
+Note: This is API’s OAS</p>
+
+<h3 id="entity-relationship-diagram">Entity Relationship Diagram</h3>
+
+<p>&lt;?xml version=”1.0” encoding=”us-ascii” standalone=”no”?&gt;<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="597px" preserveAspectRatio="none" style="width:1300px;height:597px;background:#FFFFFF;" version="1.1" viewBox="0 0 1300 597" width="1300px" zoomAndPan="magnify"><defs><filter height="300%" id="feuvdzoh0vqlo" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"></feGaussianBlur><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"></feColorMatrix><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"></feOffset><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"></feBlend></filter></defs><g><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="217" x="534.75" y="23.5352">Personal Demographic Service</text><!--class Patient--><g id="elem_Patient"><rect codeLine="6" fill="#FEFECE" filter="url(#feuvdzoh0vqlo)" height="212.8828" id="Patient" style="stroke:#A80036;stroke-width:1.0;" width="185" x="626" y="370.2183"></rect><ellipse cx="690.75" cy="386.2183" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"></ellipse><path d="M693.2231,392.3613 Q692.6421,392.6602 692.0029,392.8096 Q691.3638,392.959 690.6582,392.959 Q688.1514,392.959 686.8315,391.3071 Q685.5117,389.6553 685.5117,386.5342 Q685.5117,383.4048 686.8315,381.7529 Q688.1514,380.1011 690.6582,380.1011 Q691.3638,380.1011 692.0112,380.2505 Q692.6587,380.3999 693.2231,380.6988 L693.2231,383.4214 Q692.5923,382.8404 691.9988,382.5706 Q691.4053,382.3008 690.7744,382.3008 Q689.4297,382.3008 688.7449,383.3675 Q688.0601,384.4341 688.0601,386.5342 Q688.0601,388.626 688.7449,389.6926 Q689.4297,390.7593 690.7744,390.7593 Q691.4053,390.7593 691.9988,390.4895 Q692.5923,390.2197 693.2231,389.6387 Z " fill="#000000"></path><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="47" x="711.25" y="391.5093">Patient</text><line style="stroke:#A80036;stroke-width:1.0;" x1="627" x2="810" y1="402.2183" y2="402.2183"></line><ellipse cx="637" cy="415.9624" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"></ellipse><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="157" x="646" y="419.7534">identifier : NHSNumber</text><ellipse cx="637" cy="432.4507" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"></ellipse><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="38" x="646" y="436.2417">name</text><ellipse cx="637" cy="448.939" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"></ellipse><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="54" x="646" y="452.73">address</text><ellipse cx="637" cy="465.4273" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"></ellipse><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="54" x="646" y="469.2183">telecom</text><ellipse cx="637" cy="481.9155" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"></ellipse><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="49" x="646" y="485.7066">gender</text><ellipse cx="637" cy="498.4038" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"></ellipse><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="64" x="646" y="502.1948">birthDate</text><ellipse cx="637" cy="514.8921" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"></ellipse><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="129" x="646" y="518.6831">deceasedDateTime</text><ellipse cx="637" cy="531.3804" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"></ellipse><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="50" x="646" y="535.1714">contact</text><ellipse cx="637" cy="547.8687" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"></ellipse><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="131" x="646" y="551.6597">generalPractitioner</text><ellipse cx="637" cy="564.357" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"></ellipse><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="159" x="646" y="568.148">managingOrganization</text><line style="stroke:#A80036;stroke-width:1.0;" x1="627" x2="810" y1="575.1011" y2="575.1011"></line></g><!--class RelatedPerson--><g id="elem_RelatedPerson"><rect codeLine="19" fill="#FEFECE" filter="url(#feuvdzoh0vqlo)" height="163.418" id="RelatedPerson" style="stroke:#A80036;stroke-width:1.0;" width="379" x="530" y="129.7983"></rect><ellipse cx="666.25" cy="145.7983" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"></ellipse><path d="M668.7231,151.9413 Q668.1421,152.2402 667.5029,152.3896 Q666.8638,152.539 666.1582,152.539 Q663.6514,152.539 662.3315,150.8871 Q661.0117,149.2353 661.0117,146.1142 Q661.0117,142.9848 662.3315,141.3329 Q663.6514,139.6811 666.1582,139.6811 Q666.8638,139.6811 667.5112,139.8305 Q668.1587,139.9799 668.7231,140.2788 L668.7231,143.0014 Q668.0923,142.4204 667.4988,142.1506 Q666.9053,141.8808 666.2744,141.8808 Q664.9297,141.8808 664.2449,142.9475 Q663.5601,144.0141 663.5601,146.1142 Q663.5601,148.206 664.2449,149.2726 Q664.9297,150.3393 666.2744,150.3393 Q666.9053,150.3393 667.4988,150.0695 Q668.0923,149.7997 668.7231,149.2187 Z " fill="#000000"></path><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="98" x="686.75" y="151.0893">RelatedPerson</text><line style="stroke:#A80036;stroke-width:1.0;" x1="531" x2="908" y1="161.7983" y2="161.7983"></line><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="153" x="550" y="179.3334">identifier : not present</text><ellipse cx="541" cy="192.0307" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"></ellipse><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="38" x="550" y="195.8217">name</text><ellipse cx="541" cy="208.519" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"></ellipse><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="54" x="550" y="212.31">address</text><ellipse cx="541" cy="225.0073" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"></ellipse><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="54" x="550" y="228.7983">telecom</text><ellipse cx="541" cy="241.4955" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"></ellipse><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="49" x="550" y="245.2866">gender</text><ellipse cx="541" cy="257.9838" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"></ellipse><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="353" x="550" y="261.7748">patient.identifier: NHSNumber of the related person</text><ellipse cx="541" cy="274.4721" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"></ellipse><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="45" x="550" y="278.2631">period</text><line style="stroke:#A80036;stroke-width:1.0;" x1="531" x2="908" y1="285.2163" y2="285.2163"></line></g><!--class PharmacyPreferences--><g id="elem_PharmacyPreferences"><rect codeLine="29" fill="#FEFECE" filter="url(#feuvdzoh0vqlo)" height="97.4648" id="PharmacyPreferences" style="stroke:#A80036;stroke-width:1.0;" width="342" x="944.5" y="162.7783"></rect><ellipse cx="1038.25" cy="178.7783" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"></ellipse><path d="M1040.7231,184.9213 Q1040.1421,185.2202 1039.5029,185.3696 Q1038.8638,185.519 1038.1582,185.519 Q1035.6514,185.519 1034.3315,183.8671 Q1033.0117,182.2153 1033.0117,179.0942 Q1033.0117,175.9648 1034.3315,174.3129 Q1035.6514,172.6611 1038.1582,172.6611 Q1038.8638,172.6611 1039.5112,172.8105 Q1040.1587,172.9599 1040.7231,173.2588 L1040.7231,175.9814 Q1040.0923,175.4004 1039.4988,175.1306 Q1038.9053,174.8608 1038.2744,174.8608 Q1036.9297,174.8608 1036.2449,175.9275 Q1035.5601,176.9941 1035.5601,179.0942 Q1035.5601,181.186 1036.2449,182.2526 Q1036.9297,183.3193 1038.2744,183.3193 Q1038.9053,183.3193 1039.4988,183.0495 Q1040.0923,182.7797 1040.7231,182.1987 Z " fill="#000000"></path><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="146" x="1058.75" y="184.0693">PharmacyPreferences</text><line style="stroke:#A80036;stroke-width:1.0;" x1="945.5" x2="1285.5" y1="194.7783" y2="194.7783"></line><ellipse cx="955.5" cy="208.5224" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"></ellipse><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="212" x="964.5" y="212.3134">extension.nominatedPharmacy</text><ellipse cx="955.5" cy="225.0107" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"></ellipse><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="259" x="964.5" y="228.8017">extension.dispensingDoctorPharmacy</text><ellipse cx="955.5" cy="241.499" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"></ellipse><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="316" x="964.5" y="245.29">extension.medicalApplianceSupplierPharmacy</text><line style="stroke:#A80036;stroke-width:1.0;" x1="945.5" x2="1285.5" y1="252.2431" y2="252.2431"></line></g><g id="elem_PDS"><path d="M6,43.4883 L6,68.7988 L987,68.7988 L987,53.4883 L977,43.4883 L6,43.4883 " fill="#FBFB77" filter="url(#feuvdzoh0vqlo)" style="stroke:#A80036;stroke-width:1.0;"></path><path d="M977,43.4883 L977,53.4883 L987,53.4883 L977,43.4883 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"></path><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="960" x="12" y="61.0566">PDS may have redefined the definition RelatedPerson.patient.identifier from FHIR definition, it probably should be using RelatedPerson.identifier instead.</text></g><!--link RelatedPerson to Patient--><g id="link_RelatedPerson_Patient"><path codeLine="35" d="M651.96,312.8483 C650.68,316.2883 649.52,319.7483 648.5,323.2183 C646.04,331.6183 645.12,340.1583 645.42,348.6783 " fill="none" id="RelatedPerson-Patient" style="stroke:#A80036;stroke-width:1.0;"></path><line style="stroke:#A80036;stroke-width:1.0;" x1="656.6864" x2="654.4187" y1="302.14" y2="292.4006"></line><line style="stroke:#A80036;stroke-width:1.0;" x1="656.6864" x2="665.4013" y1="302.14" y2="297.236"></line><line style="stroke:#A80036;stroke-width:1.0;" x1="656.6864" x2="659.91" y1="302.14" y2="294.8183"></line><line style="stroke:#A80036;stroke-width:1.0;" x1="652.2196" x2="659.5413" y1="302.3587" y2="305.5823"></line><polygon fill="#FFFFFF" points="648.26,368.2283,638.593,350.4364,652.4466,348.4174,648.26,368.2283" style="stroke:#A80036;stroke-width:1.0;"></polygon><line style="stroke:#A80036;stroke-width:2.0;" x1="638.045" x2="651.8986" y1="346.6762" y2="344.6571"></line><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="93" x="649.5" y="336.7866">Related person</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="105" x="545.9397" y="313.6946">patient.identifier</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="57" x="584.85" y="359.6187">identifier</text></g><!--link RelatedPerson to Patient--><g id="link_RelatedPerson_Patient"><path codeLine="36" d="M746.29,314.5483 C746.74,317.4583 747.14,320.3583 747.5,323.2183 C748.53,331.4783 748.89,339.9583 748.72,348.4983 " fill="none" id="RelatedPerson-Patient-1" style="stroke:#A80036;stroke-width:1.0;"></path><line style="stroke:#A80036;stroke-width:1.0;" x1="744.1757" x2="736.8288" y1="303.0466" y2="296.2625"></line><line style="stroke:#A80036;stroke-width:1.0;" x1="744.1757" x2="748.6312" y1="303.0466" y2="294.094"></line><line style="stroke:#A80036;stroke-width:1.0;" x1="744.1757" x2="742.73" y1="303.0466" y2="295.1783"></line><ellipse cx="745.2599" cy="308.9478" fill="none" rx="4" ry="4" style="stroke:#A80036;stroke-width:1.0;"></ellipse><polygon fill="#FFFFFF" points="747.41,368.2183,741.6737,348.7994,755.6434,349.7193,747.41,368.2183" style="stroke:#A80036;stroke-width:1.0;"></polygon><line style="stroke:#A80036;stroke-width:2.0;" x1="741.9234" x2="755.8931" y1="345.0076" y2="345.9276"></line><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="215" x="749.5" y="336.7866">The Patient/RelatedPerson linkage</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="57" x="685.0012" y="313.6962">identifier</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="57" x="690.3308" y="359.6187">identifier</text></g><!--link PharmacyPreferences to Patient--><g id="link_PharmacyPreferences_Patient"><path codeLine="37" d="M1061.37,266.9083 C1035.93,290.9383 1004.43,318.5883 973.5,340.2183 C925.35,373.8983 867.83,405.1283 819.62,429.0983 " fill="none" id="PharmacyPreferences-Patient" style="stroke:#A80036;stroke-width:1.0;"></path><line style="stroke:#A80036;stroke-width:1.0;" x1="1058.9779" x2="1066.95" y1="269.1776" y2="261.5983"></line><ellipse cx="1058.9779" cy="269.1776" fill="none" rx="4" ry="4" style="stroke:#A80036;stroke-width:1.0;"></ellipse><line style="stroke:#A80036;stroke-width:1.0;" x1="1061.2949" x2="1066.8072" y1="261.4555" y2="267.2533"></line><line style="stroke:#A80036;stroke-width:1.0;" x1="818.0579" x2="814.5146" y1="434.3228" y2="427.1504"></line><line style="stroke:#A80036;stroke-width:1.0;" x1="820.7476" x2="817.2042" y1="432.9941" y2="425.8216"></line><line style="stroke:#A80036;stroke-width:1.0;" x1="819.8725" x2="812.7" y1="428.9649" y2="432.5083"></line></g><!--link PDS to RelatedPerson--><g id="link_PDS_RelatedPerson"><path codeLine="41" d="M514,69.1783 C533.61,82.6683 567.19,105.7583 601.58,129.4083 " fill="none" id="PDS-RelatedPerson" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"></path></g><!--link PDS to Patient--><g id="link_PDS_Patient"><path codeLine="42" d="M494.27,69.2483 C488.19,105.4983 474.27,215.4283 512.5,293.2183 C537.47,344.0183 583.46,386.8883 625.67,418.2683 " fill="none" id="PDS-Patient" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"></path></g></g></svg></p>
+
+<h3 id="search-for-a-patient">Search For a patient</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>FHIR/IHE Framework</th>
+      <th>FHIR Interaction</th>
+      <th>FHIR Profile</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>For background info, not followed by PDS <a href="https://profiles.ihe.net/ITI/PDQm/index.html">Patient Demographics Query for mobile (PDQm)</a></td>
+      <td><a href="restful-api.html">RESTful API</a></td>
+      <td><a href="StructureDefinition-PatientPDS.html">PatientPDS</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="https://digital.nhs.uk/developer/api-catalogue/personal-demographics-service-fhir#get-/Patient">Search For a patient</a></p>
+
+<p>&lt;?xml version=”1.0” encoding=”us-ascii” standalone=”no”?&gt;<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="206px" preserveAspectRatio="none" style="width:383px;height:206px;background:#FFFFFF;" version="1.1" viewBox="0 0 383 206" width="383px" zoomAndPan="magnify"><defs><filter height="300%" id="f68fdqvzub0c6" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"></feGaussianBlur><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"></feColorMatrix><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"></feOffset><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"></feBlend></filter></defs><g><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="141" x="116" y="28.5352">Search for a patient</text><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="64" x2="64" y1="77.9766" y2="199.9082"></line><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="316" x2="316" y1="77.9766" y2="199.9082"></line><rect fill="#FEFECE" filter="url(#f68fdqvzub0c6)" height="30.4883" style="stroke:#A80036;stroke-width:1.5;" width="115" x="5" y="42.4883"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="101" x="12" y="63.0234">PDS Consumer</text><rect fill="#FEFECE" filter="url(#f68fdqvzub0c6)" height="30.4883" style="stroke:#A80036;stroke-width:1.5;" width="101" x="264" y="42.4883"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="87" x="271" y="63.0234">PDS Supplier</text><rect fill="#EEEEEE" filter="url(#f68fdqvzub0c6)" height="3" style="stroke:#EEEEEE;stroke-width:1.0;" width="374" x="0" y="108.6318"></rect><line style="stroke:#000000;stroke-width:1.0;" x1="0" x2="374" y1="108.6318" y2="108.6318"></line><line style="stroke:#000000;stroke-width:1.0;" x1="0" x2="374" y1="111.6318" y2="111.6318"></line><rect fill="#EEEEEE" filter="url(#f68fdqvzub0c6)" height="23.3105" style="stroke:#000000;stroke-width:2.0;" width="190" x="92" y="97.9766"></rect><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="172" x="98" y="114.5449">FHIR RESTful API - search</text><polygon fill="#A80036" points="304.5,148.5977,314.5,152.5977,304.5,156.5977,308.5,152.5977" style="stroke:#A80036;stroke-width:1.0;"></polygon><line style="stroke:#A80036;stroke-width:1.0;" x1="64.5" x2="310.5" y1="152.5977" y2="152.5977"></line><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="78" x="71.5" y="147.8555">GET /Patient</text><polygon fill="#A80036" points="75.5,177.9082,65.5,181.9082,75.5,185.9082,71.5,181.9082" style="stroke:#A80036;stroke-width:1.0;"></polygon><line style="stroke:#A80036;stroke-width:1.0;" x1="69.5" x2="315.5" y1="181.9082" y2="181.9082"></line><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="228" x="81.5" y="177.166">response (collection of FHIR Patient)</text></g></svg></p>
+
+<h3 id="get-patient-details">Get patient details</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>FHIR/IHE Framework</th>
+      <th>FHIR Interaction</th>
+      <th>FHIR Profile</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>n/a</td>
+      <td><a href="restful-api.html">RESTful API</a></td>
+      <td><a href="StructureDefinition-PatientPDS.html">PatientPDS</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="https://digital.nhs.uk/developer/api-catalogue/personal-demographics-service-fhir#get-/Patient/-id-">Get patient details</a></p>
+
+<p>&lt;?xml version=”1.0” encoding=”us-ascii” standalone=”no”?&gt;<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="206px" preserveAspectRatio="none" style="width:300px;height:206px;background:#FFFFFF;" version="1.1" viewBox="0 0 300 206" width="300px" zoomAndPan="magnify"><defs><filter height="300%" id="f11p4va5490agh" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"></feGaussianBlur><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"></feColorMatrix><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"></feOffset><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"></feBlend></filter></defs><g><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="134" x="78" y="28.5352">Get patient details</text><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="64" x2="64" y1="77.9766" y2="199.9082"></line><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="233" x2="233" y1="77.9766" y2="199.9082"></line><rect fill="#FEFECE" filter="url(#f11p4va5490agh)" height="30.4883" style="stroke:#A80036;stroke-width:1.5;" width="115" x="5" y="42.4883"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="101" x="12" y="63.0234">PDS Consumer</text><rect fill="#FEFECE" filter="url(#f11p4va5490agh)" height="30.4883" style="stroke:#A80036;stroke-width:1.5;" width="101" x="181" y="42.4883"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="87" x="188" y="63.0234">PDS Supplier</text><rect fill="#EEEEEE" filter="url(#f11p4va5490agh)" height="3" style="stroke:#EEEEEE;stroke-width:1.0;" width="291" x="0" y="108.6318"></rect><line style="stroke:#000000;stroke-width:1.0;" x1="0" x2="291" y1="108.6318" y2="108.6318"></line><line style="stroke:#000000;stroke-width:1.0;" x1="0" x2="291" y1="111.6318" y2="111.6318"></line><rect fill="#EEEEEE" filter="url(#f11p4va5490agh)" height="23.3105" style="stroke:#000000;stroke-width:2.0;" width="176" x="57.5" y="97.9766"></rect><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="158" x="63.5" y="114.5449">FHIR RESTful API - read</text><polygon fill="#A80036" points="221.5,148.5977,231.5,152.5977,221.5,156.5977,225.5,152.5977" style="stroke:#A80036;stroke-width:1.0;"></polygon><line style="stroke:#A80036;stroke-width:1.0;" x1="64.5" x2="227.5" y1="152.5977" y2="152.5977"></line><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="105" x="71.5" y="147.8555">GET /Patient/{id}</text><polygon fill="#A80036" points="75.5,177.9082,65.5,181.9082,75.5,185.9082,71.5,181.9082" style="stroke:#A80036;stroke-width:1.0;"></polygon><line style="stroke:#A80036;stroke-width:1.0;" x1="69.5" x2="232.5" y1="181.9082" y2="181.9082"></line><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="145" x="81.5" y="177.166">response (FHIR Patient)</text></g></svg></p>
+
+<h3 id="update-patient-details">Update patient details</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>FHIR/IHE Framework</th>
+      <th>FHIR Interaction</th>
+      <th>FHIR Profile</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>n/a</td>
+      <td><a href="https://datatracker.ietf.org/doc/html/rfc6902">JSON Patch</a> - Not FHIR Patch</td>
+      <td><a href="StructureDefinition-PatientPDS.html">PatientPDS</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="https://digital.nhs.uk/developer/api-catalogue/personal-demographics-service-fhir#patch-/Patient/-id-">Update patient details</a></p>
+
+<p>&lt;?xml version=”1.0” encoding=”us-ascii” standalone=”no”?&gt;<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="206px" preserveAspectRatio="none" style="width:300px;height:206px;background:#FFFFFF;" version="1.1" viewBox="0 0 300 206" width="300px" zoomAndPan="magnify"><defs><filter height="300%" id="f125cczv8g869h" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"></feGaussianBlur><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"></feColorMatrix><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"></feOffset><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"></feBlend></filter></defs><g><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="160" x="65" y="28.5352">Update patient details</text><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="64" x2="64" y1="77.9766" y2="199.9082"></line><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="233" x2="233" y1="77.9766" y2="199.9082"></line><rect fill="#FEFECE" filter="url(#f125cczv8g869h)" height="30.4883" style="stroke:#A80036;stroke-width:1.5;" width="115" x="5" y="42.4883"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="101" x="12" y="63.0234">PDS Consumer</text><rect fill="#FEFECE" filter="url(#f125cczv8g869h)" height="30.4883" style="stroke:#A80036;stroke-width:1.5;" width="101" x="181" y="42.4883"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="87" x="188" y="63.0234">PDS Supplier</text><rect fill="#EEEEEE" filter="url(#f125cczv8g869h)" height="3" style="stroke:#EEEEEE;stroke-width:1.0;" width="291" x="0" y="108.6318"></rect><line style="stroke:#000000;stroke-width:1.0;" x1="0" x2="291" y1="108.6318" y2="108.6318"></line><line style="stroke:#000000;stroke-width:1.0;" x1="0" x2="291" y1="111.6318" y2="111.6318"></line><rect fill="#EEEEEE" filter="url(#f125cczv8g869h)" height="23.3105" style="stroke:#000000;stroke-width:2.0;" width="92" x="99.5" y="97.9766"></rect><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="74" x="105.5" y="114.5449">JSON Patch</text><polygon fill="#A80036" points="221.5,148.5977,231.5,152.5977,221.5,156.5977,225.5,152.5977" style="stroke:#A80036;stroke-width:1.0;"></polygon><line style="stroke:#A80036;stroke-width:1.0;" x1="64.5" x2="227.5" y1="152.5977" y2="152.5977"></line><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="124" x="71.5" y="147.8555">PATCH /Patient/{id}</text><polygon fill="#A80036" points="75.5,177.9082,65.5,181.9082,75.5,185.9082,71.5,181.9082" style="stroke:#A80036;stroke-width:1.0;"></polygon><line style="stroke:#A80036;stroke-width:1.0;" x1="69.5" x2="232.5" y1="181.9082" y2="181.9082"></line><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="145" x="81.5" y="177.166">response (FHIR Patient)</text></g></svg></p>
+
+<h3 id="get-a-patients-related-people">Get a patient’s related people</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>FHIR/IHE Framework</th>
+      <th>FHIR Interaction</th>
+      <th>FHIR Profile</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>n/a</td>
+      <td><a href="restful-api.html">RESTful API</a></td>
+      <td><a href="StructureDefinition-RelatedPerson.html">UKCore-RelatedPerson</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="https://digital.nhs.uk/developer/api-catalogue/personal-demographics-service-fhir#get-/Patient/-id-/RelatedPerson">Get a patient’s related people</a></p>
+
+<p>&lt;?xml version=”1.0” encoding=”us-ascii” standalone=”no”?&gt;<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="246px" preserveAspectRatio="none" style="width:485px;height:246px;background:#FFFFFF;" version="1.1" viewBox="0 0 485 246" width="485px" zoomAndPan="magnify"><defs><filter height="300%" id="f1s61mr1tzs5qq" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"></feGaussianBlur><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"></feColorMatrix><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"></feOffset><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"></feBlend></filter></defs><g><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="212" x="131.5" y="28.5352">Get a patient's related people</text><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="89" x2="89" y1="77.9766" y2="239.2188"></line><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="386" x2="386" y1="77.9766" y2="239.2188"></line><rect fill="#FEFECE" filter="url(#f1s61mr1tzs5qq)" height="30.4883" style="stroke:#A80036;stroke-width:1.5;" width="115" x="30" y="42.4883"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="101" x="37" y="63.0234">PDS Consumer</text><rect fill="#FEFECE" filter="url(#f1s61mr1tzs5qq)" height="30.4883" style="stroke:#A80036;stroke-width:1.5;" width="101" x="334" y="42.4883"></rect><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="87" x="341" y="63.0234">PDS Supplier</text><rect fill="#EEEEEE" filter="url(#f1s61mr1tzs5qq)" height="3" style="stroke:#EEEEEE;stroke-width:1.0;" width="476" x="0" y="108.6318"></rect><line style="stroke:#000000;stroke-width:1.0;" x1="0" x2="476" y1="108.6318" y2="108.6318"></line><line style="stroke:#000000;stroke-width:1.0;" x1="0" x2="476" y1="111.6318" y2="111.6318"></line><rect fill="#EEEEEE" filter="url(#f1s61mr1tzs5qq)" height="23.3105" style="stroke:#000000;stroke-width:2.0;" width="190" x="143" y="97.9766"></rect><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="172" x="149" y="114.5449">FHIR RESTful API - search</text><polygon fill="#A80036" points="374.5,148.5977,384.5,152.5977,374.5,156.5977,378.5,152.5977" style="stroke:#A80036;stroke-width:1.0;"></polygon><line style="stroke:#A80036;stroke-width:1.0;" x1="89.5" x2="380.5" y1="152.5977" y2="152.5977"></line><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="200" x="96.5" y="147.8555">GET /Patient/{id}/RelatedPerson</text><path d="M5,165.5977 L5,190.5977 L467,190.5977 L467,175.5977 L457,165.5977 L5,165.5977 " fill="#FBFB77" filter="url(#f1s61mr1tzs5qq)" style="stroke:#A80036;stroke-width:1.0;"></path><path d="M457,165.5977 L457,175.5977 L467,175.5977 L457,165.5977 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"></path><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="441" x="11" y="183.166">believed to be equivalent of GET /RelatedPerson?patient:identifier={id}</text><polygon fill="#A80036" points="100.5,217.2188,90.5,221.2188,100.5,225.2188,96.5,221.2188" style="stroke:#A80036;stroke-width:1.0;"></polygon><line style="stroke:#A80036;stroke-width:1.0;" x1="94.5" x2="385.5" y1="221.2188" y2="221.2188"></line><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="273" x="106.5" y="216.4766">response (collection of FHIR RelatedPerson)</text></g></svg></p>
+
+<h3 id="api-documentation-capabilitystatement">API Documentation (CapabilityStatement)</h3>
+
+<ol>
+  <li>
+    <p>Copy the JSON version of <a href="CapabilityStatement-Personal-Demographics-Service-Provider.html">CapabilityStatement-Personal-Demographics-Service-Provider</a></p>
+  </li>
+  <li>
+    <p>Paste this into <a href="https://nhsdigital.github.io/IOPS-Validation-UI/api">FHIR Development (Experimental)</a></p>
+  </li>
+  <li>
+    <p>Click ‘Refresh OAS’</p>
+  </li>
+  <li>
+    <p>An OAS representation of the FHIR CapabilityStatement will be rendered on the right hand side of the screen.</p>
+  </li>
+  <li>
+    <p>Click ‘Try it out’ to see an API demonstration.</p>
+  </li>
+</ol>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.england.nhs.uk/">NHS England</a>.  Package uk.nhs.england#0.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Feb 3, 2024 07:42+0000">2024-02-03</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+            <div style="color: #333333" >
+
+          Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
+                 <a style="color: #81BEF7" href="qa.html">QA Report</a> 
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
+<div>
+</div>
+
+</div>
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

@@ -8,9 +8,9 @@
   "url" : "https://fhir.nhs.uk/England/ImplementationGuide/uk.nhs.england",
   "version" : "0.0.1",
   "name" : "NHSEnglandInteroperability",
-  "title" : "Interoperability Standards Documentation - Discovery",
+  "title" : "Interoperability Standards - Discovery",
   "status" : "draft",
-  "date" : "2024-02-01T14:02:06+00:00",
+  "date" : "2024-02-03T07:42:11+00:00",
   "publisher" : "NHS England",
   "contact" : [{
     "name" : "NHS England",
@@ -60,6 +60,12 @@
     "uri" : "https://simplifier.net/guide/nhs-england-implementation-guide-version-history",
     "packageId" : "fhir.r4.nhsengland.stu1",
     "version" : "1.1.0"
+  },
+  {
+    "id" : "hl7_fhir_uv_sdc",
+    "uri" : "http://hl7.org/fhir/uv/sdc/ImplementationGuide/hl7.fhir.uv.sdc",
+    "packageId" : "hl7.fhir.uv.sdc",
+    "version" : "3.0.0"
   }],
   "definition" : {
     "extension" : [{
@@ -631,13 +637,26 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Patient"
+        "valueString" : "CapabilityStatement"
       }],
       "reference" : {
-        "reference" : "Patient/example"
+        "reference" : "CapabilityStatement/Personal-Demographics-Service-Provider"
       },
-      "name" : "example",
-      "exampleBoolean" : true
+      "name" : "NHS England Personal Demographics Service Provider",
+      "description" : "NHS England Personal Demographics Service Provider  which has an API on Patient and RelatedPerson",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CapabilityStatement"
+      }],
+      "reference" : {
+        "reference" : "CapabilityStatement/Validated-Relationship-Service-Provider"
+      },
+      "name" : "NHS England Validated Relationship Service Provider",
+      "description" : "This is an Open API specification for the Validated Relationship Service which has an API on RelatedPerson",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -678,6 +697,39 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/Patient-NHS-9459304130-Jane-Smith"
+      },
+      "name" : "Patient-NHS-9459304130-Jane-Smith",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/Patient-NHS-9912003814-Michael-SMITHIES"
+      },
+      "name" : "Patient-NHS-9912003814-Michael-SMITHIES",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/Patient-PDS-NHS-9000000017-Jayne-Smith"
+      },
+      "name" : "Patient-PDS-NHS-9000000017-Jayne-Smith",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -690,6 +742,51 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/Questionnaire-Proxy-Access-Request"
+      },
+      "name" : "Proxy Access Request Form",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/RelatedPerson"
+      },
+      "name" : "RelatedPerson",
+      "description" : "England RelatedPerson",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/RelatedPerson-NHS-9449304130-Jane-Smith"
+      },
+      "name" : "RelatedPerson-NHS-9449304130-Jane-Smith",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/RelatedPerson-PDS-NHS-90000000009-Jane-Smith"
+      },
+      "name" : "RelatedPerson-PDS-NHS-90000000009-Jane-Smith",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -697,6 +794,18 @@
       },
       "name" : "UK Core Organization",
       "description" : "This profile defines the UK constraints and extensions on the International FHIR resource [Organization](https://hl7.org/fhir/R4/Organization.html).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/UKCore-RelatedPerson"
+      },
+      "name" : "UK Core RelatedPerson",
+      "description" : "This profile defines the UK constraints and extensions on the International FHIR resource [RelatedPerson](https://hl7.org/fhir/R4/RelatedPerson.html).",
       "exampleBoolean" : false
     },
     {
@@ -774,6 +883,33 @@
       {
         "extension" : [{
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "national-proxy-service.html"
+        }],
+        "nameUrl" : "national-proxy-service.html",
+        "title" : "National Proxy Service",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "personal-demographics-service.html"
+        }],
+        "nameUrl" : "personal-demographics-service.html",
+        "title" : "Personal Demographics Service",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "restful-api.html"
+        }],
+        "nameUrl" : "restful-api.html",
+        "title" : "Restful Api",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
           "valueUrl" : "testing.html"
         }],
         "nameUrl" : "testing.html",
@@ -787,6 +923,15 @@
         }],
         "nameUrl" : "validation.html",
         "title" : "Validation",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "workflow.html"
+        }],
+        "nameUrl" : "workflow.html",
+        "title" : "Workflow",
         "generation" : "markdown"
       }]
     },

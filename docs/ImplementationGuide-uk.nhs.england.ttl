@@ -15,9 +15,9 @@
   fhir:url [ fhir:v "https://fhir.nhs.uk/England/ImplementationGuide/uk.nhs.england"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.0.1"] ; # 
   fhir:name [ fhir:v "NHSEnglandInteroperability"] ; # 
-  fhir:title [ fhir:v "Interoperability Standards Documentation - Discovery"] ; # 
+  fhir:title [ fhir:v "Interoperability Standards - Discovery"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-02-01T14:02:06+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-02-03T07:42:11+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "NHS England"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "NHS England" ] ;
@@ -76,6 +76,14 @@
      ] ;
      fhir:packageId [ fhir:v "fhir.r4.nhsengland.stu1" ] ;
      fhir:version [ fhir:v "1.1.0" ]
+  ] [
+     fhir:id [ fhir:v "hl7_fhir_uv_sdc" ] ;
+     fhir:uri [
+       fhir:v "http://hl7.org/fhir/uv/sdc/ImplementationGuide/hl7.fhir.uv.sdc"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/uv/sdc/ImplementationGuide/hl7.fhir.uv.sdc>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.fhir.uv.sdc" ] ;
+     fhir:version [ fhir:v "3.0.0" ]
   ] ) ; # 
   fhir:definition [
      fhir:extension ( [
@@ -547,14 +555,27 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Patient" ]
+         fhir:value [ fhir:v "CapabilityStatement" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://fhir.nhs.uk/England/Patient/example> ;
-         fhir:reference [ fhir:v "Patient/example" ]
+         fhir:link <https://fhir.nhs.uk/England/CapabilityStatement/Personal-Demographics-Service-Provider> ;
+         fhir:reference [ fhir:v "CapabilityStatement/Personal-Demographics-Service-Provider" ]
        ] ;
-       fhir:name [ fhir:v "example" ] ;
-       fhir:example [ fhir:v "true"^^xsd:boolean ]
+       fhir:name [ fhir:v "NHS England Personal Demographics Service Provider" ] ;
+       fhir:description [ fhir:v "NHS England Personal Demographics Service Provider  which has an API on Patient and RelatedPerson" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CapabilityStatement" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.nhs.uk/England/CapabilityStatement/Validated-Relationship-Service-Provider> ;
+         fhir:reference [ fhir:v "CapabilityStatement/Validated-Relationship-Service-Provider" ]
+       ] ;
+       fhir:name [ fhir:v "NHS England Validated Relationship Service Provider" ] ;
+       fhir:description [ fhir:v "This is an Open API specification for the Validated Relationship Service which has an API on RelatedPerson" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -594,6 +615,39 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Patient" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.nhs.uk/England/Patient/Patient-NHS-9459304130-Jane-Smith> ;
+         fhir:reference [ fhir:v "Patient/Patient-NHS-9459304130-Jane-Smith" ]
+       ] ;
+       fhir:name [ fhir:v "Patient-NHS-9459304130-Jane-Smith" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Patient" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.nhs.uk/England/Patient/Patient-NHS-9912003814-Michael-SMITHIES> ;
+         fhir:reference [ fhir:v "Patient/Patient-NHS-9912003814-Michael-SMITHIES" ]
+       ] ;
+       fhir:name [ fhir:v "Patient-NHS-9912003814-Michael-SMITHIES" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Patient" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.nhs.uk/England/Patient/Patient-PDS-NHS-9000000017-Jayne-Smith> ;
+         fhir:reference [ fhir:v "Patient/Patient-PDS-NHS-9000000017-Jayne-Smith" ]
+       ] ;
+       fhir:name [ fhir:v "Patient-PDS-NHS-9000000017-Jayne-Smith" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
@@ -606,6 +660,51 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Questionnaire" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.nhs.uk/England/Questionnaire/Questionnaire-Proxy-Access-Request> ;
+         fhir:reference [ fhir:v "Questionnaire/Questionnaire-Proxy-Access-Request" ]
+       ] ;
+       fhir:name [ fhir:v "Proxy Access Request Form" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.nhs.uk/England/StructureDefinition/RelatedPerson> ;
+         fhir:reference [ fhir:v "StructureDefinition/RelatedPerson" ]
+       ] ;
+       fhir:name [ fhir:v "RelatedPerson" ] ;
+       fhir:description [ fhir:v "England RelatedPerson" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "RelatedPerson" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.nhs.uk/England/RelatedPerson/RelatedPerson-NHS-9449304130-Jane-Smith> ;
+         fhir:reference [ fhir:v "RelatedPerson/RelatedPerson-NHS-9449304130-Jane-Smith" ]
+       ] ;
+       fhir:name [ fhir:v "RelatedPerson-NHS-9449304130-Jane-Smith" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "RelatedPerson" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.nhs.uk/England/RelatedPerson/RelatedPerson-PDS-NHS-90000000009-Jane-Smith> ;
+         fhir:reference [ fhir:v "RelatedPerson/RelatedPerson-PDS-NHS-90000000009-Jane-Smith" ]
+       ] ;
+       fhir:name [ fhir:v "RelatedPerson-PDS-NHS-90000000009-Jane-Smith" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
@@ -614,6 +713,18 @@
        ] ;
        fhir:name [ fhir:v "UK Core Organization" ] ;
        fhir:description [ fhir:v "This profile defines the UK constraints and extensions on the International FHIR resource [Organization](https://hl7.org/fhir/R4/Organization.html)." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.nhs.uk/England/StructureDefinition/UKCore-RelatedPerson> ;
+         fhir:reference [ fhir:v "StructureDefinition/UKCore-RelatedPerson" ]
+       ] ;
+       fhir:name [ fhir:v "UK Core RelatedPerson" ] ;
+       fhir:description [ fhir:v "This profile defines the UK constraints and extensions on the International FHIR resource [RelatedPerson](https://hl7.org/fhir/R4/RelatedPerson.html)." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -685,6 +796,30 @@
        ] [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "national-proxy-service.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "national-proxy-service.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "National Proxy Service" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "personal-demographics-service.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "personal-demographics-service.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Personal Demographics Service" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "restful-api.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "restful-api.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Restful Api" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
            fhir:value [ fhir:v "testing.html"^^xsd:anyURI ]
          ] ) ;
          fhir:name [ fhir:v "testing.html"^^xsd:anyURI ] ;
@@ -697,6 +832,14 @@
          ] ) ;
          fhir:name [ fhir:v "validation.html"^^xsd:anyURI ] ;
          fhir:title [ fhir:v "Validation" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "workflow.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "workflow.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Workflow" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] )
      ] ;
