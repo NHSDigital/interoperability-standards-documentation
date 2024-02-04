@@ -146,9 +146,6 @@
         <a href="interoperability-standards.html">Interoperability Standards</a>
       </li>
       <li>
-        <a href="restful-api.html">RESTful API</a>
-      </li>
-      <li>
         <a href="testing.html">Conformance and Testing (FHIR)</a>
       </li>
     </ul>
@@ -171,7 +168,13 @@
         <a href="diagnostics-module.html">Diagnostics</a>
       </li>
       <li>
+        <a href="medications-module.html">Medications</a>
+      </li>
+      <li>
         <a href="workflow.html">Workflow</a>
+      </li>
+      <li>
+        <a href="structured-data-capture.html">Structured Data Capture</a>
       </li>
       <li>
         <a href="validation.html">FHIR Validation</a>
@@ -255,20 +258,23 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#clinical-document-standards" id="markdown-toc-clinical-document-standards">Clinical Document Standards</a></li>
+  <li><a href="#interoperability-standards" id="markdown-toc-interoperability-standards">Interoperability Standards</a></li>
+</ul>
+
 </div>
 
-<h4 id="clinical-document-standards">Clinical Document Standards</h4>
+<h3 id="clinical-document-standards">Clinical Document Standards</h3>
 
 <p>See <a href="documents-module.html#clinical-document-standards">Clinical Document Standards</a></p>
 
-<h4 id="interoperability-standards">Interoperability Standards</h4>
+<h3 id="interoperability-standards">Interoperability Standards</h3>
 
 <ul>
   <li>INTEROPen and HL7 UK standards include:
     <ul>
-      <li><a href="https://build.fhir.org/ig/HL7-UK/UK-Core-Access/">UK Core FHIR Access</a> This HL7 FHIR Implementation Guide specifies the requirements for a RESTful endpoint providing read-only access for direct care and subject of care access within the UK (covering patient demographics and medications).</li>
       <li><code class="language-plaintext highlighter-rouge">deprecated</code> <a href="https://nhsconnect.github.io/CareConnectAPI/index.html">Care Connect RESTful API (FHIR STU3)</a> which defines a minimum/base API contract for FHIR RESTful servers for sharing read only patient data and documents.</li>
     </ul>
   </li>
@@ -305,7 +311,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.england.nhs.uk/">NHS England</a>.  Package uk.nhs.england#0.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Feb 4, 2024 08:14+0000">2024-02-04</span>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.england.nhs.uk/">NHS England</a>.  Package uk.nhs.england#0.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Feb 4, 2024 09:46+0000">2024-02-04</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <div style="color: #333333" >

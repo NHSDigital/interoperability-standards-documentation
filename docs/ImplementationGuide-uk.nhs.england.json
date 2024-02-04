@@ -10,7 +10,7 @@
   "name" : "NHSEnglandInteroperability",
   "title" : "Interoperability Standards - Discovery",
   "status" : "draft",
-  "date" : "2024-02-04T08:14:02+00:00",
+  "date" : "2024-02-04T09:46:21+00:00",
   "publisher" : "NHS England",
   "contact" : [{
     "name" : "NHS England",
@@ -934,6 +934,15 @@
       {
         "extension" : [{
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "medications-module.html"
+        }],
+        "nameUrl" : "medications-module.html",
+        "title" : "Medications Module",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
           "valueUrl" : "multicast-notification-service.html"
         }],
         "nameUrl" : "multicast-notification-service.html",
@@ -965,6 +974,15 @@
         }],
         "nameUrl" : "restful-api.html",
         "title" : "Restful Api",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "structured-data-capture.html"
+        }],
+        "nameUrl" : "structured-data-capture.html",
+        "title" : "Structured Data Capture",
         "generation" : "markdown"
       },
       {

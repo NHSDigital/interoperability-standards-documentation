@@ -1,0 +1,37 @@
+@startuml
+
+
+title Security and Privacy
+
+  object Patient {
+    identifier: NHS Number
+  }
+
+    object Organization {
+      identifier: ODS Code
+    }
+
+package SecurityAndPrivacy as "Security and Privacy" {
+
+    object Consent {
+      patient: the subject of the consent
+      organization : custodian of the consent
+    }
+
+    object AuditEvent {
+
+
+    }
+
+    object Provenance {
+
+    }
+
+}
+
+
+Consent "patient" }o--o|  Patient
+Consent "organization" }o--o|  Organization
+
+
+@enduml

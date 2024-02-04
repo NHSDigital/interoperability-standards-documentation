@@ -54,14 +54,15 @@ menu:
   Documentation:
     Background: background.html
     Interoperability Standards: interoperability-standards.html
-    RESTful API: restful-api.html
     Conformance and Testing (FHIR): testing.html
   Design:
     Administration : administration-module.html
-    Documents: documents-module.html
+    Documents (Clinical): documents-module.html
     Clinical: clinical-module.html
     Diagnostics: diagnostics-module.html
+    Medications: medications-module.html
     Workflow: workflow.html
+    Structured Data Capture: structured-data-capture.html
     FHIR Validation: validation.html
   Build:
     National Proxy Service: national-proxy-service.html

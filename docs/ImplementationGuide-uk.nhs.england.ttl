@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "NHSEnglandInteroperability"] ; # 
   fhir:title [ fhir:v "Interoperability Standards - Discovery"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-02-04T08:14:02+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-02-04T09:46:21+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "NHS England"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "NHS England" ] ;
@@ -862,6 +862,14 @@
        ] [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "medications-module.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "medications-module.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Medications Module" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
            fhir:value [ fhir:v "multicast-notification-service.html"^^xsd:anyURI ]
          ] ) ;
          fhir:name [ fhir:v "multicast-notification-service.html"^^xsd:anyURI ] ;
@@ -890,6 +898,14 @@
          ] ) ;
          fhir:name [ fhir:v "restful-api.html"^^xsd:anyURI ] ;
          fhir:title [ fhir:v "Restful Api" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "structured-data-capture.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "structured-data-capture.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Structured Data Capture" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:extension ( [
