@@ -10,7 +10,7 @@
   <name value="NHSEnglandInteroperability"/>
   <title value="Interoperability Standards - Discovery"/>
   <status value="draft"/>
-  <date value="2024-02-03T20:15:25+00:00"/>
+  <date value="2024-02-04T08:14:02+00:00"/>
   <publisher value="NHS England"/>
   <contact>
     <name value="NHS England"/>
@@ -706,10 +706,26 @@
       </page>
       <page>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="documents.html"/>
+          <valueUrl value="clinical-module.html"/>
         </extension>
-        <nameUrl value="documents.html"/>
-        <title value="Documents"/>
+        <nameUrl value="clinical-module.html"/>
+        <title value="Clinical Module"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="diagnostics-module.html"/>
+        </extension>
+        <nameUrl value="diagnostics-module.html"/>
+        <title value="Diagnostics Module"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="documents-module.html"/>
+        </extension>
+        <nameUrl value="documents-module.html"/>
+        <title value="Documents Module"/>
         <generation value="markdown"/>
       </page>
       <page>

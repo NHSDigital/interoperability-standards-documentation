@@ -149,17 +149,11 @@ Volume 2 will generally use other standards primarily HL7. For example the use c
 
 #### IHE + HL7 FHIR
 
-- IHE HL7 FHIR based frameworks include:
-  - [Patient Demographics Query for mobile (PDQm)](https://profiles.ihe.net/ITI/PDQm/index.html) The Patient Demographics Query for Mobile (PDQm) Profile defines a lightweight RESTful interface to a patient demographics supplier leveraging technologies readily available to mobile applications and lightweight browser based applications.
-  - [Query for Existing Data for Mobile (QEDm)](https://build.fhir.org/ig/IHE/QEDm/branches/master/index.html) The Query for Existing Data for Mobile Profile (QEDm) supports dynamic queries for clinical data elements, including observations, allergy and intolerances, problems, diagnostic results, medications, immunizations, procedures, encounters and provenance by making the information widely available to other systems within and across enterprises to support provision of better clinical care. It defines a transaction used to query a list of specific data elements, persisted as FHIR resources.
-  - [Mobile Health Document Sharing (MHDS)](https://profiles.ihe.net/ITI/MHDS/index.html) This Implementation Guide shows how to build a Document Sharing Exchange using IHE-profiled FHIR® standard, rather than the legacy IHE profiles that are dominated by XDS and HL7® v2. This Implementation Guide assembles other IHE Implementation guides (Profiles) and defines a Document Registry Actor.
-  - [Mobile access to Health Documents (MHD)](https://profiles.ihe.net/ITI/MHD/index.html) Applications specific to resource-constrained and mobile devices are an emerging platform for healthcare-enhancing software. The MHD Profile is not limited to mobile devices, using the term “mobile” only as a grouping for mobile applications, mobile devices or any other systems that are resource and platform-constrained. These constraints may drive the implementer to use simpler network interface technology. There are numerous deployed implementations of [Document Sharing Health Information Exchange](https://profiles.ihe.net/ITI/HIE-Whitepaper/index.html) that need a simpler network interface technology, for example those hosted by a Health Information Exchange (HIE), large health provider electronic health record (EHR), or personal health record (PHR).
-  - [Mobile Care Services Discovery (mCSD)](https://profiles.ihe.net/ITI/mCSD/index.html) The Mobile Care Services Discovery (mCSD) Profile supports RESTful queries across related care services resources. The loosely coupled design and flexible querying capability of the mCSD Profile means it can be deployed within a variety of eHealth architectures and support a wide array of care workflows.
-
+Several IHE and HL7 based frameworks are listed in the Design pages.
 
 #### IHE Cross Enterprise Document Sharing (XDS)
 
-[Cross-Enterprise Document Sharing (XDS.b) ](https://profiles.ihe.net/ITI/TF/Volume1/ch-10.html) is not based on Hl7 Standards and uses a XML+SOAP based framework. 
+[Cross-Enterprise Document Sharing (XDS.b) ](https://profiles.ihe.net/ITI/TF/Volume1/ch-10.html) is not based on HL7 Standards and uses a XML+SOAP based interactions. 
 
 See [Document Interoperability](documents.html) for details on how XDS relates to other data and interoperability standards.
 
@@ -179,7 +173,7 @@ IHE and HL7 are working on creating a better alignment with HL7 Standards, detai
 
 [openEHR](https://openehr.org/) openEHR is a non‑profit organisation that publishes technical standards for an EHR platform along with domain‑developed clinical models to define content. The principal architectural concepts include the lifelong, patient‑centric shared health record, future‑proof data and clinical process support.
 
-It is a data standard and a system for implementing health care records and should not be confused with interoperability standards are focused on interactions between these systems.
+It is a data standard and a system for implementing health care records and should not be confused with interoperability standards which are focused on interactions between these systems.
 openEHR (archetypes and templates) may provide definitions for interoperability standards, these would likely use **FHIR Questionnaire** as the definition resource in interoperability standards.
 Many openEHR implementations will utilise interoperability standards listed on this page.
 

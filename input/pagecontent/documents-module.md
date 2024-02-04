@@ -33,7 +33,7 @@ Composition are related to [Document Metadata](documents.html#document-metadata)
 | PRSB                    | [Document Naming](https://theprsb.org/standards/documentnaming/)                                                                                                                   |
 | openEHR / Apperta       | [XDS metadata](https://ckm.apperta.org/ckm/archetypes/1051.32.672)                                                                                                                 |    
 
-#### Data Standards (PRSB)
+### Data Standards
 
 Most Clinical Document standards used by NHS England can be found on [PRSB Standards](https://theprsb.org/standards/)
 
@@ -49,20 +49,23 @@ Key standards include:
 - Pharmacy 
   - [Community Pharmacy Standard](https://theprsb.org/standards/communitypharmacy/)
 
-#### NHS England Interoperability Standards
+### Clinical Document Standards
+
+#### NHS England
 
 Are mostly based on Data Standards in the previous section. They do combine FHIR concpets of [Messaging](https://hl7.org/fhir/STU3/messaging.html) and [Documents](https://hl7.org/fhir/STU3/documents.html), in the context of this guide we are only referring to the [Documents](https://hl7.org/fhir/STU3/documents.html) aspect and not ITK3.
 
-- Outpatient Letters
-  - [Outpatient Clinic Letter](https://developer.nhs.uk/apis/itk3tocoutpatientletter-2-9-0/)
-- Discharge Report
-  - [Acute Inpatient Discharge](https://developer.nhs.uk/apis/itk3tocedischarge-2-9-0/)
-  - [Emergency Care Discharge](https://developer.nhs.uk/apis/itk3emergencycareedischarge-2-9-0/)
-  - [Mental Health Discharge](https://developer.nhs.uk/apis/itk3tocmentalhealthedischarge-2-9-0/)
-- Pharmacy
+- Transfer of Care (based on Care Connect/FHIR STU3 which is `deprecated`)
+  - Outpatient Letters
+    - [Outpatient Clinic Letter](https://developer.nhs.uk/apis/itk3tocoutpatientletter-2-9-0/)
+  - Discharge Report
+    - [Acute Inpatient Discharge](https://developer.nhs.uk/apis/itk3tocedischarge-2-9-0/)
+    - [Emergency Care Discharge](https://developer.nhs.uk/apis/itk3emergencycareedischarge-2-9-0/)
+    - [Mental Health Discharge](https://developer.nhs.uk/apis/itk3tocmentalhealthedischarge-2-9-0/)
+- Pharmacy (based on Care Connect/FHIR STU3 which is `deprecated`)
   - [Digital Medicine - FHIR](https://digital.nhs.uk/developer/api-catalogue/digital-medicine-fhir)
 
-#### International Interoperability Standards
+#### International
 
 The following standards are all based on FHIR R4
 
@@ -72,3 +75,9 @@ The following standards are all based on FHIR R4
   - [HL7 Europe Laboratory Report](https://build.fhir.org/ig/hl7-eu/laboratory/) Clinical laboratory results play an important role in diagnosis, treatment, and follow-up of patients. The availability of high quality test results, and the capacity of sharing them, is therefore essential being often the basis for clinical decision making. For this reason the Laboratory has been selected as one of the priority domains for the European EHR eXchange Format (E-EHRxF).
 - Pharmacy
   - Europe [Gravitate Health FHIR Implementation Guide (FHIR R4)](https://build.fhir.org/ig/hl7-eu/gravitate-health-ips/) How to integrate patient health information from the International Patient Summary (IPS) with medicinal product information from regulatory approved electronic Product Information (ePI) documents. Together, the IPS and ePI will facilitate the creation of new digital platforms that give patients a more accessible way of acquiring trusted health and medicinal product Information.
+
+### Interoperability Standards
+
+- [Mobile Health Document Sharing (MHDS)](https://profiles.ihe.net/ITI/MHDS/index.html) This Implementation Guide shows how to build a Document Sharing Exchange using IHE-profiled FHIR® standard, rather than the legacy IHE profiles that are dominated by XDS and HL7® v2. This Implementation Guide assembles other IHE Implementation guides (Profiles) and defines a Document Registry Actor.
+- [Mobile access to Health Documents (MHD)](https://profiles.ihe.net/ITI/MHD/index.html) Applications specific to resource-constrained and mobile devices are an emerging platform for healthcare-enhancing software. The MHD Profile is not limited to mobile devices, using the term “mobile” only as a grouping for mobile applications, mobile devices or any other systems that are resource and platform-constrained. These constraints may drive the implementer to use simpler network interface technology. There are numerous deployed implementations of [Document Sharing Health Information Exchange](https://profiles.ihe.net/ITI/HIE-Whitepaper/index.html) that need a simpler network interface technology, for example those hosted by a Health Information Exchange (HIE), large health provider electronic health record (EHR), or personal health record (PHR).
+

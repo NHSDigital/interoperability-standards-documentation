@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Documents - Interoperability Standards - Discovery v0.0.1</title>
+    <title>Clinical Module - Interoperability Standards - Discovery v0.0.1</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -135,7 +135,7 @@
     <a href="toc.html">Table of Contents</a>
   </li>
   <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Introduction
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Documentation
       <b class="caret"></b>
     </a>
     <ul class="dropdown-menu">
@@ -148,6 +148,9 @@
       <li>
         <a href="restful-api.html">RESTful API</a>
       </li>
+      <li>
+        <a href="testing.html">Conformance and Testing (FHIR)</a>
+      </li>
     </ul>
   </li>
   <li class="dropdown">
@@ -159,10 +162,19 @@
         <a href="administration-module.html">Administration</a>
       </li>
       <li>
-        <a href="documents.html">Documents</a>
+        <a href="documents-module.html">Documents</a>
+      </li>
+      <li>
+        <a href="clinical-module.html">Clinical</a>
+      </li>
+      <li>
+        <a href="diagnostics-module.html">Diagnostics</a>
       </li>
       <li>
         <a href="workflow.html">Workflow</a>
+      </li>
+      <li>
+        <a href="validation.html">FHIR Validation</a>
       </li>
     </ul>
   </li>
@@ -179,19 +191,6 @@
       </li>
       <li>
         <a href="multicast-notification-service.html">Multicast Notification Service</a>
-      </li>
-    </ul>
-  </li>
-  <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Test
-      <b class="caret"></b>
-    </a>
-    <ul class="dropdown-menu">
-      <li>
-        <a href="testing.html">Conformance and Testing (FHIR)</a>
-      </li>
-      <li>
-        <a href="validation.html">FHIR Validation</a>
       </li>
     </ul>
   </li>
@@ -220,7 +219,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Documents</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Clinical Module</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -241,7 +240,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </style>
 <div class="col-12">
   <!--ReleaseHeader--><p id="publish-box">Interoperability Standards - Discovery - Local Development build (v0.0.1) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://fhir.nhs.uk/England/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
-  <h2>Documents</h2>
+  <h2>Clinical Module</h2>
   
 
 
@@ -256,180 +255,27 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div class="markdown-toc">
-<ul id="markdown-toc">
-  <li><a href="#document-metadata" id="markdown-toc-document-metadata">Document Metadata</a></li>
-  <li><a href="#clinical-documents-compositions" id="markdown-toc-clinical-documents-compositions">Clinical Documents (Compositions)</a></li>
-</ul>
-
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
 </div>
 
-<h3 id="document-metadata">Document Metadata</h3>
+<h4 id="clinical-document-standards">Clinical Document Standards</h4>
 
-<blockquote>
-  <p>NHS England does not currently have a <strong>data standard</strong> for <code class="language-plaintext highlighter-rouge">Document Metadata</code></p>
+<p>See <a href="documents-module.html#clinical-document-standards">Clinical Document Standards</a></p>
 
-  <p>It is suggested until this is produced, the model in <a href="https://simplifier.net/resolve?fhirVersion=R4&amp;scope=fhir.r4.ukcore.stu3.currentbuild&amp;canonical=https://fhir.hl7.org.uk/StructureDefinition/UKCore-DocumentReference">UK Core DocumentReference</a> should be followed for all standards (IHE XDS, openEHR and HL7)</p>
-</blockquote>
-
-<p><a href="https://profiles.ihe.net/ITI/papers/metadata/index.html">Document Metadata</a> is present in other <strong>data standards</strong>. The table below shows <code class="language-plaintext highlighter-rouge">Document Metadata</code> relationships between interoperability standards.</p>
-
-<table>
-  <thead>
-    <tr>
-      <th>Data Standard</th>
-      <th>Notes</th>
-      <th> </th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>HL7 FHIR DocumentReference</td>
-      <td><a href="https://hl7.org/fhir/R4/documentreference-mappings.html#xds">XDS metadata equivalent</a></td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>HL7 UK Core DocumentReference</td>
-      <td><a href="https://simplifier.net/resolve?fhirVersion=R4&amp;scope=fhir.r4.ukcore.stu3.currentbuild&amp;canonical=https://fhir.hl7.org.uk/StructureDefinition/UKCore-DocumentReference">UK Core DocumentReference</a></td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>HL7 v2 MDM Message</td>
-      <td><a href="https://hl7.org/fhir/R4/documentreference-mappings.html#v2">FHIR DocumentReference and HL7 v2 mapping</a></td>
-      <td> </td>
-    </tr>
-  </tbody>
-</table>
-
-<h3 id="clinical-documents-compositions">Clinical Documents (Compositions)</h3>
-
-<p>Clinical Documents is a concept found in clinical informatics and is used as a type of document in XDS systems in the same manner as other document formats (e.g. PDF, DICOM, etc). The table below shows where documentation on compositions can be found.</p>
-
-<table>
-  <thead>
-    <tr>
-      <th>Standards</th>
-      <th>References</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>HL7 FHIR</td>
-      <td><a href="https://hl7.org/fhir/R4/documents.html">FHIR Documents</a></td>
-    </tr>
-    <tr>
-      <td>HL7 CDA</td>
-      <td><a href="https://www.hl7.org.uk/wp-content/uploads/HL7UK_Media/Documents/Technical/A-basic-view-of-CDA-v3.doc">A basic view of Clinical Document Architecture</a></td>
-    </tr>
-    <tr>
-      <td>openEHR</td>
-      <td><a href="https://specifications.openehr.org/releases/RM/latest/ehr.html#_compositions">Compositions</a></td>
-    </tr>
-  </tbody>
-</table>
-
-<p>Composition are related to <a href="documents.html#document-metadata">Document Metadata</a>, the table below shows the relationships between data (and interoperability) standards.</p>
-
-<table>
-  <thead>
-    <tr>
-      <th>Data Standard</th>
-      <th>Notes</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>HL7 FHIR Composition</td>
-      <td><a href="https://hl7.org/fhir/R4/composition-mappings.html#fhirdocumentreference">FHIR Composition and DocumentReference mapping</a></td>
-    </tr>
-    <tr>
-      <td>HL7 CDA</td>
-      <td><a href="https://hl7.org/fhir/R4/composition-mappings.html#cda">FHIR Composition and CDA mapping</a></td>
-    </tr>
-    <tr>
-      <td>HL7 UK Core Composition</td>
-      <td><a href="https://simplifier.net/resolve?fhirVersion=R4&amp;scope=fhir.r4.ukcore.stu3.currentbuild&amp;canonical=https://fhir.hl7.org.uk/StructureDefinition/UKCore-Composition">UK Core Composition</a></td>
-    </tr>
-    <tr>
-      <td>PRSB</td>
-      <td><a href="https://theprsb.org/standards/documentnaming/">Document Naming</a></td>
-    </tr>
-    <tr>
-      <td>openEHR / Apperta</td>
-      <td><a href="https://ckm.apperta.org/ckm/archetypes/1051.32.672">XDS metadata</a></td>
-    </tr>
-  </tbody>
-</table>
-
-<h4 id="data-standards-prsb">Data Standards (PRSB)</h4>
-
-<p>Most Clinical Document standards used by NHS England can be found on <a href="https://theprsb.org/standards/">PRSB Standards</a></p>
-
-<p>Key standards include:</p>
+<h4 id="interoperability-standards">Interoperability Standards</h4>
 
 <ul>
-  <li><a href="https://theprsb.org/standards/outpatientletterstandard/">Outpatient Letters</a></li>
-  <li>Discharge Report
+  <li>INTEROPen and HL7 UK standards include:
     <ul>
-      <li><a href="https://theprsb.org/standards/edischargesummary/]">eDischarge Summary Standard</a></li>
-      <li><a href="https://theprsb.org/standards/emergencycaredischarge/">Emergency Care Discharge Standard</a></li>
-      <li><a href="https://theprsb.org/standards/mentalhealth/">Mental health inpatient discharge</a></li>
+      <li><a href="https://build.fhir.org/ig/HL7-UK/UK-Core-Access/">UK Core FHIR Access</a> This HL7 FHIR Implementation Guide specifies the requirements for a RESTful endpoint providing read-only access for direct care and subject of care access within the UK (covering patient demographics and medications).</li>
+      <li><code class="language-plaintext highlighter-rouge">deprecated</code> <a href="https://nhsconnect.github.io/CareConnectAPI/index.html">Care Connect RESTful API (FHIR STU3)</a> which defines a minimum/base API contract for FHIR RESTful servers for sharing read only patient data and documents.</li>
     </ul>
   </li>
-  <li>Referral Letters
+  <li>International standards include:
     <ul>
-      <li><a href="https://theprsb.org/standards/clinicalreferralinformation-2/">Clinical referral information</a></li>
-    </ul>
-  </li>
-  <li>Pharmacy
-    <ul>
-      <li><a href="https://theprsb.org/standards/communitypharmacy/">Community Pharmacy Standard</a></li>
-    </ul>
-  </li>
-</ul>
-
-<h4 id="nhs-england-interoperability-standards">NHS England Interoperability Standards</h4>
-
-<p>Are mostly based on Data Standards in the previous section. They do combine FHIR concpets of <a href="https://hl7.org/fhir/STU3/messaging.html">Messaging</a> and <a href="https://hl7.org/fhir/STU3/documents.html">Documents</a>, in the context of this guide we are only referring to the <a href="https://hl7.org/fhir/STU3/documents.html">Documents</a> aspect and not ITK3.</p>
-
-<ul>
-  <li>Outpatient Letters
-    <ul>
-      <li><a href="https://developer.nhs.uk/apis/itk3tocoutpatientletter-2-9-0/">Outpatient Clinic Letter</a></li>
-    </ul>
-  </li>
-  <li>Discharge Report
-    <ul>
-      <li><a href="https://developer.nhs.uk/apis/itk3tocedischarge-2-9-0/">Acute Inpatient Discharge</a></li>
-      <li><a href="https://developer.nhs.uk/apis/itk3emergencycareedischarge-2-9-0/">Emergency Care Discharge</a></li>
-      <li><a href="https://developer.nhs.uk/apis/itk3tocmentalhealthedischarge-2-9-0/">Mental Health Discharge</a></li>
-    </ul>
-  </li>
-  <li>Pharmacy
-    <ul>
-      <li><a href="https://digital.nhs.uk/developer/api-catalogue/digital-medicine-fhir">Digital Medicine - FHIR</a></li>
-    </ul>
-  </li>
-</ul>
-
-<h4 id="international-interoperability-standards">International Interoperability Standards</h4>
-
-<p>The following standards are all based on FHIR R4</p>
-
-<ul>
-  <li>Patient Summary
-    <ul>
-      <li><a href="https://build.fhir.org/ig/HL7/fhir-ips/index.html">Internation Patient Summary</a> An International Patient Summary (IPS) document is an electronic health record extract containing essential healthcare information about a subject of care. As specified in EN 17269 and ISO 27269, it is designed for supporting the use case scenario for ‘unplanned, cross border care’, but it is not limited to it. It is intended to be international, i.e., to provide generic solutions for global application beyond a particular region or country.</li>
-    </ul>
-  </li>
-  <li>Laboratory Report
-    <ul>
-      <li><a href="https://build.fhir.org/ig/hl7-eu/laboratory/">HL7 Europe Laboratory Report</a> Clinical laboratory results play an important role in diagnosis, treatment, and follow-up of patients. The availability of high quality test results, and the capacity of sharing them, is therefore essential being often the basis for clinical decision making. For this reason the Laboratory has been selected as one of the priority domains for the European EHR eXchange Format (E-EHRxF).</li>
-    </ul>
-  </li>
-  <li>Pharmacy
-    <ul>
-      <li>Europe <a href="https://build.fhir.org/ig/hl7-eu/gravitate-health-ips/">Gravitate Health FHIR Implementation Guide (FHIR R4)</a> How to integrate patient health information from the International Patient Summary (IPS) with medicinal product information from regulatory approved electronic Product Information (ePI) documents. Together, the IPS and ePI will facilitate the creation of new digital platforms that give patients a more accessible way of acquiring trusted health and medicinal product Information.</li>
+      <li><a href="https://build.fhir.org/ig/HL7/fhir-ipa/index.html">International Patient Access</a> This specification describes how an application acting on behalf of a patient can access information about the patient from a clinical records system using a FHIR R4 based API. The clinical records system may be supporting a clinical care provider (e.g., a hospital or a general practitioner), a health data exchange, or other system managing patient records, including a national health record system.</li>
+      <li><a href="https://build.fhir.org/ig/IHE/QEDm/branches/master/index.html">Query for Existing Data for Mobile (QEDm)</a> The Query for Existing Data for Mobile Profile (QEDm) supports dynamic queries for clinical data elements, including observations, allergy and intolerances, problems, diagnostic results, medications, immunizations, procedures, encounters and provenance by making the information widely available to other systems within and across enterprises to support provision of better clinical care. It defines a transaction used to query a list of specific data elements, persisted as FHIR resources.</li>
     </ul>
   </li>
 </ul>
@@ -459,7 +305,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.england.nhs.uk/">NHS England</a>.  Package uk.nhs.england#0.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Feb 3, 2024 20:15+0000">2024-02-03</span>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.england.nhs.uk/">NHS England</a>.  Package uk.nhs.england#0.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sun, Feb 4, 2024 08:14+0000">2024-02-04</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <div style="color: #333333" >

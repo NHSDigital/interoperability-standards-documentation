@@ -9,7 +9,7 @@ The FHIR specification is a "platform specification" - it creates a common platf
 
 These rules and descriptions are described in FHIR Profiles which are discussed in [Profiling FHIR](https://hl7.org/fhir/R4/profiling.html). Note FHIR Profiles are not schemas, see downloads for schemas, code libraries and implementation tools.
 
-#### FHIR Validation (Testing)
+### FHIR Validation (Testing)
 
 Testing FHIR resources against a FHIR Profile is called FHIR Validation, see [Validating Resources](https://hl7.org/fhir/R4/validation.html).
 

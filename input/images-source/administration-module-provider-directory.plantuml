@@ -3,31 +3,31 @@
 title Service Provider Directory Resources
 
 
-  class Practitioner {
+  object Practitioner {
     identifier: GMC, GMP, etc code
   }
 
 
-package ProviderDirectory <<Frame>> as "Provider Directory" {
-    class Organization {
+package ProviderDirectory as "Provider Directory" {
+    object Organization {
       identifier: ODS Code
     }
 
-    class HealthcareService {
+    object HealthcareService {
       providedBy
       location
     }
-    class PractitionerRole {
+    object PractitionerRole {
       identifier: sdsRoleProfileID
       practitioner
       organization
       healthcareService
     }
 
-    class Endpoint {
+    object Endpoint {
       managingOrganization
     }
-    class Location {
+    object Location {
       managingOrganization
     }
 }

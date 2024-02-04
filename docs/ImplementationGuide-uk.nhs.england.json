@@ -10,7 +10,7 @@
   "name" : "NHSEnglandInteroperability",
   "title" : "Interoperability Standards - Discovery",
   "status" : "draft",
-  "date" : "2024-02-03T20:15:25+00:00",
+  "date" : "2024-02-04T08:14:02+00:00",
   "publisher" : "NHS England",
   "contact" : [{
     "name" : "NHS England",
@@ -889,10 +889,28 @@
       {
         "extension" : [{
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "documents.html"
+          "valueUrl" : "clinical-module.html"
         }],
-        "nameUrl" : "documents.html",
-        "title" : "Documents",
+        "nameUrl" : "clinical-module.html",
+        "title" : "Clinical Module",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "diagnostics-module.html"
+        }],
+        "nameUrl" : "diagnostics-module.html",
+        "title" : "Diagnostics Module",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "documents-module.html"
+        }],
+        "nameUrl" : "documents-module.html",
+        "title" : "Documents Module",
         "generation" : "markdown"
       },
       {

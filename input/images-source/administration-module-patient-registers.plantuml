@@ -4,18 +4,45 @@
 title Patient Registers
 
 
-package PatientRegisters <<Frame>> as "Patient Registers" {
-  class Patient implements Person {
+package PatientRegisters as "Patient Registers" {
+  object Patient {
     identifier: NHS Number
+    name
+    gender
+    telecom
+    birthdate
+    address
+    link
   }
-  class RelatedPerson implements Person {
+  object RelatedPerson  {
+  identifier: NHS Number
     patient
+    name
+    gender
+    telecom
+    birthdate
+    address
   }
-  class Practitioner implements Person {
+  object Practitioner  {
     identifier: GMC, GMP, etc code
+    qualification
+    name
+    telecom
   }
-  class Person
-  
+  object Person {
+    identifier
+    name
+    gender
+    telecom
+    birthdate
+    address
+    link
+  }
+
+  Patient ..> "link" Person
+   Patient --> "link" Patient : De duplication \nreplaced-by | replaces | refer | seealso
+  RelatedPerson ..> "link" Person
+  Practitioner ..> "link" Person
 }
 
 @enduml

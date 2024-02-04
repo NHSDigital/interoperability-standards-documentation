@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "NHSEnglandInteroperability"] ; # 
   fhir:title [ fhir:v "Interoperability Standards - Discovery"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-02-03T20:15:25+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-02-04T08:14:02+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "NHS England"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "NHS England" ] ;
@@ -822,10 +822,26 @@
        ] [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
-           fhir:value [ fhir:v "documents.html"^^xsd:anyURI ]
+           fhir:value [ fhir:v "clinical-module.html"^^xsd:anyURI ]
          ] ) ;
-         fhir:name [ fhir:v "documents.html"^^xsd:anyURI ] ;
-         fhir:title [ fhir:v "Documents" ] ;
+         fhir:name [ fhir:v "clinical-module.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Clinical Module" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "diagnostics-module.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "diagnostics-module.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Diagnostics Module" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "documents-module.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "documents-module.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Documents Module" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:extension ( [

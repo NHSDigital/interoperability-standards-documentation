@@ -1,20 +1,42 @@
 @startuml
 
 
-[*] --> Consent.status.proposed
-Consent.status.proposed --> Task.status.requested
-Task.status.requested --> Task.status.accepted: internal provider Workflow
-Task.status.requested --> Task.status.rejected
-Task.status.accepted --> Task.status.inprogress: internal provider Workflow
-Task.status.accepted --> Task.status.cancelled
-Task.status.inprogress --> Task.status.completed
-Task.status.inprogress --> Task.status.cancelled
-Task.status.requested --> Task.status.cancelled
-Task.status.completed --> Consent.status.active
-Task.status.rejected --> Consent.status.rejected
-Task.status.cancelled --> [*]
-Consent.status.active --> RelatedPerson
-Consent.status.rejected --> [*]
+state Consentstatus as "Consent.status (Proxy Request)" {
+}
+
+state Taskstatus as "Tasks.status (Proxy Validation Request)" {
+}
+
+
+
+[*] --> Consentstatus.proposed
+Consentstatus.proposed --> Taskstatus.requested
+Taskstatus.requested --> Taskstatus.accepted: internal provider Workflow
+Taskstatus.requested --> Taskstatus.rejected
+note on link
+  This may be for several reasons such as
+  the requested performer can't verify
+  the relationship
+end note
+Taskstatus.accepted --> Taskstatus.inprogress: internal provider Workflow
+Taskstatus.accepted --> Taskstatus.cancelled
+Taskstatus.inprogress --> Taskstatus.completed
+Taskstatus.inprogress --> Taskstatus.cancelled
+Taskstatus.requested --> Taskstatus.cancelled
+Taskstatus.completed --> Consentstatus.active
+Taskstatus.rejected --> Taskstatus.requested
+note on link
+  The Task is amended, maybe
+  edited to add a new performer
+end note
+Taskstatus.rejected --> Consentstatus.rejected
+Taskstatus.cancelled --> [*]
+Consentstatus.active --> RelatedPerson
+note on link
+  This is an implied action based
+  on the change of state
+end note
+Consentstatus.rejected --> [*]
 RelatedPerson --> [*]
 
 RelatedPerson : [created or updated]

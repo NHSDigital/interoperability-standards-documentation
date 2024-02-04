@@ -3,28 +3,28 @@
 title Scheduling and Appointments
 
 
-  class Patient {
+  object Patient {
     identifier: NHS Number
   }
 
-  class Practitioner {
+  object Practitioner {
     identifier: GMC, GMP, etc code
   }
 
 
-    class HealthcareService {
+    object HealthcareService {
       providedBy
       location
     }
 
 
-    class Location {
+    object Location {
       managingOrganization
     }
 
 
 
-  class Encounter {
+  object Encounter {
    subject
    episodeOfCare
    serviceProvider
@@ -33,21 +33,21 @@ title Scheduling and Appointments
 
 
 
-package Scheduling <<Frame>> as "Scheduling and Appointments" {
-  class Schedule {
+package Scheduling as "Scheduling and Appointments" {
+  object Schedule {
     actor
   }
 
-  class Slot {
+  object Slot {
     schedule
   }
 
-  class Appointment {
+  object Appointment {
     slot
     participant.actor
   }
 
-  class AppointmentResponse {
+  object AppointmentResponse {
     appointment
     actor
   }

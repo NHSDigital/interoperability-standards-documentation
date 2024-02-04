@@ -3,7 +3,7 @@
 
 title Personal Demographic Service
 
-class Patient {
+object Patient {
   * identifier : NHSNumber
   * name
   * address
@@ -16,7 +16,7 @@ class Patient {
   * managingOrganization
 }
 
-class RelatedPerson {
+object RelatedPerson {
   identifier : not present
   * name
   * address
@@ -26,7 +26,7 @@ class RelatedPerson {
   * period
 }
 
-class PharmacyPreferences {
+object PharmacyPreferences {
   * extension.nominatedPharmacy
   * extension.dispensingDoctorPharmacy
   * extension.medicalApplianceSupplierPharmacy
@@ -36,7 +36,7 @@ RelatedPerson "patient.identifier" }|--||> "identifier" Patient : Related person
 RelatedPerson "identifier" }o--||> "identifier" Patient: The Patient/RelatedPerson linkage
 PharmacyPreferences |o--|| Patient
 
-note "PDS may have redefined the definition RelatedPerson.patient.identifier from FHIR definition, it probably should be using RelatedPerson.identifier instead." as PDS
+note "PDS may have redefined the definition RelatedPerson.patient.identifier from FHIR definition, \nit probably should be using RelatedPerson.identifier instead." as PDS
 
 PDS .. RelatedPerson
 PDS .. Patient

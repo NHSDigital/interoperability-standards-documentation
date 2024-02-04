@@ -3,7 +3,7 @@
 
 title National Proxy Service
 
-class Consent {
+object Consent {
   * status: proposed | active | rejected
   * scope : TBD
   * category: code to represent Proxy Access
@@ -18,7 +18,7 @@ class Consent {
   * provision.actor.reference.identifier: NHSNumber of the person making the proxy access request (RelatedPerson)
 }
 
-class RelatedPerson {
+object RelatedPerson {
   * patient.identifier: NHSNumber of the subject of the proxy access request
   name: may be useful to prevent call to PDS just to retrieve the name
   * identifier : NHS Number of the person making the proxy access request
@@ -26,7 +26,7 @@ class RelatedPerson {
   extension.consent: Proxy Acccess Request - should not be present when no consent is present
 }
 
-class Patient {
+object Patient {
   * identifier : NHSNumber
 }
 
