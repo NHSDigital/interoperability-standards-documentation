@@ -1,6 +1,6 @@
 
 
-<figure>{% include documents-module.svg %}</figure>
+<figure>{% include documentation-module.svg %}</figure>
 <br clear="all"/>
 
 ### Document Metadata
