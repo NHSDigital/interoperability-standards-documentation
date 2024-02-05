@@ -77,7 +77,7 @@ FHIR resources are particularly suited to RESTful API's and most common (popular
 
 [Documents](https://hl7.org/fhir/R4/documents.html) is a replacement for HL7 CDA. Like CDA this is suited to document sharing (e.g. IHE XDS).
 
-See [Document Interoperability](documents.html) for more details.
+See [Document Interoperability](documents-module.html) for more details.
 
 ##### Workflow
 

@@ -11,6 +11,14 @@ RuleSet: ResourceWithExpectation(type, profile, expectation)
     * url = "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"
     * valueCode = {expectation}
 
+RuleSet: WithResourceDocumentation(documentation)
+* rest.resource[=]
+  * documentation = "{documentation}"
+
+RuleSet: WithSupportedProfile(profile)
+* rest.resource[=]
+  * supportedProfile[+] = "{profile}"
+
 RuleSet: Interaction(code)
 * rest.resource[=]
   * interaction[+]
