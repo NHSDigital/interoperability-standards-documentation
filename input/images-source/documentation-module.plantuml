@@ -1,0 +1,43 @@
+@startuml
+
+title Documents
+
+object "Document Source" as documentSource {
+
+}
+
+
+object "Document Registry" as documentRegistry {
+
+}
+
+object "Document Repository" as documentRepository {
+
+}
+
+object "Data Repository" as dataRepository {
+
+}
+
+
+object "Document Consumer" as documentConsumer {
+
+}
+
+documentSource --> documentRepository : Simplified Publish [IHE MHD ITI-105] \n Legacy \n Provide and Register Document Set [IHE XDS ITI-41]
+documentRepository --> documentRegistry : Register DocumentSet
+documentSource --> documentRegistry: NRL POST \DocumentReference \n NRL PUT \DocumentReference
+documentConsumer --> documentRegistry: Find Document Lists [IHE MHD ITI-67] \n NRL GET \DocumentReference
+documentConsumer --> documentRepository: Retrieve Document [IHE MHD ITI-68]\n NRL GET \{pointerUrl}
+documentConsumer --> dataRepository: NRL GET \{pointerUrl}
+
+note "would be in its native format \nand not normally a FHIR resource if it is a document \n e.g. PDF, etc" as raw
+note "This is NRL" as nrl
+note "Not defined in NRL but focus of HL7 and IHE standards \n for sharing care data and documents" as ihe
+
+raw .. documentRepository
+nrl .. documentRegistry
+ihe .. dataRepository
+ihe .. documentRepository
+
+@enduml

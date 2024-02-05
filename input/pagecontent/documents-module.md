@@ -1,4 +1,8 @@
 
+
+<figure>{% include documents-module.svg %}</figure>
+<br clear="all"/>
+
 ### Document Metadata
 
 > NHS England does not currently have a **data standard** for `Document Metadata`
