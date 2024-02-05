@@ -111,3 +111,41 @@ Title: "NHS England APIM Base API Definitions"
 * rest.resource[=]
   * searchParam[=]
     * documentation = "[e-Referral FHIR API](https://digital.nhs.uk/developer/api-catalogue/e-referral-service-fhir) - This parameter is NOT present but is believed to be implied. This API is believed to be NOT CONFORMANT as the api as currently stated should return all PractitionreRole's held by eRS and this is clearly not correct."
+
+
+//Appointment
+* insert ResourceWithExpectation(#Appointment, https://fhir.nhs.uk/England/StructureDefinition/Appointment, #MAY)
+* rest.resource[=]
+  * documentation = "API present in \n - [Booking and Referral - FHIR API](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir) \n\n No [UK Core FHIR Access](https://build.fhir.org/ig/HL7-UK/UK-Core-Access/index.html) conformance requirements"
+* insert InteractionWithExpectation(#read, #SHOULD)
+* insert InteractionWithExpectation(#search-type, #SHOULD)
+* insert SearchParamWithExpectation(practitioner:identifier, #token, #MAY)
+* rest.resource[=]
+  * searchParam[=]
+    * documentation = " - [Booking and Referral - FHIR API](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir)"
+
+//DocumentReference
+* insert ResourceWithExpectation(#DocumentReference, https://fhir.nhs.uk/England/StructureDefinition/DocumentReference, #MAY)
+* rest.resource[=]
+  * documentation = "API present in \n - [Booking and Referral - FHIR API](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir) \n - [National Record Locator - FHIR API v3](https://digital.nhs.uk/developer/api-catalogue/national-record-locator-fhir/v3/producer) as STU3 \n - [e-Referral Service - FHIR API](https://digital.nhs.uk/developer/api-catalogue/e-referral-service-fhir) \n\n No [UK Core FHIR Access](https://build.fhir.org/ig/HL7-UK/UK-Core-Access/index.html) conformance requirements"
+* insert InteractionWithExpectation(#read, #SHOULD)
+* insert InteractionWithExpectation(#create, #SHOULD)
+* insert InteractionWithExpectation(#update, #SHOULD)
+* insert InteractionWithExpectation(#delete, #SHOULD)
+* insert InteractionWithExpectation(#search-type, #SHOULD)
+* insert SearchParamWithExpectation(subject:identifier, #token, #MAY)
+* rest.resource[=]
+  * searchParam[=]
+    * documentation = " - [Booking and Referral - FHIR API](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir) \n - [National Record Locator - FHIR API v3](https://digital.nhs.uk/developer/api-catalogue/national-record-locator-fhir/v3/producer) \n\n International and Care Connect API suggest using patient instead of subject, this would also be consistent with other NHS England API's"
+* insert SearchParamWithExpectation(custodian:identifier, #token, #MAY)
+* rest.resource[=]
+  * searchParam[=]
+    * documentation = " - [Booking and Referral - FHIR API](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir)"
+* insert SearchParamWithExpectation(next-page-token, #token, #MAY)
+* rest.resource[=]
+  * searchParam[=]
+    * documentation = " - [Booking and Referral - FHIR API](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir)"
+* insert SearchParamWithExpectation(based-on:identifier, #token, #MAY)
+* rest.resource[=]
+  * searchParam[=]
+    * documentation = " - This may not be correct and is inferred from A005 [e-Referral Service - FHIR API](https://digital.nhs.uk/developer/api-catalogue/e-referral-service-fhir) "
