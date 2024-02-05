@@ -9,7 +9,7 @@
   "version" : "0.0.1",
   "name" : "Organization",
   "status" : "draft",
-  "date" : "2024-02-05T12:39:32+00:00",
+  "date" : "2024-02-05T14:53:04+00:00",
   "publisher" : "NHS England",
   "contact" : [{
     "name" : "NHS England",
@@ -391,9 +391,16 @@
         "human" : "Must have either extensions or value[x], not both",
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
-      "isModifier" : false
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      },
+      {
+        "identity" : "rim",
+        "map" : "N/A"
+      }]
     },
     {
       "id" : "Organization.extension:organizationPeriod",
