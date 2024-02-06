@@ -5,7 +5,7 @@
 
 -- Interoperability Standards --
 
-[Shared Care Summary] as [V1] lasts 2 week
+[Shared Patient Record (Core)] as [V1] lasts 2 week
  [Assessment and Care Planning] as [V2] lasts 2 week
  [V2] starts at [V1]'s end
  [Care Coordination (Workflow)] as [V3] lasts 2 week

@@ -2,7 +2,7 @@
 
 The three main interoperability concepts around clinical are:
 
-- [Patient Summary](#patient-summary)
+- [Sharing Patient Record (Core)](#sharing-patient-record-core)
 - [Assessments and Care Planning](#assessments-and-care-planning)
 - [Care Coordination](#care-coordination)
 
@@ -27,7 +27,7 @@ This flexibility increases the size of `Interoperablity Standards` as the diagra
 
 ### Execution General Outline
 
-The delivery of [Patient Summary](#patient-summary) is required in order to simplify the delivery of [Assessments and Care Planning](#assessments-and-care-planning) and [Care Coordination](#care-coordination), both of these require records to be shared. In particular if don't shared patient summary records, options such as `messaging` or `email/fax` will have to be selected and/or the solution becomes complex which will block adoption. 
+The delivery of [Sharing Patient Record (Core)](#sharing-patient-record-core) is required in order to simplify the delivery of [Assessments and Care Planning](#assessments-and-care-planning) and [Care Coordination](#care-coordination), both of these require records to be shared. In particular if don't shared patient summary records, options such as `messaging` or `email/fax` will have to be selected and/or the solution becomes complex which will block adoption. 
 
 The chart below shows this relationship (durations of phases are not correct (by a long shot))
 
@@ -35,7 +35,7 @@ The chart below shows this relationship (durations of phases are not correct (by
 <br clear="all"/>
 
 
-### Patient Summary
+### Sharing Patient Record (Core)
 
 <figure>{% include clinical-patient-summary-mindmap.svg %}</figure>
 <br clear="all"/>
@@ -54,12 +54,7 @@ It is expected feedback will say `data - RESTful API`.
 
 To provide records to all practitioners involved in Tom's care, all the providers have decided to share records. How they share these records is variable due to capabilities of the Electronic Patient Records (EPR) and Electronic Document Management Systems (EDMS) each provider uses. The providers collectively decide to aim for a `data` based approach but where this is not possible, they will share what they can as `data` with the remainder being shared as `documents`.
 
-> Beryl Burton, from Leeds (West Yorkshire/Riding), is a keen cyclist who is being treated for Relative energy deficiency in sport (RED-S). She is well on the road to recovery and is participating in the Marmotte cycle event in the French Alps. Unfortunatley took a tubble while descending the Col du Galibier and has been taken to a French emergency care department 
 
-The French practitioners and Beryl want to view her patient record to give the best care, in particular view her medication records. The following options could be provided: 
-- Beryl can choose to share her record using `International Patient Access (data)`, this is compatible with `UK Core FHIR Access (data)` for medications.
-- The French practitioners could use `International Patient Summary`, this could be implemented on top of `UK Core FHIR Access (data)`. The use of the `hybrid (FHIR Document)` due to the variable capabilities of the international systems, this hybrid allows practitioner to either view the record in html format and/or use the data.
- 
 ### Assessments and Care Planning
 
 <figure>{% include clinical-assessments-and-care-planning-mindmap.svg %}</figure>
