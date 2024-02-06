@@ -7,15 +7,20 @@ title Shared Care Records
 * Patient Summary
 ** Interoperability Standards
 *** Data
-**** International Patient Access (FHIR RESTful)
-**** IHE Query for Existing Patient Data (FHIR RESTful)
-**** UK Core FHIR Access (FHIR RESTful)
-**** Care Connect RESTful API (FHIR STU3 -> R4?)
+**** FHIR RESTful API
+***** International Patient Access
+***** IHE Query for Existing Patient Data
+***** UK Core FHIR Access (extend?)
+***** Care Connect RESTful API (STU3 -> R4?)
 *** Document
-**** IHE XDS and/or MHD (FHIR RESTful)
-**** pdf, html, doc, etc
-**** Hybrid (Data + Document)
-***** International Patient Summary (FHIR Document)
+**** FHIR RESTful API
+***** IHE MHD
+**** XML/SOAP
+***** IHE XDS
+**** format
+***** pdf, html, doc, etc
+***** Hybrid (Data + Document)
+****** International Patient Summary (FHIR Document)
 
 ** Content (Data Standards)
 *** Allergies

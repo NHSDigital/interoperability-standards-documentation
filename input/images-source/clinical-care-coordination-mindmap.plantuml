@@ -5,21 +5,29 @@ title Care Coordination
 * Care Coordination
 ** Interoperability Standards
 *** Data
-**** Workflow
-***** Workflow Brokers (e.g. eRS and EPS)
-***** Conversations (FHIR Workflow)
-**** Messaging (FHIR/v2 Messaging)
-***** 302 Legacy - See FHIR Workflow and Events
-**** Event Notification
-***** FHIR Subscription
-***** FHIR Cast
+**** FHIR RESTful API
+***** Workflow
+****** Workflow Brokers (e.g. eRS and EPS)
+****** Conversations (FHIR Workflow)
+***** Event Notification
+****** FHIR Subscription
+****** FHIR Cast
+**** Messaging
+***** FHIR Messaging)
+****** 302 Legacy - See FHIR Workflow and Events
+***** HL7 v2 Messaging)
+****** 302 Legacy - See FHIR Workflow and Events
 *** Document
-**** IHE XDS and/or MHD (FHIR RESTful)
+**** XML/SOAP
+***** IHE XDS
+**** FHIR RESTful API
+***** IHE MHD
 **** email/fax Notifications
 ***** 302 Legacy - See FHIR Workflow and Events
-**** pdf, html, doc, etc
-**** Hybrid (Data + Document)
-***** Europe Laboratory Report (FHIR Document)
+**** format
+***** pdf, html, doc, etc
+***** Hybrid (Data + Document)
+****** Europe Laboratory Report (FHIR Document)
 
 ** Content (Data Standards)
 *** Request
@@ -30,7 +38,7 @@ title Care Coordination
 **** Transfer of Care
 ***** Outpatient Letters
 ***** Discharge Letters
-**** Laboratoty Reports
+**** Laboratory Reports
 **** Pharmacy
 
 

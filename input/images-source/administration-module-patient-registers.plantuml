@@ -40,7 +40,7 @@ package PatientRegisters as "Patient Registers" {
   }
 
   Patient ..> "link" Person
-  RelatedPerson "patient" |o..o| Patient: A RelatedPerson who is also a Patient
+  RelatedPerson "patient" }o..o| Patient: The link between a Patient and RelatedPersons. \nThe Person and RelatedPerson are not the same.
    Patient --> "link" Patient : De duplication \nreplaced-by | replaces | refer | seealso
   RelatedPerson ..> "link" Person
   Practitioner ..> "link" Person

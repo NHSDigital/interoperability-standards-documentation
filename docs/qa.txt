@@ -3,11 +3,11 @@ NHSEnglandInteroperability : Validation Results
 
 err = 38, warn = 29, info = 23
 IG Publisher Version: 1.5.16
-Generated Mon Feb 05 14:54:26 GMT 2024. FHIR version 4.0.1 for uk.nhs.england#0.0.1 (canonical = https://fhir.nhs.uk/England)
+Generated Tue Feb 06 11:31:47 GMT 2024. FHIR version 4.0.1 for uk.nhs.england.skunk#0.0.1 (canonical = https://fhir.nhs.uk/England)
  Build Errors : 5 / 12 / 0
  C:\Development\NHSEngland\interoperability-standards-discovery\fsh-generated\resources\CapabilityStatement-NHS-England-APIM-Provider : 1 / 0 / 1
  C:\Development\NHSEngland\interoperability-standards-discovery\fsh-generated\resources\CapabilityStatement-UKCoreAccessPatientIndexProvider : 1 / 0 / 5
- C:\Development\NHSEngland\interoperability-standards-discovery\fsh-generated\resources\ImplementationGuide-uk.nhs.england : 1 / 0 / 1
+ C:\Development\NHSEngland\interoperability-standards-discovery\fsh-generated\resources\ImplementationGuide-uk.nhs.england.skunk : 1 / 0 / 1
  C:\Development\NHSEngland\interoperability-standards-discovery\fsh-generated\resources\RelatedPerson-RelatedPerson-NHS-91000000009 : 1 / 0 / 1
  C:\Development\NHSEngland\interoperability-standards-discovery\fsh-generated\resources\StructureDefinition-Appointment : 1 / 1 / 1
  C:\Development\NHSEngland\interoperability-standards-discovery\fsh-generated\resources\StructureDefinition-DocumentReference : 1 / 1 / 1
@@ -60,8 +60,8 @@ INFORMATION: CapabilityStatement/UKCoreAccessPatientIndexProvider: CapabilitySta
 INFORMATION: CapabilityStatement/UKCoreAccessPatientIndexProvider: CapabilityStatement.rest[0].resource[0].extension[2].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: CapabilityStatement/UKCoreAccessPatientIndexProvider: CapabilityStatement.rest[0].resource[0].extension[3].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: CapabilityStatement/UKCoreAccessPatientIndexProvider: CapabilityStatement.rest[0].resource[0].extension[4].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
-== fsh-generated\resources\ImplementationGuide-uk.nhs.england.json ==
-ERROR: ImplementationGuide/uk.nhs.england: ImplementationGuide.jurisdiction[0].coding[0].code: Unknown code 'GB-ENG' in the CodeSystem 'urn:iso:std:iso:3166' version '2018'
+== fsh-generated\resources\ImplementationGuide-uk.nhs.england.skunk.json ==
+ERROR: ImplementationGuide/uk.nhs.england.skunk: ImplementationGuide.jurisdiction[0].coding[0].code: Unknown code 'GB-ENG' in the CodeSystem 'urn:iso:std:iso:3166' version '2018'
 == fsh-generated\resources\RelatedPerson-RelatedPerson-NHS-91000000009.json ==
 ERROR: RelatedPerson/RelatedPerson-NHS-91000000009: RelatedPerson.patient: Unable to resolve resource with reference 'Patient-PDS-NHS-9000000017-Jayne-Smith'
 == fsh-generated\resources\StructureDefinition-Appointment.json ==
