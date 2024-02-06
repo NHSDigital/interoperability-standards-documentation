@@ -34,15 +34,45 @@ The chart below shows this relationship (durations of phases are not correct (by
 <figure>{% include clinical-delivery-gantt.svg %}</figure>
 <br clear="all"/>
 
+The mind maps below have two main sections:
+
+- interoperability standards
+- data standards
+
+Generally the `data standard` should be completed before the interoperability standard. Interoperability standards have several paths, which one is taken will normally be defined by combinations of 
+
+- use case 
+- enterprise architecture
+- solution architecture
+
+Several options may be needed for single use cases. E.g. at present Shared Care Records (core) probably needs to be supportive of most of the options but based on feedback we can probably focus on key areas. 
+
+#### Assumptions
+
+##### Sharing Patient Record (Core) 
+
+It is expected feedback will say `data - RESTful API` with extending UK Core FHIR Access to cover the data types currently listed under Data Standards.
+
+##### Assessments and Care Planning
+
+It is assumed the initial use case will be around ReSPECT or End of Life Care planning. It is recommended we initially focus `interoperability standards` around FHIR Structured Data Capture as this has several concepts that are supportive of `Data Standards` future focus in this area.
+
+Both `Sharing Patient Record (Core)` and `Assessments and Care Planning` are supportive of implementing PRSB standards. 
+ - `Sharing Patient Record (Core)` has content which is common to many PRSB standards.
+ - `Assessments and Care Planning` is a method for additional content to be added to this core record. This could initially include
+   - About me
+   - Personal Care and Support Plans
+   - Other care setting specific content such as wound care, children cancer, diabetes, etc
+
+##### Care Coordination
+
+The working assumption is this would be around wound care.
 
 ### Sharing Patient Record (Core)
 
 <figure>{% include clinical-patient-summary-mindmap.svg %}</figure>
 <br clear="all"/>
-
-#### Assumptions
-
-It is expected feedback will say `data - RESTful API`.  
+ 
 
 #### Use Cases
 
