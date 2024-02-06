@@ -1,16 +1,16 @@
 {
-  "url" : "https://fhir.nhs.uk/England/ImplementationGuide/uk.nhs.england.skunk",
-  "name" : "NHSEnglandInteroperability",
-  "title" : "Interoperability Standards - Discovery",
+  "url" : "https://fhir.nhs.uk/England/ImplementationGuide/uk.nhs.england.skunkworks",
+  "name" : "NHSEnglandInteroperabilitySkunkworks",
+  "title" : "Interoperability Standards - Skunkworks",
   "description" : null,
   "status" : "draft",
-  "package-id" : "uk.nhs.england.skunk",
+  "package-id" : "uk.nhs.england.skunkworks",
   "ig-ver" : "0.0.1",
-  "date" : "Tue, 06 Feb, 2024 11:30:33 +0000",
+  "date" : "Tue, 06 Feb, 2024 12:19:49 +0000",
   "errs" : 38,
   "warnings" : 29,
   "hints" : 23,
   "version" : "4.0.1",
   "tool" : "5.0.0 (3)",
-  "maxMemory" : 1450975952
+  "maxMemory" : 1453240848
 }

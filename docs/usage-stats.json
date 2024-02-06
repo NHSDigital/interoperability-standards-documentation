@@ -1,5 +1,5 @@
 {
-  "package": "uk.nhs.england.skunk",
+  "package": "uk.nhs.england.skunkworks",
   "version": "0.0.1",
   "fhirVersion": "4.0.1",
   "jurisdiction": "GB-ENG",

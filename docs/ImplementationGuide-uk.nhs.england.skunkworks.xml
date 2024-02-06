@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ImplementationGuide xmlns="http://hl7.org/fhir">
-  <id value="uk.nhs.england.skunk"/>
+  <id value="uk.nhs.england.skunkworks"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>NHSEnglandInteroperability</h2><p>The official URL for this implementation guide is: </p><pre>https://fhir.nhs.uk/England/ImplementationGuide/uk.nhs.england.skunk</pre></div>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>NHSEnglandInteroperabilitySkunkworks</h2><p>The official URL for this implementation guide is: </p><pre>https://fhir.nhs.uk/England/ImplementationGuide/uk.nhs.england.skunkworks</pre></div>
   </text>
-  <url value="https://fhir.nhs.uk/England/ImplementationGuide/uk.nhs.england.skunk"/>
+  <url value="https://fhir.nhs.uk/England/ImplementationGuide/uk.nhs.england.skunkworks"/>
   <version value="0.0.1"/>
-  <name value="NHSEnglandInteroperability"/>
-  <title value="Interoperability Standards - Discovery"/>
+  <name value="NHSEnglandInteroperabilitySkunkworks"/>
+  <title value="Interoperability Standards - Skunkworks"/>
   <status value="draft"/>
-  <date value="2024-02-06T11:30:33+00:00"/>
+  <date value="2024-02-06T12:19:49+00:00"/>
   <publisher value="NHS England"/>
   <contact>
     <name value="NHS England"/>
@@ -26,7 +26,7 @@
       <display value="England"/>
     </coding>
   </jurisdiction>
-  <packageId value="uk.nhs.england.skunk"/>
+  <packageId value="uk.nhs.england.skunkworks"/>
   <license value="Apache-2.0"/>
   <fhirVersion value="4.0.1"/>
   <dependsOn id="hl7tx">

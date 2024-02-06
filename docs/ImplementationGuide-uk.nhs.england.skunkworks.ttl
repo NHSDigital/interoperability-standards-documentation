@@ -5,19 +5,19 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://fhir.nhs.uk/England/ImplementationGuide/uk.nhs.england.skunk> a fhir:ImplementationGuide ;
+<https://fhir.nhs.uk/England/ImplementationGuide/uk.nhs.england.skunkworks> a fhir:ImplementationGuide ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "uk.nhs.england.skunk"] ; # 
+  fhir:id [ fhir:v "uk.nhs.england.skunkworks"] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>NHSEnglandInteroperability</h2><p>The official URL for this implementation guide is: </p><pre>https://fhir.nhs.uk/England/ImplementationGuide/uk.nhs.england.skunk</pre></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>NHSEnglandInteroperabilitySkunkworks</h2><p>The official URL for this implementation guide is: </p><pre>https://fhir.nhs.uk/England/ImplementationGuide/uk.nhs.england.skunkworks</pre></div>"
   ] ; # 
-  fhir:url [ fhir:v "https://fhir.nhs.uk/England/ImplementationGuide/uk.nhs.england.skunk"^^xsd:anyURI] ; # 
+  fhir:url [ fhir:v "https://fhir.nhs.uk/England/ImplementationGuide/uk.nhs.england.skunkworks"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.0.1"] ; # 
-  fhir:name [ fhir:v "NHSEnglandInteroperability"] ; # 
-  fhir:title [ fhir:v "Interoperability Standards - Discovery"] ; # 
+  fhir:name [ fhir:v "NHSEnglandInteroperabilitySkunkworks"] ; # 
+  fhir:title [ fhir:v "Interoperability Standards - Skunkworks"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-02-06T11:30:33+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-02-06T12:19:49+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "NHS England"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "NHS England" ] ;
@@ -33,7 +33,7 @@
        fhir:display [ fhir:v "England" ]
      ] )
   ] ) ; # 
-  fhir:packageId [ fhir:v "uk.nhs.england.skunk"] ; # 
+  fhir:packageId [ fhir:v "uk.nhs.england.skunkworks"] ; # 
   fhir:license [ fhir:v "Apache-2.0"] ; # 
   fhir:fhirVersion ( [ fhir:v "4.0.1"] ) ; # 
   fhir:dependsOn ( [

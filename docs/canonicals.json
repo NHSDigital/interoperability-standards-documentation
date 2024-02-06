@@ -26,11 +26,11 @@
     "version" : "0.0.1"
   },
   {
-    "id" : "uk.nhs.england.skunk",
+    "id" : "uk.nhs.england.skunkworks",
     "type" : "ImplementationGuide",
-    "url" : "https://fhir.nhs.uk/England/ImplementationGuide/uk.nhs.england.skunk",
+    "url" : "https://fhir.nhs.uk/England/ImplementationGuide/uk.nhs.england.skunkworks",
     "version" : "0.0.1",
-    "name" : "NHSEnglandInteroperability"
+    "name" : "NHSEnglandInteroperabilitySkunkworks"
   },
   {
     "id" : "Questionnaire-Proxy-Access-Request",
