@@ -1,0 +1,16 @@
+@startgantt
+
+-- Data Standards --
+ [An example definition e.g. ReSPECT] as [V4] lasts 2 week and 3 days
+
+-- Interoperability Standards --
+
+[Patient Summary] as [V1] lasts 2 week
+ [Assessment and Care Planning] as [V2] lasts 2 week
+ [V2] starts at [V1]'s end
+ [Care Coordination] as [V3] lasts 2 week
+ [V3] starts at [V1]'s end
+ [V2] starts at [V4]'s end
+
+
+@endgantt
