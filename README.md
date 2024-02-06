@@ -10,4 +10,4 @@ https://simplifier.net/guide/nhs-england-implementation-guide-version-history
 
 The website for this repository is:
 
-https://nhsdigital.github.io/interoperability-standards-skunksworks/
+https://nhsdigital.github.io/interoperability-standards-skunkworks/
