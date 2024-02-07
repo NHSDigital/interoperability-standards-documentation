@@ -1,0 +1,128 @@
+@startuml
+
+
+title Structured Data Caputre
+
+
+  note "IHE profile: Remote Form for Data Capture (RFD) \nThis has not been modernised and \nFHIR Structured Data Capture is an appropiate choice" as RFD
+
+
+package sdc as "FHIR Structured Data Capture" {
+
+  package openEhrPkg as "Structure Data Capture Platform (CDR)" {
+    class openEhrCKM as "openEHR ckm" {
+      Archetype :  openEHR - FHIR Questionnaire
+      Template :  openEHR - FHIR Questionnaire
+      FindingAQuestionnaire() : GET /Questionnaire
+    }
+
+    class openEhr as "COMPOSITION repository" {
+      COMPOSITION :  openEHR - FHIR QuestionnaireResponse
+      COMPOSITIONEvent
+      COMPOSITIONContext
+      FormPopulation(): POST /Quesionnaire/$populate \nused to pre-populate QuestionnaireResponse
+      StoreCOMPOSITION() : POST /QuestionnaireResponse
+      StoreCOMPOSITIONEvent(): POST /Encounter
+      StoreCOMPOSITIONContext(): POST /DocumentReference
+    }
+
+    class openEHREvent as "COMPOSITION.Event (FHIR Encounter)" {
+    start_time: Encounter.period.start
+    end_time: Encounter.period.end
+    location: Encounter.location.location
+    setting: Encounter.settingType
+    other_context:
+    }
+
+    class openEHRContext as "COMPOSITION.Context (XDS Metadata/FHIR DocumentReference)" {
+      AuthorSpecialty: not found in XDS/FHIR
+      ClassCode: DocumentReference.category
+      DocumentType: DocumentReference.type
+      ConfidentialityCode: DocumentReference.securityLabel
+      HealthcareFacilityType: DocumentReference.context.facilityType
+      PracticeSettingCode: DocumentReference.context.PracticeSetting
+      EventCode: DocumentReference.context.event
+      DocumentMedia: DocumentReference.content.attachment
+    }
+  }
+
+  class onto as "NHS England Ontology Server" {
+    ValueSet
+    CodeSystem
+  }
+
+  openEHRContext ||..o| openEhr
+  openEHREvent ||..|| openEhr
+  openEhrCKM |o..o{ openEhr
+
+  note "Not found link in openEHR - openEHR does support coding" as TERM
+
+  TERM .. onto
+  TERM .. openEhr
+
+}
+
+package pdqm as "IHE Patient Demographic Query (PDQm)" {
+
+  package pds as "Personal Demographic Service" {
+
+     class Patient {
+        * identifier : NHSNumber
+  name
+  address
+  telecom
+  gender
+  birthDate
+  deceasedDateTime
+  contact
+  generalPractitioner
+  managingOrganization
+  MobilePatientDemographicsQuery() : GET /Patient
+  GetPatient(): GET /Patient/{nhsNumber}
+     }
+  }
+}
+
+package mhd as "IHE Mobile access to Health Documents (MHD)" {
+  package nrl as "National Record Locator" {
+  class "Document Registry (DocumentReference)" as documentRegistry {
+   subject: patient
+   type
+   author
+   custodian
+   description
+   content.url
+   context.practiceSetting
+   FindDocumentReferences(ITI-67): GET /DocumentReference
+   RetrieveDocumentPointers(NRL): GET /DocumentReference
+   CreateDocumentPointer(NRL): POST /DocumentReference
+   UpdateDocumentPointer(NRL): PUT /DocumentReference/{id}
+}
+  }
+}
+
+package pem as "IHE Patient Encounter Management (PEM)" {
+  package nhstrust as "NHS Trust Patient Administration System (PAS)" {
+    class encounter as "encounter (FHIR Encounter)" {
+      subject: patient
+      period.start
+      period.end
+      location.location
+      episodeOfCare
+      settingType
+    }
+  }
+
+  note "This is widespread in acute but is most commonly known as \nHL7 v2 Admission, Discharge and Transfer (ADT)" as ADT
+
+  ADT.. encounter
+}
+
+Patient |o..o{ openEhr
+documentRegistry |o..|| openEHRContext
+documentRegistry "content.url" |o..|| openEhr
+encounter ||..o| openEHREvent
+encounter "subject" }|..o| Patient
+documentRegistry "subjectl" }o..o| Patient
+
+@enduml
