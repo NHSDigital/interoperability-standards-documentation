@@ -1,9 +1,13 @@
+<figure>{% include structured-data-capture.svg %}</figure>
+<br clear="all"/>
+
+### NHS England One Digital Blueprint
 [NHS England One Digital Blueprint](https://nhs.sharepoint.com/:w:/r/sites/msteams_a64122/Shared%20Documents/General/Publications/2024-01%20NHS%20England%20One%20Digital%20Blueprint.docx?d=w9b978d383a5b40d68c17c4f9af71c657&csf=1&web=1&e=e9oVwY) states:
 
-### IHE Profiles
+#### IHE Profiles
 
 
-#### IHE Retrieve Form for Data Capture (RFD)
+##### IHE Retrieve Form for Data Capture (RFD)
 
 Ref: OneDigital - page 15
  
@@ -21,7 +25,7 @@ The corresponding IHE profile is
 
 Note: The use cases also work for both the new service and an FHIR SDC. 
 
-#### HL7 FHIR Structured Data Capture (SDC)
+##### HL7 FHIR Structured Data Capture (SDC)
 
 Note: the IHE use cases in the link above are still applicable to SDC
 
@@ -33,7 +37,7 @@ This also:
   - openEHR can already convert Archetypes and Teamplates to FHIR Questionnaire which is part of HL7 FHIR SDC
   - openEHR COMPOSITION will be more complex but FHIR QuestionnaireResponse is likely to be a candidate for its modernisation.
 
-### Data and Interoperability Issues 
+#### Data and Interoperability Issues 
 
 - openEHR does support interoperability with other systems but these tend to be legacy interfaces
   - IHE XDS is used to share COMPOSITION, this is a simple mapping to FHIR DocumentReference
@@ -56,7 +60,7 @@ Ref: OneDigital - page 13
 
 It is high unlikely `Interoperability Standards` would regard openEHR as a modern Integration Service. This feedback should be **anticipated from suppliers** when they view openEHR XSD Schemas (this is very likely to **cause resistance to openEHR** and so the recommendation would be to facade openEHR complexity with HL7 FHIR Structured Data Capture resources).
 
-### Relationship Diagram
+#### Relationship Diagram
 
 On `overview` of how the new service could fit into NHS England and the NHS.
 

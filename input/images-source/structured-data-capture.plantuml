@@ -3,7 +3,6 @@
 
 title Structured Data Caputre
 
-note "This is a merger of IHE Mobile Retrieve Form (mRFD) \nand FHIR Structured Data Capture (SDC)" as overview
 
 mix_actor "User" as user
 
@@ -27,9 +26,6 @@ package DataResponder as "Clinical Data Respository (DataResponder)" {
     class Observation {
 
     }
-    class DiagnosticReport {
-
-    }
     class Patient {
 
     }
@@ -49,7 +45,6 @@ Questionnaire <-- Patient: Form Population
 Questionnaire <-- Etc: Form Population
 
 formFiller --> QuestionnaireResponse: StoreCompleted Form
-QuestionnaireResponse --> DiagnosticReport: Form Data Extraction
 QuestionnaireResponse --> Observation: Form Data Extraction
 QuestionnaireResponse "subject" ||--|| Patient
 QuestionnaireResponse --> Etc: Form Data Extraction
