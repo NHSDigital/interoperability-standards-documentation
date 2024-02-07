@@ -1,6 +1,14 @@
 <figure>{% include structured-data-capture.svg %}</figure>
 <br clear="all"/>
 
+#### Workflows
+
+<figure>{% include structured-data-capture-sequence-form-filling-basic.svg %}</figure>
+<br clear="all"/>
+
+<figure>{% include structured-data-capture-sequence-form-filling-advanced.svg %}</figure>
+<br clear="all"/>
+
 ### NHS England One Digital Blueprint
 [NHS England One Digital Blueprint](https://nhs.sharepoint.com/:w:/r/sites/msteams_a64122/Shared%20Documents/General/Publications/2024-01%20NHS%20England%20One%20Digital%20Blueprint.docx?d=w9b978d383a5b40d68c17c4f9af71c657&csf=1&web=1&e=e9oVwY) states:
 

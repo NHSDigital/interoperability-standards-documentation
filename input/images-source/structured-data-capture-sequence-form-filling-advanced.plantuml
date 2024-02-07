@@ -1,0 +1,30 @@
+@startuml
+
+
+title Structured Data Caputre - Form Filling Advanced
+
+actor User
+participant "Form Filler" as formFiller
+participant "Form Manager" as formManager
+participant "Form Response Manager" as formResponseManager
+participant "Clinical Data Repository" as cdr
+
+User -> formFiller
+formFiller -> formManager : Finding a Questionnaire \nGET /Questionnaire
+opt
+formFiller -> formManager : Form Population \nGET /Questionnaire/$populate
+formManager -> cdr : Extract existing data using FHIR RESTful APIs \n(e.g. GET /Observation?patient=123&code=27113001)
+formManager -> formFiller: Returns partially completed form (FHIR QuestionnaireResponse)
+end
+formFiller -> formFiller : Prepare Form for user
+opt
+formFiller -> formFiller : Advanced Form Rendering
+end
+User -> formFiller : Comlete form
+formFiller -> formResponseManager: Store Completed Form
+opt
+  formFiller -> formResponseManager: Form Data Extraction
+  formResponseManager -> cdr: add data to CDR using FHIR RESTful API\n(e.g. POST /Observation)
+end
+
+@enduml

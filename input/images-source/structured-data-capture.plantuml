@@ -14,6 +14,9 @@ package FormManager {
   FindingAQuestionnaire() : GET /Questionnaire
   FormPopulation() : POST /Questionnaire/$populate
   }
+}
+
+package FormResponseManager {
 
   class QuestionnaireResponse {
       StoreCompletedForm: POST /QuestionnaireResponse
