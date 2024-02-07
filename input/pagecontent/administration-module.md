@@ -20,7 +20,8 @@
 #### NHS England Services
 
 - [Personal Demographics Service](personal-demographics-service.html)
-
+- [National Proxy Service](national-proxy-service.html)
+- [Multicast Notification Service](multicast-notification-service.html)
 
 ### Security and Privacy
 
