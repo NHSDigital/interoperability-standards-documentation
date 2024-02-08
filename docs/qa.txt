@@ -3,7 +3,7 @@ NHSEnglandInteroperabilitySkunkworks : Validation Results
 
 err = 38, warn = 29, info = 23
 IG Publisher Version: 1.5.16
-Generated Thu Feb 08 11:22:37 GMT 2024. FHIR version 4.0.1 for uk.nhs.england.skunkworks#0.0.1 (canonical = https://fhir.nhs.uk/England)
+Generated Thu Feb 08 16:49:06 GMT 2024. FHIR version 4.0.1 for uk.nhs.england.skunkworks#0.0.1 (canonical = https://fhir.nhs.uk/England)
  Build Errors : 5 / 12 / 0
  C:\Development\NHSEngland\interoperability-standards-discovery\fsh-generated\resources\CapabilityStatement-NHS-England-APIM-Provider : 1 / 0 / 1
  C:\Development\NHSEngland\interoperability-standards-discovery\fsh-generated\resources\CapabilityStatement-UKCoreAccessPatientIndexProvider : 1 / 0 / 5
@@ -46,8 +46,8 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/h1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: C:\Development\NHSEngland\interoperability-standards-discovery\output\interoperability-standards.html#/html/body/div/div/div/div/div/p/a at Line 481, column 9: The link 'documents.html' for "Document Interoperability" cannot be resolved
 ERROR: C:\Development\NHSEngland\interoperability-standards-discovery\output\multicast-notification-service.html#/html/body/div/div/div/div/div/p/a at Line 313, column 455: The link 'interoperability-standards.html#messagaing' for "Messaging" cannot be resolved (valid targets: 47 targets)
-ERROR: C:\Development\NHSEngland\interoperability-standards-discovery\output\national-proxy-service.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 389, column 12: The link 'StructureDefinition-RelatedPerson' for "UKCore-RelatedPerson" cannot be resolved
-ERROR: C:\Development\NHSEngland\interoperability-standards-discovery\output\national-proxy-service.html#/html/body/div/div/div/div/div/ol/li/p/a at Line 453, column 34: The link 'CapabilityStatement-Validated-Relationship-Service-Provider.html' for "CapabilityStatement-Validated-Relationship-Service-Provider" cannot be resolved
+ERROR: C:\Development\NHSEngland\interoperability-standards-discovery\output\national-proxy-service.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 393, column 12: The link 'StructureDefinition-RelatedPerson' for "UKCore-RelatedPerson" cannot be resolved
+ERROR: C:\Development\NHSEngland\interoperability-standards-discovery\output\national-proxy-service.html#/html/body/div/div/div/div/div/ol/li/p/a at Line 463, column 34: The link 'CapabilityStatement-Validated-Relationship-Service-Provider.html' for "CapabilityStatement-Validated-Relationship-Service-Provider" cannot be resolved
 ERROR: C:\Development\NHSEngland\interoperability-standards-discovery\output\personal-demographics-service.html#/html/body/div/div/div/div/div/ol/li/p/a at Line 415, column 34: The link 'CapabilityStatement-Personal-Demographics-Service-Provider.html' for "CapabilityStatement-Personal-Demographics-Service-Provider" cannot be resolved
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide

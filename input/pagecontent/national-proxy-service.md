@@ -10,15 +10,17 @@
 <p></p>
 </div>
 
-#### Create Relationship
 
-<figure>{% include national-proxy-service-activity-create-relationship.svg %}</figure>
-<br clear="all"/>
 
-#### Manage Relationship
+### Enterprise Architecture and System Architecture Links
 
-<figure>{% include national-proxy-service-activity-manage-relationship.svg %}</figure>
-<br clear="all"/>
+It is believed this service contains [IHE Privacy Consent on FHIR (PCF)](https://profiles.ihe.net/ITI/PCF/index.html), it is the first known service in this category. Links to this IHE Profile will be identified in the relevant sections below. 
+This section is similar (but not same) [advanced consent](https://profiles.ihe.net/ITI/PCF/content.html#3584-advanced)  
+So this would apply to NHS England Services following [IHE Mobile Health Document Sharing (MHDS)](https://wiki.ihe.net/index.php/Mobile_Health_Document_Sharing_(MHDS)). Systems identified in this category are:
+
+[National Record Locator](https://digital.nhs.uk/developer/api-catalogue/national-record-locator-fhir/v3/producer)
+
+It also uses [Personal Demographics Service](https://digital.nhs.uk/developer/api-catalogue/personal-demographics-service-fhir) and shares a similar `RelatedPerson' API.
 
 ### Entity Relationship Diagram
 
@@ -27,6 +29,11 @@
 
 ### Create a relationship
 
+<figure>{% include national-proxy-service-activity-create-relationship.svg %}</figure>
+<br clear="all"/>
+
+<figure>{% include national-proxy-service-sequence-diagram-fhir.svg %}</figure>
+<br clear="all"/>
 
 | FHIR/IHE Framework |
 |--------------------|
@@ -69,8 +76,7 @@ Not all the FHIR Consent needs to be mapped to this model. What we probably do n
 
 From a workflow perspective we would be asked a GP (or other) to validate the consent, this could be done via the FHIR Task resource
 
-<figure>{% include national-proxy-service-sequence-diagram-fhir.svg %}</figure>
-<br clear="all"/>
+
 
 This `conversation` results in state changes as shown below. 
 Steps labelled `internal provider workflow` are for information purposes and do not result in interactions between National Proxy Service and the supplier (e.g. GP). These represent supplier workflow
@@ -98,6 +104,9 @@ This could mean any of the following
   - 
 ### Manage the lifecycle of a relationship
 
+<figure>{% include national-proxy-service-activity-manage-relationship.svg %}</figure>
+<br clear="all"/>
+
 | FHIR/IHE Framework                                            |
 |---------------------------------------------------------------|
 | [FHIR Workflow](https://hl7.org/fhir/R4/workflow.html) |
@@ -108,6 +117,9 @@ Would expect this to be a POST /Task from the GP and would follow a similar patt
 
 
 ### Revoke a relationship
+
+<figure>{% include national-proxy-service-activity-manage-relationship.svg %}</figure>
+<br clear="all"/>
 
 | FHIR/IHE Framework                                            |
 |---------------------------------------------------------------|
