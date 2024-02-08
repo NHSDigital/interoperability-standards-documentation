@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Documents Module - Interoperability Standards - Skunkworks v0.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+
+    <!--  <script src="assets/nhsuk.js" defer></script> -->
+
+      <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<!-- Project extras
+<link
+        type="font/woff2"
+        href="assets/fonts/FrutigerLTW01-55Roman.woff2"
+        rel="preload"
+        as="font"
+        crossorigin
+/>
+<link
+        type="font/woff2"
+        href="assets/fonts/FrutigerLTW01-65Bold.woff2"
+        rel="preload"
+        as="font"
+        crossorigin
+/>
+<link href="assets/css/nhsuk.css" rel="stylesheet" />
+-->
+
+<!-- Bootstrap core CSS overrides to bootstrap-fhir.css -->
+<link href="assets/css/nhse.css" rel="stylesheet"/>
+
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/favicons/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"7"}
+    h3,h4,h5,h6{--heading-prefix:"7"}</style>
+    <div id="segment-header" class="segment nhsuk-header">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+<!-- Left logo - typically the publisher's logo - project or affiliate -->
+        <div id="project-nav">
+          <a id="project-logo" no-external="true" href="https://www.england.nhs.uk">
+            <img height="61" alt="Project home" src="assets/images/skunk.png"/>
+          </a>
+        </div>
+
+<!-- Right logo - for example the FHIR logo -->
+<!-- Make sure you have authorization to use the FHIR logo -->
+
+        <div id="family-nav">
+            <!--
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="60" alt="FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+          -->
+        </div> 
+      
+
+<!-- search icon - if you want -->
+<!--
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+-->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Interoperability Standards - Skunkworks</span>
+            <br/>
+            <span style="display:inline-block;">0.0.1 - ci-build
+
+
+
+   <img alt="England flag" src="assets/images/GB-ENG.svg" height="16" title="England"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Documentation
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="background.html">Background</a>
+      </li>
+      <li>
+        <a href="interoperability-standards.html">Interoperability Standards</a>
+      </li>
+      <li>
+        <a href="testing.html">Conformance and Testing (FHIR)</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Design
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="administration-module.html">Administration</a>
+      </li>
+      <li>
+        <a href="documents-module.html">Documents (Clinical)</a>
+      </li>
+      <li>
+        <a href="clinical-module.html">Clinical</a>
+      </li>
+      <li>
+        <a href="diagnostics-module.html">Diagnostics</a>
+      </li>
+      <li>
+        <a href="medications-module.html">Medications</a>
+      </li>
+      <li>
+        <a href="workflow.html">Workflow</a>
+      </li>
+      <li>
+        <a href="structured-data-capture.html">Structured Data Capture</a>
+      </li>
+      <li>
+        <a href="validation.html">FHIR Validation</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Build
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="national-proxy-service.html">National Proxy Service</a>
+      </li>
+      <li>
+        <a href="personal-demographics-service.html">Personal Demographics Service</a>
+      </li>
+      <li>
+        <a href="multicast-notification-service.html">Multicast Notification Service</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">FHIR Assets</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Documents Module</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Interoperability Standards - Skunkworks - Local Development build (v0.0.1) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://fhir.nhs.uk/England/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Documents Module</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#document-metadata" id="markdown-toc-document-metadata">Document Metadata</a></li>
+  <li><a href="#clinical-documents-compositions" id="markdown-toc-clinical-documents-compositions">Clinical Documents (Compositions)</a></li>
+  <li><a href="#data-standards" id="markdown-toc-data-standards">Data Standards</a></li>
+  <li><a href="#clinical-document-standards" id="markdown-toc-clinical-document-standards">Clinical Document Standards</a></li>
+  <li><a href="#interoperability-standards" id="markdown-toc-interoperability-standards">Interoperability Standards</a></li>
+  <li><a href="#nhs-england-services" id="markdown-toc-nhs-england-services">NHS England Services</a></li>
+</ul>
+
+</div>
+
+<figure><?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="608px" preserveAspectRatio="none" style="width:1660px;height:608px;background:#FFFFFF;" version="1.1" viewBox="0 0 1660 608" width="1660px" zoomAndPan="magnify"><defs /><g><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="79" x="783.5" y="24.5332">Documents</text><!--entity documentSource--><g id="elem_documentSource"><ellipse cx="62.5" cy="52.6094" fill="#F1F1F1" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;" /><path d="M62.5,60.6094 L62.5,87.6094 M49.5,68.6094 L75.5,68.6094 M62.5,87.6094 L49.5,102.6094 M62.5,87.6094 L75.5,102.6094 " fill="none" style="stroke:#181818;stroke-width:0.5;" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="113" x="6" y="118.6426">Document Source</text></g><!--class documentRegistry--><g id="elem_documentRegistry"><rect codeLine="7" fill="#F1F1F1" height="241.7031" id="documentRegistry" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="401" x="607" y="360.1094" /><ellipse cx="671.25" cy="376.1094" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;" /><path d="M674.0156,371.9844 Q674.1719,371.7656 674.3594,371.6563 Q674.5469,371.5469 674.7656,371.5469 Q675.1406,371.5469 675.375,371.8125 Q675.6094,372.0625 675.6094,372.6719 L675.6094,374.125 Q675.6094,374.7344 675.375,375 Q675.1406,375.2656 674.7656,375.2656 Q674.4219,375.2656 674.2188,375.0625 Q674.0156,374.875 673.9063,374.3594 Q673.8594,374 673.6719,373.8125 Q673.3438,373.4375 672.7344,373.2188 Q672.125,373 671.5,373 Q670.7344,373 670.0938,373.3281 Q669.4688,373.6563 668.9688,374.4063 Q668.4844,375.1563 668.4844,376.1875 L668.4844,377.2813 Q668.4844,378.5156 669.375,379.3438 Q670.2656,380.1563 671.8594,380.1563 Q672.7969,380.1563 673.4531,379.9063 Q673.8438,379.75 674.2656,379.3125 Q674.5313,379.0469 674.6719,378.9688 Q674.8281,378.8906 675.0313,378.8906 Q675.3594,378.8906 675.6094,379.1563 Q675.875,379.4063 675.875,379.75 Q675.875,380.0938 675.5313,380.5 Q675.0313,381.0781 674.2344,381.4063 Q673.1563,381.8594 671.8594,381.8594 Q670.3438,381.8594 669.1406,381.2344 Q668.1563,380.7344 667.4688,379.6719 Q666.7813,378.5938 666.7813,377.3125 L666.7813,376.1563 Q666.7813,374.8281 667.3906,373.6875 Q668.0156,372.5313 669.1094,371.9219 Q670.2031,371.2969 671.4375,371.2969 Q672.1719,371.2969 672.8125,371.4688 Q673.4688,371.625 674.0156,371.9844 Z " fill="#000000" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="264" x="691.75" y="381.8379">Document Registry (DocumentReference)</text><line style="stroke:#181818;stroke-width:0.5;" x1="608" x2="1007" y1="392.1094" y2="392.1094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="96" x="613" y="410.6426">subject: patient</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="27" x="613" y="428.252">type</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="41" x="613" y="445.8613">author</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="61" x="613" y="463.4707">custodian</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="69" x="613" y="481.0801">description</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="67" x="613" y="498.6895">content.url</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="143" x="613" y="516.2988">context.practiceSetting</text><line style="stroke:#181818;stroke-width:0.5;" x1="608" x2="1007" y1="523.375" y2="523.375" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="386" x="613" y="541.9082">FindDocumentReferences(ITI-67): GET /DocumentReference</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="381" x="613" y="559.5176">RetrieveDocumentPointers(NRL): GET /DocumentReference</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="373" x="613" y="577.127">CreateDocumentPointer(NRL): POST /DocumentReference</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="389" x="613" y="594.7363">UpdateDocumentPointer(NRL): PUT /DocumentReference/{id}</text></g><!--class documentRepository--><g id="elem_documentRepository"><rect codeLine="22" fill="#F1F1F1" height="65.6094" id="documentRepository" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="320" x="390.5" y="216.1094" /><ellipse cx="451.25" cy="232.1094" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;" /><path d="M454.0156,227.9844 Q454.1719,227.7656 454.3594,227.6563 Q454.5469,227.5469 454.7656,227.5469 Q455.1406,227.5469 455.375,227.8125 Q455.6094,228.0625 455.6094,228.6719 L455.6094,230.125 Q455.6094,230.7344 455.375,231 Q455.1406,231.2656 454.7656,231.2656 Q454.4219,231.2656 454.2188,231.0625 Q454.0156,230.875 453.9063,230.3594 Q453.8594,230 453.6719,229.8125 Q453.3438,229.4375 452.7344,229.2188 Q452.125,229 451.5,229 Q450.7344,229 450.0938,229.3281 Q449.4688,229.6563 448.9688,230.4063 Q448.4844,231.1563 448.4844,232.1875 L448.4844,233.2813 Q448.4844,234.5156 449.375,235.3438 Q450.2656,236.1563 451.8594,236.1563 Q452.7969,236.1563 453.4531,235.9063 Q453.8438,235.75 454.2656,235.3125 Q454.5313,235.0469 454.6719,234.9688 Q454.8281,234.8906 455.0313,234.8906 Q455.3594,234.8906 455.6094,235.1563 Q455.875,235.4063 455.875,235.75 Q455.875,236.0938 455.5313,236.5 Q455.0313,237.0781 454.2344,237.4063 Q453.1563,237.8594 451.8594,237.8594 Q450.3438,237.8594 449.1406,237.2344 Q448.1563,236.7344 447.4688,235.6719 Q446.7813,234.5938 446.7813,233.3125 L446.7813,232.1563 Q446.7813,230.8281 447.3906,229.6875 Q448.0156,228.5313 449.1094,227.9219 Q450.2031,227.2969 451.4375,227.2969 Q452.1719,227.2969 452.8125,227.4688 Q453.4688,227.625 454.0156,227.9844 Z " fill="#000000" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="190" x="471.75" y="237.8379">Document Repository (Binary)</text><line style="stroke:#181818;stroke-width:0.5;" x1="391.5" x2="709.5" y1="248.1094" y2="248.1094" /><line style="stroke:#181818;stroke-width:0.5;" x1="391.5" x2="709.5" y1="256.1094" y2="256.1094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="308" x="396.5" y="274.6426">RetrieveDocument() : GET /Binary or {pointerUrl}</text></g><!--class dataRepository--><g id="elem_dataRepository"><rect codeLine="27" fill="#F1F1F1" height="65.6094" id="dataRepository" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="236" x="745.5" y="216.1094" /><ellipse cx="789.75" cy="232.1094" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;" /><path d="M792.5156,227.9844 Q792.6719,227.7656 792.8594,227.6563 Q793.0469,227.5469 793.2656,227.5469 Q793.6406,227.5469 793.875,227.8125 Q794.1094,228.0625 794.1094,228.6719 L794.1094,230.125 Q794.1094,230.7344 793.875,231 Q793.6406,231.2656 793.2656,231.2656 Q792.9219,231.2656 792.7188,231.0625 Q792.5156,230.875 792.4063,230.3594 Q792.3594,230 792.1719,229.8125 Q791.8438,229.4375 791.2344,229.2188 Q790.625,229 790,229 Q789.2344,229 788.5938,229.3281 Q787.9688,229.6563 787.4688,230.4063 Q786.9844,231.1563 786.9844,232.1875 L786.9844,233.2813 Q786.9844,234.5156 787.875,235.3438 Q788.7656,236.1563 790.3594,236.1563 Q791.2969,236.1563 791.9531,235.9063 Q792.3438,235.75 792.7656,235.3125 Q793.0313,235.0469 793.1719,234.9688 Q793.3281,234.8906 793.5313,234.8906 Q793.8594,234.8906 794.1094,235.1563 Q794.375,235.4063 794.375,235.75 Q794.375,236.0938 794.0313,236.5 Q793.5313,237.0781 792.7344,237.4063 Q791.6563,237.8594 790.3594,237.8594 Q788.8438,237.8594 787.6406,237.2344 Q786.6563,236.7344 785.9688,235.6719 Q785.2813,234.5938 785.2813,233.3125 L785.2813,232.1563 Q785.2813,230.8281 785.8906,229.6875 Q786.5156,228.5313 787.6094,227.9219 Q788.7031,227.2969 789.9375,227.2969 Q790.6719,227.2969 791.3125,227.4688 Q791.9688,227.625 792.5156,227.9844 Z " fill="#000000" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="139" x="810.25" y="237.8379">Data Repository (any)</text><line style="stroke:#181818;stroke-width:0.5;" x1="746.5" x2="980.5" y1="248.1094" y2="248.1094" /><line style="stroke:#181818;stroke-width:0.5;" x1="746.5" x2="980.5" y1="256.1094" y2="256.1094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="224" x="751.5" y="274.6426">RetrievePointer() : GET {pointerUrl}</text></g><!--entity documentConsumer--><g id="elem_documentConsumer"><ellipse cx="959.5" cy="52.6094" fill="#F1F1F1" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;" /><path d="M959.5,60.6094 L959.5,87.6094 M946.5,68.6094 L972.5,68.6094 M959.5,87.6094 L946.5,102.6094 M959.5,87.6094 L972.5,102.6094 " fill="none" style="stroke:#181818;stroke-width:0.5;" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="133" x="893" y="118.6426">Document Consumer</text></g><g id="elem_raw"><path d="M154.5,53.6094 L154.5,112.6641 L480.5,112.6641 L480.5,63.6094 L470.5,53.6094 L154.5,53.6094 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;" /><path d="M470.5,53.6094 L470.5,63.6094 L480.5,63.6094 L470.5,53.6094 " fill="#FEFFDD" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="160" x="160.5" y="72.1045">would be in its native format</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="301" x="160.5" y="88.4561">and not normally a FHIR resource if it is a document</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="78" x="164.5" y="104.8076">e.g. PDF, etc</text></g><g id="elem_nrl"><path d="M1352,236.1094 L1352,262.4609 A0,0 0 0 0 1352,262.4609 L1462.11,262.4609 L1008.04,413.7394 L1470.11,262.4609 L1653,262.4609 A0,0 0 0 0 1653,262.4609 L1653,246.1094 L1643,236.1094 L1352,236.1094 A0,0 0 0 0 1352,236.1094 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;" /><path d="M1643,236.1094 L1643,246.1094 L1653,246.1094 L1643,236.1094 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="280" x="1358" y="254.6045">This is NRL and core of IHE MHD (and IHE XDS)</text></g><g id="elem_ihe"><path d="M515.5,61.6094 L515.5,104.3125 L857.5,104.3125 L857.5,71.6094 L847.5,61.6094 L515.5,61.6094 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;" /><path d="M847.5,61.6094 L847.5,71.6094 L857.5,71.6094 L847.5,61.6094 " fill="#FEFFDD" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="317" x="521.5" y="80.1045">Not defined in NRL but focus of HL7 and IHE standards</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="211" x="525.5" y="96.4561">for sharing care data and documents</text></g><!--link documentSource to documentRepository--><g id="link_documentSource_documentRepository"><path codeLine="36" d="M71.96,122.2194 C79.49,144.3994 92.37,170.8994 113.5,186.1094 C124.88,194.3094 266.25,213.4194 385.16,228.2694 " fill="none" id="documentSource-to-documentRepository" style="stroke:#181818;stroke-width:1.0;" /><polygon fill="#181818" points="390.45,228.9294,382.0228,223.832,385.4895,228.3022,381.0193,231.7688,390.45,228.9294" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="211" x="160.5" y="166.6045">Simplified Publish [IHE MHD ITI-105]</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="303" x="118.5" y="182.9561">Provide and Register Document Set [IHE XDS ITI-41]</text></g><!--link documentRepository to documentRegistry--><g id="link_documentRepository_documentRegistry"><path codeLine="37" d="M559.01,282.4394 C564.25,298.0194 572.17,316.2794 583.5,330.1094 C590.96,339.2194 599.11,347.9894 607.76,356.3894 " fill="none" id="documentRepository-to-documentRegistry" style="stroke:#181818;stroke-width:1.0;" /><polygon fill="#181818" points="611.49,359.9694,607.7511,350.8578,607.8768,356.5133,602.2213,356.6389,611.49,359.9694" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="131" x="584.5" y="326.6045">Register DocumentSet</text></g><!--link documentRepository to documentRegistry--><g id="link_documentRepository_documentRegistry"><path codeLine="38" d="M680.82,285.8694 C695.13,293.1094 708.75,301.7694 720.5,312.1094 C733.76,323.7694 745.29,337.9494 755.23,353.0594 " fill="none" id="documentRepository-documentRegistry" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="680.4806" x2="670.6655" y1="285.6954" y2="287.6098" /><line style="stroke:#181818;stroke-width:1.0;" x1="680.4806" x2="675.8945" y1="285.6954" y2="276.809" /><line style="stroke:#181818;stroke-width:1.0;" x1="680.4806" x2="673.28" y1="285.6954" y2="282.2094" /><ellipse cx="685.881" cy="288.3098" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="753.7795" x2="759.68" y1="350.7859" y2="360.0694" /><ellipse cx="753.7795" cy="350.7859" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="760.9102" x2="754.1585" y1="354.5479" y2="358.8392" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="39" x="736.5" y="326.6045">pointer</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="61" x="693.6626" y="349.3186">content.url</text></g><!--link dataRepository to documentRegistry--><g id="link_dataRepository_documentRegistry"><path codeLine="39" d="M853.69,290.4094 C849.4,308.0194 844.11,329.7394 838.66,352.1394 " fill="none" id="dataRepository-documentRegistry" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="853.7136" x2="849.7692" y1="290.3538" y2="281.1645" /><line style="stroke:#181818;stroke-width:1.0;" x1="853.7136" x2="861.4308" y1="290.3538" y2="283.9942" /><line style="stroke:#181818;stroke-width:1.0;" x1="853.7136" x2="855.6" y1="290.3538" y2="282.5794" /><ellipse cx="852.2987" cy="296.1846" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="839.3324" x2="836.72" y1="349.3941" y2="360.0794" /><ellipse cx="839.3324" cy="349.3941" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="841.5555" x2="833.7844" y1="357.1438" y2="355.2439" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="39" x="848.5" y="326.6045">pointer</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="61" x="775.638" y="349.3293">content.url</text></g><!--link documentSource to documentRegistry--><g id="link_documentSource_documentRegistry"><path codeLine="40" d="M65.64,122.1894 C68.51,142.1494 73.99,166.4594 84.5,186.1094 C112.51,238.4994 126.95,250.9094 177.5,282.1094 C307.67,362.4294 473.26,412.8094 602,442.6394 " fill="none" id="documentSource-to-documentRegistry" style="stroke:#181818;stroke-width:1.0;" /><polygon fill="#181818" points="606.95,443.7794,599.0685,437.8733,602.0759,442.6645,597.2847,445.6718,606.95,443.7794" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="189" x="178.5" y="246.6045">NRL POST \DocumentReference</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="179" x="187.5" y="262.9561">NRL PUT \DocumentReference</text></g><!--link documentConsumer to documentRegistry--><g id="link_documentConsumer_documentRegistry"><path codeLine="41" d="M1010.05,122.2394 C1018.37,131.0594 1025.81,141.1194 1030.5,152.1094 C1047.73,192.4694 1002.33,275.7794 998.5,282.1094 C982.95,307.7894 963.51,332.7994 943.04,355.9194 " fill="none" id="documentConsumer-to-documentRegistry" style="stroke:#181818;stroke-width:1.0;" /><polygon fill="#181818" points="939.48,359.9094,948.4576,355.8593,942.8098,356.1794,942.4897,350.5316,939.48,359.9094" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="258" x="1028.5" y="246.6045">Find Document References [IHE MHD ITI-67]</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="180" x="1071.5" y="262.9561">NRL GET \DocumentReference</text></g><!--link documentConsumer to documentRepository--><g id="link_documentConsumer_documentRepository"><path codeLine="42" d="M892.87,115.9694 C886.74,118.2694 880.56,120.3594 874.5,122.1094 C783.49,148.3594 749.88,113.2494 663.5,152.1094 C632.43,166.0894 603.29,191.2694 582.38,212.3394 " fill="none" id="documentConsumer-to-documentRepository" style="stroke:#181818;stroke-width:1.0;" /><polygon fill="#181818" points="578.83,215.9494,587.9935,212.3395,582.3368,212.3853,582.291,206.7287,578.83,215.9494" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="210" x="664.5" y="166.6045">Retrieve Document [IHE MHD ITI-68]</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="126" x="708.5" y="182.9561">NRL GET \{pointerUrl}</text></g><!--link documentConsumer to dataRepository--><g id="link_documentConsumer_dataRepository"><path codeLine="43" d="M920.63,122.3594 C912.6,131.5794 904.7,141.7694 898.5,152.1094 C887.57,170.3294 879.21,192.4994 873.4,210.9494 " fill="none" id="documentConsumer-to-dataRepository" style="stroke:#181818;stroke-width:1.0;" /><polygon fill="#181818" points="871.83,216.0494,878.2983,208.6224,873.2994,211.2702,870.6516,206.2713,871.83,216.0494" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="126" x="899.5" y="174.6045">NRL GET \{pointerUrl}</text></g><!--link raw to documentRepository--><g id="link_raw_documentRepository"><path codeLine="50" d="M368.19,112.6694 C388,124.3294 410.68,138.3094 430.5,152.1094 C459.18,172.0794 489.93,196.7494 513.12,216.0794 " fill="none" id="raw-documentRepository" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;" /></g><!--link ihe to dataRepository--><g id="link_ihe_dataRepository"><path codeLine="52" d="M654.61,104.6094 C626.13,125.4794 591.96,158.5794 613.5,186.1094 C614.64,187.5594 681.07,203.9994 745.16,219.5894 " fill="none" id="ihe-dataRepository" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;" /></g><!--link ihe to documentRepository--><g id="link_ihe_documentRepository"><path codeLine="53" d="M633.28,104.6394 C611.41,115.6194 587.69,131.2394 572.5,152.1094 C559.02,170.6394 553.62,196.0694 551.54,216.0994 " fill="none" id="ihe-documentRepository" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;" /></g></g></svg></figure>
+<p><br clear="all" /></p>
+
+<h3 id="document-metadata">Document Metadata</h3>
+
+<blockquote>
+  <p>NHS England does not currently have a <strong>data standard</strong> for <code class="language-plaintext highlighter-rouge">Document Metadata</code></p>
+
+  <p>It is suggested until this is produced, the model in <a href="https://simplifier.net/resolve?fhirVersion=R4&amp;scope=fhir.r4.ukcore.stu3.currentbuild&amp;canonical=https://fhir.hl7.org.uk/StructureDefinition/UKCore-DocumentReference">UK Core DocumentReference</a> should be followed for all standards (IHE XDS, openEHR and HL7)</p>
+</blockquote>
+
+<p><a href="https://profiles.ihe.net/ITI/papers/metadata/index.html">Document Metadata</a> is present in other <strong>data standards</strong>. The table below shows <code class="language-plaintext highlighter-rouge">Document Metadata</code> relationships between interoperability standards.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Data Standard</th>
+      <th>Notes</th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>HL7 FHIR DocumentReference</td>
+      <td><a href="https://hl7.org/fhir/R4/documentreference-mappings.html#xds">XDS metadata equivalent</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>HL7 UK Core DocumentReference</td>
+      <td><a href="https://simplifier.net/resolve?fhirVersion=R4&amp;scope=fhir.r4.ukcore.stu3.currentbuild&amp;canonical=https://fhir.hl7.org.uk/StructureDefinition/UKCore-DocumentReference">UK Core DocumentReference</a></td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>HL7 v2 MDM Message</td>
+      <td><a href="https://hl7.org/fhir/R4/documentreference-mappings.html#v2">FHIR DocumentReference and HL7 v2 mapping</a></td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="clinical-documents-compositions">Clinical Documents (Compositions)</h3>
+
+<p>Clinical Documents is a concept found in clinical informatics and is used as a type of document in XDS systems in the same manner as other document formats (e.g. PDF, DICOM, etc). The table below shows where documentation on compositions can be found.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Standards</th>
+      <th>References</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>HL7 FHIR</td>
+      <td><a href="https://hl7.org/fhir/R4/documents.html">FHIR Documents</a></td>
+    </tr>
+    <tr>
+      <td>HL7 CDA</td>
+      <td><a href="https://www.hl7.org.uk/wp-content/uploads/HL7UK_Media/Documents/Technical/A-basic-view-of-CDA-v3.doc">A basic view of Clinical Document Architecture</a></td>
+    </tr>
+    <tr>
+      <td>openEHR</td>
+      <td><a href="https://specifications.openehr.org/releases/RM/latest/ehr.html#_compositions">Compositions</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Composition are related to <a href="documents-module.html#document-metadata">Document Metadata</a>, the table below shows the relationships between data (and interoperability) standards.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Data Standard</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>HL7 FHIR Composition</td>
+      <td><a href="https://hl7.org/fhir/R4/composition-mappings.html#fhirdocumentreference">FHIR Composition and DocumentReference mapping</a></td>
+    </tr>
+    <tr>
+      <td>HL7 CDA</td>
+      <td><a href="https://hl7.org/fhir/R4/composition-mappings.html#cda">FHIR Composition and CDA mapping</a></td>
+    </tr>
+    <tr>
+      <td>HL7 UK Core Composition</td>
+      <td><a href="https://simplifier.net/resolve?fhirVersion=R4&amp;scope=fhir.r4.ukcore.stu3.currentbuild&amp;canonical=https://fhir.hl7.org.uk/StructureDefinition/UKCore-Composition">UK Core Composition</a></td>
+    </tr>
+    <tr>
+      <td>PRSB</td>
+      <td><a href="https://theprsb.org/standards/documentnaming/">Document Naming</a></td>
+    </tr>
+    <tr>
+      <td>openEHR / Apperta</td>
+      <td><a href="https://ckm.apperta.org/ckm/archetypes/1051.32.672">XDS metadata</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="data-standards">Data Standards</h3>
+
+<p>Most Clinical Document standards used by NHS England can be found on <a href="https://theprsb.org/standards/">PRSB Standards</a></p>
+
+<p>Key standards include:</p>
+
+<ul>
+  <li><a href="https://theprsb.org/standards/outpatientletterstandard/">Outpatient Letters</a></li>
+  <li>Discharge Report
+    <ul>
+      <li><a href="https://theprsb.org/standards/edischargesummary/]">eDischarge Summary Standard</a></li>
+      <li><a href="https://theprsb.org/standards/emergencycaredischarge/">Emergency Care Discharge Standard</a></li>
+      <li><a href="https://theprsb.org/standards/mentalhealth/">Mental health inpatient discharge</a></li>
+    </ul>
+  </li>
+  <li>Referral Letters
+    <ul>
+      <li><a href="https://theprsb.org/standards/clinicalreferralinformation-2/">Clinical referral information</a></li>
+    </ul>
+  </li>
+  <li>Pharmacy
+    <ul>
+      <li><a href="https://theprsb.org/standards/communitypharmacy/">Community Pharmacy Standard</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="clinical-document-standards">Clinical Document Standards</h3>
+
+<h4 id="nhs-england">NHS England</h4>
+
+<p>Are mostly based on Data Standards in the previous section. They do combine FHIR concpets of <a href="https://hl7.org/fhir/STU3/messaging.html">Messaging</a> and <a href="https://hl7.org/fhir/STU3/documents.html">Documents</a>, in the context of this guide we are only referring to the <a href="https://hl7.org/fhir/STU3/documents.html">Documents</a> aspect and not ITK3.</p>
+
+<ul>
+  <li>Transfer of Care (based on Care Connect/FHIR STU3 which is <code class="language-plaintext highlighter-rouge">deprecated</code>)
+    <ul>
+      <li>Outpatient Letters
+        <ul>
+          <li><a href="https://developer.nhs.uk/apis/itk3tocoutpatientletter-2-9-0/">Outpatient Clinic Letter</a></li>
+        </ul>
+      </li>
+      <li>Discharge Report
+        <ul>
+          <li><a href="https://developer.nhs.uk/apis/itk3tocedischarge-2-9-0/">Acute Inpatient Discharge</a></li>
+          <li><a href="https://developer.nhs.uk/apis/itk3emergencycareedischarge-2-9-0/">Emergency Care Discharge</a></li>
+          <li><a href="https://developer.nhs.uk/apis/itk3tocmentalhealthedischarge-2-9-0/">Mental Health Discharge</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Pharmacy (based on Care Connect/FHIR STU3 which is <code class="language-plaintext highlighter-rouge">deprecated</code>)
+    <ul>
+      <li><a href="https://digital.nhs.uk/developer/api-catalogue/digital-medicine-fhir">Digital Medicine - FHIR</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="international">International</h4>
+
+<p>The following standards are all based on FHIR R4</p>
+
+<ul>
+  <li>Patient Summary
+    <ul>
+      <li><a href="https://build.fhir.org/ig/HL7/fhir-ips/index.html">Internation Patient Summary</a> An International Patient Summary (IPS) document is an electronic health record extract containing essential healthcare information about a subject of care. As specified in EN 17269 and ISO 27269, it is designed for supporting the use case scenario for ‘unplanned, cross border care’, but it is not limited to it. It is intended to be international, i.e., to provide generic solutions for global application beyond a particular region or country.</li>
+    </ul>
+  </li>
+  <li>Laboratory Report
+    <ul>
+      <li><a href="https://build.fhir.org/ig/hl7-eu/laboratory/">HL7 Europe Laboratory Report</a> Clinical laboratory results play an important role in diagnosis, treatment, and follow-up of patients. The availability of high quality test results, and the capacity of sharing them, is therefore essential being often the basis for clinical decision making. For this reason the Laboratory has been selected as one of the priority domains for the European EHR eXchange Format (E-EHRxF).</li>
+    </ul>
+  </li>
+  <li>Pharmacy
+    <ul>
+      <li>Europe <a href="https://build.fhir.org/ig/hl7-eu/gravitate-health-ips/">Gravitate Health FHIR Implementation Guide (FHIR R4)</a> How to integrate patient health information from the International Patient Summary (IPS) with medicinal product information from regulatory approved electronic Product Information (ePI) documents. Together, the IPS and ePI will facilitate the creation of new digital platforms that give patients a more accessible way of acquiring trusted health and medicinal product Information.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="interoperability-standards">Interoperability Standards</h3>
+
+<ul>
+  <li><a href="https://profiles.ihe.net/ITI/MHDS/index.html">Mobile Health Document Sharing (MHDS)</a> This Implementation Guide shows how to build a Document Sharing Exchange using IHE-profiled FHIR® standard, rather than the legacy IHE profiles that are dominated by XDS and HL7® v2. This Implementation Guide assembles other IHE Implementation guides (Profiles) and defines a Document Registry Actor.</li>
+  <li><a href="https://profiles.ihe.net/ITI/MHD/index.html">Mobile access to Health Documents (MHD)</a> Applications specific to resource-constrained and mobile devices are an emerging platform for healthcare-enhancing software. The MHD Profile is not limited to mobile devices, using the term “mobile” only as a grouping for mobile applications, mobile devices or any other systems that are resource and platform-constrained. These constraints may drive the implementer to use simpler network interface technology. There are numerous deployed implementations of <a href="https://profiles.ihe.net/ITI/HIE-Whitepaper/index.html">Document Sharing Health Information Exchange</a> that need a simpler network interface technology, for example those hosted by a Health Information Exchange (HIE), large health provider electronic health record (EHR), or personal health record (PHR).</li>
+</ul>
+
+<h3 id="nhs-england-services">NHS England Services</h3>
+
+<p><a href="https://digital.nhs.uk/developer/api-catalogue/national-record-locator-fhir/v3/producer">National Record Locator</a></p>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.england.nhs.uk/">NHS England</a>.  Package uk.nhs.england.skunkworks#0.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Feb 8, 2024 11:21+0000">2024-02-08</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+            <div style="color: #333333" >
+
+          Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
+                 <a style="color: #81BEF7" href="qa.html">QA Report</a> 
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
+<div>
+</div>
+
+</div>
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

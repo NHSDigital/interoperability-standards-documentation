@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Administration Module - Interoperability Standards - Skunkworks v0.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+
+    <!--  <script src="assets/nhsuk.js" defer></script> -->
+
+      <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<!-- Project extras
+<link
+        type="font/woff2"
+        href="assets/fonts/FrutigerLTW01-55Roman.woff2"
+        rel="preload"
+        as="font"
+        crossorigin
+/>
+<link
+        type="font/woff2"
+        href="assets/fonts/FrutigerLTW01-65Bold.woff2"
+        rel="preload"
+        as="font"
+        crossorigin
+/>
+<link href="assets/css/nhsuk.css" rel="stylesheet" />
+-->
+
+<!-- Bootstrap core CSS overrides to bootstrap-fhir.css -->
+<link href="assets/css/nhse.css" rel="stylesheet"/>
+
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/favicons/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"2"}
+    h3,h4,h5,h6{--heading-prefix:"2"}</style>
+    <div id="segment-header" class="segment nhsuk-header">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+<!-- Left logo - typically the publisher's logo - project or affiliate -->
+        <div id="project-nav">
+          <a id="project-logo" no-external="true" href="https://www.england.nhs.uk">
+            <img height="61" alt="Project home" src="assets/images/skunk.png"/>
+          </a>
+        </div>
+
+<!-- Right logo - for example the FHIR logo -->
+<!-- Make sure you have authorization to use the FHIR logo -->
+
+        <div id="family-nav">
+            <!--
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="60" alt="FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+          -->
+        </div> 
+      
+
+<!-- search icon - if you want -->
+<!--
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+-->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Interoperability Standards - Skunkworks</span>
+            <br/>
+            <span style="display:inline-block;">0.0.1 - ci-build
+
+
+
+   <img alt="England flag" src="assets/images/GB-ENG.svg" height="16" title="England"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Documentation
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="background.html">Background</a>
+      </li>
+      <li>
+        <a href="interoperability-standards.html">Interoperability Standards</a>
+      </li>
+      <li>
+        <a href="testing.html">Conformance and Testing (FHIR)</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Design
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="administration-module.html">Administration</a>
+      </li>
+      <li>
+        <a href="documents-module.html">Documents (Clinical)</a>
+      </li>
+      <li>
+        <a href="clinical-module.html">Clinical</a>
+      </li>
+      <li>
+        <a href="diagnostics-module.html">Diagnostics</a>
+      </li>
+      <li>
+        <a href="medications-module.html">Medications</a>
+      </li>
+      <li>
+        <a href="workflow.html">Workflow</a>
+      </li>
+      <li>
+        <a href="structured-data-capture.html">Structured Data Capture</a>
+      </li>
+      <li>
+        <a href="validation.html">FHIR Validation</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Build
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="national-proxy-service.html">National Proxy Service</a>
+      </li>
+      <li>
+        <a href="personal-demographics-service.html">Personal Demographics Service</a>
+      </li>
+      <li>
+        <a href="multicast-notification-service.html">Multicast Notification Service</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">FHIR Assets</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Administration Module</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Interoperability Standards - Skunkworks - Local Development build (v0.0.1) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://fhir.nhs.uk/England/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Administration Module</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#patient-registers" id="markdown-toc-patient-registers">Patient Registers</a></li>
+  <li><a href="#security-and-privacy" id="markdown-toc-security-and-privacy">Security and Privacy</a></li>
+  <li><a href="#clinical-categorization-resources" id="markdown-toc-clinical-categorization-resources">Clinical Categorization Resources</a></li>
+  <li><a href="#service-provider-directory-resources" id="markdown-toc-service-provider-directory-resources">Service Provider Directory Resources</a></li>
+  <li><a href="#scheduling-and-appointments" id="markdown-toc-scheduling-and-appointments">Scheduling and Appointments</a></li>
+</ul>
+
+</div>
+
+<h3 id="patient-registers">Patient Registers</h3>
+
+<figure><?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="717px" preserveAspectRatio="none" style="width:819px;height:717px;background:#FFFFFF;" version="1.1" viewBox="0 0 819 717" width="819px" zoomAndPan="magnify"><defs /><g><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="121" x="342.225" y="24.5332">Patient Registers</text><!--cluster PatientRegisters--><g id="cluster_PatientRegisters"><path d="M8.5,44.6094 L130.5,44.6094 A3.75,3.75 0 0 1 133,47.1094 L140,68.2188 L718.5,68.2188 A2.5,2.5 0 0 1 721,70.7188 L721,708.1094 A2.5,2.5 0 0 1 718.5,710.6094 L8.5,710.6094 A2.5,2.5 0 0 1 6,708.1094 L6,47.1094 A2.5,2.5 0 0 1 8.5,44.6094 " fill="none" style="stroke:#000000;stroke-width:1.5;" /><line style="stroke:#000000;stroke-width:1.5;" x1="6" x2="140" y1="68.2188" y2="68.2188" /><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="121" x="10" y="61.1426">Patient Registers</text></g><g id="elem_Patient"><rect fill="#F1F1F1" height="152.875" style="stroke:#181818;stroke-width:0.5;" width="154" x="265" y="327.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="44" x="320" y="344.1426">Patient</text><line style="stroke:#181818;stroke-width:0.5;" x1="266" x2="418" y1="349.2188" y2="349.2188" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="142" x="271" y="367.752">identifier: NHS Number</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="35" x="271" y="385.3613">name</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="45" x="271" y="402.9707">gender</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="49" x="271" y="420.5801">telecom</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="56" x="271" y="438.1895">birthdate</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="51" x="271" y="455.7988">address</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="21" x="271" y="473.4082">link</text></g><g id="elem_RelatedPerson"><rect fill="#F1F1F1" height="152.875" style="stroke:#181818;stroke-width:0.5;" width="154" x="442" y="80.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="94" x="472" y="97.1426">RelatedPerson</text><line style="stroke:#181818;stroke-width:0.5;" x1="443" x2="595" y1="102.2188" y2="102.2188" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="142" x="448" y="120.752">identifier: NHS Number</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="43" x="448" y="138.3613">patient</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="35" x="448" y="155.9707">name</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="45" x="448" y="173.5801">gender</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="49" x="448" y="191.1895">telecom</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="56" x="448" y="208.7988">birthdate</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="51" x="448" y="226.4082">address</text></g><g id="elem_Practitioner"><rect fill="#F1F1F1" height="100.0469" style="stroke:#181818;stroke-width:0.5;" width="207" x="22.5" y="354.1094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="72" x="90" y="370.6426">Practitioner</text><line style="stroke:#181818;stroke-width:0.5;" x1="23.5" x2="228.5" y1="375.7188" y2="375.7188" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="195" x="28.5" y="394.252">identifier: GMC, GMP, etc code</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="75" x="28.5" y="411.8613">qualification</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="35" x="28.5" y="429.4707">name</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="49" x="28.5" y="447.0801">telecom</text></g><g id="elem_Person"><rect fill="#F1F1F1" height="152.875" style="stroke:#181818;stroke-width:0.5;" width="68" x="308" y="541.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="45" x="319.5" y="558.1426">Person</text><line style="stroke:#181818;stroke-width:0.5;" x1="309" x2="375" y1="563.2188" y2="563.2188" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="54" x="314" y="581.752">identifier</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="35" x="314" y="599.3613">name</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="45" x="314" y="616.9707">gender</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="49" x="314" y="634.5801">telecom</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="56" x="314" y="652.1895">birthdate</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="51" x="314" y="669.7988">address</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="21" x="314" y="687.4082">link</text></g><!--link Patient to Person--><g id="link_Patient_Person"><path codeLine="41" d="M342,480.7494 C342,498.7894 342,518.1194 342,536.3794 " fill="none" id="Patient-to-Person" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;" /><polygon fill="#181818" points="342,541.4994,346,532.4994,342,536.4994,338,532.4994,342,541.4994" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="20" x="321.0156" y="530.6892">link</text></g><!--link RelatedPerson to Patient--><g id="link_RelatedPerson_Patient"><path codeLine="42" d="M436.11,229.1594 C425.62,240.1094 415.58,251.7294 407,263.6094 C394.58,280.7994 383.62,300.7394 374.4,320.0694 " fill="none" id="RelatedPerson-Patient" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="436.3877" x2="437.6895" y1="228.8801" y2="218.9652" /><line style="stroke:#181818;stroke-width:1.0;" x1="436.3877" x2="446.2705" y1="228.8801" y2="227.3536" /><line style="stroke:#181818;stroke-width:1.0;" x1="436.3877" x2="441.98" y1="228.8801" y2="223.1594" /><ellipse cx="432.1935" cy="233.1706" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="375.6082" x2="370.95" y1="317.4744" y2="327.4394" /><ellipse cx="375.6082" cy="317.4744" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="376.2675" x2="369.0203" y1="325.5096" y2="322.1218" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="278" x="410" y="278.1045">The link between a Patient and RelatedPersons.</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="286" x="408" y="294.4561">The Person and RelatedPerson are not the same.</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="39" x="394.9869" y="225.4815">patient</text></g><!--link Patient to Patient--><g id="link_Patient_Patient"><path codeLine="43" d="M419.21,384.4594 C439.06,385.7094 454,392.2594 454,404.1094 C454,414.9394 441.52,421.3494 424.21,423.3194 " fill="none" id="Patient-to-Patient" style="stroke:#181818;stroke-width:1.0;" /><polygon fill="#181818" points="419.21,423.7594,428.5195,426.9739,424.1916,423.3312,427.8344,419.0033,419.21,423.7594" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="82" x="526.5" y="401.6045">De duplication</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="219" x="460" y="417.9561">replaced-by | replaces | refer | seealso</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="20" x="426.9771" y="422.3133">link</text></g><!--link RelatedPerson to Person--><g id="link_RelatedPerson_Person"><path codeLine="44" d="M596.33,182.6494 C634.43,199.0894 676.85,224.9494 699,263.6094 C725.85,310.4594 812.45,307.8994 686,480.6094 C612.89,580.4694 455.03,607.3394 381.36,614.5194 " fill="none" id="RelatedPerson-to-Person" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;" /><polygon fill="#181818" points="376.21,614.9994,385.5474,618.1319,381.1877,614.5274,384.7922,610.1676,376.21,614.9994" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="20" x="384.0849" y="610.558">link</text></g><!--link Practitioner to Person--><g id="link_Practitioner_Person"><path codeLine="45" d="M176.1,454.2794 C215.18,492.6394 268.62,545.0894 304.17,579.9794 " fill="none" id="Practitioner-to-Person" style="stroke:#181818;stroke-width:1.0;stroke-dasharray:7.0,7.0;" /><polygon fill="#181818" points="307.98,583.7194,304.3518,574.5632,304.4089,580.2197,298.7524,580.2769,307.98,583.7194" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="20" x="279.8638" y="573.4428">link</text></g></g></svg></figure>
+<p><br clear="all" /></p>
+
+<h4 id="interoperability-standards">Interoperability Standards</h4>
+
+<h5 id="nhs-england-and-hl7-uk">NHS England and HL7 UK</h5>
+
+<ul>
+  <li><a href="https://build.fhir.org/ig/HL7-UK/UK-Core-Access/">UK Core FHIR Access</a> This HL7 FHIR Implementation Guide specifies the requirements for a RESTful endpoint providing read-only access for direct care and subject of care access within the UK (covering patient demographics queries (PDQ) and medications).</li>
+  <li><code class="language-plaintext highlighter-rouge">deprecated</code> <a href="HSCIC ITK HL7 V2 Message Specifications.pdf" target="_blank">NHS England (ADT) ITK HL7 v2 (2.4) Message Specification</a>. Covering
+    <ul>
+      <li><a href="https://profiles.ihe.net/ITI/TF/Volume1/ch-8.html">Patient Demographics Query (PDQ)</a></li>
+      <li><a href="https://profiles.ihe.net/ITI/TF/Volume1/ch-5.html">Patient Identifier Cross-referencing (PIX)</a></li>
+    </ul>
+  </li>
+</ul>
+
+<p>See also <a href="https://nhsd-confluence.digital.nhs.uk/display/IOPS/IHE+PDQm+Elaboration">IHE PDQm NHS England Elaboration</a></p>
+
+<h5 id="international">International</h5>
+<ul>
+  <li><a href="https://profiles.ihe.net/ITI/PDQm/index.html">Patient Demographics Query for mobile (PDQm)</a> The Patient Demographics Query for Mobile (PDQm) Profile defines a lightweight RESTful interface to a patient demographics supplier leveraging technologies readily available to mobile applications and lightweight browser based applications.</li>
+  <li><a href="https://profiles.ihe.net/ITI/PIXm/index.html">Patient Identifier Cross-Reference for Mobile (PIXm)</a> The Patient Identifier Cross-reference for Mobile (PIXm) Profile provides RESTful transactions for mobile and lightweight browser-based applications to create, update and delete patient records in a Patient Identifier Cross-reference Manager and to query the Patient Identifier Cross-reference Manager for a patient’s cross-domain identifiers.</li>
+</ul>
+
+<h4 id="nhs-england-services">NHS England Services</h4>
+
+<ul>
+  <li><a href="personal-demographics-service.html">Personal Demographics Service</a></li>
+  <li><a href="national-proxy-service.html">National Proxy Service</a></li>
+  <li><a href="multicast-notification-service.html">Multicast Notification Service</a></li>
+</ul>
+
+<h3 id="security-and-privacy">Security and Privacy</h3>
+
+<figure><?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="259px" preserveAspectRatio="none" style="width:562px;height:259px;background:#FFFFFF;" version="1.1" viewBox="0 0 562 259" width="562px" zoomAndPan="magnify"><defs /><g><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="142" x="203" y="24.5332">Security and Privacy</text><!--cluster SecurityAndPrivacy--><g id="cluster_SecurityAndPrivacy"><path d="M8.5,44.6094 L151.5,44.6094 A3.75,3.75 0 0 1 154,47.1094 L161,68.2188 L533.5,68.2188 A2.5,2.5 0 0 1 536,70.7188 L536,159.1094 A2.5,2.5 0 0 1 533.5,161.6094 L8.5,161.6094 A2.5,2.5 0 0 1 6,159.1094 L6,47.1094 A2.5,2.5 0 0 1 8.5,44.6094 " fill="none" style="stroke:#000000;stroke-width:1.5;" /><line style="stroke:#000000;stroke-width:1.5;" x1="6" x2="161" y1="68.2188" y2="68.2188" /><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="142" x="10" y="61.1426">Security and Privacy</text></g><g id="elem_Consent"><rect fill="#F1F1F1" height="64.8281" style="stroke:#181818;stroke-width:0.5;" width="256" x="264" y="80.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="53" x="365.5" y="97.1426">Consent</text><line style="stroke:#181818;stroke-width:0.5;" x1="265" x2="519" y1="102.2188" y2="102.2188" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="214" x="270" y="120.752">patient: the subject of the consent</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="244" x="270" y="138.3613">organization : custodian of the consent</text></g><g id="elem_AuditEvent"><rect fill="#F1F1F1" height="37.6094" style="stroke:#181818;stroke-width:0.5;" width="82" x="147" y="94.1094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="68" x="154" y="110.6426">AuditEvent</text><line style="stroke:#181818;stroke-width:0.5;" x1="148" x2="228" y1="115.7188" y2="115.7188" /></g><g id="elem_Provenance"><rect fill="#F1F1F1" height="37.6094" style="stroke:#181818;stroke-width:0.5;" width="90" x="22" y="94.1094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="76" x="29" y="110.6426">Provenance</text><line style="stroke:#181818;stroke-width:0.5;" x1="23" x2="111" y1="115.7188" y2="115.7188" /></g><g id="elem_Patient"><rect fill="#F1F1F1" height="47.2188" style="stroke:#181818;stroke-width:0.5;" width="154" x="224" y="205.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="44" x="279" y="222.1426">Patient</text><line style="stroke:#181818;stroke-width:0.5;" x1="225" x2="377" y1="227.2188" y2="227.2188" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="142" x="230" y="245.752">identifier: NHS Number</text></g><g id="elem_Organization"><rect fill="#F1F1F1" height="47.2188" style="stroke:#181818;stroke-width:0.5;" width="142" x="413" y="205.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="80" x="444" y="222.1426">Organization</text><line style="stroke:#181818;stroke-width:0.5;" x1="414" x2="554" y1="227.2188" y2="227.2188" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="130" x="419" y="245.752">identifier: ODS Code</text></g><!--link Consent to Patient--><g id="link_Consent_Patient"><path codeLine="32" d="M361.56,152.2394 C349.31,167.5794 335.43,184.9794 324.05,199.2394 " fill="none" id="Consent-Patient" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="361.6646" x2="361.9575" y1="152.1261" y2="142.1304" /><line style="stroke:#181818;stroke-width:1.0;" x1="361.6646" x2="371.3425" y1="152.1261" y2="149.6084" /><line style="stroke:#181818;stroke-width:1.0;" x1="361.6646" x2="366.65" y1="152.1261" y2="145.8694" /><ellipse cx="357.9256" cy="156.8186" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="325.8769" x2="319.01" y1="196.956" y2="205.5494" /><ellipse cx="325.8769" cy="196.956" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="324.6319" x2="318.3822" y1="204.9215" y2="199.9275" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="39" x="319.3808" y="166.9279">patient</text></g><!--link Consent to Organization--><g id="link_Consent_Organization"><path codeLine="33" d="M422.78,152.2394 C435.16,167.5794 449.19,184.9794 460.7,199.2394 " fill="none" id="Consent-Organization" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="422.6554" x2="412.9615" y1="152.094" y2="149.6384" /><line style="stroke:#181818;stroke-width:1.0;" x1="422.6554" x2="422.2985" y1="152.094" y2="142.1003" /><line style="stroke:#181818;stroke-width:1.0;" x1="422.6554" x2="417.63" y1="152.094" y2="145.8694" /><ellipse cx="426.4244" cy="156.7624" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="458.8901" x2="465.8" y1="196.9905" y2="205.5494" /><ellipse cx="458.8901" cy="196.9905" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="466.3996" x2="460.175" y1="199.9244" y2="204.9498" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="70" x="428.8087" y="166.9279">organization</text></g></g></svg></figure>
+<p><br clear="all" /></p>
+
+<h4 id="nhs-england-services-1">NHS England Services</h4>
+
+<ul>
+  <li><a href="national-proxy-service.html">National Proxy Service</a></li>
+</ul>
+
+<h3 id="clinical-categorization-resources">Clinical Categorization Resources</h3>
+
+<figure><?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="295px" preserveAspectRatio="none" style="width:520px;height:295px;background:#FFFFFF;" version="1.1" viewBox="0 0 520 295" width="520px" zoomAndPan="magnify"><defs /><g><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="237" x="134.75" y="24.5332">Clinical Categorization Resources</text><!--cluster ClinicalCategorization--><g id="cluster_ClinicalCategorization"><path d="M8.5,44.6094 L166.5,44.6094 A3.75,3.75 0 0 1 169,47.1094 L176,68.2188 L427.5,68.2188 A2.5,2.5 0 0 1 430,70.7188 L430,194.1094 A2.5,2.5 0 0 1 427.5,196.6094 L8.5,196.6094 A2.5,2.5 0 0 1 6,194.1094 L6,47.1094 A2.5,2.5 0 0 1 8.5,44.6094 " fill="none" style="stroke:#000000;stroke-width:1.5;" /><line style="stroke:#000000;stroke-width:1.5;" x1="6" x2="176" y1="68.2188" y2="68.2188" /><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="157" x="10" y="61.1426">Clinical Categorization</text></g><g id="elem_EpisodeOfCare"><rect fill="#F1F1F1" height="64.8281" style="stroke:#181818;stroke-width:0.5;" width="154" x="115" y="98.1094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="97" x="143.5" y="114.6426">EpisodeOfCare</text><line style="stroke:#181818;stroke-width:0.5;" x1="116" x2="268" y1="119.7188" y2="119.7188" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="43" x="121" y="138.252">patient</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="142" x="121" y="155.8613">managingOrganization</text></g><g id="elem_Encounter"><rect fill="#F1F1F1" height="100.0469" style="stroke:#181818;stroke-width:0.5;" width="110" x="304" y="80.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="65" x="326.5" y="97.1426">Encounter</text><line style="stroke:#181818;stroke-width:0.5;" x1="305" x2="413" y1="102.2188" y2="102.2188" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="45" x="310" y="120.752">subject</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="96" x="310" y="138.3613">episodeOfCare</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="98" x="310" y="155.9707">serviceProvider</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="78" x="310" y="173.5801">appointment</text></g><g id="elem_Flag"><rect fill="#F1F1F1" height="47.2188" style="stroke:#181818;stroke-width:0.5;" width="57" x="22.5" y="107.1094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="28" x="37" y="123.6426">Flag</text><line style="stroke:#181818;stroke-width:0.5;" x1="23.5" x2="78.5" y1="128.7188" y2="128.7188" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="45" x="28.5" y="147.252">subject</text></g><g id="elem_Patient"><rect fill="#F1F1F1" height="47.2188" style="stroke:#181818;stroke-width:0.5;" width="154" x="36" y="241.1094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="44" x="91" y="257.6426">Patient</text><line style="stroke:#181818;stroke-width:0.5;" x1="37" x2="189" y1="262.7188" y2="262.7188" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="142" x="42" y="281.252">identifier: NHS Number</text></g><g id="elem_Organization"><rect fill="#F1F1F1" height="47.2188" style="stroke:#181818;stroke-width:0.5;" width="142" x="225" y="241.1094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="80" x="256" y="257.6426">Organization</text><line style="stroke:#181818;stroke-width:0.5;" x1="226" x2="366" y1="262.7188" y2="262.7188" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="130" x="231" y="281.252">identifier: ODS Code</text></g><!--class Appointment--><g id="elem_Appointment"><rect fill="#F1F1F1" height="48" id="Appointment" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="111" x="402.5" y="240.6094" /><ellipse cx="417.5" cy="256.6094" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;" /><path d="M420.2656,252.4844 Q420.4219,252.2656 420.6094,252.1563 Q420.7969,252.0469 421.0156,252.0469 Q421.3906,252.0469 421.625,252.3125 Q421.8594,252.5625 421.8594,253.1719 L421.8594,254.625 Q421.8594,255.2344 421.625,255.5 Q421.3906,255.7656 421.0156,255.7656 Q420.6719,255.7656 420.4688,255.5625 Q420.2656,255.375 420.1563,254.8594 Q420.1094,254.5 419.9219,254.3125 Q419.5938,253.9375 418.9844,253.7188 Q418.375,253.5 417.75,253.5 Q416.9844,253.5 416.3438,253.8281 Q415.7188,254.1563 415.2188,254.9063 Q414.7344,255.6563 414.7344,256.6875 L414.7344,257.7813 Q414.7344,259.0156 415.625,259.8438 Q416.5156,260.6563 418.1094,260.6563 Q419.0469,260.6563 419.7031,260.4063 Q420.0938,260.25 420.5156,259.8125 Q420.7813,259.5469 420.9219,259.4688 Q421.0781,259.3906 421.2813,259.3906 Q421.6094,259.3906 421.8594,259.6563 Q422.125,259.9063 422.125,260.25 Q422.125,260.5938 421.7813,261 Q421.2813,261.5781 420.4844,261.9063 Q419.4063,262.3594 418.1094,262.3594 Q416.5938,262.3594 415.3906,261.7344 Q414.4063,261.2344 413.7188,260.1719 Q413.0313,259.0938 413.0313,257.8125 L413.0313,256.6563 Q413.0313,255.3281 413.6406,254.1875 Q414.2656,253.0313 415.3594,252.4219 Q416.4531,251.7969 417.6875,251.7969 Q418.4219,251.7969 419.0625,251.9688 Q419.7188,252.125 420.2656,252.4844 Z " fill="#000000" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="79" x="431.5" y="262.3379">Appointment</text><line style="stroke:#181818;stroke-width:0.5;" x1="403.5" x2="512.5" y1="272.6094" y2="272.6094" /><line style="stroke:#181818;stroke-width:0.5;" x1="403.5" x2="512.5" y1="280.6094" y2="280.6094" /></g><!--link EpisodeOfCare to Patient--><g id="link_EpisodeOfCare_Patient"><path codeLine="33" d="M168.92,170.1694 C156.79,190.4494 142.13,214.9394 130.87,233.7594 " fill="none" id="EpisodeOfCare-Patient" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="168.964" x2="167.935" y1="170.0893" y2="160.1424" /><line style="stroke:#181818;stroke-width:1.0;" x1="168.964" x2="178.225" y1="170.0893" y2="166.3163" /><line style="stroke:#181818;stroke-width:1.0;" x1="168.964" x2="173.08" y1="170.0893" y2="163.2294" /><ellipse cx="165.8771" cy="175.2343" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="132.2063" x2="126.57" y1="231.4831" y2="240.9294" /><ellipse cx="132.2063" cy="231.4831" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="132.0546" x2="125.1846" y1="239.5439" y2="235.4448" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="39" x="126.7562" y="184.5176">patient</text></g><!--link EpisodeOfCare to Organization--><g id="link_EpisodeOfCare_Organization"><path codeLine="34" d="M221.91,169.5794 C238.18,190.2194 257.98,215.3594 273.02,234.4494 " fill="none" id="EpisodeOfCare-Organization" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="221.8551" x2="212.1936" y1="169.5179" y2="166.9382" /><line style="stroke:#181818;stroke-width:1.0;" x1="221.8551" x2="221.6264" y1="169.5179" y2="159.5206" /><line style="stroke:#181818;stroke-width:1.0;" x1="221.8551" x2="216.91" y1="169.5179" y2="163.2294" /><ellipse cx="225.5639" cy="174.2344" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="271.3184" x2="278.13" y1="232.2921" y2="240.9294" /><ellipse cx="271.3184" cy="232.2921" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="278.7939" x2="272.5122" y1="235.3116" y2="240.2655" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="133" x="163.5879" y="199.9978">managingOrganizationr</text></g><!--link Encounter to Patient--><g id="link_Encounter_Patient"><path codeLine="35" d="M310.76,186.4494 C303.26,193.1494 295.25,199.4394 287,204.6094 C259.95,221.5494 227.47,234.2594 197.93,243.4594 " fill="none" id="Encounter-Patient" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="311.0631" x2="312.851" y1="186.1881" y2="176.3492" /><line style="stroke:#181818;stroke-width:1.0;" x1="311.0631" x2="321.009" y1="186.1881" y2="185.1496" /><line style="stroke:#181818;stroke-width:1.0;" x1="311.0631" x2="316.93" y1="186.1881" y2="180.7494" /><ellipse cx="306.6629" cy="190.2671" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="200.6041" x2="190.08" y1="242.6489" y2="245.8494" /><ellipse cx="200.6041" cy="242.6489" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="195.0707" x2="192.7432" y1="248.5125" y2="240.8586" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="42" x="266.455" y="202.0775">subject</text></g><!--link Encounter to Organization--><g id="link_Encounter_Organization"><path codeLine="36" d="M332.03,188.1094 C324.6,203.6894 316.82,219.9794 310.41,233.4294 " fill="none" id="Encounter-Organization" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="332.0944" x2="330.125" y1="187.9793" y2="178.1752" /><line style="stroke:#181818;stroke-width:1.0;" x1="332.0944" x2="340.955" y1="187.9793" y2="183.3436" /><line style="stroke:#181818;stroke-width:1.0;" x1="332.0944" x2="335.54" y1="187.9793" y2="180.7594" /><ellipse cx="329.5102" cy="193.3943" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="311.5377" x2="306.8" y1="231.0619" y2="240.9894" /><ellipse cx="311.5377" cy="231.0619" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="312.1328" x2="304.9128" y1="239.1022" y2="235.6566" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="86" x="338.1657" y="202.0889">serviceProvider</text></g><!--link Encounter to Appointment--><g id="link_Encounter_Appointment"><path codeLine="37" d="M400.93,187.5194 C412.86,203.4194 425.39,220.1294 435.66,233.8194 " fill="none" id="Encounter-Appointment" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="400.66" x2="391.06" y1="187.1594" y2="184.3594" /><line style="stroke:#181818;stroke-width:1.0;" x1="400.66" x2="400.66" y1="187.1594" y2="177.1594" /><line style="stroke:#181818;stroke-width:1.0;" x1="400.66" x2="395.86" y1="187.1594" y2="180.7594" /><ellipse cx="404.26" cy="191.9594" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="433.9" x2="440.5" y1="231.4794" y2="240.2794" /><ellipse cx="433.9" cy="231.4794" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="441.3" x2="434.9" y1="234.6794" y2="239.4794" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="71" x="421.6383" y="193.3247">appointment</text></g><!--link Flag to Patient--><g id="link_Flag_Patient"><path codeLine="38" d="M65.16,161.7594 C75.25,183.2494 88.77,212.0194 98.86,233.4994 " fill="none" id="Flag-Patient" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="65.0595" x2="56.2287" y1="161.5412" y2="156.849" /><line style="stroke:#181818;stroke-width:1.0;" x1="65.0595" x2="67.0913" y1="161.5412" y2="151.7498" /><line style="stroke:#181818;stroke-width:1.0;" x1="65.0595" x2="61.66" y1="161.5412" y2="154.2994" /><ellipse cx="67.6091" cy="166.9725" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="97.5957" x2="102.27" y1="230.8119" y2="240.7694" /><ellipse cx="97.5957" cy="230.8119" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="104.1911" x2="96.9494" y1="235.4487" y2="238.8482" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="42" x="17.0104" y="175.9321">subject</text></g></g></svg></figure>
+<p><br clear="all" /></p>
+
+<h4 id="interoperability-standards-1">Interoperability Standards</h4>
+
+<h5 id="nhs-england">NHS England</h5>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">deprecated</code> <a href="HSCIC ITK HL7 V2 Message Specifications.pdf" target="_blank">NHS England (ADT) ITK HL7 v2 (2.4) Message Specification</a>. Covering
+    <ul>
+      <li><a href="https://profiles.ihe.net/ITI/TF/Volume1/ch-14.html#14.2.1">Patient Administration Management (PAM)</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="service-provider-directory-resources">Service Provider Directory Resources</h3>
+
+<figure><?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="542px" preserveAspectRatio="none" style="width:702px;height:542px;background:#FFFFFF;" version="1.1" viewBox="0 0 702 542" width="702px" zoomAndPan="magnify"><defs /><g><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="267" x="210.8637" y="24.5332">Service Provider Directory Resources</text><!--cluster ProviderDirectory--><g id="cluster_ProviderDirectory"><path d="M25.7275,44.6094 L155.7275,44.6094 A3.75,3.75 0 0 1 158.2275,47.1094 L165.2275,68.2188 L469.7275,68.2188 A2.5,2.5 0 0 1 472.2275,70.7188 L472.2275,533.1094 A2.5,2.5 0 0 1 469.7275,535.6094 L25.7275,535.6094 A2.5,2.5 0 0 1 23.2275,533.1094 L23.2275,47.1094 A2.5,2.5 0 0 1 25.7275,44.6094 " fill="none" style="stroke:#000000;stroke-width:1.5;" /><line style="stroke:#000000;stroke-width:1.5;" x1="23.2275" x2="165.2275" y1="68.2188" y2="68.2188" /><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="129" x="27.2275" y="61.1426">Provider Directory</text></g><g id="elem_Organization"><rect fill="#F1F1F1" height="47.2188" style="stroke:#181818;stroke-width:0.5;" width="142" x="176.2275" y="472.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="80" x="207.2275" y="489.1426">Organization</text><line style="stroke:#181818;stroke-width:0.5;" x1="177.2275" x2="317.2275" y1="494.2188" y2="494.2188" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="130" x="182.2275" y="512.752">identifier: ODS Code</text></g><g id="elem_HealthcareService"><rect fill="#F1F1F1" height="64.8281" style="stroke:#181818;stroke-width:0.5;" width="129" x="283.7275" y="240.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="115" x="290.7275" y="257.1426">HealthcareService</text><line style="stroke:#181818;stroke-width:0.5;" x1="284.7275" x2="411.7275" y1="262.2188" y2="262.2188" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="71" x="289.7275" y="280.752">providedBy</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="49" x="289.7275" y="298.3613">location</text></g><g id="elem_PractitionerRole"><rect fill="#F1F1F1" height="100.0469" style="stroke:#181818;stroke-width:0.5;" width="178" x="259.2275" y="80.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="101" x="297.7275" y="97.1426">PractitionerRole</text><line style="stroke:#181818;stroke-width:0.5;" x1="260.2275" x2="436.2275" y1="102.2188" y2="102.2188" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="166" x="265.2275" y="120.752">identifier: sdsRoleProfileID</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="71" x="265.2275" y="138.3613">practitioner</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="77" x="265.2275" y="155.9707">organization</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="114" x="265.2275" y="173.5801">healthcareService</text></g><g id="elem_Endpoint"><rect fill="#F1F1F1" height="47.2188" style="stroke:#181818;stroke-width:0.5;" width="154" x="39.2275" y="365.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="56" x="88.2275" y="382.1426">Endpoint</text><line style="stroke:#181818;stroke-width:0.5;" x1="40.2275" x2="192.2275" y1="387.2188" y2="387.2188" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="142" x="45.2275" y="405.752">managingOrganization</text></g><g id="elem_Location"><rect fill="#F1F1F1" height="47.2188" style="stroke:#181818;stroke-width:0.5;" width="154" x="302.2275" y="365.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="54" x="352.2275" y="382.1426">Location</text><line style="stroke:#181818;stroke-width:0.5;" x1="303.2275" x2="455.2275" y1="387.2188" y2="387.2188" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="142" x="308.2275" y="405.752">managingOrganization</text></g><g id="elem_Practitioner"><rect fill="#F1F1F1" height="47.2188" style="stroke:#181818;stroke-width:0.5;" width="207" x="488.7275" y="249.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="72" x="556.2275" y="266.1426">Practitioner</text><line style="stroke:#181818;stroke-width:0.5;" x1="489.7275" x2="694.7275" y1="271.2188" y2="271.2188" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="195" x="494.7275" y="289.752">identifier: GMC, GMP, etc code</text></g><!--link HealthcareService to Organization--><g id="link_HealthcareService_Organization"><path codeLine="34" d="M317.9775,312.1894 C306.4975,328.0194 294.0775,347.0194 285.2275,365.6094 C269.8975,397.8194 259.3575,437.5194 253.3375,464.4094 " fill="none" id="HealthcareService-Organization" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="318.0848" x2="317.9955" y1="312.052" y2="302.0524" /><line style="stroke:#181818;stroke-width:1.0;" x1="318.0848" x2="327.6595" y1="312.052" y2="309.1664" /><line style="stroke:#181818;stroke-width:1.0;" x1="318.0848" x2="322.8275" y1="312.052" y2="305.6094" /><ellipse cx="314.5278" cy="316.8839" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="253.9559" x2="251.6175" y1="461.5708" y2="472.3194" /><ellipse cx="253.9559" cy="461.5708" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="256.3764" x2="248.5592" y1="469.2611" y2="467.5605" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="63" x="248.9809" y="326.8747">providedBy</text></g><!--link HealthcareService to Location--><g id="link_HealthcareService_Location"><path codeLine="35" d="M358.9775,313.6494 C362.8875,328.0194 367.2475,344.0394 370.9075,357.5194 " fill="none" id="HealthcareService-Location" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="358.9652" x2="351.0774" y1="313.5895" y2="307.4426" /><line style="stroke:#181818;stroke-width:1.0;" x1="358.9652" x2="362.6576" y1="313.5895" y2="304.2961" /><line style="stroke:#181818;stroke-width:1.0;" x1="358.9652" x2="356.8675" y1="313.5895" y2="305.8694" /><ellipse cx="360.5385" cy="319.3795" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="370.2132" x2="373.0975" y1="354.9343" y2="365.5494" /><ellipse cx="370.2132" cy="354.9343" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="375.9087" x2="368.1886" y1="360.6405" y2="362.7382" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="45" x="362.6089" y="326.9279">location</text></g><!--link Location to Organization--><g id="link_Location_Organization"><path codeLine="36" d="M344.4775,417.7494 C325.2975,433.0094 301.5275,451.9194 282.2875,467.2194 " fill="none" id="Location-Organization" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="344.6383" x2="347.1803" y1="417.609" y2="407.9375" /><line style="stroke:#181818;stroke-width:1.0;" x1="344.6383" x2="354.6347" y1="417.609" y2="417.3413" /><line style="stroke:#181818;stroke-width:1.0;" x1="344.6383" x2="350.9075" y1="417.609" y2="412.6394" /><ellipse cx="339.9364" cy="421.3363" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="284.5605" x2="275.9575" y1="465.4045" y2="472.2594" /><ellipse cx="284.5605" cy="465.4045" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="281.5785" x2="276.5932" y1="472.895" y2="466.6383" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="129" x="198.1224" y="434.2311">managingOrganization</text></g><!--link Endpoint to Organization--><g id="link_Endpoint_Organization"><path codeLine="37" d="M150.7175,417.7494 C169.7575,433.0094 193.3375,451.9194 212.4275,467.2194 " fill="none" id="Endpoint-Organization" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="150.5647" x2="140.5702" y1="417.6491" y2="417.3173" /><line style="stroke:#181818;stroke-width:1.0;" x1="150.5647" x2="148.0848" y1="417.6491" y2="407.9615" /><line style="stroke:#181818;stroke-width:1.0;" x1="150.5647" x2="144.3275" y1="417.6491" y2="412.6394" /><ellipse cx="155.2426" cy="421.4064" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="210.1318" x2="218.7175" y1="465.3829" y2="472.2594" /><ellipse cx="210.1318" cy="465.3829" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="218.0959" x2="213.0949" y1="466.6368" y2="472.8809" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="129" x="6" y="434.2311">managingOrganization</text></g><!--link PractitionerRole to Organization--><g id="link_PractitionerRole_Organization"><path codeLine="38" d="M296.7775,187.3894 C284.6975,203.4794 273.3075,221.7994 266.2275,240.6094 C237.4775,317.0594 240.2775,415.3694 244.0975,464.4194 " fill="none" id="PractitionerRole-Organization" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="297.0957" x2="297.2241" y1="186.9772" y2="176.978" /><line style="stroke:#181818;stroke-width:1.0;" x1="297.0957" x2="306.7309" y1="186.9772" y2="184.3007" /><line style="stroke:#181818;stroke-width:1.0;" x1="297.0957" x2="301.9775" y1="186.9772" y2="180.6394" /><ellipse cx="293.4343" cy="191.7305" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="243.8638" x2="244.7675" y1="461.4566" y2="472.4194" /><ellipse cx="243.8638" cy="461.4566" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="248.4253" x2="240.4524" y1="468.1043" y2="468.7615" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="70" x="220.5517" y="202.3164">organization</text></g><!--link PractitionerRole to HealthcareService--><g id="link_PractitionerRole_HealthcareService"><path codeLine="39" d="M348.2275,189.2194 C348.2275,203.6894 348.2275,218.9094 348.2275,232.2894 " fill="none" id="PractitionerRole-HealthcareService" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="348.2275" x2="342.2275" y1="188.7494" y2="180.7494" /><line style="stroke:#181818;stroke-width:1.0;" x1="348.2275" x2="354.2275" y1="188.7494" y2="180.7494" /><line style="stroke:#181818;stroke-width:1.0;" x1="348.2275" x2="348.2275" y1="188.7494" y2="180.7494" /><ellipse cx="348.2275" cy="194.7494" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="348.2275" x2="348.2275" y1="229.3694" y2="240.3694" /><ellipse cx="348.2275" cy="229.3694" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="352.2275" x2="344.2275" y1="236.3694" y2="236.3694" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="102" x="239.3744" y="202.0775">healthcareService</text></g><!--link PractitionerRole to Practitioner--><g id="link_PractitionerRole_Practitioner"><path codeLine="40" d="M440.7775,184.8994 C476.7775,205.6294 516.4175,228.4594 546.1175,245.5594 " fill="none" id="PractitionerRole-Practitioner" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="440.4958" x2="430.5676" y1="184.7492" y2="185.9456" /><line style="stroke:#181818;stroke-width:1.0;" x1="440.4958" x2="436.5674" y1="184.7492" y2="175.5532" /><line style="stroke:#181818;stroke-width:1.0;" x1="440.4958" x2="433.5675" y1="184.7492" y2="180.7494" /><ellipse cx="445.692" cy="187.7491" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="543.5311" x2="553.0575" y1="244.0596" y2="249.5594" /><ellipse cx="543.5311" cy="244.0596" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="551.5933" x2="547.5934" y1="244.0953" y2="251.0236" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="64" x="376.7351" y="202.0775">practitioner</text></g></g></svg></figure>
+<p><br clear="all" /></p>
+
+<ul>
+  <li><a href="https://profiles.ihe.net/ITI/mCSD/index.html">Mobile Care Services Discovery (mCSD)</a> The Mobile Care Services Discovery (mCSD) Profile supports RESTful queries across related care services resources. The loosely coupled design and flexible querying capability of the mCSD Profile means it can be deployed within a variety of eHealth architectures and support a wide array of care workflows.</li>
+</ul>
+
+<h3 id="scheduling-and-appointments">Scheduling and Appointments</h3>
+
+<figure><?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="634px" preserveAspectRatio="none" style="width:778px;height:634px;background:#FFFFFF;" version="1.1" viewBox="0 0 778 634" width="778px" zoomAndPan="magnify"><defs /><g><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="210" x="277.125" y="24.5332">Scheduling and Appointments</text><!--cluster Scheduling--><g id="cluster_Scheduling"><path d="M142.5,44.6094 L353.5,44.6094 A3.75,3.75 0 0 1 356,47.1094 L363,68.2188 L363.5,68.2188 A2.5,2.5 0 0 1 366,70.7188 L366,516.6094 A2.5,2.5 0 0 1 363.5,519.1094 L142.5,519.1094 A2.5,2.5 0 0 1 140,516.6094 L140,47.1094 A2.5,2.5 0 0 1 142.5,44.6094 " fill="none" style="stroke:#000000;stroke-width:1.5;" /><line style="stroke:#000000;stroke-width:1.5;" x1="140" x2="363" y1="68.2188" y2="68.2188" /><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="210" x="144" y="61.1426">Scheduling and Appointments</text></g><g id="elem_Schedule"><rect fill="#F1F1F1" height="47.2188" style="stroke:#181818;stroke-width:0.5;" width="73" x="202.5" y="456.1094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="59" x="209.5" y="472.6426">Schedule</text><line style="stroke:#181818;stroke-width:0.5;" x1="203.5" x2="274.5" y1="477.7188" y2="477.7188" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="32" x="208.5" y="496.252">actor</text></g><g id="elem_Slot"><rect fill="#F1F1F1" height="47.2188" style="stroke:#181818;stroke-width:0.5;" width="69" x="205.5" y="348.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="24" x="228" y="365.1426">Slot</text><line style="stroke:#181818;stroke-width:0.5;" x1="206.5" x2="273.5" y1="370.2188" y2="370.2188" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="57" x="211.5" y="388.752">schedule</text></g><g id="elem_Appointment"><rect fill="#F1F1F1" height="64.8281" style="stroke:#181818;stroke-width:0.5;" width="114" x="214" y="223.1094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="79" x="231.5" y="239.6426">Appointment</text><line style="stroke:#181818;stroke-width:0.5;" x1="215" x2="327" y1="244.7188" y2="244.7188" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="22" x="220" y="263.252">slot</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="102" x="220" y="280.8613">participant.actor</text></g><g id="elem_AppointmentResponse"><rect fill="#F1F1F1" height="64.8281" style="stroke:#181818;stroke-width:0.5;" width="157" x="192.5" y="80.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="143" x="199.5" y="97.1426">AppointmentResponse</text><line style="stroke:#181818;stroke-width:0.5;" x1="193.5" x2="348.5" y1="102.2188" y2="102.2188" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="78" x="198.5" y="120.752">appointment</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="32" x="198.5" y="138.3613">actor</text></g><g id="elem_Patient"><rect fill="#F1F1F1" height="47.2188" style="stroke:#181818;stroke-width:0.5;" width="154" x="543" y="348.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="44" x="598" y="365.1426">Patient</text><line style="stroke:#181818;stroke-width:0.5;" x1="544" x2="696" y1="370.2188" y2="370.2188" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="142" x="549" y="388.752">identifier: NHS Number</text></g><g id="elem_Practitioner"><rect fill="#F1F1F1" height="47.2188" style="stroke:#181818;stroke-width:0.5;" width="207" x="360.5" y="572.1094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="72" x="428" y="588.6426">Practitioner</text><line style="stroke:#181818;stroke-width:0.5;" x1="361.5" x2="566.5" y1="593.7188" y2="593.7188" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="195" x="366.5" y="612.252">identifier: GMC, GMP, etc code</text></g><g id="elem_HealthcareService"><rect fill="#F1F1F1" height="64.8281" style="stroke:#181818;stroke-width:0.5;" width="129" x="196.5" y="563.1094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="115" x="203.5" y="579.6426">HealthcareService</text><line style="stroke:#181818;stroke-width:0.5;" x1="197.5" x2="324.5" y1="584.7188" y2="584.7188" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="71" x="202.5" y="603.252">providedBy</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="49" x="202.5" y="620.8613">location</text></g><g id="elem_Location"><rect fill="#F1F1F1" height="47.2188" style="stroke:#181818;stroke-width:0.5;" width="154" x="7" y="572.1094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="54" x="57" y="588.6426">Location</text><line style="stroke:#181818;stroke-width:0.5;" x1="8" x2="160" y1="593.7188" y2="593.7188" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="142" x="13" y="612.252">managingOrganization</text></g><g id="elem_Encounter"><rect fill="#F1F1F1" height="100.0469" style="stroke:#181818;stroke-width:0.5;" width="110" x="14" y="63.1094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="65" x="36.5" y="79.6426">Encounter</text><line style="stroke:#181818;stroke-width:0.5;" x1="15" x2="123" y1="84.7188" y2="84.7188" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="45" x="20" y="103.252">subject</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="96" x="20" y="120.8613">episodeOfCare</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="98" x="20" y="138.4707">serviceProvider</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="78" x="20" y="156.0801">appointment</text></g><!--class RelatedPerson--><g id="elem_RelatedPerson"><rect fill="#F1F1F1" height="48" id="RelatedPerson" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="126" x="382" y="348.1094" /><ellipse cx="397" cy="364.1094" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;" /><path d="M399.7656,359.9844 Q399.9219,359.7656 400.1094,359.6563 Q400.2969,359.5469 400.5156,359.5469 Q400.8906,359.5469 401.125,359.8125 Q401.3594,360.0625 401.3594,360.6719 L401.3594,362.125 Q401.3594,362.7344 401.125,363 Q400.8906,363.2656 400.5156,363.2656 Q400.1719,363.2656 399.9688,363.0625 Q399.7656,362.875 399.6563,362.3594 Q399.6094,362 399.4219,361.8125 Q399.0938,361.4375 398.4844,361.2188 Q397.875,361 397.25,361 Q396.4844,361 395.8438,361.3281 Q395.2188,361.6563 394.7188,362.4063 Q394.2344,363.1563 394.2344,364.1875 L394.2344,365.2813 Q394.2344,366.5156 395.125,367.3438 Q396.0156,368.1563 397.6094,368.1563 Q398.5469,368.1563 399.2031,367.9063 Q399.5938,367.75 400.0156,367.3125 Q400.2813,367.0469 400.4219,366.9688 Q400.5781,366.8906 400.7813,366.8906 Q401.1094,366.8906 401.3594,367.1563 Q401.625,367.4063 401.625,367.75 Q401.625,368.0938 401.2813,368.5 Q400.7813,369.0781 399.9844,369.4063 Q398.9063,369.8594 397.6094,369.8594 Q396.0938,369.8594 394.8906,369.2344 Q393.9063,368.7344 393.2188,367.6719 Q392.5313,366.5938 392.5313,365.3125 L392.5313,364.1563 Q392.5313,362.8281 393.1406,361.6875 Q393.7656,360.5313 394.8594,359.9219 Q395.9531,359.2969 397.1875,359.2969 Q397.9219,359.2969 398.5625,359.4688 Q399.2188,359.625 399.7656,359.9844 Z " fill="#000000" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="94" x="411" y="369.8379">RelatedPerson</text><line style="stroke:#181818;stroke-width:0.5;" x1="383" x2="507" y1="380.1094" y2="380.1094" /><line style="stroke:#181818;stroke-width:0.5;" x1="383" x2="507" y1="388.1094" y2="388.1094" /></g><!--link Encounter to Appointment--><g id="link_Encounter_Appointment"><path codeLine="57" d="M131.01,157.2394 C159.09,176.7694 191.93,199.6094 218.74,218.2594 " fill="none" id="Encounter-Appointment" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="130.7739" x2="120.7808" y1="157.0583" y2="157.4298" /><line style="stroke:#181818;stroke-width:1.0;" x1="130.7739" x2="127.6192" y1="157.0583" y2="147.5689" /><line style="stroke:#181818;stroke-width:1.0;" x1="130.7739" x2="124.2" y1="157.0583" y2="152.4994" /><ellipse cx="135.7044" cy="160.4774" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="216.3965" x2="225.42" y1="216.6085" y2="222.8994" /><ellipse cx="216.3965" cy="216.6085" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="224.4263" x2="219.8511" y1="217.3305" y2="223.8931" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="71" x="132.165" y="172.5714">appointment</text></g><!--link Schedule to Practitioner--><g id="link_Schedule_Practitioner"><path codeLine="58" d="M273.61,507.9794 C282.88,514.6794 293.08,521.5294 303,527.1094 C331.49,543.1494 364.55,557.6494 393.28,569.0694 " fill="none" id="Schedule-Practitioner" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="273.4926" x2="263.493" y1="507.892" y2="507.9813" /><line style="stroke:#181818;stroke-width:1.0;" x1="273.4926" x2="270.607" y1="507.892" y2="498.3174" /><line style="stroke:#181818;stroke-width:1.0;" x1="273.4926" x2="267.05" y1="507.892" y2="503.1494" /><ellipse cx="278.3246" cy="511.449" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="390.6339" x2="400.87" y1="568.0217" y2="572.0494" /><ellipse cx="390.6339" cy="568.0217" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="398.6124" x2="395.6832" y1="566.8626" y2="574.307" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="29" x="241.5222" y="524.7436">actor</text></g><!--link Schedule to HealthcareService--><g id="link_Schedule_HealthcareService"><path codeLine="59" d="M244.9,511.1594 C247.49,524.5894 250.56,540.5194 253.33,554.8494 " fill="none" id="Schedule-HealthcareService" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="244.864" x2="237.4584" y1="510.9848" y2="504.2648" /><line style="stroke:#181818;stroke-width:1.0;" x1="244.864" x2="249.2416" y1="510.9848" y2="501.9939" /><line style="stroke:#181818;stroke-width:1.0;" x1="244.864" x2="243.35" y1="510.9848" y2="503.1294" /><ellipse cx="245.9994" cy="516.8764" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="252.8283" x2="254.91" y1="552.2681" y2="563.0694" /><ellipse cx="252.8283" cy="552.2681" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="258.0807" x2="250.2253" y1="558.3847" y2="559.8986" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="29" x="211.7491" y="524.7185">actor</text></g><!--link Schedule to Location--><g id="link_Schedule_Location"><path codeLine="60" d="M201.82,507.9594 C177.51,525.8394 145.86,549.1094 121.49,567.0294 " fill="none" id="Schedule-Location" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="201.9374" x2="204.823" y1="507.872" y2="498.2974" /><line style="stroke:#181818;stroke-width:1.0;" x1="201.9374" x2="211.937" y1="507.872" y2="507.9613" /><line style="stroke:#181818;stroke-width:1.0;" x1="201.9374" x2="208.38" y1="507.872" y2="503.1294" /><ellipse cx="197.1054" cy="511.429" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="123.6786" x2="114.82" y1="565.4182" y2="571.9394" /><ellipse cx="123.6786" cy="565.4182" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="120.4126" x2="115.67" y1="572.7893" y2="566.3467" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="29" x="167.818" y="524.7185">actor</text></g><!--link Slot to Schedule--><g id="link_Slot_Schedule"><path codeLine="62" d="M239.71,404.0794 C239.58,417.8594 239.42,434.0394 239.29,447.7994 " fill="none" id="Slot-Schedule" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="239.7186" x2="233.7902" y1="403.7391" y2="395.6858" /><line style="stroke:#181818;stroke-width:1.0;" x1="239.7186" x2="245.7898" y1="403.7391" y2="395.7929" /><line style="stroke:#181818;stroke-width:1.0;" x1="239.7186" x2="239.79" y1="403.7391" y2="395.7394" /><ellipse cx="239.665" cy="409.7388" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="239.3082" x2="239.21" y1="445.0198" y2="456.0194" /><ellipse cx="239.3082" cy="445.0198" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="243.2456" x2="235.2459" y1="452.0552" y2="451.9838" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="52" x="181.0737" y="417.3567">schedule</text></g><!--link Appointment to Slot--><g id="link_Appointment_Slot"><path codeLine="63" d="M260.33,296.0194 C256.41,310.4794 252.04,326.6294 248.36,340.2294 " fill="none" id="Appointment-Slot" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="259.584" x2="262.45" y1="298.8194" y2="288.1994" /><ellipse cx="259.584" cy="298.8194" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="257.546" x2="265.2696" y1="291.019" y2="293.1034" /><line style="stroke:#181818;stroke-width:1.0;" x1="248.2544" x2="251.9628" y1="340.6057" y2="349.8927" /><line style="stroke:#181818;stroke-width:1.0;" x1="248.2544" x2="240.3772" y1="340.6057" y2="346.7661" /><line style="stroke:#181818;stroke-width:1.0;" x1="248.2544" x2="246.17" y1="340.6057" y2="348.3294" /><ellipse cx="249.8177" cy="334.8129" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="21" x="222.8762" y="309.9249">slot</text></g><!--link Appointment to Patient--><g id="link_Appointment_Patient"><path codeLine="64" d="M335.93,277.9094 C394.72,297.1994 481.37,325.6294 543.5,346.0094 " fill="none" id="Appointment-Patient" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="335.8436" x2="326.3748" y1="277.8763" y2="281.0921" /><line style="stroke:#181818;stroke-width:1.0;" x1="335.8436" x2="330.1052" y1="277.8763" y2="269.6866" /><line style="stroke:#181818;stroke-width:1.0;" x1="335.8436" x2="328.24" y1="277.8763" y2="275.3894" /><ellipse cx="341.5464" cy="279.7415" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="543.7264" x2="553.1952" y1="346.0925" y2="342.8766" /><line style="stroke:#181818;stroke-width:1.0;" x1="543.7264" x2="549.4648" y1="346.0925" y2="354.2821" /><line style="stroke:#181818;stroke-width:1.0;" x1="543.7264" x2="551.33" y1="346.0925" y2="348.5794" /><ellipse cx="538.0236" cy="344.2273" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="93" x="335.8584" y="273.7688">participant.actor</text></g><!--link Appointment to Practitioner--><g id="link_Appointment_Practitioner"><path codeLine="65" d="M293.17,295.4394 C332.13,363.6594 412.02,503.5794 446.99,564.8094 " fill="none" id="Appointment-Practitioner" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="293.1153" x2="283.9446" y1="295.3632" y2="291.3758" /><line style="stroke:#181818;stroke-width:1.0;" x1="293.1153" x2="294.3754" y1="295.3632" y2="285.4429" /><line style="stroke:#181818;stroke-width:1.0;" x1="293.1153" x2="289.16" y1="295.3632" y2="288.4094" /><ellipse cx="296.0817" cy="300.5786" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="447.054" x2="456.2308" y1="564.9317" y2="568.9048" /><line style="stroke:#181818;stroke-width:1.0;" x1="447.054" x2="445.8092" y1="564.9317" y2="574.8539" /><line style="stroke:#181818;stroke-width:1.0;" x1="447.054" x2="451.02" y1="564.9317" y2="571.8794" /><ellipse cx="444.0794" cy="559.7209" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="93" x="190.9348" y="309.4752">participant.actor</text></g><!--link Appointment to Location--><g id="link_Appointment_Location"><path codeLine="66" d="M231.48,294.3294 C216.54,309.9894 200.22,328.9594 188,348.1094 C142.06,420.0994 108.46,515.8394 93.18,564.0694 " fill="none" id="Appointment-Location" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="231.7695" x2="233.0336" y1="294.0113" y2="284.0915" /><line style="stroke:#181818;stroke-width:1.0;" x1="231.7695" x2="241.6464" y1="294.0113" y2="292.4473" /><line style="stroke:#181818;stroke-width:1.0;" x1="231.7695" x2="237.34" y1="294.0113" y2="288.2694" /><ellipse cx="227.5916" cy="298.3177" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="93.0978" x2="96.4365" y1="564.314" y2="573.7402" /><line style="stroke:#181818;stroke-width:1.0;" x1="93.0978" x2="84.9835" y1="564.314" y2="570.1585" /><line style="stroke:#181818;stroke-width:1.0;" x1="93.0978" x2="90.71" y1="564.314" y2="571.9494" /><ellipse cx="94.8887" cy="558.5875" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="93" x="112.777" y="295.5774">participant.actor</text></g><!--link Appointment to RelatedPerson--><g id="link_Appointment_RelatedPerson"><path codeLine="67" d="M325.87,292.7194 C350.87,309.1594 379.97,328.3194 403.16,343.5794 " fill="none" id="Appointment-RelatedPerson" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="325.6926" x2="315.7115" y1="292.5974" y2="293.2114" /><line style="stroke:#181818;stroke-width:1.0;" x1="325.6926" x2="322.3085" y1="292.5974" y2="283.1874" /><line style="stroke:#181818;stroke-width:1.0;" x1="325.6926" x2="319.01" y1="292.5974" y2="288.1994" /><ellipse cx="330.7046" cy="295.8958" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="403.1574" x2="413.1385" y1="343.5714" y2="342.9574" /><line style="stroke:#181818;stroke-width:1.0;" x1="403.1574" x2="406.5415" y1="343.5714" y2="352.9814" /><line style="stroke:#181818;stroke-width:1.0;" x1="403.1574" x2="409.84" y1="343.5714" y2="347.9694" /><ellipse cx="398.1454" cy="340.2729" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="93" x="335.8446" y="308.9712">participant.actor</text></g><!--link AppointmentResponse to Appointment--><g id="link_AppointmentResponse_Appointment"><path codeLine="69" d="M271,153.7394 C271,172.7294 271,195.4394 271,214.4994 " fill="none" id="AppointmentResponse-Appointment" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="267" x2="275" y1="149.6394" y2="149.6394" /><line style="stroke:#181818;stroke-width:1.0;" x1="267" x2="275" y1="152.6394" y2="152.6394" /><line style="stroke:#181818;stroke-width:1.0;" x1="271" x2="271" y1="153.6394" y2="145.6394" /><line style="stroke:#181818;stroke-width:1.0;" x1="271" x2="277" y1="214.6994" y2="222.6994" /><line style="stroke:#181818;stroke-width:1.0;" x1="271" x2="265" y1="214.6994" y2="222.6994" /><line style="stroke:#181818;stroke-width:1.0;" x1="271" x2="271" y1="214.6994" y2="222.6994" /><ellipse cx="271" cy="208.6994" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="71" x="193.2328" y="166.9104">appointment</text></g><!--link AppointmentResponse to Patient--><g id="link_AppointmentResponse_Patient"><path codeLine="70" d="M320.24,150.3694 C390.8,202.3294 519.13,296.8294 582.52,343.5094 " fill="none" id="AppointmentResponse-Patient" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="320.2326" x2="310.233" y1="150.362" y2="150.4513" /><line style="stroke:#181818;stroke-width:1.0;" x1="320.2326" x2="317.347" y1="150.362" y2="140.7874" /><line style="stroke:#181818;stroke-width:1.0;" x1="320.2326" x2="313.79" y1="150.362" y2="145.6194" /><ellipse cx="325.0646" cy="153.919" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="582.7374" x2="592.737" y1="343.6767" y2="343.5874" /><line style="stroke:#181818;stroke-width:1.0;" x1="582.7374" x2="585.623" y1="343.6767" y2="353.2513" /><line style="stroke:#181818;stroke-width:1.0;" x1="582.7374" x2="589.18" y1="343.6767" y2="348.4194" /><ellipse cx="577.9054" cy="340.1197" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="29" x="324.7109" y="166.8866">actor</text></g><!--link AppointmentResponse to Practitioner--><g id="link_AppointmentResponse_Practitioner"><path codeLine="71" d="M357.73,131.2194 C463.89,157.3594 638.93,218.5394 715,348.1094 C771.25,443.9094 620.86,528.0094 529.07,568.6794 " fill="none" id="AppointmentResponse-Practitioner" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="357.6644" x2="348.4752" y1="131.2058" y2="135.1502" /><line style="stroke:#181818;stroke-width:1.0;" x1="357.6644" x2="351.3048" y1="131.2058" y2="123.4886" /><line style="stroke:#181818;stroke-width:1.0;" x1="357.6644" x2="349.89" y1="131.2058" y2="129.3194" /><ellipse cx="363.4952" cy="132.6206" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="528.8063" x2="523.89" y1="568.7961" y2="577.5041" /><line style="stroke:#181818;stroke-width:1.0;" x1="528.8063" x2="519.07" y1="568.7961" y2="566.5146" /><line style="stroke:#181818;stroke-width:1.0;" x1="528.8063" x2="521.48" y1="568.7961" y2="572.0094" /><ellipse cx="534.301" cy="566.3861" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="29" x="357.6239" y="127.5161">actor</text></g><!--link AppointmentResponse to RelatedPerson--><g id="link_AppointmentResponse_RelatedPerson"><path codeLine="72" d="M297.82,152.8294 C312.18,173.6194 330.13,199.7094 346,223.1094 C373.64,263.8394 405.2,311.1594 425.1,341.1194 " fill="none" id="AppointmentResponse-RelatedPerson" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="297.6425" x2="288.1611" y1="152.5746" y2="149.3963" /><line style="stroke:#181818;stroke-width:1.0;" x1="297.6425" x2="298.0389" y1="152.5746" y2="142.5825" /><line style="stroke:#181818;stroke-width:1.0;" x1="297.6425" x2="293.1" y1="152.5746" y2="145.9894" /><ellipse cx="301.0494" cy="157.5135" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="425.2356" x2="434.6589" y1="341.3142" y2="344.6611" /><line style="stroke:#181818;stroke-width:1.0;" x1="425.2356" x2="424.6611" y1="341.3142" y2="351.2977" /><line style="stroke:#181818;stroke-width:1.0;" x1="425.2356" x2="429.66" y1="341.3142" y2="347.9794" /><ellipse cx="421.9173" cy="336.3153" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="29" x="265.4538" y="166.8129">actor</text></g></g></svg></figure>
+<p><br clear="all" /></p>
+
+<p>Add in STU3 standards</p>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.england.nhs.uk/">NHS England</a>.  Package uk.nhs.england.skunkworks#0.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Feb 8, 2024 11:21+0000">2024-02-08</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+            <div style="color: #333333" >
+
+          Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
+                 <a style="color: #81BEF7" href="qa.html">QA Report</a> 
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
+<div>
+</div>
+
+</div>
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

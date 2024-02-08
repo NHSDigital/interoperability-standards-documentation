@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Structured Data Capture - Interoperability Standards - Skunkworks v0.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+
+    <!--  <script src="assets/nhsuk.js" defer></script> -->
+
+      <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<!-- Project extras
+<link
+        type="font/woff2"
+        href="assets/fonts/FrutigerLTW01-55Roman.woff2"
+        rel="preload"
+        as="font"
+        crossorigin
+/>
+<link
+        type="font/woff2"
+        href="assets/fonts/FrutigerLTW01-65Bold.woff2"
+        rel="preload"
+        as="font"
+        crossorigin
+/>
+<link href="assets/css/nhsuk.css" rel="stylesheet" />
+-->
+
+<!-- Bootstrap core CSS overrides to bootstrap-fhir.css -->
+<link href="assets/css/nhse.css" rel="stylesheet"/>
+
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/favicons/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"16"}
+    h3,h4,h5,h6{--heading-prefix:"16"}</style>
+    <div id="segment-header" class="segment nhsuk-header">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+<!-- Left logo - typically the publisher's logo - project or affiliate -->
+        <div id="project-nav">
+          <a id="project-logo" no-external="true" href="https://www.england.nhs.uk">
+            <img height="61" alt="Project home" src="assets/images/skunk.png"/>
+          </a>
+        </div>
+
+<!-- Right logo - for example the FHIR logo -->
+<!-- Make sure you have authorization to use the FHIR logo -->
+
+        <div id="family-nav">
+            <!--
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="60" alt="FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+          -->
+        </div> 
+      
+
+<!-- search icon - if you want -->
+<!--
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+-->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Interoperability Standards - Skunkworks</span>
+            <br/>
+            <span style="display:inline-block;">0.0.1 - ci-build
+
+
+
+   <img alt="England flag" src="assets/images/GB-ENG.svg" height="16" title="England"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Documentation
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="background.html">Background</a>
+      </li>
+      <li>
+        <a href="interoperability-standards.html">Interoperability Standards</a>
+      </li>
+      <li>
+        <a href="testing.html">Conformance and Testing (FHIR)</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Design
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="administration-module.html">Administration</a>
+      </li>
+      <li>
+        <a href="documents-module.html">Documents (Clinical)</a>
+      </li>
+      <li>
+        <a href="clinical-module.html">Clinical</a>
+      </li>
+      <li>
+        <a href="diagnostics-module.html">Diagnostics</a>
+      </li>
+      <li>
+        <a href="medications-module.html">Medications</a>
+      </li>
+      <li>
+        <a href="workflow.html">Workflow</a>
+      </li>
+      <li>
+        <a href="structured-data-capture.html">Structured Data Capture</a>
+      </li>
+      <li>
+        <a href="validation.html">FHIR Validation</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Build
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="national-proxy-service.html">National Proxy Service</a>
+      </li>
+      <li>
+        <a href="personal-demographics-service.html">Personal Demographics Service</a>
+      </li>
+      <li>
+        <a href="multicast-notification-service.html">Multicast Notification Service</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">FHIR Assets</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Structured Data Capture</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Interoperability Standards - Skunkworks - Local Development build (v0.0.1) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://fhir.nhs.uk/England/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Structured Data Capture</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+</div>
+<figure><?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="577px" preserveAspectRatio="none" style="width:849px;height:577px;background:#FFFFFF;" version="1.1" viewBox="0 0 849 577" width="849px" zoomAndPan="magnify"><defs /><g><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="170" x="332.5" y="24.5332">Structured Data Caputre</text><!--cluster FormManager--><g id="cluster_FormManager"><path d="M8.5,285.1094 L107.5,285.1094 A3.75,3.75 0 0 1 110,287.6094 L117,308.7188 L371.5,308.7188 A2.5,2.5 0 0 1 374,311.2188 L374,417.6094 A2.5,2.5 0 0 1 371.5,420.1094 L8.5,420.1094 A2.5,2.5 0 0 1 6,417.6094 L6,287.6094 A2.5,2.5 0 0 1 8.5,285.1094 " fill="none" style="stroke:#000000;stroke-width:1.5;" /><line style="stroke:#000000;stroke-width:1.5;" x1="6" x2="117" y1="308.7188" y2="308.7188" /><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="98" x="10" y="301.6426">FormManager</text></g><!--cluster FormResponseManager--><g id="cluster_FormResponseManager"><path d="M400.5,285.1094 L570.5,285.1094 A3.75,3.75 0 0 1 573,287.6094 L580,308.7188 L839.5,308.7188 A2.5,2.5 0 0 1 842,311.2188 L842,417.6094 A2.5,2.5 0 0 1 839.5,420.1094 L400.5,420.1094 A2.5,2.5 0 0 1 398,417.6094 L398,287.6094 A2.5,2.5 0 0 1 400.5,285.1094 " fill="none" style="stroke:#000000;stroke-width:1.5;" /><line style="stroke:#000000;stroke-width:1.5;" x1="398" x2="580" y1="308.7188" y2="308.7188" /><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="169" x="402" y="301.6426">FormResponseManager</text></g><!--cluster DataResponder--><g id="cluster_DataResponder"><path d="M231.5,470.1094 L529.5,470.1094 A3.75,3.75 0 0 1 532,472.6094 L539,493.7188 L566.5,493.7188 A2.5,2.5 0 0 1 569,496.2188 L569,567.6094 A2.5,2.5 0 0 1 566.5,570.1094 L231.5,570.1094 A2.5,2.5 0 0 1 229,567.6094 L229,472.6094 A2.5,2.5 0 0 1 231.5,470.1094 " fill="none" style="stroke:#000000;stroke-width:1.5;" /><line style="stroke:#000000;stroke-width:1.5;" x1="229" x2="539" y1="493.7188" y2="493.7188" /><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="297" x="233" y="486.6426">Clinical Data Respository (DataResponder)</text></g><!--class Questionnaire--><g id="elem_Questionnaire"><rect codeLine="12" fill="#F1F1F1" height="83.2188" id="Questionnaire" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="336" x="22" y="321.1094" /><ellipse cx="141.25" cy="337.1094" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;" /><path d="M144.0156,332.9844 Q144.1719,332.7656 144.3594,332.6563 Q144.5469,332.5469 144.7656,332.5469 Q145.1406,332.5469 145.375,332.8125 Q145.6094,333.0625 145.6094,333.6719 L145.6094,335.125 Q145.6094,335.7344 145.375,336 Q145.1406,336.2656 144.7656,336.2656 Q144.4219,336.2656 144.2188,336.0625 Q144.0156,335.875 143.9063,335.3594 Q143.8594,335 143.6719,334.8125 Q143.3438,334.4375 142.7344,334.2188 Q142.125,334 141.5,334 Q140.7344,334 140.0938,334.3281 Q139.4688,334.6563 138.9688,335.4063 Q138.4844,336.1563 138.4844,337.1875 L138.4844,338.2813 Q138.4844,339.5156 139.375,340.3438 Q140.2656,341.1563 141.8594,341.1563 Q142.7969,341.1563 143.4531,340.9063 Q143.8438,340.75 144.2656,340.3125 Q144.5313,340.0469 144.6719,339.9688 Q144.8281,339.8906 145.0313,339.8906 Q145.3594,339.8906 145.6094,340.1563 Q145.875,340.4063 145.875,340.75 Q145.875,341.0938 145.5313,341.5 Q145.0313,342.0781 144.2344,342.4063 Q143.1563,342.8594 141.8594,342.8594 Q140.3438,342.8594 139.1406,342.2344 Q138.1563,341.7344 137.4688,340.6719 Q136.7813,339.5938 136.7813,338.3125 L136.7813,337.1563 Q136.7813,335.8281 137.3906,334.6875 Q138.0156,333.5313 139.1094,332.9219 Q140.2031,332.2969 141.4375,332.2969 Q142.1719,332.2969 142.8125,332.4688 Q143.4688,332.625 144.0156,332.9844 Z " fill="#000000" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="89" x="161.75" y="342.8379">Questionnaire</text><line style="stroke:#181818;stroke-width:0.5;" x1="23" x2="357" y1="353.1094" y2="353.1094" /><line style="stroke:#181818;stroke-width:0.5;" x1="23" x2="357" y1="361.1094" y2="361.1094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="293" x="28" y="379.6426">FindingAQuestionnaire() : GET /Questionnaire</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="324" x="28" y="397.252">FormPopulation() : POST /Questionnaire/$populate</text></g><!--class QuestionnaireResponse--><g id="elem_QuestionnaireResponse"><rect codeLine="20" fill="#F1F1F1" height="83.2188" id="QuestionnaireResponse" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="412" x="414" y="321.1094" /><ellipse cx="539.25" cy="337.1094" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;" /><path d="M542.0156,332.9844 Q542.1719,332.7656 542.3594,332.6563 Q542.5469,332.5469 542.7656,332.5469 Q543.1406,332.5469 543.375,332.8125 Q543.6094,333.0625 543.6094,333.6719 L543.6094,335.125 Q543.6094,335.7344 543.375,336 Q543.1406,336.2656 542.7656,336.2656 Q542.4219,336.2656 542.2188,336.0625 Q542.0156,335.875 541.9063,335.3594 Q541.8594,335 541.6719,334.8125 Q541.3438,334.4375 540.7344,334.2188 Q540.125,334 539.5,334 Q538.7344,334 538.0938,334.3281 Q537.4688,334.6563 536.9688,335.4063 Q536.4844,336.1563 536.4844,337.1875 L536.4844,338.2813 Q536.4844,339.5156 537.375,340.3438 Q538.2656,341.1563 539.8594,341.1563 Q540.7969,341.1563 541.4531,340.9063 Q541.8438,340.75 542.2656,340.3125 Q542.5313,340.0469 542.6719,339.9688 Q542.8281,339.8906 543.0313,339.8906 Q543.3594,339.8906 543.6094,340.1563 Q543.875,340.4063 543.875,340.75 Q543.875,341.0938 543.5313,341.5 Q543.0313,342.0781 542.2344,342.4063 Q541.1563,342.8594 539.8594,342.8594 Q538.3438,342.8594 537.1406,342.2344 Q536.1563,341.7344 535.4688,340.6719 Q534.7813,339.5938 534.7813,338.3125 L534.7813,337.1563 Q534.7813,335.8281 535.3906,334.6875 Q536.0156,333.5313 537.1094,332.9219 Q538.2031,332.2969 539.4375,332.2969 Q540.1719,332.2969 540.8125,332.4688 Q541.4688,332.625 542.0156,332.9844 Z " fill="#000000" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="153" x="559.75" y="342.8379">QuestionnaireResponse</text><line style="stroke:#181818;stroke-width:0.5;" x1="415" x2="825" y1="353.1094" y2="353.1094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="342" x="420" y="371.6426">StoreCompletedForm: POST /QuestionnaireResponse</text><line style="stroke:#181818;stroke-width:0.5;" x1="415" x2="825" y1="378.7188" y2="378.7188" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="400" x="420" y="397.252">FormDataExtraction() : POST /QuestionnaireResponse/$extract</text></g><!--class Observation--><g id="elem_Observation"><rect codeLine="28" fill="#F1F1F1" height="48" id="Observation" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="109" x="245.5" y="506.1094" /><ellipse cx="260.5" cy="522.1094" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;" /><path d="M263.2656,517.9844 Q263.4219,517.7656 263.6094,517.6563 Q263.7969,517.5469 264.0156,517.5469 Q264.3906,517.5469 264.625,517.8125 Q264.8594,518.0625 264.8594,518.6719 L264.8594,520.125 Q264.8594,520.7344 264.625,521 Q264.3906,521.2656 264.0156,521.2656 Q263.6719,521.2656 263.4688,521.0625 Q263.2656,520.875 263.1563,520.3594 Q263.1094,520 262.9219,519.8125 Q262.5938,519.4375 261.9844,519.2188 Q261.375,519 260.75,519 Q259.9844,519 259.3438,519.3281 Q258.7188,519.6563 258.2188,520.4063 Q257.7344,521.1563 257.7344,522.1875 L257.7344,523.2813 Q257.7344,524.5156 258.625,525.3438 Q259.5156,526.1563 261.1094,526.1563 Q262.0469,526.1563 262.7031,525.9063 Q263.0938,525.75 263.5156,525.3125 Q263.7813,525.0469 263.9219,524.9688 Q264.0781,524.8906 264.2813,524.8906 Q264.6094,524.8906 264.8594,525.1563 Q265.125,525.4063 265.125,525.75 Q265.125,526.0938 264.7813,526.5 Q264.2813,527.0781 263.4844,527.4063 Q262.4063,527.8594 261.1094,527.8594 Q259.5938,527.8594 258.3906,527.2344 Q257.4063,526.7344 256.7188,525.6719 Q256.0313,524.5938 256.0313,523.3125 L256.0313,522.1563 Q256.0313,520.8281 256.6406,519.6875 Q257.2656,518.5313 258.3594,517.9219 Q259.4531,517.2969 260.6875,517.2969 Q261.4219,517.2969 262.0625,517.4688 Q262.7188,517.625 263.2656,517.9844 Z " fill="#000000" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="77" x="274.5" y="527.8379">Observation</text><line style="stroke:#181818;stroke-width:0.5;" x1="246.5" x2="353.5" y1="538.1094" y2="538.1094" /><line style="stroke:#181818;stroke-width:0.5;" x1="246.5" x2="353.5" y1="546.1094" y2="546.1094" /></g><!--class Patient--><g id="elem_Patient"><rect codeLine="31" fill="#F1F1F1" height="48" id="Patient" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="76" x="390" y="506.1094" /><ellipse cx="405" cy="522.1094" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;" /><path d="M407.7656,517.9844 Q407.9219,517.7656 408.1094,517.6563 Q408.2969,517.5469 408.5156,517.5469 Q408.8906,517.5469 409.125,517.8125 Q409.3594,518.0625 409.3594,518.6719 L409.3594,520.125 Q409.3594,520.7344 409.125,521 Q408.8906,521.2656 408.5156,521.2656 Q408.1719,521.2656 407.9688,521.0625 Q407.7656,520.875 407.6563,520.3594 Q407.6094,520 407.4219,519.8125 Q407.0938,519.4375 406.4844,519.2188 Q405.875,519 405.25,519 Q404.4844,519 403.8438,519.3281 Q403.2188,519.6563 402.7188,520.4063 Q402.2344,521.1563 402.2344,522.1875 L402.2344,523.2813 Q402.2344,524.5156 403.125,525.3438 Q404.0156,526.1563 405.6094,526.1563 Q406.5469,526.1563 407.2031,525.9063 Q407.5938,525.75 408.0156,525.3125 Q408.2813,525.0469 408.4219,524.9688 Q408.5781,524.8906 408.7813,524.8906 Q409.1094,524.8906 409.3594,525.1563 Q409.625,525.4063 409.625,525.75 Q409.625,526.0938 409.2813,526.5 Q408.7813,527.0781 407.9844,527.4063 Q406.9063,527.8594 405.6094,527.8594 Q404.0938,527.8594 402.8906,527.2344 Q401.9063,526.7344 401.2188,525.6719 Q400.5313,524.5938 400.5313,523.3125 L400.5313,522.1563 Q400.5313,520.8281 401.1406,519.6875 Q401.7656,518.5313 402.8594,517.9219 Q403.9531,517.2969 405.1875,517.2969 Q405.9219,517.2969 406.5625,517.4688 Q407.2188,517.625 407.7656,517.9844 Z " fill="#000000" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="44" x="419" y="527.8379">Patient</text><line style="stroke:#181818;stroke-width:0.5;" x1="391" x2="465" y1="538.1094" y2="538.1094" /><line style="stroke:#181818;stroke-width:0.5;" x1="391" x2="465" y1="546.1094" y2="546.1094" /></g><!--class Etc--><g id="elem_Etc"><rect codeLine="34" fill="#F1F1F1" height="48" id="Etc" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="52" x="501" y="506.1094" /><ellipse cx="516" cy="522.1094" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;" /><path d="M518.7656,517.9844 Q518.9219,517.7656 519.1094,517.6563 Q519.2969,517.5469 519.5156,517.5469 Q519.8906,517.5469 520.125,517.8125 Q520.3594,518.0625 520.3594,518.6719 L520.3594,520.125 Q520.3594,520.7344 520.125,521 Q519.8906,521.2656 519.5156,521.2656 Q519.1719,521.2656 518.9688,521.0625 Q518.7656,520.875 518.6563,520.3594 Q518.6094,520 518.4219,519.8125 Q518.0938,519.4375 517.4844,519.2188 Q516.875,519 516.25,519 Q515.4844,519 514.8438,519.3281 Q514.2188,519.6563 513.7188,520.4063 Q513.2344,521.1563 513.2344,522.1875 L513.2344,523.2813 Q513.2344,524.5156 514.125,525.3438 Q515.0156,526.1563 516.6094,526.1563 Q517.5469,526.1563 518.2031,525.9063 Q518.5938,525.75 519.0156,525.3125 Q519.2813,525.0469 519.4219,524.9688 Q519.5781,524.8906 519.7813,524.8906 Q520.1094,524.8906 520.3594,525.1563 Q520.625,525.4063 520.625,525.75 Q520.625,526.0938 520.2813,526.5 Q519.7813,527.0781 518.9844,527.4063 Q517.9063,527.8594 516.6094,527.8594 Q515.0938,527.8594 513.8906,527.2344 Q512.9063,526.7344 512.2188,525.6719 Q511.5313,524.5938 511.5313,523.3125 L511.5313,522.1563 Q511.5313,520.8281 512.1406,519.6875 Q512.7656,518.5313 513.8594,517.9219 Q514.9531,517.2969 516.1875,517.2969 Q516.9219,517.2969 517.5625,517.4688 Q518.2188,517.625 518.7656,517.9844 Z " fill="#000000" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="20" x="530" y="527.8379">Etc</text><line style="stroke:#181818;stroke-width:0.5;" x1="502" x2="552" y1="538.1094" y2="538.1094" /><line style="stroke:#181818;stroke-width:0.5;" x1="502" x2="552" y1="546.1094" y2="546.1094" /></g><!--entity user--><g id="elem_user"><ellipse cx="405" cy="52.6094" fill="#F1F1F1" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;" /><path d="M405,60.6094 L405,87.6094 M392,68.6094 L418,68.6094 M405,87.6094 L392,102.6094 M405,87.6094 L418,102.6094 " fill="none" style="stroke:#181818;stroke-width:0.5;" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="29" x="390.5" y="118.6426">User</text></g><g id="elem_formFiller"><rect fill="#F1F1F1" height="37.6094" style="stroke:#181818;stroke-width:0.5;" width="82" x="364" y="183.1094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="68" x="371" y="199.6426">Form Filler</text><line style="stroke:#181818;stroke-width:0.5;" x1="365" x2="445" y1="204.7188" y2="204.7188" /></g><!--link user to formFiller--><g id="link_user_formFiller"><path codeLine="40" d="M405,127.7494 C405,144.8094 405,163.6594 405,177.9894 " fill="none" id="user-formFiller" style="stroke:#181818;stroke-width:1.0;" /><polygon fill="#181818" points="405,122.4194,401,131.4194,405,127.4194,409,131.4194,405,122.4194" style="stroke:#181818;stroke-width:1.0;" /><polygon fill="#181818" points="405,183.0494,409,174.0494,405,178.0494,401,174.0494,405,183.0494" style="stroke:#181818;stroke-width:1.0;" /></g><!--link formFiller to formFiller--><g id="link_formFiller_formFiller"><path codeLine="42" d="M446.05,193.2694 C464.75,192.3694 481,195.3094 481,202.1094 C481,208.2694 467.65,211.2694 451.23,211.0994 " fill="none" id="formFiller-to-formFiller" style="stroke:#181818;stroke-width:1.0;" /><polygon fill="#181818" points="446.05,210.9494,454.9199,215.2301,451.0475,211.1064,455.1712,207.2341,446.05,210.9494" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="75" x="487" y="207.6045">Render Form</text></g><!--reverse link formFiller to Questionnaire--><g id="link_formFiller_Questionnaire"><path codeLine="44" d="M375.97,224.5094 C342.55,249.1494 286.9,290.1694 245.17,320.9394 " fill="none" id="formFiller-backto-Questionnaire" style="stroke:#181818;stroke-width:1.0;" /><polygon fill="#181818" points="380.34,221.2894,370.7227,223.4126,376.3162,224.2573,375.4714,229.8507,380.34,221.2894" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="80" x="336" y="265.6045">Retrieve Form</text></g><!--reverse link Questionnaire to Observation--><g id="link_Questionnaire_Observation"><path codeLine="45" d="M66.67,407.0594 C48.8,420.0394 40.43,435.7794 54,454.1094 C76.85,484.9694 180.05,508.2194 245.31,520.1494 " fill="none" id="Questionnaire-backto-Observation" style="stroke:#181818;stroke-width:1.0;" /><polygon fill="#181818" points="70.89,404.1694,61.2075,405.972,66.7698,407.002,65.7397,412.5643,70.89,404.1694" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="95" x="55" y="450.6045">Form Population</text></g><!--reverse link Questionnaire to Patient--><g id="link_Questionnaire_Patient"><path codeLine="46" d="M178.57,409.7494 C177.41,425.7494 179.81,442.5394 191,454.1094 C205,468.5794 353.96,453.1794 372,462.1094 C391.02,471.5194 405.99,490.6794 415.64,506.0994 " fill="none" id="Questionnaire-backto-Patient" style="stroke:#181818;stroke-width:1.0;" /><polygon fill="#181818" points="179.09,404.3694,174.2362,412.9391,178.6052,409.3458,182.1985,413.7148,179.09,404.3694" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="95" x="192" y="450.6045">Form Population</text></g><!--reverse link Questionnaire to Etc--><g id="link_Questionnaire_Etc"><path codeLine="47" d="M313.81,405.7394 C341.3,414.0394 370.45,422.0494 398,428.1094 C424.27,433.8894 433.88,424.1894 458,436.1094 C486.84,450.3594 506.58,483.1294 517.33,505.6994 " fill="none" id="Questionnaire-backto-Etc" style="stroke:#181818;stroke-width:1.0;" /><polygon fill="#181818" points="308.69,404.1794,316.1347,410.6274,313.4732,405.6358,318.4649,402.9743,308.69,404.1794" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="95" x="481" y="450.6045">Form Population</text></g><!--link formFiller to QuestionnaireResponse--><g id="link_formFiller_QuestionnaireResponse"><path codeLine="49" d="M429.66,221.2894 C461.4,244.6894 517.57,286.0994 560.7,317.8894 " fill="none" id="formFiller-to-QuestionnaireResponse" style="stroke:#181818;stroke-width:1.0;" /><polygon fill="#181818" points="564.83,320.9394,559.9418,312.3892,560.7993,317.9807,555.2079,318.8383,564.83,320.9394" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="127" x="494" y="265.6045">StoreCompleted Form</text></g><!--link QuestionnaireResponse to Observation--><g id="link_QuestionnaireResponse_Observation"><path codeLine="50" d="M473.5,404.1794 C440.87,412.6194 406.36,421.0694 374,428.1094 C353.72,432.5194 343.53,422.3394 328,436.1094 C309.74,452.2994 303.18,479.9094 300.92,500.8494 " fill="none" id="QuestionnaireResponse-to-Observation" style="stroke:#181818;stroke-width:1.0;" /><polygon fill="#181818" points="300.44,506.0194,305.2695,497.4359,300.9107,501.0416,297.305,496.6828,300.44,506.0194" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="124" x="329" y="450.6045">Form Data Extraction</text></g><!--link QuestionnaireResponse to Patient--><g id="link_QuestionnaireResponse_Patient"><path codeLine="51" d="M617.57,411.6794 C614.26,427.5194 607.68,443.7194 595,454.1094 C575.87,469.7894 506.01,450.8394 484,462.1094 C467.59,470.5094 454.13,486.0594 444.52,500.0594 " fill="none" id="QuestionnaireResponse-Patient" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="614.2296" x2="622.1052" y1="407.6846" y2="409.0898" /><line style="stroke:#181818;stroke-width:1.0;" x1="613.7026" x2="621.5783" y1="410.6379" y2="412.0431" /><line style="stroke:#181818;stroke-width:1.0;" x1="617.4648" x2="618.87" y1="412.325" y2="404.4494" /><line style="stroke:#181818;stroke-width:1.0;" x1="446.1919" x2="439.5155" y1="504.8049" y2="500.3975" /><line style="stroke:#181818;stroke-width:1.0;" x1="447.8447" x2="441.1683" y1="502.3012" y2="497.8938" /><line style="stroke:#181818;stroke-width:1.0;" x1="445.0574" x2="440.65" y1="499.263" y2="505.9394" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="42" x="573.343" y="425.8983">subject</text></g><!--link QuestionnaireResponse to Etc--><g id="link_QuestionnaireResponse_Etc"><path codeLine="52" d="M638.03,404.5394 C642.45,420.7094 643.95,438.9994 636,454.1094 C619.7,485.1194 584.13,505.7994 558.05,517.4494 " fill="none" id="QuestionnaireResponse-to-Etc" style="stroke:#181818;stroke-width:1.0;" /><polygon fill="#181818" points="553.29,519.5194,563.1384,519.6137,557.8783,517.5325,559.9595,512.2724,553.29,519.5194" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="124" x="642" y="450.6045">Form Data Extraction</text></g></g></svg></figure>
+<p><br clear="all" /></p>
+
+<h4 id="workflows">Workflows</h4>
+
+<figure><?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="404px" preserveAspectRatio="none" style="width:533px;height:404px;background:#FFFFFF;" version="1.1" viewBox="0 0 533 404" width="533px" zoomAndPan="magnify"><defs /><g><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="308" x="111.5" y="29.5332">Structured Data Caputre - Form Filling Basic</text><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="22" x2="22" y1="121.2188" y2="322.3281" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="123.5" x2="123.5" y1="121.2188" y2="322.3281" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="288" x2="288" y1="121.2188" y2="322.3281" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="439" x2="439" y1="121.2188" y2="322.3281" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="29" x="5" y="118.1426">User</text><ellipse cx="22.5" cy="52.1094" fill="#E2E2F0" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;" /><path d="M22.5,60.1094 L22.5,87.1094 M9.5,68.1094 L35.5,68.1094 M22.5,87.1094 L9.5,102.1094 M22.5,87.1094 L35.5,102.1094 " fill="none" style="stroke:#181818;stroke-width:0.5;" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="29" x="5" y="335.8613">User</text><ellipse cx="22.5" cy="347.4375" fill="#E2E2F0" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;" /><path d="M22.5,355.4375 L22.5,382.4375 M9.5,363.4375 L35.5,363.4375 M22.5,382.4375 L9.5,397.4375 M22.5,382.4375 L35.5,397.4375 " fill="none" style="stroke:#181818;stroke-width:0.5;" /><rect fill="#E2E2F0" height="31.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="82" x="82.5" y="88.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="68" x="89.5" y="110.1426">Form Filler</text><rect fill="#E2E2F0" height="31.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="82" x="82.5" y="321.3281" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="68" x="89.5" y="342.8613">Form Filler</text><rect fill="#E2E2F0" height="31.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="107" x="235" y="88.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="93" x="242" y="110.1426">Form Manager</text><rect fill="#E2E2F0" height="31.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="107" x="235" y="321.3281" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="93" x="242" y="342.8613">Form Manager</text><rect fill="#E2E2F0" height="31.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="175" x="352" y="88.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="161" x="359" y="110.1426">Form Response Manager</text><rect fill="#E2E2F0" height="31.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="175" x="352" y="321.3281" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="161" x="359" y="342.8613">Form Response Manager</text><polygon fill="#181818" points="111.5,133.2188,121.5,137.2188,111.5,141.2188,115.5,137.2188" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="22.5" x2="117.5" y1="137.2188" y2="137.2188" /><polygon fill="#181818" points="276.5,179.9219,286.5,183.9219,276.5,187.9219,280.5,183.9219" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="123.5" x2="282.5" y1="183.9219" y2="183.9219" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="137" x="130.5" y="162.7139">Finding a Questionnaire</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="114" x="130.5" y="179.0654">GET /Questionnaire</text><line style="stroke:#181818;stroke-width:1.0;" x1="123.5" x2="165.5" y1="230.625" y2="230.625" /><line style="stroke:#181818;stroke-width:1.0;" x1="165.5" x2="165.5" y1="230.625" y2="243.625" /><line style="stroke:#181818;stroke-width:1.0;" x1="124.5" x2="165.5" y1="243.625" y2="243.625" /><polygon fill="#181818" points="134.5,239.625,124.5,243.625,134.5,247.625,130.5,243.625" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="126" x="130.5" y="209.417">Prepare Form for user</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="125" x="130.5" y="225.7686">Render Questionnaire</text><polygon fill="#181818" points="111.5,269.9766,121.5,273.9766,111.5,277.9766,115.5,273.9766" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="22.5" x2="117.5" y1="273.9766" y2="273.9766" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="77" x="29.5" y="269.1201">Comlete form</text><polygon fill="#181818" points="427.5,300.3281,437.5,304.3281,427.5,308.3281,431.5,304.3281" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="123.5" x2="433.5" y1="304.3281" y2="304.3281" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="131" x="130.5" y="299.4717">Store Completed Form</text></g></svg></figure>
+<p><br clear="all" /></p>
+
+<figure><?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="729px" preserveAspectRatio="none" style="width:1031px;height:729px;background:#FFFFFF;" version="1.1" viewBox="0 0 1031 729" width="1031px" zoomAndPan="magnify"><defs /><g><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="340" x="347" y="29.5332">Structured Data Caputre - Form Filling Advanced</text><rect fill="none" height="142.1094" style="stroke:#000000;stroke-width:1.5;" width="952.5" x="72.5" y="198.9219" /><rect fill="none" height="61.7031" style="stroke:#000000;stroke-width:1.5;" width="222" x="72.5" y="398.3828" /><rect fill="none" height="95.4063" style="stroke:#000000;stroke-width:1.5;" width="952.5" x="72.5" y="534.7891" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="22" x2="22" y1="121.2188" y2="647.1953" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="123.5" x2="123.5" y1="121.2188" y2="647.1953" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="517" x2="517" y1="121.2188" y2="647.1953" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="668" x2="668" y1="121.2188" y2="647.1953" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="932" x2="932" y1="121.2188" y2="647.1953" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="29" x="5" y="118.1426">User</text><ellipse cx="22.5" cy="52.1094" fill="#E2E2F0" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;" /><path d="M22.5,60.1094 L22.5,87.1094 M9.5,68.1094 L35.5,68.1094 M22.5,87.1094 L9.5,102.1094 M22.5,87.1094 L35.5,102.1094 " fill="none" style="stroke:#181818;stroke-width:0.5;" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="29" x="5" y="660.7285">User</text><ellipse cx="22.5" cy="672.3047" fill="#E2E2F0" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;" /><path d="M22.5,680.3047 L22.5,707.3047 M9.5,688.3047 L35.5,688.3047 M22.5,707.3047 L9.5,722.3047 M22.5,707.3047 L35.5,722.3047 " fill="none" style="stroke:#181818;stroke-width:0.5;" /><rect fill="#E2E2F0" height="31.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="82" x="82.5" y="88.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="68" x="89.5" y="110.1426">Form Filler</text><rect fill="#E2E2F0" height="31.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="82" x="82.5" y="646.1953" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="68" x="89.5" y="667.7285">Form Filler</text><rect fill="#E2E2F0" height="31.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="107" x="464" y="88.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="93" x="471" y="110.1426">Form Manager</text><rect fill="#E2E2F0" height="31.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="107" x="464" y="646.1953" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="93" x="471" y="667.7285">Form Manager</text><rect fill="#E2E2F0" height="31.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="175" x="581" y="88.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="161" x="588" y="110.1426">Form Response Manager</text><rect fill="#E2E2F0" height="31.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="175" x="581" y="646.1953" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="161" x="588" y="667.7285">Form Response Manager</text><rect fill="#E2E2F0" height="31.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="165" x="850" y="88.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="151" x="857" y="110.1426">Clinical Data Repository</text><rect fill="#E2E2F0" height="31.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="165" x="850" y="646.1953" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="151" x="857" y="667.7285">Clinical Data Repository</text><polygon fill="#181818" points="111.5,133.2188,121.5,137.2188,111.5,141.2188,115.5,137.2188" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="22.5" x2="117.5" y1="137.2188" y2="137.2188" /><polygon fill="#181818" points="505.5,179.9219,515.5,183.9219,505.5,187.9219,509.5,183.9219" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="123.5" x2="511.5" y1="183.9219" y2="183.9219" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="137" x="130.5" y="162.7139">Finding a Questionnaire</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="114" x="130.5" y="179.0654">GET /Questionnaire</text><path d="M72.5,198.9219 L137.5,198.9219 L137.5,207.2734 L127.5,217.2734 L72.5,217.2734 L72.5,198.9219 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.5;" /><rect fill="none" height="142.1094" style="stroke:#000000;stroke-width:1.5;" width="952.5" x="72.5" y="198.9219" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="20" x="87.5" y="213.417">opt</text><polygon fill="#181818" points="505.5,251.9766,515.5,255.9766,505.5,259.9766,509.5,255.9766" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="123.5" x2="511.5" y1="255.9766" y2="255.9766" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="95" x="130.5" y="234.7686">Form Population</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="174" x="130.5" y="251.1201">GET /Questionnaire/$populate</text><polygon fill="#181818" points="920.5,298.6797,930.5,302.6797,920.5,306.6797,924.5,302.6797" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="517.5" x2="926.5" y1="302.6797" y2="302.6797" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="271" x="524.5" y="281.4717">Extract existing data using FHIR RESTful APIs</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="312" x="524.5" y="297.8232">(e.g. GET /Observation?patient=123&amp;code=27113001)</text><polygon fill="#181818" points="134.5,329.0313,124.5,333.0313,134.5,337.0313,130.5,333.0313" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="128.5" x2="516.5" y1="333.0313" y2="333.0313" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="370" x="140.5" y="328.1748">Returns partially completed form (FHIR QuestionnaireResponse)</text><line style="stroke:#181818;stroke-width:1.0;" x1="123.5" x2="165.5" y1="370.3828" y2="370.3828" /><line style="stroke:#181818;stroke-width:1.0;" x1="165.5" x2="165.5" y1="370.3828" y2="383.3828" /><line style="stroke:#181818;stroke-width:1.0;" x1="124.5" x2="165.5" y1="383.3828" y2="383.3828" /><polygon fill="#181818" points="134.5,379.3828,124.5,383.3828,134.5,387.3828,130.5,383.3828" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="126" x="130.5" y="365.5264">Prepare Form for user</text><path d="M72.5,398.3828 L137.5,398.3828 L137.5,406.7344 L127.5,416.7344 L72.5,416.7344 L72.5,398.3828 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.5;" /><rect fill="none" height="61.7031" style="stroke:#000000;stroke-width:1.5;" width="222" x="72.5" y="398.3828" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="20" x="87.5" y="412.8779">opt</text><line style="stroke:#181818;stroke-width:1.0;" x1="123.5" x2="165.5" y1="439.0859" y2="439.0859" /><line style="stroke:#181818;stroke-width:1.0;" x1="165.5" x2="165.5" y1="439.0859" y2="452.0859" /><line style="stroke:#181818;stroke-width:1.0;" x1="124.5" x2="165.5" y1="452.0859" y2="452.0859" /><polygon fill="#181818" points="134.5,448.0859,124.5,452.0859,134.5,456.0859,130.5,452.0859" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="152" x="130.5" y="434.2295">Advanced Form Rendering</text><polygon fill="#181818" points="111.5,485.4375,121.5,489.4375,111.5,493.4375,115.5,489.4375" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="22.5" x2="117.5" y1="489.4375" y2="489.4375" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="77" x="29.5" y="484.5811">Comlete form</text><polygon fill="#181818" points="656.5,515.7891,666.5,519.7891,656.5,523.7891,660.5,519.7891" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="123.5" x2="662.5" y1="519.7891" y2="519.7891" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="131" x="130.5" y="514.9326">Store Completed Form</text><path d="M72.5,534.7891 L137.5,534.7891 L137.5,543.1406 L127.5,553.1406 L72.5,553.1406 L72.5,534.7891 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.5;" /><rect fill="none" height="95.4063" style="stroke:#000000;stroke-width:1.5;" width="952.5" x="72.5" y="534.7891" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="20" x="87.5" y="549.2842">opt</text><polygon fill="#181818" points="656.5,571.4922,666.5,575.4922,656.5,579.4922,660.5,575.4922" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="123.5" x2="662.5" y1="575.4922" y2="575.4922" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="124" x="130.5" y="570.6357">Form Data Extraction</text><polygon fill="#181818" points="920.5,618.1953,930.5,622.1953,920.5,626.1953,924.5,622.1953" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="668.5" x2="926.5" y1="622.1953" y2="622.1953" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="240" x="675.5" y="600.9873">add data to CDR using FHIR RESTful API</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="145" x="675.5" y="617.3389">(e.g. POST /Observation)</text></g></svg></figure>
+<p><br clear="all" /></p>
+
+<h3 id="nhs-england-one-digital-blueprint">NHS England One Digital Blueprint</h3>
+<p><a href="https://nhs.sharepoint.com/:w:/r/sites/msteams_a64122/Shared%20Documents/General/Publications/2024-01%20NHS%20England%20One%20Digital%20Blueprint.docx?d=w9b978d383a5b40d68c17c4f9af71c657&amp;csf=1&amp;web=1&amp;e=e9oVwY">NHS England One Digital Blueprint</a> states:</p>
+
+<h4 id="ihe-profiles">IHE Profiles</h4>
+
+<h5 id="ihe-retrieve-form-for-data-capture-rfd">IHE Retrieve Form for Data Capture (RFD)</h5>
+
+<p>Ref: OneDigital - page 15</p>
+
+<blockquote>
+  <p>•	NHS England will join and become part of the Integrating the Health Enterprise (IHE) community.  Our teams will actively participate and support the development of IHE profiles.  Our interop methodology will incorporate IHE profiles, and we will ensure all future services are compliant with this framework.</p>
+</blockquote>
+
+<p>and also defines a new service:</p>
+
+<p>Ref: OneDigital - page 11</p>
+
+<blockquote>
+  <p>•	Structured Data Capture Platform (CDR) – a platform that leverages clinical archetypes to capture clinical data, surfaced into national and point of care applications.  Leverages OpenEHR information models to support structured clinical data capture at the point of care or directly from a citizen. Also referred to as a Clinical Data Repository.</p>
+</blockquote>
+
+<p>The corresponding IHE profile is</p>
+
+<p><a href="https://profiles.ihe.net/ITI/TF/Volume1/ch-17.html">Retrieve Form for Data Capture (RFD)</a></p>
+
+<p>Note: The use cases also work for both the new service and an FHIR SDC.</p>
+
+<h5 id="hl7-fhir-structured-data-capture-sdc">HL7 FHIR Structured Data Capture (SDC)</h5>
+
+<p>Note: the IHE use cases in the link above are still applicable to SDC</p>
+
+<p>This has not been modernised. The most likely candidate is <a href="https://build.fhir.org/ig/HL7/sdc/">HL7 FHIR Structured Data Capture (SDC)</a></p>
+
+<p>This also:</p>
+
+<ul>
+  <li>hides the complexity of openEHR API which, like HL7 v3, are XML+SOAP based using a complex models.
+    <ul>
+      <li>openEHR can already convert Archetypes and Teamplates to FHIR Questionnaire which is part of HL7 FHIR SDC</li>
+      <li>openEHR COMPOSITION will be more complex but FHIR QuestionnaireResponse is likely to be a candidate for its modernisation.</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="data-and-interoperability-issues">Data and Interoperability Issues</h4>
+
+<ul>
+  <li>openEHR does support interoperability with other systems but these tend to be legacy interfaces
+    <ul>
+      <li>IHE XDS is used to share COMPOSITION, this is a simple mapping to FHIR DocumentReference</li>
+      <li>IHE PDQ (HL7 v2 ADT) is used to provide patient demogaphics, this probably needs updating to IHE PDQm (and so PDS)</li>
+      <li>IHE PEM (HL7 v2 ADT) is used to link openEHR to patient administration systems (PAS), this probably needs updating (no IHE profile)</li>
+    </ul>
+  </li>
+  <li>openEHR tends to have a system <code class="language-plaintext highlighter-rouge">Solution Architecture</code> rather interoperability or <code class="language-plaintext highlighter-rouge">Enterprise Architecture</code> perspective which means that although it does support several IHE/HL7 standards it tends to hardwire them as systems.
+    <ul>
+      <li>Recommendation is to speak to openEHR and suggest a more general approach to fit the wider enterprise rather than solutions.</li>
+    </ul>
+  </li>
+  <li>openEHR views FHIR as a competitor, often agressively. Both standards have clearly defined aims, the former data standards and the later interoperability standards. This viewpoint is not constructive, will lead to considerable confusion within the NHS and probably result in slower delivery velocity.
+    <ul>
+      <li>Recommendation is to speak to openEHR and ask them to stop portraying FHIR as a EHR or data standard.</li>
+      <li>Recommendation is to speak to openEHR and ask them to stop portraying openEHR as an interoperability standard due to the issues it has around interoperability.</li>
+    </ul>
+  </li>
+  <li>openEHR does not support concepts of CodeSystems and ValueSets (or SNOMED CT reference sets)
+    <ul>
+      <li>UK generated archetypes/templates also tend to have low use of clinical coding</li>
+      <li>we may need to investigate ways of preventing openEHR local codes from entering the ecosystem.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Further investigation is needed in this area.</p>
+
+<p>Ref: OneDigital - page 13</p>
+
+<blockquote>
+  <p>•	Integration Services – enable systems within a geography to communicate with each other, including traditional health care systems leveraging HL7 v2 and 3 and more modern standards such as OpenEHR and FHIR.  Should reduce the need for local integration platforms through local partnership arrangements.</p>
+</blockquote>
+
+<p>It is high unlikely <code class="language-plaintext highlighter-rouge">Interoperability Standards</code> would regard openEHR as a modern Integration Service. This feedback should be <strong>anticipated from suppliers</strong> when they view openEHR XSD Schemas (this is very likely to <strong>cause resistance to openEHR</strong> and so the recommendation would be to facade openEHR complexity with HL7 FHIR Structured Data Capture resources).</p>
+
+<h4 id="relationship-diagram">Relationship Diagram</h4>
+
+<p>On <code class="language-plaintext highlighter-rouge">overview</code> of how the new service could fit into NHS England and the NHS.</p>
+
+<p>This needs explaining but the high level descriptions should be sufficient to describe the linked services.</p>
+
+<figure><?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="577px" preserveAspectRatio="none" style="width:894px;height:577px;background:#FFFFFF;" version="1.1" viewBox="0 0 894 577" width="894px" zoomAndPan="magnify"><defs /><g><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="170" x="355.245" y="24.5332">Structured Data Caputre</text><!--cluster FormManager--><g id="cluster_FormManager"><path d="M9.99,285.1094 L108.99,285.1094 A3.75,3.75 0 0 1 111.49,287.6094 L118.49,308.7188 L819.99,308.7188 A2.5,2.5 0 0 1 822.49,311.2188 L822.49,417.6094 A2.5,2.5 0 0 1 819.99,420.1094 L9.99,420.1094 A2.5,2.5 0 0 1 7.49,417.6094 L7.49,287.6094 A2.5,2.5 0 0 1 9.99,285.1094 " fill="none" style="stroke:#000000;stroke-width:1.5;" /><line style="stroke:#000000;stroke-width:1.5;" x1="7.49" x2="118.49" y1="308.7188" y2="308.7188" /><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="98" x="11.49" y="301.6426">FormManager</text></g><!--cluster DataResponder--><g id="cluster_DataResponder"><path d="M257.99,470.1094 L555.99,470.1094 A3.75,3.75 0 0 1 558.49,472.6094 L565.49,493.7188 L769.99,493.7188 A2.5,2.5 0 0 1 772.49,496.2188 L772.49,567.6094 A2.5,2.5 0 0 1 769.99,570.1094 L257.99,570.1094 A2.5,2.5 0 0 1 255.49,567.6094 L255.49,472.6094 A2.5,2.5 0 0 1 257.99,470.1094 " fill="none" style="stroke:#000000;stroke-width:1.5;" /><line style="stroke:#000000;stroke-width:1.5;" x1="255.49" x2="565.49" y1="493.7188" y2="493.7188" /><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="297" x="259.49" y="486.6426">Clinical Data Respository (DataResponder)</text></g><!--class Questionnaire--><g id="elem_Questionnaire"><rect codeLine="13" fill="#F1F1F1" height="83.2188" id="Questionnaire" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="336" x="23.49" y="321.1094" /><ellipse cx="142.74" cy="337.1094" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;" /><path d="M145.5056,332.9844 Q145.6619,332.7656 145.8494,332.6563 Q146.0369,332.5469 146.2556,332.5469 Q146.6306,332.5469 146.865,332.8125 Q147.0994,333.0625 147.0994,333.6719 L147.0994,335.125 Q147.0994,335.7344 146.865,336 Q146.6306,336.2656 146.2556,336.2656 Q145.9119,336.2656 145.7088,336.0625 Q145.5056,335.875 145.3963,335.3594 Q145.3494,335 145.1619,334.8125 Q144.8338,334.4375 144.2244,334.2188 Q143.615,334 142.99,334 Q142.2244,334 141.5838,334.3281 Q140.9588,334.6563 140.4588,335.4063 Q139.9744,336.1563 139.9744,337.1875 L139.9744,338.2813 Q139.9744,339.5156 140.865,340.3438 Q141.7556,341.1563 143.3494,341.1563 Q144.2869,341.1563 144.9431,340.9063 Q145.3338,340.75 145.7556,340.3125 Q146.0213,340.0469 146.1619,339.9688 Q146.3181,339.8906 146.5213,339.8906 Q146.8494,339.8906 147.0994,340.1563 Q147.365,340.4063 147.365,340.75 Q147.365,341.0938 147.0213,341.5 Q146.5213,342.0781 145.7244,342.4063 Q144.6463,342.8594 143.3494,342.8594 Q141.8338,342.8594 140.6306,342.2344 Q139.6463,341.7344 138.9588,340.6719 Q138.2713,339.5938 138.2713,338.3125 L138.2713,337.1563 Q138.2713,335.8281 138.8806,334.6875 Q139.5056,333.5313 140.5994,332.9219 Q141.6931,332.2969 142.9275,332.2969 Q143.6619,332.2969 144.3025,332.4688 Q144.9588,332.625 145.5056,332.9844 Z " fill="#000000" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="89" x="163.24" y="342.8379">Questionnaire</text><line style="stroke:#181818;stroke-width:0.5;" x1="24.49" x2="358.49" y1="353.1094" y2="353.1094" /><line style="stroke:#181818;stroke-width:0.5;" x1="24.49" x2="358.49" y1="361.1094" y2="361.1094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="293" x="29.49" y="379.6426">FindingAQuestionnaire() : GET /Questionnaire</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="324" x="29.49" y="397.252">FormPopulation() : POST /Questionnaire/$populate</text></g><!--class QuestionnaireResponse--><g id="elem_QuestionnaireResponse"><rect codeLine="18" fill="#F1F1F1" height="83.2188" id="QuestionnaireResponse" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="412" x="394.49" y="321.1094" /><ellipse cx="519.74" cy="337.1094" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;" /><path d="M522.5056,332.9844 Q522.6619,332.7656 522.8494,332.6563 Q523.0369,332.5469 523.2556,332.5469 Q523.6306,332.5469 523.865,332.8125 Q524.0994,333.0625 524.0994,333.6719 L524.0994,335.125 Q524.0994,335.7344 523.865,336 Q523.6306,336.2656 523.2556,336.2656 Q522.9119,336.2656 522.7088,336.0625 Q522.5056,335.875 522.3963,335.3594 Q522.3494,335 522.1619,334.8125 Q521.8338,334.4375 521.2244,334.2188 Q520.615,334 519.99,334 Q519.2244,334 518.5838,334.3281 Q517.9588,334.6563 517.4588,335.4063 Q516.9744,336.1563 516.9744,337.1875 L516.9744,338.2813 Q516.9744,339.5156 517.865,340.3438 Q518.7556,341.1563 520.3494,341.1563 Q521.2869,341.1563 521.9431,340.9063 Q522.3338,340.75 522.7556,340.3125 Q523.0213,340.0469 523.1619,339.9688 Q523.3181,339.8906 523.5213,339.8906 Q523.8494,339.8906 524.0994,340.1563 Q524.365,340.4063 524.365,340.75 Q524.365,341.0938 524.0213,341.5 Q523.5213,342.0781 522.7244,342.4063 Q521.6463,342.8594 520.3494,342.8594 Q518.8338,342.8594 517.6306,342.2344 Q516.6463,341.7344 515.9588,340.6719 Q515.2713,339.5938 515.2713,338.3125 L515.2713,337.1563 Q515.2713,335.8281 515.8806,334.6875 Q516.5056,333.5313 517.5994,332.9219 Q518.6931,332.2969 519.9275,332.2969 Q520.6619,332.2969 521.3025,332.4688 Q521.9588,332.625 522.5056,332.9844 Z " fill="#000000" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="153" x="540.24" y="342.8379">QuestionnaireResponse</text><line style="stroke:#181818;stroke-width:0.5;" x1="395.49" x2="805.49" y1="353.1094" y2="353.1094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="342" x="400.49" y="371.6426">StoreCompletedForm: POST /QuestionnaireResponse</text><line style="stroke:#181818;stroke-width:0.5;" x1="395.49" x2="805.49" y1="378.7188" y2="378.7188" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="400" x="400.49" y="397.252">FormDataExtraction() : POST /QuestionnaireResponse/$extract</text></g><!--class Observation--><g id="elem_Observation"><rect codeLine="26" fill="#F1F1F1" height="48" id="Observation" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="109" x="358.99" y="506.1094" /><ellipse cx="373.99" cy="522.1094" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;" /><path d="M376.7556,517.9844 Q376.9119,517.7656 377.0994,517.6563 Q377.2869,517.5469 377.5056,517.5469 Q377.8806,517.5469 378.115,517.8125 Q378.3494,518.0625 378.3494,518.6719 L378.3494,520.125 Q378.3494,520.7344 378.115,521 Q377.8806,521.2656 377.5056,521.2656 Q377.1619,521.2656 376.9588,521.0625 Q376.7556,520.875 376.6463,520.3594 Q376.5994,520 376.4119,519.8125 Q376.0838,519.4375 375.4744,519.2188 Q374.865,519 374.24,519 Q373.4744,519 372.8338,519.3281 Q372.2088,519.6563 371.7088,520.4063 Q371.2244,521.1563 371.2244,522.1875 L371.2244,523.2813 Q371.2244,524.5156 372.115,525.3438 Q373.0056,526.1563 374.5994,526.1563 Q375.5369,526.1563 376.1931,525.9063 Q376.5838,525.75 377.0056,525.3125 Q377.2713,525.0469 377.4119,524.9688 Q377.5681,524.8906 377.7713,524.8906 Q378.0994,524.8906 378.3494,525.1563 Q378.615,525.4063 378.615,525.75 Q378.615,526.0938 378.2713,526.5 Q377.7713,527.0781 376.9744,527.4063 Q375.8963,527.8594 374.5994,527.8594 Q373.0838,527.8594 371.8806,527.2344 Q370.8963,526.7344 370.2088,525.6719 Q369.5213,524.5938 369.5213,523.3125 L369.5213,522.1563 Q369.5213,520.8281 370.1306,519.6875 Q370.7556,518.5313 371.8494,517.9219 Q372.9431,517.2969 374.1775,517.2969 Q374.9119,517.2969 375.5525,517.4688 Q376.2088,517.625 376.7556,517.9844 Z " fill="#000000" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="77" x="387.99" y="527.8379">Observation</text><line style="stroke:#181818;stroke-width:0.5;" x1="359.99" x2="466.99" y1="538.1094" y2="538.1094" /><line style="stroke:#181818;stroke-width:0.5;" x1="359.99" x2="466.99" y1="546.1094" y2="546.1094" /></g><!--class DiagnosticReport--><g id="elem_DiagnosticReport"><rect codeLine="29" fill="#F1F1F1" height="48" id="DiagnosticReport" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="141" x="614.99" y="506.1094" /><ellipse cx="629.99" cy="522.1094" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;" /><path d="M632.7556,517.9844 Q632.9119,517.7656 633.0994,517.6563 Q633.2869,517.5469 633.5056,517.5469 Q633.8806,517.5469 634.115,517.8125 Q634.3494,518.0625 634.3494,518.6719 L634.3494,520.125 Q634.3494,520.7344 634.115,521 Q633.8806,521.2656 633.5056,521.2656 Q633.1619,521.2656 632.9588,521.0625 Q632.7556,520.875 632.6463,520.3594 Q632.5994,520 632.4119,519.8125 Q632.0838,519.4375 631.4744,519.2188 Q630.865,519 630.24,519 Q629.4744,519 628.8338,519.3281 Q628.2088,519.6563 627.7088,520.4063 Q627.2244,521.1563 627.2244,522.1875 L627.2244,523.2813 Q627.2244,524.5156 628.115,525.3438 Q629.0056,526.1563 630.5994,526.1563 Q631.5369,526.1563 632.1931,525.9063 Q632.5838,525.75 633.0056,525.3125 Q633.2713,525.0469 633.4119,524.9688 Q633.5681,524.8906 633.7713,524.8906 Q634.0994,524.8906 634.3494,525.1563 Q634.615,525.4063 634.615,525.75 Q634.615,526.0938 634.2713,526.5 Q633.7713,527.0781 632.9744,527.4063 Q631.8963,527.8594 630.5994,527.8594 Q629.0838,527.8594 627.8806,527.2344 Q626.8963,526.7344 626.2088,525.6719 Q625.5213,524.5938 625.5213,523.3125 L625.5213,522.1563 Q625.5213,520.8281 626.1306,519.6875 Q626.7556,518.5313 627.8494,517.9219 Q628.9431,517.2969 630.1775,517.2969 Q630.9119,517.2969 631.5525,517.4688 Q632.2088,517.625 632.7556,517.9844 Z " fill="#000000" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="109" x="643.99" y="527.8379">DiagnosticReport</text><line style="stroke:#181818;stroke-width:0.5;" x1="615.99" x2="754.99" y1="538.1094" y2="538.1094" /><line style="stroke:#181818;stroke-width:0.5;" x1="615.99" x2="754.99" y1="546.1094" y2="546.1094" /></g><!--class Patient--><g id="elem_Patient"><rect codeLine="32" fill="#F1F1F1" height="48" id="Patient" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="76" x="503.49" y="506.1094" /><ellipse cx="518.49" cy="522.1094" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;" /><path d="M521.2556,517.9844 Q521.4119,517.7656 521.5994,517.6563 Q521.7869,517.5469 522.0056,517.5469 Q522.3806,517.5469 522.615,517.8125 Q522.8494,518.0625 522.8494,518.6719 L522.8494,520.125 Q522.8494,520.7344 522.615,521 Q522.3806,521.2656 522.0056,521.2656 Q521.6619,521.2656 521.4588,521.0625 Q521.2556,520.875 521.1463,520.3594 Q521.0994,520 520.9119,519.8125 Q520.5838,519.4375 519.9744,519.2188 Q519.365,519 518.74,519 Q517.9744,519 517.3338,519.3281 Q516.7088,519.6563 516.2088,520.4063 Q515.7244,521.1563 515.7244,522.1875 L515.7244,523.2813 Q515.7244,524.5156 516.615,525.3438 Q517.5056,526.1563 519.0994,526.1563 Q520.0369,526.1563 520.6931,525.9063 Q521.0838,525.75 521.5056,525.3125 Q521.7713,525.0469 521.9119,524.9688 Q522.0681,524.8906 522.2713,524.8906 Q522.5994,524.8906 522.8494,525.1563 Q523.115,525.4063 523.115,525.75 Q523.115,526.0938 522.7713,526.5 Q522.2713,527.0781 521.4744,527.4063 Q520.3963,527.8594 519.0994,527.8594 Q517.5838,527.8594 516.3806,527.2344 Q515.3963,526.7344 514.7088,525.6719 Q514.0213,524.5938 514.0213,523.3125 L514.0213,522.1563 Q514.0213,520.8281 514.6306,519.6875 Q515.2556,518.5313 516.3494,517.9219 Q517.4431,517.2969 518.6775,517.2969 Q519.4119,517.2969 520.0525,517.4688 Q520.7088,517.625 521.2556,517.9844 Z " fill="#000000" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="44" x="532.49" y="527.8379">Patient</text><line style="stroke:#181818;stroke-width:0.5;" x1="504.49" x2="578.49" y1="538.1094" y2="538.1094" /><line style="stroke:#181818;stroke-width:0.5;" x1="504.49" x2="578.49" y1="546.1094" y2="546.1094" /></g><!--class Etc--><g id="elem_Etc"><rect codeLine="35" fill="#F1F1F1" height="48" id="Etc" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="52" x="271.49" y="506.1094" /><ellipse cx="286.49" cy="522.1094" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;" /><path d="M289.2556,517.9844 Q289.4119,517.7656 289.5994,517.6563 Q289.7869,517.5469 290.0056,517.5469 Q290.3806,517.5469 290.615,517.8125 Q290.8494,518.0625 290.8494,518.6719 L290.8494,520.125 Q290.8494,520.7344 290.615,521 Q290.3806,521.2656 290.0056,521.2656 Q289.6619,521.2656 289.4588,521.0625 Q289.2556,520.875 289.1463,520.3594 Q289.0994,520 288.9119,519.8125 Q288.5838,519.4375 287.9744,519.2188 Q287.365,519 286.74,519 Q285.9744,519 285.3338,519.3281 Q284.7088,519.6563 284.2088,520.4063 Q283.7244,521.1563 283.7244,522.1875 L283.7244,523.2813 Q283.7244,524.5156 284.615,525.3438 Q285.5056,526.1563 287.0994,526.1563 Q288.0369,526.1563 288.6931,525.9063 Q289.0838,525.75 289.5056,525.3125 Q289.7713,525.0469 289.9119,524.9688 Q290.0681,524.8906 290.2713,524.8906 Q290.5994,524.8906 290.8494,525.1563 Q291.115,525.4063 291.115,525.75 Q291.115,526.0938 290.7713,526.5 Q290.2713,527.0781 289.4744,527.4063 Q288.3963,527.8594 287.0994,527.8594 Q285.5838,527.8594 284.3806,527.2344 Q283.3963,526.7344 282.7088,525.6719 Q282.0213,524.5938 282.0213,523.3125 L282.0213,522.1563 Q282.0213,520.8281 282.6306,519.6875 Q283.2556,518.5313 284.3494,517.9219 Q285.4431,517.2969 286.6775,517.2969 Q287.4119,517.2969 288.0525,517.4688 Q288.7088,517.625 289.2556,517.9844 Z " fill="#000000" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="20" x="300.49" y="527.8379">Etc</text><line style="stroke:#181818;stroke-width:0.5;" x1="272.49" x2="322.49" y1="538.1094" y2="538.1094" /><line style="stroke:#181818;stroke-width:0.5;" x1="272.49" x2="322.49" y1="546.1094" y2="546.1094" /></g><g id="elem_overview"><path d="M13.49,61.6094 L13.49,104.3125 L345.49,104.3125 L345.49,71.6094 L335.49,61.6094 L13.49,61.6094 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;" /><path d="M335.49,61.6094 L335.49,71.6094 L345.49,71.6094 L335.49,61.6094 " fill="#FEFFDD" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="307" x="19.49" y="80.1045">This is a merger of IHE Mobile Retrieve Form (mRFD)</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="237" x="19.49" y="96.4561">and FHIR Structured Data Capture (SDC)</text></g><!--entity user--><g id="elem_user"><ellipse cx="395.49" cy="52.6094" fill="#F1F1F1" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;" /><path d="M395.49,60.6094 L395.49,87.6094 M382.49,68.6094 L408.49,68.6094 M395.49,87.6094 L382.49,102.6094 M395.49,87.6094 L408.49,102.6094 " fill="none" style="stroke:#181818;stroke-width:0.5;" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="29" x="380.99" y="118.6426">User</text></g><g id="elem_formFiller"><rect fill="#F1F1F1" height="37.6094" style="stroke:#181818;stroke-width:0.5;" width="82" x="354.49" y="183.1094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="68" x="361.49" y="199.6426">Form Filler</text><line style="stroke:#181818;stroke-width:0.5;" x1="355.49" x2="435.49" y1="204.7188" y2="204.7188" /></g><!--link user to formFiller--><g id="link_user_formFiller"><path codeLine="41" d="M395.49,127.7494 C395.49,144.8094 395.49,163.6594 395.49,177.9894 " fill="none" id="user-formFiller" style="stroke:#181818;stroke-width:1.0;" /><polygon fill="#181818" points="395.49,122.4194,391.49,131.4194,395.49,127.4194,399.49,131.4194,395.49,122.4194" style="stroke:#181818;stroke-width:1.0;" /><polygon fill="#181818" points="395.49,183.0494,399.49,174.0494,395.49,178.0494,391.49,174.0494,395.49,183.0494" style="stroke:#181818;stroke-width:1.0;" /></g><!--link formFiller to formFiller--><g id="link_formFiller_formFiller"><path codeLine="43" d="M436.54,193.2694 C455.24,192.3694 471.49,195.3094 471.49,202.1094 C471.49,208.2694 458.14,211.2694 441.72,211.0994 " fill="none" id="formFiller-to-formFiller" style="stroke:#181818;stroke-width:1.0;" /><polygon fill="#181818" points="436.54,210.9494,445.4099,215.2301,441.5375,211.1064,445.6612,207.2341,436.54,210.9494" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="75" x="477.49" y="207.6045">Render Form</text></g><!--reverse link formFiller to Questionnaire--><g id="link_formFiller_Questionnaire"><path codeLine="45" d="M367.95,224.5094 C336.24,249.1494 283.44,290.1694 243.84,320.9394 " fill="none" id="formFiller-backto-Questionnaire" style="stroke:#181818;stroke-width:1.0;" /><polygon fill="#181818" points="372.09,221.2894,362.5265,223.643,368.1386,224.3531,367.4285,229.9652,372.09,221.2894" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="80" x="330.49" y="265.6045">Retrieve Form</text></g><!--reverse link Questionnaire to Observation--><g id="link_Questionnaire_Observation"><path codeLine="46" d="M156.62,408.8594 C148.67,424.7394 145.61,441.6994 157.49,454.1094 C171.64,468.8894 322.61,454.2094 341.49,462.1094 C363.54,471.3394 383.01,490.5094 396.12,505.9894 " fill="none" id="Questionnaire-backto-Observation" style="stroke:#181818;stroke-width:1.0;" /><polygon fill="#181818" points="158.98,404.4094,151.2275,410.4839,156.636,408.8259,158.2939,414.2343,158.98,404.4094" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="95" x="158.49" y="450.6045">Form Population</text></g><!--reverse link Questionnaire to Patient--><g id="link_Questionnaire_Patient"><path codeLine="47" d="M303.57,405.8194 C327.73,413.9694 353.28,421.8994 377.49,428.1094 C398.01,433.3794 404.52,429.0294 424.49,436.1094 C439.87,441.5594 441.4,447.8894 456.49,454.1094 C468.85,459.1994 474.25,454.8694 485.49,462.1094 C502.83,473.2694 517.55,491.4794 527.54,506.0994 " fill="none" id="Questionnaire-backto-Patient" style="stroke:#181818;stroke-width:1.0;" /><polygon fill="#181818" points="298.76,404.1794,305.9912,410.8659,303.4933,405.7904,308.5689,403.2926,298.76,404.1794" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="95" x="457.49" y="450.6045">Form Population</text></g><!--reverse link Questionnaire to Etc--><g id="link_Questionnaire_Etc"><path codeLine="48" d="M29.94,407.4194 C12.69,419.7794 6,435.1794 20.49,454.1094 C51.3,494.3694 208.16,518.0094 271.21,526.0194 " fill="none" id="Questionnaire-backto-Etc" style="stroke:#181818;stroke-width:1.0;" /><polygon fill="#181818" points="34.54,404.3494,24.8367,406.0365,30.3863,407.1327,29.2901,412.6824,34.54,404.3494" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="95" x="21.49" y="450.6045">Form Population</text></g><!--link formFiller to QuestionnaireResponse--><g id="link_formFiller_QuestionnaireResponse"><path codeLine="50" d="M419.01,221.2894 C449.14,244.5894 502.4,285.7694 543.45,317.5094 " fill="none" id="formFiller-to-QuestionnaireResponse" style="stroke:#181818;stroke-width:1.0;" /><polygon fill="#181818" points="547.88,320.9394,543.2033,312.2717,543.9233,317.8825,538.3124,318.6025,547.88,320.9394" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="127" x="480.49" y="265.6045">StoreCompleted Form</text></g><!--link QuestionnaireResponse to DiagnosticReport--><g id="link_QuestionnaireResponse_DiagnosticReport"><path codeLine="51" d="M726.15,404.3294 C738.48,412.9894 749.4,423.4594 757.49,436.1094 C772.62,459.7694 750.71,484.8494 727.19,502.9994 " fill="none" id="QuestionnaireResponse-to-DiagnosticReport" style="stroke:#181818;stroke-width:1.0;" /><polygon fill="#181818" points="723.1,506.0794,732.695,503.8575,727.0931,503.0703,727.8804,497.4684,723.1,506.0794" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="124" x="762.49" y="450.6045">Form Data Extraction</text></g><!--link QuestionnaireResponse to Observation--><g id="link_QuestionnaireResponse_Observation"><path codeLine="52" d="M592.73,404.1794 C587.14,422.3094 577.6,442.2294 561.49,454.1094 C534.5,473.9994 517.04,448.3094 486.49,462.1094 C466.57,471.1094 448.44,487.6794 435.23,502.0894 " fill="none" id="QuestionnaireResponse-to-Observation" style="stroke:#181818;stroke-width:1.0;" /><polygon fill="#181818" points="431.64,506.0894,440.6262,502.0584,434.9777,502.3665,434.6696,496.7181,431.64,506.0894" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="124" x="578.49" y="450.6045">Form Data Extraction</text></g><!--link QuestionnaireResponse to Patient--><g id="link_QuestionnaireResponse_Patient"><path codeLine="53" d="M715.76,408.2694 C734.51,421.6694 743.29,437.3094 727.49,454.1094 C717.58,464.6494 610.41,455.5794 597.49,462.1094 C581.03,470.4294 567.57,485.9694 557.98,499.9794 " fill="none" id="QuestionnaireResponse-Patient" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="710.7431" x2="715.1883" y1="409.7376" y2="403.0863" /><line style="stroke:#181818;stroke-width:1.0;" x1="713.2374" x2="717.6825" y1="411.4046" y2="404.7532" /><line style="stroke:#181818;stroke-width:1.0;" x1="716.2914" x2="709.64" y1="408.6345" y2="404.1894" /><line style="stroke:#181818;stroke-width:1.0;" x1="559.6387" x2="552.9498" y1="504.7192" y2="500.3307" /><line style="stroke:#181818;stroke-width:1.0;" x1="561.2844" x2="554.5955" y1="502.2109" y2="497.8224" /><line style="stroke:#181818;stroke-width:1.0;" x1="558.4885" x2="554.1" y1="499.1805" y2="505.8694" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="42" x="682.2398" y="425.9072">subject</text></g><!--link QuestionnaireResponse to Etc--><g id="link_QuestionnaireResponse_Etc"><path codeLine="54" d="M475.58,404.1494 C443.86,413.2194 409.65,421.9594 377.49,428.1094 C359.29,431.5894 306.95,422.3894 294.49,436.1094 C278.97,453.1994 281.71,480.1794 287.16,500.6894 " fill="none" id="QuestionnaireResponse-to-Etc" style="stroke:#181818;stroke-width:1.0;" /><polygon fill="#181818" points="288.6,505.7594,289.9813,496.0079,287.2302,500.9507,282.2873,498.1996,288.6,505.7594" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="124" x="295.49" y="450.6045">Form Data Extraction</text></g></g></svg></figure>
+<p><br clear="all" /></p>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.england.nhs.uk/">NHS England</a>.  Package uk.nhs.england.skunkworks#0.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Feb 8, 2024 11:21+0000">2024-02-08</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+            <div style="color: #333333" >
+
+          Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
+                 <a style="color: #81BEF7" href="qa.html">QA Report</a> 
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
+<div>
+</div>
+
+</div>
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Diagnostics Module - Interoperability Standards - Skunkworks v0.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+
+    <!--  <script src="assets/nhsuk.js" defer></script> -->
+
+      <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<!-- Project extras
+<link
+        type="font/woff2"
+        href="assets/fonts/FrutigerLTW01-55Roman.woff2"
+        rel="preload"
+        as="font"
+        crossorigin
+/>
+<link
+        type="font/woff2"
+        href="assets/fonts/FrutigerLTW01-65Bold.woff2"
+        rel="preload"
+        as="font"
+        crossorigin
+/>
+<link href="assets/css/nhsuk.css" rel="stylesheet" />
+-->
+
+<!-- Bootstrap core CSS overrides to bootstrap-fhir.css -->
+<link href="assets/css/nhse.css" rel="stylesheet"/>
+
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/favicons/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"6"}
+    h3,h4,h5,h6{--heading-prefix:"6"}</style>
+    <div id="segment-header" class="segment nhsuk-header">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+<!-- Left logo - typically the publisher's logo - project or affiliate -->
+        <div id="project-nav">
+          <a id="project-logo" no-external="true" href="https://www.england.nhs.uk">
+            <img height="61" alt="Project home" src="assets/images/skunk.png"/>
+          </a>
+        </div>
+
+<!-- Right logo - for example the FHIR logo -->
+<!-- Make sure you have authorization to use the FHIR logo -->
+
+        <div id="family-nav">
+            <!--
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="60" alt="FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+          -->
+        </div> 
+      
+
+<!-- search icon - if you want -->
+<!--
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+-->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Interoperability Standards - Skunkworks</span>
+            <br/>
+            <span style="display:inline-block;">0.0.1 - ci-build
+
+
+
+   <img alt="England flag" src="assets/images/GB-ENG.svg" height="16" title="England"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Documentation
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="background.html">Background</a>
+      </li>
+      <li>
+        <a href="interoperability-standards.html">Interoperability Standards</a>
+      </li>
+      <li>
+        <a href="testing.html">Conformance and Testing (FHIR)</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Design
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="administration-module.html">Administration</a>
+      </li>
+      <li>
+        <a href="documents-module.html">Documents (Clinical)</a>
+      </li>
+      <li>
+        <a href="clinical-module.html">Clinical</a>
+      </li>
+      <li>
+        <a href="diagnostics-module.html">Diagnostics</a>
+      </li>
+      <li>
+        <a href="medications-module.html">Medications</a>
+      </li>
+      <li>
+        <a href="workflow.html">Workflow</a>
+      </li>
+      <li>
+        <a href="structured-data-capture.html">Structured Data Capture</a>
+      </li>
+      <li>
+        <a href="validation.html">FHIR Validation</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Build
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="national-proxy-service.html">National Proxy Service</a>
+      </li>
+      <li>
+        <a href="personal-demographics-service.html">Personal Demographics Service</a>
+      </li>
+      <li>
+        <a href="multicast-notification-service.html">Multicast Notification Service</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">FHIR Assets</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Diagnostics Module</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Interoperability Standards - Skunkworks - Local Development build (v0.0.1) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://fhir.nhs.uk/England/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Diagnostics Module</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#data-standards" id="markdown-toc-data-standards">Data Standards</a></li>
+  <li><a href="#interoperability-standards" id="markdown-toc-interoperability-standards">Interoperability Standards</a></li>
+  <li><a href="#nhs-england-services" id="markdown-toc-nhs-england-services">NHS England Services</a></li>
+</ul>
+
+</div>
+
+<figure><?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="447px" preserveAspectRatio="none" style="width:1272px;height:447px;background:#FFFFFF;" version="1.1" viewBox="0 0 1272 447" width="1272px" zoomAndPan="magnify"><defs /><g><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="82" x="588.25" y="24.5332">Diagnostics</text><!--cluster RequestAndReport--><g id="cluster_RequestAndReport"><path d="M247,44.6094 L389,44.6094 A3.75,3.75 0 0 1 391.5,47.1094 L398.5,68.2188 L723,68.2188 A2.5,2.5 0 0 1 725.5,70.7188 L725.5,438.1094 A2.5,2.5 0 0 1 723,440.6094 L247,440.6094 A2.5,2.5 0 0 1 244.5,438.1094 L244.5,47.1094 A2.5,2.5 0 0 1 247,44.6094 " fill="none" style="stroke:#000000;stroke-width:1.5;" /><line style="stroke:#000000;stroke-width:1.5;" x1="244.5" x2="398.5" y1="68.2188" y2="68.2188" /><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="141" x="248.5" y="61.1426">Request and Report</text></g><!--cluster Results--><g id="cluster_Results"><path d="M752,297.6094 L806,297.6094 A3.75,3.75 0 0 1 808.5,300.1094 L815.5,321.2188 L1263,321.2188 A2.5,2.5 0 0 1 1265.5,323.7188 L1265.5,429.1094 A2.5,2.5 0 0 1 1263,431.6094 L752,431.6094 A2.5,2.5 0 0 1 749.5,429.1094 L749.5,300.1094 A2.5,2.5 0 0 1 752,297.6094 " fill="none" style="stroke:#000000;stroke-width:1.5;" /><line style="stroke:#000000;stroke-width:1.5;" x1="749.5" x2="815.5" y1="321.2188" y2="321.2188" /><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="53" x="753.5" y="314.1426">Results</text></g><g id="elem_ServiceRequest"><rect fill="#F1F1F1" height="100.0469" style="stroke:#181818;stroke-width:0.5;" width="277" x="327" y="324.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="100" x="415.5" y="341.1426">ServiceRequest</text><line style="stroke:#181818;stroke-width:0.5;" x1="328" x2="603" y1="346.2188" y2="346.2188" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="96" x="333" y="364.752">subject: patient</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="256" x="333" y="382.3613">category: laboratory procedure | imaging</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="265" x="333" y="399.9707">requester: Who/what is requesting service</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="205" x="333" y="417.5801">performer: Requested performer</text></g><g id="elem_DiagnosticReport"><rect fill="#F1F1F1" height="170.4844" style="stroke:#181818;stroke-width:0.5;" width="306" x="403.5" y="80.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="109" x="502" y="97.1426">DiagnosticReport</text><line style="stroke:#181818;stroke-width:0.5;" x1="404.5" x2="708.5" y1="102.2188" y2="102.2188" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="96" x="409.5" y="120.752">subject: patient</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="294" x="409.5" y="138.3613">category: Laboratory, Radiology, Genetics, etc</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="67" x="409.5" y="155.9707">effective[x]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="58" x="409.5" y="173.5801">basedOn</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="35" x="409.5" y="191.1895">result</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="85" x="409.5" y="208.7988">imagingStudy</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="97" x="409.5" y="226.4082">presentedForm</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="38" x="409.5" y="244.0176">media</text></g><g id="elem_Specimen"><rect fill="#F1F1F1" height="64.8281" style="stroke:#181818;stroke-width:0.5;" width="108" x="260.5" y="133.1094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="62" x="283.5" y="149.6426">Specimen</text><line style="stroke:#181818;stroke-width:0.5;" x1="261.5" x2="367.5" y1="154.7188" y2="154.7188" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="96" x="266.5" y="173.252">subject: patient</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="48" x="266.5" y="190.8613">request</text></g><g id="elem_Observation"><rect fill="#F1F1F1" height="82.4375" style="stroke:#181818;stroke-width:0.5;" width="108" x="908.5" y="333.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="77" x="924" y="350.1426">Observation</text><line style="stroke:#181818;stroke-width:0.5;" x1="909.5" x2="1015.5" y1="355.2188" y2="355.2188" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="96" x="914.5" y="373.752">subject: patient</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="67" x="914.5" y="391.3613">effective[x]</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="74" x="914.5" y="408.9707">hasMember</text></g><g id="elem_ImagingStudy"><rect fill="#F1F1F1" height="47.2188" style="stroke:#181818;stroke-width:0.5;" width="108" x="1141.5" y="351.1094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="85" x="1153" y="367.6426">ImagingStudy</text><line style="stroke:#181818;stroke-width:0.5;" x1="1142.5" x2="1248.5" y1="372.7188" y2="372.7188" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="96" x="1147.5" y="391.252">subject: patient</text></g><g id="elem_Media"><rect fill="#F1F1F1" height="47.2188" style="stroke:#181818;stroke-width:0.5;" width="108" x="765.5" y="351.1094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="38" x="800.5" y="367.6426">Media</text><line style="stroke:#181818;stroke-width:0.5;" x1="766.5" x2="872.5" y1="372.7188" y2="372.7188" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="96" x="771.5" y="391.252">subject: patient</text></g><g id="elem_Binary"><rect fill="#F1F1F1" height="37.6094" style="stroke:#181818;stroke-width:0.5;" width="54" x="108.5" y="355.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="40" x="115.5" y="372.1426">Binary</text><line style="stroke:#181818;stroke-width:0.5;" x1="109.5" x2="161.5" y1="377.2188" y2="377.2188" /></g><g id="elem_raw"><path d="M6,128.1094 L6,203.5156 A0,0 0 0 0 6,203.5156 L115.03,203.5156 L133.76,355.5994 L123.03,203.5156 L225,203.5156 A0,0 0 0 0 225,203.5156 L225,138.1094 L215,128.1094 L6,128.1094 A0,0 0 0 0 6,128.1094 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;" /><path d="M215,128.1094 L215,138.1094 L225,138.1094 L215,128.1094 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="160" x="12" y="146.6045">would be in its native format</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="194" x="12" y="162.9561">and not normally a FHIR resource</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="4" x="12" y="179.3076">&#160;</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="78" x="16" y="195.6592">e.g. PDF, etc</text></g><!--link DiagnosticReport to ServiceRequest--><g id="link_DiagnosticReport_ServiceRequest"><path codeLine="51" d="M516.24,258.1894 C507.45,278.1794 498.4,298.7694 490.42,316.9294 " fill="none" id="DiagnosticReport-ServiceRequest" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="516.2647" x2="513.9992" y1="258.1204" y2="248.3804" /><line style="stroke:#181818;stroke-width:1.0;" x1="516.2647" x2="524.9808" y1="258.1204" y2="253.2183" /><line style="stroke:#181818;stroke-width:1.0;" x1="516.2647" x2="519.49" y1="258.1204" y2="250.7994" /><ellipse cx="513.8458" cy="263.6112" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="491.5047" x2="487.07" y1="314.4829" y2="324.5494" /><ellipse cx="491.5047" cy="314.4829" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="492.3432" x2="485.0221" y1="322.5015" y2="319.2762" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="52" x="461.8782" y="272.5883">basedOn</text></g><!--link Specimen to ServiceRequest--><g id="link_Specimen_ServiceRequest"><path codeLine="52" d="M342.52,205.0194 C365.63,236.6994 398.74,282.0794 424.78,317.7794 " fill="none" id="Specimen-ServiceRequest" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="342.4773" x2="332.9141" y1="204.9606" y2="202.0373" /><line style="stroke:#181818;stroke-width:1.0;" x1="342.4773" x2="342.6059" y1="204.9606" y2="194.9614" /><line style="stroke:#181818;stroke-width:1.0;" x1="342.4773" x2="337.76" y1="204.9606" y2="198.4994" /><ellipse cx="346.0152" cy="209.8065" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="423.0638" x2="429.55" y1="315.4452" y2="324.3294" /><ellipse cx="423.0638" cy="315.4452" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="430.422" x2="423.9608" y1="318.7401" y2="323.4574" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="43" x="295.0735" y="219.3246">request</text></g><!--link DiagnosticReport to Observation--><g id="link_DiagnosticReport_Observation"><path codeLine="53" d="M717.43,207.0294 C775.52,226.2894 839.52,253.2394 891.5,289.6094 C905.89,299.6794 919.1,313.3494 930.12,326.7394 " fill="none" id="DiagnosticReport-Observation" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="717.255" x2="707.788" y1="206.9721" y2="210.1931" /><line style="stroke:#181818;stroke-width:1.0;" x1="717.255" x2="711.512" y1="206.9721" y2="198.7856" /><line style="stroke:#181818;stroke-width:1.0;" x1="717.255" x2="709.65" y1="206.9721" y2="204.4894" /><ellipse cx="722.9588" cy="208.8341" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="928.4836" x2="935.36" y1="324.6837" y2="333.2694" /><ellipse cx="928.4836" cy="324.6837" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="935.9816" x2="929.7374" y1="327.6468" y2="332.6478" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="32" x="717.3146" y="203.3807">result</text></g><!--link DiagnosticReport to ImagingStudy--><g id="link_DiagnosticReport_ImagingStudy"><path codeLine="54" d="M717.69,173.8194 C837.34,185.4794 1000.55,215.1094 1124.5,289.6094 C1146.61,302.8994 1165.15,325.5494 1177.74,343.9794 " fill="none" id="DiagnosticReport-ImagingStudy" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="717.474" x2="708.9417" y1="173.8072" y2="179.0224" /><line style="stroke:#181818;stroke-width:1.0;" x1="717.474" x2="710.0783" y1="173.8072" y2="167.0764" /><line style="stroke:#181818;stroke-width:1.0;" x1="717.474" x2="709.51" y1="173.8072" y2="173.0494" /><ellipse cx="723.447" cy="174.3755" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="1176.3601" x2="1182.43" y1="341.8957" y2="351.0694" /><ellipse cx="1176.3601" cy="341.8957" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="1183.5586" x2="1176.8869" y1="345.5263" y2="349.9407" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="79" x="717.6315" y="170.5181">imagingStudy</text></g><!--link DiagnosticReport to Binary--><g id="link_DiagnosticReport_Binary"><path codeLine="55" d="M395.64,247.0494 C392.58,248.2694 389.53,249.4594 386.5,250.6094 C325.33,273.8794 303.08,260.4194 244.5,289.6094 C212.91,305.3494 181.49,330.8894 160.55,349.6894 " fill="none" id="DiagnosticReport-Binary" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="395.8441" x2="401.0095" y1="246.96" y2="238.3974" /><line style="stroke:#181818;stroke-width:1.0;" x1="395.8441" x2="405.5105" y1="246.96" y2="249.5213" /><line style="stroke:#181818;stroke-width:1.0;" x1="395.8441" x2="403.26" y1="246.96" y2="243.9594" /><ellipse cx="390.2821" cy="249.2105" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="162.5429" x2="154.4" y1="347.8839" y2="355.2794" /><ellipse cx="162.5429" cy="347.8839" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="160.0503" x2="154.6718" y1="355.5512" y2="349.6291" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="87" x="308.5748" y="244.1999">presentedForm</text></g><!--link DiagnosticReport to Media--><g id="link_DiagnosticReport_Media"><path codeLine="56" d="M682.16,255.9094 C696.94,267.0394 711.67,278.4394 725.5,289.6094 C747.53,307.3994 771.3,328.6594 789.43,345.3394 " fill="none" id="DiagnosticReport-Media" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="681.77" x2="671.77" y1="255.6194" y2="255.6194" /><line style="stroke:#181818;stroke-width:1.0;" x1="681.77" x2="678.97" y1="255.6194" y2="246.0194" /><line style="stroke:#181818;stroke-width:1.0;" x1="681.77" x2="675.37" y1="255.6194" y2="250.8194" /><ellipse cx="686.57" cy="259.2194" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="787.2732" x2="795.35" y1="343.3418" y2="350.8094" /><ellipse cx="787.2732" cy="343.3418" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="795.1285" x2="789.6975" y1="345.1569" y2="351.0309" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="35" x="649.3983" y="272.6101">media</text></g><!--link Observation to Observation--><g id="link_Observation_Observation"><path codeLine="57" d="M1025.06,357.6394 C1040.23,358.9294 1051.5,364.5894 1051.5,374.6094 C1051.5,384.6294 1040.23,390.2894 1025.06,391.5794 " fill="none" id="Observation-Observation" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="1024.8159" x2="1016.6269" y1="357.6268" y2="363.3663" /><line style="stroke:#181818;stroke-width:1.0;" x1="1024.8159" x2="1017.0131" y1="357.6268" y2="351.3725" /><line style="stroke:#181818;stroke-width:1.0;" x1="1024.8159" x2="1016.82" y1="357.6268" y2="357.3694" /><ellipse cx="1030.8127" cy="357.8199" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="1027.8143" x2="1016.82" y1="391.4954" y2="391.8494" /><ellipse cx="1027.8143" cy="391.4954" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="1020.9467" x2="1020.6892" y1="395.7186" y2="387.7227" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="60" x="1057.5" y="380.1045">Group Lab</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="68" x="1024.41" y="352.6917">hasMember</text></g></g></svg></figure>
+<p><br clear="all" /></p>
+
+<p>For an example of what we would see here see <a href="https://simplifier.net/guide/FHIR-Genomics-Implementation-Guide/Home">FHIR Genomics Implementation Guide</a></p>
+
+<figure><?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="491px" preserveAspectRatio="none" style="width:808px;height:491px;background:#FFFFFF;" version="1.1" viewBox="0 0 808 491" width="808px" zoomAndPan="magnify"><defs /><g><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="244" x="275.105" y="24.5332">Example Laboratory Order Process</text><!--cluster ServiceRequeststatus--><g id="cluster_ServiceRequeststatus"><path d="M42.5,213.6094 L333.5,213.6094 A12.5,12.5 0 0 1 346,226.1094 L346,236.2188 L30,236.2188 L30,226.1094 A12.5,12.5 0 0 1 42.5,213.6094 " fill="#F1F1F1" style="stroke:#F1F1F1;stroke-width:1.0;" /><rect fill="none" height="102" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="316" x="30" y="213.6094" /><line style="stroke:#181818;stroke-width:0.5;" x1="30" x2="346" y1="236.2188" y2="236.2188" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="142" x="117" y="232.1426">ServiceRequest.status</text></g><!--cluster Taskstatus--><g id="cluster_Taskstatus"><path d="M383.5,45.6094 L729.5,45.6094 A12.5,12.5 0 0 1 742,58.1094 L742,68.2188 L371,68.2188 L371,58.1094 A12.5,12.5 0 0 1 383.5,45.6094 " fill="#F1F1F1" style="stroke:#F1F1F1;stroke-width:1.0;" /><rect fill="none" height="270" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="371" x="371" y="45.6094" /><line style="stroke:#181818;stroke-width:0.5;" x1="371" x2="742" y1="68.2188" y2="68.2188" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="189" x="462" y="64.1426">Task.status (Order Fulfilment)</text></g><!--cluster DiagnosticReportstatus--><g id="cluster_DiagnosticReportstatus"><path d="M319.5,383.6094 L461.5,383.6094 A12.5,12.5 0 0 1 474,396.1094 L474,406.2188 L307,406.2188 L307,396.1094 A12.5,12.5 0 0 1 319.5,383.6094 " fill="#F1F1F1" style="stroke:#F1F1F1;stroke-width:1.0;" /><rect fill="none" height="102" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="167" x="307" y="383.6094" /><line style="stroke:#181818;stroke-width:0.5;" x1="307" x2="474" y1="406.2188" y2="406.2188" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="151" x="315" y="402.1426">DiagnosticReport.status</text></g><g id="ServiceRequeststatus.active"><rect fill="#F1F1F1" height="50" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="57" x="46.5" y="249.6094" /><line style="stroke:#181818;stroke-width:0.5;" x1="46.5" x2="103.5" y1="277.2188" y2="277.2188" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="37" x="56.5" y="269.1426">active</text></g><g id="ServiceRequeststatus.completed"><rect fill="#F1F1F1" height="50" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="85" x="138.5" y="249.6094" /><line style="stroke:#181818;stroke-width:0.5;" x1="138.5" x2="223.5" y1="277.2188" y2="277.2188" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="65" x="148.5" y="269.1426">completed</text></g><g id="ServiceRequeststatus.revoked"><rect fill="#F1F1F1" height="50" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="71" x="258.5" y="249.6094" /><line style="stroke:#181818;stroke-width:0.5;" x1="258.5" x2="329.5" y1="277.2188" y2="277.2188" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="51" x="268.5" y="269.1426">revoked</text></g><g id="Taskstatus.requested"><rect fill="#F1F1F1" height="50" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="84" x="387" y="81.6094" /><line style="stroke:#181818;stroke-width:0.5;" x1="387" x2="471" y1="109.2188" y2="109.2188" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="64" x="397" y="101.1426">requested</text></g><g id="Taskstatus.rejected"><rect fill="#F1F1F1" height="50" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="71" x="500.5" y="249.6094" /><line style="stroke:#181818;stroke-width:0.5;" x1="500.5" x2="571.5" y1="277.2188" y2="277.2188" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="51" x="510.5" y="269.1426">rejected</text></g><g id="Taskstatus.accepted"><rect fill="#F1F1F1" height="50" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="78" x="387" y="249.6094" /><line style="stroke:#181818;stroke-width:0.5;" x1="387" x2="465" y1="277.2188" y2="277.2188" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="58" x="397" y="269.1426">accepted</text></g><g id="Taskstatus.cancelled"><rect fill="#F1F1F1" height="50" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="80" x="629" y="249.6094" /><line style="stroke:#181818;stroke-width:0.5;" x1="629" x2="709" y1="277.2188" y2="277.2188" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="60" x="639" y="269.1426">cancelled</text></g><g id="Taskstatus.completed"><rect fill="#F1F1F1" height="50" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="85" x="573.5" y="81.6094" /><line style="stroke:#181818;stroke-width:0.5;" x1="573.5" x2="658.5" y1="109.2188" y2="109.2188" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="65" x="583.5" y="101.1426">completed</text></g><g id="DiagnosticReportstatus.final"><rect fill="#F1F1F1" height="50" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="50" x="384" y="419.6094" /><line style="stroke:#181818;stroke-width:0.5;" x1="384" x2="434" y1="447.2188" y2="447.2188" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="26" x="396" y="439.1426">final</text></g><ellipse cx="16" cy="106.6094" fill="#181818" rx="10" ry="10" style="stroke:none;stroke-width:1.0;" /><ellipse cx="244" cy="444.6094" fill="none" rx="10" ry="10" style="stroke:#181818;stroke-width:1.0;" /><ellipse cx="244.5" cy="445.1094" fill="#181818" rx="6" ry="6" style="stroke:none;stroke-width:1.0;" /><!--link *start* to active--><g id="link_*start*_active"><path d="M17.56,116.7394 C20.53,133.2094 27.62,168.8594 38,197.6094 C43.82,213.7294 52.03,230.9594 59.24,244.9294 " fill="none" id="*start*-to-active" style="stroke:#181818;stroke-width:1.0;" /><polygon fill="#181818" points="61.64,249.5394,61.0167,239.7103,59.3242,245.108,53.9265,243.4155,61.64,249.5394" style="stroke:#181818;stroke-width:1.0;" /></g><!--link active to requested--><g id="link_active_requested"><path d="M65.61,249.5194 C57.59,224.4794 50.31,185.6494 71,161.6094 C110.54,115.6494 293.77,108.2994 381.69,107.4594 " fill="none" id="active-to-requested" style="stroke:#181818;stroke-width:1.0;" /><polygon fill="#181818" points="386.83,107.4194,377.796,103.4967,381.8302,107.4622,377.8646,111.4964,386.83,107.4194" style="stroke:#181818;stroke-width:1.0;" /><path d="M76,166.6094 L76,192.6094 L333,192.6094 L333,176.6094 L323,166.6094 L76,166.6094 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;" /><path d="M323,166.6094 L323,176.6094 L333,176.6094 L323,166.6094 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="236" x="82" y="185.1045">This is requesting the order be performed</text></g><!--link requested to rejected--><g id="link_requested_rejected"><path d="M409.69,131.7494 C396.25,151.6194 383.44,179.3794 400,197.6094 C412.46,211.3294 466.76,196.6894 483,205.6094 C499.29,214.5594 512.24,230.8194 521.27,245.1994 " fill="none" id="requested-to-rejected" style="stroke:#181818;stroke-width:1.0;" /><polygon fill="#181818" points="523.94,249.5894,522.6627,239.8237,521.3339,245.3223,515.8353,243.9934,523.94,249.5894" style="stroke:#181818;stroke-width:1.0;" /></g><!--link rejected to requested--><g id="link_rejected_requested"><path d="M523.33,249.2894 C514.18,234.2394 500.4,215.8894 483,205.6094 C463.62,194.1594 447.98,214.4094 433,197.6094 C418.63,181.4994 418.59,156.5994 421.61,137.0694 " fill="none" id="rejected-to-requested" style="stroke:#181818;stroke-width:1.0;" /><polygon fill="#181818" points="422.53,131.7194,417.0701,139.9163,421.6872,136.6478,424.9557,141.2649,422.53,131.7194" style="stroke:#181818;stroke-width:1.0;" /><path d="M438,166.6094 L438,192.6094 L711,192.6094 L711,176.6094 L701,166.6094 L438,166.6094 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;" /><path d="M701,166.6094 L701,176.6094 L711,176.6094 L701,166.6094 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="252" x="444" y="185.1045">The fuliller has declined to perform the order</text></g><!--link requested to accepted--><g id="link_requested_accepted"><path d="M408.44,131.8494 C402.23,140.6494 396.2,151.0394 393,161.6094 C384.44,189.8694 396.3,222.2194 408.12,244.8694 " fill="none" id="requested-to-accepted" style="stroke:#181818;stroke-width:1.0;" /><polygon fill="#181818" points="410.63,249.5494,409.8812,239.729,408.2578,245.1479,402.8389,243.5246,410.63,249.5494" style="stroke:#181818;stroke-width:1.0;" /></g><!--link requested to cancelled--><g id="link_requested_cancelled"><path d="M471.03,115.6194 C495.76,120.3094 527.65,126.3394 556,131.6094 C592.42,138.3794 696.28,133.1494 720,161.6094 C740.78,186.5294 718.95,221.2994 697.76,245.4694 " fill="none" id="requested-to-cancelled" style="stroke:#181818;stroke-width:1.0;" /><polygon fill="#181818" points="694.37,249.2494,703.3476,245.1993,697.6998,245.5194,697.3797,239.8716,694.37,249.2494" style="stroke:#181818;stroke-width:1.0;" /></g><!--link accepted to final--><g id="link_accepted_final"><path d="M401.95,299.7194 C394.37,308.9194 386.94,319.9994 383,331.6094 C373.65,359.1394 383.35,391.5894 393.46,414.4594 " fill="none" id="accepted-to-final" style="stroke:#181818;stroke-width:1.0;" /><polygon fill="#181818" points="395.61,419.1894,395.49,409.3412,393.5238,414.6454,388.2196,412.6792,395.61,419.1894" style="stroke:#181818;stroke-width:1.0;" /><path d="M388,336.6094 L388,362.6094 L735,362.6094 L735,346.6094 L725,336.6094 L388,336.6094 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;" /><path d="M725,336.6094 L725,346.6094 L735,346.6094 L725,336.6094 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="326" x="394" y="355.1045">The order is acted on and DiagnosticReports are created</text></g><!--link final to completed--><g id="link_final_completed"><path d="M434.03,441.8494 C505.01,436.2894 704.97,416.4794 744,367.6094 C801.21,295.9594 784.88,237.1994 733,161.6094 C717.04,138.3494 688.41,124.8994 663.48,117.2494 " fill="none" id="final-to-completed" style="stroke:#181818;stroke-width:1.0;" /><polygon fill="#181818" points="658.54,115.7894,666.0374,122.176,663.335,117.2064,668.3046,114.504,658.54,115.7894" style="stroke:#181818;stroke-width:1.0;" /></g><!--link completed to completed--><g id="link_completed_completed"><path d="M573.35,116.0794 C531.49,125.0394 466.2,140.7794 412,161.6094 C379.34,174.1594 375.65,188.0394 342,197.6094 C320.34,203.7694 261.14,195.5494 241,205.6094 C223.51,214.3494 208.88,230.5994 198.44,245.0294 " fill="none" id="completed-to-completed" style="stroke:#181818;stroke-width:1.0;" /><polygon fill="#181818" points="195.33,249.4394,203.7894,244.3957,198.2145,245.3553,197.2549,239.7805,195.33,249.4394" style="stroke:#181818;stroke-width:1.0;" /></g><!--link cancelled to revoked--><g id="link_cancelled_revoked"><path d="M654.52,249.2894 C638.14,223.4794 608.82,184.9894 571.5,168.6094 C497.02,135.9194 462.72,135.3494 388.5,168.6094 C353.83,184.1494 326.66,219.3794 310.52,244.9694 " fill="none" id="cancelled-to-revoked" style="stroke:#181818;stroke-width:1.0;" /><polygon fill="#181818" points="307.83,249.3094,315.9753,243.7727,310.4672,245.0614,309.1785,239.5533,307.83,249.3094" style="stroke:#181818;stroke-width:1.0;" /></g><!--link completed to *end*--><g id="link_completed_*end*"><path d="M190.03,299.6794 C203.48,335.5494 228.34,401.8594 238.97,430.1994 " fill="none" id="completed-to-*end*" style="stroke:#181818;stroke-width:1.0;" /><polygon fill="#181818" points="240.78,435.0294,241.3652,425.1979,239.0244,430.3477,233.8746,428.0069,240.78,435.0294" style="stroke:#181818;stroke-width:1.0;" /></g><!--link revoked to *end*--><g id="link_revoked_*end*"><path d="M286.84,299.6794 C276.21,335.3794 256.61,401.2194 248.11,429.7894 " fill="none" id="revoked-to-*end*" style="stroke:#181818;stroke-width:1.0;" /><polygon fill="#181818" points="246.66,434.6694,253.0672,427.1895,248.0902,429.8783,245.4014,424.9013,246.66,434.6694" style="stroke:#181818;stroke-width:1.0;" /></g></g></svg></figure>
+<p><br clear="all" /></p>
+
+<h3 id="data-standards">Data Standards</h3>
+
+<h4 id="nhs-england">NHS England</h4>
+
+<ul>
+  <li><a href="https://simplifier.net/guide/ClinicalObservations/Home">Clinical Observations</a> Data standards only. no interactions</li>
+  <li><a href="https://simplifier.net/guide/pathology-fhir-implementation-guide/Home">Pathology FHIR Implementation Guide</a>
+    <ul>
+      <li>See <code class="language-plaintext highlighter-rouge">cautionary</code> note on the use of <a href="interoperability-standards.html#messaging">FHIR Messaging</a> which this guide contains</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="interoperability-standards">Interoperability Standards</h3>
+
+<ul>
+  <li>INTEROPen and HL7 UK standards include:
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">deprecated</code> <a href="https://nhsconnect.github.io/CareConnectAPI/index.html">Care Connect RESTful API (FHIR STU3)</a> which defines a minimum/base API contract for FHIR RESTful servers for sharing read only patient data and documents.</li>
+    </ul>
+  </li>
+  <li>International standards include:
+    <ul>
+      <li><a href="https://build.fhir.org/ig/HL7/fhir-ipa/index.html">International Patient Access</a> This specification describes how an application acting on behalf of a patient can access information about the patient from a clinical records system using a FHIR R4 based API. The clinical records system may be supporting a clinical care provider (e.g., a hospital or a general practitioner), a health data exchange, or other system managing patient records, including a national health record system.</li>
+      <li><a href="https://build.fhir.org/ig/IHE/QEDm/branches/master/index.html">Query for Existing Data for Mobile (QEDm)</a> The Query for Existing Data for Mobile Profile (QEDm) supports dynamic queries for clinical data elements, including observations, allergy and intolerances, problems, diagnostic results, medications, immunizations, procedures, encounters and provenance by making the information widely available to other systems within and across enterprises to support provision of better clinical care. It defines a transaction used to query a list of specific data elements, persisted as FHIR resources.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="nhs-england-services">NHS England Services</h3>
+
+<p>TODO only a ‘fag packet’</p>
+
+<ul>
+  <li><a href="https://simplifier.net/guide/FHIR-Genomics-Implementation-Guide/Home">FHIR Genomics Implementation Guide</a></li>
+</ul>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.england.nhs.uk/">NHS England</a>.  Package uk.nhs.england.skunkworks#0.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Feb 8, 2024 11:21+0000">2024-02-08</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+            <div style="color: #333333" >
+
+          Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
+                 <a style="color: #81BEF7" href="qa.html">QA Report</a> 
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
+<div>
+</div>
+
+</div>
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+
