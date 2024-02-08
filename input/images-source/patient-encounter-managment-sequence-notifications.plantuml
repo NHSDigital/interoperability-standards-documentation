@@ -1,0 +1,35 @@
+@startuml
+
+hide footbox
+
+title "Patient Encounter Management (PEM) (IHE UK Mock up)"
+
+participant "Patient Encounter Source (e.g. Patient Administration System (PAS))" as PEMSource
+participant "Trust Integration Engine (TIE)\nor Orchestration Engine" as PEMManager
+participant "Patient Encounter Consumer" as PEMConsumer
+
+
+alt Patient Encounter Feed FHIR
+PEMSource -> PEMManager : Patient Encounter Feed FHIR \n\n PUT PUT /Encounter?identifier={identifier}
+PEMManager -> PEMSource : Response
+else IHE PEM / HL7 v2 ADT
+PEMSource -> PEMManager : Patient Encounter Feed ADT A03
+PEMManager -> PEMSource : Response
+end
+note over PEMManager,PEMConsumer : Notification Methods
+alt FHIR Subscription
+  PEMManager -> PEMConsumer: FHIR Subscription (FHIR R4 Bundle (history) including FHIR Encounter
+  PEMConsumer --> PEMManager: Acknowledgement
+else FHIR Cast
+  PEMManager -> PEMConsumer: FHIR Cast incudes FHIR Encounter
+  PEMConsumer --> PEMManager: Acknowledgement
+else Patient Encounter Feed FHIR
+  PEMManager -> PEMConsumer: PUT /Encounter?identifier={identifier}
+  PEMConsumer --> PEMManager: Acknowledgement (may include updated/created FHIR Encounter)
+else IHE PEM / HL7 v2 ADT
+  PEMManager -> PEMConsumer : Patient Encounter Feed ADT A03
+  PEMConsumer -> PEMManager : Response
+end
+
+
+@enduml
