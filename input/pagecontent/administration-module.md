@@ -13,6 +13,8 @@
   - [Patient Demographics Query (PDQ)](https://profiles.ihe.net/ITI/TF/Volume1/ch-8.html)
   - [Patient Identifier Cross-referencing (PIX)](https://profiles.ihe.net/ITI/TF/Volume1/ch-5.html)
 
+See also [IHE PDQm NHS England Elaboration](https://nhsd-confluence.digital.nhs.uk/display/IOPS/IHE+PDQm+Elaboration)
+
 ##### International
 - [Patient Demographics Query for mobile (PDQm)](https://profiles.ihe.net/ITI/PDQm/index.html) The Patient Demographics Query for Mobile (PDQm) Profile defines a lightweight RESTful interface to a patient demographics supplier leveraging technologies readily available to mobile applications and lightweight browser based applications.
 - [Patient Identifier Cross-Reference for Mobile (PIXm)](https://profiles.ihe.net/ITI/PIXm/index.html) The Patient Identifier Cross-reference for Mobile (PIXm) Profile provides RESTful transactions for mobile and lightweight browser-based applications to create, update and delete patient records in a Patient Identifier Cross-reference Manager and to query the Patient Identifier Cross-reference Manager for a patient’s cross-domain identifiers. 

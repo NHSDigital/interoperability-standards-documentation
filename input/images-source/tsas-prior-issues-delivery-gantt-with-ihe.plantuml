@@ -1,0 +1,25 @@
+@startgantt
+
+-- Pre TSAS (Fail) --
+
+
+ [PRSB (Information Standards)] as [prsb] lasts 2 weeks
+ [Platforms / Solutions Architecture] as [platforms] lasts 5 week
+   [Interoperability Standards (Transfer of Care)] as [teamB] lasts 4 week
+
+     [English NHS Solutions (<5%?)] as [nhstoc] lasts 3 weeks
+[Ketting XML + MESH] as [kettering] lasts 1 week and 2 days
+     [English NHS Solutions (>70%?)] as [nhsxml] lasts 2 weeks
+
+
+ [nhstoc] is colored in Pink/Red
+ [nhsxml] is colored in GreenYellow/Green
+ [kettering] is colored in Pink
+
+ [platforms] starts at [prsb]'s end
+ [teamB] starts at [platforms]'s end
+ [nhstoc] starts at [teamB]'s end
+ [nhsxml] starts at [kettering]'s end
+
+
+@endgantt
