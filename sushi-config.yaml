@@ -23,7 +23,7 @@ jurisdiction: urn:iso:std:iso:3166#GB-ENG "England"
 publisher:
   name: NHS England
   url: https://www.england.nhs.uk/
-  # email: test@example.org
+
 
 # The dependencies property corresponds to IG.dependsOn. The key is the
 # package id and the value is the version (or dev/current). For advanced
@@ -37,7 +37,8 @@ dependencies:
     uri: https://simplifier.net/guide/nhs-england-implementation-guide-version-history
     version: 1.1.0
   hl7.fhir.uv.sdc: 3.0.0
- # ihe.iti.pdqm: 2.4.0
+  ihe.iti.pcf: 1.0.0
+  # ihe.iti.pdqm: 2.4.0
  # hl7.fhir.eu.laboratory: 0.1.0-ballot
 
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
@@ -71,4 +72,3 @@ menu:
   FHIR Assets: artifacts.html
   Support:
     Downloads: downloads.html
-

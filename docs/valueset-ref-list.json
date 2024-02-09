@@ -29,8 +29,20 @@
       ],
       "uses" : {
       },
-      "Questionnaire-Questionnaire-Proxy-Access-Request.html" : "Proxy Access Request Form",
-      "StructureDefinition-UKCore-RelatedPerson.html" : "UK Core RelatedPerson"
+      "StructureDefinition-UKCore-RelatedPerson.html" : "UK Core RelatedPerson",
+      "Questionnaire-Questionnaire-Proxy-Access-Request.html" : "Proxy Access Request Form"
+    },
+    {
+      "url" : "https://profiles.ihe.net/ITI/PCF/ValueSet/BasicPurposeVS",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "BasicPurposeVS",
+      "title" : "Basic Purpose ValueSet",
+      "description" : "ValueSet of the PurposeOfUse minimally extensible by Basic Option",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActReason"],
+      "uses" : {
+      },
+      "StructureDefinition-IHEPCF-Basic-Consent.html" : "BasicConsent"
     }
   ]
 }

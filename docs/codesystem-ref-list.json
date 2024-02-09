@@ -25,6 +25,18 @@
       "https://simplifier.net/resolve?scope=fhir.r4.ukcore.stu3.currentbuild@0.0.6-pre-release&canonical=https://fhir.hl7.org.uk/ValueSet/UKCore-PersonRelationshipType" : "UK Core Person Relationship Type"
     },
     {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "version" : "2.1.0",
+      "status" : "active",
+      "name" : "ActReason",
+      "title" : "ActReason",
+      "description" : "A set of codes specifying the motivation, cause, or rationale of an Act, when such rationale is not reasonably represented as an ActRelationship of type \"has reason\" linking to another Act.\r\n\r\n*Examples:* Example reasons that might qualify for being coded in this field might be: \"routine requirement\", \"infectious disease reporting requirement\", \"on patient request\", \"required by law\".",
+      "oids" : ["2.16.840.1.113883.5.8"],
+      "uses" : {
+      },
+      "https://profiles.ihe.net/ITI/PCF/1.0.0/ValueSet-BasicPurposeVS.html" : "Basic Purpose ValueSet"
+    },
+    {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
       "version" : "2.2.0",
       "status" : "active",

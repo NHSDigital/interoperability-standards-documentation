@@ -41,6 +41,12 @@
         "title": "HealthcareService"
       }
     ],
+    "Consent": [
+      {
+        "url": "https://fhir.nhs.uk/England/StructureDefinition/IHEPCF-Basic-Consent",
+        "title": "BasicConsent"
+      }
+    ],
     "Observation": [
       {
         "url": "https://fhir.nhs.uk/England/StructureDefinition/Observation",

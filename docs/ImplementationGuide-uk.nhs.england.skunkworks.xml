@@ -10,7 +10,7 @@
   <name value="NHSEnglandInteroperabilitySkunkworks"/>
   <title value="Interoperability Standards - Skunkworks"/>
   <status value="draft"/>
-  <date value="2024-02-08T16:46:36+00:00"/>
+  <date value="2024-02-09T06:56:29+00:00"/>
   <publisher value="NHS England"/>
   <contact>
     <name value="NHS England"/>
@@ -59,6 +59,11 @@
     <uri value="http://hl7.org/fhir/uv/sdc/ImplementationGuide/hl7.fhir.uv.sdc"/>
     <packageId value="hl7.fhir.uv.sdc"/>
     <version value="3.0.0"/>
+  </dependsOn>
+  <dependsOn id="ihe_iti_pcf">
+    <uri value="https://profiles.ihe.net/ITI/PCF/ImplementationGuide/ihe.iti.pcf"/>
+    <packageId value="ihe.iti.pcf"/>
+    <version value="1.0.0"/>
   </dependsOn>
   <definition>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -480,6 +485,17 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/IHEPCF-Basic-Consent"/>
+      </reference>
+      <name value="BasicConsent"/>
+      <description value="NHS England IHE PCF Explicit Basic Consent. Note NHS England does not contrain out any elements, this is a key difference to [IHE PCF Explicit Basic Consent](https://profiles.ihe.net/ITI/PCF/StructureDefinition/IHE.PCF.consentBasic)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/DocumentReference"/>
       </reference>
       <name value="DocumentReference"/>
@@ -528,6 +544,17 @@
       </reference>
       <name value="NHS England APIM Base API Definitions"/>
       <description value="High level summary of FHIR api's used within NHS England API programmes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CapabilityStatement"/>
+      </extension>
+      <reference>
+        <reference value="CapabilityStatement/IHE.PCF.consentAuthorizationServer"/>
+      </reference>
+      <name value="NHS England IHE Privacy Consent on FHIR (PCF)"/>
+      <description value="CapabilityStatement for the Consent Authorization Server Actor for use within the English NHS (Enterprise Architecture) and or NHS England (Solution Architecture). &#xA;This is part of the NHS England National Extension (Volume 4) for [Privacy Consent on FHIR (PCF)](https://profiles.ihe.net/ITI/PCF/index.html). &#xA;&#xA; This profile is implemented by &#xA; - [National Proxy Service](https://digital.nhs.uk/developer/) &#xA;&#xA; These services are potentially used by &#xA;&#xA;**NHS England** &#xA;&#xA; - [National Record Locator](https://digital.nhs.uk/developer/api-catalogue/national-record-locator-fhir) &#xA; - [Security and authorisation](https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation) &#xA;&#xA;**English NHS and NHS England Services** &#xA;&#xA; used in the implementation of the following profiles or services &#xA;&#xA; - [NRL producer system](https://digital.nhs.uk/developer/api-catalogue/national-record-locator-fhir/v3/producer) &#xA; - [IHE Mobile access to Health Documents (MHD)](https://profiles.ihe.net/ITI/MHD/index.html) &#xA; - [IHE Query for Existing Data for Mobile (QEDm)](https://build.fhir.org/ig/IHE/QEDm/branches/master/index.html)"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

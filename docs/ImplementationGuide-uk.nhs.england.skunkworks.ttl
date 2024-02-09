@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "NHSEnglandInteroperabilitySkunkworks"] ; # 
   fhir:title [ fhir:v "Interoperability Standards - Skunkworks"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-02-08T16:46:36+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-02-09T06:56:29+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "NHS England"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "NHS England" ] ;
@@ -84,6 +84,14 @@
      ] ;
      fhir:packageId [ fhir:v "hl7.fhir.uv.sdc" ] ;
      fhir:version [ fhir:v "3.0.0" ]
+  ] [
+     fhir:id [ fhir:v "ihe_iti_pcf" ] ;
+     fhir:uri [
+       fhir:v "https://profiles.ihe.net/ITI/PCF/ImplementationGuide/ihe.iti.pcf"^^xsd:anyURI ;
+       fhir:link <https://profiles.ihe.net/ITI/PCF/ImplementationGuide/ihe.iti.pcf>
+     ] ;
+     fhir:packageId [ fhir:v "ihe.iti.pcf" ] ;
+     fhir:version [ fhir:v "1.0.0" ]
   ] ) ; # 
   fhir:definition [
      fhir:extension ( [
@@ -558,6 +566,18 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
+         fhir:link <https://fhir.nhs.uk/England/StructureDefinition/IHEPCF-Basic-Consent> ;
+         fhir:reference [ fhir:v "StructureDefinition/IHEPCF-Basic-Consent" ]
+       ] ;
+       fhir:name [ fhir:v "BasicConsent" ] ;
+       fhir:description [ fhir:v "NHS England IHE PCF Explicit Basic Consent. Note NHS England does not contrain out any elements, this is a key difference to [IHE PCF Explicit Basic Consent](https://profiles.ihe.net/ITI/PCF/StructureDefinition/IHE.PCF.consentBasic)" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
          fhir:link <https://fhir.nhs.uk/England/StructureDefinition/DocumentReference> ;
          fhir:reference [ fhir:v "StructureDefinition/DocumentReference" ]
        ] ;
@@ -614,6 +634,18 @@
        ] ;
        fhir:name [ fhir:v "NHS England APIM Base API Definitions" ] ;
        fhir:description [ fhir:v "High level summary of FHIR api's used within NHS England API programmes" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CapabilityStatement" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.nhs.uk/England/CapabilityStatement/IHE.PCF.consentAuthorizationServer> ;
+         fhir:reference [ fhir:v "CapabilityStatement/IHE.PCF.consentAuthorizationServer" ]
+       ] ;
+       fhir:name [ fhir:v "NHS England IHE Privacy Consent on FHIR (PCF)" ] ;
+       fhir:description [ fhir:v "CapabilityStatement for the Consent Authorization Server Actor for use within the English NHS (Enterprise Architecture) and or NHS England (Solution Architecture). \nThis is part of the NHS England National Extension (Volume 4) for [Privacy Consent on FHIR (PCF)](https://profiles.ihe.net/ITI/PCF/index.html). \n\n This profile is implemented by \n - [National Proxy Service](https://digital.nhs.uk/developer/) \n\n These services are potentially used by \n\n**NHS England** \n\n - [National Record Locator](https://digital.nhs.uk/developer/api-catalogue/national-record-locator-fhir) \n - [Security and authorisation](https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation) \n\n**English NHS and NHS England Services** \n\n used in the implementation of the following profiles or services \n\n - [NRL producer system](https://digital.nhs.uk/developer/api-catalogue/national-record-locator-fhir/v3/producer) \n - [IHE Mobile access to Health Documents (MHD)](https://profiles.ihe.net/ITI/MHD/index.html) \n - [IHE Query for Existing Data for Mobile (QEDm)](https://build.fhir.org/ig/IHE/QEDm/branches/master/index.html)" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
