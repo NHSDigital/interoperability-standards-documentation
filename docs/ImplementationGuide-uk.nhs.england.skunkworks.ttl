@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "NHSEnglandInteroperabilitySkunkworks"] ; # 
   fhir:title [ fhir:v "Interoperability Standards - Skunkworks"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-02-09T06:56:29+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-02-10T09:00:37+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "NHS England"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "NHS England" ] ;
@@ -906,6 +906,17 @@
          fhir:reference [ fhir:v "Bundle/h1" ]
        ] ;
        fhir:name [ fhir:v "null (Bundle)" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Questionnaire" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.nhs.uk/England/Questionnaire/Questionnaire.Permission.R4> ;
+         fhir:reference [ fhir:v "Questionnaire/Questionnaire.Permission.R4" ]
+       ] ;
+       fhir:name [ fhir:v "Permission" ] ;
+       fhir:description [ fhir:v "Backport of [FHIR R6 Permission](https://build.fhir.org/permission.html) using FHIR Questionnaire" ]
      ] ) ;
      fhir:page [
        fhir:extension ( [

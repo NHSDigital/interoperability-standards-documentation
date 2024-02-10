@@ -130,7 +130,8 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl": [
       "Questionnaire.item",
-      "Questionnaire.item.item"
+      "Questionnaire.item.item",
+      "Questionnaire.item.item.item"
     ],
     "http://hl7.org/fhir/StructureDefinition/regex": [
       "StructureDefinition.snapshot.element.type"

@@ -10,7 +10,7 @@
   "name" : "NHSEnglandInteroperabilitySkunkworks",
   "title" : "Interoperability Standards - Skunkworks",
   "status" : "draft",
-  "date" : "2024-02-09T06:56:29+00:00",
+  "date" : "2024-02-10T09:00:37+00:00",
   "publisher" : "NHS England",
   "contact" : [{
     "name" : "NHS England",
@@ -967,6 +967,17 @@
         "reference" : "Bundle/h1"
       },
       "name" : "null (Bundle)"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/Questionnaire.Permission.R4"
+      },
+      "name" : "Permission",
+      "description" : "Backport of [FHIR R6 Permission](https://build.fhir.org/permission.html) using FHIR Questionnaire"
     }],
     "page" : {
       "extension" : [{

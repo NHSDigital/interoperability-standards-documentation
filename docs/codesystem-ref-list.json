@@ -1,6 +1,18 @@
 {
   "codeSystems" : [
     {
+      "url" : "http://hl7.org/fhir/fhir-types",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "FHIRTypes",
+      "title" : "All FHIR Types",
+      "description" : "One of the types defined as part of this version of FHIR.",
+      "oids" : ["2.16.840.1.113883.4.642.4.1802"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-resource-types.html" : "Resource Types"
+    },
+    {
       "url" : "http://terminology.hl7.org/CodeSystem/organization-type",
       "version" : "0.1.0",
       "status" : "draft",
@@ -34,7 +46,8 @@
       "oids" : ["2.16.840.1.113883.5.8"],
       "uses" : {
       },
-      "https://profiles.ihe.net/ITI/PCF/1.0.0/ValueSet-BasicPurposeVS.html" : "Basic Purpose ValueSet"
+      "https://profiles.ihe.net/ITI/PCF/1.0.0/ValueSet-BasicPurposeVS.html" : "Basic Purpose ValueSet",
+      "http://terminology.hl7.org/5.0.0/ValueSet-v3-PurposeOfUse.html" : "PurposeOfUse"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",

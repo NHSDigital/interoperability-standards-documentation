@@ -1,9 +1,9 @@
 NHSEnglandInteroperabilitySkunkworks : Validation Results
 =========================================
 
-err = 40, warn = 30, info = 25
+err = 41, warn = 53, info = 34
 IG Publisher Version: 1.5.16
-Generated Fri Feb 09 06:58:41 GMT 2024. FHIR version 4.0.1 for uk.nhs.england.skunkworks#0.0.1 (canonical = https://fhir.nhs.uk/England)
+Generated Sat Feb 10 09:02:42 GMT 2024. FHIR version 4.0.1 for uk.nhs.england.skunkworks#0.0.1 (canonical = https://fhir.nhs.uk/England)
  Build Errors : 6 / 12 / 0
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/fsh-generated/resources/CapabilityStatement-IHE.PCF.consentAuthorizationServer : 1 / 0 / 1
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/fsh-generated/resources/CapabilityStatement-NHS-England-APIM-Provider : 1 / 0 / 1
@@ -32,6 +32,7 @@ Generated Fri Feb 09 06:58:41 GMT 2024. FHIR version 4.0.1 for uk.nhs.england.sk
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/input/examples/RelatedPerson-NHS-9449304130-Jane-Smith : 2 / 0 / 1
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/input/examples/RelatedPerson-PDS-NHS-90000000009-Jane-Smith : 3 / 1 / 5
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/input/history/h1 : 1 / 1 / 2
+ /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/input/resources/Questionnaire.Permission.R4 : 1 / 23 / 10
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/input/resources/StructureDefinition-Patient : 1 / 0 / 1
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/input/resources/UKCore-Organization : 3 / 1 / 1
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/input/resources/UKCore-RelatedPerson : 3 / 1 / 1
@@ -156,6 +157,40 @@ WARNING: RelatedPerson/RelatedPerson-PDS-NHS-90000000009-Jane-Smith: RelatedPers
 == input/history/h1.json ==
 ERROR: Bundle/h1: Bundle.entry[0].resource/*Provenance/h1-1*/.target[0]: Unable to resolve resource with reference 'StructureDefinition/myObservation'
 WARNING: Bundle/h1: Bundle.entry[0].resource/*Provenance/h1-1*/.reason[0]: No code provided, and a code should be provided from the value set 'PurposeOfUse' (http://terminology.hl7.org/ValueSet/v3-PurposeOfUse|2.0.0)
+== input/resources/Questionnaire.Permission.R4.json ==
+ERROR: Questionnaire/Questionnaire.Permission.R4: Questionnaire.jurisdiction[0].coding[0].code: Unknown code 'GB-ENG' in the CodeSystem 'urn:iso:std:iso:3166' version '2018'
+INFORMATION: Questionnaire/Questionnaire.Permission.R4: Questionnaire.item[0].extension[0].value.ofType(CodeableConcept): Reference to draft CodeSystem http://hl7.org/fhir/questionnaire-item-control|4.0.1
+WARNING: Questionnaire/Questionnaire.Permission.R4: Questionnaire.item[0].answerOption[0].value.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Questionnaire/Questionnaire.Permission.R4: Questionnaire.item[0].answerOption[1].value.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Questionnaire/Questionnaire.Permission.R4: Questionnaire.item[0].answerOption[2].value.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Questionnaire/Questionnaire.Permission.R4: Questionnaire.item[0].answerOption[3].value.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+INFORMATION: Questionnaire/Questionnaire.Permission.R4: Questionnaire.item[1].item[0].item[0].extension[0].value.ofType(CodeableConcept): Reference to draft CodeSystem http://hl7.org/fhir/questionnaire-item-control|4.0.1
+INFORMATION: Questionnaire/Questionnaire.Permission.R4: Questionnaire.item[1].item[2].extension[0].value.ofType(CodeableConcept): Reference to draft CodeSystem http://hl7.org/fhir/questionnaire-item-control|4.0.1
+INFORMATION: Questionnaire/Questionnaire.Permission.R4: Questionnaire.item[3].item[0].extension[0].value.ofType(CodeableConcept): Reference to draft CodeSystem http://hl7.org/fhir/questionnaire-item-control|4.0.1
+INFORMATION: Questionnaire/Questionnaire.Permission.R4: Questionnaire.item[4].extension[0].value.ofType(CodeableConcept): Reference to draft CodeSystem http://hl7.org/fhir/questionnaire-item-control|4.0.1
+WARNING: Questionnaire/Questionnaire.Permission.R4: Questionnaire.item[4].answerOption[0].value.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Questionnaire/Questionnaire.Permission.R4: Questionnaire.item[4].answerOption[1].value.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Questionnaire/Questionnaire.Permission.R4: Questionnaire.item[4].answerOption[2].value.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Questionnaire/Questionnaire.Permission.R4: Questionnaire.item[4].answerOption[3].value.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Questionnaire/Questionnaire.Permission.R4: Questionnaire.item[4].answerOption[4].value.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Questionnaire/Questionnaire.Permission.R4: Questionnaire.item[4].answerOption[5].value.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Questionnaire/Questionnaire.Permission.R4: Questionnaire.item[5].code[0]: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+INFORMATION: Questionnaire/Questionnaire.Permission.R4: Questionnaire.item[5].item[0].extension[0].value.ofType(CodeableConcept): Reference to draft CodeSystem http://hl7.org/fhir/questionnaire-item-control|4.0.1
+WARNING: Questionnaire/Questionnaire.Permission.R4: Questionnaire.item[5].item[0].answerOption[0].value.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Questionnaire/Questionnaire.Permission.R4: Questionnaire.item[5].item[0].answerOption[1].value.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Questionnaire/Questionnaire.Permission.R4: Questionnaire.item[5].item[1].code[0]: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+INFORMATION: Questionnaire/Questionnaire.Permission.R4: Questionnaire.item[5].item[1].item[1].extension[0].value.ofType(CodeableConcept): Reference to draft CodeSystem http://hl7.org/fhir/questionnaire-item-control|4.0.1
+WARNING: Questionnaire/Questionnaire.Permission.R4: Questionnaire.item[5].item[1].item[1].code[0]: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Questionnaire/Questionnaire.Permission.R4: Questionnaire.item[5].item[2].code[0]: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+INFORMATION: Questionnaire/Questionnaire.Permission.R4: Questionnaire.item[5].item[2].item[1].extension[0].value.ofType(CodeableConcept): Reference to draft CodeSystem http://hl7.org/fhir/questionnaire-item-control|4.0.1
+WARNING: Questionnaire/Questionnaire.Permission.R4: Questionnaire.item[5].item[2].item[1].code[0]: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Questionnaire/Questionnaire.Permission.R4: Questionnaire.item[5].item[2].item[1].answerOption[0].value.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Questionnaire/Questionnaire.Permission.R4: Questionnaire.item[5].item[2].item[1].answerOption[1].value.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Questionnaire/Questionnaire.Permission.R4: Questionnaire.item[5].item[2].item[1].answerOption[2].value.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Questionnaire/Questionnaire.Permission.R4: Questionnaire.item[5].item[2].item[1].answerOption[3].value.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Questionnaire/Questionnaire.Permission.R4: Questionnaire.item[5].item[2].item[1].answerOption[4].value.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+INFORMATION: Questionnaire/Questionnaire.Permission.R4: Questionnaire.item[5].item[2].item[2].extension[0].value.ofType(CodeableConcept): Reference to draft CodeSystem http://hl7.org/fhir/questionnaire-item-control|4.0.1
+WARNING: Questionnaire/Questionnaire.Permission.R4: Questionnaire.item[5].item[2].item[2].code[0]: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 == input/resources/StructureDefinition-Patient.json ==
 ERROR: StructureDefinition/Patient: StructureDefinition.jurisdiction[0].coding[0].code: Unknown code 'GB-ENG' in the CodeSystem 'urn:iso:std:iso:3166' version '2018'
 == input/resources/UKCore-Organization.json ==

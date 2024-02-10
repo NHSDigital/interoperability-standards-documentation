@@ -45,6 +45,12 @@
     "version" : "0.0.1"
   },
   {
+    "id" : "Questionnaire.Permission.R4",
+    "type" : "Questionnaire",
+    "url" : "https://fhir.nhs.uk/England/Questionnaire/Questionnaire.Permission.R4",
+    "version" : "0.0.1"
+  },
+  {
     "id" : "Appointment",
     "type" : "StructureDefinition",
     "url" : "https://fhir.nhs.uk/England/StructureDefinition/Appointment",

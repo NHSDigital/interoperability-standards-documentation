@@ -1,4 +1,6 @@
 URL,Version,Status,OIDs,Name,Title,Descriptino,Uses,Used,Sources
+http://hl7.org/fhir/ValueSet/resource-types,5.0.0,active,"2.16.840.1.113883.4.642.3.27",ResourceType,Resource Types,"Concrete FHIR Resource Types","Questionnaire/Questionnaire.Permission.R4","FHIR"
+http://terminology.hl7.org/ValueSet/v3-PurposeOfUse,2.0.0,active,"2.16.840.1.113883.1.11.20448",PurposeOfUse,PurposeOfUse,"Supports communication of purpose of use at a general level.","Questionnaire/Questionnaire.Permission.R4","THO (V3)"
 https://fhir.hl7.org.uk/ValueSet/UKCore-OrganizationType,1.0.0,active,,UKCoreOrganizationType,UK Core Organization Type,"A set of codes that can be used to indicate a type of organization.","StructureDefinition/UKCore-Organization","THO,fhir.r4.ukcore.stu3.currentbuild"
 https://fhir.hl7.org.uk/ValueSet/UKCore-PersonRelationshipType,2.1.0,active,,UKCorePersonRelationshipType,UK Core Person Relationship Type,"A set of codes that define the type of relationship a person has to a patient.","StructureDefinition/UKCore-RelatedPerson,Questionnaire/Questionnaire-Proxy-Access-Request","THO (V3),THO (V2),fhir.r4.ukcore.stu3.currentbuild"
 https://profiles.ihe.net/ITI/PCF/ValueSet/BasicPurposeVS,1.0.0,active,,BasicPurposeVS,Basic Purpose ValueSet,"ValueSet of the PurposeOfUse minimally extensible by Basic Option","StructureDefinition/IHEPCF-Basic-Consent","THO (V3)"
