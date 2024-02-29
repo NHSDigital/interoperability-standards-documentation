@@ -6,11 +6,11 @@
   "status" : "draft",
   "package-id" : "uk.nhs.england.skunkworks",
   "ig-ver" : "0.0.1",
-  "date" : "Sat, 10 Feb, 2024 09:00:37 +0000",
-  "errs" : 41,
-  "warnings" : 53,
+  "date" : "Thu, 29 Feb, 2024 07:38:13 +0000",
+  "errs" : 44,
+  "warnings" : 55,
   "hints" : 34,
   "version" : "4.0.1",
   "tool" : "5.0.0 (3)",
-  "maxMemory" : 1380827160
+  "maxMemory" : 2077317048
 }

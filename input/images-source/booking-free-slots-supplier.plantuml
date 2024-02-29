@@ -1,0 +1,27 @@
+@startuml
+
+hide footbox
+
+title "Search for free slots and Book an appointment"
+
+
+participant Consumer
+participant Provider
+
+
+opt with schedule search
+Consumer -> Provider : GET /Schedule?date={date}[&service-type={type}]
+Provider --> Consumer : Schedules
+Consumer -> Provider : GET /Slot?schedule={schedule1,schedule2,etc}
+Provider --> Consumer : Slots
+else No schedule search
+Consumer -> Provider : GET /Slot?start={start}&end={end}[&service-type={type}]
+Provider --> Consumer : Slots
+end
+
+Consumer -> Provider : POST /Appointment
+Provider --> Consumer : 201 Created
+
+
+
+@enduml

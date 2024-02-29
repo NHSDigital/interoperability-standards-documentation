@@ -10,7 +10,7 @@
   "name" : "NHSEnglandInteroperabilitySkunkworks",
   "title" : "Interoperability Standards - Skunkworks",
   "status" : "draft",
-  "date" : "2024-02-10T09:00:37+00:00",
+  "date" : "2024-02-29T07:38:13+00:00",
   "publisher" : "NHS England",
   "contact" : [{
     "name" : "NHS England",
@@ -646,6 +646,18 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/AppointmentResponse"
+      },
+      "name" : "AppointmentResponse",
+      "description" : "NHS England AppointmentResponse",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/IHEPCF-Basic-Consent"
       },
       "name" : "BasicConsent",
@@ -710,6 +722,18 @@
       },
       "name" : "NHS England APIM Base API Definitions",
       "description" : "High level summary of FHIR api's used within NHS England API programmes",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CapabilityStatement"
+      }],
+      "reference" : {
+        "reference" : "CapabilityStatement/BookingProvider"
+      },
+      "name" : "NHS England Booking Provider",
+      "description" : "Provider supports read-only access to a for the purposes of direct care and subject of care access. \n\n**THIS IS FOR DEMONSTRATION PURPOSES**",
       "exampleBoolean" : false
     },
     {
@@ -904,6 +928,18 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/Schedule"
+      },
+      "name" : "Schedule",
+      "description" : "NHS England Schedule",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/ServiceRequest"
       },
       "name" : "ServiceRequest",
@@ -1012,6 +1048,15 @@
         }],
         "nameUrl" : "background.html",
         "title" : "Background",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "booking.html"
+        }],
+        "nameUrl" : "booking.html",
+        "title" : "Booking",
         "generation" : "markdown"
       },
       {

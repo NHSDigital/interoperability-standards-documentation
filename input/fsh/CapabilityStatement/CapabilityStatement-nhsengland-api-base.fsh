@@ -10,16 +10,6 @@ Title: "NHS England APIM Base API Definitions"
 * description = "High level summary of FHIR api's used within NHS England API programmes"
 * rest.mode = #server
 
-//Appointment
-* insert ResourceWithExpectation(#Appointment, https://fhir.nhs.uk/England/StructureDefinition/Appointment, #MAY)
-* rest.resource[=]
-  * documentation = "API present in \n - [Booking and Referral - FHIR API](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir) \n\n No [UK Core FHIR Access](https://build.fhir.org/ig/HL7-UK/UK-Core-Access/index.html) conformance requirements"
-* insert InteractionWithExpectation(#read, #SHOULD)
-* insert InteractionWithExpectation(#search-type, #SHOULD)
-* insert SearchParamWithExpectation(practitioner:identifier, #token, #MAY)
-* rest.resource[=]
-  * searchParam[=]
-    * documentation = " - [Booking and Referral - FHIR API](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir)"
 
 
 //DocumentReference
@@ -257,19 +247,3 @@ Title: "NHS England APIM Base API Definitions"
   * searchRevInclude[+] = "Appointment:based-on"
   * searchRevInclude[+] = "Task:focus"
 
-//Slot
-* insert ResourceWithExpectation(#Slot, https://fhir.nhs.uk/England/StructureDefinition/Slot, #MAY)
-* rest.resource[=]
-  * documentation = "API present in \n - [Booking and Referral - FHIR API](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir) \n\n No [UK Core FHIR Access](https://build.fhir.org/ig/HL7-UK/UK-Core-Access/index.html) conformance requirements"
-* insert InteractionWithExpectation(#search-type, #SHOULD)
-* insert SearchParamWithExpectation(status, #string, #MAY)
-* insert SearchParamWithExpectation(start, #date, #MAY)
-* insert SearchParamWithExpectation(Schedule.actor:HealthcareService, #token, #MAY)
-* rest.resource[=]
-  * searchInclude[+] = "Slot:schedule"
-  * searchInclude[+] = "Schedule:actor:Practitioner"
-  * searchInclude[+] = "Schedule:actor:PractitionerRole"
-  * searchInclude[+] = "Schedule:actor:HealthcareService"
-  * searchInclude[+] = "HealthcareService:providedBy"
-  * searchInclude[+] = "HealthcareService:location"
-  * searchInclude[+] = "Slot:*"

@@ -10,7 +10,7 @@
   <name value="NHSEnglandInteroperabilitySkunkworks"/>
   <title value="Interoperability Standards - Skunkworks"/>
   <status value="draft"/>
-  <date value="2024-02-10T09:00:37+00:00"/>
+  <date value="2024-02-29T07:38:13+00:00"/>
   <publisher value="NHS England"/>
   <contact>
     <name value="NHS England"/>
@@ -485,6 +485,17 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/AppointmentResponse"/>
+      </reference>
+      <name value="AppointmentResponse"/>
+      <description value="NHS England AppointmentResponse"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/IHEPCF-Basic-Consent"/>
       </reference>
       <name value="BasicConsent"/>
@@ -544,6 +555,17 @@
       </reference>
       <name value="NHS England APIM Base API Definitions"/>
       <description value="High level summary of FHIR api's used within NHS England API programmes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CapabilityStatement"/>
+      </extension>
+      <reference>
+        <reference value="CapabilityStatement/BookingProvider"/>
+      </reference>
+      <name value="NHS England Booking Provider"/>
+      <description value="Provider supports read-only access to a for the purposes of direct care and subject of care access. &#xA;&#xA;**THIS IS FOR DEMONSTRATION PURPOSES**"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -721,6 +743,17 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/Schedule"/>
+      </reference>
+      <name value="Schedule"/>
+      <description value="NHS England Schedule"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/ServiceRequest"/>
       </reference>
       <name value="ServiceRequest"/>
@@ -819,6 +852,14 @@
         </extension>
         <nameUrl value="background.html"/>
         <title value="Background"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="booking.html"/>
+        </extension>
+        <nameUrl value="booking.html"/>
+        <title value="Booking"/>
         <generation value="markdown"/>
       </page>
       <page>

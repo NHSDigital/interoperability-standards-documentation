@@ -23,6 +23,12 @@
         "title": "Appointment"
       }
     ],
+    "AppointmentResponse": [
+      {
+        "url": "https://fhir.nhs.uk/England/StructureDefinition/AppointmentResponse",
+        "title": "AppointmentResponse"
+      }
+    ],
     "DocumentReference": [
       {
         "url": "https://fhir.nhs.uk/England/StructureDefinition/DocumentReference",
@@ -83,6 +89,12 @@
       {
         "url": "https://fhir.nhs.uk/England/StructureDefinition/PractitionerRole",
         "title": "PractitionerRole"
+      }
+    ],
+    "Schedule": [
+      {
+        "url": "https://fhir.nhs.uk/England/StructureDefinition/Schedule",
+        "title": "Schedule"
       }
     ],
     "ServiceRequest": [

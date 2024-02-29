@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "NHSEnglandInteroperabilitySkunkworks"] ; # 
   fhir:title [ fhir:v "Interoperability Standards - Skunkworks"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-02-10T09:00:37+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-02-29T07:38:13+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "NHS England"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "NHS England" ] ;
@@ -566,6 +566,18 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
+         fhir:link <https://fhir.nhs.uk/England/StructureDefinition/AppointmentResponse> ;
+         fhir:reference [ fhir:v "StructureDefinition/AppointmentResponse" ]
+       ] ;
+       fhir:name [ fhir:v "AppointmentResponse" ] ;
+       fhir:description [ fhir:v "NHS England AppointmentResponse" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
          fhir:link <https://fhir.nhs.uk/England/StructureDefinition/IHEPCF-Basic-Consent> ;
          fhir:reference [ fhir:v "StructureDefinition/IHEPCF-Basic-Consent" ]
        ] ;
@@ -634,6 +646,18 @@
        ] ;
        fhir:name [ fhir:v "NHS England APIM Base API Definitions" ] ;
        fhir:description [ fhir:v "High level summary of FHIR api's used within NHS England API programmes" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CapabilityStatement" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.nhs.uk/England/CapabilityStatement/BookingProvider> ;
+         fhir:reference [ fhir:v "CapabilityStatement/BookingProvider" ]
+       ] ;
+       fhir:name [ fhir:v "NHS England Booking Provider" ] ;
+       fhir:description [ fhir:v "Provider supports read-only access to a for the purposes of direct care and subject of care access. \n\n**THIS IS FOR DEMONSTRATION PURPOSES**" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -842,6 +866,18 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
+         fhir:link <https://fhir.nhs.uk/England/StructureDefinition/Schedule> ;
+         fhir:reference [ fhir:v "StructureDefinition/Schedule" ]
+       ] ;
+       fhir:name [ fhir:v "Schedule" ] ;
+       fhir:description [ fhir:v "NHS England Schedule" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
          fhir:link <https://fhir.nhs.uk/England/StructureDefinition/ServiceRequest> ;
          fhir:reference [ fhir:v "StructureDefinition/ServiceRequest" ]
        ] ;
@@ -949,6 +985,14 @@
          ] ) ;
          fhir:name [ fhir:v "background.html"^^xsd:anyURI ] ;
          fhir:title [ fhir:v "Background" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "booking.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "booking.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Booking" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:extension ( [

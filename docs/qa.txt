@@ -1,16 +1,18 @@
 NHSEnglandInteroperabilitySkunkworks : Validation Results
 =========================================
 
-err = 41, warn = 53, info = 34
-IG Publisher Version: 1.5.16
-Generated Sat Feb 10 09:02:42 GMT 2024. FHIR version 4.0.1 for uk.nhs.england.skunkworks#0.0.1 (canonical = https://fhir.nhs.uk/England)
+err = 44, warn = 55, info = 34
+IG Publisher Version: 1.5.16 Out of date - current version is 1.6.0
+Generated Thu Feb 29 07:40:29 GMT 2024. FHIR version 4.0.1 for uk.nhs.england.skunkworks#0.0.1 (canonical = https://fhir.nhs.uk/England)
  Build Errors : 6 / 12 / 0
+ /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/fsh-generated/resources/CapabilityStatement-BookingProvider : 1 / 0 / 1
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/fsh-generated/resources/CapabilityStatement-IHE.PCF.consentAuthorizationServer : 1 / 0 / 1
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/fsh-generated/resources/CapabilityStatement-NHS-England-APIM-Provider : 1 / 0 / 1
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/fsh-generated/resources/CapabilityStatement-UKCoreAccessPatientIndexProvider : 1 / 0 / 5
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/fsh-generated/resources/ImplementationGuide-uk.nhs.england.skunkworks : 1 / 0 / 1
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/fsh-generated/resources/RelatedPerson-RelatedPerson-NHS-91000000009 : 1 / 0 / 1
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/fsh-generated/resources/StructureDefinition-Appointment : 1 / 1 / 1
+ /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/fsh-generated/resources/StructureDefinition-AppointmentResponse : 1 / 1 / 1
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/fsh-generated/resources/StructureDefinition-DocumentReference : 1 / 1 / 1
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/fsh-generated/resources/StructureDefinition-Endpoint : 1 / 1 / 1
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/fsh-generated/resources/StructureDefinition-HealthcareService : 1 / 1 / 1
@@ -23,6 +25,7 @@ Generated Sat Feb 10 09:02:42 GMT 2024. FHIR version 4.0.1 for uk.nhs.england.sk
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/fsh-generated/resources/StructureDefinition-Practitioner : 1 / 1 / 1
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/fsh-generated/resources/StructureDefinition-PractitionerRole : 1 / 1 / 1
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/fsh-generated/resources/StructureDefinition-RelatedPerson : 1 / 0 / 1
+ /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/fsh-generated/resources/StructureDefinition-Schedule : 1 / 1 / 1
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/fsh-generated/resources/StructureDefinition-ServiceRequest : 1 / 1 / 1
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/fsh-generated/resources/StructureDefinition-Slot : 1 / 1 / 1
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/input/examples/Patient-NHS-9459304130-Jane-Smith : 1 / 0 / 1
@@ -47,15 +50,17 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource RelatedPerson/RelatedPerson-NHS-9449304130-Jane-Smith.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource RelatedPerson/RelatedPerson-PDS-NHS-90000000009-Jane-Smith.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/h1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/output/index.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 438, column 2624: The link 'http://hl7.org/fhir/R4B' for "R4B" cannot be resolved
-ERROR: /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/output/interoperability-standards.html#/html/body/div/div/div/div/div/p/a at Line 481, column 9: The link 'documents.html' for "Document Interoperability" cannot be resolved
-ERROR: /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/output/multicast-notification-service.html#/html/body/div/div/div/div/div/p/a at Line 313, column 455: The link 'interoperability-standards.html#messagaing' for "Messaging" cannot be resolved (valid targets: 47 targets)
-ERROR: /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/output/national-proxy-service.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 393, column 12: The link 'StructureDefinition-RelatedPerson' for "UKCore-RelatedPerson" cannot be resolved
-ERROR: /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/output/national-proxy-service.html#/html/body/div/div/div/div/div/ol/li/p/a at Line 463, column 34: The link 'CapabilityStatement-Validated-Relationship-Service-Provider.html' for "CapabilityStatement-Validated-Relationship-Service-Provider" cannot be resolved
-ERROR: /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/output/personal-demographics-service.html#/html/body/div/div/div/div/div/ol/li/p/a at Line 415, column 34: The link 'CapabilityStatement-Personal-Demographics-Service-Provider.html' for "CapabilityStatement-Personal-Demographics-Service-Provider" cannot be resolved
+ERROR: /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/output/index.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 441, column 2624: The link 'http://hl7.org/fhir/R4B' for "R4B" cannot be resolved
+ERROR: /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/output/interoperability-standards.html#/html/body/div/div/div/div/div/p/a at Line 484, column 9: The link 'documents.html' for "Document Interoperability" cannot be resolved
+ERROR: /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/output/multicast-notification-service.html#/html/body/div/div/div/div/div/p/a at Line 316, column 455: The link 'interoperability-standards.html#messagaing' for "Messaging" cannot be resolved (valid targets: 47 targets)
+ERROR: /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/output/national-proxy-service.html#/html/body/div/div/div/div/div/table/tbody/tr/td/a at Line 396, column 12: The link 'StructureDefinition-RelatedPerson' for "UKCore-RelatedPerson" cannot be resolved
+ERROR: /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/output/national-proxy-service.html#/html/body/div/div/div/div/div/ol/li/p/a at Line 466, column 34: The link 'CapabilityStatement-Validated-Relationship-Service-Provider.html' for "CapabilityStatement-Validated-Relationship-Service-Provider" cannot be resolved
+ERROR: /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/output/personal-demographics-service.html#/html/body/div/div/div/div/div/ol/li/p/a at Line 418, column 34: The link 'CapabilityStatement-Personal-Demographics-Service-Provider.html' for "CapabilityStatement-Personal-Demographics-Service-Provider" cannot be resolved
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/CapabilityStatement-BookingProvider.json ==
+ERROR: CapabilityStatement/BookingProvider: CapabilityStatement.jurisdiction[0].coding[0].code: Unknown code 'GB-ENG' in the CodeSystem 'urn:iso:std:iso:3166' version '2018'
 == fsh-generated/resources/CapabilityStatement-IHE.PCF.consentAuthorizationServer.json ==
 ERROR: CapabilityStatement/IHE.PCF.consentAuthorizationServer: CapabilityStatement.jurisdiction[0].coding[0].code: Unknown code 'GB-ENG' in the CodeSystem 'urn:iso:std:iso:3166' version '2018'
 == fsh-generated/resources/CapabilityStatement-NHS-England-APIM-Provider.json ==
@@ -73,6 +78,9 @@ ERROR: RelatedPerson/RelatedPerson-NHS-91000000009: RelatedPerson.patient: Unabl
 == fsh-generated/resources/StructureDefinition-Appointment.json ==
 ERROR: StructureDefinition/Appointment: StructureDefinition.jurisdiction[0].coding[0].code: Unknown code 'GB-ENG' in the CodeSystem 'urn:iso:std:iso:3166' version '2018'
 WARNING: StructureDefinition.where(url = 'https://fhir.nhs.uk/England/StructureDefinition/Appointment'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-AppointmentResponse.json ==
+ERROR: StructureDefinition/AppointmentResponse: StructureDefinition.jurisdiction[0].coding[0].code: Unknown code 'GB-ENG' in the CodeSystem 'urn:iso:std:iso:3166' version '2018'
+WARNING: StructureDefinition.where(url = 'https://fhir.nhs.uk/England/StructureDefinition/AppointmentResponse'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-DocumentReference.json ==
 ERROR: StructureDefinition/DocumentReference: StructureDefinition.jurisdiction[0].coding[0].code: Unknown code 'GB-ENG' in the CodeSystem 'urn:iso:std:iso:3166' version '2018'
 WARNING: StructureDefinition.where(url = 'https://fhir.nhs.uk/England/StructureDefinition/DocumentReference'): The Implementation Guide contains no examples for this profile
@@ -109,6 +117,9 @@ ERROR: StructureDefinition/PractitionerRole: StructureDefinition.jurisdiction[0]
 WARNING: StructureDefinition.where(url = 'https://fhir.nhs.uk/England/StructureDefinition/PractitionerRole'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-RelatedPerson.json ==
 ERROR: StructureDefinition/RelatedPerson: StructureDefinition.jurisdiction[0].coding[0].code: Unknown code 'GB-ENG' in the CodeSystem 'urn:iso:std:iso:3166' version '2018'
+== fsh-generated/resources/StructureDefinition-Schedule.json ==
+ERROR: StructureDefinition/Schedule: StructureDefinition.jurisdiction[0].coding[0].code: Unknown code 'GB-ENG' in the CodeSystem 'urn:iso:std:iso:3166' version '2018'
+WARNING: StructureDefinition.where(url = 'https://fhir.nhs.uk/England/StructureDefinition/Schedule'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-ServiceRequest.json ==
 ERROR: StructureDefinition/ServiceRequest: StructureDefinition.jurisdiction[0].coding[0].code: Unknown code 'GB-ENG' in the CodeSystem 'urn:iso:std:iso:3166' version '2018'
 WARNING: StructureDefinition.where(url = 'https://fhir.nhs.uk/England/StructureDefinition/ServiceRequest'): The Implementation Guide contains no examples for this profile
