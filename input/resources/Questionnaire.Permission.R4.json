@@ -1,5 +1,6 @@
 {
   "resourceType": "Questionnaire",
+  "id": "permission",
   "title": "Permission",
   "status": "draft",
   "description": "Backport of [FHIR R6 Permission](https://build.fhir.org/permission.html) using FHIR Questionnaire",

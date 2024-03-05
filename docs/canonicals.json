@@ -51,9 +51,9 @@
     "version" : "0.0.1"
   },
   {
-    "id" : "Questionnaire.Permission.R4",
+    "id" : "permission",
     "type" : "Questionnaire",
-    "url" : "https://fhir.nhs.uk/England/Questionnaire/Questionnaire.Permission.R4",
+    "url" : "https://fhir.nhs.uk/England/Questionnaire/permission",
     "version" : "0.0.1"
   },
   {

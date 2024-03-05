@@ -27,7 +27,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Organization.extension:mainLocation","Organization.extension","mainLocation","","",0,*,"","","","Extension {[CanonicalType[https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MainLocation]]} {[]}
 ","Main location","The main location of the organisation.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
 "Organization.extension:organizationPeriod","Organization.extension","organizationPeriod","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/organization-period]]} {[]}
 ","The date range that this organization SHOULD be considered available.","The date range that this organization SHOULD be considered available.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}

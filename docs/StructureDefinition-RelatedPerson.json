@@ -9,7 +9,7 @@
   "version" : "0.0.1",
   "name" : "RelatedPerson",
   "status" : "draft",
-  "date" : "2024-02-29T07:38:13+00:00",
+  "date" : "2024-03-05T15:05:36+00:00",
   "publisher" : "NHS England",
   "contact" : [{
     "name" : "NHS England",
@@ -370,9 +370,16 @@
         "human" : "Must have either extensions or value[x], not both",
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
-      "isModifier" : false
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      },
+      {
+        "identity" : "rim",
+        "map" : "N/A"
+      }]
     },
     {
       "id" : "RelatedPerson.extension:copyCorrespondenceIndicator",
@@ -406,9 +413,16 @@
         "human" : "Must have either extensions or value[x], not both",
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
-      "isModifier" : false
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      },
+      {
+        "identity" : "rim",
+        "map" : "N/A"
+      }]
     },
     {
       "id" : "RelatedPerson.modifierExtension",
@@ -1781,9 +1795,16 @@
         "human" : "Must have either extensions or value[x], not both",
         "expression" : "extension.exists() != value.exists()",
         "xpath" : "exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])",
-        "source" : "http://hl7.org/fhir/StructureDefinition/Extension"
+        "source" : "http://hl7.org/fhir/StructureDefinition/Element"
       }],
-      "isModifier" : false
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      },
+      {
+        "identity" : "rim",
+        "map" : "N/A"
+      }]
     },
     {
       "id" : "RelatedPerson.telecom.system.value",

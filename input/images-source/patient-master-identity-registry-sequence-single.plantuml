@@ -1,0 +1,27 @@
+@startuml
+
+hide footbox
+
+title "Patient Master Identity Registry - Single Patient (IHE PMIR UK Mock up)"
+
+actor Donald
+participant "Identity Source (e.g. NHS Scotland" as PMIRSource
+participant "PMIR (e.g. NHS England PDS)" as PMIRManager
+participant "Internal Consumer \nFixed Distribution List" as PMIRConsumerInternal
+participant "External Consumer \nPub Sub" as PMIRConsumerPubSub
+
+Donald->Donald: Moves to England for work reasons
+
+PMIRSource -> PMIRManager: PUT Patient?identifier=identifier=urn:oid:2.16.840.1.113883.2.1.3.2.4.16.53|1111111111 \n PIXm ITI-104
+PMIRManager --> PMIRSource: Amended FHIR Patient with NHS Number (and CHI Number)
+
+
+opt Multi Cast Notification Service / FHIR Cast
+  PMIRManager -> PMIRConsumerInternal : MCNS including FHIR Patient (with/without CHI Number?)
+  PMIRConsumerInternal -> PMIRManager : OK
+else FHIR Subscription (e.g. a subscription on registeredPractice)
+  PMIRManager -> PMIRConsumerPubSub : FHIR Subscription including FHIR Patient (with/without CHI Number?)
+  PMIRConsumerPubSub -> PMIRManager : OK
+end
+
+@enduml

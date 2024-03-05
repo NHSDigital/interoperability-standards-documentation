@@ -1,0 +1,49 @@
+{
+  "resourceType": "Patient",
+  "meta": {
+    "profile" : [
+      "https://fhir.nhs.uk/England/StructureDefinition/Patient"
+    ]
+  },
+  "id": "donald-with-chi-number",
+  "identifier": [
+    {
+      "system": "urn:oid:2.16.840.1.113883.2.1.3.2.4.16.53",
+      "value": "1111111111"
+    }
+  ],
+  "name": [
+    {
+      "use": "official",
+      "family": "SMITH",
+      "given": [
+        "Donald"
+      ]
+    }
+  ],
+  "telecom": [
+    {
+      "system": "email",
+      "value": "dsmith@test.com"
+    },
+    {
+      "system": "phone",
+      "use": "mobile",
+      "value": "01131231234"
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1970-09-11",
+  "address": [
+    {
+      "postalCode": "LS15 8RE"
+    }
+  ], "generalPractitioner":  [
+  {
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+      "value": "B81001"
+    }
+  }
+]
+}

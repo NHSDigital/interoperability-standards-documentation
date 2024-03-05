@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "NHSEnglandInteroperabilitySkunkworks"] ; # 
   fhir:title [ fhir:v "Interoperability Standards - Skunkworks"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-02-29T07:38:13+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-03-05T15:05:36+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "NHS England"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "NHS England" ] ;
@@ -599,6 +599,34 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Patient" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.nhs.uk/England/Patient/donald-with-chi-number> ;
+         fhir:reference [ fhir:v "Patient/donald-with-chi-number" ]
+       ] ;
+       fhir:name [ fhir:v "donald-with-chi-number" ] ;
+       fhir:example [
+         fhir:v "https://fhir.nhs.uk/England/StructureDefinition/Patient"^^xsd:anyURI ;
+         fhir:link <https://fhir.nhs.uk/England/StructureDefinition/Patient>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Patient" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.nhs.uk/England/Patient/donald-with-chi-number-and-nhs-number> ;
+         fhir:reference [ fhir:v "Patient/donald-with-chi-number-and-nhs-number" ]
+       ] ;
+       fhir:name [ fhir:v "donald-with-chi-number-and-nhs-number" ] ;
+       fhir:example [
+         fhir:v "https://fhir.nhs.uk/England/StructureDefinition/Patient"^^xsd:anyURI ;
+         fhir:link <https://fhir.nhs.uk/England/StructureDefinition/Patient>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
@@ -788,6 +816,18 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Questionnaire" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.nhs.uk/England/Questionnaire/permission> ;
+         fhir:reference [ fhir:v "Questionnaire/permission" ]
+       ] ;
+       fhir:name [ fhir:v "Permission" ] ;
+       fhir:description [ fhir:v "Backport of [FHIR R6 Permission](https://build.fhir.org/permission.html) using FHIR Questionnaire" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
@@ -942,17 +982,6 @@
          fhir:reference [ fhir:v "Bundle/h1" ]
        ] ;
        fhir:name [ fhir:v "null (Bundle)" ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Questionnaire" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://fhir.nhs.uk/England/Questionnaire/Questionnaire.Permission.R4> ;
-         fhir:reference [ fhir:v "Questionnaire/Questionnaire.Permission.R4" ]
-       ] ;
-       fhir:name [ fhir:v "Permission" ] ;
-       fhir:description [ fhir:v "Backport of [FHIR R6 Permission](https://build.fhir.org/permission.html) using FHIR Questionnaire" ]
      ] ) ;
      fhir:page [
        fhir:extension ( [
@@ -1073,6 +1102,14 @@
          ] ) ;
          fhir:name [ fhir:v "national-proxy-service.html"^^xsd:anyURI ] ;
          fhir:title [ fhir:v "National Proxy Service" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "patient-identity-and-master-index.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "patient-identity-and-master-index.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Patient Identity and Master Index" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:extension ( [

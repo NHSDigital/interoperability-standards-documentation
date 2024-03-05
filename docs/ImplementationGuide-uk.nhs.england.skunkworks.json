@@ -10,7 +10,7 @@
   "name" : "NHSEnglandInteroperabilitySkunkworks",
   "title" : "Interoperability Standards - Skunkworks",
   "status" : "draft",
-  "date" : "2024-02-29T07:38:13+00:00",
+  "date" : "2024-03-05T15:05:36+00:00",
   "publisher" : "NHS England",
   "contact" : [{
     "name" : "NHS England",
@@ -679,6 +679,28 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/donald-with-chi-number"
+      },
+      "name" : "donald-with-chi-number",
+      "exampleCanonical" : "https://fhir.nhs.uk/England/StructureDefinition/Patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/donald-with-chi-number-and-nhs-number"
+      },
+      "name" : "donald-with-chi-number-and-nhs-number",
+      "exampleCanonical" : "https://fhir.nhs.uk/England/StructureDefinition/Patient"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -856,6 +878,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/permission"
+      },
+      "name" : "Permission",
+      "description" : "Backport of [FHIR R6 Permission](https://build.fhir.org/permission.html) using FHIR Questionnaire",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -1003,17 +1037,6 @@
         "reference" : "Bundle/h1"
       },
       "name" : "null (Bundle)"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Questionnaire"
-      }],
-      "reference" : {
-        "reference" : "Questionnaire/Questionnaire.Permission.R4"
-      },
-      "name" : "Permission",
-      "description" : "Backport of [FHIR R6 Permission](https://build.fhir.org/permission.html) using FHIR Questionnaire"
     }],
     "page" : {
       "extension" : [{
@@ -1147,6 +1170,15 @@
         }],
         "nameUrl" : "national-proxy-service.html",
         "title" : "National Proxy Service",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "patient-identity-and-master-index.html"
+        }],
+        "nameUrl" : "patient-identity-and-master-index.html",
+        "title" : "Patient Identity and Master Index",
         "generation" : "markdown"
       },
       {

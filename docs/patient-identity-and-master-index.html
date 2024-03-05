@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Patient Identity and Master Index - Interoperability Standards - Skunkworks v0.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+
+    <!--  <script src="assets/nhsuk.js" defer></script> -->
+
+      <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<!-- Project extras
+<link
+        type="font/woff2"
+        href="assets/fonts/FrutigerLTW01-55Roman.woff2"
+        rel="preload"
+        as="font"
+        crossorigin
+/>
+<link
+        type="font/woff2"
+        href="assets/fonts/FrutigerLTW01-65Bold.woff2"
+        rel="preload"
+        as="font"
+        crossorigin
+/>
+<link href="assets/css/nhsuk.css" rel="stylesheet" />
+-->
+
+<!-- Bootstrap core CSS overrides to bootstrap-fhir.css -->
+<link href="assets/css/nhse.css" rel="stylesheet"/>
+
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/favicons/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"15"}
+    h3,h4,h5,h6{--heading-prefix:"15"}</style>
+    <div id="segment-header" class="segment nhsuk-header">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+<!-- Left logo - typically the publisher's logo - project or affiliate -->
+        <div id="project-nav">
+          <a id="project-logo" no-external="true" href="https://www.england.nhs.uk">
+            <img height="61" alt="Project home" src="assets/images/skunk.png"/>
+          </a>
+        </div>
+
+<!-- Right logo - for example the FHIR logo -->
+<!-- Make sure you have authorization to use the FHIR logo -->
+
+        <div id="family-nav">
+            <!--
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="60" alt="FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+          -->
+        </div> 
+      
+
+<!-- search icon - if you want -->
+<!--
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+-->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Interoperability Standards - Skunkworks</span>
+            <br/>
+            <span style="display:inline-block;">0.0.1 - ci-build
+
+
+
+   <img alt="England flag" src="assets/images/GB-ENG.svg" height="16" title="England"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Documentation
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="background.html">Background</a>
+      </li>
+      <li>
+        <a href="interoperability-standards.html">Interoperability Standards</a>
+      </li>
+      <li>
+        <a href="testing.html">Conformance and Testing (FHIR)</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Design
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="administration-module.html">Administration</a>
+      </li>
+      <li>
+        <a href="documents-module.html">Documents (Clinical)</a>
+      </li>
+      <li>
+        <a href="clinical-module.html">Clinical</a>
+      </li>
+      <li>
+        <a href="diagnostics-module.html">Diagnostics</a>
+      </li>
+      <li>
+        <a href="medications-module.html">Medications</a>
+      </li>
+      <li>
+        <a href="workflow.html">Workflow</a>
+      </li>
+      <li>
+        <a href="structured-data-capture.html">Structured Data Capture</a>
+      </li>
+      <li>
+        <a href="validation.html">FHIR Validation</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Build
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="national-proxy-service.html">National Proxy Service</a>
+      </li>
+      <li>
+        <a href="personal-demographics-service.html">Personal Demographics Service</a>
+      </li>
+      <li>
+        <a href="patient-identity-and-master-index.html">Patient Identity Feed and Master Identity Registry</a>
+      </li>
+      <li>
+        <a href="multicast-notification-service.html">Multicast Notification Service</a>
+      </li>
+      <li>
+        <a href="booking.html">Booking</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">FHIR Assets</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Patient Identity and Master Index</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Interoperability Standards - Skunkworks - Local Development build (v0.0.1) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://fhir.nhs.uk/England/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Patient Identity and Master Index</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#current-standards" id="markdown-toc-current-standards">Current Standards</a></li>
+  <li><a href="#ihe--hl7-fhir-versions" id="markdown-toc-ihe--hl7-fhir-versions">IHE + HL7 FHIR Versions</a></li>
+</ul>
+
+</div>
+
+<h3 id="current-standards">Current Standards</h3>
+
+<p>The current standard for Patient Identifier Cross-referencing in England can be found in
+<a href="HSCIC ITK HL7 V2 Message Specifications.pdf" target="_blank">NHS England (ADT) ITK HL7 v2 (2.4) Message Specification</a> the section 3.1.4 Patient Identity Management describes interactions used by the majority of English NHS Trusts and suppliers to implement IHE <a href="https://profiles.ihe.net/ITI/TF/Volume1/ch-5.html">Patient Identifier Cross-referencing (PIX)</a> technical framework.</p>
+
+<p><img src="ihe-pix.png" alt="Structured Data Capture" width="80%" height="80%" />
+<br clear="all" /></p>
+
+<h3 id="ihe--hl7-fhir-versions">IHE + HL7 FHIR Versions</h3>
+
+<p>Candidate interoperability standards are</p>
+
+<ul>
+  <li><a href="https://profiles.ihe.net/ITI/PMIR/index.html" target="_blank">Patient Master Identity Registry (PMIR)</a></li>
+  <li><a href="https://profiles.ihe.net/ITI/PIXm/index.html" target="_blank">Patient Identifier Cross-referencing for mobile (PIXm)</a></li>
+</ul>
+
+<p>Combinations of both standards are possible.</p>
+
+<p>PMIR with a single Patient feed. FHIR Cast and FHIR Subscription are included to show subsequent interactions.</p>
+
+<figure><?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="438px" preserveAspectRatio="none" style="width:1373px;height:438px;background:#FFFFFF;" version="1.1" viewBox="0 0 1373 438" width="1373px" zoomAndPan="magnify"><defs /><g><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="495" x="440" y="29.5332">Patient Master Identity Registry - Single Patient (IHE PMIR UK Mock up)</text><rect fill="none" height="155.5938" style="stroke:#000000;stroke-width:1.5;" width="700.5" x="665.5" y="258.625" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="30" x2="30" y1="121.2188" y2="431.2188" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="246" x2="246" y1="121.2188" y2="431.2188" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="777.5" x2="777.5" y1="121.2188" y2="431.2188" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="1133" x2="1133" y1="121.2188" y2="431.2188" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="1287" x2="1287" y1="121.2188" y2="431.2188" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="45" x="5" y="118.1426">Donald</text><ellipse cx="30.5" cy="52.1094" fill="#E2E2F0" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;" /><path d="M30.5,60.1094 L30.5,87.1094 M17.5,68.1094 L43.5,68.1094 M30.5,87.1094 L17.5,102.1094 M30.5,87.1094 L43.5,102.1094 " fill="none" style="stroke:#181818;stroke-width:0.5;" /><rect fill="#E2E2F0" height="31.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="231" x="131" y="88.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="217" x="138" y="110.1426">Identity Source (e.g. NHS Scotland</text><rect fill="#E2E2F0" height="31.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="204" x="675.5" y="88.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="190" x="682.5" y="110.1426">PMIR (e.g. NHS England PDS)</text><rect fill="#E2E2F0" height="49.2188" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="149" x="1059" y="71" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="116" x="1073.5" y="92.5332">Internal Consumer</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="135" x="1066" y="110.1426">Fixed Distribution List</text><rect fill="#E2E2F0" height="49.2188" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="138" x="1218" y="71" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="120" x="1225" y="92.5332">External Consumer</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="54" x="1260" y="110.1426">Pub Sub</text><line style="stroke:#181818;stroke-width:1.0;" x1="30.5" x2="72.5" y1="153.5703" y2="153.5703" /><line style="stroke:#181818;stroke-width:1.0;" x1="72.5" x2="72.5" y1="153.5703" y2="166.5703" /><line style="stroke:#181818;stroke-width:1.0;" x1="31.5" x2="72.5" y1="166.5703" y2="166.5703" /><polygon fill="#181818" points="41.5,162.5703,31.5,166.5703,41.5,170.5703,37.5,166.5703" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="202" x="37.5" y="148.7139">Moves to England for work reasons</text><polygon fill="#181818" points="765.5,209.2734,775.5,213.2734,765.5,217.2734,769.5,213.2734" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="246.5" x2="771.5" y1="213.2734" y2="213.2734" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="503" x="253.5" y="192.0654">PUT Patient?identifier=identifier=urn:oid:2.16.840.1.113883.2.1.3.2.4.16.53|1111111111</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="72" x="257.5" y="208.417">PIXm ITI-104</text><polygon fill="#181818" points="257.5,239.625,247.5,243.625,257.5,247.625,253.5,243.625" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="251.5" x2="776.5" y1="243.625" y2="243.625" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="347" x="263.5" y="238.7686">Amended FHIR Patient with NHS Number (and CHI Number)</text><path d="M665.5,258.625 L730.5,258.625 L730.5,266.9766 L720.5,276.9766 L665.5,276.9766 L665.5,258.625 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.5;" /><rect fill="none" height="155.5938" style="stroke:#000000;stroke-width:1.5;" width="700.5" x="665.5" y="258.625" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="20" x="680.5" y="273.1201">opt</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="231" x="745.5" y="272.0439">[Multi Cast Notification Service / FHIR Cast]</text><polygon fill="#181818" points="1121.5,295.3281,1131.5,299.3281,1121.5,303.3281,1125.5,299.3281" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="777.5" x2="1127.5" y1="299.3281" y2="299.3281" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="332" x="784.5" y="294.4717">MCNS including FHIR Patient (with/without CHI Number?)</text><polygon fill="#181818" points="788.5,325.6797,778.5,329.6797,788.5,333.6797,784.5,329.6797" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="782.5" x2="1132.5" y1="329.6797" y2="329.6797" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="19" x="794.5" y="324.8232">OK</text><line style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="665.5" x2="1366" y1="338.6797" y2="338.6797" /><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="340" x="670.5" y="350.0986">[FHIR Subscription (e.g. a subscription on registeredPractice)]</text><polygon fill="#181818" points="1275,371.8672,1285,375.8672,1275,379.8672,1279,375.8672" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="777.5" x2="1281" y1="375.8672" y2="375.8672" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="399" x="784.5" y="371.0107">FHIR Subscription including FHIR Patient (with/without CHI Number?)</text><polygon fill="#181818" points="788.5,402.2188,778.5,406.2188,788.5,410.2188,784.5,406.2188" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="782.5" x2="1286" y1="406.2188" y2="406.2188" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="19" x="794.5" y="401.3623">OK</text></g></svg></figure>
+<p><br clear="all" /></p>
+
+<p>The patient in the first interaction would look something like this <a href="Patient-donald-with-chi-number.html">Patient Donald with CHI Number</a>
+The response adds in NHS Number <a href="Patient-donald-with-chi-number-and-nhs-number.html">Patient Donald with CHI Number and NHS Number</a></p>
+
+<p>PMIR with a multiple Patient feed. FHIR Cast and FHIR Subscription are included to show subsequent interactions.</p>
+
+<figure><?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="399px" preserveAspectRatio="none" style="width:1112px;height:399px;background:#FFFFFF;" version="1.1" viewBox="0 0 1112 399" width="1112px" zoomAndPan="magnify"><defs /><g><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="516" x="299.5" y="29.5332">Patient Master Identity Registry - Multiple Patients (IHE PMIR UK Mock up)</text><rect fill="none" height="187.9453" style="stroke:#000000;stroke-width:1.5;" width="720.5" x="385.5" y="187.8828" /><rect fill="none" height="155.5938" style="stroke:#000000;stroke-width:1.5;" width="700.5" x="395.5" y="213.2344" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="120" x2="120" y1="93.8281" y2="392.8281" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="507.5" x2="507.5" y1="93.8281" y2="392.8281" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="863" x2="863" y1="93.8281" y2="392.8281" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="1017" x2="1017" y1="93.8281" y2="392.8281" /><rect fill="#E2E2F0" height="31.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="231" x="5" y="61.2188" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="217" x="12" y="82.752">Identity Source (e.g. NHS Scotland</text><rect fill="#E2E2F0" height="31.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="204" x="405.5" y="61.2188" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="190" x="412.5" y="82.752">PMIR (e.g. NHS England PDS)</text><rect fill="#E2E2F0" height="49.2188" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="149" x="789" y="43.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="116" x="803.5" y="65.1426">Internal Consumer</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="135" x="796" y="82.752">Fixed Distribution List</text><rect fill="#E2E2F0" height="49.2188" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="138" x="948" y="43.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="120" x="955" y="65.1426">External Consumer</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="54" x="990" y="82.752">Pub Sub</text><polygon fill="#181818" points="495.5,138.5313,505.5,142.5313,495.5,146.5313,499.5,142.5313" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="120.5" x2="501.5" y1="142.5313" y2="142.5313" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="314" x="127.5" y="121.3232">POST /$process-message (Collection of FHIR Patient)</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="67" x="131.5" y="137.6748">PMIR ITI-93</text><polygon fill="#181818" points="131.5,168.8828,121.5,172.8828,131.5,176.8828,127.5,172.8828" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="125.5" x2="506.5" y1="172.8828" y2="172.8828" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="363" x="137.5" y="168.0264">Collection of FHIR Patient with NHS Number (and CHI Number)</text><path d="M385.5,187.8828 L458.5,187.8828 L458.5,196.2344 L448.5,206.2344 L385.5,206.2344 L385.5,187.8828 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.5;" /><rect fill="none" height="187.9453" style="stroke:#000000;stroke-width:1.5;" width="720.5" x="385.5" y="187.8828" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="28" x="400.5" y="202.3779">loop</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="94" x="473.5" y="201.3018">[for each patient]</text><path d="M395.5,213.2344 L460.5,213.2344 L460.5,221.5859 L450.5,231.5859 L395.5,231.5859 L395.5,213.2344 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.5;" /><rect fill="none" height="155.5938" style="stroke:#000000;stroke-width:1.5;" width="700.5" x="395.5" y="213.2344" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="20" x="410.5" y="227.7295">opt</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="231" x="475.5" y="226.6533">[Multi Cast Notification Service / FHIR Cast]</text><polygon fill="#181818" points="851.5,249.9375,861.5,253.9375,851.5,257.9375,855.5,253.9375" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="507.5" x2="857.5" y1="253.9375" y2="253.9375" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="332" x="514.5" y="249.0811">MCNS including FHIR Patient (with/without CHI Number?)</text><polygon fill="#181818" points="518.5,280.2891,508.5,284.2891,518.5,288.2891,514.5,284.2891" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="512.5" x2="862.5" y1="284.2891" y2="284.2891" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="19" x="524.5" y="279.4326">OK</text><line style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="395.5" x2="1096" y1="293.2891" y2="293.2891" /><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="340" x="400.5" y="304.708">[FHIR Subscription (e.g. a subscription on registeredPractice)]</text><polygon fill="#181818" points="1005,326.4766,1015,330.4766,1005,334.4766,1009,330.4766" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="507.5" x2="1011" y1="330.4766" y2="330.4766" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="399" x="514.5" y="325.6201">FHIR Subscription including FHIR Patient (with/without CHI Number?)</text><polygon fill="#181818" points="518.5,356.8281,508.5,360.8281,518.5,364.8281,514.5,360.8281" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="512.5" x2="1016" y1="360.8281" y2="360.8281" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="19" x="524.5" y="355.9717">OK</text></g></svg></figure>
+<p><br clear="all" /></p>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.england.nhs.uk/">NHS England</a>.  Package uk.nhs.england.skunkworks#0.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Mar 5, 2024 15:05+0000">2024-03-05</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+            <div style="color: #333333" >
+
+          Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
+                 <a style="color: #81BEF7" href="qa.html">QA Report</a> 
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
+<div>
+</div>
+
+</div>
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

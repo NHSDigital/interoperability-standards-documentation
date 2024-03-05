@@ -10,7 +10,7 @@
   <name value="NHSEnglandInteroperabilitySkunkworks"/>
   <title value="Interoperability Standards - Skunkworks"/>
   <status value="draft"/>
-  <date value="2024-02-29T07:38:13+00:00"/>
+  <date value="2024-03-05T15:05:36+00:00"/>
   <publisher value="NHS England"/>
   <contact>
     <name value="NHS England"/>
@@ -515,6 +515,26 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/donald-with-chi-number"/>
+      </reference>
+      <name value="donald-with-chi-number"/>
+      <exampleCanonical value="https://fhir.nhs.uk/England/StructureDefinition/Patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/donald-with-chi-number-and-nhs-number"/>
+      </reference>
+      <name value="donald-with-chi-number-and-nhs-number"/>
+      <exampleCanonical value="https://fhir.nhs.uk/England/StructureDefinition/Patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -677,6 +697,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Questionnaire"/>
+      </extension>
+      <reference>
+        <reference value="Questionnaire/permission"/>
+      </reference>
+      <name value="Permission"/>
+      <description value="Backport of [FHIR R6 Permission](https://build.fhir.org/permission.html) using FHIR Questionnaire"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -813,16 +844,6 @@
       </reference>
       <name value="null (Bundle)"/>
     </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Questionnaire"/>
-      </extension>
-      <reference>
-        <reference value="Questionnaire/Questionnaire.Permission.R4"/>
-      </reference>
-      <name value="Permission"/>
-      <description value="Backport of [FHIR R6 Permission](https://build.fhir.org/permission.html) using FHIR Questionnaire"/>
-    </resource>
     <page>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
         <valueUrl value="toc.html"/>
@@ -940,6 +961,14 @@
         </extension>
         <nameUrl value="national-proxy-service.html"/>
         <title value="National Proxy Service"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="patient-identity-and-master-index.html"/>
+        </extension>
+        <nameUrl value="patient-identity-and-master-index.html"/>
+        <title value="Patient Identity and Master Index"/>
         <generation value="markdown"/>
       </page>
       <page>
