@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "NHSEnglandInteroperabilitySkunkworks"] ; # 
   fhir:title [ fhir:v "Interoperability Standards - Skunkworks"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-03-05T15:05:36+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-03-06T11:41:32+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "NHS England"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "NHS England" ] ;
@@ -1022,6 +1022,14 @@
          ] ) ;
          fhir:name [ fhir:v "booking.html"^^xsd:anyURI ] ;
          fhir:title [ fhir:v "Booking" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "care-planning.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "care-planning.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Care Planning" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:extension ( [

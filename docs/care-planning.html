@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Care Planning - Interoperability Standards - Skunkworks v0.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+
+    <!--  <script src="assets/nhsuk.js" defer></script> -->
+
+      <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<!-- Project extras
+<link
+        type="font/woff2"
+        href="assets/fonts/FrutigerLTW01-55Roman.woff2"
+        rel="preload"
+        as="font"
+        crossorigin
+/>
+<link
+        type="font/woff2"
+        href="assets/fonts/FrutigerLTW01-65Bold.woff2"
+        rel="preload"
+        as="font"
+        crossorigin
+/>
+<link href="assets/css/nhsuk.css" rel="stylesheet" />
+-->
+
+<!-- Bootstrap core CSS overrides to bootstrap-fhir.css -->
+<link href="assets/css/nhse.css" rel="stylesheet"/>
+
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/favicons/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"5"}
+    h3,h4,h5,h6{--heading-prefix:"5"}</style>
+    <div id="segment-header" class="segment nhsuk-header">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+<!-- Left logo - typically the publisher's logo - project or affiliate -->
+        <div id="project-nav">
+          <a id="project-logo" no-external="true" href="https://www.england.nhs.uk">
+            <img height="61" alt="Project home" src="assets/images/skunk.png"/>
+          </a>
+        </div>
+
+<!-- Right logo - for example the FHIR logo -->
+<!-- Make sure you have authorization to use the FHIR logo -->
+
+        <div id="family-nav">
+            <!--
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="60" alt="FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+          -->
+        </div> 
+      
+
+<!-- search icon - if you want -->
+<!--
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+-->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Interoperability Standards - Skunkworks</span>
+            <br/>
+            <span style="display:inline-block;">0.0.1 - ci-build
+
+
+
+   <img alt="England flag" src="assets/images/GB-ENG.svg" height="16" title="England"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Documentation
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="background.html">Background</a>
+      </li>
+      <li>
+        <a href="interoperability-standards.html">Interoperability Standards</a>
+      </li>
+      <li>
+        <a href="testing.html">Conformance and Testing (FHIR)</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Design
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="administration-module.html">Administration</a>
+      </li>
+      <li>
+        <a href="documents-module.html">Documents (Clinical)</a>
+      </li>
+      <li>
+        <a href="care-planning.html">Care Planning</a>
+      </li>
+      <li>
+        <a href="clinical-module.html">Clinical</a>
+      </li>
+      <li>
+        <a href="diagnostics-module.html">Diagnostics</a>
+      </li>
+      <li>
+        <a href="medications-module.html">Medications</a>
+      </li>
+      <li>
+        <a href="workflow.html">Workflow</a>
+      </li>
+      <li>
+        <a href="structured-data-capture.html">Structured Data Capture</a>
+      </li>
+      <li>
+        <a href="validation.html">FHIR Validation</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Build
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="national-proxy-service.html">National Proxy Service</a>
+      </li>
+      <li>
+        <a href="personal-demographics-service.html">Personal Demographics Service</a>
+      </li>
+      <li>
+        <a href="patient-identity-and-master-index.html">Patient Identity Feed and Master Identity Registry</a>
+      </li>
+      <li>
+        <a href="multicast-notification-service.html">Multicast Notification Service</a>
+      </li>
+      <li>
+        <a href="booking.html">Booking</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">FHIR Assets</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Care Planning</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Interoperability Standards - Skunkworks - Local Development build (v0.0.1) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://fhir.nhs.uk/England/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Care Planning</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+</div>
+
+<figure><?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="403px" preserveAspectRatio="none" style="width:864px;height:403px;background:#FFFFFF;" version="1.1" viewBox="0 0 864 403" width="864px" zoomAndPan="magnify"><defs /><g><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="98" x="376" y="24.5332">Care Planning</text><!--cluster CarePlanning--><g id="cluster_CarePlanning"><path d="M8.5,44.6094 L107.5,44.6094 A3.75,3.75 0 0 1 110,47.1094 L117,68.2188 L523.5,68.2188 A2.5,2.5 0 0 1 526,70.7188 L526,393.6094 A2.5,2.5 0 0 1 523.5,396.1094 L8.5,396.1094 A2.5,2.5 0 0 1 6,393.6094 L6,47.1094 A2.5,2.5 0 0 1 8.5,44.6094 " fill="none" style="stroke:#000000;stroke-width:1.5;" /><line style="stroke:#000000;stroke-width:1.5;" x1="6" x2="117" y1="68.2188" y2="68.2188" /><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="98" x="10" y="61.1426">Care Planning</text></g><!--cluster Workflow--><g id="cluster_Workflow"><path d="M552.5,280.6094 L618.5,280.6094 A3.75,3.75 0 0 1 621,283.1094 L628,304.2188 L643.5,304.2188 A2.5,2.5 0 0 1 646,306.7188 L646,378.1094 A2.5,2.5 0 0 1 643.5,380.6094 L552.5,380.6094 A2.5,2.5 0 0 1 550,378.1094 L550,283.1094 A2.5,2.5 0 0 1 552.5,280.6094 " fill="none" style="stroke:#000000;stroke-width:1.5;" /><line style="stroke:#000000;stroke-width:1.5;" x1="550" x2="628" y1="304.2188" y2="304.2188" /><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="65" x="554" y="297.1426">Workflow</text></g><!--cluster SharedCareRecord--><g id="cluster_SharedCareRecord"><path d="M693.5,280.6094 L828.5,280.6094 A3.75,3.75 0 0 1 831,283.1094 L838,304.2188 L854.5,304.2188 A2.5,2.5 0 0 1 857,306.7188 L857,378.1094 A2.5,2.5 0 0 1 854.5,380.6094 L693.5,380.6094 A2.5,2.5 0 0 1 691,378.1094 L691,283.1094 A2.5,2.5 0 0 1 693.5,280.6094 " fill="none" style="stroke:#000000;stroke-width:1.5;" /><line style="stroke:#000000;stroke-width:1.5;" x1="691" x2="838" y1="304.2188" y2="304.2188" /><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="134" x="695" y="297.1426">SharedCareRecord</text></g><!--class CarePlan--><g id="elem_CarePlan"><rect codeLine="7" fill="#F1F1F1" height="136.0469" id="CarePlan" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="215" x="68.5" y="80.6094" /><ellipse cx="142.25" cy="96.6094" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;" /><path d="M145.0156,92.4844 Q145.1719,92.2656 145.3594,92.1563 Q145.5469,92.0469 145.7656,92.0469 Q146.1406,92.0469 146.375,92.3125 Q146.6094,92.5625 146.6094,93.1719 L146.6094,94.625 Q146.6094,95.2344 146.375,95.5 Q146.1406,95.7656 145.7656,95.7656 Q145.4219,95.7656 145.2188,95.5625 Q145.0156,95.375 144.9063,94.8594 Q144.8594,94.5 144.6719,94.3125 Q144.3438,93.9375 143.7344,93.7188 Q143.125,93.5 142.5,93.5 Q141.7344,93.5 141.0938,93.8281 Q140.4688,94.1563 139.9688,94.9063 Q139.4844,95.6563 139.4844,96.6875 L139.4844,97.7813 Q139.4844,99.0156 140.375,99.8438 Q141.2656,100.6563 142.8594,100.6563 Q143.7969,100.6563 144.4531,100.4063 Q144.8438,100.25 145.2656,99.8125 Q145.5313,99.5469 145.6719,99.4688 Q145.8281,99.3906 146.0313,99.3906 Q146.3594,99.3906 146.6094,99.6563 Q146.875,99.9063 146.875,100.25 Q146.875,100.5938 146.5313,101 Q146.0313,101.5781 145.2344,101.9063 Q144.1563,102.3594 142.8594,102.3594 Q141.3438,102.3594 140.1406,101.7344 Q139.1563,101.2344 138.4688,100.1719 Q137.7813,99.0938 137.7813,97.8125 L137.7813,96.6563 Q137.7813,95.3281 138.3906,94.1875 Q139.0156,93.0313 140.1094,92.4219 Q141.2031,91.7969 142.4375,91.7969 Q143.1719,91.7969 143.8125,91.9688 Q144.4688,92.125 145.0156,92.4844 Z " fill="#000000" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="59" x="162.75" y="102.3379">CarePlan</text><line style="stroke:#181818;stroke-width:0.5;" x1="69.5" x2="282.5" y1="112.6094" y2="112.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="47" x="74.5" y="131.1426">patient,</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="139" x="74.5" y="148.752">instantiatesCanonical,</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="31" x="74.5" y="166.3613">goal,</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="68" x="74.5" y="183.9707">careTeam,</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="203" x="74.5" y="201.5801">activity: Planned and Completed</text><line style="stroke:#181818;stroke-width:0.5;" x1="69.5" x2="282.5" y1="208.6563" y2="208.6563" /></g><!--class Goal--><g id="elem_Goal"><rect codeLine="15" fill="#F1F1F1" height="48" id="Goal" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="62" x="22" y="316.6094" /><ellipse cx="37" cy="332.6094" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;" /><path d="M39.7656,328.4844 Q39.9219,328.2656 40.1094,328.1563 Q40.2969,328.0469 40.5156,328.0469 Q40.8906,328.0469 41.125,328.3125 Q41.3594,328.5625 41.3594,329.1719 L41.3594,330.625 Q41.3594,331.2344 41.125,331.5 Q40.8906,331.7656 40.5156,331.7656 Q40.1719,331.7656 39.9688,331.5625 Q39.7656,331.375 39.6563,330.8594 Q39.6094,330.5 39.4219,330.3125 Q39.0938,329.9375 38.4844,329.7188 Q37.875,329.5 37.25,329.5 Q36.4844,329.5 35.8438,329.8281 Q35.2188,330.1563 34.7188,330.9063 Q34.2344,331.6563 34.2344,332.6875 L34.2344,333.7813 Q34.2344,335.0156 35.125,335.8438 Q36.0156,336.6563 37.6094,336.6563 Q38.5469,336.6563 39.2031,336.4063 Q39.5938,336.25 40.0156,335.8125 Q40.2813,335.5469 40.4219,335.4688 Q40.5781,335.3906 40.7813,335.3906 Q41.1094,335.3906 41.3594,335.6563 Q41.625,335.9063 41.625,336.25 Q41.625,336.5938 41.2813,337 Q40.7813,337.5781 39.9844,337.9063 Q38.9063,338.3594 37.6094,338.3594 Q36.0938,338.3594 34.8906,337.7344 Q33.9063,337.2344 33.2188,336.1719 Q32.5313,335.0938 32.5313,333.8125 L32.5313,332.6563 Q32.5313,331.3281 33.1406,330.1875 Q33.7656,329.0313 34.8594,328.4219 Q35.9531,327.7969 37.1875,327.7969 Q37.9219,327.7969 38.5625,327.9688 Q39.2188,328.125 39.7656,328.4844 Z " fill="#000000" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="30" x="51" y="338.3379">Goal</text><line style="stroke:#181818;stroke-width:0.5;" x1="23" x2="83" y1="348.6094" y2="348.6094" /><line style="stroke:#181818;stroke-width:0.5;" x1="23" x2="83" y1="356.6094" y2="356.6094" /></g><!--class CareTeam--><g id="elem_CareTeam"><rect codeLine="19" fill="#F1F1F1" height="48" id="CareTeam" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="99" x="119.5" y="316.6094" /><ellipse cx="134.5" cy="332.6094" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;" /><path d="M137.2656,328.4844 Q137.4219,328.2656 137.6094,328.1563 Q137.7969,328.0469 138.0156,328.0469 Q138.3906,328.0469 138.625,328.3125 Q138.8594,328.5625 138.8594,329.1719 L138.8594,330.625 Q138.8594,331.2344 138.625,331.5 Q138.3906,331.7656 138.0156,331.7656 Q137.6719,331.7656 137.4688,331.5625 Q137.2656,331.375 137.1563,330.8594 Q137.1094,330.5 136.9219,330.3125 Q136.5938,329.9375 135.9844,329.7188 Q135.375,329.5 134.75,329.5 Q133.9844,329.5 133.3438,329.8281 Q132.7188,330.1563 132.2188,330.9063 Q131.7344,331.6563 131.7344,332.6875 L131.7344,333.7813 Q131.7344,335.0156 132.625,335.8438 Q133.5156,336.6563 135.1094,336.6563 Q136.0469,336.6563 136.7031,336.4063 Q137.0938,336.25 137.5156,335.8125 Q137.7813,335.5469 137.9219,335.4688 Q138.0781,335.3906 138.2813,335.3906 Q138.6094,335.3906 138.8594,335.6563 Q139.125,335.9063 139.125,336.25 Q139.125,336.5938 138.7813,337 Q138.2813,337.5781 137.4844,337.9063 Q136.4063,338.3594 135.1094,338.3594 Q133.5938,338.3594 132.3906,337.7344 Q131.4063,337.2344 130.7188,336.1719 Q130.0313,335.0938 130.0313,333.8125 L130.0313,332.6563 Q130.0313,331.3281 130.6406,330.1875 Q131.2656,329.0313 132.3594,328.4219 Q133.4531,327.7969 134.6875,327.7969 Q135.4219,327.7969 136.0625,327.9688 Q136.7188,328.125 137.2656,328.4844 Z " fill="#000000" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="67" x="148.5" y="338.3379">CareTeam</text><line style="stroke:#181818;stroke-width:0.5;" x1="120.5" x2="217.5" y1="348.6094" y2="348.6094" /><line style="stroke:#181818;stroke-width:0.5;" x1="120.5" x2="217.5" y1="356.6094" y2="356.6094" /></g><!--class Assessments--><g id="elem_Assessments"><rect codeLine="23" fill="#F1F1F1" height="78.8281" id="Assessments" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="256" x="254" y="301.1094" /><ellipse cx="295.55" cy="323.7188" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;" /><path d="M298.3156,319.5938 Q298.4719,319.375 298.6594,319.2656 Q298.8469,319.1563 299.0656,319.1563 Q299.4406,319.1563 299.675,319.4219 Q299.9094,319.6719 299.9094,320.2813 L299.9094,321.7344 Q299.9094,322.3438 299.675,322.6094 Q299.4406,322.875 299.0656,322.875 Q298.7219,322.875 298.5188,322.6719 Q298.3156,322.4844 298.2063,321.9688 Q298.1594,321.6094 297.9719,321.4219 Q297.6438,321.0469 297.0344,320.8281 Q296.425,320.6094 295.8,320.6094 Q295.0344,320.6094 294.3938,320.9375 Q293.7688,321.2656 293.2688,322.0156 Q292.7844,322.7656 292.7844,323.7969 L292.7844,324.8906 Q292.7844,326.125 293.675,326.9531 Q294.5656,327.7656 296.1594,327.7656 Q297.0969,327.7656 297.7531,327.5156 Q298.1438,327.3594 298.5656,326.9219 Q298.8313,326.6563 298.9719,326.5781 Q299.1281,326.5 299.3313,326.5 Q299.6594,326.5 299.9094,326.7656 Q300.175,327.0156 300.175,327.3594 Q300.175,327.7031 299.8313,328.1094 Q299.3313,328.6875 298.5344,329.0156 Q297.4563,329.4688 296.1594,329.4688 Q294.6438,329.4688 293.4406,328.8438 Q292.4563,328.3438 291.7688,327.2813 Q291.0813,326.2031 291.0813,324.9219 L291.0813,323.7656 Q291.0813,322.4375 291.6906,321.2969 Q292.3156,320.1406 293.4094,319.5313 Q294.5031,318.9063 295.7375,318.9063 Q296.4719,318.9063 297.1125,319.0781 Q297.7688,319.2344 298.3156,319.5938 Z " fill="#000000" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="76" x="357.95" y="320.6426">Assesments</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="165" x="315.45" y="338.252">(Structured Data Capture)</text><line style="stroke:#181818;stroke-width:0.5;" x1="255" x2="509" y1="346.3281" y2="346.3281" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="244" x="260" y="364.8613">forms: e.g. EOLC, ReSPECT, UCP, etc</text><line style="stroke:#181818;stroke-width:0.5;" x1="255" x2="509" y1="371.9375" y2="371.9375" /></g><!--class Task--><g id="elem_Task"><rect codeLine="31" fill="#F1F1F1" height="48" id="Task" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="63" x="566.5" y="316.6094" /><ellipse cx="581.5" cy="332.6094" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;" /><path d="M584.2656,328.4844 Q584.4219,328.2656 584.6094,328.1563 Q584.7969,328.0469 585.0156,328.0469 Q585.3906,328.0469 585.625,328.3125 Q585.8594,328.5625 585.8594,329.1719 L585.8594,330.625 Q585.8594,331.2344 585.625,331.5 Q585.3906,331.7656 585.0156,331.7656 Q584.6719,331.7656 584.4688,331.5625 Q584.2656,331.375 584.1563,330.8594 Q584.1094,330.5 583.9219,330.3125 Q583.5938,329.9375 582.9844,329.7188 Q582.375,329.5 581.75,329.5 Q580.9844,329.5 580.3438,329.8281 Q579.7188,330.1563 579.2188,330.9063 Q578.7344,331.6563 578.7344,332.6875 L578.7344,333.7813 Q578.7344,335.0156 579.625,335.8438 Q580.5156,336.6563 582.1094,336.6563 Q583.0469,336.6563 583.7031,336.4063 Q584.0938,336.25 584.5156,335.8125 Q584.7813,335.5469 584.9219,335.4688 Q585.0781,335.3906 585.2813,335.3906 Q585.6094,335.3906 585.8594,335.6563 Q586.125,335.9063 586.125,336.25 Q586.125,336.5938 585.7813,337 Q585.2813,337.5781 584.4844,337.9063 Q583.4063,338.3594 582.1094,338.3594 Q580.5938,338.3594 579.3906,337.7344 Q578.4063,337.2344 577.7188,336.1719 Q577.0313,335.0938 577.0313,333.8125 L577.0313,332.6563 Q577.0313,331.3281 577.6406,330.1875 Q578.2656,329.0313 579.3594,328.4219 Q580.4531,327.7969 581.6875,327.7969 Q582.4219,327.7969 583.0625,327.9688 Q583.7188,328.125 584.2656,328.4844 Z " fill="#000000" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="31" x="595.5" y="338.3379">Task</text><line style="stroke:#181818;stroke-width:0.5;" x1="567.5" x2="628.5" y1="348.6094" y2="348.6094" /><line style="stroke:#181818;stroke-width:0.5;" x1="567.5" x2="628.5" y1="356.6094" y2="356.6094" /></g><!--class RecordArtefacts--><g id="elem_RecordArtefacts"><rect codeLine="38" fill="#F1F1F1" height="48" id="RecordArtefacts" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="134" x="707" y="316.6094" /><ellipse cx="722" cy="332.6094" fill="#ADD1B2" rx="11" ry="11" style="stroke:#181818;stroke-width:1.0;" /><path d="M724.7656,328.4844 Q724.9219,328.2656 725.1094,328.1563 Q725.2969,328.0469 725.5156,328.0469 Q725.8906,328.0469 726.125,328.3125 Q726.3594,328.5625 726.3594,329.1719 L726.3594,330.625 Q726.3594,331.2344 726.125,331.5 Q725.8906,331.7656 725.5156,331.7656 Q725.1719,331.7656 724.9688,331.5625 Q724.7656,331.375 724.6563,330.8594 Q724.6094,330.5 724.4219,330.3125 Q724.0938,329.9375 723.4844,329.7188 Q722.875,329.5 722.25,329.5 Q721.4844,329.5 720.8438,329.8281 Q720.2188,330.1563 719.7188,330.9063 Q719.2344,331.6563 719.2344,332.6875 L719.2344,333.7813 Q719.2344,335.0156 720.125,335.8438 Q721.0156,336.6563 722.6094,336.6563 Q723.5469,336.6563 724.2031,336.4063 Q724.5938,336.25 725.0156,335.8125 Q725.2813,335.5469 725.4219,335.4688 Q725.5781,335.3906 725.7813,335.3906 Q726.1094,335.3906 726.3594,335.6563 Q726.625,335.9063 726.625,336.25 Q726.625,336.5938 726.2813,337 Q725.7813,337.5781 724.9844,337.9063 Q723.9063,338.3594 722.6094,338.3594 Q721.0938,338.3594 719.8906,337.7344 Q718.9063,337.2344 718.2188,336.1719 Q717.5313,335.0938 717.5313,333.8125 L717.5313,332.6563 Q717.5313,331.3281 718.1406,330.1875 Q718.7656,329.0313 719.8594,328.4219 Q720.9531,327.7969 722.1875,327.7969 Q722.9219,327.7969 723.5625,327.9688 Q724.2188,328.125 724.7656,328.4844 Z " fill="#000000" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="102" x="736" y="338.3379">RecordArtefacts</text><line style="stroke:#181818;stroke-width:0.5;" x1="708" x2="840" y1="348.6094" y2="348.6094" /><line style="stroke:#181818;stroke-width:0.5;" x1="708" x2="840" y1="356.6094" y2="356.6094" /></g><!--link CarePlan to Goal--><g id="link_CarePlan_Goal"><path codeLine="44" d="M127.93,223.8594 C108.52,253.8394 87.24,286.7194 72.33,309.7394 " fill="none" id="CarePlan-Goal" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="126.4859" x2="132.46" y1="226.0957" y2="216.8594" /><ellipse cx="126.4859" cy="226.0957" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="126.9289" x2="133.6463" y1="218.0456" y2="222.3905" /><line style="stroke:#181818;stroke-width:1.0;" x1="72.2749" x2="72.9531" y1="309.8486" y2="319.8255" /><line style="stroke:#181818;stroke-width:1.0;" x1="72.2749" x2="62.8869" y1="309.8486" y2="313.2932" /><line style="stroke:#181818;stroke-width:1.0;" x1="72.2749" x2="67.92" y1="309.8486" y2="316.5594" /><ellipse cx="75.5411" cy="304.8155" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="24" x="102.7324" y="238.2335">goal</text></g><!--link CarePlan to CareTeam--><g id="link_CarePlan_CareTeam"><path codeLine="45" d="M141.39,224.8294 C138.55,237.9594 137.57,251.5794 140,264.6094 C142.8,279.6394 148.52,295.5294 154.13,308.7994 " fill="none" id="CarePlan-CareTeam" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="140.7545" x2="143.39" y1="227.409" y2="216.7294" /><ellipse cx="140.7545" cy="227.409" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="138.5481" x2="146.3151" y1="219.6545" y2="221.5712" /><line style="stroke:#181818;stroke-width:1.0;" x1="154.2087" x2="162.9087" y1="308.9578" y2="313.8884" /><line style="stroke:#181818;stroke-width:1.0;" x1="154.2087" x2="151.9113" y1="308.9578" y2="318.6904" /><line style="stroke:#181818;stroke-width:1.0;" x1="154.2087" x2="157.41" y1="308.9578" y2="316.2894" /><ellipse cx="151.8077" cy="303.4592" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="57" x="142.9662" y="238.0901">careTeam</text></g><!--link CarePlan to Task--><g id="link_CarePlan_Task"><path codeLine="46" d="M292,167.2994 C359.56,181.3594 444.3,205.6894 511,246.6094 C537.53,262.8794 561.19,289.3794 577.11,309.9394 " fill="none" id="CarePlan-Task" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="294.6172" x2="283.84" y1="167.842" y2="165.6394" /><ellipse cx="294.6172" cy="167.842" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="286.958" x2="288.5599" y1="170.3593" y2="162.5213" /><line style="stroke:#181818;stroke-width:1.0;" x1="577.168" x2="586.7819" y1="310.0035" y2="312.7554" /><line style="stroke:#181818;stroke-width:1.0;" x1="577.168" x2="577.2181" y1="310.0035" y2="320.0033" /><line style="stroke:#181818;stroke-width:1.0;" x1="577.168" x2="582" y1="310.0035" y2="316.3794" /><ellipse cx="573.5441" cy="305.2215" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="199" x="535" y="261.1045">Arranging activities on a Care Plan</text></g><!--link CarePlan to RecordArtefacts--><g id="link_CarePlan_RecordArtefacts"><path codeLine="47" d="M291.83,155.5994 C437.58,165.4194 676.9,189.8794 743,246.6094 C760.82,261.8994 768.44,287.7294 771.67,308.2894 " fill="none" id="CarePlan-RecordArtefacts" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="294.636" x2="283.66" y1="155.7859" y2="155.0594" /><ellipse cx="294.636" cy="155.7859" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="287.3871" x2="287.9154" y1="159.3148" y2="151.3323" /><line style="stroke:#181818;stroke-width:1.0;" x1="771.6987" x2="778.716" y1="308.5214" y2="315.6459" /><line style="stroke:#181818;stroke-width:1.0;" x1="771.6987" x2="766.824" y1="308.5214" y2="317.2529" /><line style="stroke:#181818;stroke-width:1.0;" x1="771.6987" x2="772.77" y1="308.5214" y2="316.4494" /><ellipse cx="770.8951" cy="302.5755" fill="none" rx="4" ry="4" style="stroke:#181818;stroke-width:1.0;" /></g><!--link CarePlan to Assessments--><g id="link_CarePlan_Assessments"><path codeLine="48" d="M158.78,224.0694 C159.28,238.9394 163.13,253.4094 173,264.6094 C182.33,275.1994 222.43,268.7294 236,272.6094 C258.36,278.9994 281.64,288.3294 302.87,298.0094 " fill="none" id="CarePlan-Assessments" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="154.7818" x2="162.7818" y1="220.7412" y2="220.7575" /><line style="stroke:#181818;stroke-width:1.0;" x1="154.7757" x2="162.7757" y1="223.7412" y2="223.7575" /><line style="stroke:#181818;stroke-width:1.0;" x1="158.7737" x2="158.79" y1="224.7494" y2="216.7494" /><line style="stroke:#181818;stroke-width:1.0;" x1="307.4352" x2="304.0817" y1="295.721" y2="302.9842" /><line style="stroke:#181818;stroke-width:1.0;" x1="304.7115" x2="301.358" y1="294.4635" y2="301.7267" /><line style="stroke:#181818;stroke-width:1.0;" x1="302.1268" x2="309.39" y1="297.6759" y2="301.0294" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="332" x="174" y="261.1045">CarePlan is probably initially derived from an Assessment</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="124" x="163.409" y="238.1121">instantiatesCanonical</text></g></g></svg></figure>
+<p><br clear="all" /></p>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.england.nhs.uk/">NHS England</a>.  Package uk.nhs.england.skunkworks#0.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Mar 6, 2024 11:41+0000">2024-03-06</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+            <div style="color: #333333" >
+
+          Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
+                 <a style="color: #81BEF7" href="qa.html">QA Report</a> 
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
+<div>
+</div>
+
+</div>
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

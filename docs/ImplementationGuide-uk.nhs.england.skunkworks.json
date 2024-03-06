@@ -10,7 +10,7 @@
   "name" : "NHSEnglandInteroperabilitySkunkworks",
   "title" : "Interoperability Standards - Skunkworks",
   "status" : "draft",
-  "date" : "2024-03-05T15:05:36+00:00",
+  "date" : "2024-03-06T11:41:32+00:00",
   "publisher" : "NHS England",
   "contact" : [{
     "name" : "NHS England",
@@ -1080,6 +1080,15 @@
         }],
         "nameUrl" : "booking.html",
         "title" : "Booking",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "care-planning.html"
+        }],
+        "nameUrl" : "care-planning.html",
+        "title" : "Care Planning",
         "generation" : "markdown"
       },
       {

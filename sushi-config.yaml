@@ -59,6 +59,7 @@ menu:
   Design:
     Administration : administration-module.html
     Documents (Clinical): documents-module.html
+    Care Planning: care-planning.html
     Clinical: clinical-module.html
     Diagnostics: diagnostics-module.html
     Medications: medications-module.html
