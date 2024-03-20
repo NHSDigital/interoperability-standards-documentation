@@ -14,7 +14,7 @@ participant "Trust Systems" as PIXConsumer
 loop For each system
   note over PIXManager,PIXConsumer : Notification Methods
 
-    Middleware -> PIXConsumer: IHE PIX (HL7 v2 ADT_A31) / IHE PIXm ITI-104 (PUT /Patient@identifier={mrn})
+    Middleware -> PIXConsumer: IHE PIX ITI-8 (HL7 v2 ADT_A31) / IHE PIXm ITI-104 (PUT /Patient@identifier={mrn})
     PIXConsumer --> Middleware: Acknowledgement
 
 end

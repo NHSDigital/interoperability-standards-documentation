@@ -23,8 +23,8 @@ A use case around both programmes is
 
 #### NHS Acute Trust version 
 
-Leeds Teaching NHS Trust would have registered Donald as a Patient on their Patient Administration System (PAS), they would have created a Medical Record Number (MRN) to identify Donald across the trusts computer systems and more than likely recorded his (NHS Scotland) CHI Number.
-as HL7 FHIR this would look like [Patient Donald with CHI Number and MRN](Patient-donald-with-chi-number-and-mrn.html). Leeds Teaching Trusts follows <a href="HSCIC ITK HL7 V2 Message Specifications.pdf" target="_blank">NHS England (ADT) ITK HL7 v2 (2.4) Message Specification</a> and so will also have an equivalent HL7 v2 representation.
+Leeds Teaching NHS Trust would have registered Donald as a Patient on their Patient Administration System (PAS), they would have created a Medical Record Number (MRN) to identify Donald across the trusts computer systems and possibly record his (NHS Scotland) CHI Number.
+In HL7 FHIR this would look like [Patient Donald with CHI Number and MRN](Patient-donald-with-chi-number-and-mrn.html). Leeds Teaching Trusts follows <a href="HSCIC ITK HL7 V2 Message Specifications.pdf" target="_blank">NHS England (ADT) ITK HL7 v2 (2.4) Message Specification</a> and so will also have an equivalent HL7 v2 representation.
 
 Leeds Teaching NHS Trust registering Donald with NHS England looks like this: 
 
@@ -35,6 +35,7 @@ Leeds Teaching NHS Trust registering Donald with NHS England looks like this:
 2. Depending on the results:
 
    a. If Donald is found on PDS, the Leeds Teaching Trust PAS is updated with the NHS Number. Leeds Teaching Trust will likely update the record on PDS with Donalds new address.
+   
    b. If Donald is not found on PDS, a NHS Number allocation request (register Donald for care in NHS England) is sent and the returned NHS Number is used to update Leeds Teaching Trusts PAS. The FHIR Patient record returned from PDS looks something like this  [Patient Donald with NHS Number](Patient-donald-with-nhs-number.html)
 
 3. In either case Leeds Teaching Trust need to inform all systems within the trust of the NHS Number. For this they will use the Trust Integration Engine (TIE) which will distribute both HL7 v2 ADT_A31 and/or FHIR Patient updates to the trusts systems. The FHIR Patient could look like this  [Patient Donald with NHS Number, CHI and MRN](Patient-donald-with-chi-number-mrn-and-nhs-number.html)
@@ -74,7 +75,7 @@ This should be clarified, as MCNS may not be intending to solve workflow process
 
 The two viewpoints show several standards and specifications on a single process. Similar interactions exist on both use cases and these can be rationalised to this generic sequence.
 
-<figure>{% include ihe-sequence.svg %}</figure>
+<figure>{% include ihe-pam-sequence.svg %}</figure>
 <br clear="all"/>
 
 In this diagram:
@@ -97,5 +98,5 @@ These standards are believed to be relatively compatible with exising IHE and HL
 
 - <a href="https://profiles.ihe.net/ITI/PMIR/index.html" target="_blank">Patient Master Identity Registry (PMIR)</a>
 
-<figure>{% include patient-master-identity-registry-sequence.svg %}</figure>
+<figure>{% include ihe-pam-plus-pmir-sequence.svg %}</figure>
 <br clear="all"/>

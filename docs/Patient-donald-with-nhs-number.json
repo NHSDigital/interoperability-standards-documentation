@@ -6,7 +6,7 @@
   },
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Donald SMITH (OFFICIAL)</b> male, DoB: 1970-09-11 ( Jurisdictional health number/6254892847\u00a0(period:\u00a02024-04-06 --&gt; (ongoing)))</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Other Ids (see the one above)\">Other Id:</td><td colspan=\"3\">Jurisdictional health number/?ngen-9?\u00a0(period:\u00a02011-11-11 --&gt; 2024-04-06)</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Details:</td><td colspan=\"3\"><ul><li><a href=\"mailto:dsmith@test.com\">dsmith@test.com</a></li><li>ph: 01131231234(MOBILE)</li><li>LS15 8RE </li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Patient Links\">Links:</td><td colspan=\"3\"><ul><li>General Practitioner: <span><code>https://fhir.nhs.uk/Id/ods-organization-code</code>/B81001</span></li></ul></td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Donald SMITH (OFFICIAL)</b> male, DoB: 1970-09-11 ( Jurisdictional health number/6254892847\u00a0(period:\u00a02024-04-06 --&gt; (ongoing)))</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Other Ids (see the one above)\">Other Id:</td><td colspan=\"3\">Jurisdictional health number/?ngen-9?\u00a0(period:\u00a02011-11-11 --&gt; 2024-04-06)</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Details:</td><td colspan=\"3\"><ul><li><a href=\"mailto:dsmith@test.com\">dsmith@test.com</a></li><li>ph: 01131231234(MOBILE)</li><li>LS15 8FH </li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Patient Links\">Links:</td><td colspan=\"3\"><ul><li>General Practitioner: <span><code>https://fhir.nhs.uk/Id/ods-organization-code</code>/B81001</span></li></ul></td></tr></table></div>"
   },
   "identifier" : [{
     "type" : {
@@ -62,7 +62,7 @@
   "gender" : "male",
   "birthDate" : "1970-09-11",
   "address" : [{
-    "postalCode" : "LS15 8RE"
+    "postalCode" : "LS15 8FH"
   }],
   "generalPractitioner" : [{
     "identifier" : {

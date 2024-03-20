@@ -8,14 +8,14 @@ participant "Patient Identity Source" as PIXSource
 participant "Patient Demographic Registry" as PIXManager
 participant "Patient Identity Consumer" as PIXConsumer
 
-PIXSource -> PIXManager :  Patient Demographic Query /nIHE PDQm ITI-78
+PIXSource -> PIXManager :  Patient Demographic Query \nIHE PDQm ITI-78
 PIXManager --> PIXSource : Response
 opt No matching Patient
-  PIXSource -> PIXManager: Patient Identity Feed /nIHE PIXm ITI-104 or IHE PIX ITI-8
+  PIXSource -> PIXManager: Patient Identity Feed \nIHE PIXm ITI-104 or IHE PIX ITI-8
   PIXManager --> PIXSource : Response
 end
 opt if record created or updated
-    PIXManager -> PIXConsumer: Patient Identity Feed /nIHE PIXm ITI-104 or IHE PIX ITI-8
+    PIXManager -> PIXConsumer: Patient Identity Feed \nIHE PIXm ITI-104 or IHE PIX ITI-8
     PIXConsumer --> PIXManager: Acknowledgement
 end
 
