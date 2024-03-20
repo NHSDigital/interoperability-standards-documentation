@@ -1,0 +1,1 @@
+Mrs Smith following her outpatient appointment was told she needed to be admitted for further tests. In advance of admitting Mrs Smith, a pending admission was set up in the PAS by Miss Cortana the receptionist, to inform the ward of her arrival so a bed could be prepared. This triggered a A14 HL7 message.

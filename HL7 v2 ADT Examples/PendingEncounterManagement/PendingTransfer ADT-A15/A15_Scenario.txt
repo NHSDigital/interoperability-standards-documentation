@@ -1,0 +1,1 @@
+Mrs Smith was due to be transferred to the surgical ward for her interval appendicectomy procedure. In advance of moving Mrs Smith, a pending transfer was set up in the PAS by Miss Cortana the receptionist, to inform the surgical ward. This triggered a A15 HL7 message.
