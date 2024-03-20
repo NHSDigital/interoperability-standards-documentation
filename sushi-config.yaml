@@ -70,6 +70,7 @@ menu:
     National Proxy Service: national-proxy-service.html
     Personal Demographics Service: personal-demographics-service.html
     Patient Administration: patient-administration.html
+    Patient Encounter Management: patient-encounter-management.html
     Multicast Notification Service: multicast-notification-service.html
     Booking: booking.html
   FHIR Assets: artifacts.html

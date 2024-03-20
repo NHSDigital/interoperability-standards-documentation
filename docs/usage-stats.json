@@ -35,6 +35,12 @@
         "title": "DocumentReference"
       }
     ],
+    "Encounter": [
+      {
+        "url": "https://fhir.nhs.uk/England/StructureDefinition/Encounter",
+        "title": "Encounter"
+      }
+    ],
     "Endpoint": [
       {
         "url": "https://fhir.nhs.uk/England/StructureDefinition/Endpoint",

@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "NHSEnglandInteroperabilitySkunkworks"] ; # 
   fhir:title [ fhir:v "Interoperability Standards - Skunkworks"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-03-20T11:14:51+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-03-20T16:58:46+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "NHS England"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "NHS England" ] ;
@@ -644,6 +644,18 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
+         fhir:link <https://fhir.nhs.uk/England/StructureDefinition/Encounter> ;
+         fhir:reference [ fhir:v "StructureDefinition/Encounter" ]
+       ] ;
+       fhir:name [ fhir:v "Encounter" ] ;
+       fhir:description [ fhir:v "NHS England Encounter" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
          fhir:link <https://fhir.nhs.uk/England/StructureDefinition/Endpoint> ;
          fhir:reference [ fhir:v "StructureDefinition/Endpoint" ]
        ] ;
@@ -749,6 +761,20 @@
        fhir:name [ fhir:v "OrganizationAffiliation" ] ;
        fhir:description [ fhir:v "England OrganizationAffiliation" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Encounter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.nhs.uk/England/Encounter/outpatient-fredrica-smith> ;
+         fhir:reference [ fhir:v "Encounter/outpatient-fredrica-smith" ]
+       ] ;
+       fhir:name [ fhir:v "outpatient-fredrica-smith" ] ;
+       fhir:example [
+         fhir:v "https://fhir.nhs.uk/England/StructureDefinition/Encounter"^^xsd:anyURI ;
+         fhir:link <https://fhir.nhs.uk/England/StructureDefinition/Encounter>
+       ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -1132,6 +1158,14 @@
          ] ) ;
          fhir:name [ fhir:v "patient-administration.html"^^xsd:anyURI ] ;
          fhir:title [ fhir:v "Patient Administration" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "patient-encounter-management.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "patient-encounter-management.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Patient Encounter Management" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:extension ( [

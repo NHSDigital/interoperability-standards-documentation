@@ -10,7 +10,7 @@
   <name value="NHSEnglandInteroperabilitySkunkworks"/>
   <title value="Interoperability Standards - Skunkworks"/>
   <status value="draft"/>
-  <date value="2024-03-20T11:14:51+00:00"/>
+  <date value="2024-03-20T16:58:46+00:00"/>
   <publisher value="NHS England"/>
   <contact>
     <name value="NHS England"/>
@@ -548,6 +548,17 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/Encounter"/>
+      </reference>
+      <name value="Encounter"/>
+      <description value="NHS England Encounter"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/Endpoint"/>
       </reference>
       <name value="Endpoint"/>
@@ -641,6 +652,16 @@
       <name value="OrganizationAffiliation"/>
       <description value="England OrganizationAffiliation"/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/outpatient-fredrica-smith"/>
+      </reference>
+      <name value="outpatient-fredrica-smith"/>
+      <exampleCanonical value="https://fhir.nhs.uk/England/StructureDefinition/Encounter"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -987,6 +1008,14 @@
         </extension>
         <nameUrl value="patient-administration.html"/>
         <title value="Patient Administration"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="patient-encounter-management.html"/>
+        </extension>
+        <nameUrl value="patient-encounter-management.html"/>
+        <title value="Patient Encounter Management"/>
         <generation value="markdown"/>
       </page>
       <page>

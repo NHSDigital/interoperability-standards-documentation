@@ -10,7 +10,7 @@
   "name" : "NHSEnglandInteroperabilitySkunkworks",
   "title" : "Interoperability Standards - Skunkworks",
   "status" : "draft",
-  "date" : "2024-03-20T11:14:51+00:00",
+  "date" : "2024-03-20T16:58:46+00:00",
   "publisher" : "NHS England",
   "contact" : [{
     "name" : "NHS England",
@@ -715,6 +715,18 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/Encounter"
+      },
+      "name" : "Encounter",
+      "description" : "NHS England Encounter",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/Endpoint"
       },
       "name" : "Endpoint",
@@ -816,6 +828,17 @@
       "name" : "OrganizationAffiliation",
       "description" : "England OrganizationAffiliation",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Encounter"
+      }],
+      "reference" : {
+        "reference" : "Encounter/outpatient-fredrica-smith"
+      },
+      "name" : "outpatient-fredrica-smith",
+      "exampleCanonical" : "https://fhir.nhs.uk/England/StructureDefinition/Encounter"
     },
     {
       "extension" : [{
@@ -1199,6 +1222,15 @@
         }],
         "nameUrl" : "patient-administration.html",
         "title" : "Patient Administration",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "patient-encounter-management.html"
+        }],
+        "nameUrl" : "patient-encounter-management.html",
+        "title" : "Patient Encounter Management",
         "generation" : "markdown"
       },
       {

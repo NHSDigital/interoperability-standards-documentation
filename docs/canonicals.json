@@ -78,6 +78,13 @@
     "name" : "DocumentReference"
   },
   {
+    "id" : "Encounter",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.nhs.uk/England/StructureDefinition/Encounter",
+    "version" : "0.0.1",
+    "name" : "Encounter"
+  },
+  {
     "id" : "Endpoint",
     "type" : "StructureDefinition",
     "url" : "https://fhir.nhs.uk/England/StructureDefinition/Endpoint",
