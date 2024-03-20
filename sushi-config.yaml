@@ -69,7 +69,7 @@ menu:
   Build:
     National Proxy Service: national-proxy-service.html
     Personal Demographics Service: personal-demographics-service.html
-    Patient Identity Feeds and Notifications: patient-identity-and-notifications.html
+    Patient Administration: patient-administration.html
     Multicast Notification Service: multicast-notification-service.html
     Booking: booking.html
   FHIR Assets: artifacts.html
