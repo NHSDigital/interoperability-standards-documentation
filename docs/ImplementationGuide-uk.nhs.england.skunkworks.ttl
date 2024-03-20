@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "NHSEnglandInteroperabilitySkunkworks"] ; # 
   fhir:title [ fhir:v "Interoperability Standards - Skunkworks"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-03-06T15:16:08+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-03-20T08:38:17+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "NHS England"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "NHS England" ] ;
@@ -602,10 +602,10 @@
          fhir:value [ fhir:v "Patient" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://fhir.nhs.uk/England/Patient/donald-with-chi-number> ;
-         fhir:reference [ fhir:v "Patient/donald-with-chi-number" ]
+         fhir:link <https://fhir.nhs.uk/England/Patient/donald-with-chi-number-and-mrn> ;
+         fhir:reference [ fhir:v "Patient/donald-with-chi-number-and-mrn" ]
        ] ;
-       fhir:name [ fhir:v "donald-with-chi-number" ] ;
+       fhir:name [ fhir:v "donald-with-chi-number-and-mrn" ] ;
        fhir:example [
          fhir:v "https://fhir.nhs.uk/England/StructureDefinition/Patient"^^xsd:anyURI ;
          fhir:link <https://fhir.nhs.uk/England/StructureDefinition/Patient>
@@ -616,10 +616,24 @@
          fhir:value [ fhir:v "Patient" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://fhir.nhs.uk/England/Patient/donald-with-chi-number-and-nhs-number> ;
-         fhir:reference [ fhir:v "Patient/donald-with-chi-number-and-nhs-number" ]
+         fhir:link <https://fhir.nhs.uk/England/Patient/donald-with-chi-number-mrn-and-nhs-number> ;
+         fhir:reference [ fhir:v "Patient/donald-with-chi-number-mrn-and-nhs-number" ]
        ] ;
-       fhir:name [ fhir:v "donald-with-chi-number-and-nhs-number" ] ;
+       fhir:name [ fhir:v "donald-with-chi-number-mrn-and-nhs-number" ] ;
+       fhir:example [
+         fhir:v "https://fhir.nhs.uk/England/StructureDefinition/Patient"^^xsd:anyURI ;
+         fhir:link <https://fhir.nhs.uk/England/StructureDefinition/Patient>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Patient" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.nhs.uk/England/Patient/donald-with-nhs-number> ;
+         fhir:reference [ fhir:v "Patient/donald-with-nhs-number" ]
+       ] ;
+       fhir:name [ fhir:v "donald-with-nhs-number" ] ;
        fhir:example [
          fhir:v "https://fhir.nhs.uk/England/StructureDefinition/Patient"^^xsd:anyURI ;
          fhir:link <https://fhir.nhs.uk/England/StructureDefinition/Patient>
@@ -1114,10 +1128,10 @@
        ] [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
-           fhir:value [ fhir:v "patient-identity-and-master-index.html"^^xsd:anyURI ]
+           fhir:value [ fhir:v "patient-identity-and-notifications.html"^^xsd:anyURI ]
          ] ) ;
-         fhir:name [ fhir:v "patient-identity-and-master-index.html"^^xsd:anyURI ] ;
-         fhir:title [ fhir:v "Patient Identity and Master Index" ] ;
+         fhir:name [ fhir:v "patient-identity-and-notifications.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Patient Identity and Notifications" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:extension ( [

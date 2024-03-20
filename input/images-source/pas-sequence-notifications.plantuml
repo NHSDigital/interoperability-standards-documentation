@@ -1,0 +1,22 @@
+@startuml
+
+hide footbox
+
+title "Leeds Teaching Trust Patient Identity Feeds"
+
+
+participant "PAS" as PIXManager
+participant "Trust Integration Engine" as Middleware
+participant "Trust Systems" as PIXConsumer
+
+
+ PIXManager -> Middleware: Demographics Event notification \nIHE PIX ITI-8 (HL7 v2 ADT_A31)
+loop For each system
+  note over PIXManager,PIXConsumer : Notification Methods
+
+    Middleware -> PIXConsumer: IHE PIX (HL7 v2 ADT_A31) / IHE PIXm ITI-104 (PUT /Patient@identifier={mrn})
+    PIXConsumer --> Middleware: Acknowledgement
+
+end
+
+@enduml

@@ -10,7 +10,7 @@
   <name value="NHSEnglandInteroperabilitySkunkworks"/>
   <title value="Interoperability Standards - Skunkworks"/>
   <status value="draft"/>
-  <date value="2024-03-06T15:16:08+00:00"/>
+  <date value="2024-03-20T08:38:17+00:00"/>
   <publisher value="NHS England"/>
   <contact>
     <name value="NHS England"/>
@@ -518,9 +518,9 @@
         <valueString value="Patient"/>
       </extension>
       <reference>
-        <reference value="Patient/donald-with-chi-number"/>
+        <reference value="Patient/donald-with-chi-number-and-mrn"/>
       </reference>
-      <name value="donald-with-chi-number"/>
+      <name value="donald-with-chi-number-and-mrn"/>
       <exampleCanonical value="https://fhir.nhs.uk/England/StructureDefinition/Patient"/>
     </resource>
     <resource>
@@ -528,9 +528,19 @@
         <valueString value="Patient"/>
       </extension>
       <reference>
-        <reference value="Patient/donald-with-chi-number-and-nhs-number"/>
+        <reference value="Patient/donald-with-chi-number-mrn-and-nhs-number"/>
       </reference>
-      <name value="donald-with-chi-number-and-nhs-number"/>
+      <name value="donald-with-chi-number-mrn-and-nhs-number"/>
+      <exampleCanonical value="https://fhir.nhs.uk/England/StructureDefinition/Patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/donald-with-nhs-number"/>
+      </reference>
+      <name value="donald-with-nhs-number"/>
       <exampleCanonical value="https://fhir.nhs.uk/England/StructureDefinition/Patient"/>
     </resource>
     <resource>
@@ -973,10 +983,10 @@
       </page>
       <page>
         <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="patient-identity-and-master-index.html"/>
+          <valueUrl value="patient-identity-and-notifications.html"/>
         </extension>
-        <nameUrl value="patient-identity-and-master-index.html"/>
-        <title value="Patient Identity and Master Index"/>
+        <nameUrl value="patient-identity-and-notifications.html"/>
+        <title value="Patient Identity and Notifications"/>
         <generation value="markdown"/>
       </page>
       <page>
