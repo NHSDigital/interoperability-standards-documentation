@@ -101,8 +101,9 @@ At present this proposal is based on requirement from CPIS, the number of provid
 This is the approach taken in 
 
 - [IHE Patient Master Identity Registry (PMIR)](https://profiles.ihe.net/ITI/PMIR/) which could potentially be used with PDS for Patient Demographics notifications
+  - Note this doesn't use the **Subscriptions R5 Backport**
 - [IHE Document Subscription for Mobile (DSUBm)](https://build.fhir.org/ig/IHE/ITI.DSUBm/branches/master/index.html) which could potentially be used NRL for pointer notifications and IHE XDS/MHD for document notifications.
-
+  - This makes use of the **Subscriptions R5 Backport**
 E.g.
 
 <figure>{% include patient-encounter-management-sequence-notifications-subscriptions.svg %}</figure>
@@ -113,3 +114,10 @@ E.g.
 3. The Subscription Manager checks for matching subscriptions
 4. For each matching Subscription it sends an [Resource Notify Event Notifiction](Bundle-ex-EventNotification.html)
 
+The example above used a `REST-Hook` Subscription, the [Subscriptions R5 Backport](https://hl7.org/fhir/uv/subscriptions-backport/STU1.1/channels.html) has several channels including:
+
+- REST-Hook (assumed to be default)
+- Websocket
+- Email (probably also a common option)
+- FHIR Messaging
+- Custom Channels
