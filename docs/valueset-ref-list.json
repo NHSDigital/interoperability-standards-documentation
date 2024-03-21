@@ -57,8 +57,23 @@
       ],
       "uses" : {
       },
-      "Questionnaire-Questionnaire-Proxy-Access-Request.html" : "Proxy Access Request Form",
-      "StructureDefinition-UKCore-RelatedPerson.html" : "UK Core RelatedPerson"
+      "StructureDefinition-UKCore-RelatedPerson.html" : "UK Core RelatedPerson",
+      "Questionnaire-Questionnaire-Proxy-Access-Request.html" : "Proxy Access Request Form"
+    },
+    {
+      "url" : "https://fhir.nhs.uk/ValueSet/NHSDigital-CareSettingType",
+      "version" : "0.0.1",
+      "status" : "draft",
+      "name" : "NHSDigitalCareSettingType",
+      "title" : "NHSDigital-CareSettingType",
+      "description" : "Cross Hl7 UK version of UKCore CareSetting",
+      "systems" : [
+        "https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-treatment-function",
+        "http://snomed.info/sct"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-Encounter.html" : "Encounter"
     },
     {
       "url" : "https://profiles.ihe.net/ITI/PCF/ValueSet/BasicPurposeVS",

@@ -94,7 +94,7 @@ The previous implementation is mostly unchanged but it is joined by the **Patien
 - encounter identifier which can be used to query encounter documents via Connection Care Records
 - encounter participants
 
-### Scalability
+### Scalability and Subscriptions
 
 At present this proposal is based on requirement from CPIS, the number of providers interested is probably more than just Social Services Safeguarding. As mentioned GP, Community, Mental Health teams may be also interested in these events. It is not a fixed list of interested parties and so is would likely use [Publish-Subscribe Channel](https://www.enterpriseintegrationpatterns.com/patterns/messaging/PublishSubscribeChannel.html) patterns. 
 
@@ -107,4 +107,9 @@ E.g.
 
 <figure>{% include patient-encounter-management-sequence-notifications-subscriptions.svg %}</figure>
 <br clear="all"/>
+
+1. The Patient Encounter Consumer (e.g. Social Services Safeguarding) creates a [Subscription for patient with a NHS Number of 3333333333](Subscription-ex-Encounter-Subscription.html)
+2. The Patient Encounter Source (e.g. an Acute NHS Trust) sends a [Resource Publish Transaction Bundle](Bundle-ex-ResourcePublish.html) to the Subscription Manager.
+3. The Subscription Manager checks for matching subscriptions
+4. For each matching Subscription it sends an [Resource Notify Event Notifiction](Bundle-ex-EventNotification.html)
 

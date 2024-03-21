@@ -14,6 +14,13 @@
     "name" : "UKCoreRelatedPerson"
   },
   {
+    "id" : "NHSDataModelAndDictionary-treatment-function",
+    "type" : "CodeSystem",
+    "url" : "https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-treatment-function",
+    "version" : "0.0.1",
+    "name" : "NHSDataModelandDictionaryTreatmentFunction"
+  },
+  {
     "id" : "BookingProvider",
     "type" : "CapabilityStatement",
     "url" : "https://fhir.nhs.uk/England/CapabilityStatement/BookingProvider",
@@ -188,5 +195,12 @@
     "url" : "https://fhir.nhs.uk/England/StructureDefinition/Slot",
     "version" : "0.0.1",
     "name" : "Slot"
+  },
+  {
+    "id" : "NHSDigital-CareSettingType",
+    "type" : "ValueSet",
+    "url" : "https://fhir.nhs.uk/ValueSet/NHSDigital-CareSettingType",
+    "version" : "0.0.1",
+    "name" : "NHSDigitalCareSettingType"
   }
 ]

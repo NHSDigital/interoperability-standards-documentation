@@ -73,7 +73,7 @@
         "dischargeDisposition": {
             "coding": [
                 {
-                    "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-DischargeDestination",
+                    "system": "https://fhir.hl7.org.uk/CodeSystem/UKCore-DischargeDestinationEngland",
                     "code": "19"
                 }
             ]

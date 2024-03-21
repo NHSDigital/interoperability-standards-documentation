@@ -1,10 +1,10 @@
 NHSEnglandInteroperabilitySkunkworks : Validation Results
 =========================================
 
-err = 48, warn = 59, info = 36
+err = 59, warn = 69, info = 36
 IG Publisher Version: 1.5.16 Out of date - current version is 1.6.3
-Generated Thu Mar 21 09:01:40 GMT 2024. FHIR version 4.0.1 for uk.nhs.england.skunkworks#0.0.1 (canonical = https://fhir.nhs.uk/England)
- Build Errors : 6 / 16 / 0
+Generated Thu Mar 21 14:19:14 GMT 2024. FHIR version 4.0.1 for uk.nhs.england.skunkworks#0.0.1 (canonical = https://fhir.nhs.uk/England)
+ Build Errors : 6 / 19 / 0
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/fsh-generated/resources/CapabilityStatement-BookingProvider : 1 / 0 / 1
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/fsh-generated/resources/CapabilityStatement-IHE.PCF.consentAuthorizationServer : 1 / 0 / 1
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/fsh-generated/resources/CapabilityStatement-NHS-England-APIM-Provider : 1 / 0 / 1
@@ -29,7 +29,11 @@ Generated Thu Mar 21 09:01:40 GMT 2024. FHIR version 4.0.1 for uk.nhs.england.sk
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/fsh-generated/resources/StructureDefinition-Schedule : 1 / 1 / 1
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/fsh-generated/resources/StructureDefinition-ServiceRequest : 1 / 1 / 1
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/fsh-generated/resources/StructureDefinition-Slot : 1 / 1 / 1
- /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/input/examples/Encounter-Outpatient-Francesca-Smith : 1 / 0 / 3
+ /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/input/examples/Bundle-ex-EventNotification : 2 / 1 / 5
+ /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/input/examples/Bundle-ex-ResourcePublish : 2 / 1 / 4
+ /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/input/examples/Encounter-Outpatient-Francesca-Smith : 2 / 1 / 1
+ /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/input/examples/NHSDataModelAndDictionary-treatment-function : 1 / 2 / 1
+ /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/input/examples/NHSDigital-CareSettingType : 1 / 2 / 1
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/input/examples/Patient-Donald-Smith : 0 / 0 / 1
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/input/examples/Patient-Donald-Smith-LeedsTeaching : 0 / 0 / 1
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/input/examples/Patient-Donald-Smith-NHSEngland : 2 / 0 / 1
@@ -39,6 +43,7 @@ Generated Thu Mar 21 09:01:40 GMT 2024. FHIR version 4.0.1 for uk.nhs.england.sk
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/input/examples/Questionnaire-Proxy-Access-Request : 3 / 0 / 9
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/input/examples/RelatedPerson-NHS-9449304130-Jane-Smith : 2 / 0 / 1
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/input/examples/RelatedPerson-PDS-NHS-90000000009-Jane-Smith : 3 / 1 / 5
+ /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/input/examples/Subscription-ex-Encounter-Subscription : 4 / 0 / 1
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/input/history/h1 : 1 / 1 / 2
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/input/resources/Questionnaire.Permission.R4 : 1 / 23 / 10
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/input/resources/StructureDefinition-Patient : 1 / 0 / 1
@@ -57,6 +62,9 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/donald-with-chi-number-and-mrn.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/donald-with-chi-number-mrn-and-nhs-number.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Patient/donald-with-nhs-number.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Subscription/ex-Encounter-Subscription.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/ex-EventNotification.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/ex-ResourcePublish.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Encounter/outpatient-fredrica-smith.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/h1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/output/index.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 450, column 2624: The link 'http://hl7.org/fhir/R4B' for "R4B" cannot be resolved
@@ -137,10 +145,28 @@ WARNING: StructureDefinition.where(url = 'https://fhir.nhs.uk/England/StructureD
 == fsh-generated/resources/StructureDefinition-Slot.json ==
 ERROR: StructureDefinition/Slot: StructureDefinition.jurisdiction[0].coding[0].code: Unknown code 'GB-ENG' in the CodeSystem 'urn:iso:std:iso:3166' version '2018'
 WARNING: StructureDefinition.where(url = 'https://fhir.nhs.uk/England/StructureDefinition/Slot'): The Implementation Guide contains no examples for this profile
+== input/examples/Bundle-ex-EventNotification.json ==
+ERROR: Bundle.entry[1].resource.participant[0].individual.identifier: The property identifier must be an Object, not an Array (at Bundle.entry[1].resource.participant[0].individual.identifier)
+INFORMATION: Bundle/ex-EventNotification: Bundle.entry[1].resource/*Encounter/outpatient-fredrica-smith*/.serviceType: Reference to draft CodeSystem https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-treatment-function|0.0.1
+WARNING: Bundle/ex-EventNotification: Bundle.entry[1].resource/*Encounter/outpatient-fredrica-smith*/.serviceType.coding[0].system: A definition for CodeSystem 'https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-treatment-function' could not be found, so the code cannot be validated
+ERROR: Bundle/ex-EventNotification: Bundle.entry[1].resource/*Encounter/outpatient-fredrica-smith*/.serviceType: Error from http://tx.fhir.org/r4: The filter "constraint = memberOf 1127531000000102" from the value set https://fhir.nhs.uk/ValueSet/NHSDigital-CareSettingType was not understood in the context of http://snomed.info/sct
+== input/examples/Bundle-ex-ResourcePublish.json ==
+ERROR: Bundle.entry[0].resource.participant[0].individual.identifier: The property identifier must be an Object, not an Array (at Bundle.entry[0].resource.participant[0].individual.identifier)
+INFORMATION: Bundle/ex-ResourcePublish: Bundle.entry[0].resource/*Encounter/outpatient-fredrica-smith*/.serviceType: Reference to draft CodeSystem https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-treatment-function|0.0.1
+WARNING: Bundle/ex-ResourcePublish: Bundle.entry[0].resource/*Encounter/outpatient-fredrica-smith*/.serviceType.coding[0].system: A definition for CodeSystem 'https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-treatment-function' could not be found, so the code cannot be validated
+ERROR: Bundle/ex-ResourcePublish: Bundle.entry[0].resource/*Encounter/outpatient-fredrica-smith*/.serviceType: Error from http://tx.fhir.org/r4: The filter "constraint = memberOf 1127531000000102" from the value set https://fhir.nhs.uk/ValueSet/NHSDigital-CareSettingType was not understood in the context of http://snomed.info/sct
 == input/examples/Encounter-Outpatient-Francesca-Smith.json ==
 ERROR: Encounter.participant[0].individual.identifier: The property identifier must be an Object, not an Array (at Encounter.participant[0].individual.identifier)
-INFORMATION: Encounter/outpatient-fredrica-smith: Encounter.serviceType.coding[0]: A definition for CodeSystem 'https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-treatment-function' could not be found, so the code cannot be validated
-INFORMATION: Encounter/outpatient-fredrica-smith: Encounter.hospitalization.dischargeDisposition.coding[0]: A definition for CodeSystem 'https://fhir.hl7.org.uk/CodeSystem/UKCore-DischargeDestination' could not be found, so the code cannot be validated
+WARNING: Encounter/outpatient-fredrica-smith: Encounter.serviceType.coding[0].system: A definition for CodeSystem 'https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-treatment-function' could not be found, so the code cannot be validated
+ERROR: Encounter/outpatient-fredrica-smith: Encounter.serviceType: Error from http://tx.fhir.org/r4: The filter "constraint = memberOf 1127531000000102" from the value set https://fhir.nhs.uk/ValueSet/NHSDigital-CareSettingType was not understood in the context of http://snomed.info/sct
+== input/examples/NHSDataModelAndDictionary-treatment-function.json ==
+ERROR: CodeSystem/NHSDataModelAndDictionary-treatment-function: CodeSystem.jurisdiction[0].coding[0].code: Unknown code 'GB-ENG' in the CodeSystem 'urn:iso:std:iso:3166' version '2018'
+WARNING: CodeSystem/NHSDataModelAndDictionary-treatment-function: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.title is mandatory, but it is not present
+WARNING: CodeSystem/NHSDataModelAndDictionary-treatment-function: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+== input/examples/NHSDigital-CareSettingType.json ==
+ERROR: ValueSet/NHSDigital-CareSettingType: ValueSet.jurisdiction[0].coding[0].code: Unknown code 'GB-ENG' in the CodeSystem 'urn:iso:std:iso:3166' version '2018'
+WARNING: ValueSet/NHSDigital-CareSettingType: ValueSet: Published value sets SHOULD conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+WARNING: ValueSet.where(id = 'NHSDigital-CareSettingType'): Error from http://tx.fhir.org/r4: Unable to provide support for code system https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-treatment-function version 1.2.1
 == input/examples/Patient-Donald-Smith.json ==
 == input/examples/Patient-Donald-Smith-LeedsTeaching.json ==
 == input/examples/Patient-Donald-Smith-NHSEngland.json ==
@@ -185,6 +211,11 @@ ERROR: RelatedPerson/RelatedPerson-PDS-NHS-90000000009-Jane-Smith: RelatedPerson
 ERROR: RelatedPerson/RelatedPerson-PDS-NHS-90000000009-Jane-Smith: RelatedPerson.extension[1]: The extension https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-ContactRank could not be found so is not allowed here
 INFORMATION: RelatedPerson/RelatedPerson-PDS-NHS-90000000009-Jane-Smith: RelatedPerson.extension[3].extension[0].value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage' version '1.0.0' could not be found, so the code cannot be validated. Valid versions: []
 WARNING: RelatedPerson/RelatedPerson-PDS-NHS-90000000009-Jane-Smith: RelatedPerson.relationship[0].coding[0].system: A definition for CodeSystem 'https://fhir.nhs.uk/R4/CodeSystem/UKCore-AdditionalRelatedPersonRole' could not be found, so the code cannot be validated
+== input/examples/Subscription-ex-Encounter-Subscription.json ==
+ERROR: Subscription/ex-Encounter-Subscription: Subscription.criteria.extension[0]: The extension http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-filter-criteria could not be found so is not allowed here
+ERROR: Subscription/ex-Encounter-Subscription: Subscription.criteria.extension[0].url: URL value 'http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-filter-criteria' does not resolve
+ERROR: Subscription/ex-Encounter-Subscription: Subscription.channel.payload.extension[0]: The extension http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-payload-content could not be found so is not allowed here
+ERROR: Subscription/ex-Encounter-Subscription: Subscription.channel.payload.extension[0].url: URL value 'http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-payload-content' does not resolve
 == input/history/h1.json ==
 ERROR: Bundle/h1: Bundle.entry[0].resource/*Provenance/h1-1*/.target[0]: Unable to resolve resource with reference 'StructureDefinition/myObservation'
 WARNING: Bundle/h1: Bundle.entry[0].resource/*Provenance/h1-1*/.reason[0]: No code provided, and a code should be provided from the value set 'PurposeOfUse' (http://terminology.hl7.org/ValueSet/v3-PurposeOfUse|2.0.0)

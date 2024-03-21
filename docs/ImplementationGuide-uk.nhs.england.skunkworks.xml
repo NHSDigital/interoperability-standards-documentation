@@ -10,7 +10,7 @@
   <name value="NHSEnglandInteroperabilitySkunkworks"/>
   <title value="Interoperability Standards - Skunkworks"/>
   <status value="draft"/>
-  <date value="2024-03-21T08:58:26+00:00"/>
+  <date value="2024-03-21T14:16:06+00:00"/>
   <publisher value="NHS England"/>
   <contact>
     <name value="NHS England"/>
@@ -567,6 +567,36 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Subscription"/>
+      </extension>
+      <reference>
+        <reference value="Subscription/ex-Encounter-Subscription"/>
+      </reference>
+      <name value="ex-Encounter-Subscription"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/ex-EventNotification"/>
+      </reference>
+      <name value="ex-EventNotification"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/ex-ResourcePublish"/>
+      </reference>
+      <name value="ex-ResourcePublish"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -619,6 +649,28 @@
       <name value="NHS England IHE Privacy Consent on FHIR (PCF)"/>
       <description value="CapabilityStatement for the Consent Authorization Server Actor for use within the English NHS (Enterprise Architecture) and or NHS England (Solution Architecture). &#xA;This is part of the NHS England National Extension (Volume 4) for [Privacy Consent on FHIR (PCF)](https://profiles.ihe.net/ITI/PCF/index.html). &#xA;&#xA; This profile is implemented by &#xA; - [National Proxy Service](https://digital.nhs.uk/developer/) &#xA;&#xA; These services are potentially used by &#xA;&#xA;**NHS England** &#xA;&#xA; - [National Record Locator](https://digital.nhs.uk/developer/api-catalogue/national-record-locator-fhir) &#xA; - [Security and authorisation](https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation) &#xA;&#xA;**English NHS and NHS England Services** &#xA;&#xA; used in the implementation of the following profiles or services &#xA;&#xA; - [NRL producer system](https://digital.nhs.uk/developer/api-catalogue/national-record-locator-fhir/v3/producer) &#xA; - [IHE Mobile access to Health Documents (MHD)](https://profiles.ihe.net/ITI/MHD/index.html) &#xA; - [IHE Query for Existing Data for Mobile (QEDm)](https://build.fhir.org/ig/IHE/QEDm/branches/master/index.html)"/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/NHSDataModelAndDictionary-treatment-function"/>
+      </reference>
+      <name value="NHSDataModelandDictionaryTreatmentFunction"/>
+      <description value="A CodeSystem to identify the specialty of the care professional or team. FHIR Version of NHS Data Dictionary Main Specialty Code and HSCIC ITK HL7v2 Table ZU012"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/NHSDigital-CareSettingType"/>
+      </reference>
+      <name value="NHSDigital-CareSettingType"/>
+      <description value="Cross Hl7 UK version of UKCore CareSetting"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

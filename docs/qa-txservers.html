@@ -11,7 +11,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Terminology Server Report for NHSEnglandInteroperabilitySkunkworks</h1>
- <p>Generated Thu Mar 21 09:01:40 GMT 2024, FHIR version 4.0.1 for uk.nhs.england.skunkworks#0.0.1 (canonical = <a href="https://fhir.nhs.uk/England">https://fhir.nhs.uk/England</a> (<a href="https://fhir.nhs.uk/England/history.html">history</a>))</p>
+ <p>Generated Thu Mar 21 14:19:14 GMT 2024, FHIR version 4.0.1 for uk.nhs.england.skunkworks#0.0.1 (canonical = <a href="https://fhir.nhs.uk/England">https://fhir.nhs.uk/England</a> (<a href="https://fhir.nhs.uk/England/history.html">history</a>))</p>
 <p>This page provides a report on which terminology servers were used while publishing this IG. Note that terminology caching reduces the server hit count - this page only reports content that wasn't cached</p>
 <h2>Terminology Parameters</h2>
 <ul>
@@ -23,7 +23,7 @@
 <h2>Tx Manager report for 'http://tx.fhir.org/tx-reg'</h2>
 <ul>
   <li>Request for system [https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-treatment-function] not handled by any servers. Using master @ 'http://tx.fhir.org/r4'</li>
-  <li>Request for system [https://fhir.hl7.org.uk/CodeSystem/UKCore-DischargeDestination] not handled by any servers. Using master @ 'http://tx.fhir.org/r4'</li>
+  <li>https://fhir.nhs.uk/ValueSet/NHSDigital-CareSettingType|0.0.1 includes multiple systems [https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-treatment-function|1.2.1, https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-treatment-function, http://snomed.info/sct] best handled by multiple servers: [auth = , candidates=, auth = , candidates=, auth = , candidates=http://tx.fhir.org/r4|https://tx.ontoserver.csiro.au/fhir]. Using master @ 'http://tx.fhir.org/r4'</li>
   <li>Request for system [https://fhir.nhs.uk/CodeSystem/PDS-RemovalReasonExitCode] not handled by any servers. Using master @ 'http://tx.fhir.org/r4'</li>
   <li>Request for system [https://fhir.nhs.uk/R4/CodeSystem/UKCore-AdditionalRelatedPersonRole] not handled by any servers. Using master @ 'http://tx.fhir.org/r4'</li>
 </ul>
@@ -45,13 +45,23 @@
     </th>
   </tr>
   <tr>
-    <td>https://fhir.hl7.org.uk/CodeSystem/UKCore-DischargeDestination</td>
+    <td>http://snomed.info/sct</td>
     <td>0</td>
     <td>1</td>
-    <td/>
+    <td>
+      <a href="http://hl7.org/fhir/R4/codesystem-snomedct.html">SNOMED CT (all versions)</a>
+    </td>
   </tr>
   <tr>
     <td>https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-treatment-function</td>
+    <td>0</td>
+    <td>2</td>
+    <td>
+      <a href="CodeSystem-NHSDataModelAndDictionary-treatment-function.html">NHSDataModelandDictionaryTreatmentFunction</a>
+    </td>
+  </tr>
+  <tr>
+    <td>https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-treatment-function|1.2.1</td>
     <td>0</td>
     <td>1</td>
     <td/>

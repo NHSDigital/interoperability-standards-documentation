@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "NHSEnglandInteroperabilitySkunkworks"] ; # 
   fhir:title [ fhir:v "Interoperability Standards - Skunkworks"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-03-21T08:58:26+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-03-21T14:16:06+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "NHS England"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "NHS England" ] ;
@@ -665,6 +665,39 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Subscription" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.nhs.uk/England/Subscription/ex-Encounter-Subscription> ;
+         fhir:reference [ fhir:v "Subscription/ex-Encounter-Subscription" ]
+       ] ;
+       fhir:name [ fhir:v "ex-Encounter-Subscription" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Bundle" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.nhs.uk/England/Bundle/ex-EventNotification> ;
+         fhir:reference [ fhir:v "Bundle/ex-EventNotification" ]
+       ] ;
+       fhir:name [ fhir:v "ex-EventNotification" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Bundle" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.nhs.uk/England/Bundle/ex-ResourcePublish> ;
+         fhir:reference [ fhir:v "Bundle/ex-ResourcePublish" ]
+       ] ;
+       fhir:name [ fhir:v "ex-ResourcePublish" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
@@ -725,6 +758,30 @@
        fhir:name [ fhir:v "NHS England IHE Privacy Consent on FHIR (PCF)" ] ;
        fhir:description [ fhir:v "CapabilityStatement for the Consent Authorization Server Actor for use within the English NHS (Enterprise Architecture) and or NHS England (Solution Architecture). \nThis is part of the NHS England National Extension (Volume 4) for [Privacy Consent on FHIR (PCF)](https://profiles.ihe.net/ITI/PCF/index.html). \n\n This profile is implemented by \n - [National Proxy Service](https://digital.nhs.uk/developer/) \n\n These services are potentially used by \n\n**NHS England** \n\n - [National Record Locator](https://digital.nhs.uk/developer/api-catalogue/national-record-locator-fhir) \n - [Security and authorisation](https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation) \n\n**English NHS and NHS England Services** \n\n used in the implementation of the following profiles or services \n\n - [NRL producer system](https://digital.nhs.uk/developer/api-catalogue/national-record-locator-fhir/v3/producer) \n - [IHE Mobile access to Health Documents (MHD)](https://profiles.ihe.net/ITI/MHD/index.html) \n - [IHE Query for Existing Data for Mobile (QEDm)](https://build.fhir.org/ig/IHE/QEDm/branches/master/index.html)" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.nhs.uk/England/CodeSystem/NHSDataModelAndDictionary-treatment-function> ;
+         fhir:reference [ fhir:v "CodeSystem/NHSDataModelAndDictionary-treatment-function" ]
+       ] ;
+       fhir:name [ fhir:v "NHSDataModelandDictionaryTreatmentFunction" ] ;
+       fhir:description [ fhir:v "A CodeSystem to identify the specialty of the care professional or team. FHIR Version of NHS Data Dictionary Main Specialty Code and HSCIC ITK HL7v2 Table ZU012" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.nhs.uk/England/ValueSet/NHSDigital-CareSettingType> ;
+         fhir:reference [ fhir:v "ValueSet/NHSDigital-CareSettingType" ]
+       ] ;
+       fhir:name [ fhir:v "NHSDigital-CareSettingType" ] ;
+       fhir:description [ fhir:v "Cross Hl7 UK version of UKCore CareSetting" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;

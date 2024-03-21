@@ -188,6 +188,12 @@
     "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract": [
       "Questionnaire.item"
     ],
+    "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-filter-criteria": [
+      "Subscription.criteria"
+    ],
+    "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-payload-content": [
+      "Subscription.channel.payload"
+    ],
     "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AddressKey": [
       "Patient.address",
       "RelatedPerson.address"
