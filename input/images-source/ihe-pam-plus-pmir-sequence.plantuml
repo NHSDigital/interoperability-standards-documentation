@@ -8,7 +8,7 @@ participant "Patient Identity Source" as PIXSource
 participant "Patient Demographic Registry" as PIXManager
 participant "Patient Identity Consumer" as PIXConsumer
 
-PIXConsumer -> PIXManager: Subscribe to Patient Updates\nIHE PMIR ITI-94
+PIXConsumer -> PIXManager: Resource Subscr\nIHE PMIR ITI-94
 PIXManager --> PIXConsumer : Acknowledgement
 PIXSource -> PIXManager :  Patient Demographic Query\nIHE PDQm ITI-78
 PIXManager --> PIXSource : Response

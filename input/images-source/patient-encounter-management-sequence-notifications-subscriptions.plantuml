@@ -1,0 +1,22 @@
+@startuml
+
+hide footbox
+
+title "Patient Encounter Feed with FHIR Subscriptions"
+
+participant "Patient Ecounter Source" as PIXSource
+participant "Patient Administration Service\n/Trust Integration Engine" as PIXManager
+participant "Patient Encounter Consumer" as PIXConsumer
+
+PIXConsumer -> PIXManager: Resource Subscription\nIHE DSUBm ITI-110
+PIXManager --> PIXConsumer : Acknowledgement
+opt No matching Patient
+  PIXSource -> PIXManager: Patient Encounter Feed \nPOST /Encounter
+  PIXManager --> PIXSource : Response
+end
+opt if record created or updated
+    PIXManager -> PIXConsumer: Resource Publish \nIHE DSUBm ITI-111
+    PIXConsumer --> PIXManager: Acknowledgement
+end
+
+@enduml

@@ -1,0 +1,20 @@
+@startuml
+
+hide footbox
+
+title "Patient Encounter Management (IHE PEM))"
+
+participant "Patient Encounter Source \n(e.g. Patient Administration System (PAS))" as PEMSource
+participant "Trust Integration Engine (TIE)\nor Orchestration Engine" as PEMManager
+participant "Patient Encounter Consumer" as PEMConsumer
+
+
+PEMSource -> PEMManager : Patient Encounter Feed \n IHE PEM / HL7 v2 ADT
+PEMManager -> PEMSource : Acknowledgement
+loop for each recipient
+  PEMManager -> PEMConsumer : Patient Encounter Feed \n IHE PEM / HL7 v2 ADT
+  PEMConsumer -> PEMManager : Acknowledgement
+end
+
+
+@enduml

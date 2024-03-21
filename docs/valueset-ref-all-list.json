@@ -12,12 +12,12 @@
       "sources" : ["2.16.840.1.113883.4.642.3.1"],
       "uses" : {
       },
+      "StructureDefinition-Practitioner.html" : "Practitioner",
+      "StructureDefinition-Patient.html" : "Patient",
       "StructureDefinition-RelatedPerson.html" : "RelatedPerson",
       "StructureDefinition-PatientPDS.html" : "PatientPDS",
-      "StructureDefinition-UKCore-RelatedPerson.html" : "UK Core RelatedPerson",
-      "StructureDefinition-Patient.html" : "Patient",
-      "StructureDefinition-Practitioner.html" : "Practitioner",
-      "StructureDefinition-PatientPDSNHSNumberAllocation.html" : "PatientPDSNHSNumberAllocation"
+      "StructureDefinition-PatientPDSNHSNumberAllocation.html" : "PatientPDSNHSNumberAllocation",
+      "StructureDefinition-UKCore-RelatedPerson.html" : "UK Core RelatedPerson"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/appointment-cancellation-reason",
@@ -104,13 +104,13 @@
       "sources" : ["2.16.840.1.113883.3.88.12.80.72"],
       "uses" : {
       },
-      "StructureDefinition-Appointment.html" : "Appointment",
-      "StructureDefinition-OrganizationAffiliation.html" : "OrganizationAffiliation",
-      "StructureDefinition-Slot.html" : "Slot",
       "StructureDefinition-Schedule.html" : "Schedule",
       "StructureDefinition-DocumentReference.html" : "DocumentReference",
+      "StructureDefinition-Slot.html" : "Slot",
+      "StructureDefinition-PractitionerRole.html" : "PractitionerRole",
+      "StructureDefinition-Appointment.html" : "Appointment",
       "StructureDefinition-HealthcareService.html" : "HealthcareService",
-      "StructureDefinition-PractitionerRole.html" : "PractitionerRole"
+      "StructureDefinition-OrganizationAffiliation.html" : "OrganizationAffiliation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/composition-status",
@@ -332,8 +332,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.512"],
       "uses" : {
       },
-      "StructureDefinition-HealthcareService.html" : "HealthcareService",
-      "StructureDefinition-PractitionerRole.html" : "PractitionerRole"
+      "StructureDefinition-PractitionerRole.html" : "PractitionerRole",
+      "StructureDefinition-HealthcareService.html" : "HealthcareService"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/diagnosis-role",
@@ -464,9 +464,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.250"],
       "uses" : {
       },
+      "StructureDefinition-Encounter.html" : "Encounter",
       "StructureDefinition-AppointmentResponse.html" : "AppointmentResponse",
-      "StructureDefinition-Appointment.html" : "Appointment",
-      "StructureDefinition-Encounter.html" : "Encounter"
+      "StructureDefinition-Appointment.html" : "Appointment"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/encounter-reason",
@@ -480,8 +480,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.261"],
       "uses" : {
       },
-      "StructureDefinition-Appointment.html" : "Appointment",
-      "StructureDefinition-Encounter.html" : "Encounter"
+      "StructureDefinition-Encounter.html" : "Encounter",
+      "StructureDefinition-Appointment.html" : "Appointment"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/encounter-special-arrangements",
@@ -617,13 +617,13 @@
       "sources" : ["2.16.840.1.113883.4.642.3.45"],
       "uses" : {
       },
-      "StructureDefinition-RelatedPerson.html" : "RelatedPerson",
-      "StructureDefinition-PatientPDS.html" : "PatientPDS",
-      "StructureDefinition-UKCore-RelatedPerson.html" : "UK Core RelatedPerson",
+      "StructureDefinition-Patient.html" : "Patient",
       "StructureDefinition-Organization.html" : "Organization",
       "StructureDefinition-UKCore-Organization.html" : "UK Core Organization",
-      "StructureDefinition-Patient.html" : "Patient",
-      "StructureDefinition-PatientPDSNHSNumberAllocation.html" : "PatientPDSNHSNumberAllocation"
+      "StructureDefinition-RelatedPerson.html" : "RelatedPerson",
+      "StructureDefinition-PatientPDS.html" : "PatientPDS",
+      "StructureDefinition-PatientPDSNHSNumberAllocation.html" : "PatientPDSNHSNumberAllocation",
+      "StructureDefinition-UKCore-RelatedPerson.html" : "UK Core RelatedPerson"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
@@ -637,13 +637,13 @@
       "sources" : ["2.16.840.1.113883.4.642.3.57"],
       "uses" : {
       },
-      "StructureDefinition-RelatedPerson.html" : "RelatedPerson",
-      "StructureDefinition-PatientPDS.html" : "PatientPDS",
-      "StructureDefinition-UKCore-RelatedPerson.html" : "UK Core RelatedPerson",
+      "StructureDefinition-Patient.html" : "Patient",
       "StructureDefinition-Organization.html" : "Organization",
       "StructureDefinition-UKCore-Organization.html" : "UK Core Organization",
-      "StructureDefinition-Patient.html" : "Patient",
-      "StructureDefinition-PatientPDSNHSNumberAllocation.html" : "PatientPDSNHSNumberAllocation"
+      "StructureDefinition-RelatedPerson.html" : "RelatedPerson",
+      "StructureDefinition-PatientPDS.html" : "PatientPDS",
+      "StructureDefinition-PatientPDSNHSNumberAllocation.html" : "PatientPDSNHSNumberAllocation",
+      "StructureDefinition-UKCore-RelatedPerson.html" : "UK Core RelatedPerson"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/languages",
@@ -657,27 +657,27 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-AppointmentResponse.html" : "AppointmentResponse",
-      "StructureDefinition-RelatedPerson.html" : "RelatedPerson",
-      "StructureDefinition-Appointment.html" : "Appointment",
-      "StructureDefinition-PatientPDS.html" : "PatientPDS",
-      "StructureDefinition-Organization.html" : "Organization",
-      "StructureDefinition-UKCore-Organization.html" : "UK Core Organization",
-      "StructureDefinition-Patient.html" : "Patient",
-      "StructureDefinition-OrganizationAffiliation.html" : "OrganizationAffiliation",
-      "StructureDefinition-Endpoint.html" : "Endpoint",
-      "StructureDefinition-Practitioner.html" : "Practitioner",
-      "StructureDefinition-Slot.html" : "Slot",
-      "StructureDefinition-Schedule.html" : "Schedule",
-      "StructureDefinition-DocumentReference.html" : "DocumentReference",
-      "StructureDefinition-Encounter.html" : "Encounter",
-      "StructureDefinition-PatientPDSNHSNumberAllocation.html" : "PatientPDSNHSNumberAllocation",
       "StructureDefinition-Observation.html" : "Observation",
-      "StructureDefinition-UKCore-RelatedPerson.html" : "UK Core RelatedPerson",
+      "StructureDefinition-Practitioner.html" : "Practitioner",
+      "StructureDefinition-Schedule.html" : "Schedule",
+      "StructureDefinition-Patient.html" : "Patient",
+      "StructureDefinition-DocumentReference.html" : "DocumentReference",
       "StructureDefinition-ServiceRequest.html" : "ServiceRequest",
-      "StructureDefinition-IHEPCF-Basic-Consent.html" : "BasicConsent",
+      "StructureDefinition-AppointmentResponse.html" : "AppointmentResponse",
+      "StructureDefinition-Endpoint.html" : "Endpoint",
+      "StructureDefinition-Appointment.html" : "Appointment",
       "StructureDefinition-HealthcareService.html" : "HealthcareService",
-      "StructureDefinition-PractitionerRole.html" : "PractitionerRole"
+      "StructureDefinition-PatientPDSNHSNumberAllocation.html" : "PatientPDSNHSNumberAllocation",
+      "StructureDefinition-IHEPCF-Basic-Consent.html" : "BasicConsent",
+      "StructureDefinition-Encounter.html" : "Encounter",
+      "StructureDefinition-Slot.html" : "Slot",
+      "StructureDefinition-Organization.html" : "Organization",
+      "StructureDefinition-PractitionerRole.html" : "PractitionerRole",
+      "StructureDefinition-UKCore-Organization.html" : "UK Core Organization",
+      "StructureDefinition-RelatedPerson.html" : "RelatedPerson",
+      "StructureDefinition-PatientPDS.html" : "PatientPDS",
+      "StructureDefinition-OrganizationAffiliation.html" : "OrganizationAffiliation",
+      "StructureDefinition-UKCore-RelatedPerson.html" : "UK Core RelatedPerson"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/link-type",
@@ -691,8 +691,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.423"],
       "uses" : {
       },
-      "StructureDefinition-PatientPDS.html" : "PatientPDS",
       "StructureDefinition-Patient.html" : "Patient",
+      "StructureDefinition-PatientPDS.html" : "PatientPDS",
       "StructureDefinition-PatientPDSNHSNumberAllocation.html" : "PatientPDSNHSNumberAllocation"
     },
     {
@@ -726,8 +726,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.29"],
       "uses" : {
       },
-      "StructureDefinition-PatientPDS.html" : "PatientPDS",
       "StructureDefinition-Patient.html" : "Patient",
+      "StructureDefinition-PatientPDS.html" : "PatientPDS",
       "StructureDefinition-PatientPDSNHSNumberAllocation.html" : "PatientPDSNHSNumberAllocation"
     },
     {
@@ -899,8 +899,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.1130"],
       "uses" : {
       },
-      "StructureDefinition-PatientPDS.html" : "PatientPDS",
       "StructureDefinition-Patient.html" : "Patient",
+      "StructureDefinition-PatientPDS.html" : "PatientPDS",
       "StructureDefinition-PatientPDSNHSNumberAllocation.html" : "PatientPDSNHSNumberAllocation"
     },
     {
@@ -1049,13 +1049,13 @@
       "sources" : ["2.16.840.1.113883.4.642.3.27"],
       "uses" : {
       },
-      "StructureDefinition-RelatedPerson.html" : "RelatedPerson",
-      "StructureDefinition-PatientPDS.html" : "PatientPDS",
-      "StructureDefinition-UKCore-RelatedPerson.html" : "UK Core RelatedPerson",
+      "Questionnaire-permission.html" : "Permission",
       "StructureDefinition-Organization.html" : "Organization",
       "StructureDefinition-UKCore-Organization.html" : "UK Core Organization",
-      "Questionnaire-permission.html" : "Permission",
-      "StructureDefinition-PatientPDSNHSNumberAllocation.html" : "PatientPDSNHSNumberAllocation"
+      "StructureDefinition-RelatedPerson.html" : "RelatedPerson",
+      "StructureDefinition-PatientPDS.html" : "PatientPDS",
+      "StructureDefinition-PatientPDSNHSNumberAllocation.html" : "PatientPDSNHSNumberAllocation",
+      "StructureDefinition-UKCore-RelatedPerson.html" : "UK Core RelatedPerson"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/security-labels",
@@ -1075,8 +1075,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.47"],
       "uses" : {
       },
-      "StructureDefinition-DocumentReference.html" : "DocumentReference",
-      "StructureDefinition-IHEPCF-Basic-Consent.html" : "BasicConsent"
+      "StructureDefinition-IHEPCF-Basic-Consent.html" : "BasicConsent",
+      "StructureDefinition-DocumentReference.html" : "DocumentReference"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/security-role-type",
@@ -1112,9 +1112,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.516"],
       "uses" : {
       },
-      "StructureDefinition-Appointment.html" : "Appointment",
-      "StructureDefinition-Slot.html" : "Slot",
       "StructureDefinition-Schedule.html" : "Schedule",
+      "StructureDefinition-Slot.html" : "Slot",
+      "StructureDefinition-Appointment.html" : "Appointment",
       "StructureDefinition-HealthcareService.html" : "HealthcareService"
     },
     {
@@ -1161,10 +1161,10 @@
       "sources" : ["2.16.840.1.113883.4.642.3.518"],
       "uses" : {
       },
-      "StructureDefinition-Appointment.html" : "Appointment",
-      "StructureDefinition-Slot.html" : "Slot",
       "StructureDefinition-Schedule.html" : "Schedule",
       "StructureDefinition-Encounter.html" : "Encounter",
+      "StructureDefinition-Slot.html" : "Slot",
+      "StructureDefinition-Appointment.html" : "Appointment",
       "StructureDefinition-HealthcareService.html" : "HealthcareService"
     },
     {
@@ -1235,8 +1235,8 @@
       "sources" : ["2.16.840.1.113883.21.181"],
       "uses" : {
       },
-      "StructureDefinition-Appointment.html" : "Appointment",
-      "StructureDefinition-Slot.html" : "Slot"
+      "StructureDefinition-Slot.html" : "Slot",
+      "StructureDefinition-Appointment.html" : "Appointment"
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/v2-2.7-0360",
@@ -1348,8 +1348,8 @@
       ],
       "uses" : {
       },
-      "Questionnaire-Questionnaire-Proxy-Access-Request.html" : "Proxy Access Request Form",
       "StructureDefinition-RelatedPerson.html" : "RelatedPerson",
+      "Questionnaire-Questionnaire-Proxy-Access-Request.html" : "Proxy Access Request Form",
       "StructureDefinition-UKCore-RelatedPerson.html" : "UK Core RelatedPerson"
     },
     {

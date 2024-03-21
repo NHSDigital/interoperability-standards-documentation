@@ -1,0 +1,29 @@
+@startuml
+
+hide footbox
+
+title "Patient Encounter Management with CPIS"
+
+participant "Patient Encounter Source \n(e.g. Patient Administration System (PAS))" as PEMSource
+participant "Trust Integration Engine (TIE)\nor Orchestration Engine" as PEMManager
+participant "Patient Encounter Consumer" as PEMConsumer
+participant CPIS
+participant "CHFT Safeguarding" as CHFTSafe
+participant "Social Service Safeguarding" as SocialSafe
+
+
+PEMSource -> PEMManager : Patient Encounter Feed \n IHE PEM / HL7 v2 ADT
+PEMManager -> PEMSource : Acknowledgement
+loop for each recipient
+  PEMManager -> PEMConsumer : Patient Encounter Feed \n IHE PEM / HL7 v2 ADT
+  PEMConsumer -> PEMManager : Acknowledgement
+end
+alt Check CPIS
+PEMManager -> CPIS: Check CPIS
+alt if CPIS record found
+  PEMManager -> CHFTSafe: Send email alert (and update CarePlans on PAS)
+  CPIS --> SocialSafe: Alert Social Services of Patient Encounter
+end
+end
+
+@enduml
