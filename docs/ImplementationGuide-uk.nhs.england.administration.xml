@@ -10,7 +10,7 @@
   <name value="NHSEnglandInteroperabilitySkunkworks"/>
   <title value="Health Administration Interoperability Standards - Skunkworks"/>
   <status value="draft"/>
-  <date value="2024-03-22T14:34:11+00:00"/>
+  <date value="2024-03-22T16:20:37+00:00"/>
   <publisher value="NHS England"/>
   <contact>
     <name value="NHS England"/>
@@ -677,6 +677,17 @@
       </reference>
       <name value="NHS England Booking Provider"/>
       <description value="Provider supports read-only access to a for the purposes of direct care and subject of care access. &#xA;&#xA;**THIS IS FOR DEMONSTRATION PURPOSES**"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/Consent"/>
+      </reference>
+      <name value="NHS England Consent Profile"/>
+      <description value="Record consent to capture information for NHS England flags"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

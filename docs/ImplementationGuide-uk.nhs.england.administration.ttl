@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "NHSEnglandInteroperabilitySkunkworks"] ; # 
   fhir:title [ fhir:v "Health Administration Interoperability Standards - Skunkworks"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-03-22T14:34:11+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-03-22T16:20:37+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "NHS England"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "NHS England" ] ;
@@ -795,6 +795,18 @@
        ] ;
        fhir:name [ fhir:v "NHS England Booking Provider" ] ;
        fhir:description [ fhir:v "Provider supports read-only access to a for the purposes of direct care and subject of care access. \n\n**THIS IS FOR DEMONSTRATION PURPOSES**" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.nhs.uk/England/StructureDefinition/Consent> ;
+         fhir:reference [ fhir:v "StructureDefinition/Consent" ]
+       ] ;
+       fhir:name [ fhir:v "NHS England Consent Profile" ] ;
+       fhir:description [ fhir:v "Record consent to capture information for NHS England flags" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [

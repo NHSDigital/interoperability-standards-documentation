@@ -10,7 +10,7 @@
   "name" : "NHSEnglandInteroperabilitySkunkworks",
   "title" : "Health Administration Interoperability Standards - Skunkworks",
   "status" : "draft",
-  "date" : "2024-03-22T14:34:11+00:00",
+  "date" : "2024-03-22T16:20:37+00:00",
   "publisher" : "NHS England",
   "contact" : [{
     "name" : "NHS England",
@@ -856,6 +856,18 @@
       },
       "name" : "NHS England Booking Provider",
       "description" : "Provider supports read-only access to a for the purposes of direct care and subject of care access. \n\n**THIS IS FOR DEMONSTRATION PURPOSES**",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/Consent"
+      },
+      "name" : "NHS England Consent Profile",
+      "description" : "Record consent to capture information for NHS England flags",
       "exampleBoolean" : false
     },
     {

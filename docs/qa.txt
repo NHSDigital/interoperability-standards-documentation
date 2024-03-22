@@ -1,9 +1,9 @@
 NHSEnglandInteroperabilitySkunkworks : Validation Results
 =========================================
 
-err = 71, warn = 82, info = 40
+err = 72, warn = 83, info = 44
 IG Publisher Version: 1.6.3
-Generated Fri Mar 22 14:36:25 GMT 2024. FHIR version 4.0.1 for uk.nhs.england.administration#0.0.1 (canonical = https://fhir.nhs.uk/England)
+Generated Fri Mar 22 16:22:44 GMT 2024. FHIR version 4.0.1 for uk.nhs.england.administration#0.0.1 (canonical = https://fhir.nhs.uk/England)
  Build Errors : 5 / 23 / 0
  C:\Development\NHSEngland\interoperability-standards-discovery\fsh-generated\resources\CapabilityStatement-BookingProvider : 1 / 0 / 1
  C:\Development\NHSEngland\interoperability-standards-discovery\fsh-generated\resources\CapabilityStatement-IHE.PCF.consentAuthorizationServer : 1 / 0 / 1
@@ -13,13 +13,14 @@ Generated Fri Mar 22 14:36:25 GMT 2024. FHIR version 4.0.1 for uk.nhs.england.ad
  C:\Development\NHSEngland\interoperability-standards-discovery\fsh-generated\resources\RelatedPerson-RelatedPerson-NHS-91000000009 : 1 / 0 / 1
  C:\Development\NHSEngland\interoperability-standards-discovery\fsh-generated\resources\StructureDefinition-Appointment : 1 / 1 / 1
  C:\Development\NHSEngland\interoperability-standards-discovery\fsh-generated\resources\StructureDefinition-AppointmentResponse : 1 / 1 / 1
+ C:\Development\NHSEngland\interoperability-standards-discovery\fsh-generated\resources\StructureDefinition-Consent : 1 / 1 / 1
  C:\Development\NHSEngland\interoperability-standards-discovery\fsh-generated\resources\StructureDefinition-DocumentReference : 1 / 1 / 1
  C:\Development\NHSEngland\interoperability-standards-discovery\fsh-generated\resources\StructureDefinition-Encounter : 1 / 0 / 1
  C:\Development\NHSEngland\interoperability-standards-discovery\fsh-generated\resources\StructureDefinition-Endpoint : 1 / 1 / 1
  C:\Development\NHSEngland\interoperability-standards-discovery\fsh-generated\resources\StructureDefinition-HealthcareService : 1 / 1 / 1
  C:\Development\NHSEngland\interoperability-standards-discovery\fsh-generated\resources\StructureDefinition-IHEPCF-Basic-Consent : 1 / 1 / 3
  C:\Development\NHSEngland\interoperability-standards-discovery\fsh-generated\resources\StructureDefinition-Observation : 1 / 1 / 1
- C:\Development\NHSEngland\interoperability-standards-discovery\fsh-generated\resources\StructureDefinition-Organization : 1 / 1 / 1
+ C:\Development\NHSEngland\interoperability-standards-discovery\fsh-generated\resources\StructureDefinition-Organization : 1 / 1 / 5
  C:\Development\NHSEngland\interoperability-standards-discovery\fsh-generated\resources\StructureDefinition-OrganizationAffiliation : 1 / 1 / 1
  C:\Development\NHSEngland\interoperability-standards-discovery\fsh-generated\resources\StructureDefinition-PatientHL7v2 : 1 / 0 / 1
  C:\Development\NHSEngland\interoperability-standards-discovery\fsh-generated\resources\StructureDefinition-PatientPDS : 1 / 0 / 1
@@ -106,6 +107,9 @@ WARNING: StructureDefinition.where(url = 'https://fhir.nhs.uk/England/StructureD
 == fsh-generated\resources\StructureDefinition-AppointmentResponse.json ==
 ERROR: StructureDefinition/AppointmentResponse: StructureDefinition.jurisdiction[0].coding[0].code: Unknown code 'GB-ENG' in the CodeSystem 'urn:iso:std:iso:3166' version '2018'
 WARNING: StructureDefinition.where(url = 'https://fhir.nhs.uk/England/StructureDefinition/AppointmentResponse'): The Implementation Guide contains no examples for this profile
+== fsh-generated\resources\StructureDefinition-Consent.json ==
+ERROR: StructureDefinition/Consent: StructureDefinition.jurisdiction[0].coding[0].code: Unknown code 'GB-ENG' in the CodeSystem 'urn:iso:std:iso:3166' version '2018'
+WARNING: StructureDefinition.where(url = 'https://fhir.nhs.uk/England/StructureDefinition/Consent'): The Implementation Guide contains no examples for this profile
 == fsh-generated\resources\StructureDefinition-DocumentReference.json ==
 ERROR: StructureDefinition/DocumentReference: StructureDefinition.jurisdiction[0].coding[0].code: Unknown code 'GB-ENG' in the CodeSystem 'urn:iso:std:iso:3166' version '2018'
 WARNING: StructureDefinition.where(url = 'https://fhir.nhs.uk/England/StructureDefinition/DocumentReference'): The Implementation Guide contains no examples for this profile
@@ -127,6 +131,10 @@ ERROR: StructureDefinition/Observation: StructureDefinition.jurisdiction[0].codi
 WARNING: StructureDefinition.where(url = 'https://fhir.nhs.uk/England/StructureDefinition/Observation'): The Implementation Guide contains no examples for this profile
 == fsh-generated\resources\StructureDefinition-Organization.json ==
 ERROR: StructureDefinition/Organization: StructureDefinition.jurisdiction[0].coding[0].code: Unknown code 'GB-ENG' in the CodeSystem 'urn:iso:std:iso:3166' version '2018'
+INFORMATION: StructureDefinition/Organization: StructureDefinition.snapshot.element[23].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/Organization: StructureDefinition.snapshot.element[32].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/Organization: StructureDefinition.snapshot.element[52].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/Organization: StructureDefinition.snapshot.element[75].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 WARNING: StructureDefinition.where(url = 'https://fhir.nhs.uk/England/StructureDefinition/Organization'): The Implementation Guide contains no examples for this profile
 == fsh-generated\resources\StructureDefinition-OrganizationAffiliation.json ==
 ERROR: StructureDefinition/OrganizationAffiliation: StructureDefinition.jurisdiction[0].coding[0].code: Unknown code 'GB-ENG' in the CodeSystem 'urn:iso:std:iso:3166' version '2018'

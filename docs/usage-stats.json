@@ -29,6 +29,12 @@
         "title": "AppointmentResponse"
       }
     ],
+    "Consent": [
+      {
+        "url": "https://fhir.nhs.uk/England/StructureDefinition/IHEPCF-Basic-Consent",
+        "title": "BasicConsent"
+      }
+    ],
     "DocumentReference": [
       {
         "url": "https://fhir.nhs.uk/England/StructureDefinition/DocumentReference",
@@ -51,12 +57,6 @@
       {
         "url": "https://fhir.nhs.uk/England/StructureDefinition/HealthcareService",
         "title": "HealthcareService"
-      }
-    ],
-    "Consent": [
-      {
-        "url": "https://fhir.nhs.uk/England/StructureDefinition/IHEPCF-Basic-Consent",
-        "title": "BasicConsent"
       }
     ],
     "Observation": [
@@ -138,6 +138,9 @@
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
       "StructureDefinition.snapshot.element.binding"
     ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
       "StructureDefinition.snapshot.element.binding"
     ],
@@ -183,8 +186,12 @@
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
       "StructureDefinition.snapshot.element.type"
     ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version": [
+      "StructureDefinition.snapshot.element"
+    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
-      "StructureDefinition"
+      "StructureDefinition",
+      "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
       "ImplementationGuide.definition"

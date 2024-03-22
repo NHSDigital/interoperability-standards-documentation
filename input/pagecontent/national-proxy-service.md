@@ -10,10 +10,12 @@
 
 Add link to OAS Spec when published
 
+<figure>{% include national-proxy-service-sequence-view-relationship.svg %}</figure>
+<br clear="all"/>
 
 ### View a relationship
 
-<figure>{% include national-proxy-service-sequence-view-relationship.svg %}</figure>
+<figure>{% include consent-usecase.svg %}</figure>
 <br clear="all"/>
 
 The RelatedPerson resource's SHALL conform to [England-RelatedPerson](StructureDefinition-RelatedPerson.html)

@@ -57,8 +57,8 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-UKCore-RelatedPerson.html" : "UK Core RelatedPerson",
-      "Questionnaire-Questionnaire-Proxy-Access-Request.html" : "Proxy Access Request Form"
+      "Questionnaire-Questionnaire-Proxy-Access-Request.html" : "Proxy Access Request Form",
+      "StructureDefinition-UKCore-RelatedPerson.html" : "UK Core RelatedPerson"
     },
     {
       "url" : "https://fhir.nhs.uk/ValueSet/NHSDigital-CareSettingType",
