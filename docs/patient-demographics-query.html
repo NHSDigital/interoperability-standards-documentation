@@ -251,47 +251,81 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
-  <li><a href="#current-standards" id="markdown-toc-current-standards">Current Standards</a></li>
-  <li><a href="#identification-feeds-and-notifications" id="markdown-toc-identification-feeds-and-notifications">Identification Feeds and Notifications</a></li>
+  <li><a href="#references" id="markdown-toc-references">References</a></li>
+  <li><a href="#hl7-v2-and-ihe-pdq" id="markdown-toc-hl7-v2-and-ihe-pdq">HL7 v2 and IHE PDQ</a></li>
+  <li><a href="#hl7-fhir-restful-and-ihe-pdqm" id="markdown-toc-hl7-fhir-restful-and-ihe-pdqm">HL7 FHIR RESTful and IHE PDQm</a></li>
 </ul>
 
 </div>
 
-<h3 id="current-standards">Current Standards</h3>
+<p>The scope of this document and proposals is national, regional, NHS Trust and supplier.</p>
 
-<p>The current standard for Patient Demographics Query in England can be found in
-<a href="HSCIC ITK HL7 V2 Message Specifications.pdf" target="_blank">NHS England (ADT) ITK HL7 v2 (2.4) Message Specification</a> the section 3.1.4 Patient Identity Management describes interactions used by the majority of English NHS Trusts and suppliers to implement IHE <a href="https://profiles.ihe.net/ITI/TF/Volume1/ch-5.html">Patient Identifier Cross-referencing (PIX)</a> technical framework.</p>
-
-<!--
-<img src="ihe-pix.png" alt="Structured Data Capture" width="80%" height="80%">
-<br clear="all"/>
--->
-
-<h3 id="identification-feeds-and-notifications">Identification Feeds and Notifications</h3>
-
-<p>PDS has two active projects in this area, these are</p>
+<h3 id="references">References</h3>
 
 <ul>
-  <li>NHS Number allocation</li>
-  <li><a href="https://nhsd-confluence.digital.nhs.uk/display/IOPS/Multicast+Notification+Service">Multi Cast Notification Service</a> (internal link). See <a href="https://digital.nhs.uk/developer/api-catalogue/multicast-notification-service">Multicast Notification Service API</a>
-    <ul>
-      <li>This is a replacement for <a href="https://digital.nhs.uk/developer/api-catalogue/personal-demographics-service-notifications-fhir">Personal Demographics Service Notifications - FHIR</a></li>
-    </ul>
-  </li>
+  <li><a href="https://profiles.ihe.net/ITI/TF/Volume1/ch-8.html">IHE Patient Demographics Query (PDQ)</a></li>
+  <li><a href="https://profiles.ihe.net/ITI/PDQm/index.html">IHE Patient Demographics Query for Mobile (PDQm)</a></li>
+  <li><a href="HSCIC ITK HL7 V2 Message Specifications.pdf" target="_blank">NHS England (ADT) ITK HL7 v2 (2.4) Message Specification</a></li>
 </ul>
 
-<p>A use case around both programmes is</p>
+<h3 id="hl7-v2-and-ihe-pdq">HL7 v2 and IHE PDQ</h3>
 
-<p><code class="language-plaintext highlighter-rouge">Donald has moved from Edinburgh (Scotland) to Leeds (England) for work reasons. Donald has a series condition and was recieving treatment from NHS Lothian, NHS Lothian has liased with Leeds Foundation NHS Trust to continue his care. As Donald is a UK citizen he is eligible for care from NHS England and so Leeds Foundation NHS Trust apply for an English NHS Number</code></p>
+<figure><?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="196px" preserveAspectRatio="none" style="width:275px;height:196px;background:#FFFFFF;" version="1.1" viewBox="0 0 275 196" width="275px" zoomAndPan="magnify"><defs /><g><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="244" x="13.25" y="29.5332">Patient Demographics Query (PDQ)</text><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="60" x2="60" y1="76.2188" y2="189.625" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="217.5" x2="217.5" y1="76.2188" y2="189.625" /><rect fill="#E2E2F0" height="31.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="111" x="5" y="43.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="97" x="12" y="65.1426">PDS Consumer</text><rect fill="#E2E2F0" height="31.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="98" x="168.5" y="43.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="84" x="175.5" y="65.1426">PDS Supplier</text><polygon fill="#181818" points="205.5,120.9219,215.5,124.9219,205.5,128.9219,209.5,124.9219" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="60.5" x2="211.5" y1="124.9219" y2="124.9219" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="88" x="67.5" y="103.7139">IHE PDQ ITI-21</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="133" x="67.5" y="120.0654">HL7 v2 (ITK) QBP_Q21</text><polygon fill="#181818" points="71.5,167.625,61.5,171.625,71.5,175.625,67.5,171.625" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="65.5" x2="216.5" y1="171.625" y2="171.625" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="88" x="77.5" y="150.417">IHE PDQ ITI-22</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="131" x="77.5" y="166.7686">HL7 v2 (ITK) RSP_K21</text></g></svg></figure>
+<p><br clear="all" /></p>
+
+<h4 id="qbp_q21">QBP_Q21</h4>
+
+<p>The example below finds a patient with a MRN identifier of 112234</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>MSH|^~\&amp;|CarefxITK|ORG1|PAS|ORG1|20100511125610+0100||QBP^Q21^QBP_Q21|04857982024975328990|P|2.4|||||GBR||EN||ITKv1.0
+QPD|Q22^Get Person Demographics|QRY123|112234^^^METRO HOSPITAL|
+RCP|I|20^RD
+</code></pre></div></div>
+
+<h4 id="rsp_k21">RSP_K21</h4>
+
+<p>The response to this query contains a single patient in the PID and PD1 segments.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>MSH|^~\&amp;|PAS|ORG1|CarefxITK|ORG1|20100511125611||RSP^K21^RSP_K21|306944|P|2.4|||||GBR||EN||ITKv1.0
+MSA|AA|04857982024975328990
+QAK|QRY123|OK|Q21^Get Person Demographics||1
+QPD|Q21^Get Person Demographics|QRY123|112234^^^METRO HOSPITAL|
+PID|1||112234^^^METRO HOSPITAL||Esther^Priya^^^MS^^L||19861129000000|2|||1 Birley Close^Appley Bridge^Wigan^^WN6 9JL^GBR^H^Q31^Lancashire||||EN|M|C22|||||A|Berlin|N||GBR||DEU||||ED|
+PD1|||ST JOHN'S WOOD MED PRACT^^E87609|G9312382^Abadi^DI^^^Dr
+</code></pre></div></div>
+
+<h3 id="hl7-fhir-restful-and-ihe-pdqm">HL7 FHIR RESTful and IHE PDQm</h3>
+
+<p>The HL7 v2/IHE PDQ is probably not going to be favoured by third party application vendors. They are more likely to favour the IHE PDQm/HL7 FHIR RESTful approach.</p>
+
+<figure><?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="196px" preserveAspectRatio="none" style="width:430px;height:196px;background:#FFFFFF;" version="1.1" viewBox="0 0 430 196" width="430px" zoomAndPan="magnify"><defs /><g><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="256" x="86.25" y="29.5332">Patient Demographics Query (PDQm)</text><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="60" x2="60" y1="76.2188" y2="189.625" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="375.5" x2="375.5" y1="76.2188" y2="189.625" /><rect fill="#E2E2F0" height="31.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="111" x="5" y="43.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="97" x="12" y="65.1426">PDS Consumer</text><rect fill="#E2E2F0" height="31.6094" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="98" x="326.5" y="43.6094" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="84" x="333.5" y="65.1426">PDS Supplier</text><polygon fill="#181818" points="363.5,120.9219,373.5,124.9219,363.5,128.9219,367.5,124.9219" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="60.5" x2="369.5" y1="124.9219" y2="124.9219" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="99" x="67.5" y="103.7139">IHE PDQm ITI-78</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="249" x="67.5" y="120.0654">HL7 FHIR GET /Patient?{queryParameters)</text><polygon fill="#181818" points="71.5,167.625,61.5,171.625,71.5,175.625,67.5,171.625" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="65.5" x2="374.5" y1="171.625" y2="171.625" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="106" x="77.5" y="150.417">IHE PDQm ITI-119</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="291" x="77.5" y="166.7686">HL7 Collection of matching patients (FHIR Patient)</text></g></svg></figure>
+<p><br clear="all" /></p>
+
+<p>Although PDS is not IHE PDQm compliant it has followed this pattern. Please see <a href="https://digital.nhs.uk/developer/api-catalogue/personal-demographics-service-fhir#get-/Patient">NHS England Personal Demographics Service - FHIR API: Search for a patient</a></p>
 
 <h4 id="nhs-acute-trust-example">NHS Acute Trust Example</h4>
 
-<p>Leeds Teaching NHS Trust would have registered Donald as a Patient on their Patient Administration System (PAS), they would have created a Medical Record Number (MRN) to identify Donald across the trusts computer systems and possibly record his (NHS Scotland) CHI Number.
-In HL7 FHIR this would look like <a href="Patient-donald-with-chi-number-and-mrn.html">Patient Donald with CHI Number and MRN</a>. Leeds Teaching Trusts follows <a href="HSCIC ITK HL7 V2 Message Specifications.pdf" target="_blank">NHS England (ADT) ITK HL7 v2 (2.4) Message Specification</a> and so will also have an equivalent HL7 v2 representation.</p>
+<p><code class="language-plaintext highlighter-rouge">Donald has moved from Edinburgh (Scotland) to Leeds (England) for work reasons. Donald has a series condition and was recieving treatment from NHS Lothian, NHS Lothian has liased with Leeds Foundation NHS Trust to continue his care. As Donald is a UK citizen he is eligible for care from NHS England and so Leeds Foundation NHS Trust apply for an English NHS Number</code></p>
+
+<p><img src="PAS-BPMN.png" alt="Patient Demographic Query" width="80%" height="80%" />
+<br clear="all" /></p>
+
+<ol>
+  <li>The first step Leeds Teaching would do would be to find Donald on the local Patient Administration System (PAS).</li>
+  <li>
+    <p>Depending on whether Donald is found or not.</p>
+
+    <p>a. If Donald is found on the PAS, Donalds demographics record would be updated.</p>
+
+    <p>b. If Donalds is not found, Donald would registered Donald as a Patient on the PAS. They would have allocated a Medical Record Number (MRN) to identify Donald across the trusts computer systems and possibly record his (NHS Scotland) CHI Number. In addition, a Task would be created to obtain a NHS Number for Donald.</p>
+  </li>
+</ol>
+
+<p>As HL7 FHIR Donalds record would look like <a href="Patient-donald-with-chi-number-and-mrn.html">Patient Donald with CHI Number and MRN</a>. The updating/creating of this record will generate event notifications to inform other systems of this change, (Leeds Teaching Trust follows <a href="HSCIC ITK HL7 V2 Message Specifications.pdf" target="_blank">NHS England (ADT) ITK HL7 v2 (2.4) Message Specification</a>).</p>
 
 <p>Leeds Teaching NHS Trust registering Donald with NHS England looks like this:</p>
 
-<p><img src="PDS-BPMN.png" alt="Structured Data Capture" width="80%" height="80%" />
+<p><img src="PDS-BPMN.png" alt="Patient Demographic Query" width="80%" height="80%" />
 <br clear="all" /></p>
 
 <ol>
@@ -303,11 +337,8 @@ In HL7 FHIR this would look like <a href="Patient-donald-with-chi-number-and-mrn
 
     <p>b. If Donald is not found on PDS, a NHS Number allocation request (register Donald for care in NHS England) is sent and the returned NHS Number is used to update Leeds Teaching Trusts PAS. The FHIR Patient record returned from PDS looks something like this  <a href="Patient-donald-with-nhs-number.html">Patient Donald with NHS Number</a></p>
   </li>
-  <li>In either case Leeds Teaching Trust need to inform all systems within the trust of the NHS Number. For this they will use the Trust Integration Engine (TIE) which will distribute both HL7 v2 ADT_A31 and/or FHIR Patient updates to the trusts systems. The FHIR Patient could look like this  <a href="Patient-donald-with-chi-number-mrn-and-nhs-number.html">Patient Donald with NHS Number, CHI and MRN</a></li>
+  <li>In either case Leeds Teaching Trust need to inform all systems within the trust of the NHS Number. For this they will use the Trust Integration Engine (TIE) which will distribute both HL7 v2 ADT_A31 and/or FHIR Patient updates to the trusts systems. The FHIR Patient could look like this  <a href="Patient-donald-with-chi-number-mrn-and-nhs-number.html">Patient Donald with NHS Number, CHI and MRN</a>. For more details on this see <a href="patient-identity-management.html">Patient Identity Management (PIX)</a></li>
 </ol>
-
-<figure><?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="270px" preserveAspectRatio="none" style="width:905px;height:270px;background:#FFFFFF;" version="1.1" viewBox="0 0 905 270" width="905px" zoomAndPan="magnify"><defs /><g><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="318" x="295.25" y="28.5352">Leeds Teaching Trust Patient Identity Feeds</text><rect fill="none" height="111.2422" style="stroke:#000000;stroke-width:1.5;" width="890.5" x="9" y="135.5977" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="54" x2="54" y1="73.9766" y2="263.8398" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="287.5" x2="287.5" y1="73.9766" y2="263.8398" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="834.5" x2="834.5" y1="73.9766" y2="263.8398" /><rect fill="#E2E2F0" height="30.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="40" x="34" y="42.4883" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="26" x="41" y="63.0234">PAS</text><rect fill="#E2E2F0" height="30.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="181" x="197.5" y="42.4883" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="167" x="204.5" y="63.0234">Trust Integration Engine</text><rect fill="#E2E2F0" height="30.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="109" x="780.5" y="42.4883" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="95" x="787.5" y="63.0234">Trust Systems</text><polygon fill="#181818" points="276,116.5977,286,120.5977,276,124.5977,280,120.5977" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="54" x2="282" y1="120.5977" y2="120.5977" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="206" x="61" y="100.5449">Demographics Event notification</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="199" x="61" y="115.8555">IHE PIX ITI-8 (HL7 v2 ADT_A31)</text><path d="M9,135.5977 L83,135.5977 L83,142.9082 L73,152.9082 L9,152.9082 L9,135.5977 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.5;" /><rect fill="none" height="111.2422" style="stroke:#000000;stroke-width:1.5;" width="890.5" x="9" y="135.5977" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="29" x="24" y="149.166">loop</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="98" x="98" y="148.2324">[For each system]</text><path d="M19,157.9082 L19,182.9082 L869,182.9082 L869,167.9082 L859,157.9082 L19,157.9082 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;" /><path d="M859,157.9082 L859,167.9082 L869,167.9082 L859,157.9082 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="133" x="373.25" y="175.4766">Notification Methods</text><polygon fill="#181818" points="823,205.5293,833,209.5293,823,213.5293,827,209.5293" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="288" x2="829" y1="209.5293" y2="209.5293" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="523" x="295" y="204.7871">IHE PIX ITI-8 (HL7 v2 ADT_A31) / IHE PIXm ITI-104 (PUT /Patient@identifier={mrn})</text><polygon fill="#181818" points="299,234.8398,289,238.8398,299,242.8398,295,238.8398" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="293" x2="834" y1="238.8398" y2="238.8398" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="116" x="305" y="234.0977">Acknowledgement</text></g></svg></figure>
-<p><br clear="all" /></p>
 
 <p>Notes:</p>
 
@@ -342,7 +373,7 @@ In HL7 FHIR this would look like <a href="Patient-donald-with-chi-number-and-mrn
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.england.nhs.uk/">NHS England</a>.  Package uk.nhs.england.administration#0.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Mar 22, 2024 11:42+0000">2024-03-22</span>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.england.nhs.uk/">NHS England</a>.  Package uk.nhs.england.administration#0.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Mar 22, 2024 12:58+0000">2024-03-22</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <div style="color: #333333" >

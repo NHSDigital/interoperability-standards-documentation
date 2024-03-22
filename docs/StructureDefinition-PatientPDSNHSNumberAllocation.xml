@@ -21,7 +21,7 @@
   <version value="0.0.1"/>
   <name value="PatientPDSNHSNumberAllocation"/>
   <status value="draft"/>
-  <date value="2024-03-22T11:42:20+00:00"/>
+  <date value="2024-03-22T12:58:08+00:00"/>
   <publisher value="NHS England"/>
   <contact>
     <name value="NHS England"/>
@@ -803,7 +803,7 @@
     </element>
     <element id="Patient.name">
       <path value="Patient.name"/>
-      <short value="Name type +&#xA;              Family name +&#xA;              First given name +&#xA;              Business Effective From date"/>
+      <short value="Name type +&#xD;&#xA;              Family name +&#xD;&#xA;              First given name +&#xD;&#xA;              Business Effective From date"/>
       <definition value="A name associated with the individual."/>
       <comment value="A patient may have multiple names with different uses or applicable periods. For animals, the name is a &quot;HumanName&quot; in the sense that is assigned and used by humans and has the same patterns."/>
       <requirements value="Need to be able to track the patient by multiple names. Examples are your official name and a partner name."/>
@@ -1017,7 +1017,7 @@
     </element>
     <element id="Patient.address">
       <path value="Patient.address"/>
-      <short value="Address type&#xA;              Address line 1 or 2 AND Address line 4&#xA;              Business Effective From date"/>
+      <short value="Address type&#xD;&#xA;              Address line 1 or 2 AND Address line 4&#xD;&#xA;              Business Effective From date"/>
       <definition value="An address for the individual."/>
       <comment value="Patient may have multiple addresses with different uses or applicable periods."/>
       <requirements value="May need to keep track of patient addresses for contacting, billing or reporting requirements and also to help with identification."/>
@@ -1846,7 +1846,7 @@
     </element>
     <element id="Patient.generalPractitioner">
       <path value="Patient.generalPractitioner"/>
-      <short value="Registering Authority&#xA;              Organisation Identifier"/>
+      <short value="Registering Authority&#xD;&#xA;              Organisation Identifier"/>
       <definition value="Patient's nominated care provider."/>
       <comment value="This may be the primary care provider (in a GP context), or it may be a patient nominated care manager in a community/disability setting, or even organization that will provide people to perform the care provider roles.  It is not to be used to record Care Teams, these should be in a CareTeam resource that may be linked to the CarePlan or EpisodeOfCare resources.&#xA;Multiple GPs may be recorded against the patient for various reasons, such as a student that has his home GP listed along with the GP at university during the school semesters, or a &quot;fly-in/fly-out&quot; worker that has the onsite GP also included with his home GP to remain aware of medical issues.&#xA;&#xA;Jurisdictions may decide that they can profile this down to 1 if desired, or 1 per type."/>
       <alias value="careProvider"/>
@@ -2683,7 +2683,7 @@
     </element>
     <element id="Patient.name">
       <path value="Patient.name"/>
-      <short value="Name type +&#xA;              Family name +&#xA;              First given name +&#xA;              Business Effective From date"/>
+      <short value="Name type +&#xD;&#xA;              Family name +&#xD;&#xA;              First given name +&#xD;&#xA;              Business Effective From date"/>
     </element>
     <element id="Patient.gender">
       <path value="Patient.gender"/>
@@ -2695,11 +2695,11 @@
     </element>
     <element id="Patient.address">
       <path value="Patient.address"/>
-      <short value="Address type&#xA;              Address line 1 or 2 AND Address line 4&#xA;              Business Effective From date"/>
+      <short value="Address type&#xD;&#xA;              Address line 1 or 2 AND Address line 4&#xD;&#xA;              Business Effective From date"/>
     </element>
     <element id="Patient.generalPractitioner">
       <path value="Patient.generalPractitioner"/>
-      <short value="Registering Authority&#xA;              Organisation Identifier"/>
+      <short value="Registering Authority&#xD;&#xA;              Organisation Identifier"/>
     </element>
   </differential>
 </StructureDefinition>

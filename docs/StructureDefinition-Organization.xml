@@ -12,7 +12,7 @@
   <version value="0.0.1"/>
   <name value="Organization"/>
   <status value="draft"/>
-  <date value="2024-03-22T11:42:20+00:00"/>
+  <date value="2024-03-22T12:58:08+00:00"/>
   <publisher value="NHS England"/>
   <contact>
     <name value="NHS England"/>
@@ -380,9 +380,16 @@
         <human value="Must have either extensions or value[x], not both"/>
         <expression value="extension.exists() != value.exists()"/>
         <xpath value="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])"/>
-        <source value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+        <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
-      <isModifier value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+      <mapping>
+        <identity value="rim"/>
+        <map value="N/A"/>
+      </mapping>
     </element>
     <element id="Organization.extension:organizationPeriod">
       <path value="Organization.extension"/>

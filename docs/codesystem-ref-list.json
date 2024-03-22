@@ -1,16 +1,15 @@
 {
   "codeSystems" : [
     {
-      "url" : "http://hl7.org/fhir/fhir-types",
-      "version" : "5.0.0",
+      "url" : "http://hl7.org/fhir/resource-types",
+      "version" : "4.0.1",
       "status" : "active",
-      "name" : "FHIRTypes",
-      "title" : "All FHIR Types",
-      "description" : "One of the types defined as part of this version of FHIR.",
-      "oids" : ["2.16.840.1.113883.4.642.4.1802"],
+      "name" : "ResourceType",
+      "title" : "ResourceType",
+      "description" : "One of the resource types defined as part of this version of FHIR.",
       "uses" : {
       },
-      "http://hl7.org/fhir/R5/valueset-resource-types.html" : "Resource Types"
+      "http://hl7.org/fhir/R4/valueset-resource-types.html" : "ResourceType"
     },
     {
       "url" : "http://snomed.info/sct",
@@ -58,8 +57,8 @@
       "oids" : ["2.16.840.1.113883.5.8"],
       "uses" : {
       },
-      "http://terminology.hl7.org/5.0.0/ValueSet-v3-PurposeOfUse.html" : "PurposeOfUse",
-      "https://profiles.ihe.net/ITI/PCF/1.0.0/ValueSet-BasicPurposeVS.html" : "Basic Purpose ValueSet"
+      "https://profiles.ihe.net/ITI/PCF/1.0.0/ValueSet-BasicPurposeVS.html" : "Basic Purpose ValueSet",
+      "http://terminology.hl7.org/5.0.0/ValueSet-v3-PurposeOfUse.html" : "PurposeOfUse"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
