@@ -1,4 +1,4 @@
-The scope of this proposal is national, regional, NHS Trust and supplier.
+The scope of this document and proposals is national, regional, NHS Trust and supplier.
 
 ### References
 

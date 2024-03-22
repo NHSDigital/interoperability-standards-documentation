@@ -1,0 +1,15 @@
+@startuml
+
+hide footbox
+
+
+title "Patient Demographics Query (PDQ)"
+
+
+participant "PDS Consumer" as PDSConsumer
+participant "PDS Supplier" as PDSSupplier
+
+PDSConsumer -> PDSSupplier : IHE PDQ ITI-21  \nHL7 v2 (ITK) QBP_Q21
+PDSSupplier -> PDSConsumer : IHE PDQ ITI-22  \nHL7 v2 (ITK) RSP_K21
+
+@enduml

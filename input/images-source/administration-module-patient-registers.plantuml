@@ -38,10 +38,21 @@ package PatientRegisters as "Patient Registers" {
     address
     link
   }
+  object Encounter {
+    identifier
+    subject
+    serviceType
+    period.start
+    period.end
+    participants
+    serviceProvider
+  }
 
   Patient ..> "link" Person
   RelatedPerson "patient" }o..o| Patient: The link between a Patient and RelatedPersons. \nThe Person and RelatedPerson are not the same.
-   Patient --> "link" Patient : De duplication \nreplaced-by | replaces | refer | seealso
+  Encounter "subject" }o..o| Patient
+  Encounter "participant" }o..o| Practitioner
+  Patient --> "link" Patient : De duplication \nreplaced-by | replaces | refer | seealso
   RelatedPerson ..> "link" Person
   Practitioner ..> "link" Person
 }

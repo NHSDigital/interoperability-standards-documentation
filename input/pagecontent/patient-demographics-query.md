@@ -1,34 +1,69 @@
 
-### Current Standards
+The scope of this document and proposals is national, regional, NHS Trust and supplier.
 
-The current standard for Patient Demographics Query in England can be found in
-<a href="HSCIC ITK HL7 V2 Message Specifications.pdf" target="_blank">NHS England (ADT) ITK HL7 v2 (2.4) Message Specification</a> the section 3.1.4 Patient Identity Management describes interactions used by the majority of English NHS Trusts and suppliers to implement IHE [Patient Identifier Cross-referencing (PIX)](https://profiles.ihe.net/ITI/TF/Volume1/ch-5.html) technical framework.
+### References
 
-<!--
-<img src="ihe-pix.png" alt="Structured Data Capture" width="80%" height="80%">
+- [IHE Patient Demographics Query (PDQ)](https://profiles.ihe.net/ITI/TF/Volume1/ch-8.html)
+- [IHE Patient Demographics Query for Mobile (PDQm)](https://profiles.ihe.net/ITI/PDQm/index.html)
+- <a href="HSCIC ITK HL7 V2 Message Specifications.pdf" target="_blank">NHS England (ADT) ITK HL7 v2 (2.4) Message Specification</a>
+
+
+### HL7 v2 and IHE PDQ
+
+<figure>{% include psq-sequence-notifications-current.svg %}</figure>
 <br clear="all"/>
--->
 
-### Identification Feeds and Notifications
+#### QBP_Q21
 
-PDS has two active projects in this area, these are 
+The example below finds a patient with a MRN identifier of 112234 
 
-- NHS Number allocation
-- [Multi Cast Notification Service](https://nhsd-confluence.digital.nhs.uk/display/IOPS/Multicast+Notification+Service) (internal link). See [Multicast Notification Service API](https://digital.nhs.uk/developer/api-catalogue/multicast-notification-service)
-  - This is a replacement for [Personal Demographics Service Notifications - FHIR](https://digital.nhs.uk/developer/api-catalogue/personal-demographics-service-notifications-fhir)
+```
+MSH|^~\&|CarefxITK|ORG1|PAS|ORG1|20100511125610+0100||QBP^Q21^QBP_Q21|04857982024975328990|P|2.4|||||GBR||EN||ITKv1.0
+QPD|Q22^Get Person Demographics|QRY123|112234^^^METRO HOSPITAL|
+RCP|I|20^RD
+```
 
-A use case around both programmes is 
+#### RSP_K21
 
-`Donald has moved from Edinburgh (Scotland) to Leeds (England) for work reasons. Donald has a series condition and was recieving treatment from NHS Lothian, NHS Lothian has liased with Leeds Foundation NHS Trust to continue his care. As Donald is a UK citizen he is eligible for care from NHS England and so Leeds Foundation NHS Trust apply for an English NHS Number`
+The response to this query contains a single patient in the PID and PD1 segments.
+
+```
+MSH|^~\&|PAS|ORG1|CarefxITK|ORG1|20100511125611||RSP^K21^RSP_K21|306944|P|2.4|||||GBR||EN||ITKv1.0
+MSA|AA|04857982024975328990
+QAK|QRY123|OK|Q21^Get Person Demographics||1
+QPD|Q21^Get Person Demographics|QRY123|112234^^^METRO HOSPITAL|
+PID|1||112234^^^METRO HOSPITAL||Esther^Priya^^^MS^^L||19861129000000|2|||1 Birley Close^Appley Bridge^Wigan^^WN6 9JL^GBR^H^Q31^Lancashire||||EN|M|C22|||||A|Berlin|N||GBR||DEU||||ED|
+PD1|||ST JOHN'S WOOD MED PRACT^^E87609|G9312382^Abadi^DI^^^Dr
+```
+
+### HL7 FHIR RESTful and IHE PDQm
+
+The HL7 v2/IHE PDQ is probably not going to be favoured by third party application vendors. They are more likely to favour the IHE PDQm/HL7 FHIR RESTful approach.
+
+<figure>{% include psq-sequence-notifications-future.svg %}</figure>
+<br clear="all"/>
+
+Although PDS is not IHE PDQm compliant it has followed this pattern. Please see [NHS England Personal Demographics Service - FHIR API: Search for a patient](https://digital.nhs.uk/developer/api-catalogue/personal-demographics-service-fhir#get-/Patient)
 
 #### NHS Acute Trust Example
 
-Leeds Teaching NHS Trust would have registered Donald as a Patient on their Patient Administration System (PAS), they would have created a Medical Record Number (MRN) to identify Donald across the trusts computer systems and possibly record his (NHS Scotland) CHI Number.
-In HL7 FHIR this would look like [Patient Donald with CHI Number and MRN](Patient-donald-with-chi-number-and-mrn.html). Leeds Teaching Trusts follows <a href="HSCIC ITK HL7 V2 Message Specifications.pdf" target="_blank">NHS England (ADT) ITK HL7 v2 (2.4) Message Specification</a> and so will also have an equivalent HL7 v2 representation.
+`Donald has moved from Edinburgh (Scotland) to Leeds (England) for work reasons. Donald has a series condition and was recieving treatment from NHS Lothian, NHS Lothian has liased with Leeds Foundation NHS Trust to continue his care. As Donald is a UK citizen he is eligible for care from NHS England and so Leeds Foundation NHS Trust apply for an English NHS Number`
+
+<img src="PAS-BPMN.png" alt="Patient Demographic Query" width="80%" height="80%">
+<br clear="all"/>
+
+1. The first step Leeds Teaching would do would be to find Donald on the local Patient Administration System (PAS).
+2. Depending on whether Donald is found or not.
+
+   a. If Donald is found on the PAS, Donalds demographics record would be updated.
+   
+   b. If Donalds is not found, Donald would registered Donald as a Patient on the PAS. They would have allocated a Medical Record Number (MRN) to identify Donald across the trusts computer systems and possibly record his (NHS Scotland) CHI Number. In addition, a Task would be created to obtain a NHS Number for Donald. 
+
+As HL7 FHIR Donalds record would look like [Patient Donald with CHI Number and MRN](Patient-donald-with-chi-number-and-mrn.html). The updating/creating of this record will generate event notifications to inform other systems of this change, (Leeds Teaching Trust follows <a href="HSCIC ITK HL7 V2 Message Specifications.pdf" target="_blank">NHS England (ADT) ITK HL7 v2 (2.4) Message Specification</a>).
 
 Leeds Teaching NHS Trust registering Donald with NHS England looks like this: 
 
-<img src="PDS-BPMN.png" alt="Structured Data Capture" width="80%" height="80%">
+<img src="PDS-BPMN.png" alt="Patient Demographic Query" width="80%" height="80%">
 <br clear="all"/>
 
 1. An administrator in Leeds Teaching Trust searches PDS to check Donald does not have a NHS Number
