@@ -1,0 +1,574 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>Interoperability Standards - Interoperability Standards - Skunkworks v0.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+
+      <!-- <script src="assets/nhsuk.js" defer></script> -->
+
+      <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+  <!-- Project extras
+<link
+        type="font/woff2"
+        href="assets/fonts/FrutigerLTW01-55Roman.woff2"
+        rel="preload"
+        as="font"
+        crossorigin
+/>
+<link
+        type="font/woff2"
+        href="assets/fonts/FrutigerLTW01-65Bold.woff2"
+        rel="preload"
+        as="font"
+        crossorigin
+/>
+<link href="assets/css/nhsuk.css" rel="stylesheet" /> -->
+
+  <!-- Bootstrap core CSS overrides to bootstrap-fhir.css -->
+<link rel="stylesheet" href="assets/css/nhse.css"/>
+
+
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="fhir-logo" href="assets/ico/icon-fhir-144.png"/>
+    <link sizes="114x114" rel="fhir-logo" href="assets/ico/icon-fhir-114.png"/>
+    <link sizes="72x72" rel="fhir-logo" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/favicons/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"11"}
+    h3,h4,h5,h6{--heading-prefix:"11"}</style>
+    <div id="segment-header" class="segment nhsuk-header">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+          <!-- Placeholder for child template header declarations -->
+
+  <!-- Left logo - typically the publisher's logo - project or affiliate -->
+        <div id="project-nav">
+          <a no-external="true" id="project-logo" href="https://www.england.nhs.uk">
+            <img src="assets/images/skunk.png" alt="Project home" height="61"/>
+          </a>
+        </div>
+
+  <!-- Right logo - for example the FHIR logo -->
+  <!-- Make sure you have authorization to use the FHIR logo -->
+
+        <div id="family-nav">
+              <!-- <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="60" alt="FHIR website" src="assets/images/fhir-logo-www.png"/> </a> -->
+        </div> 
+      
+
+  <!-- search icon - if you want -->
+  <!-- <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div> -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Interoperability Standards - Skunkworks</span>
+            <br/>
+            <span style="display:inline-block;">0.0.1 - ci-build
+
+
+
+   <img src="assets/images/GB-ENG.svg" alt="England flag" title="England" height="16"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Documentation
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="background.html">Background</a>
+      </li>
+      <li>
+        <a href="interoperability-standards.html">Interoperability Standards</a>
+      </li>
+      <li>
+        <a href="testing.html">Conformance and Testing (FHIR)</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Design
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="administration-module.html">Administration</a>
+      </li>
+      <li>
+        <a href="validation.html">FHIR Validation</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Build
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="national-proxy-service.html">National Proxy Service</a>
+      </li>
+      <li>
+        <a href="personal-demographics-service.html">NHS Number Allocation and PDS</a>
+      </li>
+      <li>
+        <a href="patient-encounter-management.html">Patient Encounter Management</a>
+      </li>
+      <li>
+        <a href="patient-demographics-query.html">Patient Demographics Query</a>
+      </li>
+      <li>
+        <a href="patient-identity-management.html">Patient Identity Management</a>
+      </li>
+      <li>
+        <a href="booking.html">Booking</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">FHIR Assets</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>Interoperability Standards</b></li>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+    <!-- ReleaseHeader --><p id="publish-box">Interoperability Standards - Skunkworks - Local Development build (v0.0.1) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the <a href="https://fhir.nhs.uk/England/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <h2>Interoperability Standards</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p>  <!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#hl7" id="markdown-toc-hl7">HL7</a></li>
+  <li><a href="#hl7-fhir" id="markdown-toc-hl7-fhir">HL7 FHIR</a></li>
+  <li><a href="#hl7-v2" id="markdown-toc-hl7-v2">HL7 v2</a></li>
+  <li><a href="#hl7-v3" id="markdown-toc-hl7-v3">HL7 v3</a></li>
+  <li><a href="#hl7-cda" id="markdown-toc-hl7-cda">HL7 CDA</a></li>
+  <li><a href="#ihe" id="markdown-toc-ihe">IHE</a></li>
+  <li><a href="#dicom" id="markdown-toc-dicom">DICOM</a></li>
+  <li><a href="#openehr" id="markdown-toc-openehr">openEHR</a></li>
+  <li><a href="#statutory-requirements" id="markdown-toc-statutory-requirements">Statutory Requirements</a></li>
+</ul>
+
+</div>
+
+<p>Health has a variety of standards to support technical implementations.</p>
+
+<p>They can be categorised into several areas:</p>
+
+<ul>
+  <li><strong>Terminology, Coding and Classifications</strong> which provides codes for clinical terms (often called clinical coding) and medicines. Standards include: SNOMED CT, dm+d, NICIP, OPSC-4, ICD-10, ICD-11. For more details see  <a href="https://nhsengland.kahootz.com/connect.ti/t_c_home/grouphome">NHS England Delen</a></li>
+  <li><strong>Data Standards</strong> provides definitions of data items used within the health sector. This will often define what data needs to be held in a computer system and define content to be shared between providers. Standards include:
+    <ul>
+      <li><a href="https://data.standards.nhs.uk/">NHS England Data Standards</a></li>
+      <li>Other data standards:
+        <ul>
+          <li><a href="#openehr">openEHR</a> Archetypes and Templates</li>
+          <li><a href="https://theprsb.org/">PRSB</a> Record Standards</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li><strong>Process and Activity Definitions</strong> is not currently a technical standard but provides guidance on clinical processes and how the NHS works together. Guidance can be found in:
+    <ul>
+      <li><a href="https://nice.org.uk/">NICE</a></li>
+      <li><a href="https://www.england.nhs.uk/">NHS England</a> (TODO this is too generic)</li>
+    </ul>
+  </li>
+  <li><strong>Enterprise Integration Standards</strong> defines ways computer systems can work together to support clinical processes and activity. This will also define how Interoperability Standards are used.  Standards and patterns include:
+    <ul>
+      <li><a href="#ihe">IHE Integration profiles</a></li>
+      <li><a href="https://www.england.nhs.uk/wp-content/uploads/2017/03/interoperabilty-handbk.pdf">NHS England Interoperability Pattern Book</a></li>
+    </ul>
+  </li>
+</ul>
+
+<p>This list contains overlaps especially around Solutions, for example: openEHR can also be used as a solution for record storage (for Electronic Healthcare Records) and IHE XDS is used as an API for electronic document management solution (EDMS).</p>
+
+<p>Health <strong>Interoperability Standards</strong> support the technical implementation of all of these standards and sits at the intersection of technical and process focused standards:</p>
+
+<div>
+<img src="interoperability-standards.png" alt="Interoperability Standards Process" width="60%"/>
+<p>Figure 1 - Interoperability Standards Process</p>
+<p></p>
+</div>
+
+<ul>
+  <li><strong>Interoperability Standards</strong> standards include:
+    <ul>
+      <li><a href="#hl7">HL7</a> which has standards for the exchange, integration, sharing and retrieval of electronic health information that supports clinical practice and the management, delivery and evaluation of health services.
+        <ul>
+          <li><a href="#hl7-fhir">HL7 FHIR</a></li>
+          <li><a href="#hl7-v2">HL7 v2</a></li>
+          <li><a href="#hl7-v3">HL7 v3</a></li>
+          <li><a href="#hl7-cda">HL7 CDA</a></li>
+        </ul>
+      </li>
+      <li><a href="#ihe">IHE</a> Technical Frameworks which defines how to use other standards such as DICOM and HL7 to deliver an integration profile. Some IHE standards use their own propriety data model, e.g. IHE XDS (XML).</li>
+      <li><a href="#dicom">DICOM</a> which is the international standard to transmit, store, process, print and display medical imaging.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="hl7">HL7</h3>
+
+<p><a href="https://www.hl7.org/">HL7</a> Health Level Seven International is a not-for-profit, ANSI-accredited standards developing organization dedicated to providing a comprehensive framework and related standards for the exchange, integration, sharing, and retrieval of electronic health information that supports clinical practice and the management, delivery and evaluation of health services.</p>
+
+<div role="alert" id="development-notice" class="alert alert-info">
+  <i class="fa fa-info-circle"></i>
+  The current standard for use in NHS England is HL7 FHIR R4 (UK Core)
+</div>
+
+<h3 id="hl7-fhir">HL7 FHIR</h3>
+
+<p>HL7 FHIR is the latest HL7 standard. It is designed around single domain object called resources (which is related to HL7 v2 segments).</p>
+
+<h4 id="interactions">Interactions</h4>
+
+<p>FHIR resources are particularly suited to RESTful API’s and most common (popular) FHIR implementations use this interaction method.</p>
+
+<h5 id="restful-api">RESTful API</h5>
+
+<p><a href="https://hl7.org/fhir/R4/http.html">RESTful API</a> is particularly useful in sharing health data.</p>
+
+<ul>
+  <li>INTEROPen and HL7 UK standards include:
+    <ul>
+      <li><a href="https://build.fhir.org/ig/HL7-UK/UK-Core-Access/">UK Core FHIR Access</a> This HL7 FHIR Implementation Guide specifies the requirements for a RESTful endpoint providing read-only access for direct care and subject of care access within the UK (covering patient demographics and medications).</li>
+      <li><a href="https://nhsconnect.github.io/CareConnectAPI/index.html">Care Connect RESTful API (FHIR STU3)</a> which defines a minimum/base API contract for FHIR RESTful servers for sharing read only patient data and documents.</li>
+    </ul>
+  </li>
+  <li>International standards include:
+    <ul>
+      <li><a href="https://build.fhir.org/ig/HL7/fhir-ipa/index.html">International Patient Access</a> This specification describes how an application acting on behalf of a patient can access information about the patient from a clinical records system using a FHIR R4 based API. The clinical records system may be supporting a clinical care provider (e.g., a hospital or a general practitioner), a health data exchange, or other system managing patient records, including a national health record system.</li>
+      <li>see also <a href="#ihe--hl7-fhir">IHE QEDm</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h5 id="messaging">Messaging</h5>
+
+<p><a href="https://hl7.org/fhir/R4/messaging.html">Messaging</a> is often used as a like for like replacement of HL7 v2 and HL7 v3 messages. NHS England is likely to discourage the use of <strong>Messaging</strong> with a recommendation to refactor messages into two parts: a shared part (using <strong>RESTful API</strong>) and a notification part focused around <a href="https://hl7.org/fhir/R4/workflow-module.html">FHIR Workflow</a>/clinical workflow.</p>
+
+<ul>
+  <li>NHS England standards include:
+    <ul>
+      <li><a href="https://nhsconnect.github.io/ITK3-FHIR-Messaging-Distribution/">ITK3 (FHIR STU3)</a></li>
+      <li><a href="https://developer.nhs.uk/apis/ems-beta/index.html">National Event Management System (FHIR STU3)</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h5 id="documents">Documents</h5>
+
+<p><a href="https://hl7.org/fhir/R4/documents.html">Documents</a> is a replacement for HL7 CDA. Like CDA this is suited to document sharing (e.g. IHE XDS).</p>
+
+<p>See <a href="documents-module.html">Document Interoperability</a> for more details.</p>
+
+<h5 id="workflow">Workflow</h5>
+
+<p><a href="https://hl7.org/fhir/R4/workflow.html">Workflow</a> is the modern approach for event/workflow support present in HL7 v2.</p>
+
+<p>see <a href="workflow.html">Workflow</a></p>
+
+<h4 id="conformance-and-data-standards">Conformance and Data Standards</h4>
+
+<ul>
+  <li>HL7 FHIR Conformance FHIR defines a core schema for each version. The current version in the UK NHS is FHIR R4, STU3 use is now depreciated. Countries (regions and suppliers) will produce additional conformance guidance on top of the core schema which describes how FHIR should be used in each country. These will be based on the countries <strong>Terminology, Coding and Classifications</strong> and also it’s <strong>Data Standards</strong>, this guidance will be found in a countries Implementation Guide. In the UK the following have been developed.
+    <ul>
+      <li><a href="https://simplifier.net/hl7fhirukcorer4">HL7 UK Core (FHIR R4)</a> current standard.</li>
+      <li>NHS England Standards (FHIR R4):
+        <ul>
+          <li><a href="https://simplifier.net/guide/ukcoreimplementationguideformedicines">Interoperable Medicines</a></li>
+          <li><a href="https://simplifier.net/guide/pathology-fhir-implementation-guide">Pathology</a></li>
+          <li><a href="https://simplifier.net/guide/fhir-genomics-implementation-guide">Genomics</a></li>
+        </ul>
+      </li>
+      <li><a href="https://fhir.hl7.org.uk/">Care Connect (FHIR STU3) Deprecated</a>.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="hl7-v2">HL7 v2</h3>
+
+<div role="alert" id="development-notice" class="alert alert-info">
+  <i class="fa fa-info-circle"></i>
+  In NHS England this is deprecated.<br/>
+  NHS England do not recommended to updating HL7 v2 to <a href="#messaging">FHIR Messaging</a>, messages should be refactored to <br/>
+  - Use <a href="#workflow">FHIR Workflow</a> for HL7 v2 event messages (e.g. Admission Discharge and Transfers (ADT)).<br/>
+  - Use <a href="#restful-api">FHIR RESTful API</a> and/or <a href="#documents">FHIR Documents</a> to share any reports/documents transferred via v2 messaging (e.g. Laboratory Reports (ORU) should be shared not sent/exchanged)
+</div>
+
+<p>HL7 v2 it’s data format is a variation of CSV, called <a href="https://en.wikipedia.org/wiki/Health_Level_7#Version_2_messaging">pipe and hat</a>, it is transmitted over TCP/IP using the MLLP protocol. It is most often used to support <strong>Laboratory Ordering (ORU/ORM)</strong> and <strong>Health Administration (ADT)</strong> processes via event messaging. This version is in high use in the NHS Acute sector with near 100% adoption, this has issues in the UK around the use of Terminology, Coding and Classifications. Although HL7 v2 can support data queries, its use in this area is limited and has technical limitations. NHS standards include:</p>
+
+<ul>
+  <li><a href="HSCIC ITK HL7 V2 Message Specifications.pdf" target="_blank">NHS England (ADT) ITK HL7 v2 (2.4) Message Specification</a></li>
+  <li><a href="HSCIC ITK HL7 V2 Reference Tables.pdf" target="_blank">NHS England (ADT) ITK HL7 v2 Reference Tables</a></li>
+  <li>NHS Wales (ORU) HL7 v2 (2.5.1)  Message Specification</li>
+</ul>
+
+<h3 id="hl7-v3">HL7 v3</h3>
+
+<div role="alert" id="development-notice" class="alert alert-info">
+  <i class="fa fa-info-circle"></i>
+  In NHS England this is deprecated.<br/>
+  See  <a href="#messaging">FHIR Messaging</a> for FHIR equivalent
+</div>
+
+<p>HL7 v3 was intended to replace HL7 v2 but in the NHS adoption was low. It uses XML format and <a href="https://en.wikipedia.org/wiki/SOAP">SOAP</a> for exchanging data and in the English NHS a proprietary file transfer system called <a href="https://digital.nhs.uk/services/message-exchange-for-social-care-and-health-mesh">MESH</a>. It is suited to both messaging and for querying (sharing) data. NHS England v3 Standards are defined in:</p>
+<ul>
+  <li><a href="https://digital.nhs.uk/developer/guides-and-documentation/message-implementation-manuals">NHS England Message Implementation Manual</a></li>
+</ul>
+
+<h3 id="hl7-cda">HL7 CDA</h3>
+
+<div role="alert" id="development-notice" class="alert alert-info">
+  <i class="fa fa-info-circle"></i>
+  In NHS England this is deprecated.<br/>
+  See  <a href="#documents">FHIR Documents</a> for FHIR equivalent
+</div>
+
+<p>HL7 CDA (Clinical Document Architecture) is a variation of HL7 v2 which is used to convey a hybrid document containing both data and a human readable representation (html). This is particularly suited to <strong>document based sharing</strong> solutions (e.g. IHE XDS) and can also be used for document based exchanges, where providers have different levels of maturity. I.e. providers can chose to use the data or html representation. It is also suitable for recording point in time records.</p>
+
+<h3 id="ihe">IHE</h3>
+
+<p>IHE Technical Frameworks is generally split into several parts:</p>
+
+<ul>
+  <li><a href="https://profiles.ihe.net/ITI/TF/Volume1/index.html">Volume 1</a>: Profile definition, use-case analysis, actor definition, and use of transactions and content</li>
+  <li><a href="https://profiles.ihe.net/ITI/TF/Volume2/index.html">Volume 2</a>: Transaction definitions and constraints</li>
+  <li><a href="https://profiles.ihe.net/ITI/TF/Volume3/index.html">Volume 3</a>: Document Sharing Metadata, and Content Profiles</li>
+  <li><a href="https://profiles.ihe.net/ITI/TF/Volume4/index.html">Volume 4</a>: National Extensions
+    <ul>
+      <li><strong><em>The UK does not have national extensions.</em></strong> Current recommendation is follow both IHE and UK Core Conformance Requirements for implementations, i.e. resource MUST validate against IHE and UK Core profiles.</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="ihe--hl7-v2">IHE + HL7 v2</h4>
+
+<p>Volume 2 will generally use other standards primarily HL7. For example the use cases for HL7 v2 ADT can be found in <a href="https://profiles.ihe.net/ITI/TF/Volume1/ch-14.html">Volume 1 - Chapter 14 Patient Administration Management (PAM)</a> and transactions in <a href="https://profiles.ihe.net/ITI/TF/Volume2/ITI-31.html">Volume 2 3.31 Patient Encounter Management [ITI-31]</a>, the NHS England (ADT) <a href="https://github.com/NHSDigital/IOPS-Frameworks/blob/main/documents/HSCIC%20ITK%20HL7%20V2%20Message%20Specifications.pdf">ITK HL7 v2 (2.4) Message Specification</a> can be considered a national supplement to this IHE Technical Framework.</p>
+
+<h4 id="ihe--hl7-fhir">IHE + HL7 FHIR</h4>
+
+<p>Several IHE and HL7 based frameworks are listed in the Design pages.</p>
+
+<h4 id="ihe-cross-enterprise-document-sharing-xds">IHE Cross Enterprise Document Sharing (XDS)</h4>
+
+<p><a href="https://profiles.ihe.net/ITI/TF/Volume1/ch-10.html">Cross-Enterprise Document Sharing (XDS.b) </a> is not based on HL7 Standards and uses a XML+SOAP based interactions.</p>
+
+<p><a name="l899">​</a>See <a href="documents.html">Document Interoperability</a> for details on how XDS relates to other data and interoperability standards.</p>
+
+<h5 id="xds-and-xca-modernisation">XDS and XCA Modernisation</h5>
+
+<p>IHE and HL7 are working on creating a better alignment with HL7 Standards, details can be found in:</p>
+
+<ul>
+  <li><a href="https://profiles.ihe.net/ITI/HIE-Whitepaper/index.html">IHE Health Information Exchange (HIE) White Paper</a></li>
+  <li><a href="https://www.ihe.net/news/ihe-continues-to-pave-the-way-for-fhir-through-project-gemini/">IHE Helps Pave the Way for FHIR through Project Gemini</a></li>
+  <li><a href="https://blog.hl7.org/another_type_of_moonshotproject_gemini">HL7 Project Gemini</a></li>
+</ul>
+
+<h3 id="dicom">DICOM</h3>
+
+<p><a href="https://www.dicomstandard.org/">DICOM&reg;</a> Digital Imaging and Communications in Medicine — is the international standard for medical images and related information. It defines the formats for medical images that can be exchanged with the data and quality necessary for clinical use.</p>
+
+<h3 id="openehr">openEHR</h3>
+
+<p><a href="https://openehr.org/">openEHR</a> openEHR is a non‑profit organisation that publishes technical standards for an EHR platform along with domain‑developed clinical models to define content. The principal architectural concepts include the lifelong, patient‑centric shared health record, future‑proof data and clinical process support.</p>
+
+<p>It is a data standard and a system for implementing health care records and should not be confused with interoperability standards which are focused on interactions between these systems.
+openEHR (archetypes and templates) may provide definitions for interoperability standards, these would likely use <strong>FHIR Questionnaire</strong> as the definition resource in interoperability standards.
+Many openEHR implementations will utilise interoperability standards listed on this page.</p>
+
+<h3 id="statutory-requirements">Statutory Requirements</h3>
+
+<p>The current requirements from NHS England are to use HL7 FHIR for Health Interoperability.</p>
+
+<ul>
+  <li><a href="https://digital.nhs.uk/data-and-information/information-standards/information-standards-and-data-collections-including-extractions/publications-and-notifications/standards-and-collections/dapb4020-uk-core-fhir-r4-governance">DAPB4020: UK Core Fast Healthcare Interoperability Resources (FHIR) Release 4 (R4) Governance</a></li>
+  <li>NHS Standard Contract requirements: <a href="https://nhsconnect.github.io/CareConnectAPI/">Care Connect API</a> a UK FHIR (STU3) RESTful interaction standard from <a href="https://www.england.nhs.uk/digitaltechnology/connecteddigitalsystems/interoperability/">NHS England Interoperability</a>
+    <ul>
+      <li>This is FHIR STU3, a R4 version is currently being elaborated. It is expected the R4 version will be a union of Care Connect API and US Core (the mandatory search parameters are similar)</li>
+    </ul>
+  </li>
+</ul>
+
+
+
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &copy; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.england.nhs.uk/">NHS England</a>.  Package uk.nhs.england.skunkworks#0.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Mar 22, 2024 07:58+0000">2024-03-22</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+            <div style="color: #333333">
+
+          Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
+                 <a style="color: #81BEF7" href="qa.html">QA Report</a> 
+                 <a rel="license" style="color: #81BEF7" href="http://hl7.org/fhir/R4/license.html"><img src="cc0.png" alt="CC0" style="border-style: none;"/></a>
+<div>
+</div>
+
+</div>
+          </span>
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+  
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+  <!-- feedback form - Google forms -->
+  <!-- v0.1, 2021-01-09 -->
+
+
+
+  <!-- / feedback form -->
+
+    <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>

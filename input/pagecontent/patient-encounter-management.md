@@ -12,7 +12,7 @@ The scope of this proposal is national, regional, NHS Trust and supplier.
 - <a href="HSCIC ITK HL7 V2 Message Specifications.pdf" target="_blank">NHS England (ADT) ITK HL7 v2 (2.4) Message Specification</a>
 
 
-### Interactions
+### Introduction - HL7 v2 and IHE Event Notifications
 
 This proposal is based on a requirement to notify Social Care Safeguarding Services of Encounters with looked after children. It is proposed that this is implemented based on existing interactions used within acute care which are generally based on **HL7 v2 Admissions, Discharges and Transfers (ADT)** and **IHE Patient Encounter Management (PEM)**. 
 
@@ -42,6 +42,23 @@ It is recommended that the data model in HL7 v2 is retained in HL7 FHIR to simpl
 #### Use Case
 
 `Mrs Smith is being admitted to hospital following a referral by her GP Dr Townley of the Malton GP Practice. She arrives at York hospital by car, and is put under the care of Dr. Darwin, who also attends to Mrs Smith. Mrs Smith is admitted for an inpatient spell under the speciality General Medicine. She has a recorded allergy to an anaesthetic agent and has been diagnosed with stress incontinence. A colonic examination procedure is then performed.`
+
+```
+Given
+Mrs Smith is admitted to hospital
+And
+a referral has been made by GP Dr Townley of the Malton GP Practice
+When
+she arrives at York hospital by car
+And
+is put under the care of Dr. Darwin, who also attends to Mrs Smith
+And
+has a recorded allergy to an anaesthetic agent and has been diagnosed with stress incontinence.
+Then
+Mrs Smith is admitted for an inpatient spell under the speciality General Medicine
+And
+a colonic examination procedure is then performed.
+```
 
 An example HL7 v2 ADT_A04 is shown below, this is from <a href="HSCIC ITK HL7 V2 Message Specifications.pdf" target="_blank">NHS England (ADT) ITK HL7 v2 (2.4) Message Specification</a> 
 
@@ -94,7 +111,7 @@ The previous implementation is mostly unchanged but it is joined by the **Patien
 - encounter identifier which can be used to query encounter documents via Connection Care Records
 - encounter participants
 
-### Scalability and Subscriptions
+### HL7 FHIR and IHE Events Notifications via Pub/Sub 
 
 At present this proposal is based on requirement from CPIS, the number of providers interested is probably more than just Social Services Safeguarding. As mentioned GP, Community, Mental Health teams may be also interested in these events. It is not a fixed list of interested parties and so is would likely use [Publish-Subscribe Channel](https://www.enterpriseintegrationpatterns.com/patterns/messaging/PublishSubscribeChannel.html) patterns. 
 

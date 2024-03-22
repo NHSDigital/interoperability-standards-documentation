@@ -6,11 +6,11 @@ FSHOnly: false
   # │  used properties are included. For a list of all supported properties and their functions,     │
   # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
   # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: uk.nhs.england.skunkworks
+id: uk.nhs.england.administration.skunkworks
 canonical: https://fhir.nhs.uk/England
 name: NHSEnglandInteroperabilitySkunkworks
 
-title: Interoperability Standards - Skunkworks
+title: Health Administration Interoperability Standards - Skunkworks
 
 # description: Example Implementation Guide for getting started with SUSHI
 status: draft
@@ -58,20 +58,13 @@ menu:
     Conformance and Testing (FHIR): testing.html
   Design:
     Administration : administration-module.html
-    Documents (Clinical): documents-module.html
-    Care Planning: care-planning.html
-    Clinical: clinical-module.html
-    Diagnostics: diagnostics-module.html
-    Medications: medications-module.html
-    Workflow: workflow.html
-    Structured Data Capture: structured-data-capture.html
     FHIR Validation: validation.html
   Build:
     National Proxy Service: national-proxy-service.html
-    Personal Demographics Service: personal-demographics-service.html
-    Patient Administration: patient-administration.html
+    NHS Number Allocation and PDS: personal-demographics-service.html
     Patient Encounter Management: patient-encounter-management.html
-    Multicast Notification Service: multicast-notification-service.html
+    Patient Demographics Query: patient-demographics-query.html
+    Patient Identity Management: patient-identity-management.html
     Booking: booking.html
   FHIR Assets: artifacts.html
   Support:

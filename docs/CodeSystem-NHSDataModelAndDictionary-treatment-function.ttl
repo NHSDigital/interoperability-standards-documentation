@@ -1,0 +1,561 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.nhs.uk/England/CodeSystem/NHSDataModelAndDictionary-treatment-function> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "NHSDataModelAndDictionary-treatment-function"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-sensitive code system <code>https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-treatment-function</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">100<a name=\"NHSDataModelAndDictionary-treatment-function-100\"> </a></td><td>GENERAL SURGERY</td></tr><tr><td style=\"white-space:nowrap\">101<a name=\"NHSDataModelAndDictionary-treatment-function-101\"> </a></td><td>UROLOGY</td></tr><tr><td style=\"white-space:nowrap\">102<a name=\"NHSDataModelAndDictionary-treatment-function-102\"> </a></td><td>TRANSPLANTATION SURGERY</td></tr><tr><td style=\"white-space:nowrap\">103<a name=\"NHSDataModelAndDictionary-treatment-function-103\"> </a></td><td>BREAST SURGERY</td></tr><tr><td style=\"white-space:nowrap\">104<a name=\"NHSDataModelAndDictionary-treatment-function-104\"> </a></td><td>COLORECTAL SURGERY</td></tr><tr><td style=\"white-space:nowrap\">105<a name=\"NHSDataModelAndDictionary-treatment-function-105\"> </a></td><td>HEPATOBILIARY AND PANCREATIC SURGERY</td></tr><tr><td style=\"white-space:nowrap\">106<a name=\"NHSDataModelAndDictionary-treatment-function-106\"> </a></td><td>UPPER GASTROINTESTINAL SURGERY</td></tr><tr><td style=\"white-space:nowrap\">107<a name=\"NHSDataModelAndDictionary-treatment-function-107\"> </a></td><td>VASCULAR SURGERY</td></tr><tr><td style=\"white-space:nowrap\">108<a name=\"NHSDataModelAndDictionary-treatment-function-108\"> </a></td><td>SPINAL SURGERY SERVICE</td></tr><tr><td style=\"white-space:nowrap\">110<a name=\"NHSDataModelAndDictionary-treatment-function-110\"> </a></td><td>TRAUMA AND ORTHOPAEDICS</td></tr><tr><td style=\"white-space:nowrap\">120<a name=\"NHSDataModelAndDictionary-treatment-function-120\"> </a></td><td>ENT</td></tr><tr><td style=\"white-space:nowrap\">130<a name=\"NHSDataModelAndDictionary-treatment-function-130\"> </a></td><td>OPHTHALMOLOGY</td></tr><tr><td style=\"white-space:nowrap\">140<a name=\"NHSDataModelAndDictionary-treatment-function-140\"> </a></td><td>ORAL SURGERY</td></tr><tr><td style=\"white-space:nowrap\">141<a name=\"NHSDataModelAndDictionary-treatment-function-141\"> </a></td><td>RESTORATIVE DENTISTRY</td></tr><tr><td style=\"white-space:nowrap\">142<a name=\"NHSDataModelAndDictionary-treatment-function-142\"> </a></td><td>PAEDIATRIC DENTISTRY</td></tr><tr><td style=\"white-space:nowrap\">143<a name=\"NHSDataModelAndDictionary-treatment-function-143\"> </a></td><td>ORTHODONTICS</td></tr><tr><td style=\"white-space:nowrap\">144<a name=\"NHSDataModelAndDictionary-treatment-function-144\"> </a></td><td>MAXILLO-FACIAL SURGERY</td></tr><tr><td style=\"white-space:nowrap\">150<a name=\"NHSDataModelAndDictionary-treatment-function-150\"> </a></td><td>NEUROSURGERY</td></tr><tr><td style=\"white-space:nowrap\">160<a name=\"NHSDataModelAndDictionary-treatment-function-160\"> </a></td><td>PLASTIC SURGERY</td></tr><tr><td style=\"white-space:nowrap\">161<a name=\"NHSDataModelAndDictionary-treatment-function-161\"> </a></td><td>BURNS CARE</td></tr><tr><td style=\"white-space:nowrap\">170<a name=\"NHSDataModelAndDictionary-treatment-function-170\"> </a></td><td>CARDIOTHORACIC SURGERY</td></tr><tr><td style=\"white-space:nowrap\">171<a name=\"NHSDataModelAndDictionary-treatment-function-171\"> </a></td><td>PAEDIATRIC SURGERY</td></tr><tr><td style=\"white-space:nowrap\">172<a name=\"NHSDataModelAndDictionary-treatment-function-172\"> </a></td><td>CARDIAC SURGERY</td></tr><tr><td style=\"white-space:nowrap\">173<a name=\"NHSDataModelAndDictionary-treatment-function-173\"> </a></td><td>THORACIC SURGERY</td></tr><tr><td style=\"white-space:nowrap\">174<a name=\"NHSDataModelAndDictionary-treatment-function-174\"> </a></td><td>CARDIOTHORACIC TRANSPLANTATION</td></tr><tr><td style=\"white-space:nowrap\">180<a name=\"NHSDataModelAndDictionary-treatment-function-180\"> </a></td><td>ACCIDENT AND EMERGENCY</td></tr><tr><td style=\"white-space:nowrap\">191<a name=\"NHSDataModelAndDictionary-treatment-function-191\"> </a></td><td>PAIN MANAGEMENT</td></tr><tr><td style=\"white-space:nowrap\">211<a name=\"NHSDataModelAndDictionary-treatment-function-211\"> </a></td><td>PAEDIATRIC UROLOGY</td></tr><tr><td style=\"white-space:nowrap\">212<a name=\"NHSDataModelAndDictionary-treatment-function-212\"> </a></td><td>PAEDIATRIC TRANSPLANTATION SURGERY</td></tr><tr><td style=\"white-space:nowrap\">213<a name=\"NHSDataModelAndDictionary-treatment-function-213\"> </a></td><td>PAEDIATRIC GASTROINTESTINAL SURGERY</td></tr><tr><td style=\"white-space:nowrap\">214<a name=\"NHSDataModelAndDictionary-treatment-function-214\"> </a></td><td>PAEDIATRIC TRAUMA AND ORTHOPAEDICS</td></tr><tr><td style=\"white-space:nowrap\">215<a name=\"NHSDataModelAndDictionary-treatment-function-215\"> </a></td><td>PAEDIATRIC EAR NOSE AND THROAT</td></tr><tr><td style=\"white-space:nowrap\">216<a name=\"NHSDataModelAndDictionary-treatment-function-216\"> </a></td><td>PAEDIATRIC OPHTHALMOLOGY</td></tr><tr><td style=\"white-space:nowrap\">217<a name=\"NHSDataModelAndDictionary-treatment-function-217\"> </a></td><td>PAEDIATRIC MAXILLO-FACIAL SURGERY</td></tr><tr><td style=\"white-space:nowrap\">218<a name=\"NHSDataModelAndDictionary-treatment-function-218\"> </a></td><td>PAEDIATRIC NEUROSURGERY</td></tr><tr><td style=\"white-space:nowrap\">219<a name=\"NHSDataModelAndDictionary-treatment-function-219\"> </a></td><td>PAEDIATRIC PLASTIC SURGERY</td></tr><tr><td style=\"white-space:nowrap\">220<a name=\"NHSDataModelAndDictionary-treatment-function-220\"> </a></td><td>PAEDIATRIC BURNS CARE</td></tr><tr><td style=\"white-space:nowrap\">221<a name=\"NHSDataModelAndDictionary-treatment-function-221\"> </a></td><td>PAEDIATRIC CARDIAC SURGERY</td></tr><tr><td style=\"white-space:nowrap\">222<a name=\"NHSDataModelAndDictionary-treatment-function-222\"> </a></td><td>PAEDIATRIC THORACIC SURGERY</td></tr><tr><td style=\"white-space:nowrap\">223<a name=\"NHSDataModelAndDictionary-treatment-function-223\"> </a></td><td>PAEDIATRIC EPILEPSY</td></tr><tr><td style=\"white-space:nowrap\">241<a name=\"NHSDataModelAndDictionary-treatment-function-241\"> </a></td><td>PAEDIATRIC PAIN MANAGEMENT</td></tr><tr><td style=\"white-space:nowrap\">242<a name=\"NHSDataModelAndDictionary-treatment-function-242\"> </a></td><td>PAEDIATRIC INTENSIVE CARE</td></tr><tr><td style=\"white-space:nowrap\">251<a name=\"NHSDataModelAndDictionary-treatment-function-251\"> </a></td><td>PAEDIATRIC GASTROENTEROLOGY</td></tr><tr><td style=\"white-space:nowrap\">252<a name=\"NHSDataModelAndDictionary-treatment-function-252\"> </a></td><td>PAEDIATRIC ENDOCRINOLOGY</td></tr><tr><td style=\"white-space:nowrap\">253<a name=\"NHSDataModelAndDictionary-treatment-function-253\"> </a></td><td>PAEDIATRIC CLINICAL HAEMATOLOGY</td></tr><tr><td style=\"white-space:nowrap\">254<a name=\"NHSDataModelAndDictionary-treatment-function-254\"> </a></td><td>PAEDIATRIC AUDIOLOGICAL MEDICINE</td></tr><tr><td style=\"white-space:nowrap\">255<a name=\"NHSDataModelAndDictionary-treatment-function-255\"> </a></td><td>PAEDIATRIC CLINICAL IMMUNOLOGY AND ALLERGY SERVICE</td></tr><tr><td style=\"white-space:nowrap\">256<a name=\"NHSDataModelAndDictionary-treatment-function-256\"> </a></td><td>PAEDIATRIC INFECTIOUS DISEASES</td></tr><tr><td style=\"white-space:nowrap\">257<a name=\"NHSDataModelAndDictionary-treatment-function-257\"> </a></td><td>PAEDIATRIC DERMATOLOGY</td></tr><tr><td style=\"white-space:nowrap\">258<a name=\"NHSDataModelAndDictionary-treatment-function-258\"> </a></td><td>PAEDIATRIC RESPIRATORY MEDICINE</td></tr><tr><td style=\"white-space:nowrap\">259<a name=\"NHSDataModelAndDictionary-treatment-function-259\"> </a></td><td>PAEDIATRIC NEPHROLOGY</td></tr><tr><td style=\"white-space:nowrap\">260<a name=\"NHSDataModelAndDictionary-treatment-function-260\"> </a></td><td>PAEDIATRIC MEDICAL ONCOLOGY</td></tr><tr><td style=\"white-space:nowrap\">261<a name=\"NHSDataModelAndDictionary-treatment-function-261\"> </a></td><td>PAEDIATRIC METABOLIC DISEASE</td></tr><tr><td style=\"white-space:nowrap\">262<a name=\"NHSDataModelAndDictionary-treatment-function-262\"> </a></td><td>PAEDIATRIC RHEUMATOLOGY</td></tr><tr><td style=\"white-space:nowrap\">263<a name=\"NHSDataModelAndDictionary-treatment-function-263\"> </a></td><td>PAEDIATRIC DIABETIC MEDICINE</td></tr><tr><td style=\"white-space:nowrap\">264<a name=\"NHSDataModelAndDictionary-treatment-function-264\"> </a></td><td>PAEDIATRIC CYSTIC FIBROSIS</td></tr><tr><td style=\"white-space:nowrap\">280<a name=\"NHSDataModelAndDictionary-treatment-function-280\"> </a></td><td>PAEDIATRIC INTERVENTIONAL RADIOLOGY</td></tr><tr><td style=\"white-space:nowrap\">290<a name=\"NHSDataModelAndDictionary-treatment-function-290\"> </a></td><td>COMMUNITY PAEDIATRICS</td></tr><tr><td style=\"white-space:nowrap\">291<a name=\"NHSDataModelAndDictionary-treatment-function-291\"> </a></td><td>PAEDIATRIC NEURO-DISABILITY</td></tr><tr><td style=\"white-space:nowrap\">190<a name=\"NHSDataModelAndDictionary-treatment-function-190\"> </a></td><td>ANAESTHETICS</td></tr><tr><td style=\"white-space:nowrap\">192<a name=\"NHSDataModelAndDictionary-treatment-function-192\"> </a></td><td>CRITICAL CARE MEDICINE</td></tr><tr><td style=\"white-space:nowrap\">300<a name=\"NHSDataModelAndDictionary-treatment-function-300\"> </a></td><td>GENERAL MEDICINE</td></tr><tr><td style=\"white-space:nowrap\">301<a name=\"NHSDataModelAndDictionary-treatment-function-301\"> </a></td><td>GASTROENTEROLOGY</td></tr><tr><td style=\"white-space:nowrap\">302<a name=\"NHSDataModelAndDictionary-treatment-function-302\"> </a></td><td>ENDOCRINOLOGY</td></tr><tr><td style=\"white-space:nowrap\">303<a name=\"NHSDataModelAndDictionary-treatment-function-303\"> </a></td><td>CLINICAL HAEMATOLOGY</td></tr><tr><td style=\"white-space:nowrap\">304<a name=\"NHSDataModelAndDictionary-treatment-function-304\"> </a></td><td>CLINICAL PHYSIOLOGY</td></tr><tr><td style=\"white-space:nowrap\">305<a name=\"NHSDataModelAndDictionary-treatment-function-305\"> </a></td><td>CLINICAL PHARMACOLOGY</td></tr><tr><td style=\"white-space:nowrap\">306<a name=\"NHSDataModelAndDictionary-treatment-function-306\"> </a></td><td>HEPATOLOGY</td></tr><tr><td style=\"white-space:nowrap\">307<a name=\"NHSDataModelAndDictionary-treatment-function-307\"> </a></td><td>DIABETIC MEDICINE</td></tr><tr><td style=\"white-space:nowrap\">308<a name=\"NHSDataModelAndDictionary-treatment-function-308\"> </a></td><td>BLOOD AND MARROW TRANSPLANTATION</td></tr><tr><td style=\"white-space:nowrap\">309<a name=\"NHSDataModelAndDictionary-treatment-function-309\"> </a></td><td>HAEMOPHILIA SERVICE</td></tr><tr><td style=\"white-space:nowrap\">310<a name=\"NHSDataModelAndDictionary-treatment-function-310\"> </a></td><td>AUDIOLOGICAL MEDICINE</td></tr><tr><td style=\"white-space:nowrap\">311<a name=\"NHSDataModelAndDictionary-treatment-function-311\"> </a></td><td>CLINICAL GENETICS</td></tr><tr><td style=\"white-space:nowrap\">312<a name=\"NHSDataModelAndDictionary-treatment-function-312\"> </a></td><td>not a Treatment Function</td></tr><tr><td style=\"white-space:nowrap\">313<a name=\"NHSDataModelAndDictionary-treatment-function-313\"> </a></td><td>CLINICAL IMMUNOLOGY and ALLERGY SERVICE</td></tr><tr><td style=\"white-space:nowrap\">314<a name=\"NHSDataModelAndDictionary-treatment-function-314\"> </a></td><td>REHABILITATION SERVICE</td></tr><tr><td style=\"white-space:nowrap\">315<a name=\"NHSDataModelAndDictionary-treatment-function-315\"> </a></td><td>PALLIATIVE MEDICINE</td></tr><tr><td style=\"white-space:nowrap\">316<a name=\"NHSDataModelAndDictionary-treatment-function-316\"> </a></td><td>CLINICAL IMMUNOLOGY</td></tr><tr><td style=\"white-space:nowrap\">317<a name=\"NHSDataModelAndDictionary-treatment-function-317\"> </a></td><td>ALLERGY SERVICE</td></tr><tr><td style=\"white-space:nowrap\">318<a name=\"NHSDataModelAndDictionary-treatment-function-318\"> </a></td><td>INTERMEDIATE CARE</td></tr><tr><td style=\"white-space:nowrap\">319<a name=\"NHSDataModelAndDictionary-treatment-function-319\"> </a></td><td>RESPITE CARE</td></tr><tr><td style=\"white-space:nowrap\">320<a name=\"NHSDataModelAndDictionary-treatment-function-320\"> </a></td><td>CARDIOLOGY</td></tr><tr><td style=\"white-space:nowrap\">321<a name=\"NHSDataModelAndDictionary-treatment-function-321\"> </a></td><td>PAEDIATRIC CARDIOLOGY</td></tr><tr><td style=\"white-space:nowrap\">322<a name=\"NHSDataModelAndDictionary-treatment-function-322\"> </a></td><td>CLINICAL MICROBIOLOGY</td></tr><tr><td style=\"white-space:nowrap\">323<a name=\"NHSDataModelAndDictionary-treatment-function-323\"> </a></td><td>SPINAL INJURIES</td></tr><tr><td style=\"white-space:nowrap\">324<a name=\"NHSDataModelAndDictionary-treatment-function-324\"> </a></td><td>ANTICOAGULANT SERVICE</td></tr><tr><td style=\"white-space:nowrap\">325<a name=\"NHSDataModelAndDictionary-treatment-function-325\"> </a></td><td>SPORT AND EXERCISE MEDICINE</td></tr><tr><td style=\"white-space:nowrap\">327<a name=\"NHSDataModelAndDictionary-treatment-function-327\"> </a></td><td>CARDIAC REHABILITATION</td></tr><tr><td style=\"white-space:nowrap\">328<a name=\"NHSDataModelAndDictionary-treatment-function-328\"> </a></td><td>STROKE MEDICINE</td></tr><tr><td style=\"white-space:nowrap\">329<a name=\"NHSDataModelAndDictionary-treatment-function-329\"> </a></td><td>TRANSIENT ISCHAEMIC ATTACK</td></tr><tr><td style=\"white-space:nowrap\">330<a name=\"NHSDataModelAndDictionary-treatment-function-330\"> </a></td><td>DERMATOLOGY</td></tr><tr><td style=\"white-space:nowrap\">331<a name=\"NHSDataModelAndDictionary-treatment-function-331\"> </a></td><td>CONGENITAL HEART DISEASE SERVICE</td></tr><tr><td style=\"white-space:nowrap\">340<a name=\"NHSDataModelAndDictionary-treatment-function-340\"> </a></td><td>RESPIRATORY MEDICINE</td></tr><tr><td style=\"white-space:nowrap\">341<a name=\"NHSDataModelAndDictionary-treatment-function-341\"> </a></td><td>RESPIRATORY PHYSIOLOGY</td></tr><tr><td style=\"white-space:nowrap\">342<a name=\"NHSDataModelAndDictionary-treatment-function-342\"> </a></td><td>PROGRAMMED PULMONARY REHABILITATION</td></tr><tr><td style=\"white-space:nowrap\">343<a name=\"NHSDataModelAndDictionary-treatment-function-343\"> </a></td><td>ADULT CYSTIC FIBROSIS SERVICE</td></tr><tr><td style=\"white-space:nowrap\">344<a name=\"NHSDataModelAndDictionary-treatment-function-344\"> </a></td><td>COMPLEX SPECIALISED REHABILITATION SERVICE</td></tr><tr><td style=\"white-space:nowrap\">345<a name=\"NHSDataModelAndDictionary-treatment-function-345\"> </a></td><td>SPECIALIST REHABILITATION SERVICE</td></tr><tr><td style=\"white-space:nowrap\">346<a name=\"NHSDataModelAndDictionary-treatment-function-346\"> </a></td><td>LOCAL SPECIALIST REHABILITATION SERVICE</td></tr><tr><td style=\"white-space:nowrap\">350<a name=\"NHSDataModelAndDictionary-treatment-function-350\"> </a></td><td>INFECTIOUS DISEASES</td></tr><tr><td style=\"white-space:nowrap\">352<a name=\"NHSDataModelAndDictionary-treatment-function-352\"> </a></td><td>TROPICAL MEDICINE</td></tr><tr><td style=\"white-space:nowrap\">360<a name=\"NHSDataModelAndDictionary-treatment-function-360\"> </a></td><td>GENITOURINARY MEDICINE</td></tr><tr><td style=\"white-space:nowrap\">361<a name=\"NHSDataModelAndDictionary-treatment-function-361\"> </a></td><td>NEPHROLOGY</td></tr><tr><td style=\"white-space:nowrap\">370<a name=\"NHSDataModelAndDictionary-treatment-function-370\"> </a></td><td>MEDICAL ONCOLOGY</td></tr><tr><td style=\"white-space:nowrap\">371<a name=\"NHSDataModelAndDictionary-treatment-function-371\"> </a></td><td>NUCLEAR MEDICINE</td></tr><tr><td style=\"white-space:nowrap\">400<a name=\"NHSDataModelAndDictionary-treatment-function-400\"> </a></td><td>NEUROLOGY</td></tr><tr><td style=\"white-space:nowrap\">401<a name=\"NHSDataModelAndDictionary-treatment-function-401\"> </a></td><td>CLINICAL NEUROPHYSIOLOGY</td></tr><tr><td style=\"white-space:nowrap\">410<a name=\"NHSDataModelAndDictionary-treatment-function-410\"> </a></td><td>RHEUMATOLOGY</td></tr><tr><td style=\"white-space:nowrap\">420<a name=\"NHSDataModelAndDictionary-treatment-function-420\"> </a></td><td>PAEDIATRICS</td></tr><tr><td style=\"white-space:nowrap\">421<a name=\"NHSDataModelAndDictionary-treatment-function-421\"> </a></td><td>PAEDIATRIC NEUROLOGY</td></tr><tr><td style=\"white-space:nowrap\">422<a name=\"NHSDataModelAndDictionary-treatment-function-422\"> </a></td><td>NEONATOLOGY</td></tr><tr><td style=\"white-space:nowrap\">424<a name=\"NHSDataModelAndDictionary-treatment-function-424\"> </a></td><td>WELL BABIES</td></tr><tr><td style=\"white-space:nowrap\">430<a name=\"NHSDataModelAndDictionary-treatment-function-430\"> </a></td><td>GERIATRIC MEDICINE</td></tr><tr><td style=\"white-space:nowrap\">450<a name=\"NHSDataModelAndDictionary-treatment-function-450\"> </a></td><td>DENTAL MEDICINE SPECIALTIES</td></tr><tr><td style=\"white-space:nowrap\">460<a name=\"NHSDataModelAndDictionary-treatment-function-460\"> </a></td><td>MEDICAL OPHTHALMOLOGY</td></tr><tr><td style=\"white-space:nowrap\">500<a name=\"NHSDataModelAndDictionary-treatment-function-500\"> </a></td><td>not a Treatment Function</td></tr><tr><td style=\"white-space:nowrap\">501<a name=\"NHSDataModelAndDictionary-treatment-function-501\"> </a></td><td>OBSTETRICS</td></tr><tr><td style=\"white-space:nowrap\">502<a name=\"NHSDataModelAndDictionary-treatment-function-502\"> </a></td><td>GYNAECOLOGY</td></tr><tr><td style=\"white-space:nowrap\">503<a name=\"NHSDataModelAndDictionary-treatment-function-503\"> </a></td><td>GYNAECOLOGICAL ONCOLOGY</td></tr><tr><td style=\"white-space:nowrap\">510<a name=\"NHSDataModelAndDictionary-treatment-function-510\"> </a></td><td>Retired</td></tr><tr><td style=\"white-space:nowrap\">520<a name=\"NHSDataModelAndDictionary-treatment-function-520\"> </a></td><td>Retired</td></tr><tr><td style=\"white-space:nowrap\">560<a name=\"NHSDataModelAndDictionary-treatment-function-560\"> </a></td><td>MIDWIFERY SERVICE</td></tr><tr><td style=\"white-space:nowrap\">600<a name=\"NHSDataModelAndDictionary-treatment-function-600\"> </a></td><td>not a Treatment Function</td></tr><tr><td style=\"white-space:nowrap\">610<a name=\"NHSDataModelAndDictionary-treatment-function-610\"> </a></td><td>Retired</td></tr><tr><td style=\"white-space:nowrap\">620<a name=\"NHSDataModelAndDictionary-treatment-function-620\"> </a></td><td>Retired</td></tr><tr><td style=\"white-space:nowrap\">650<a name=\"NHSDataModelAndDictionary-treatment-function-650\"> </a></td><td>PHYSIOTHERAPY</td></tr><tr><td style=\"white-space:nowrap\">651<a name=\"NHSDataModelAndDictionary-treatment-function-651\"> </a></td><td>OCCUPATIONAL THERAPY</td></tr><tr><td style=\"white-space:nowrap\">652<a name=\"NHSDataModelAndDictionary-treatment-function-652\"> </a></td><td>SPEECH AND LANGUAGE THERAPY</td></tr><tr><td style=\"white-space:nowrap\">653<a name=\"NHSDataModelAndDictionary-treatment-function-653\"> </a></td><td>PODIATRY</td></tr><tr><td style=\"white-space:nowrap\">654<a name=\"NHSDataModelAndDictionary-treatment-function-654\"> </a></td><td>DIETETICS</td></tr><tr><td style=\"white-space:nowrap\">655<a name=\"NHSDataModelAndDictionary-treatment-function-655\"> </a></td><td>ORTHOPTICS</td></tr><tr><td style=\"white-space:nowrap\">656<a name=\"NHSDataModelAndDictionary-treatment-function-656\"> </a></td><td>CLINICAL PSYCHOLOGY</td></tr><tr><td style=\"white-space:nowrap\">657<a name=\"NHSDataModelAndDictionary-treatment-function-657\"> </a></td><td>PROSTHETICS</td></tr><tr><td style=\"white-space:nowrap\">658<a name=\"NHSDataModelAndDictionary-treatment-function-658\"> </a></td><td>ORTHOTICS</td></tr><tr><td style=\"white-space:nowrap\">659<a name=\"NHSDataModelAndDictionary-treatment-function-659\"> </a></td><td>DRAMA THERAPY</td></tr><tr><td style=\"white-space:nowrap\">660<a name=\"NHSDataModelAndDictionary-treatment-function-660\"> </a></td><td>ART THERAPY</td></tr><tr><td style=\"white-space:nowrap\">661<a name=\"NHSDataModelAndDictionary-treatment-function-661\"> </a></td><td>MUSIC THERAPY</td></tr><tr><td style=\"white-space:nowrap\">662<a name=\"NHSDataModelAndDictionary-treatment-function-662\"> </a></td><td>OPTOMETRY</td></tr><tr><td style=\"white-space:nowrap\">663<a name=\"NHSDataModelAndDictionary-treatment-function-663\"> </a></td><td>PODIATRIC SURGERY</td></tr><tr><td style=\"white-space:nowrap\">700<a name=\"NHSDataModelAndDictionary-treatment-function-700\"> </a></td><td>LEARNING DISABILITY</td></tr><tr><td style=\"white-space:nowrap\">710<a name=\"NHSDataModelAndDictionary-treatment-function-710\"> </a></td><td>ADULT MENTAL ILLNESS</td></tr><tr><td style=\"white-space:nowrap\">711<a name=\"NHSDataModelAndDictionary-treatment-function-711\"> </a></td><td>CHILD and ADOLESCENT PSYCHIATRY</td></tr><tr><td style=\"white-space:nowrap\">712<a name=\"NHSDataModelAndDictionary-treatment-function-712\"> </a></td><td>FORENSIC PSYCHIATRY</td></tr><tr><td style=\"white-space:nowrap\">713<a name=\"NHSDataModelAndDictionary-treatment-function-713\"> </a></td><td>PSYCHOTHERAPY</td></tr><tr><td style=\"white-space:nowrap\">715<a name=\"NHSDataModelAndDictionary-treatment-function-715\"> </a></td><td>OLD AGE PSYCHIATRY</td></tr><tr><td style=\"white-space:nowrap\">720<a name=\"NHSDataModelAndDictionary-treatment-function-720\"> </a></td><td>EATING DISORDERS</td></tr><tr><td style=\"white-space:nowrap\">721<a name=\"NHSDataModelAndDictionary-treatment-function-721\"> </a></td><td>ADDICTION SERVICES</td></tr><tr><td style=\"white-space:nowrap\">722<a name=\"NHSDataModelAndDictionary-treatment-function-722\"> </a></td><td>LIAISON PSYCHIATRY</td></tr><tr><td style=\"white-space:nowrap\">723<a name=\"NHSDataModelAndDictionary-treatment-function-723\"> </a></td><td>PSYCHIATRIC INTENSIVE CARE</td></tr><tr><td style=\"white-space:nowrap\">724<a name=\"NHSDataModelAndDictionary-treatment-function-724\"> </a></td><td>PERINATAL PSYCHIATRY</td></tr><tr><td style=\"white-space:nowrap\">725<a name=\"NHSDataModelAndDictionary-treatment-function-725\"> </a></td><td>MENTAL HEALTH RECOVERY AND REHABILITATION SERVICE</td></tr><tr><td style=\"white-space:nowrap\">726<a name=\"NHSDataModelAndDictionary-treatment-function-726\"> </a></td><td>MENTAL HEALTH DUAL DIAGNOSIS SERVICE</td></tr><tr><td style=\"white-space:nowrap\">727<a name=\"NHSDataModelAndDictionary-treatment-function-727\"> </a></td><td>DEMENTIA ASSESSMENT SERVICE</td></tr><tr><td style=\"white-space:nowrap\">800<a name=\"NHSDataModelAndDictionary-treatment-function-800\"> </a></td><td>CLINICAL ONCOLOGY (previously RADIOTHERAPY)</td></tr><tr><td style=\"white-space:nowrap\">810<a name=\"NHSDataModelAndDictionary-treatment-function-810\"> </a></td><td>not a Treatment Function</td></tr><tr><td style=\"white-space:nowrap\">811<a name=\"NHSDataModelAndDictionary-treatment-function-811\"> </a></td><td>INTERVENTIONAL RADIOLOGY</td></tr><tr><td style=\"white-space:nowrap\">812<a name=\"NHSDataModelAndDictionary-treatment-function-812\"> </a></td><td>DIAGNOSTIC IMAGING</td></tr><tr><td style=\"white-space:nowrap\">820<a name=\"NHSDataModelAndDictionary-treatment-function-820\"> </a></td><td>not a Treatment Function</td></tr><tr><td style=\"white-space:nowrap\">821<a name=\"NHSDataModelAndDictionary-treatment-function-821\"> </a></td><td>not a Treatment Function</td></tr><tr><td style=\"white-space:nowrap\">822<a name=\"NHSDataModelAndDictionary-treatment-function-822\"> </a></td><td>CHEMICAL PATHOLOGY</td></tr><tr><td style=\"white-space:nowrap\">823<a name=\"NHSDataModelAndDictionary-treatment-function-823\"> </a></td><td>not a Treatment Function</td></tr><tr><td style=\"white-space:nowrap\">824<a name=\"NHSDataModelAndDictionary-treatment-function-824\"> </a></td><td>not a Treatment Function</td></tr><tr><td style=\"white-space:nowrap\">830<a name=\"NHSDataModelAndDictionary-treatment-function-830\"> </a></td><td>not a Treatment Function</td></tr><tr><td style=\"white-space:nowrap\">831<a name=\"NHSDataModelAndDictionary-treatment-function-831\"> </a></td><td>not a Treatment Function</td></tr><tr><td style=\"white-space:nowrap\">832<a name=\"NHSDataModelAndDictionary-treatment-function-832\"> </a></td><td>Retired</td></tr><tr><td style=\"white-space:nowrap\">834<a name=\"NHSDataModelAndDictionary-treatment-function-834\"> </a></td><td>MEDICAL VIROLOGY</td></tr><tr><td style=\"white-space:nowrap\">840<a name=\"NHSDataModelAndDictionary-treatment-function-840\"> </a></td><td>AUDIOLOGY</td></tr><tr><td style=\"white-space:nowrap\">900<a name=\"NHSDataModelAndDictionary-treatment-function-900\"> </a></td><td>not a Treatment Function</td></tr><tr><td style=\"white-space:nowrap\">901<a name=\"NHSDataModelAndDictionary-treatment-function-901\"> </a></td><td>not a Treatment Function</td></tr><tr><td style=\"white-space:nowrap\">920<a name=\"NHSDataModelAndDictionary-treatment-function-920\"> </a></td><td>DIABETIC EDUCATION SERVICE</td></tr><tr><td style=\"white-space:nowrap\">950<a name=\"NHSDataModelAndDictionary-treatment-function-950\"> </a></td><td>not a Treatment Function</td></tr><tr><td style=\"white-space:nowrap\">960<a name=\"NHSDataModelAndDictionary-treatment-function-960\"> </a></td><td>not a Treatment Function</td></tr><tr><td style=\"white-space:nowrap\">990<a name=\"NHSDataModelAndDictionary-treatment-function-990\"> </a></td><td>Retired</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-treatment-function"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.1"] ; # 
+  fhir:name [ fhir:v "NHSDataModelandDictionaryTreatmentFunction"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2021-03-10T00:00:00+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "NHS England"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "NHS England" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.england.nhs.uk/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "A CodeSystem to identify the specialty of the care professional or team. FHIR Version of NHS Data Dictionary Main Specialty Code and HSCIC ITK HL7v2 Table ZU012"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "GB-ENG" ] ;
+       fhir:display [ fhir:v "England" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "Copyright © 2019 NHS Digital"] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "100" ] ;
+     fhir:display [ fhir:v "GENERAL SURGERY" ]
+  ] [
+     fhir:code [ fhir:v "101" ] ;
+     fhir:display [ fhir:v "UROLOGY" ]
+  ] [
+     fhir:code [ fhir:v "102" ] ;
+     fhir:display [ fhir:v "TRANSPLANTATION SURGERY" ]
+  ] [
+     fhir:code [ fhir:v "103" ] ;
+     fhir:display [ fhir:v "BREAST SURGERY" ]
+  ] [
+     fhir:code [ fhir:v "104" ] ;
+     fhir:display [ fhir:v "COLORECTAL SURGERY" ]
+  ] [
+     fhir:code [ fhir:v "105" ] ;
+     fhir:display [ fhir:v "HEPATOBILIARY AND PANCREATIC SURGERY" ]
+  ] [
+     fhir:code [ fhir:v "106" ] ;
+     fhir:display [ fhir:v "UPPER GASTROINTESTINAL SURGERY" ]
+  ] [
+     fhir:code [ fhir:v "107" ] ;
+     fhir:display [ fhir:v "VASCULAR SURGERY" ]
+  ] [
+     fhir:code [ fhir:v "108" ] ;
+     fhir:display [ fhir:v "SPINAL SURGERY SERVICE" ]
+  ] [
+     fhir:code [ fhir:v "110" ] ;
+     fhir:display [ fhir:v "TRAUMA AND ORTHOPAEDICS" ]
+  ] [
+     fhir:code [ fhir:v "120" ] ;
+     fhir:display [ fhir:v "ENT" ]
+  ] [
+     fhir:code [ fhir:v "130" ] ;
+     fhir:display [ fhir:v "OPHTHALMOLOGY" ]
+  ] [
+     fhir:code [ fhir:v "140" ] ;
+     fhir:display [ fhir:v "ORAL SURGERY" ]
+  ] [
+     fhir:code [ fhir:v "141" ] ;
+     fhir:display [ fhir:v "RESTORATIVE DENTISTRY" ]
+  ] [
+     fhir:code [ fhir:v "142" ] ;
+     fhir:display [ fhir:v "PAEDIATRIC DENTISTRY" ]
+  ] [
+     fhir:code [ fhir:v "143" ] ;
+     fhir:display [ fhir:v "ORTHODONTICS" ]
+  ] [
+     fhir:code [ fhir:v "144" ] ;
+     fhir:display [ fhir:v "MAXILLO-FACIAL SURGERY" ]
+  ] [
+     fhir:code [ fhir:v "150" ] ;
+     fhir:display [ fhir:v "NEUROSURGERY" ]
+  ] [
+     fhir:code [ fhir:v "160" ] ;
+     fhir:display [ fhir:v "PLASTIC SURGERY" ]
+  ] [
+     fhir:code [ fhir:v "161" ] ;
+     fhir:display [ fhir:v "BURNS CARE" ]
+  ] [
+     fhir:code [ fhir:v "170" ] ;
+     fhir:display [ fhir:v "CARDIOTHORACIC SURGERY" ]
+  ] [
+     fhir:code [ fhir:v "171" ] ;
+     fhir:display [ fhir:v "PAEDIATRIC SURGERY" ]
+  ] [
+     fhir:code [ fhir:v "172" ] ;
+     fhir:display [ fhir:v "CARDIAC SURGERY" ]
+  ] [
+     fhir:code [ fhir:v "173" ] ;
+     fhir:display [ fhir:v "THORACIC SURGERY" ]
+  ] [
+     fhir:code [ fhir:v "174" ] ;
+     fhir:display [ fhir:v "CARDIOTHORACIC TRANSPLANTATION" ]
+  ] [
+     fhir:code [ fhir:v "180" ] ;
+     fhir:display [ fhir:v "ACCIDENT AND EMERGENCY" ]
+  ] [
+     fhir:code [ fhir:v "191" ] ;
+     fhir:display [ fhir:v "PAIN MANAGEMENT" ]
+  ] [
+     fhir:code [ fhir:v "211" ] ;
+     fhir:display [ fhir:v "PAEDIATRIC UROLOGY" ]
+  ] [
+     fhir:code [ fhir:v "212" ] ;
+     fhir:display [ fhir:v "PAEDIATRIC TRANSPLANTATION SURGERY" ]
+  ] [
+     fhir:code [ fhir:v "213" ] ;
+     fhir:display [ fhir:v "PAEDIATRIC GASTROINTESTINAL SURGERY" ]
+  ] [
+     fhir:code [ fhir:v "214" ] ;
+     fhir:display [ fhir:v "PAEDIATRIC TRAUMA AND ORTHOPAEDICS" ]
+  ] [
+     fhir:code [ fhir:v "215" ] ;
+     fhir:display [ fhir:v "PAEDIATRIC EAR NOSE AND THROAT" ]
+  ] [
+     fhir:code [ fhir:v "216" ] ;
+     fhir:display [ fhir:v "PAEDIATRIC OPHTHALMOLOGY" ]
+  ] [
+     fhir:code [ fhir:v "217" ] ;
+     fhir:display [ fhir:v "PAEDIATRIC MAXILLO-FACIAL SURGERY" ]
+  ] [
+     fhir:code [ fhir:v "218" ] ;
+     fhir:display [ fhir:v "PAEDIATRIC NEUROSURGERY" ]
+  ] [
+     fhir:code [ fhir:v "219" ] ;
+     fhir:display [ fhir:v "PAEDIATRIC PLASTIC SURGERY" ]
+  ] [
+     fhir:code [ fhir:v "220" ] ;
+     fhir:display [ fhir:v "PAEDIATRIC BURNS CARE" ]
+  ] [
+     fhir:code [ fhir:v "221" ] ;
+     fhir:display [ fhir:v "PAEDIATRIC CARDIAC SURGERY" ]
+  ] [
+     fhir:code [ fhir:v "222" ] ;
+     fhir:display [ fhir:v "PAEDIATRIC THORACIC SURGERY" ]
+  ] [
+     fhir:code [ fhir:v "223" ] ;
+     fhir:display [ fhir:v "PAEDIATRIC EPILEPSY" ]
+  ] [
+     fhir:code [ fhir:v "241" ] ;
+     fhir:display [ fhir:v "PAEDIATRIC PAIN MANAGEMENT" ]
+  ] [
+     fhir:code [ fhir:v "242" ] ;
+     fhir:display [ fhir:v "PAEDIATRIC INTENSIVE CARE" ]
+  ] [
+     fhir:code [ fhir:v "251" ] ;
+     fhir:display [ fhir:v "PAEDIATRIC GASTROENTEROLOGY" ]
+  ] [
+     fhir:code [ fhir:v "252" ] ;
+     fhir:display [ fhir:v "PAEDIATRIC ENDOCRINOLOGY" ]
+  ] [
+     fhir:code [ fhir:v "253" ] ;
+     fhir:display [ fhir:v "PAEDIATRIC CLINICAL HAEMATOLOGY" ]
+  ] [
+     fhir:code [ fhir:v "254" ] ;
+     fhir:display [ fhir:v "PAEDIATRIC AUDIOLOGICAL MEDICINE" ]
+  ] [
+     fhir:code [ fhir:v "255" ] ;
+     fhir:display [ fhir:v "PAEDIATRIC CLINICAL IMMUNOLOGY AND ALLERGY SERVICE" ]
+  ] [
+     fhir:code [ fhir:v "256" ] ;
+     fhir:display [ fhir:v "PAEDIATRIC INFECTIOUS DISEASES" ]
+  ] [
+     fhir:code [ fhir:v "257" ] ;
+     fhir:display [ fhir:v "PAEDIATRIC DERMATOLOGY" ]
+  ] [
+     fhir:code [ fhir:v "258" ] ;
+     fhir:display [ fhir:v "PAEDIATRIC RESPIRATORY MEDICINE" ]
+  ] [
+     fhir:code [ fhir:v "259" ] ;
+     fhir:display [ fhir:v "PAEDIATRIC NEPHROLOGY" ]
+  ] [
+     fhir:code [ fhir:v "260" ] ;
+     fhir:display [ fhir:v "PAEDIATRIC MEDICAL ONCOLOGY" ]
+  ] [
+     fhir:code [ fhir:v "261" ] ;
+     fhir:display [ fhir:v "PAEDIATRIC METABOLIC DISEASE" ]
+  ] [
+     fhir:code [ fhir:v "262" ] ;
+     fhir:display [ fhir:v "PAEDIATRIC RHEUMATOLOGY" ]
+  ] [
+     fhir:code [ fhir:v "263" ] ;
+     fhir:display [ fhir:v "PAEDIATRIC DIABETIC MEDICINE" ]
+  ] [
+     fhir:code [ fhir:v "264" ] ;
+     fhir:display [ fhir:v "PAEDIATRIC CYSTIC FIBROSIS" ]
+  ] [
+     fhir:code [ fhir:v "280" ] ;
+     fhir:display [ fhir:v "PAEDIATRIC INTERVENTIONAL RADIOLOGY" ]
+  ] [
+     fhir:code [ fhir:v "290" ] ;
+     fhir:display [ fhir:v "COMMUNITY PAEDIATRICS" ]
+  ] [
+     fhir:code [ fhir:v "291" ] ;
+     fhir:display [ fhir:v "PAEDIATRIC NEURO-DISABILITY" ]
+  ] [
+     fhir:code [ fhir:v "190" ] ;
+     fhir:display [ fhir:v "ANAESTHETICS" ]
+  ] [
+     fhir:code [ fhir:v "192" ] ;
+     fhir:display [ fhir:v "CRITICAL CARE MEDICINE" ]
+  ] [
+     fhir:code [ fhir:v "300" ] ;
+     fhir:display [ fhir:v "GENERAL MEDICINE" ]
+  ] [
+     fhir:code [ fhir:v "301" ] ;
+     fhir:display [ fhir:v "GASTROENTEROLOGY" ]
+  ] [
+     fhir:code [ fhir:v "302" ] ;
+     fhir:display [ fhir:v "ENDOCRINOLOGY" ]
+  ] [
+     fhir:code [ fhir:v "303" ] ;
+     fhir:display [ fhir:v "CLINICAL HAEMATOLOGY" ]
+  ] [
+     fhir:code [ fhir:v "304" ] ;
+     fhir:display [ fhir:v "CLINICAL PHYSIOLOGY" ]
+  ] [
+     fhir:code [ fhir:v "305" ] ;
+     fhir:display [ fhir:v "CLINICAL PHARMACOLOGY" ]
+  ] [
+     fhir:code [ fhir:v "306" ] ;
+     fhir:display [ fhir:v "HEPATOLOGY" ]
+  ] [
+     fhir:code [ fhir:v "307" ] ;
+     fhir:display [ fhir:v "DIABETIC MEDICINE" ]
+  ] [
+     fhir:code [ fhir:v "308" ] ;
+     fhir:display [ fhir:v "BLOOD AND MARROW TRANSPLANTATION" ]
+  ] [
+     fhir:code [ fhir:v "309" ] ;
+     fhir:display [ fhir:v "HAEMOPHILIA SERVICE" ]
+  ] [
+     fhir:code [ fhir:v "310" ] ;
+     fhir:display [ fhir:v "AUDIOLOGICAL MEDICINE" ]
+  ] [
+     fhir:code [ fhir:v "311" ] ;
+     fhir:display [ fhir:v "CLINICAL GENETICS" ]
+  ] [
+     fhir:code [ fhir:v "312" ] ;
+     fhir:display [ fhir:v "not a Treatment Function" ]
+  ] [
+     fhir:code [ fhir:v "313" ] ;
+     fhir:display [ fhir:v "CLINICAL IMMUNOLOGY and ALLERGY SERVICE" ]
+  ] [
+     fhir:code [ fhir:v "314" ] ;
+     fhir:display [ fhir:v "REHABILITATION SERVICE" ]
+  ] [
+     fhir:code [ fhir:v "315" ] ;
+     fhir:display [ fhir:v "PALLIATIVE MEDICINE" ]
+  ] [
+     fhir:code [ fhir:v "316" ] ;
+     fhir:display [ fhir:v "CLINICAL IMMUNOLOGY" ]
+  ] [
+     fhir:code [ fhir:v "317" ] ;
+     fhir:display [ fhir:v "ALLERGY SERVICE" ]
+  ] [
+     fhir:code [ fhir:v "318" ] ;
+     fhir:display [ fhir:v "INTERMEDIATE CARE" ]
+  ] [
+     fhir:code [ fhir:v "319" ] ;
+     fhir:display [ fhir:v "RESPITE CARE" ]
+  ] [
+     fhir:code [ fhir:v "320" ] ;
+     fhir:display [ fhir:v "CARDIOLOGY" ]
+  ] [
+     fhir:code [ fhir:v "321" ] ;
+     fhir:display [ fhir:v "PAEDIATRIC CARDIOLOGY" ]
+  ] [
+     fhir:code [ fhir:v "322" ] ;
+     fhir:display [ fhir:v "CLINICAL MICROBIOLOGY" ]
+  ] [
+     fhir:code [ fhir:v "323" ] ;
+     fhir:display [ fhir:v "SPINAL INJURIES" ]
+  ] [
+     fhir:code [ fhir:v "324" ] ;
+     fhir:display [ fhir:v "ANTICOAGULANT SERVICE" ]
+  ] [
+     fhir:code [ fhir:v "325" ] ;
+     fhir:display [ fhir:v "SPORT AND EXERCISE MEDICINE" ]
+  ] [
+     fhir:code [ fhir:v "327" ] ;
+     fhir:display [ fhir:v "CARDIAC REHABILITATION" ]
+  ] [
+     fhir:code [ fhir:v "328" ] ;
+     fhir:display [ fhir:v "STROKE MEDICINE" ]
+  ] [
+     fhir:code [ fhir:v "329" ] ;
+     fhir:display [ fhir:v "TRANSIENT ISCHAEMIC ATTACK" ]
+  ] [
+     fhir:code [ fhir:v "330" ] ;
+     fhir:display [ fhir:v "DERMATOLOGY" ]
+  ] [
+     fhir:code [ fhir:v "331" ] ;
+     fhir:display [ fhir:v "CONGENITAL HEART DISEASE SERVICE" ]
+  ] [
+     fhir:code [ fhir:v "340" ] ;
+     fhir:display [ fhir:v "RESPIRATORY MEDICINE" ]
+  ] [
+     fhir:code [ fhir:v "341" ] ;
+     fhir:display [ fhir:v "RESPIRATORY PHYSIOLOGY" ]
+  ] [
+     fhir:code [ fhir:v "342" ] ;
+     fhir:display [ fhir:v "PROGRAMMED PULMONARY REHABILITATION" ]
+  ] [
+     fhir:code [ fhir:v "343" ] ;
+     fhir:display [ fhir:v "ADULT CYSTIC FIBROSIS SERVICE" ]
+  ] [
+     fhir:code [ fhir:v "344" ] ;
+     fhir:display [ fhir:v "COMPLEX SPECIALISED REHABILITATION SERVICE" ]
+  ] [
+     fhir:code [ fhir:v "345" ] ;
+     fhir:display [ fhir:v "SPECIALIST REHABILITATION SERVICE" ]
+  ] [
+     fhir:code [ fhir:v "346" ] ;
+     fhir:display [ fhir:v "LOCAL SPECIALIST REHABILITATION SERVICE" ]
+  ] [
+     fhir:code [ fhir:v "350" ] ;
+     fhir:display [ fhir:v "INFECTIOUS DISEASES" ]
+  ] [
+     fhir:code [ fhir:v "352" ] ;
+     fhir:display [ fhir:v "TROPICAL MEDICINE" ]
+  ] [
+     fhir:code [ fhir:v "360" ] ;
+     fhir:display [ fhir:v "GENITOURINARY MEDICINE" ]
+  ] [
+     fhir:code [ fhir:v "361" ] ;
+     fhir:display [ fhir:v "NEPHROLOGY" ]
+  ] [
+     fhir:code [ fhir:v "370" ] ;
+     fhir:display [ fhir:v "MEDICAL ONCOLOGY" ]
+  ] [
+     fhir:code [ fhir:v "371" ] ;
+     fhir:display [ fhir:v "NUCLEAR MEDICINE" ]
+  ] [
+     fhir:code [ fhir:v "400" ] ;
+     fhir:display [ fhir:v "NEUROLOGY" ]
+  ] [
+     fhir:code [ fhir:v "401" ] ;
+     fhir:display [ fhir:v "CLINICAL NEUROPHYSIOLOGY" ]
+  ] [
+     fhir:code [ fhir:v "410" ] ;
+     fhir:display [ fhir:v "RHEUMATOLOGY" ]
+  ] [
+     fhir:code [ fhir:v "420" ] ;
+     fhir:display [ fhir:v "PAEDIATRICS" ]
+  ] [
+     fhir:code [ fhir:v "421" ] ;
+     fhir:display [ fhir:v "PAEDIATRIC NEUROLOGY" ]
+  ] [
+     fhir:code [ fhir:v "422" ] ;
+     fhir:display [ fhir:v "NEONATOLOGY" ]
+  ] [
+     fhir:code [ fhir:v "424" ] ;
+     fhir:display [ fhir:v "WELL BABIES" ]
+  ] [
+     fhir:code [ fhir:v "430" ] ;
+     fhir:display [ fhir:v "GERIATRIC MEDICINE" ]
+  ] [
+     fhir:code [ fhir:v "450" ] ;
+     fhir:display [ fhir:v "DENTAL MEDICINE SPECIALTIES" ]
+  ] [
+     fhir:code [ fhir:v "460" ] ;
+     fhir:display [ fhir:v "MEDICAL OPHTHALMOLOGY" ]
+  ] [
+     fhir:code [ fhir:v "500" ] ;
+     fhir:display [ fhir:v "not a Treatment Function" ]
+  ] [
+     fhir:code [ fhir:v "501" ] ;
+     fhir:display [ fhir:v "OBSTETRICS" ]
+  ] [
+     fhir:code [ fhir:v "502" ] ;
+     fhir:display [ fhir:v "GYNAECOLOGY" ]
+  ] [
+     fhir:code [ fhir:v "503" ] ;
+     fhir:display [ fhir:v "GYNAECOLOGICAL ONCOLOGY" ]
+  ] [
+     fhir:code [ fhir:v "510" ] ;
+     fhir:display [ fhir:v "Retired" ]
+  ] [
+     fhir:code [ fhir:v "520" ] ;
+     fhir:display [ fhir:v "Retired" ]
+  ] [
+     fhir:code [ fhir:v "560" ] ;
+     fhir:display [ fhir:v "MIDWIFERY SERVICE" ]
+  ] [
+     fhir:code [ fhir:v "600" ] ;
+     fhir:display [ fhir:v "not a Treatment Function" ]
+  ] [
+     fhir:code [ fhir:v "610" ] ;
+     fhir:display [ fhir:v "Retired" ]
+  ] [
+     fhir:code [ fhir:v "620" ] ;
+     fhir:display [ fhir:v "Retired" ]
+  ] [
+     fhir:code [ fhir:v "650" ] ;
+     fhir:display [ fhir:v "PHYSIOTHERAPY" ]
+  ] [
+     fhir:code [ fhir:v "651" ] ;
+     fhir:display [ fhir:v "OCCUPATIONAL THERAPY" ]
+  ] [
+     fhir:code [ fhir:v "652" ] ;
+     fhir:display [ fhir:v "SPEECH AND LANGUAGE THERAPY" ]
+  ] [
+     fhir:code [ fhir:v "653" ] ;
+     fhir:display [ fhir:v "PODIATRY" ]
+  ] [
+     fhir:code [ fhir:v "654" ] ;
+     fhir:display [ fhir:v "DIETETICS" ]
+  ] [
+     fhir:code [ fhir:v "655" ] ;
+     fhir:display [ fhir:v "ORTHOPTICS" ]
+  ] [
+     fhir:code [ fhir:v "656" ] ;
+     fhir:display [ fhir:v "CLINICAL PSYCHOLOGY" ]
+  ] [
+     fhir:code [ fhir:v "657" ] ;
+     fhir:display [ fhir:v "PROSTHETICS" ]
+  ] [
+     fhir:code [ fhir:v "658" ] ;
+     fhir:display [ fhir:v "ORTHOTICS" ]
+  ] [
+     fhir:code [ fhir:v "659" ] ;
+     fhir:display [ fhir:v "DRAMA THERAPY" ]
+  ] [
+     fhir:code [ fhir:v "660" ] ;
+     fhir:display [ fhir:v "ART THERAPY" ]
+  ] [
+     fhir:code [ fhir:v "661" ] ;
+     fhir:display [ fhir:v "MUSIC THERAPY" ]
+  ] [
+     fhir:code [ fhir:v "662" ] ;
+     fhir:display [ fhir:v "OPTOMETRY" ]
+  ] [
+     fhir:code [ fhir:v "663" ] ;
+     fhir:display [ fhir:v "PODIATRIC SURGERY" ]
+  ] [
+     fhir:code [ fhir:v "700" ] ;
+     fhir:display [ fhir:v "LEARNING DISABILITY" ]
+  ] [
+     fhir:code [ fhir:v "710" ] ;
+     fhir:display [ fhir:v "ADULT MENTAL ILLNESS" ]
+  ] [
+     fhir:code [ fhir:v "711" ] ;
+     fhir:display [ fhir:v "CHILD and ADOLESCENT PSYCHIATRY" ]
+  ] [
+     fhir:code [ fhir:v "712" ] ;
+     fhir:display [ fhir:v "FORENSIC PSYCHIATRY" ]
+  ] [
+     fhir:code [ fhir:v "713" ] ;
+     fhir:display [ fhir:v "PSYCHOTHERAPY" ]
+  ] [
+     fhir:code [ fhir:v "715" ] ;
+     fhir:display [ fhir:v "OLD AGE PSYCHIATRY" ]
+  ] [
+     fhir:code [ fhir:v "720" ] ;
+     fhir:display [ fhir:v "EATING DISORDERS" ]
+  ] [
+     fhir:code [ fhir:v "721" ] ;
+     fhir:display [ fhir:v "ADDICTION SERVICES" ]
+  ] [
+     fhir:code [ fhir:v "722" ] ;
+     fhir:display [ fhir:v "LIAISON PSYCHIATRY" ]
+  ] [
+     fhir:code [ fhir:v "723" ] ;
+     fhir:display [ fhir:v "PSYCHIATRIC INTENSIVE CARE" ]
+  ] [
+     fhir:code [ fhir:v "724" ] ;
+     fhir:display [ fhir:v "PERINATAL PSYCHIATRY" ]
+  ] [
+     fhir:code [ fhir:v "725" ] ;
+     fhir:display [ fhir:v "MENTAL HEALTH RECOVERY AND REHABILITATION SERVICE" ]
+  ] [
+     fhir:code [ fhir:v "726" ] ;
+     fhir:display [ fhir:v "MENTAL HEALTH DUAL DIAGNOSIS SERVICE" ]
+  ] [
+     fhir:code [ fhir:v "727" ] ;
+     fhir:display [ fhir:v "DEMENTIA ASSESSMENT SERVICE" ]
+  ] [
+     fhir:code [ fhir:v "800" ] ;
+     fhir:display [ fhir:v "CLINICAL ONCOLOGY (previously RADIOTHERAPY)" ]
+  ] [
+     fhir:code [ fhir:v "810" ] ;
+     fhir:display [ fhir:v "not a Treatment Function" ]
+  ] [
+     fhir:code [ fhir:v "811" ] ;
+     fhir:display [ fhir:v "INTERVENTIONAL RADIOLOGY" ]
+  ] [
+     fhir:code [ fhir:v "812" ] ;
+     fhir:display [ fhir:v "DIAGNOSTIC IMAGING" ]
+  ] [
+     fhir:code [ fhir:v "820" ] ;
+     fhir:display [ fhir:v "not a Treatment Function" ]
+  ] [
+     fhir:code [ fhir:v "821" ] ;
+     fhir:display [ fhir:v "not a Treatment Function" ]
+  ] [
+     fhir:code [ fhir:v "822" ] ;
+     fhir:display [ fhir:v "CHEMICAL PATHOLOGY" ]
+  ] [
+     fhir:code [ fhir:v "823" ] ;
+     fhir:display [ fhir:v "not a Treatment Function" ]
+  ] [
+     fhir:code [ fhir:v "824" ] ;
+     fhir:display [ fhir:v "not a Treatment Function" ]
+  ] [
+     fhir:code [ fhir:v "830" ] ;
+     fhir:display [ fhir:v "not a Treatment Function" ]
+  ] [
+     fhir:code [ fhir:v "831" ] ;
+     fhir:display [ fhir:v "not a Treatment Function" ]
+  ] [
+     fhir:code [ fhir:v "832" ] ;
+     fhir:display [ fhir:v "Retired" ]
+  ] [
+     fhir:code [ fhir:v "834" ] ;
+     fhir:display [ fhir:v "MEDICAL VIROLOGY" ]
+  ] [
+     fhir:code [ fhir:v "840" ] ;
+     fhir:display [ fhir:v "AUDIOLOGY" ]
+  ] [
+     fhir:code [ fhir:v "900" ] ;
+     fhir:display [ fhir:v "not a Treatment Function" ]
+  ] [
+     fhir:code [ fhir:v "901" ] ;
+     fhir:display [ fhir:v "not a Treatment Function" ]
+  ] [
+     fhir:code [ fhir:v "920" ] ;
+     fhir:display [ fhir:v "DIABETIC EDUCATION SERVICE" ]
+  ] [
+     fhir:code [ fhir:v "950" ] ;
+     fhir:display [ fhir:v "not a Treatment Function" ]
+  ] [
+     fhir:code [ fhir:v "960" ] ;
+     fhir:display [ fhir:v "not a Treatment Function" ]
+  ] [
+     fhir:code [ fhir:v "990" ] ;
+     fhir:display [ fhir:v "Retired" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

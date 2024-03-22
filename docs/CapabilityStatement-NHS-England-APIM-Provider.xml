@@ -1,0 +1,779 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CapabilityStatement xmlns="http://hl7.org/fhir">
+  <id value="NHS-England-APIM-Provider"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2 id="title">NHS England APIM Base API Definitions</h2><ul><li>Implementation Guide Version: 0.0.1</li><li>FHIR Version: 4.0.1</li><li>Supported Formats: <code>json</code></li><li>Supported Patch Formats: </li><li>Published on: Tue Jan 30 00:00:00 GMT 2024</li><li>Published by: NHS England</li></ul><blockquote class="impl-note"><p><strong>Note to Implementers: FHIR Capabilities</strong></p><p>Any FHIR capability may be 'allowed' by the system unless explicitly marked as &quot;SHALL NOT&quot;. A few items are marked as MAY in the Implementation Guide to highlight their potential relevance to the use case.</p></blockquote><h2 id="rest">FHIR RESTful Capabilities</h2><div class="panel panel-default"><div class="panel-heading"><h3 id="mode1" class="panel-title">Mode: <code>server</code></h3></div><div class="panel-body"><div class="lead"><em>Summary of System-wide Interactions</em></div></div></div><h3 id="resourcesCap1">Capabilities by Resource/Profile</h3><h4 id="resourcesSummary1">Summary</h4><p>The summary table lists the resources that are part of this configuration, and for each resource it lists:</p><ul><li>The relevant profiles (if any)</li><li>The interactions supported by each resource (<b><span class="bg-info">R</span></b>ead, <b><span class="bg-info">S</span></b>earch, <b><span class="bg-info">U</span></b>pdate, and <b><span class="bg-info">C</span></b>reate, are always shown, while <b><span class="bg-info">VR</span></b>ead, <b><span class="bg-info">P</span></b>atch, <b><span class="bg-info">D</span></b>elete, <b><span class="bg-info">H</span></b>istory on <b><span class="bg-info">I</span></b>nstance, or <b><span class="bg-info">H</span></b>istory on <b><span class="bg-info">T</span></b>ype are only present if at least one of the resources has support for them.</li><li><span>The required, recommended, and some optional search parameters (if any). </span></li><li>The linked resources enabled for <code>_include</code></li><li>The other resources enabled for <code>_revinclude</code></li><li>The operations on the resource (if any)</li></ul><div class="table-responsive"><table class="table table-condensed table-hover"><thead><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th class="text-center"><b title="GET a resource (read interaction)">R</b></th><th class="text-center"><b title="GET all set of resources of the type (search interaction)">S</b></th><th class="text-center"><b title="PUT a new resource version (update interaction)">U</b></th><th class="text-center"><b title="POST a new resource (create interaction)">C</b></th><th class="text-center"><b title="DELETE a resource (delete interaction)">D</b></th><th><b title="Required and recommended search parameters">Searches</b></th><th><code><b>_include</b></code></th><th><code><b>_revinclude</b></code></th><th><b>Operations</b></th></tr></thead><tbody><tr><td><a href="#DocumentReference1-1">DocumentReference</a></td><td><a href="StructureDefinition-DocumentReference.html">https://fhir.nhs.uk/England/StructureDefinition/DocumentReference</a></td><td>y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center">y</td><td>subject:identifier, custodian:identifier, next-page-token, based-on:identifier</td><td/><td/><td/></tr><tr><td><a href="#Endpoint1-2">Endpoint</a></td><td><a href="StructureDefinition-Endpoint.html">https://fhir.nhs.uk/England/StructureDefinition/Endpoint</a></td><td>y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center"></td><td class="text-center">y</td><td>_has, Endpoint.identifier</td><td/><td/><td/></tr><tr><td><a href="#HealthcareService1-3">HealthcareService</a></td><td><a href="StructureDefinition-HealthcareService.html">https://fhir.nhs.uk/England/StructureDefinition/HealthcareService</a></td><td>y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center"></td><td class="text-center">y</td><td>_id, HealthcareService.providedBy, HealthcareService.identifier</td><td/><td/><td/></tr><tr><td><a href="#Organization1-4">Organization</a></td><td><a href="StructureDefinition-Organization.html">https://fhir.nhs.uk/England/StructureDefinition/Organization</a></td><td>y</td><td class="text-center">y</td><td class="text-center">y</td><td class="text-center"></td><td class="text-center">y</td><td>_id, Organization.identifier, identifier, active, type, name, address-country, ods-role, ods-lastChangeDate, ods-activeRole</td><td/><td/><td/></tr><tr><td><a href="#OrganizationAffiliation1-5">OrganizationAffiliation</a></td><td><a href="StructureDefinition-OrganizationAffiliation.html">https://fhir.nhs.uk/England/StructureDefinition/OrganizationAffiliation</a></td><td></td><td class="text-center">y</td><td class="text-center"></td><td class="text-center"></td><td class="text-center"></td><td>identifier, active, primary-organization, participating-organization</td><td/><td/><td/></tr><tr><td><a href="#Patient1-6">Patient</a></td><td><a href="StructureDefinition-Patient.html">https://fhir.nhs.uk/England/StructureDefinition/Patient</a><br/><em>Additional supported profiles:</em><br/>  <a href="StructureDefinition-PatientPDS.html">PatientPDS</a></td><td>y</td><td class="text-center">y</td><td class="text-center"></td><td class="text-center"></td><td class="text-center"></td><td>_fuzzy-match, _exact-match, _history, _max-results, identifier, family, given, gender, birthdate, death-date, address-postalcode, address-postcode, general-practitioner, email, phone</td><td/><td/><td/></tr><tr><td><a href="#Practitioner1-7">Practitioner</a></td><td><a href="StructureDefinition-Practitioner.html">https://fhir.nhs.uk/England/StructureDefinition/Practitioner</a></td><td></td><td class="text-center">y</td><td class="text-center"></td><td class="text-center"></td><td class="text-center"></td><td>_query</td><td/><td/><td/></tr><tr><td><a href="#PractitionerRole1-8">PractitionerRole</a></td><td><a href="StructureDefinition-PractitionerRole.html">https://fhir.nhs.uk/England/StructureDefinition/PractitionerRole</a></td><td></td><td class="text-center">y</td><td class="text-center"></td><td class="text-center"></td><td class="text-center"></td><td>practitioner:identifier</td><td/><td/><td/></tr><tr><td><a href="#RelatedPerson1-9">RelatedPerson</a></td><td><a href="StructureDefinition-RelatedPerson.html">https://fhir.nhs.uk/England/StructureDefinition/RelatedPerson</a></td><td></td><td class="text-center">y</td><td class="text-center"></td><td class="text-center"></td><td class="text-center"></td><td>identifier, patient:identifier</td><td><code>RelatedPerson:patient</code></td><td/><td/></tr><tr><td><a href="#ServiceRequest1-10">ServiceRequest</a></td><td><a href="StructureDefinition-ServiceRequest.html">https://fhir.nhs.uk/England/StructureDefinition/ServiceRequest</a></td><td>y</td><td class="text-center">y</td><td class="text-center"></td><td class="text-center"></td><td class="text-center"></td><td>identifier, patient:identifier, ServiceRequest.identifier</td><td/><td><code>Appointment:based-on</code>, <code>Task:focus</code></td><td/></tr></tbody></table></div><hr/><div class="panel panel-default"><div class="panel-heading"><h4 id="DocumentReference1-1" class="panel-title"><span style="float: right;">Resource Conformance: MAY</span>DocumentReference</h4></div><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-6"><span class="lead">Base System Profile</span><br/><a href="StructureDefinition-DocumentReference.html">https://fhir.nhs.uk/England/StructureDefinition/DocumentReference</a></div><div class="col-lg-3"><span class="lead">Profile Conformance</span><br/><b>SHALL</b></div><div class="col-lg-3"><span class="lead">Reference Policy</span><br/></div></div><p/><div class="row"><div class="col-lg-6"><span class="lead">Interaction summary</span><br/><ul><li><strong>SHOULD</strong> support <code>read</code>, <code>create</code>, <code>update</code>, <code>delete</code>, <code>search-type</code>.</li></ul></div></div><p/><div class="row"><div class="col-12"><span class="lead">Documentation</span><blockquote><div><p>API present in</p>
+<ul>
+<li><a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir">Booking and Referral - FHIR API</a></li>
+<li><a href="https://digital.nhs.uk/developer/api-catalogue/national-record-locator-fhir/v3/producer">National Record Locator - FHIR API v3</a> as STU3</li>
+<li><a href="https://digital.nhs.uk/developer/api-catalogue/e-referral-service-fhir">e-Referral Service - FHIR API</a></li>
+</ul>
+<p>No <a href="https://build.fhir.org/ig/HL7-UK/UK-Core-Access/index.html">UK Core FHIR Access</a> conformance requirements</p>
+</div></blockquote></div></div><div class="row"><div class="col-lg-7"><span class="lead">Search Parameters</span><table class="table table-condensed table-hover"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>MAY</b></td><td>subject:identifier</td><td><code>token</code></td><td><div><ul>
+<li><a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir">Booking and Referral - FHIR API</a></li>
+<li><a href="https://digital.nhs.uk/developer/api-catalogue/national-record-locator-fhir/v3/producer">National Record Locator - FHIR API v3</a></li>
+</ul>
+<p>International and Care Connect API suggest using patient instead of subject, this would also be consistent with other NHS England API's</p>
+</div></td></tr><tr><td><b>MAY</b></td><td>custodian:identifier</td><td><code>token</code></td><td><div><ul>
+<li><a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir">Booking and Referral - FHIR API</a></li>
+</ul>
+</div></td></tr><tr><td><b>MAY</b></td><td>next-page-token</td><td><code>token</code></td><td><div><ul>
+<li><a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir">Booking and Referral - FHIR API</a></li>
+</ul>
+</div></td></tr><tr><td><b>MAY</b></td><td>based-on:identifier</td><td><code>token</code></td><td><div><ul>
+<li>This may not be correct and is inferred from A005 <a href="https://digital.nhs.uk/developer/api-catalogue/e-referral-service-fhir">e-Referral Service - FHIR API</a></li>
+</ul>
+</div></td></tr></tbody></table></div><div class="col-lg-5"> </div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h4 id="Endpoint1-2" class="panel-title"><span style="float: right;">Resource Conformance: MAY</span>Endpoint</h4></div><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-6"><span class="lead">Base System Profile</span><br/><a href="StructureDefinition-Endpoint.html">https://fhir.nhs.uk/England/StructureDefinition/Endpoint</a></div><div class="col-lg-3"><span class="lead">Profile Conformance</span><br/><b>SHALL</b></div><div class="col-lg-3"><span class="lead">Reference Policy</span><br/></div></div><p/><div class="row"><div class="col-lg-6"><span class="lead">Interaction summary</span><br/><ul><li><strong>SHOULD</strong> support <code>read</code>, <code>delete</code>, <code>update</code>, <code>search-type</code>.</li></ul></div></div><p/><div class="row"><div class="col-12"><span class="lead">Documentation</span><blockquote><div><p>API present in</p>
+<ul>
+<li><a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir">Booking and Referral - FHIR API</a></li>
+</ul>
+<p>No <a href="https://build.fhir.org/ig/HL7-UK/UK-Core-Access/index.html">UK Core FHIR Access</a> conformance requirements</p>
+</div></blockquote></div></div><div class="row"><div class="col-lg-7"><span class="lead">Search Parameters</span><table class="table table-condensed table-hover"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>MAY</b></td><td>_has</td><td><code>token</code></td><td><div><ul>
+<li><a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir">Booking and Referral - FHIR API</a></li>
+</ul>
+</div></td></tr><tr><td><b>MAY</b></td><td>Endpoint.identifier</td><td><code>token</code></td><td><div><ul>
+<li><a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir">Booking and Referral - FHIR API</a> believe this should be <code>identifier</code></li>
+</ul>
+</div></td></tr></tbody></table></div><div class="col-lg-5"> </div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h4 id="HealthcareService1-3" class="panel-title"><span style="float: right;">Resource Conformance: MAY</span>HealthcareService</h4></div><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-6"><span class="lead">Base System Profile</span><br/><a href="StructureDefinition-HealthcareService.html">https://fhir.nhs.uk/England/StructureDefinition/HealthcareService</a></div><div class="col-lg-3"><span class="lead">Profile Conformance</span><br/><b>SHALL</b></div><div class="col-lg-3"><span class="lead">Reference Policy</span><br/></div></div><p/><div class="row"><div class="col-lg-6"><span class="lead">Interaction summary</span><br/><ul><li><strong>SHOULD</strong> support <code>search-type</code>.</li><li><strong>MAY</strong> support <code>read</code>, <code>update</code>, <code>delete</code>.</li></ul></div></div><p/><div class="row"><div class="col-12"><span class="lead">Documentation</span><blockquote><div><p>API present in</p>
+<ul>
+<li><a href="https://digital.nhs.uk/developer/api-catalogue/e-referral-service-patient-care-fhir">e-Referral Service Patient Care</a></li>
+<li><a href="https://digital.nhs.uk/developer/api-catalogue/e-referral-service-fhir">e-Referral FHIR API</a></li>
+<li><a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir">Booking and Referral - FHIR API</a></li>
+</ul>
+<p>No <a href="https://build.fhir.org/ig/HL7-UK/UK-Core-Access/index.html">UK Core FHIR Access</a> conformance requirements</p>
+</div></blockquote></div></div><div class="row"><div class="col-lg-7"><span class="lead">Search Parameters</span><table class="table table-condensed table-hover"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>MAY</b></td><td>_id</td><td><code>string</code></td><td><div><p>e-Referral FHIR API</p>
+</div></td></tr><tr><td><b>MAY</b></td><td>HealthcareService.providedBy</td><td><code>token</code></td><td><div><ul>
+<li><a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir">Booking and Referral - FHIR API</a> believe this should be <code>organization:identifier</code></li>
+</ul>
+</div></td></tr><tr><td><b>MAY</b></td><td>HealthcareService.identifier</td><td><code>token</code></td><td><div><ul>
+<li><a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir">Booking and Referral - FHIR API</a> believe this should be <code>identifier</code></li>
+</ul>
+</div></td></tr></tbody></table></div><div class="col-lg-5"> </div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h4 id="Organization1-4" class="panel-title"><span style="float: right;">Resource Conformance: MAY</span>Organization</h4></div><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-6"><span class="lead">Base System Profile</span><br/><a href="StructureDefinition-Organization.html">https://fhir.nhs.uk/England/StructureDefinition/Organization</a></div><div class="col-lg-3"><span class="lead">Profile Conformance</span><br/><b>SHALL</b></div><div class="col-lg-3"><span class="lead">Reference Policy</span><br/></div></div><p/><div class="row"><div class="col-lg-6"><span class="lead">Interaction summary</span><br/><ul><li><strong>SHOULD</strong> support <code>read</code>, <code>search-type</code>.</li><li><strong>MAY</strong> support <code>update</code>, <code>delete</code>.</li></ul></div></div><p/><div class="row"><div class="col-12"><span class="lead">Documentation</span><blockquote><div><p>API present in</p>
+<ul>
+<li><a href="https://digital.nhs.uk/developer/api-catalogue/organisation-data-service-fhir">Organisation Data Service - FHIR API</a></li>
+<li><a href="https://digital.nhs.uk/developer/api-catalogue/e-referral-service-patient-care-fhir">e-Referral Service Patient Care</a></li>
+<li><a href="https://digital.nhs.uk/developer/api-catalogue/e-referral-service-fhir">e-Referral FHIR API</a></li>
+<li><a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir">Booking and Referral - FHIR API</a></li>
+</ul>
+<p>Used by</p>
+<ul>
+<li>EPS consumers.</li>
+</ul>
+<p>No <a href="https://build.fhir.org/ig/HL7-UK/UK-Core-Access/index.html">UK Core FHIR Access</a> conformance requirements</p>
+</div></blockquote></div></div><div class="row"><div class="col-lg-7"><span class="lead">Search Parameters</span><table class="table table-condensed table-hover"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>MAY</b></td><td>_id</td><td><code>string</code></td><td><div><p>e-Referral FHIR API</p>
+</div></td></tr><tr><td><b>MAY</b></td><td>Organization.identifier</td><td><code>token</code></td><td><div><ul>
+<li><a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir">Booking and Referral - FHIR API</a> believe this should be <code>identifier</code></li>
+</ul>
+</div></td></tr><tr><td><b>MAY</b></td><td>identifier</td><td><code>token</code></td><td><div><ul>
+<li><a href="https://digital.nhs.uk/developer/api-catalogue/organisation-data-service-fhir">Organisation Data Service - FHIR API</a></li>
+</ul>
+</div></td></tr><tr><td><b>MAY</b></td><td>active</td><td><code>token</code></td><td><div><ul>
+<li><a href="https://digital.nhs.uk/developer/api-catalogue/organisation-data-service-fhir">Organisation Data Service - FHIR API</a></li>
+</ul>
+</div></td></tr><tr><td><b>MAY</b></td><td>type</td><td><code>token</code></td><td><div><ul>
+<li><a href="https://digital.nhs.uk/developer/api-catalogue/organisation-data-service-fhir">Organisation Data Service - FHIR API</a></li>
+</ul>
+</div></td></tr><tr><td><b>MAY</b></td><td>name</td><td><code>string</code></td><td><div><ul>
+<li><a href="https://digital.nhs.uk/developer/api-catalogue/organisation-data-service-fhir">Organisation Data Service - FHIR API</a></li>
+</ul>
+</div></td></tr><tr><td><b>MAY</b></td><td>address-country</td><td><code>string</code></td><td><div><ul>
+<li><a href="https://digital.nhs.uk/developer/api-catalogue/organisation-data-service-fhir">Organisation Data Service - FHIR API</a></li>
+</ul>
+</div></td></tr><tr><td><b>MAY</b></td><td>ods-role</td><td><code>token</code></td><td><div><ul>
+<li><a href="https://digital.nhs.uk/developer/api-catalogue/organisation-data-service-fhir">Organisation Data Service - FHIR API</a> EPS expects this data to be <code>type</code></li>
+</ul>
+</div></td></tr><tr><td><b>MAY</b></td><td>ods-lastChangeDate</td><td><code>date</code></td><td><div><ul>
+<li><a href="https://digital.nhs.uk/developer/api-catalogue/organisation-data-service-fhir">Organisation Data Service - FHIR API</a> FHIR developers would expect this to be <code>_lastUpdated</code></li>
+</ul>
+</div></td></tr><tr><td><b>MAY</b></td><td>ods-activeRole</td><td><code>token</code></td><td><div><ul>
+<li><a href="https://digital.nhs.uk/developer/api-catalogue/organisation-data-service-fhir">Organisation Data Service - FHIR API</a> concerned we have two searches on an extension</li>
+</ul>
+</div></td></tr></tbody></table></div><div class="col-lg-5"> </div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h4 id="OrganizationAffiliation1-5" class="panel-title"><span style="float: right;">Resource Conformance: MAY</span>OrganizationAffiliation</h4></div><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-6"><span class="lead">Base System Profile</span><br/><a href="StructureDefinition-OrganizationAffiliation.html">https://fhir.nhs.uk/England/StructureDefinition/OrganizationAffiliation</a></div><div class="col-lg-3"><span class="lead">Profile Conformance</span><br/><b>SHALL</b></div><div class="col-lg-3"><span class="lead">Reference Policy</span><br/></div></div><p/><div class="row"><div class="col-lg-6"><span class="lead">Interaction summary</span><br/><ul><li><strong>SHOULD</strong> support <code>search-type</code>.</li></ul></div></div><p/><div class="row"><div class="col-12"><span class="lead">Documentation</span><blockquote><div><p>API present in</p>
+<ul>
+<li><a href="https://digital.nhs.uk/developer/api-catalogue/organisation-data-service-fhir">Organisation Data Service - FHIR API</a></li>
+</ul>
+<p>No <a href="https://build.fhir.org/ig/HL7-UK/UK-Core-Access/index.html">UK Core FHIR Access</a> conformance requirements</p>
+</div></blockquote></div></div><div class="row"><div class="col-lg-7"><span class="lead">Search Parameters</span><table class="table table-condensed table-hover"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>MAY</b></td><td>identifier</td><td><code>token</code></td><td><div><ul>
+<li><a href="https://digital.nhs.uk/developer/api-catalogue/organisation-data-service-fhir">Organisation Data Service - FHIR API</a></li>
+</ul>
+</div></td></tr><tr><td><b>MAY</b></td><td>active</td><td><code>token</code></td><td><div><ul>
+<li><a href="https://digital.nhs.uk/developer/api-catalogue/organisation-data-service-fhir">Organisation Data Service - FHIR API</a></li>
+</ul>
+</div></td></tr><tr><td><b>MAY</b></td><td>primary-organization</td><td><code>reference</code></td><td><div><ul>
+<li><a href="https://digital.nhs.uk/developer/api-catalogue/organisation-data-service-fhir">Organisation Data Service - FHIR API</a></li>
+</ul>
+</div></td></tr><tr><td><b>MAY</b></td><td>participating-organization</td><td><code>reference</code></td><td><div><ul>
+<li><a href="https://digital.nhs.uk/developer/api-catalogue/organisation-data-service-fhir">Organisation Data Service - FHIR API</a></li>
+</ul>
+</div></td></tr></tbody></table></div><div class="col-lg-5"> </div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h4 id="Patient1-6" class="panel-title"><span style="float: right;">Resource Conformance: MAY</span>Patient</h4></div><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-6"><span class="lead">Base System Profile</span><br/><a href="StructureDefinition-Patient.html">https://fhir.nhs.uk/England/StructureDefinition/Patient</a></div><div class="col-lg-3"><span class="lead">Profile Conformance</span><br/><b>SHALL</b></div><div class="col-lg-3"><span class="lead">Reference Policy</span><br/></div></div><p/><div class="row"><div class="col-6"><span class="lead">Supported Profiles</span><p><a href="StructureDefinition-PatientPDS.html">https://fhir.nhs.uk/England/StructureDefinition/PatientPDS</a></p></div><div class="col-lg-6"><span class="lead">Interaction summary</span><br/><ul><li><strong>SHOULD</strong> support <code>read</code>, <code>search-type</code>.</li></ul></div></div><p/><div class="row"><div class="col-12"><span class="lead">Documentation</span><blockquote><div><p>API present in:</p>
+<ul>
+<li><a href="https://digital.nhs.uk/developer/api-catalogue/personal-demographics-service-fhir">Personal Demographics Service FHIR API</a></li>
+</ul>
+<p>Used by</p>
+<ul>
+<li>EPS consumers.</li>
+</ul>
+<p>SHOULD and SHALL conformance is taken from <a href="https://build.fhir.org/ig/HL7-UK/UK-Core-Access/index.html">UK Core FHIR Access</a> - MAY is used to indicate no conformance (added due to rendering issue in the publisher)</p>
+</div></blockquote></div></div><div class="row"><div class="col-lg-7"><span class="lead">Search Parameters</span><table class="table table-condensed table-hover"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td>identifier</td><td><code>token</code></td><td><div><p>A search by NHS Number. Missing from PDS is a read operation instead - so using transient id instead of identifier</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td>given</td><td><code>string</code></td><td><div></div></td></tr><tr><td><b>SHOULD</b></td><td>family</td><td><code>string</code></td><td><div></div></td></tr><tr><td><b>SHOULD</b></td><td>gender</td><td><code>string</code></td><td><div></div></td></tr><tr><td><b>SHOULD</b></td><td>birthdate</td><td><code>date</code></td><td><div></div></td></tr><tr><td><b>MAY</b></td><td>_fuzzy-match</td><td><code>string</code></td><td><div><p>PDS using non standard parameter</p>
+</div></td></tr><tr><td><b>MAY</b></td><td>_exact-match</td><td><code>string</code></td><td><div><p>PDS is using non standard parameter. Do not believe this is :exact from <a href="https://www.hl7.org/fhir/r4/search.html#modifiers">modifiers</a> although it sounds similar and may cause confusion</p>
+</div></td></tr><tr><td><b>MAY</b></td><td>_history</td><td><code>string</code></td><td><div><p>PDS is using non standard parameter. Do not believe this is _history from <a href="https://www.hl7.org/fhir/r4/http.html#history">history</a> this probably results in confusion for developers</p>
+</div></td></tr><tr><td><b>MAY</b></td><td>_max-results</td><td><code>string</code></td><td><div><p>PDS is using non standard parameter. PDS probably should be using _count <a href="https://www.hl7.org/fhir/r4/search.html#count">_count</a> which should be ok as PDS does not support paging</p>
+</div></td></tr><tr><td><b>MAY</b></td><td>death-date</td><td><code>date</code></td><td><div></div></td></tr><tr><td><b>MAY</b></td><td>address-postalcode</td><td><code>string</code></td><td><div></div></td></tr><tr><td><b>MAY</b></td><td>address-postcode</td><td><code>string</code></td><td><div><p>PDS is using non standard parameter - <strong>will be deprecated in the future</strong></p>
+</div></td></tr><tr><td><b>MAY</b></td><td>general-practitioner</td><td><code>reference</code></td><td><div><p>A search by ODS Code. PDS SHOULD be using <code>general-practitioner:identifier</code> with <code>token</code> type to follow NHS Digital FHIR policy. It is workable as it is but this is searching on an <code>id</code> which is transient (changeable), searching on <code>identifier</code> is recommended.</p>
+</div></td></tr><tr><td><b>MAY</b></td><td>email</td><td><code>token</code></td><td><div></div></td></tr><tr><td><b>MAY</b></td><td>phone</td><td><code>token</code></td><td><div></div></td></tr></tbody></table></div><div class="col-lg-5"> </div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h4 id="Practitioner1-7" class="panel-title"><span style="float: right;">Resource Conformance: MAY</span>Practitioner</h4></div><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-6"><span class="lead">Base System Profile</span><br/><a href="StructureDefinition-Practitioner.html">https://fhir.nhs.uk/England/StructureDefinition/Practitioner</a></div><div class="col-lg-3"><span class="lead">Profile Conformance</span><br/><b>SHALL</b></div><div class="col-lg-3"><span class="lead">Reference Policy</span><br/></div></div><p/><div class="row"><div class="col-lg-6"><span class="lead">Interaction summary</span><br/><ul><li><strong>SHOULD</strong> support <code>search-type</code>.</li></ul></div></div><p/><div class="row"><div class="col-12"><span class="lead">Documentation</span><blockquote><div><p>API present in</p>
+<ul>
+<li><a href="https://digital.nhs.uk/developer/api-catalogue/e-referral-service-fhir">e-Referral FHIR API</a></li>
+</ul>
+<p>No <a href="https://build.fhir.org/ig/HL7-UK/UK-Core-Access/index.html">UK Core FHIR Access</a> conformance requirements</p>
+</div></blockquote></div></div><div class="row"><div class="col-lg-7"><span class="lead">Search Parameters</span><table class="table table-condensed table-hover"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>MAY</b></td><td>_query</td><td><code>string</code></td><td><div><ul>
+<li>e-Referral FHIR API</li>
+</ul>
+</div></td></tr></tbody></table></div><div class="col-lg-5"> </div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h4 id="PractitionerRole1-8" class="panel-title"><span style="float: right;">Resource Conformance: MAY</span>PractitionerRole</h4></div><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-6"><span class="lead">Base System Profile</span><br/><a href="StructureDefinition-PractitionerRole.html">https://fhir.nhs.uk/England/StructureDefinition/PractitionerRole</a></div><div class="col-lg-3"><span class="lead">Profile Conformance</span><br/><b>SHALL</b></div><div class="col-lg-3"><span class="lead">Reference Policy</span><br/></div></div><p/><div class="row"><div class="col-lg-6"><span class="lead">Interaction summary</span><br/><ul><li><strong>SHOULD</strong> support <code>search-type</code>.</li></ul></div></div><p/><div class="row"><div class="col-12"><span class="lead">Documentation</span><blockquote><div><p>API present in</p>
+<ul>
+<li><a href="https://digital.nhs.uk/developer/api-catalogue/e-referral-service-fhir">e-Referral FHIR API</a> (NOT CONFORMANT)</li>
+</ul>
+<p>No <a href="https://build.fhir.org/ig/HL7-UK/UK-Core-Access/index.html">UK Core FHIR Access</a> conformance requirements</p>
+</div></blockquote></div></div><div class="row"><div class="col-lg-7"><span class="lead">Search Parameters</span><table class="table table-condensed table-hover"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>MAY</b></td><td>practitioner:identifier</td><td><code>token</code></td><td><div><p><a href="https://digital.nhs.uk/developer/api-catalogue/e-referral-service-fhir">e-Referral FHIR API</a> - This parameter is NOT present but is believed to be implied. This API is believed to be NOT CONFORMANT as the api as currently stated should return all PractitionreRole's held by eRS and this is clearly not correct.</p>
+</div></td></tr></tbody></table></div><div class="col-lg-5"> </div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h4 id="RelatedPerson1-9" class="panel-title"><span style="float: right;">Resource Conformance: MAY</span>RelatedPerson</h4></div><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-6"><span class="lead">Base System Profile</span><br/><a href="StructureDefinition-RelatedPerson.html">https://fhir.nhs.uk/England/StructureDefinition/RelatedPerson</a></div><div class="col-lg-3"><span class="lead">Profile Conformance</span><br/><b>SHALL</b></div><div class="col-lg-3"><span class="lead">Reference Policy</span><br/></div></div><p/><div class="row"><div class="col-lg-6"><span class="lead">Interaction summary</span><br/><ul><li><strong>SHOULD</strong> support <code>search-type</code>.</li></ul></div></div><p/><div class="row"><div class="col-12"><span class="lead">Documentation</span><blockquote><div><p>API present in</p>
+<ul>
+<li><a href="https://digital.nhs.uk/developer/api-catalogue/personal-demographics-service-fhir">Personal Demographics Service FHIR API</a></li>
+<li>Proxy.</li>
+</ul>
+<p>No <a href="https://build.fhir.org/ig/HL7-UK/UK-Core-Access/index.html">UK Core FHIR Access</a> conformance requirements)</p>
+</div></blockquote></div></div><div class="row"><div class="col-lg-7"><span class="lead">Search Parameters</span><table class="table table-condensed table-hover"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>MAY</b></td><td>identifier</td><td><code>token</code></td><td><div><p>A search by NHS Number. Proxy query parameter and not supported on PDS</p>
+</div></td></tr><tr><td><b>MAY</b></td><td>patient:identifier</td><td><code>token</code></td><td><div><p>A search by NHS Number. Proxy uses query parameter and PDS uses path parameter</p>
+</div></td></tr></tbody></table></div><div class="col-lg-5"> </div></div></div></div></div><div class="panel panel-default"><div class="panel-heading"><h4 id="ServiceRequest1-10" class="panel-title"><span style="float: right;">Resource Conformance: MAY</span>ServiceRequest</h4></div><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-6"><span class="lead">Base System Profile</span><br/><a href="StructureDefinition-ServiceRequest.html">https://fhir.nhs.uk/England/StructureDefinition/ServiceRequest</a></div><div class="col-lg-3"><span class="lead">Profile Conformance</span><br/><b>SHALL</b></div><div class="col-lg-3"><span class="lead">Reference Policy</span><br/></div></div><p/><div class="row"><div class="col-lg-6"><span class="lead">Interaction summary</span><br/><ul><li><strong>SHOULD</strong> support <code>search-type</code>, <code>read</code>.</li></ul></div></div><p/><div class="row"><div class="col-12"><span class="lead">Documentation</span><blockquote><div><p>API present in</p>
+<ul>
+<li><a href="https://digital.nhs.uk/developer/api-catalogue/e-referral-service-patient-care-fhir">e-Referral Service Patient Care</a>.</li>
+<li><a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir">Booking and Referral - FHIR API</a></li>
+<li><a href="https://digital.nhs.uk/developer/api-catalogue/e-referral-service-fhir">e-Referral FHIR API</a></li>
+</ul>
+<p>No <a href="https://build.fhir.org/ig/HL7-UK/UK-Core-Access/index.html">UK Core FHIR Access</a> conformance requirements</p>
+</div></blockquote></div></div><div class="row"><div class="col-lg-7"><span class="lead">Search Parameters</span><table class="table table-condensed table-hover"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>MAY</b></td><td>identifier</td><td><code>token</code></td><td><div><ul>
+<li>e-Referral FHIR API</li>
+</ul>
+</div></td></tr><tr><td><b>MAY</b></td><td>patient:identifier</td><td><code>token</code></td><td><div><ul>
+<li><a href="https://digital.nhs.uk/developer/api-catalogue/e-referral-service-patient-care-fhir">e-Referral Service Patient Care</a>)</li>
+<li><a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir">Booking and Referral - FHIR API</a></li>
+</ul>
+</div></td></tr><tr><td><b>MAY</b></td><td>ServiceRequest.identifier</td><td><code>token</code></td><td><div><ul>
+<li><a href="https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir">Booking and Referral - FHIR API</a> believe this should be <code>identifier</code> same as eRS</li>
+</ul>
+</div></td></tr></tbody></table></div><div class="col-lg-5"> </div></div></div></div></div></div>
+  </text>
+  <url value="https://fhir.nhs.uk/England/CapabilityStatement/NHS-England-APIM-Provider"/>
+  <version value="0.0.1"/>
+  <title value="NHS England APIM Base API Definitions"/>
+  <status value="draft"/>
+  <date value="2024-01-30"/>
+  <publisher value="NHS England"/>
+  <contact>
+    <name value="NHS England"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.england.nhs.uk/"/>
+    </telecom>
+  </contact>
+  <description value="High level summary of FHIR api's used within NHS England API programmes"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="GB-ENG"/>
+      <display value="England"/>
+    </coding>
+  </jurisdiction>
+  <kind value="requirements"/>
+  <fhirVersion value="4.0.1"/>
+  <format value="json"/>
+  <rest>
+    <mode value="server"/>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+        <valueCode value="MAY"/>
+      </extension>
+      <type value="DocumentReference"/>
+      <profile value="https://fhir.nhs.uk/England/StructureDefinition/DocumentReference"/>
+      <documentation value="API present in &#xA; - [Booking and Referral - FHIR API](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir) &#xA; - [National Record Locator - FHIR API v3](https://digital.nhs.uk/developer/api-catalogue/national-record-locator-fhir/v3/producer) as STU3 &#xA; - [e-Referral Service - FHIR API](https://digital.nhs.uk/developer/api-catalogue/e-referral-service-fhir) &#xA;&#xA; No [UK Core FHIR Access](https://build.fhir.org/ig/HL7-UK/UK-Core-Access/index.html) conformance requirements"/>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+        <code value="read"/>
+      </interaction>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+        <code value="create"/>
+      </interaction>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+        <code value="update"/>
+      </interaction>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+        <code value="delete"/>
+      </interaction>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+        <code value="search-type"/>
+      </interaction>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="MAY"/>
+        </extension>
+        <name value="subject:identifier"/>
+        <type value="token"/>
+        <documentation value=" - [Booking and Referral - FHIR API](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir) &#xA; - [National Record Locator - FHIR API v3](https://digital.nhs.uk/developer/api-catalogue/national-record-locator-fhir/v3/producer) &#xA;&#xA; International and Care Connect API suggest using patient instead of subject, this would also be consistent with other NHS England API's"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="MAY"/>
+        </extension>
+        <name value="custodian:identifier"/>
+        <type value="token"/>
+        <documentation value=" - [Booking and Referral - FHIR API](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir)"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="MAY"/>
+        </extension>
+        <name value="next-page-token"/>
+        <type value="token"/>
+        <documentation value=" - [Booking and Referral - FHIR API](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir)"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="MAY"/>
+        </extension>
+        <name value="based-on:identifier"/>
+        <type value="token"/>
+        <documentation value=" - This may not be correct and is inferred from A005 [e-Referral Service - FHIR API](https://digital.nhs.uk/developer/api-catalogue/e-referral-service-fhir) "/>
+      </searchParam>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+        <valueCode value="MAY"/>
+      </extension>
+      <type value="Endpoint"/>
+      <profile value="https://fhir.nhs.uk/England/StructureDefinition/Endpoint"/>
+      <documentation value="API present in &#xA; - [Booking and Referral - FHIR API](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir) &#xA;&#xA; No [UK Core FHIR Access](https://build.fhir.org/ig/HL7-UK/UK-Core-Access/index.html) conformance requirements"/>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+        <code value="read"/>
+      </interaction>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+        <code value="delete"/>
+      </interaction>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+        <code value="update"/>
+      </interaction>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+        <code value="search-type"/>
+      </interaction>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="MAY"/>
+        </extension>
+        <name value="_has"/>
+        <type value="token"/>
+        <documentation value=" - [Booking and Referral - FHIR API](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir)"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="MAY"/>
+        </extension>
+        <name value="Endpoint.identifier"/>
+        <type value="token"/>
+        <documentation value=" - [Booking and Referral - FHIR API](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir) believe this should be `identifier`"/>
+      </searchParam>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+        <valueCode value="MAY"/>
+      </extension>
+      <type value="HealthcareService"/>
+      <profile value="https://fhir.nhs.uk/England/StructureDefinition/HealthcareService"/>
+      <documentation value="API present in &#xA; - [e-Referral Service Patient Care](https://digital.nhs.uk/developer/api-catalogue/e-referral-service-patient-care-fhir)&#xA; - [e-Referral FHIR API](https://digital.nhs.uk/developer/api-catalogue/e-referral-service-fhir)&#xA;  - [Booking and Referral - FHIR API](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir) &#xA;&#xA; No [UK Core FHIR Access](https://build.fhir.org/ig/HL7-UK/UK-Core-Access/index.html) conformance requirements"/>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="MAY"/>
+        </extension>
+        <code value="read"/>
+      </interaction>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="MAY"/>
+        </extension>
+        <code value="update"/>
+      </interaction>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="MAY"/>
+        </extension>
+        <code value="delete"/>
+      </interaction>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+        <code value="search-type"/>
+      </interaction>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="MAY"/>
+        </extension>
+        <name value="_id"/>
+        <type value="string"/>
+        <documentation value="e-Referral FHIR API"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="MAY"/>
+        </extension>
+        <name value="HealthcareService.providedBy"/>
+        <type value="token"/>
+        <documentation value=" - [Booking and Referral - FHIR API](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir) believe this should be `organization:identifier`"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="MAY"/>
+        </extension>
+        <name value="HealthcareService.identifier"/>
+        <type value="token"/>
+        <documentation value=" - [Booking and Referral - FHIR API](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir) believe this should be `identifier`"/>
+      </searchParam>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+        <valueCode value="MAY"/>
+      </extension>
+      <type value="Organization"/>
+      <profile value="https://fhir.nhs.uk/England/StructureDefinition/Organization"/>
+      <documentation value="API present in &#xA; - [Organisation Data Service - FHIR API](https://digital.nhs.uk/developer/api-catalogue/organisation-data-service-fhir) &#xA; - [e-Referral Service Patient Care](https://digital.nhs.uk/developer/api-catalogue/e-referral-service-patient-care-fhir)&#xA; - [e-Referral FHIR API](https://digital.nhs.uk/developer/api-catalogue/e-referral-service-fhir)&#xA;  - [Booking and Referral - FHIR API](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir) &#xA;&#xA; Used by &#xA;&#xA; - EPS consumers. &#xA;&#xA; No [UK Core FHIR Access](https://build.fhir.org/ig/HL7-UK/UK-Core-Access/index.html) conformance requirements"/>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+        <code value="read"/>
+      </interaction>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="MAY"/>
+        </extension>
+        <code value="update"/>
+      </interaction>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="MAY"/>
+        </extension>
+        <code value="delete"/>
+      </interaction>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+        <code value="search-type"/>
+      </interaction>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="MAY"/>
+        </extension>
+        <name value="_id"/>
+        <type value="string"/>
+        <documentation value="e-Referral FHIR API"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="MAY"/>
+        </extension>
+        <name value="Organization.identifier"/>
+        <type value="token"/>
+        <documentation value=" - [Booking and Referral - FHIR API](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir) believe this should be `identifier`"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="MAY"/>
+        </extension>
+        <name value="identifier"/>
+        <type value="token"/>
+        <documentation value=" - [Organisation Data Service - FHIR API](https://digital.nhs.uk/developer/api-catalogue/organisation-data-service-fhir)"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="MAY"/>
+        </extension>
+        <name value="active"/>
+        <type value="token"/>
+        <documentation value=" - [Organisation Data Service - FHIR API](https://digital.nhs.uk/developer/api-catalogue/organisation-data-service-fhir)"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="MAY"/>
+        </extension>
+        <name value="type"/>
+        <type value="token"/>
+        <documentation value=" - [Organisation Data Service - FHIR API](https://digital.nhs.uk/developer/api-catalogue/organisation-data-service-fhir)"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="MAY"/>
+        </extension>
+        <name value="name"/>
+        <type value="string"/>
+        <documentation value=" - [Organisation Data Service - FHIR API](https://digital.nhs.uk/developer/api-catalogue/organisation-data-service-fhir)"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="MAY"/>
+        </extension>
+        <name value="address-country"/>
+        <type value="string"/>
+        <documentation value=" - [Organisation Data Service - FHIR API](https://digital.nhs.uk/developer/api-catalogue/organisation-data-service-fhir)"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="MAY"/>
+        </extension>
+        <name value="ods-role"/>
+        <type value="token"/>
+        <documentation value=" - [Organisation Data Service - FHIR API](https://digital.nhs.uk/developer/api-catalogue/organisation-data-service-fhir) EPS expects this data to be `type`"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="MAY"/>
+        </extension>
+        <name value="ods-lastChangeDate"/>
+        <type value="date"/>
+        <documentation value=" - [Organisation Data Service - FHIR API](https://digital.nhs.uk/developer/api-catalogue/organisation-data-service-fhir) FHIR developers would expect this to be `_lastUpdated`"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="MAY"/>
+        </extension>
+        <name value="ods-activeRole"/>
+        <type value="token"/>
+        <documentation value=" - [Organisation Data Service - FHIR API](https://digital.nhs.uk/developer/api-catalogue/organisation-data-service-fhir) concerned we have two searches on an extension"/>
+      </searchParam>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+        <valueCode value="MAY"/>
+      </extension>
+      <type value="OrganizationAffiliation"/>
+      <profile value="https://fhir.nhs.uk/England/StructureDefinition/OrganizationAffiliation"/>
+      <documentation value="API present in &#xA; - [Organisation Data Service - FHIR API](https://digital.nhs.uk/developer/api-catalogue/organisation-data-service-fhir) &#xA;&#xA; No [UK Core FHIR Access](https://build.fhir.org/ig/HL7-UK/UK-Core-Access/index.html) conformance requirements"/>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+        <code value="search-type"/>
+      </interaction>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="MAY"/>
+        </extension>
+        <name value="identifier"/>
+        <type value="token"/>
+        <documentation value=" - [Organisation Data Service - FHIR API](https://digital.nhs.uk/developer/api-catalogue/organisation-data-service-fhir)"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="MAY"/>
+        </extension>
+        <name value="active"/>
+        <type value="token"/>
+        <documentation value=" - [Organisation Data Service - FHIR API](https://digital.nhs.uk/developer/api-catalogue/organisation-data-service-fhir)"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="MAY"/>
+        </extension>
+        <name value="primary-organization"/>
+        <type value="reference"/>
+        <documentation value=" - [Organisation Data Service - FHIR API](https://digital.nhs.uk/developer/api-catalogue/organisation-data-service-fhir)"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="MAY"/>
+        </extension>
+        <name value="participating-organization"/>
+        <type value="reference"/>
+        <documentation value=" - [Organisation Data Service - FHIR API](https://digital.nhs.uk/developer/api-catalogue/organisation-data-service-fhir)"/>
+      </searchParam>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+        <valueCode value="MAY"/>
+      </extension>
+      <type value="Patient"/>
+      <profile value="https://fhir.nhs.uk/England/StructureDefinition/Patient"/>
+      <supportedProfile value="https://fhir.nhs.uk/England/StructureDefinition/PatientPDS"/>
+      <documentation value="API present in: &#xA; - [Personal Demographics Service FHIR API](https://digital.nhs.uk/developer/api-catalogue/personal-demographics-service-fhir) &#xA;&#xA; Used by &#xA;&#xA; - EPS consumers. &#xA;&#xA; SHOULD and SHALL conformance is taken from [UK Core FHIR Access](https://build.fhir.org/ig/HL7-UK/UK-Core-Access/index.html) - MAY is used to indicate no conformance (added due to rendering issue in the publisher)"/>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+        <code value="read"/>
+      </interaction>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+        <code value="search-type"/>
+      </interaction>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="MAY"/>
+        </extension>
+        <name value="_fuzzy-match"/>
+        <type value="string"/>
+        <documentation value="PDS using non standard parameter"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="MAY"/>
+        </extension>
+        <name value="_exact-match"/>
+        <type value="string"/>
+        <documentation value="PDS is using non standard parameter. Do not believe this is :exact from [modifiers](https://www.hl7.org/fhir/r4/search.html#modifiers) although it sounds similar and may cause confusion"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="MAY"/>
+        </extension>
+        <name value="_history"/>
+        <type value="string"/>
+        <documentation value="PDS is using non standard parameter. Do not believe this is _history from [history](https://www.hl7.org/fhir/r4/http.html#history) this probably results in confusion for developers"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="MAY"/>
+        </extension>
+        <name value="_max-results"/>
+        <type value="string"/>
+        <documentation value="PDS is using non standard parameter. PDS probably should be using _count [_count](https://www.hl7.org/fhir/r4/search.html#count) which should be ok as PDS does not support paging"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="identifier"/>
+        <type value="token"/>
+        <documentation value="A search by NHS Number. Missing from PDS is a read operation instead - so using transient id instead of identifier"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+        <name value="family"/>
+        <type value="string"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHALL"/>
+        </extension>
+        <name value="given"/>
+        <type value="string"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+        <name value="gender"/>
+        <type value="string"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+        <name value="birthdate"/>
+        <type value="date"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="MAY"/>
+        </extension>
+        <name value="death-date"/>
+        <type value="date"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="MAY"/>
+        </extension>
+        <name value="address-postalcode"/>
+        <type value="string"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="MAY"/>
+        </extension>
+        <name value="address-postcode"/>
+        <type value="string"/>
+        <documentation value="PDS is using non standard parameter - **will be deprecated in the future**"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="MAY"/>
+        </extension>
+        <name value="general-practitioner"/>
+        <type value="reference"/>
+        <documentation value="A search by ODS Code. PDS SHOULD be using `general-practitioner:identifier` with `token` type to follow NHS Digital FHIR policy. It is workable as it is but this is searching on an `id` which is transient (changeable), searching on `identifier` is recommended."/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="MAY"/>
+        </extension>
+        <name value="email"/>
+        <type value="token"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="MAY"/>
+        </extension>
+        <name value="phone"/>
+        <type value="token"/>
+      </searchParam>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+        <valueCode value="MAY"/>
+      </extension>
+      <type value="Practitioner"/>
+      <profile value="https://fhir.nhs.uk/England/StructureDefinition/Practitioner"/>
+      <documentation value="API present in &#xA; - [e-Referral FHIR API](https://digital.nhs.uk/developer/api-catalogue/e-referral-service-fhir) &#xA;&#xA; No [UK Core FHIR Access](https://build.fhir.org/ig/HL7-UK/UK-Core-Access/index.html) conformance requirements"/>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+        <code value="search-type"/>
+      </interaction>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="MAY"/>
+        </extension>
+        <name value="_query"/>
+        <type value="string"/>
+        <documentation value="- e-Referral FHIR API"/>
+      </searchParam>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+        <valueCode value="MAY"/>
+      </extension>
+      <type value="PractitionerRole"/>
+      <profile value="https://fhir.nhs.uk/England/StructureDefinition/PractitionerRole"/>
+      <documentation value="API present in &#xA; - [e-Referral FHIR API](https://digital.nhs.uk/developer/api-catalogue/e-referral-service-fhir) (NOT CONFORMANT) &#xA;&#xA; No [UK Core FHIR Access](https://build.fhir.org/ig/HL7-UK/UK-Core-Access/index.html) conformance requirements"/>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+        <code value="search-type"/>
+      </interaction>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="MAY"/>
+        </extension>
+        <name value="practitioner:identifier"/>
+        <type value="token"/>
+        <documentation value="[e-Referral FHIR API](https://digital.nhs.uk/developer/api-catalogue/e-referral-service-fhir) - This parameter is NOT present but is believed to be implied. This API is believed to be NOT CONFORMANT as the api as currently stated should return all PractitionreRole's held by eRS and this is clearly not correct."/>
+      </searchParam>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+        <valueCode value="MAY"/>
+      </extension>
+      <type value="RelatedPerson"/>
+      <profile value="https://fhir.nhs.uk/England/StructureDefinition/RelatedPerson"/>
+      <documentation value="API present in &#xA; - [Personal Demographics Service FHIR API](https://digital.nhs.uk/developer/api-catalogue/personal-demographics-service-fhir) &#xA; -  Proxy.  &#xA;&#xA; No [UK Core FHIR Access](https://build.fhir.org/ig/HL7-UK/UK-Core-Access/index.html) conformance requirements)"/>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+        <code value="search-type"/>
+      </interaction>
+      <searchInclude value="RelatedPerson:patient"/>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="MAY"/>
+        </extension>
+        <name value="identifier"/>
+        <type value="token"/>
+        <documentation value="A search by NHS Number. Proxy query parameter and not supported on PDS"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="MAY"/>
+        </extension>
+        <name value="patient:identifier"/>
+        <type value="token"/>
+        <documentation value="A search by NHS Number. Proxy uses query parameter and PDS uses path parameter"/>
+      </searchParam>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+        <valueCode value="MAY"/>
+      </extension>
+      <type value="ServiceRequest"/>
+      <profile value="https://fhir.nhs.uk/England/StructureDefinition/ServiceRequest"/>
+      <documentation value="API present in &#xA; - [e-Referral Service Patient Care](https://digital.nhs.uk/developer/api-catalogue/e-referral-service-patient-care-fhir). &#xA; - [Booking and Referral - FHIR API](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir) &#xA; - [e-Referral FHIR API](https://digital.nhs.uk/developer/api-catalogue/e-referral-service-fhir) &#xA;&#xA; No [UK Core FHIR Access](https://build.fhir.org/ig/HL7-UK/UK-Core-Access/index.html) conformance requirements"/>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+        <code value="search-type"/>
+      </interaction>
+      <interaction>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="SHOULD"/>
+        </extension>
+        <code value="read"/>
+      </interaction>
+      <searchRevInclude value="Appointment:based-on"/>
+      <searchRevInclude value="Task:focus"/>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="MAY"/>
+        </extension>
+        <name value="identifier"/>
+        <type value="token"/>
+        <documentation value="- e-Referral FHIR API"/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="MAY"/>
+        </extension>
+        <name value="patient:identifier"/>
+        <type value="token"/>
+        <documentation value=" - [e-Referral Service Patient Care](https://digital.nhs.uk/developer/api-catalogue/e-referral-service-patient-care-fhir)) &#xA; - [Booking and Referral - FHIR API](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir) "/>
+      </searchParam>
+      <searchParam>
+        <extension url="http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation">
+          <valueCode value="MAY"/>
+        </extension>
+        <name value="ServiceRequest.identifier"/>
+        <type value="token"/>
+        <documentation value=" - [Booking and Referral - FHIR API](https://digital.nhs.uk/developer/api-catalogue/booking-and-referral-fhir) believe this should be `identifier` same as eRS"/>
+      </searchParam>
+    </resource>
+  </rest>
+</CapabilityStatement>

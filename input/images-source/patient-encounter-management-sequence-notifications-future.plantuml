@@ -2,7 +2,7 @@
 
 hide footbox
 
-title "Patient Encounter Management (IHE PEM))"
+title "Patient Encounter Management (IHE PEM)"
 
 participant "Patient Encounter Source \n(e.g. Patient Administration System (PAS))" as PEMSource
 participant "Trust Integration Engine (TIE)\nor Orchestration Engine" as PEMManager

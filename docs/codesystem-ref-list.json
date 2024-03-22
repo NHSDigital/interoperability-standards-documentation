@@ -1,0 +1,110 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://hl7.org/fhir/fhir-types",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "FHIRTypes",
+      "title" : "All FHIR Types",
+      "description" : "One of the types defined as part of this version of FHIR.",
+      "oids" : ["2.16.840.1.113883.4.642.4.1802"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-resource-types.html" : "Resource Types"
+    },
+    {
+      "url" : "http://snomed.info/sct",
+      "version" : null,
+      "status" : "active",
+      "name" : "SNOMED_CT",
+      "title" : "SNOMED CT (all versions)",
+      "description" : "SNOMED CT is the most comprehensive and precise clinical health terminology product in the world, owned and distributed around the world by The International Health Terminology Standards Development Organisation (IHTSDO).",
+      "oids" : ["2.16.840.1.113883.6.96"],
+      "uses" : {
+      },
+      "ValueSet-NHSDigital-CareSettingType.html" : "NHSDigital-CareSettingType"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/organization-type",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "OrganizationType",
+      "title" : "Organization type",
+      "description" : "This example value set defines a set of codes that can be used to indicate a type of organization.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1128"],
+      "uses" : {
+      },
+      "https://simplifier.net/resolve?scope=fhir.r4.ukcore.stu3.currentbuild@0.0.6-pre-release&canonical=https://fhir.hl7.org.uk/ValueSet/UKCore-OrganizationType" : "UK Core Organization Type"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v2-0131",
+      "version" : "2.1.0",
+      "status" : "active",
+      "name" : "ContactRole2",
+      "title" : "contactRole2",
+      "description" : "Code system of concepts which specify a relationship role that the next of kin/associated parties plays with regard to the patient. Also used in referrals, for example, it may be necessary to identify the contact representative at the clinic that sent a referral. Used in HL7 Version 2 messaging in the NK1 and CTD segments after 2.5, when it replace 2.16.840.1.113883.18.57.",
+      "oids" : ["2.16.840.1.113883.18.58"],
+      "uses" : {
+      },
+      "https://simplifier.net/resolve?scope=fhir.r4.ukcore.stu3.currentbuild@0.0.6-pre-release&canonical=https://fhir.hl7.org.uk/ValueSet/UKCore-PersonRelationshipType" : "UK Core Person Relationship Type"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+      "version" : "2.1.0",
+      "status" : "active",
+      "name" : "ActReason",
+      "title" : "ActReason",
+      "description" : "A set of codes specifying the motivation, cause, or rationale of an Act, when such rationale is not reasonably represented as an ActRelationship of type \"has reason\" linking to another Act.\r\n\r\n*Examples:* Example reasons that might qualify for being coded in this field might be: \"routine requirement\", \"infectious disease reporting requirement\", \"on patient request\", \"required by law\".",
+      "oids" : ["2.16.840.1.113883.5.8"],
+      "uses" : {
+      },
+      "http://terminology.hl7.org/5.0.0/ValueSet-v3-PurposeOfUse.html" : "PurposeOfUse",
+      "https://profiles.ihe.net/ITI/PCF/1.0.0/ValueSet-BasicPurposeVS.html" : "Basic Purpose ValueSet"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+      "version" : "2.2.0",
+      "status" : "active",
+      "name" : "RoleCode",
+      "title" : "RoleCode",
+      "description" : "A set of codes further specifying the kind of Role; specific classification codes for further qualifying RoleClass codes.",
+      "oids" : ["2.16.840.1.113883.5.111"],
+      "uses" : {
+      },
+      "https://simplifier.net/resolve?scope=fhir.r4.ukcore.stu3.currentbuild@0.0.6-pre-release&canonical=https://fhir.hl7.org.uk/ValueSet/UKCore-PersonRelationshipType" : "UK Core Person Relationship Type"
+    },
+    {
+      "url" : "https://fhir.hl7.org.uk/CodeSystem/UKCore-AdditionalPersonRelationshipRole",
+      "version" : "2.1.0",
+      "status" : "active",
+      "name" : "UKCoreAdditionalPersonRelationshipRole",
+      "title" : "UK Core Additional Person Relationship Role",
+      "description" : "A CodeSystem to identify additional person relationship roles.",
+      "uses" : {
+      },
+      "https://simplifier.net/resolve?scope=fhir.r4.ukcore.stu3.currentbuild@0.0.6-pre-release&canonical=https://fhir.hl7.org.uk/ValueSet/UKCore-PersonRelationshipType" : "UK Core Person Relationship Type"
+    },
+    {
+      "url" : "https://fhir.hl7.org.uk/CodeSystem/UKCore-OrganizationTypeGenomics",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "UKCoreOrganizationTypeGenomics",
+      "title" : "UK Core Organization Type Genomics",
+      "description" : "A set of codes to define additional genomic lab concepts for an organisation type.",
+      "uses" : {
+      },
+      "https://simplifier.net/resolve?scope=fhir.r4.ukcore.stu3.currentbuild@0.0.6-pre-release&canonical=https://fhir.hl7.org.uk/ValueSet/UKCore-OrganizationType" : "UK Core Organization Type"
+    },
+    {
+      "url" : "https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-treatment-function",
+      "version" : "0.0.1",
+      "status" : "draft",
+      "name" : "NHSDataModelandDictionaryTreatmentFunction",
+      "title" : null,
+      "description" : "A CodeSystem to identify the specialty of the care professional or team. FHIR Version of NHS Data Dictionary Main Specialty Code and HSCIC ITK HL7v2 Table ZU012",
+      "uses" : {
+      },
+      "ValueSet-NHSDigital-CareSettingType.html" : "NHSDigital-CareSettingType"
+    }
+  ]
+}

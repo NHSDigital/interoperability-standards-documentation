@@ -27,6 +27,7 @@
         ]
     },
     "subject": {
+        "reference": "Patient/Patient-NHS-3333333333-Fredrica-Smith",
         "identifier": {
             "system": "https://fhir.nhs.uk/Id/nhs-number",
             "value": "3333333333"

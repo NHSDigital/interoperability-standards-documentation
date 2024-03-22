@@ -1,0 +1,213 @@
+[
+  {
+    "id" : "UKCore-Organization",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization",
+    "version" : "0.0.1",
+    "name" : "UKCoreOrganization"
+  },
+  {
+    "id" : "UKCore-RelatedPerson",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson",
+    "version" : "0.0.1",
+    "name" : "UKCoreRelatedPerson"
+  },
+  {
+    "id" : "NHSDataModelAndDictionary-treatment-function",
+    "type" : "CodeSystem",
+    "url" : "https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-treatment-function",
+    "version" : "0.0.1",
+    "name" : "NHSDataModelandDictionaryTreatmentFunction"
+  },
+  {
+    "id" : "BookingProvider",
+    "type" : "CapabilityStatement",
+    "url" : "https://fhir.nhs.uk/England/CapabilityStatement/BookingProvider",
+    "version" : "0.0.1"
+  },
+  {
+    "id" : "IHE.PCF.consentAuthorizationServer",
+    "type" : "CapabilityStatement",
+    "url" : "https://fhir.nhs.uk/England/CapabilityStatement/IHE.PCF.consentAuthorizationServer",
+    "version" : "0.0.1"
+  },
+  {
+    "id" : "NHS-England-APIM-Provider",
+    "type" : "CapabilityStatement",
+    "url" : "https://fhir.nhs.uk/England/CapabilityStatement/NHS-England-APIM-Provider",
+    "version" : "0.0.1"
+  },
+  {
+    "id" : "UKCoreAccessPatientIndexProvider",
+    "type" : "CapabilityStatement",
+    "url" : "https://fhir.nhs.uk/England/CapabilityStatement/UKCoreAccessPatientIndexProvider",
+    "version" : "0.0.1"
+  },
+  {
+    "id" : "uk.nhs.england.skunkworks",
+    "type" : "ImplementationGuide",
+    "url" : "https://fhir.nhs.uk/England/ImplementationGuide/uk.nhs.england.skunkworks",
+    "version" : "0.0.1",
+    "name" : "NHSEnglandInteroperabilitySkunkworks"
+  },
+  {
+    "id" : "Questionnaire-Proxy-Access-Request",
+    "type" : "Questionnaire",
+    "url" : "https://fhir.nhs.uk/England/Questionnaire/Proxy-Access-Request",
+    "version" : "0.0.1"
+  },
+  {
+    "id" : "permission",
+    "type" : "Questionnaire",
+    "url" : "https://fhir.nhs.uk/England/Questionnaire/permission",
+    "version" : "0.0.1"
+  },
+  {
+    "id" : "Appointment",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.nhs.uk/England/StructureDefinition/Appointment",
+    "version" : "0.0.1",
+    "name" : "Appointment"
+  },
+  {
+    "id" : "AppointmentResponse",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.nhs.uk/England/StructureDefinition/AppointmentResponse",
+    "version" : "0.0.1",
+    "name" : "AppointmentResponse"
+  },
+  {
+    "id" : "DocumentReference",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.nhs.uk/England/StructureDefinition/DocumentReference",
+    "version" : "0.0.1",
+    "name" : "DocumentReference"
+  },
+  {
+    "id" : "Encounter",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.nhs.uk/England/StructureDefinition/Encounter",
+    "version" : "0.0.1",
+    "name" : "Encounter"
+  },
+  {
+    "id" : "Endpoint",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.nhs.uk/England/StructureDefinition/Endpoint",
+    "version" : "0.0.1",
+    "name" : "Endpoint"
+  },
+  {
+    "id" : "HealthcareService",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.nhs.uk/England/StructureDefinition/HealthcareService",
+    "version" : "0.0.1",
+    "name" : "HealthcareService"
+  },
+  {
+    "id" : "IHEPCF-Basic-Consent",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.nhs.uk/England/StructureDefinition/IHEPCF-Basic-Consent",
+    "version" : "0.0.1",
+    "name" : "BasicConsent"
+  },
+  {
+    "id" : "Observation",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.nhs.uk/England/StructureDefinition/Observation",
+    "version" : "0.0.1",
+    "name" : "Observation"
+  },
+  {
+    "id" : "Organization",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.nhs.uk/England/StructureDefinition/Organization",
+    "version" : "0.0.1",
+    "name" : "Organization"
+  },
+  {
+    "id" : "OrganizationAffiliation",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.nhs.uk/England/StructureDefinition/OrganizationAffiliation",
+    "version" : "0.0.1",
+    "name" : "OrganizationAffiliation"
+  },
+  {
+    "id" : "Patient",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.nhs.uk/England/StructureDefinition/Patient",
+    "version" : "0.0.1",
+    "name" : "Patient"
+  },
+  {
+    "id" : "PatientHL7v2",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.nhs.uk/England/StructureDefinition/PatientHL7v2",
+    "version" : "0.0.1",
+    "name" : "PatientHL7v2"
+  },
+  {
+    "id" : "PatientPDS",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.nhs.uk/England/StructureDefinition/PatientPDS",
+    "version" : "0.0.1",
+    "name" : "PatientPDS"
+  },
+  {
+    "id" : "PatientPDSNHSNumberAllocation",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.nhs.uk/England/StructureDefinition/PatientPDSNHSNumberAllocation",
+    "version" : "0.0.1",
+    "name" : "PatientPDSNHSNumberAllocation"
+  },
+  {
+    "id" : "Practitioner",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.nhs.uk/England/StructureDefinition/Practitioner",
+    "version" : "0.0.1",
+    "name" : "Practitioner"
+  },
+  {
+    "id" : "PractitionerRole",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.nhs.uk/England/StructureDefinition/PractitionerRole",
+    "version" : "0.0.1",
+    "name" : "PractitionerRole"
+  },
+  {
+    "id" : "RelatedPerson",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.nhs.uk/England/StructureDefinition/RelatedPerson",
+    "version" : "0.0.1",
+    "name" : "RelatedPerson"
+  },
+  {
+    "id" : "Schedule",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.nhs.uk/England/StructureDefinition/Schedule",
+    "version" : "0.0.1",
+    "name" : "Schedule"
+  },
+  {
+    "id" : "ServiceRequest",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.nhs.uk/England/StructureDefinition/ServiceRequest",
+    "version" : "0.0.1",
+    "name" : "ServiceRequest"
+  },
+  {
+    "id" : "Slot",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.nhs.uk/England/StructureDefinition/Slot",
+    "version" : "0.0.1",
+    "name" : "Slot"
+  },
+  {
+    "id" : "NHSDigital-CareSettingType",
+    "type" : "ValueSet",
+    "url" : "https://fhir.nhs.uk/ValueSet/NHSDigital-CareSettingType",
+    "version" : "0.0.1",
+    "name" : "NHSDigitalCareSettingType"
+  }
+]

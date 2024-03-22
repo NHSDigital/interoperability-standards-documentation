@@ -1,0 +1,23 @@
+@startuml
+
+hide footbox
+
+title "Patient Identity Feed with FHIR Subscriptions"
+
+participant "Patient Identity Source" as PIXSource
+participant "Subscription Manager" as PIXManager
+participant "Patient Identity Consumer" as PIXConsumer
+
+PIXConsumer -> PIXManager: Resource Subscription\nIHE PMIR ITI-94
+PIXManager --> PIXConsumer : Acknowledgement
+opt Patient Demographics Update
+  PIXSource -> PIXManager: Resource Publish \nIHE PMIR ITI-93
+  PIXManager --> PIXSource : Response
+
+loop for each matching Subscription
+    PIXManager -> PIXConsumer: Resource Notify \nIHE PMIR ITI-93
+    PIXConsumer --> PIXManager: Acknowledgement
+end
+end
+
+@enduml

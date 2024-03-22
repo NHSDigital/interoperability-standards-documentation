@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>NHSDataModelandDictionaryTreatmentFunction - Interoperability Standards - Skunkworks v0.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+
+    <!--  <script src="assets/nhsuk.js" defer></script> -->
+
+      <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<!-- Project extras
+<link
+        type="font/woff2"
+        href="assets/fonts/FrutigerLTW01-55Roman.woff2"
+        rel="preload"
+        as="font"
+        crossorigin
+/>
+<link
+        type="font/woff2"
+        href="assets/fonts/FrutigerLTW01-65Bold.woff2"
+        rel="preload"
+        as="font"
+        crossorigin
+/>
+<link href="assets/css/nhsuk.css" rel="stylesheet" />
+-->
+
+<!-- Bootstrap core CSS overrides to bootstrap-fhir.css -->
+<link href="assets/css/nhse.css" rel="stylesheet"/>
+
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/favicons/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"24.39"}
+    h3,h4,h5,h6{--heading-prefix:"24.39"}</style>
+    <div id="segment-header" class="segment nhsuk-header">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+<!-- Left logo - typically the publisher's logo - project or affiliate -->
+        <div id="project-nav">
+          <a id="project-logo" no-external="true" href="https://www.england.nhs.uk">
+            <img height="61" alt="Project home" src="assets/images/skunk.png"/>
+          </a>
+        </div>
+
+<!-- Right logo - for example the FHIR logo -->
+<!-- Make sure you have authorization to use the FHIR logo -->
+
+        <div id="family-nav">
+            <!--
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="60" alt="FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+          -->
+        </div> 
+      
+
+<!-- search icon - if you want -->
+<!--
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+-->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Interoperability Standards - Skunkworks</span>
+            <br/>
+            <span style="display:inline-block;">0.0.1 - ci-build
+
+
+
+   <img alt="England flag" src="assets/images/GB-ENG.svg" height="16" title="England"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Documentation
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="background.html">Background</a>
+      </li>
+      <li>
+        <a href="interoperability-standards.html">Interoperability Standards</a>
+      </li>
+      <li>
+        <a href="testing.html">Conformance and Testing (FHIR)</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Design
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="administration-module.html">Administration</a>
+      </li>
+      <li>
+        <a href="validation.html">FHIR Validation</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Build
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="national-proxy-service.html">National Proxy Service</a>
+      </li>
+      <li>
+        <a href="personal-demographics-service.html">NHS Number Allocation and PDS</a>
+      </li>
+      <li>
+        <a href="patient-encounter-management.html">Patient Encounter Management</a>
+      </li>
+      <li>
+        <a href="patient-demographics-query.html">Patient Demographics Query</a>
+      </li>
+      <li>
+        <a href="patient-identity-management.html">Patient Identity Management</a>
+      </li>
+      <li>
+        <a href="booking.html">Booking</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">FHIR Assets</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>NHSDataModelandDictionaryTreatmentFunction</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Interoperability Standards - Skunkworks - Local Development build (v0.0.1) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://fhir.nhs.uk/England/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="CodeSystem-NHSDataModelAndDictionary-treatment-function.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-NHSDataModelAndDictionary-treatment-function.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-NHSDataModelAndDictionary-treatment-function.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">CodeSystem: NHSDataModelandDictionaryTreatmentFunction
+
+  </h2>
+
+<div id="development-notice" markdown="span" class="alert alert-info" role="alert">
+  <i class="fa fa-info-circle"></i>
+  <b>Notice</b><br />
+  <ul>
+      <li>This version of the NHS England Implementation Guide is currently under development.</li>
+      <li>This is a 'pre-release' version and exists for the purpose of internal review of the Clinical and Technical Assurance Sprint 1, and is <b>not</b> suitable for development purposes.</li>
+  </ul>
+</div>
+
+<table class="colsd">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-treatment-function<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-treatment-function"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">0.0.1<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-treatment-function|0.0.1"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Draft
+          
+            as of 2021-03-10
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">NHSDataModelandDictionaryTreatmentFunction</span></td>
+    </tr>
+
+
+
+
+    <tr>
+      <td colspan="5"><p><em>Copyright/Legal</em>: Copyright © 2019 NHS Digital</p>
+</td>
+    </tr>
+
+  </table>
+
+<p>
+<p>A CodeSystem to identify the specialty of the care professional or team. FHIR Version of NHS Data Dictionary Main Specialty Code and HSCIC ITK HL7v2 Table ZU012</p>
+
+</p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <p>
+  This Code system is referenced in the content logical definition of the following value sets:
+  </p>
+
+  
+<ul>
+ <li><a href="ValueSet-NHSDigital-CareSettingType.html">NHSDigitalCareSettingType</a></li>
+</ul>
+
+
+  <div xmlns="http://www.w3.org/1999/xhtml"><p>This case-sensitive code system <code>https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-treatment-function</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">100<a name="NHSDataModelAndDictionary-treatment-function-100"> </a></td><td>GENERAL SURGERY</td></tr><tr><td style="white-space:nowrap">101<a name="NHSDataModelAndDictionary-treatment-function-101"> </a></td><td>UROLOGY</td></tr><tr><td style="white-space:nowrap">102<a name="NHSDataModelAndDictionary-treatment-function-102"> </a></td><td>TRANSPLANTATION SURGERY</td></tr><tr><td style="white-space:nowrap">103<a name="NHSDataModelAndDictionary-treatment-function-103"> </a></td><td>BREAST SURGERY</td></tr><tr><td style="white-space:nowrap">104<a name="NHSDataModelAndDictionary-treatment-function-104"> </a></td><td>COLORECTAL SURGERY</td></tr><tr><td style="white-space:nowrap">105<a name="NHSDataModelAndDictionary-treatment-function-105"> </a></td><td>HEPATOBILIARY AND PANCREATIC SURGERY</td></tr><tr><td style="white-space:nowrap">106<a name="NHSDataModelAndDictionary-treatment-function-106"> </a></td><td>UPPER GASTROINTESTINAL SURGERY</td></tr><tr><td style="white-space:nowrap">107<a name="NHSDataModelAndDictionary-treatment-function-107"> </a></td><td>VASCULAR SURGERY</td></tr><tr><td style="white-space:nowrap">108<a name="NHSDataModelAndDictionary-treatment-function-108"> </a></td><td>SPINAL SURGERY SERVICE</td></tr><tr><td style="white-space:nowrap">110<a name="NHSDataModelAndDictionary-treatment-function-110"> </a></td><td>TRAUMA AND ORTHOPAEDICS</td></tr><tr><td style="white-space:nowrap">120<a name="NHSDataModelAndDictionary-treatment-function-120"> </a></td><td>ENT</td></tr><tr><td style="white-space:nowrap">130<a name="NHSDataModelAndDictionary-treatment-function-130"> </a></td><td>OPHTHALMOLOGY</td></tr><tr><td style="white-space:nowrap">140<a name="NHSDataModelAndDictionary-treatment-function-140"> </a></td><td>ORAL SURGERY</td></tr><tr><td style="white-space:nowrap">141<a name="NHSDataModelAndDictionary-treatment-function-141"> </a></td><td>RESTORATIVE DENTISTRY</td></tr><tr><td style="white-space:nowrap">142<a name="NHSDataModelAndDictionary-treatment-function-142"> </a></td><td>PAEDIATRIC DENTISTRY</td></tr><tr><td style="white-space:nowrap">143<a name="NHSDataModelAndDictionary-treatment-function-143"> </a></td><td>ORTHODONTICS</td></tr><tr><td style="white-space:nowrap">144<a name="NHSDataModelAndDictionary-treatment-function-144"> </a></td><td>MAXILLO-FACIAL SURGERY</td></tr><tr><td style="white-space:nowrap">150<a name="NHSDataModelAndDictionary-treatment-function-150"> </a></td><td>NEUROSURGERY</td></tr><tr><td style="white-space:nowrap">160<a name="NHSDataModelAndDictionary-treatment-function-160"> </a></td><td>PLASTIC SURGERY</td></tr><tr><td style="white-space:nowrap">161<a name="NHSDataModelAndDictionary-treatment-function-161"> </a></td><td>BURNS CARE</td></tr><tr><td style="white-space:nowrap">170<a name="NHSDataModelAndDictionary-treatment-function-170"> </a></td><td>CARDIOTHORACIC SURGERY</td></tr><tr><td style="white-space:nowrap">171<a name="NHSDataModelAndDictionary-treatment-function-171"> </a></td><td>PAEDIATRIC SURGERY</td></tr><tr><td style="white-space:nowrap">172<a name="NHSDataModelAndDictionary-treatment-function-172"> </a></td><td>CARDIAC SURGERY</td></tr><tr><td style="white-space:nowrap">173<a name="NHSDataModelAndDictionary-treatment-function-173"> </a></td><td>THORACIC SURGERY</td></tr><tr><td style="white-space:nowrap">174<a name="NHSDataModelAndDictionary-treatment-function-174"> </a></td><td>CARDIOTHORACIC TRANSPLANTATION</td></tr><tr><td style="white-space:nowrap">180<a name="NHSDataModelAndDictionary-treatment-function-180"> </a></td><td>ACCIDENT AND EMERGENCY</td></tr><tr><td style="white-space:nowrap">191<a name="NHSDataModelAndDictionary-treatment-function-191"> </a></td><td>PAIN MANAGEMENT</td></tr><tr><td style="white-space:nowrap">211<a name="NHSDataModelAndDictionary-treatment-function-211"> </a></td><td>PAEDIATRIC UROLOGY</td></tr><tr><td style="white-space:nowrap">212<a name="NHSDataModelAndDictionary-treatment-function-212"> </a></td><td>PAEDIATRIC TRANSPLANTATION SURGERY</td></tr><tr><td style="white-space:nowrap">213<a name="NHSDataModelAndDictionary-treatment-function-213"> </a></td><td>PAEDIATRIC GASTROINTESTINAL SURGERY</td></tr><tr><td style="white-space:nowrap">214<a name="NHSDataModelAndDictionary-treatment-function-214"> </a></td><td>PAEDIATRIC TRAUMA AND ORTHOPAEDICS</td></tr><tr><td style="white-space:nowrap">215<a name="NHSDataModelAndDictionary-treatment-function-215"> </a></td><td>PAEDIATRIC EAR NOSE AND THROAT</td></tr><tr><td style="white-space:nowrap">216<a name="NHSDataModelAndDictionary-treatment-function-216"> </a></td><td>PAEDIATRIC OPHTHALMOLOGY</td></tr><tr><td style="white-space:nowrap">217<a name="NHSDataModelAndDictionary-treatment-function-217"> </a></td><td>PAEDIATRIC MAXILLO-FACIAL SURGERY</td></tr><tr><td style="white-space:nowrap">218<a name="NHSDataModelAndDictionary-treatment-function-218"> </a></td><td>PAEDIATRIC NEUROSURGERY</td></tr><tr><td style="white-space:nowrap">219<a name="NHSDataModelAndDictionary-treatment-function-219"> </a></td><td>PAEDIATRIC PLASTIC SURGERY</td></tr><tr><td style="white-space:nowrap">220<a name="NHSDataModelAndDictionary-treatment-function-220"> </a></td><td>PAEDIATRIC BURNS CARE</td></tr><tr><td style="white-space:nowrap">221<a name="NHSDataModelAndDictionary-treatment-function-221"> </a></td><td>PAEDIATRIC CARDIAC SURGERY</td></tr><tr><td style="white-space:nowrap">222<a name="NHSDataModelAndDictionary-treatment-function-222"> </a></td><td>PAEDIATRIC THORACIC SURGERY</td></tr><tr><td style="white-space:nowrap">223<a name="NHSDataModelAndDictionary-treatment-function-223"> </a></td><td>PAEDIATRIC EPILEPSY</td></tr><tr><td style="white-space:nowrap">241<a name="NHSDataModelAndDictionary-treatment-function-241"> </a></td><td>PAEDIATRIC PAIN MANAGEMENT</td></tr><tr><td style="white-space:nowrap">242<a name="NHSDataModelAndDictionary-treatment-function-242"> </a></td><td>PAEDIATRIC INTENSIVE CARE</td></tr><tr><td style="white-space:nowrap">251<a name="NHSDataModelAndDictionary-treatment-function-251"> </a></td><td>PAEDIATRIC GASTROENTEROLOGY</td></tr><tr><td style="white-space:nowrap">252<a name="NHSDataModelAndDictionary-treatment-function-252"> </a></td><td>PAEDIATRIC ENDOCRINOLOGY</td></tr><tr><td style="white-space:nowrap">253<a name="NHSDataModelAndDictionary-treatment-function-253"> </a></td><td>PAEDIATRIC CLINICAL HAEMATOLOGY</td></tr><tr><td style="white-space:nowrap">254<a name="NHSDataModelAndDictionary-treatment-function-254"> </a></td><td>PAEDIATRIC AUDIOLOGICAL MEDICINE</td></tr><tr><td style="white-space:nowrap">255<a name="NHSDataModelAndDictionary-treatment-function-255"> </a></td><td>PAEDIATRIC CLINICAL IMMUNOLOGY AND ALLERGY SERVICE</td></tr><tr><td style="white-space:nowrap">256<a name="NHSDataModelAndDictionary-treatment-function-256"> </a></td><td>PAEDIATRIC INFECTIOUS DISEASES</td></tr><tr><td style="white-space:nowrap">257<a name="NHSDataModelAndDictionary-treatment-function-257"> </a></td><td>PAEDIATRIC DERMATOLOGY</td></tr><tr><td style="white-space:nowrap">258<a name="NHSDataModelAndDictionary-treatment-function-258"> </a></td><td>PAEDIATRIC RESPIRATORY MEDICINE</td></tr><tr><td style="white-space:nowrap">259<a name="NHSDataModelAndDictionary-treatment-function-259"> </a></td><td>PAEDIATRIC NEPHROLOGY</td></tr><tr><td style="white-space:nowrap">260<a name="NHSDataModelAndDictionary-treatment-function-260"> </a></td><td>PAEDIATRIC MEDICAL ONCOLOGY</td></tr><tr><td style="white-space:nowrap">261<a name="NHSDataModelAndDictionary-treatment-function-261"> </a></td><td>PAEDIATRIC METABOLIC DISEASE</td></tr><tr><td style="white-space:nowrap">262<a name="NHSDataModelAndDictionary-treatment-function-262"> </a></td><td>PAEDIATRIC RHEUMATOLOGY</td></tr><tr><td style="white-space:nowrap">263<a name="NHSDataModelAndDictionary-treatment-function-263"> </a></td><td>PAEDIATRIC DIABETIC MEDICINE</td></tr><tr><td style="white-space:nowrap">264<a name="NHSDataModelAndDictionary-treatment-function-264"> </a></td><td>PAEDIATRIC CYSTIC FIBROSIS</td></tr><tr><td style="white-space:nowrap">280<a name="NHSDataModelAndDictionary-treatment-function-280"> </a></td><td>PAEDIATRIC INTERVENTIONAL RADIOLOGY</td></tr><tr><td style="white-space:nowrap">290<a name="NHSDataModelAndDictionary-treatment-function-290"> </a></td><td>COMMUNITY PAEDIATRICS</td></tr><tr><td style="white-space:nowrap">291<a name="NHSDataModelAndDictionary-treatment-function-291"> </a></td><td>PAEDIATRIC NEURO-DISABILITY</td></tr><tr><td style="white-space:nowrap">190<a name="NHSDataModelAndDictionary-treatment-function-190"> </a></td><td>ANAESTHETICS</td></tr><tr><td style="white-space:nowrap">192<a name="NHSDataModelAndDictionary-treatment-function-192"> </a></td><td>CRITICAL CARE MEDICINE</td></tr><tr><td style="white-space:nowrap">300<a name="NHSDataModelAndDictionary-treatment-function-300"> </a></td><td>GENERAL MEDICINE</td></tr><tr><td style="white-space:nowrap">301<a name="NHSDataModelAndDictionary-treatment-function-301"> </a></td><td>GASTROENTEROLOGY</td></tr><tr><td style="white-space:nowrap">302<a name="NHSDataModelAndDictionary-treatment-function-302"> </a></td><td>ENDOCRINOLOGY</td></tr><tr><td style="white-space:nowrap">303<a name="NHSDataModelAndDictionary-treatment-function-303"> </a></td><td>CLINICAL HAEMATOLOGY</td></tr><tr><td style="white-space:nowrap">304<a name="NHSDataModelAndDictionary-treatment-function-304"> </a></td><td>CLINICAL PHYSIOLOGY</td></tr><tr><td style="white-space:nowrap">305<a name="NHSDataModelAndDictionary-treatment-function-305"> </a></td><td>CLINICAL PHARMACOLOGY</td></tr><tr><td style="white-space:nowrap">306<a name="NHSDataModelAndDictionary-treatment-function-306"> </a></td><td>HEPATOLOGY</td></tr><tr><td style="white-space:nowrap">307<a name="NHSDataModelAndDictionary-treatment-function-307"> </a></td><td>DIABETIC MEDICINE</td></tr><tr><td style="white-space:nowrap">308<a name="NHSDataModelAndDictionary-treatment-function-308"> </a></td><td>BLOOD AND MARROW TRANSPLANTATION</td></tr><tr><td style="white-space:nowrap">309<a name="NHSDataModelAndDictionary-treatment-function-309"> </a></td><td>HAEMOPHILIA SERVICE</td></tr><tr><td style="white-space:nowrap">310<a name="NHSDataModelAndDictionary-treatment-function-310"> </a></td><td>AUDIOLOGICAL MEDICINE</td></tr><tr><td style="white-space:nowrap">311<a name="NHSDataModelAndDictionary-treatment-function-311"> </a></td><td>CLINICAL GENETICS</td></tr><tr><td style="white-space:nowrap">312<a name="NHSDataModelAndDictionary-treatment-function-312"> </a></td><td>not a Treatment Function</td></tr><tr><td style="white-space:nowrap">313<a name="NHSDataModelAndDictionary-treatment-function-313"> </a></td><td>CLINICAL IMMUNOLOGY and ALLERGY SERVICE</td></tr><tr><td style="white-space:nowrap">314<a name="NHSDataModelAndDictionary-treatment-function-314"> </a></td><td>REHABILITATION SERVICE</td></tr><tr><td style="white-space:nowrap">315<a name="NHSDataModelAndDictionary-treatment-function-315"> </a></td><td>PALLIATIVE MEDICINE</td></tr><tr><td style="white-space:nowrap">316<a name="NHSDataModelAndDictionary-treatment-function-316"> </a></td><td>CLINICAL IMMUNOLOGY</td></tr><tr><td style="white-space:nowrap">317<a name="NHSDataModelAndDictionary-treatment-function-317"> </a></td><td>ALLERGY SERVICE</td></tr><tr><td style="white-space:nowrap">318<a name="NHSDataModelAndDictionary-treatment-function-318"> </a></td><td>INTERMEDIATE CARE</td></tr><tr><td style="white-space:nowrap">319<a name="NHSDataModelAndDictionary-treatment-function-319"> </a></td><td>RESPITE CARE</td></tr><tr><td style="white-space:nowrap">320<a name="NHSDataModelAndDictionary-treatment-function-320"> </a></td><td>CARDIOLOGY</td></tr><tr><td style="white-space:nowrap">321<a name="NHSDataModelAndDictionary-treatment-function-321"> </a></td><td>PAEDIATRIC CARDIOLOGY</td></tr><tr><td style="white-space:nowrap">322<a name="NHSDataModelAndDictionary-treatment-function-322"> </a></td><td>CLINICAL MICROBIOLOGY</td></tr><tr><td style="white-space:nowrap">323<a name="NHSDataModelAndDictionary-treatment-function-323"> </a></td><td>SPINAL INJURIES</td></tr><tr><td style="white-space:nowrap">324<a name="NHSDataModelAndDictionary-treatment-function-324"> </a></td><td>ANTICOAGULANT SERVICE</td></tr><tr><td style="white-space:nowrap">325<a name="NHSDataModelAndDictionary-treatment-function-325"> </a></td><td>SPORT AND EXERCISE MEDICINE</td></tr><tr><td style="white-space:nowrap">327<a name="NHSDataModelAndDictionary-treatment-function-327"> </a></td><td>CARDIAC REHABILITATION</td></tr><tr><td style="white-space:nowrap">328<a name="NHSDataModelAndDictionary-treatment-function-328"> </a></td><td>STROKE MEDICINE</td></tr><tr><td style="white-space:nowrap">329<a name="NHSDataModelAndDictionary-treatment-function-329"> </a></td><td>TRANSIENT ISCHAEMIC ATTACK</td></tr><tr><td style="white-space:nowrap">330<a name="NHSDataModelAndDictionary-treatment-function-330"> </a></td><td>DERMATOLOGY</td></tr><tr><td style="white-space:nowrap">331<a name="NHSDataModelAndDictionary-treatment-function-331"> </a></td><td>CONGENITAL HEART DISEASE SERVICE</td></tr><tr><td style="white-space:nowrap">340<a name="NHSDataModelAndDictionary-treatment-function-340"> </a></td><td>RESPIRATORY MEDICINE</td></tr><tr><td style="white-space:nowrap">341<a name="NHSDataModelAndDictionary-treatment-function-341"> </a></td><td>RESPIRATORY PHYSIOLOGY</td></tr><tr><td style="white-space:nowrap">342<a name="NHSDataModelAndDictionary-treatment-function-342"> </a></td><td>PROGRAMMED PULMONARY REHABILITATION</td></tr><tr><td style="white-space:nowrap">343<a name="NHSDataModelAndDictionary-treatment-function-343"> </a></td><td>ADULT CYSTIC FIBROSIS SERVICE</td></tr><tr><td style="white-space:nowrap">344<a name="NHSDataModelAndDictionary-treatment-function-344"> </a></td><td>COMPLEX SPECIALISED REHABILITATION SERVICE</td></tr><tr><td style="white-space:nowrap">345<a name="NHSDataModelAndDictionary-treatment-function-345"> </a></td><td>SPECIALIST REHABILITATION SERVICE</td></tr><tr><td style="white-space:nowrap">346<a name="NHSDataModelAndDictionary-treatment-function-346"> </a></td><td>LOCAL SPECIALIST REHABILITATION SERVICE</td></tr><tr><td style="white-space:nowrap">350<a name="NHSDataModelAndDictionary-treatment-function-350"> </a></td><td>INFECTIOUS DISEASES</td></tr><tr><td style="white-space:nowrap">352<a name="NHSDataModelAndDictionary-treatment-function-352"> </a></td><td>TROPICAL MEDICINE</td></tr><tr><td style="white-space:nowrap">360<a name="NHSDataModelAndDictionary-treatment-function-360"> </a></td><td>GENITOURINARY MEDICINE</td></tr><tr><td style="white-space:nowrap">361<a name="NHSDataModelAndDictionary-treatment-function-361"> </a></td><td>NEPHROLOGY</td></tr><tr><td style="white-space:nowrap">370<a name="NHSDataModelAndDictionary-treatment-function-370"> </a></td><td>MEDICAL ONCOLOGY</td></tr><tr><td style="white-space:nowrap">371<a name="NHSDataModelAndDictionary-treatment-function-371"> </a></td><td>NUCLEAR MEDICINE</td></tr><tr><td style="white-space:nowrap">400<a name="NHSDataModelAndDictionary-treatment-function-400"> </a></td><td>NEUROLOGY</td></tr><tr><td style="white-space:nowrap">401<a name="NHSDataModelAndDictionary-treatment-function-401"> </a></td><td>CLINICAL NEUROPHYSIOLOGY</td></tr><tr><td style="white-space:nowrap">410<a name="NHSDataModelAndDictionary-treatment-function-410"> </a></td><td>RHEUMATOLOGY</td></tr><tr><td style="white-space:nowrap">420<a name="NHSDataModelAndDictionary-treatment-function-420"> </a></td><td>PAEDIATRICS</td></tr><tr><td style="white-space:nowrap">421<a name="NHSDataModelAndDictionary-treatment-function-421"> </a></td><td>PAEDIATRIC NEUROLOGY</td></tr><tr><td style="white-space:nowrap">422<a name="NHSDataModelAndDictionary-treatment-function-422"> </a></td><td>NEONATOLOGY</td></tr><tr><td style="white-space:nowrap">424<a name="NHSDataModelAndDictionary-treatment-function-424"> </a></td><td>WELL BABIES</td></tr><tr><td style="white-space:nowrap">430<a name="NHSDataModelAndDictionary-treatment-function-430"> </a></td><td>GERIATRIC MEDICINE</td></tr><tr><td style="white-space:nowrap">450<a name="NHSDataModelAndDictionary-treatment-function-450"> </a></td><td>DENTAL MEDICINE SPECIALTIES</td></tr><tr><td style="white-space:nowrap">460<a name="NHSDataModelAndDictionary-treatment-function-460"> </a></td><td>MEDICAL OPHTHALMOLOGY</td></tr><tr><td style="white-space:nowrap">500<a name="NHSDataModelAndDictionary-treatment-function-500"> </a></td><td>not a Treatment Function</td></tr><tr><td style="white-space:nowrap">501<a name="NHSDataModelAndDictionary-treatment-function-501"> </a></td><td>OBSTETRICS</td></tr><tr><td style="white-space:nowrap">502<a name="NHSDataModelAndDictionary-treatment-function-502"> </a></td><td>GYNAECOLOGY</td></tr><tr><td style="white-space:nowrap">503<a name="NHSDataModelAndDictionary-treatment-function-503"> </a></td><td>GYNAECOLOGICAL ONCOLOGY</td></tr><tr><td style="white-space:nowrap">510<a name="NHSDataModelAndDictionary-treatment-function-510"> </a></td><td>Retired</td></tr><tr><td style="white-space:nowrap">520<a name="NHSDataModelAndDictionary-treatment-function-520"> </a></td><td>Retired</td></tr><tr><td style="white-space:nowrap">560<a name="NHSDataModelAndDictionary-treatment-function-560"> </a></td><td>MIDWIFERY SERVICE</td></tr><tr><td style="white-space:nowrap">600<a name="NHSDataModelAndDictionary-treatment-function-600"> </a></td><td>not a Treatment Function</td></tr><tr><td style="white-space:nowrap">610<a name="NHSDataModelAndDictionary-treatment-function-610"> </a></td><td>Retired</td></tr><tr><td style="white-space:nowrap">620<a name="NHSDataModelAndDictionary-treatment-function-620"> </a></td><td>Retired</td></tr><tr><td style="white-space:nowrap">650<a name="NHSDataModelAndDictionary-treatment-function-650"> </a></td><td>PHYSIOTHERAPY</td></tr><tr><td style="white-space:nowrap">651<a name="NHSDataModelAndDictionary-treatment-function-651"> </a></td><td>OCCUPATIONAL THERAPY</td></tr><tr><td style="white-space:nowrap">652<a name="NHSDataModelAndDictionary-treatment-function-652"> </a></td><td>SPEECH AND LANGUAGE THERAPY</td></tr><tr><td style="white-space:nowrap">653<a name="NHSDataModelAndDictionary-treatment-function-653"> </a></td><td>PODIATRY</td></tr><tr><td style="white-space:nowrap">654<a name="NHSDataModelAndDictionary-treatment-function-654"> </a></td><td>DIETETICS</td></tr><tr><td style="white-space:nowrap">655<a name="NHSDataModelAndDictionary-treatment-function-655"> </a></td><td>ORTHOPTICS</td></tr><tr><td style="white-space:nowrap">656<a name="NHSDataModelAndDictionary-treatment-function-656"> </a></td><td>CLINICAL PSYCHOLOGY</td></tr><tr><td style="white-space:nowrap">657<a name="NHSDataModelAndDictionary-treatment-function-657"> </a></td><td>PROSTHETICS</td></tr><tr><td style="white-space:nowrap">658<a name="NHSDataModelAndDictionary-treatment-function-658"> </a></td><td>ORTHOTICS</td></tr><tr><td style="white-space:nowrap">659<a name="NHSDataModelAndDictionary-treatment-function-659"> </a></td><td>DRAMA THERAPY</td></tr><tr><td style="white-space:nowrap">660<a name="NHSDataModelAndDictionary-treatment-function-660"> </a></td><td>ART THERAPY</td></tr><tr><td style="white-space:nowrap">661<a name="NHSDataModelAndDictionary-treatment-function-661"> </a></td><td>MUSIC THERAPY</td></tr><tr><td style="white-space:nowrap">662<a name="NHSDataModelAndDictionary-treatment-function-662"> </a></td><td>OPTOMETRY</td></tr><tr><td style="white-space:nowrap">663<a name="NHSDataModelAndDictionary-treatment-function-663"> </a></td><td>PODIATRIC SURGERY</td></tr><tr><td style="white-space:nowrap">700<a name="NHSDataModelAndDictionary-treatment-function-700"> </a></td><td>LEARNING DISABILITY</td></tr><tr><td style="white-space:nowrap">710<a name="NHSDataModelAndDictionary-treatment-function-710"> </a></td><td>ADULT MENTAL ILLNESS</td></tr><tr><td style="white-space:nowrap">711<a name="NHSDataModelAndDictionary-treatment-function-711"> </a></td><td>CHILD and ADOLESCENT PSYCHIATRY</td></tr><tr><td style="white-space:nowrap">712<a name="NHSDataModelAndDictionary-treatment-function-712"> </a></td><td>FORENSIC PSYCHIATRY</td></tr><tr><td style="white-space:nowrap">713<a name="NHSDataModelAndDictionary-treatment-function-713"> </a></td><td>PSYCHOTHERAPY</td></tr><tr><td style="white-space:nowrap">715<a name="NHSDataModelAndDictionary-treatment-function-715"> </a></td><td>OLD AGE PSYCHIATRY</td></tr><tr><td style="white-space:nowrap">720<a name="NHSDataModelAndDictionary-treatment-function-720"> </a></td><td>EATING DISORDERS</td></tr><tr><td style="white-space:nowrap">721<a name="NHSDataModelAndDictionary-treatment-function-721"> </a></td><td>ADDICTION SERVICES</td></tr><tr><td style="white-space:nowrap">722<a name="NHSDataModelAndDictionary-treatment-function-722"> </a></td><td>LIAISON PSYCHIATRY</td></tr><tr><td style="white-space:nowrap">723<a name="NHSDataModelAndDictionary-treatment-function-723"> </a></td><td>PSYCHIATRIC INTENSIVE CARE</td></tr><tr><td style="white-space:nowrap">724<a name="NHSDataModelAndDictionary-treatment-function-724"> </a></td><td>PERINATAL PSYCHIATRY</td></tr><tr><td style="white-space:nowrap">725<a name="NHSDataModelAndDictionary-treatment-function-725"> </a></td><td>MENTAL HEALTH RECOVERY AND REHABILITATION SERVICE</td></tr><tr><td style="white-space:nowrap">726<a name="NHSDataModelAndDictionary-treatment-function-726"> </a></td><td>MENTAL HEALTH DUAL DIAGNOSIS SERVICE</td></tr><tr><td style="white-space:nowrap">727<a name="NHSDataModelAndDictionary-treatment-function-727"> </a></td><td>DEMENTIA ASSESSMENT SERVICE</td></tr><tr><td style="white-space:nowrap">800<a name="NHSDataModelAndDictionary-treatment-function-800"> </a></td><td>CLINICAL ONCOLOGY (previously RADIOTHERAPY)</td></tr><tr><td style="white-space:nowrap">810<a name="NHSDataModelAndDictionary-treatment-function-810"> </a></td><td>not a Treatment Function</td></tr><tr><td style="white-space:nowrap">811<a name="NHSDataModelAndDictionary-treatment-function-811"> </a></td><td>INTERVENTIONAL RADIOLOGY</td></tr><tr><td style="white-space:nowrap">812<a name="NHSDataModelAndDictionary-treatment-function-812"> </a></td><td>DIAGNOSTIC IMAGING</td></tr><tr><td style="white-space:nowrap">820<a name="NHSDataModelAndDictionary-treatment-function-820"> </a></td><td>not a Treatment Function</td></tr><tr><td style="white-space:nowrap">821<a name="NHSDataModelAndDictionary-treatment-function-821"> </a></td><td>not a Treatment Function</td></tr><tr><td style="white-space:nowrap">822<a name="NHSDataModelAndDictionary-treatment-function-822"> </a></td><td>CHEMICAL PATHOLOGY</td></tr><tr><td style="white-space:nowrap">823<a name="NHSDataModelAndDictionary-treatment-function-823"> </a></td><td>not a Treatment Function</td></tr><tr><td style="white-space:nowrap">824<a name="NHSDataModelAndDictionary-treatment-function-824"> </a></td><td>not a Treatment Function</td></tr><tr><td style="white-space:nowrap">830<a name="NHSDataModelAndDictionary-treatment-function-830"> </a></td><td>not a Treatment Function</td></tr><tr><td style="white-space:nowrap">831<a name="NHSDataModelAndDictionary-treatment-function-831"> </a></td><td>not a Treatment Function</td></tr><tr><td style="white-space:nowrap">832<a name="NHSDataModelAndDictionary-treatment-function-832"> </a></td><td>Retired</td></tr><tr><td style="white-space:nowrap">834<a name="NHSDataModelAndDictionary-treatment-function-834"> </a></td><td>MEDICAL VIROLOGY</td></tr><tr><td style="white-space:nowrap">840<a name="NHSDataModelAndDictionary-treatment-function-840"> </a></td><td>AUDIOLOGY</td></tr><tr><td style="white-space:nowrap">900<a name="NHSDataModelAndDictionary-treatment-function-900"> </a></td><td>not a Treatment Function</td></tr><tr><td style="white-space:nowrap">901<a name="NHSDataModelAndDictionary-treatment-function-901"> </a></td><td>not a Treatment Function</td></tr><tr><td style="white-space:nowrap">920<a name="NHSDataModelAndDictionary-treatment-function-920"> </a></td><td>DIABETIC EDUCATION SERVICE</td></tr><tr><td style="white-space:nowrap">950<a name="NHSDataModelAndDictionary-treatment-function-950"> </a></td><td>not a Treatment Function</td></tr><tr><td style="white-space:nowrap">960<a name="NHSDataModelAndDictionary-treatment-function-960"> </a></td><td>not a Treatment Function</td></tr><tr><td style="white-space:nowrap">990<a name="NHSDataModelAndDictionary-treatment-function-990"> </a></td><td>Retired</td></tr></table></div>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.england.nhs.uk/">NHS England</a>.  Package uk.nhs.england.skunkworks#0.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Mar 22, 2024 07:58+0000">2024-03-22</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+            <div style="color: #333333" >
+
+          Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
+                 <a style="color: #81BEF7" href="qa.html">QA Report</a> 
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
+<div>
+</div>
+
+</div>
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+
