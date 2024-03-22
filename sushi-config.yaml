@@ -6,7 +6,7 @@ FSHOnly: false
   # │  used properties are included. For a list of all supported properties and their functions,     │
   # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
   # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-id: uk.nhs.england.administration.skunkworks
+id: uk.nhs.england.administration
 canonical: https://fhir.nhs.uk/England
 name: NHSEnglandInteroperabilitySkunkworks
 

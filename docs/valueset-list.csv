@@ -1,2 +1,0 @@
-URL,Version,Status,OIDs,Name,Title,Descriptino,Uses,Used,Sources
-https://fhir.nhs.uk/ValueSet/NHSDigital-CareSettingType,0.0.1,draft,,NHSDigitalCareSettingType,NHSDigital-CareSettingType,"Cross Hl7 UK version of UKCore CareSetting",,"SCT,Internal"
