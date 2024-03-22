@@ -25,8 +25,6 @@ Generic: line 0, col 0, Error - The link 'StructureDefinition-IHE.PMIR.MessageHe
 Generic: line 0, col 0, Error - The link 'StructureDefinition-IHE.PMIR.Subscription.html' for "IHE Patient Master Identity Registry Subscription" cannot be resolved (NOTFOUND)
 Generic: line 0, col 0, Error - The link 'http://hl7.org/fhir/R4B' for "R4B" cannot be resolved (NOTFOUND)
 Generic: line 0, col 0, Error - The link 'documents.html' for "Document Interoperability" cannot be resolved (NOTFOUND)
-Generic: line 0, col 0, Error - The link 'StructureDefinition-RelatedPerson' for "UKCore-RelatedPerson" cannot be resolved (NOTFOUND)
-Generic: line 0, col 0, Error - The link 'CapabilityStatement-Validated-Relationship-Service-Provider.html' for "CapabilityStatement-Validated-Relationship-Service-Provider" cannot be resolved (NOTFOUND)
 Generic: line 0, col 0, Error - The link 'CapabilityStatement-Personal-Demographics-Service-Provider.html' for "CapabilityStatement-Personal-Demographics-Service-Provider" cannot be resolved (NOTFOUND)
 Generic: line 0, col 0, Warning - The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide (NOTFOUND)
 Generic: line 0, col 0, Warning - An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide (NOTFOUND)
