@@ -1,0 +1,147 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.nhs.uk/England/RelatedPerson/RelatedPerson-PDS-NHS-90000000009-Jane-Smith> a fhir:RelatedPerson ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "RelatedPerson-PDS-NHS-90000000009-Jane-Smith"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://fhir.nhs.uk/England/StructureDefinition/RelatedPerson"^^xsd:anyURI ;
+       fhir:link <https://fhir.nhs.uk/England/StructureDefinition/RelatedPerson>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: RelatedPerson</b><a name=\"RelatedPerson-PDS-NHS-90000000009-Jane-Smith\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource RelatedPerson &quot;RelatedPerson-PDS-NHS-90000000009-Jane-Smith&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-RelatedPerson.html\">RelatedPerson</a></p></div><blockquote><p><b>Extension UK Core Contact Preference</b></p><blockquote><p><b>url</b></p><code>PreferredWrittenCommunicationFormat</code></blockquote><p><b>value</b>: Braille <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://simplifier.net/resolve?scope=fhir.r4.ukcore.stu3.currentbuild@0.0.6-pre-release&amp;canonical=https://fhir.hl7.org.uk/CodeSystem/UKCore-PreferredWrittenCommunicationFormat\">UK Core Preferred Written Communication Format</a>#12)</span></p><blockquote><p><b>url</b></p><code>PreferredContactMethod</code></blockquote><p><b>value</b>: Letter <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://simplifier.net/resolve?scope=fhir.r4.ukcore.stu3.currentbuild@0.0.6-pre-release&amp;canonical=https://fhir.hl7.org.uk/CodeSystem/UKCore-PreferredContactMethod\">UK Core Preferred Contact Method</a>#1)</span></p><blockquote><p><b>url</b></p><code>PreferredContactTimes</code></blockquote><p><b>value</b>: Not after 7pm</p></blockquote><blockquote><p><b>Extension UK Core NHS Communication</b></p><blockquote><p><b>url</b></p><a href=\"http://hl7.org/fhir/extensions/1.0.0/StructureDefinition-language.html\">Human Language</a></blockquote><p><b>value</b>: French <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (UK Core Human Language[1.0.0]#fr)</span></p><blockquote><p><b>url</b></p><code>interpreterRequired</code></blockquote><p><b>value</b>: true</p></blockquote><p><b>active</b>: true</p><p><b>patient</b>: <span><code>https://fhir.nhs.uk/Id/nhs-number</code>/90000000009</span></p><p><b>relationship</b>: Guardian of patient <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (UKCore-AdditionalRelatedPersonRole#Guardian)</span></p><p><b>name</b>: Jane Smith </p><p><b>telecom</b>: ph: 01632960587(HOME)</p><p><b>address</b>: 1 Trevelyan Square Boar Lane City Centre Leeds West Yorkshire LS1 6AE (HOME)</p><p><b>period</b>: 2020-01-01 --&gt; 2021-12-31</p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-CopyCorrespondenceIndicator"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "true"^^xsd:boolean ]
+  ] [
+     fhir:url [ fhir:v "https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-ContactRank"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "1"^^xsd:positiveInteger ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "PreferredWrittenCommunicationFormat"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://fhir.hl7.org.uk/CodeSystem/UKCore-PreferredWrittenCommunicationFormat"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "12" ] ;
+           fhir:display [ fhir:v "Braille" ]
+         ] )
+       ]
+     ] [
+       fhir:url [ fhir:v "PreferredContactMethod"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://fhir.hl7.org.uk/CodeSystem/UKCore-PreferredContactMethod"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "1" ] ;
+           fhir:display [ fhir:v "Letter" ]
+         ] )
+       ]
+     ] [
+       fhir:url [ fhir:v "PreferredContactTimes"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Not after 7pm" ]
+     ] ) ;
+     fhir:url [ fhir:v "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ContactPreference"^^xsd:anyURI ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "language"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"^^xsd:anyURI ] ;
+           fhir:version [ fhir:v "1.0.0" ] ;
+           fhir:code [ fhir:v "fr" ] ;
+           fhir:display [ fhir:v "French" ]
+         ] )
+       ]
+     ] [
+       fhir:url [ fhir:v "interpreterRequired"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] ) ;
+     fhir:url [ fhir:v "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSCommunication"^^xsd:anyURI ]
+  ] ) ; # 
+  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:patient [
+     fhir:identifier [
+       fhir:system [ fhir:v "https://fhir.nhs.uk/Id/nhs-number"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "90000000009" ]
+     ]
+  ] ; # 
+  fhir:relationship ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://fhir.nhs.uk/R4/CodeSystem/UKCore-AdditionalRelatedPersonRole"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "Guardian" ] ;
+       fhir:display [ fhir:v "Guardian of patient" ]
+     ] )
+  ] ) ; # 
+  fhir:name ( [
+     fhir:use [ fhir:v "usual" ] ;
+     fhir:family [ fhir:v "Smith" ] ;
+     fhir:given ( [ fhir:v "Jane" ] ) ;
+     fhir:prefix ( [ fhir:v "Mrs" ] ) ;
+     fhir:suffix ( [ fhir:v "MBE" ] ) ;
+     fhir:period [
+       fhir:start [ fhir:v "2020-01-01"^^xsd:date ] ;
+       fhir:end [ fhir:v "2021-12-31"^^xsd:date ]
+     ]
+  ] ) ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "01632960587" ] ;
+     fhir:use [ fhir:v "home" ] ;
+     fhir:period [
+       fhir:start [ fhir:v "2020-01-01"^^xsd:date ] ;
+       fhir:end [ fhir:v "2021-12-31"^^xsd:date ]
+     ]
+  ] ) ; # 
+  fhir:address ( [
+     fhir:extension ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "type"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:Coding ;
+           fhir:system [ fhir:v "https://fhir.hl7.org.uk/CodeSystem/UKCore-AddressKeyType"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "PAF" ]
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "12345678" ]
+       ] ) ;
+       fhir:url [ fhir:v "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AddressKey"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "type"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:Coding ;
+           fhir:system [ fhir:v "https://fhir.hl7.org.uk/CodeSystem/UKCore-AddressKeyType"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "UPRN" ]
+         ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "123456789012" ]
+       ] ) ;
+       fhir:url [ fhir:v "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AddressKey"^^xsd:anyURI ]
+     ] ) ;
+     fhir:use [ fhir:v "home" ] ;
+     fhir:line ( [ fhir:v "1 Trevelyan Square" ] [ fhir:v "Boar Lane" ] [ fhir:v "City Centre" ] [ fhir:v "Leeds" ] [ fhir:v "West Yorkshire" ] ) ;
+     fhir:postalCode [ fhir:v "LS1 6AE" ] ;
+     fhir:period [
+       fhir:start [ fhir:v "2020-01-01"^^xsd:date ] ;
+       fhir:end [ fhir:v "2021-12-31"^^xsd:date ]
+     ]
+  ] ) ; # 
+  fhir:period [
+     fhir:start [ fhir:v "2020-01-01"^^xsd:date ] ;
+     fhir:end [ fhir:v "2021-12-31"^^xsd:date ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="Patient-PDS-NHS-9000000017-Jayne-Smith"/>
+  <meta>
+    <versionId value="2"/>
+    <profile value="https://fhir.nhs.uk/England/StructureDefinition/PatientPDS"/>
+    <security>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-Confidentiality"/>
+      <code value="U"/>
+      <display value="unrestricted"/>
+    </security>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;"><b>Jayne Smyth </b> female, DoB: 2010-10-22 ( <code>https://fhir.nhs.uk/Id/nhs-number</code>/9000000017)</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Known status of Patient">Deceased:</td><td>2010-10-22 00:00:00+0000</td><td style="background-color: #f3f5da" title="Known multipleBirth status of Patient">Multiple Birth:</td><td colspan="3">1</td></tr><tr><td style="background-color: #f3f5da" title="Ways to contact the Patient">Contact Details:</td><td colspan="3"><ul><li>ph: 01632960587(HOME)</li><li><a href="mailto:jayne.smyth@example.com">jayne.smyth@example.com</a></li><li>01632960587(HOME)</li><li>1 Trevelyan Square Boar Lane City Centre Leeds West Yorkshire LS1 6AE (HOME)</li><li>Student Accommodation(TEMP)</li></ul></td></tr><tr><td style="background-color: #f3f5da" title="Nominated Contact: Emergency Contact">Emergency Contact:</td><td colspan="3"><ul><li>ph: 01632960587</li><li>Valid Period: 2020-01-01 --&gt; 2021-12-31</li></ul></td></tr><tr><td style="background-color: #f3f5da" title="Patient Links">Links:</td><td colspan="3"><ul><li>General Practitioner: <span><code>https://fhir.nhs.uk/Id/ods-organization-code</code>/Y12345 (period: 2020-01-01 --&gt; 2021-12-31)</span></li><li>Managing Organization: <span><code>https://fhir.nhs.uk/Id/ods-organization-code</code>/Y12345 (period: 2020-01-01 --&gt; 2021-12-31)</span></li></ul></td></tr><tr><td style="background-color: #f3f5da" title="The patient's death notification status.">Extension UK Core Death Notification Status:</td><td colspan="3"><ul><li>deathNotificationStatus: <span title="Codes: {https://fhir.hl7.org.uk/CodeSystem/UKCore-DeathNotificationStatus 2}">Formal - death notice received from Registrar of Deaths</span></li><li>systemEffectiveDate: 2010-10-22 00:00:00+0000</li></ul></td></tr><tr><td style="background-color: #f3f5da" title="Information about the patient's preferred dispenser organisation."><a href="https://simplifier.net/resolve?scope=fhir.r4.ukcore.stu3.currentbuild@0.0.6-pre-release&amp;canonical=https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-PreferredDispenserOrganization">Extension UK Core Preferred Dispenser Organization:</a></td><td colspan="3"><ul><li><span><code>https://fhir.nhs.uk/Id/ods-organization-code</code>/Y23456</span></li></ul></td></tr><tr><td style="background-color: #f3f5da" title="The registered place of birth of the patient. A sytem may use the address.text if they don't store the birthPlace address in discrete elements."><a href="http://hl7.org/fhir/R4/extension-patient-birthplace.html">Birth Place:</a></td><td colspan="3"><ul><li>Manchester GBR </li></ul></td></tr><tr><td style="background-color: #f3f5da" title="The preferred method of contact, contact times and written communication format given by a Patient or Related Person.">Extension UK Core Contact Preference:</td><td colspan="3"><ul><li>PreferredWrittenCommunicationFormat: <span title="Codes: {https://fhir.hl7.org.uk/CodeSystem/UKCore-PreferredWrittenCommunicationFormat 12}">Braille</span></li><li>PreferredContactMethod: <span title="Codes: {https://fhir.hl7.org.uk/CodeSystem/UKCore-PreferredContactMethod 1}">Letter</span></li><li>PreferredContactTimes: Not after 7pm</li></ul></td></tr><tr><td style="background-color: #f3f5da" title="Information about the patient's nominated medical appliance supplier."><a href="https://simplifier.net/resolve?scope=fhir.r4.ukcore.stu3.currentbuild@0.0.6-pre-release&amp;canonical=https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicalApplianceSupplier">Extension UK Core Medical Appliance Supplier:</a></td><td colspan="3"><ul><li><span><code>https://fhir.nhs.uk/Id/ods-organization-code</code>/Y34567</span></li></ul></td></tr><tr><td style="background-color: #f3f5da" title="Individual's nominated pharmacy."><a href="https://simplifier.net/resolve?scope=fhir.r4.ukcore.stu3.currentbuild@0.0.6-pre-release&amp;canonical=https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NominatedPharmacy">Extension UK Core Nominated Pharmacy:</a></td><td colspan="3"><ul><li><span><code>https://fhir.nhs.uk/Id/ods-organization-code</code>/Y12345</span></li></ul></td></tr><tr><td style="background-color: #f3f5da" title="Information that describes the patient's communication preferences.">Extension UK Core NHS Communication:</td><td colspan="3"><ul><li>language: <span title="Codes: {https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage fr}">French</span></li><li>interpreterRequired: true</li></ul></td></tr></table></div>
+  </text>
+  <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NominatedPharmacy">
+    <valueReference>
+      <identifier>
+        <system value="https://fhir.nhs.uk/Id/ods-organization-code"/>
+        <value value="Y12345"/>
+      </identifier>
+    </valueReference>
+  </extension>
+  <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-PreferredDispenserOrganization">
+    <valueReference>
+      <identifier>
+        <system value="https://fhir.nhs.uk/Id/ods-organization-code"/>
+        <value value="Y23456"/>
+      </identifier>
+    </valueReference>
+  </extension>
+  <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MedicalApplianceSupplier">
+    <valueReference>
+      <identifier>
+        <system value="https://fhir.nhs.uk/Id/ods-organization-code"/>
+        <value value="Y34567"/>
+      </identifier>
+    </valueReference>
+  </extension>
+  <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-DeathNotificationStatus">
+    <extension url="deathNotificationStatus">
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-DeathNotificationStatus"/>
+          <version value="1.0.0"/>
+          <code value="2"/>
+          <display value="Formal - death notice received from Registrar of Deaths"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="systemEffectiveDate">
+      <valueDateTime value="2010-10-22T00:00:00+00:00"/>
+    </extension>
+  </extension>
+  <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSCommunication">
+    <extension url="language">
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"/>
+          <version value="1.0.0"/>
+          <code value="fr"/>
+          <display value="French"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="interpreterRequired">
+      <valueBoolean value="true"/>
+    </extension>
+  </extension>
+  <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ContactPreference">
+    <extension url="PreferredWrittenCommunicationFormat">
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PreferredWrittenCommunicationFormat"/>
+          <code value="12"/>
+          <display value="Braille"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="PreferredContactMethod">
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-PreferredContactMethod"/>
+          <code value="1"/>
+          <display value="Letter"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="PreferredContactTimes">
+      <valueString value="Not after 7pm"/>
+    </extension>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/patient-birthPlace">
+    <valueAddress>
+      <city value="Manchester"/>
+      <district value="Greater Manchester"/>
+      <country value="GBR"/>
+    </valueAddress>
+  </extension>
+  <extension url="https://fhir.nhs.uk/StructureDefinition/Extension-PDS-RemovalFromRegistration">
+    <extension url="removalFromRegistrationCode">
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://fhir.nhs.uk/CodeSystem/PDS-RemovalReasonExitCode"/>
+          <code value="SCT"/>
+          <display value="Transferred to Scotland"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="effectiveTime">
+      <valuePeriod>
+        <start value="2020-01-01T00:00:00+00:00"/>
+        <end value="2021-12-31T00:00:00+00:00"/>
+      </valuePeriod>
+    </extension>
+  </extension>
+  <identifier>
+    <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus">
+      <valueCodeableConcept>
+        <coding>
+          <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatus"/>
+          <version value="1.0.0"/>
+          <code value="01"/>
+          <display value="Number present and verified"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <system value="https://fhir.nhs.uk/Id/nhs-number"/>
+    <value value="9000000017"/>
+  </identifier>
+  <name id="123">
+    <use value="usual"/>
+    <family value="Smyth"/>
+    <given value="Jayne"/>
+    <prefix value="Mrs"/>
+    <suffix value="MBE"/>
+    <period>
+      <start value="2020-01-01"/>
+      <end value="2021-12-31"/>
+    </period>
+  </name>
+  <telecom id="789">
+    <system value="phone"/>
+    <value value="01632960587"/>
+    <use value="home"/>
+    <period>
+      <start value="2020-01-01"/>
+      <end value="2021-12-31"/>
+    </period>
+  </telecom>
+  <telecom id="790">
+    <system value="email"/>
+    <value value="jayne.smyth@example.com"/>
+    <use value="home"/>
+    <period>
+      <start value="2019-01-01"/>
+      <end value="2022-12-31"/>
+    </period>
+  </telecom>
+  <telecom id="OC789">
+    <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-OtherContactSystem">
+      <valueCoding>
+        <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-OtherContactSystem"/>
+        <code value="textphone"/>
+        <display value="Minicom (Textphone)"/>
+      </valueCoding>
+    </extension>
+    <system value="other"/>
+    <value value="01632960587"/>
+    <use value="home"/>
+    <period>
+      <start value="2020-01-01"/>
+      <end value="2021-12-31"/>
+    </period>
+  </telecom>
+  <gender value="female"/>
+  <birthDate value="2010-10-22"/>
+  <deceasedDateTime value="2010-10-22T00:00:00+00:00"/>
+  <address id="456">
+    <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AddressKey">
+      <extension url="type">
+        <valueCoding>
+          <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-AddressKeyType"/>
+          <code value="PAF"/>
+        </valueCoding>
+      </extension>
+      <extension url="value">
+        <valueString value="12345678"/>
+      </extension>
+    </extension>
+    <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AddressKey">
+      <extension url="type">
+        <valueCoding>
+          <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-AddressKeyType"/>
+          <code value="UPRN"/>
+        </valueCoding>
+      </extension>
+      <extension url="value">
+        <valueString value="123456789012"/>
+      </extension>
+    </extension>
+    <use value="home"/>
+    <line value="1 Trevelyan Square"/>
+    <line value="Boar Lane"/>
+    <line value="City Centre"/>
+    <line value="Leeds"/>
+    <line value="West Yorkshire"/>
+    <postalCode value="LS1 6AE"/>
+    <period>
+      <start value="2020-01-01"/>
+      <end value="2021-12-31"/>
+    </period>
+  </address>
+  <address id="T456">
+    <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AddressKey">
+      <extension url="type">
+        <valueCoding>
+          <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-AddressKeyType"/>
+          <code value="PAF"/>
+        </valueCoding>
+      </extension>
+      <extension url="value">
+        <valueString value="12345678"/>
+      </extension>
+    </extension>
+    <extension url="https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AddressKey">
+      <extension url="type">
+        <valueCoding>
+          <system value="https://fhir.hl7.org.uk/CodeSystem/UKCore-AddressKeyType"/>
+          <code value="UPRN"/>
+        </valueCoding>
+      </extension>
+      <extension url="value">
+        <valueString value="123456789012"/>
+      </extension>
+    </extension>
+    <use value="temp"/>
+    <text value="Student Accommodation"/>
+    <line value="1 Trevelyan Square"/>
+    <line value="Boar Lane"/>
+    <line value="City Centre"/>
+    <line value="Leeds"/>
+    <line value="West Yorkshire"/>
+    <postalCode value="LS1 6AE"/>
+    <period>
+      <start value="2020-01-01"/>
+      <end value="2021-12-31"/>
+    </period>
+  </address>
+  <multipleBirthInteger value="1"/>
+  <contact id="C123">
+    <relationship>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0131"/>
+        <code value="C"/>
+        <display value="Emergency Contact"/>
+      </coding>
+    </relationship>
+    <telecom>
+      <system value="phone"/>
+      <value value="01632960587"/>
+    </telecom>
+    <period>
+      <start value="2020-01-01"/>
+      <end value="2021-12-31"/>
+    </period>
+  </contact>
+  <generalPractitioner id="254406A3">
+    <type value="Organization"/>
+    <identifier>
+      <system value="https://fhir.nhs.uk/Id/ods-organization-code"/>
+      <value value="Y12345"/>
+      <period>
+        <start value="2020-01-01"/>
+        <end value="2021-12-31"/>
+      </period>
+    </identifier>
+  </generalPractitioner>
+  <managingOrganization>
+    <type value="Organization"/>
+    <identifier>
+      <system value="https://fhir.nhs.uk/Id/ods-organization-code"/>
+      <value value="Y12345"/>
+      <period>
+        <start value="2020-01-01"/>
+        <end value="2021-12-31"/>
+      </period>
+    </identifier>
+  </managingOrganization>
+</Patient>
