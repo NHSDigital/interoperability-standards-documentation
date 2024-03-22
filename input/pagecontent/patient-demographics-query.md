@@ -40,7 +40,7 @@ PD1|||ST JOHN'S WOOD MED PRACT^^E87609|G9312382^Abadi^DI^^^Dr
 
 The HL7 v2/IHE PDQ is probably not going to be favoured by third party application vendors. They are more likely to favour the IHE PDQm/HL7 FHIR RESTful approach.
 
-<figure>{% include psq-sequence-notifications-future.svg %}</figure>
+<figure>{% include pdq-sequence-notifications-future.svg %}</figure>
 <br clear="all"/>
 
 Although PDS is not IHE PDQm compliant it has followed this pattern. Please see [NHS England Personal Demographics Service - FHIR API: Search for a patient](https://digital.nhs.uk/developer/api-catalogue/personal-demographics-service-fhir#get-/Patient)
