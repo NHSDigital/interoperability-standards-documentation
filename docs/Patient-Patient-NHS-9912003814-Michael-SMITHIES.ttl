@@ -1,0 +1,49 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.nhs.uk/England/Patient/Patient-NHS-9912003814-Michael-SMITHIES> a fhir:Patient ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Patient-NHS-9912003814-Michael-SMITHIES"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://fhir.nhs.uk/England/StructureDefinition/Patient"^^xsd:anyURI ;
+       fhir:link <https://fhir.nhs.uk/England/StructureDefinition/Patient>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Michael SMITHIES (OFFICIAL)</b> male, DoB: 1972-08-12 ( id: 9912003814)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail:</td><td colspan=\"3\">ph: 01131239876</td></tr></table></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://fhir.hl7.org.uk/CodeSystem/UKCore-NHSNumberVerificationStatusEngland"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "01" ] ;
+           fhir:display [ fhir:v "Number present and verified" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:system [ fhir:v "https://fhir.nhs.uk/Id/nhs-number"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "9912003814" ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:family [ fhir:v "SMITHIES" ] ;
+     fhir:given ( [ fhir:v "Michael" ] )
+  ] ) ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "01131239876" ]
+  ] ) ; # 
+  fhir:gender [ fhir:v "male"] ; # 
+  fhir:birthDate [ fhir:v "1972-08-12"^^xsd:date] . # 
+
+# -------------------------------------------------------------------------------------
+

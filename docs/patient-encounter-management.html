@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Patient Encounter Management - Health Administration Interoperability Standards - Skunkworks v0.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+
+    <!--  <script src="assets/nhsuk.js" defer></script> -->
+
+      <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<!-- Project extras
+<link
+        type="font/woff2"
+        href="assets/fonts/FrutigerLTW01-55Roman.woff2"
+        rel="preload"
+        as="font"
+        crossorigin
+/>
+<link
+        type="font/woff2"
+        href="assets/fonts/FrutigerLTW01-65Bold.woff2"
+        rel="preload"
+        as="font"
+        crossorigin
+/>
+<link href="assets/css/nhsuk.css" rel="stylesheet" />
+-->
+
+<!-- Bootstrap core CSS overrides to bootstrap-fhir.css -->
+<link href="assets/css/nhse.css" rel="stylesheet"/>
+
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/favicons/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"16"}
+    h3,h4,h5,h6{--heading-prefix:"16"}</style>
+    <div id="segment-header" class="segment nhsuk-header">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+<!-- Left logo - typically the publisher's logo - project or affiliate -->
+        <div id="project-nav">
+          <a id="project-logo" no-external="true" href="https://www.england.nhs.uk">
+            <img height="61" alt="Project home" src="assets/images/skunk.png"/>
+          </a>
+        </div>
+
+<!-- Right logo - for example the FHIR logo -->
+<!-- Make sure you have authorization to use the FHIR logo -->
+
+        <div id="family-nav">
+            <!--
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="60" alt="FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+          -->
+        </div> 
+      
+
+<!-- search icon - if you want -->
+<!--
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+-->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Health Administration Interoperability Standards - Skunkworks</span>
+            <br/>
+            <span style="display:inline-block;">0.0.1 - ci-build
+
+
+
+   <img alt="England flag" src="assets/images/GB-ENG.svg" height="16" title="England"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Documentation
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="background.html">Background</a>
+      </li>
+      <li>
+        <a href="interoperability-standards.html">Interoperability Standards</a>
+      </li>
+      <li>
+        <a href="testing.html">Conformance and Testing (FHIR)</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Design
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="administration-module.html">Administration</a>
+      </li>
+      <li>
+        <a href="validation.html">FHIR Validation</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Build
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="national-proxy-service.html">National Proxy Service</a>
+      </li>
+      <li>
+        <a href="personal-demographics-service.html">NHS Number Allocation and PDS</a>
+      </li>
+      <li>
+        <a href="patient-encounter-management.html">Patient Encounter Management</a>
+      </li>
+      <li>
+        <a href="patient-demographics-query.html">Patient Demographics Query</a>
+      </li>
+      <li>
+        <a href="patient-identity-management.html">Patient Identity Management</a>
+      </li>
+      <li>
+        <a href="booking.html">Booking</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">FHIR Assets</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Patient Encounter Management</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Health Administration Interoperability Standards - Skunkworks - Local Development build (v0.0.1) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://fhir.nhs.uk/England/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Patient Encounter Management</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#references" id="markdown-toc-references">References</a></li>
+  <li><a href="#introduction---hl7-v2-and-ihe-event-notifications" id="markdown-toc-introduction---hl7-v2-and-ihe-event-notifications">Introduction - HL7 v2 and IHE Event Notifications</a></li>
+  <li><a href="#hl7-v2-adt_a04-example-converted-to-hl7-fhir" id="markdown-toc-hl7-v2-adt_a04-example-converted-to-hl7-fhir">HL7 v2 ADT_A04 Example converted to HL7 FHIR</a></li>
+  <li><a href="#other-programme-considerations" id="markdown-toc-other-programme-considerations">Other Programme Considerations</a></li>
+  <li><a href="#example-use-case---cpis-implementation-at-calderdale-and-huddersfield-nhs-foundation-trust" id="markdown-toc-example-use-case---cpis-implementation-at-calderdale-and-huddersfield-nhs-foundation-trust">Example Use Case - CPIS Implementation at Calderdale and Huddersfield NHS Foundation Trust</a></li>
+  <li><a href="#hl7-fhir-and-ihe-events-notifications-via-pubsub" id="markdown-toc-hl7-fhir-and-ihe-events-notifications-via-pubsub">HL7 FHIR and IHE Events Notifications via Pub/Sub</a></li>
+</ul>
+
+</div>
+
+<p>This proposal originates from CPIS and is presented here as modern solution for <strong>Patient Encounter Management</strong> and should be used to depreciate:</p>
+
+<ul>
+  <li>NHS England HL7 v2 ADT Message Specification</li>
+  <li>NHS England HL7 v3 and FHIR Patient Encounter Messaging</li>
+</ul>
+
+<p>The scope of this proposal is national, regional, NHS Trust and supplier.</p>
+
+<h3 id="references">References</h3>
+
+<ul>
+  <li><a href="https://profiles.ihe.net/ITI/TF/Volume1/ch-14.html#14.5.2">IHE Patient Encounter Management</a></li>
+  <li><a href="HSCIC ITK HL7 V2 Message Specifications.pdf" target="_blank">NHS England (ADT) ITK HL7 v2 (2.4) Message Specification</a></li>
+</ul>
+
+<h3 id="introduction---hl7-v2-and-ihe-event-notifications">Introduction - HL7 v2 and IHE Event Notifications</h3>
+
+<p>This proposal is based on a requirement to notify Social Care Safeguarding Services of Encounters with looked after children. It is proposed that this is implemented based on existing interactions used within acute care which are generally based on <strong>HL7 v2 Admissions, Discharges and Transfers (ADT)</strong> and <strong>IHE Patient Encounter Management (PEM)</strong>.</p>
+
+<p>A typical NHS Acute will use Trust Integration Engine (TIE) to route these existing messages as follows:</p>
+
+<figure><?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="296px" preserveAspectRatio="none" style="width:765px;height:296px;background:#FFFFFF;" version="1.1" viewBox="0 0 765 296" width="765px" zoomAndPan="magnify"><defs /><g><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="298" x="235" y="28.5352">Patient Encounter Management (IHE PEM)</text><rect fill="none" height="91.2422" style="stroke:#000000;stroke-width:1.5;" width="456" x="303" y="181.3965" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="154" x2="154" y1="90.4648" y2="289.6387" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="421" x2="421" y1="90.4648" y2="289.6387" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="644" x2="644" y1="90.4648" y2="289.6387" /><rect fill="#E2E2F0" height="46.9766" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="298" x="5" y="42.4883" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="172" x="66" y="63.0234">Patient Encounter Source</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="284" x="12" y="79.5117">(e.g. Patient Administration System (PAS))</text><rect fill="#E2E2F0" height="46.9766" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="216" x="313" y="42.4883" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="202" x="320" y="63.0234">Trust Integration Engine (TIE)</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="164" x="339" y="79.5117">or Orchestration Engine</text><rect fill="#E2E2F0" height="30.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="210" x="539" y="58.9766" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="196" x="546" y="79.5117">Patient Encounter Consumer</text><polygon fill="#181818" points="409,133.0859,419,137.0859,409,141.0859,413,137.0859" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="154" x2="415" y1="137.0859" y2="137.0859" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="143" x="161" y="117.0332">Patient Encounter Feed</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="140" x="165" y="132.3438">IHE PEM / HL7 v2 ADT</text><polygon fill="#181818" points="165,162.3965,155,166.3965,165,170.3965,161,166.3965" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="159" x2="420" y1="166.3965" y2="166.3965" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="116" x="171" y="161.6543">Acknowledgement</text><path d="M303,181.3965 L377,181.3965 L377,188.707 L367,198.707 L303,198.707 L303,181.3965 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.5;" /><rect fill="none" height="91.2422" style="stroke:#000000;stroke-width:1.5;" width="456" x="303" y="181.3965" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="29" x="318" y="194.9648">loop</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="239" x="392" y="194.0313">[for each recipient (fixed distribution list)]</text><polygon fill="#181818" points="632,231.3281,642,235.3281,632,239.3281,636,235.3281" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="421" x2="638" y1="235.3281" y2="235.3281" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="143" x="428" y="215.2754">Patient Encounter Feed</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="140" x="432" y="230.5859">IHE PEM / HL7 v2 ADT</text><polygon fill="#181818" points="432,260.6387,422,264.6387,432,268.6387,428,264.6387" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="426" x2="643" y1="264.6387" y2="264.6387" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="116" x="438" y="259.8965">Acknowledgement</text></g></svg></figure>
+<p><br clear="all" /></p>
+
+<ul>
+  <li>The PAS system emits event notifications to the TIE based on a series of triggers, these are typically:
+    <ul>
+      <li>Patient admissions</li>
+      <li>Outpatient/Emergency attendance</li>
+      <li>Ward Transfers (inpatient)</li>
+      <li>Discharges (inpatient, outpatient and emergency)</li>
+    </ul>
+  </li>
+  <li>The TIE then distributes these events to other systems in the NHS Trusts. This can include external providers such as GP systems.</li>
+</ul>
+
+<p>The amended version of this flow will look like:</p>
+
+<figure><?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="416px" preserveAspectRatio="none" style="width:785px;height:416px;background:#FFFFFF;" version="1.1" viewBox="0 0 785 416" width="785px" zoomAndPan="magnify"><defs /><g><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="298" x="245" y="28.5352">Patient Encounter Management (IHE PEM)</text><rect fill="none" height="211.4395" style="stroke:#000000;stroke-width:1.5;" width="486" x="293" y="181.3965" /><rect fill="none" height="180.1289" style="stroke:#000000;stroke-width:1.5;" width="466" x="303" y="205.707" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="154" x2="154" y1="90.4648" y2="409.8359" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="421" x2="421" y1="90.4648" y2="409.8359" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="654" x2="654" y1="90.4648" y2="409.8359" /><rect fill="#E2E2F0" height="46.9766" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="298" x="5" y="42.4883" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="172" x="66" y="63.0234">Patient Encounter Source</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="284" x="12" y="79.5117">(e.g. Patient Administration System (PAS))</text><rect fill="#E2E2F0" height="46.9766" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="216" x="313" y="42.4883" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="202" x="320" y="63.0234">Trust Integration Engine (TIE)</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="164" x="339" y="79.5117">or Orchestration Engine</text><rect fill="#E2E2F0" height="30.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="210" x="549" y="58.9766" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="196" x="556" y="79.5117">Patient Encounter Consumer</text><polygon fill="#181818" points="409,133.0859,419,137.0859,409,141.0859,413,137.0859" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="154" x2="415" y1="137.0859" y2="137.0859" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="143" x="161" y="117.0332">Patient Encounter Feed</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="140" x="165" y="132.3438">IHE PEM / HL7 v2 ADT</text><polygon fill="#181818" points="165,162.3965,155,166.3965,165,170.3965,161,166.3965" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="159" x2="420" y1="166.3965" y2="166.3965" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="116" x="171" y="161.6543">Acknowledgement</text><path d="M293,181.3965 L367,181.3965 L367,188.707 L357,198.707 L293,198.707 L293,181.3965 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.5;" /><rect fill="none" height="211.4395" style="stroke:#000000;stroke-width:1.5;" width="486" x="293" y="181.3965" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="29" x="308" y="194.9648">loop</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="107" x="382" y="194.0313">[for each recipient]</text><path d="M303,205.707 L365,205.707 L365,213.0176 L355,223.0176 L303,223.0176 L303,205.707 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.5;" /><rect fill="none" height="180.1289" style="stroke:#000000;stroke-width:1.5;" width="466" x="303" y="205.707" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="17" x="318" y="219.2754">alt</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="51" x="380" y="218.3418">[internal]</text><polygon fill="#181818" points="642,255.6387,652,259.6387,642,263.6387,646,259.6387" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="421" x2="648" y1="259.6387" y2="259.6387" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="143" x="428" y="239.5859">Patient Encounter Feed</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="140" x="432" y="254.8965">IHE PEM / HL7 v2 ADT</text><polygon fill="#181818" points="432,284.9492,422,288.9492,432,292.9492,428,288.9492" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="426" x2="653" y1="288.9492" y2="288.9492" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="116" x="438" y="284.207">Acknowledgement</text><line style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="303" x2="769" y1="297.9492" y2="297.9492" /><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="273" x="308" y="308.584">[external (e.g. Social Services, Primary Care, etc)]</text><polygon fill="#181818" points="642,344.5254,652,348.5254,642,352.5254,646,348.5254" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="421" x2="648" y1="348.5254" y2="348.5254" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="205" x="428" y="328.4727">Patient Encounter Feed HL7 FHIR</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="106" x="432" y="343.7832">POST /Encounter</text><polygon fill="#181818" points="432,373.8359,422,377.8359,432,381.8359,428,377.8359" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="426" x2="653" y1="377.8359" y2="377.8359" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="116" x="438" y="373.0938">Acknowledgement</text></g></svg></figure>
+<p><br clear="all" /></p>
+
+<ul>
+  <li>In this amended version, the HL7 ADT messages are converted HL7 FHIR Encounter via a transform. These are aimed at external providers but may also be used internally.</li>
+</ul>
+
+<p>It is recommended that the data model in HL7 v2 is retained in HL7 FHIR to simplify the transform and so keep the solution simple.</p>
+
+<h3 id="hl7-v2-adt_a04-example-converted-to-hl7-fhir">HL7 v2 ADT_A04 Example converted to HL7 FHIR</h3>
+
+<h4 id="use-case">Use Case</h4>
+
+<p><code class="language-plaintext highlighter-rouge">Mrs Smith is being admitted to hospital following a referral by her GP Dr Townley of the Malton GP Practice. She arrives at York hospital by car, and is put under the care of Dr. Darwin, who also attends to Mrs Smith. Mrs Smith is admitted for an inpatient spell under the speciality General Medicine. She has a recorded allergy to an anaesthetic agent and has been diagnosed with stress incontinence. A colonic examination procedure is then performed.</code></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Given
+Mrs Smith is admitted to hospital
+And
+a referral has been made by GP Dr Townley of the Malton GP Practice
+When
+she arrives at York hospital by car
+And
+is put under the care of Dr. Darwin, who also attends to Mrs Smith
+And
+has a recorded allergy to an anaesthetic agent and has been diagnosed with stress incontinence.
+Then
+Mrs Smith is admitted for an inpatient spell under the speciality General Medicine
+And
+a colonic examination procedure is then performed.
+</code></pre></div></div>
+
+<p>An example HL7 v2 ADT_A04 is shown below, this is from <a href="HSCIC ITK HL7 V2 Message Specifications.pdf" target="_blank">NHS England (ADT) ITK HL7 v2 (2.4) Message Specification</a></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>MSH|^~\&amp;|PAS|RCB|ROUTE|ROUTE|201011011512||ADT^A04^ADT_A01|14038913245354|P|2.4||201011011512|||GBR|UNICODE|EN||iTKv1.0
+EVN||201011011512|||111111111^Cortana^Emily^^Miss^^RCB55|201001111512
+PID|1||3333333333^^^NHS||SMITH^FREDRICA^J^^MRS^^L|SCHMIDT^HELGAR^Y|196512131515|2|||29 WEST AVENUE^BURYTHORPE^MALTON^NORTH YORKSHIRE^YO32 5TT^GBR^H||+441234567890||EN|M|C22|||||A|Berlin|||GBR||DEU
+PD1|||MALTON GP PRACTICE^^Y06601|G5612908^Townley^Gregory^^^Dr^^^GMC
+NK1|2|SMITH^FRANCESCA^^^MRS^^L|16|29 WEST AVENUE^BURYTHORPE^MALTON^NORTH YORKSHIRE^YO32 5TT^GBR^H|+441234567890||||||||||1|196311111513||||EN
+PV1|57|O|West Wing^RCB-AWRD^BED2^RCB55|13|||C3456789^Darwin^Samuel^^^Dr^^^GMC|G5612908^Townley^Gregory^^^Dr^^^GMC|C3456789^Darwin^Samuel^^^Dr^^^GMC|300||||19|||C3456789^Darwin^Samuel^^^Dr^^^GMC|OUTPATIENT|2141^^^VISITID|||||||||||||||||||||||||201011011600
+AL1|1|DA|Z88.5|5||199807011755
+PR1|56||U19.2^24 hour ambulatory electrocardiography^OPCS4||201011011512|D|1440|||||C3456789^Darwin^Samuel^^^Dr^^^GMC|C3
+ZU1||2|C|201011011530||300||||1|||GP|2|201011011624|201011011620|02|Y|0
+</code></pre></div></div>
+
+<p>HL7 FHIR Encounter conversion <a href="Encounter-outpatient-fredrica-smith.html">Encounter Outpatient Fredrica Smith</a></p>
+
+<h3 id="other-programme-considerations">Other Programme Considerations</h3>
+
+<p>These events will often be produced before encounter documentation is produced, therefore it will not be practical to include any NRL or IHE XDS pointers in these event.</p>
+
+<p>This event represents U-turn from HL7 v3 and FHIR Messaging approaches in this area such as:</p>
+
+<ul>
+  <li>Transfer of Care</li>
+  <li>Digital Medicines</li>
+  <li>Assesment Discharge and Withdrawal</li>
+</ul>
+
+<p>back to same event notification pattern in HL7 v2 and IHE PEM. These messages were primarily transfers of clinical data/documents are to be solved by Sharing Clinical Data/Documents by the Connecting Care programme.</p>
+
+<h3 id="example-use-case---cpis-implementation-at-calderdale-and-huddersfield-nhs-foundation-trust">Example Use Case - CPIS Implementation at Calderdale and Huddersfield NHS Foundation Trust</h3>
+
+<p>CHFT were the first NHS Trust to implement the HL7 v3 CPIS version of CPIS. They created a <a href="https://www.enterpriseintegrationpatterns.com/patterns/messaging/WireTap.html">wire tap</a> in the TIE which call CPIS based on certain conditions (e.g. emergency encounter and female patient).</p>
+
+<p>CHFT decided not to use CPIS interactively, i.e. a practitioner would choose to call CPIS in an application. This meant that the practitioners work was uninterupted as the check was automated and at busy times especially in emergency settings, these checks may cause delays in care.
+This also ensured that every patient would be checked.</p>
+
+<figure><?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="447px" preserveAspectRatio="none" style="width:1198px;height:447px;background:#FFFFFF;" version="1.1" viewBox="0 0 1198 447" width="1198px" zoomAndPan="magnify"><defs /><g><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="298" x="451.5" y="28.5352">Patient Encounter Management with CPIS</text><rect fill="none" height="91.2422" style="stroke:#000000;stroke-width:1.5;" width="456" x="303" y="181.3965" /><rect fill="none" height="136.5527" style="stroke:#000000;stroke-width:1.5;" width="899" x="293" y="286.6387" /><rect fill="none" height="75.9316" style="stroke:#000000;stroke-width:1.5;" width="879" x="303" y="340.2598" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="154" x2="154" y1="90.4648" y2="440.1914" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="421" x2="421" y1="90.4648" y2="440.1914" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="644" x2="644" y1="90.4648" y2="440.1914" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="781" x2="781" y1="90.4648" y2="440.1914" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="886" x2="886" y1="90.4648" y2="440.1914" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="1071" x2="1071" y1="90.4648" y2="440.1914" /><rect fill="#E2E2F0" height="46.9766" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="298" x="5" y="42.4883" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="172" x="66" y="63.0234">Patient Encounter Source</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="284" x="12" y="79.5117">(e.g. Patient Administration System (PAS))</text><rect fill="#E2E2F0" height="46.9766" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="216" x="313" y="42.4883" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="202" x="320" y="63.0234">Trust Integration Engine (TIE)</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="164" x="339" y="79.5117">or Orchestration Engine</text><rect fill="#E2E2F0" height="30.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="210" x="539" y="58.9766" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="196" x="546" y="79.5117">Patient Encounter Consumer</text><rect fill="#E2E2F0" height="30.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="44" x="759" y="58.9766" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="30" x="766" y="79.5117">CPIS</text><rect fill="#E2E2F0" height="30.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="147" x="813" y="58.9766" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="133" x="820" y="79.5117">CHFT Safeguarding</text><rect fill="#E2E2F0" height="30.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="202" x="970" y="58.9766" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="188" x="977" y="79.5117">Social Service Safeguarding</text><polygon fill="#181818" points="409,133.0859,419,137.0859,409,141.0859,413,137.0859" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="154" x2="415" y1="137.0859" y2="137.0859" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="143" x="161" y="117.0332">Patient Encounter Feed</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="140" x="165" y="132.3438">IHE PEM / HL7 v2 ADT</text><polygon fill="#181818" points="165,162.3965,155,166.3965,165,170.3965,161,166.3965" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="159" x2="420" y1="166.3965" y2="166.3965" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="116" x="171" y="161.6543">Acknowledgement</text><path d="M303,181.3965 L377,181.3965 L377,188.707 L367,198.707 L303,198.707 L303,181.3965 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.5;" /><rect fill="none" height="91.2422" style="stroke:#000000;stroke-width:1.5;" width="456" x="303" y="181.3965" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="29" x="318" y="194.9648">loop</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="107" x="392" y="194.0313">[for each recipient]</text><polygon fill="#181818" points="632,231.3281,642,235.3281,632,239.3281,636,235.3281" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="421" x2="638" y1="235.3281" y2="235.3281" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="143" x="428" y="215.2754">Patient Encounter Feed</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="140" x="432" y="230.5859">IHE PEM / HL7 v2 ADT</text><polygon fill="#181818" points="432,260.6387,422,264.6387,432,268.6387,428,264.6387" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="426" x2="643" y1="264.6387" y2="264.6387" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="116" x="438" y="259.8965">Acknowledgement</text><path d="M293,286.6387 L355,286.6387 L355,293.9492 L345,303.9492 L293,303.9492 L293,286.6387 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.5;" /><rect fill="none" height="136.5527" style="stroke:#000000;stroke-width:1.5;" width="899" x="293" y="286.6387" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="17" x="308" y="300.207">alt</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="71" x="370" y="299.2734">[Check CPIS]</text><polygon fill="#181818" points="769,321.2598,779,325.2598,769,329.2598,773,325.2598" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="421" x2="775" y1="325.2598" y2="325.2598" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="70" x="428" y="320.5176">Check CPIS</text><path d="M303,340.2598 L365,340.2598 L365,347.5703 L355,357.5703 L303,357.5703 L303,340.2598 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.5;" /><rect fill="none" height="75.9316" style="stroke:#000000;stroke-width:1.5;" width="879" x="303" y="340.2598" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="17" x="318" y="353.8281">alt</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="123" x="380" y="352.8945">[if CPIS record found]</text><polygon fill="#181818" points="874.5,374.8809,884.5,378.8809,874.5,382.8809,878.5,378.8809" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="421" x2="880.5" y1="378.8809" y2="378.8809" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="294" x="428" y="374.1387">Send email alert (and update CarePlans on PAS)</text><polygon fill="#181818" points="1059,404.1914,1069,408.1914,1059,412.1914,1063,408.1914" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="781" x2="1065" y1="408.1914" y2="408.1914" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="257" x="788" y="403.4492">Alert Social Services of Patient Encounter</text></g></svg></figure>
+<p><br clear="all" /></p>
+
+<p>With this proposal this interaction would change to the following:</p>
+
+<figure><?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="521px" preserveAspectRatio="none" style="width:1198px;height:521px;background:#FFFFFF;" version="1.1" viewBox="0 0 1198 521" width="1198px" zoomAndPan="magnify"><defs /><g><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="298" x="451.5" y="28.5352">Patient Encounter Management with CPIS</text><rect fill="none" height="91.2422" style="stroke:#000000;stroke-width:1.5;" width="456" x="303" y="181.3965" /><rect fill="none" height="210.4844" style="stroke:#000000;stroke-width:1.5;" width="899" x="293" y="286.6387" /><rect fill="none" height="149.8633" style="stroke:#000000;stroke-width:1.5;" width="879" x="303" y="340.2598" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="154" x2="154" y1="90.4648" y2="514.123" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="421" x2="421" y1="90.4648" y2="514.123" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="644" x2="644" y1="90.4648" y2="514.123" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="781" x2="781" y1="90.4648" y2="514.123" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="886" x2="886" y1="90.4648" y2="514.123" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="1071" x2="1071" y1="90.4648" y2="514.123" /><rect fill="#E2E2F0" height="46.9766" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="298" x="5" y="42.4883" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="172" x="66" y="63.0234">Patient Encounter Source</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="284" x="12" y="79.5117">(e.g. Patient Administration System (PAS))</text><rect fill="#E2E2F0" height="46.9766" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="216" x="313" y="42.4883" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="202" x="320" y="63.0234">Trust Integration Engine (TIE)</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="164" x="339" y="79.5117">or Orchestration Engine</text><rect fill="#E2E2F0" height="30.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="210" x="539" y="58.9766" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="196" x="546" y="79.5117">Patient Encounter Consumer</text><rect fill="#E2E2F0" height="30.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="44" x="759" y="58.9766" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="30" x="766" y="79.5117">CPIS</text><rect fill="#E2E2F0" height="30.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="147" x="813" y="58.9766" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="133" x="820" y="79.5117">CHFT Safeguarding</text><rect fill="#E2E2F0" height="30.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="202" x="970" y="58.9766" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="188" x="977" y="79.5117">Social Service Safeguarding</text><polygon fill="#181818" points="409,133.0859,419,137.0859,409,141.0859,413,137.0859" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="154" x2="415" y1="137.0859" y2="137.0859" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="143" x="161" y="117.0332">Patient Encounter Feed</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="140" x="165" y="132.3438">IHE PEM / HL7 v2 ADT</text><polygon fill="#181818" points="165,162.3965,155,166.3965,165,170.3965,161,166.3965" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="159" x2="420" y1="166.3965" y2="166.3965" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="116" x="171" y="161.6543">Acknowledgement</text><path d="M303,181.3965 L377,181.3965 L377,188.707 L367,198.707 L303,198.707 L303,181.3965 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.5;" /><rect fill="none" height="91.2422" style="stroke:#000000;stroke-width:1.5;" width="456" x="303" y="181.3965" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="29" x="318" y="194.9648">loop</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="107" x="392" y="194.0313">[for each recipient]</text><polygon fill="#181818" points="632,231.3281,642,235.3281,632,239.3281,636,235.3281" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="421" x2="638" y1="235.3281" y2="235.3281" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="143" x="428" y="215.2754">Patient Encounter Feed</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="140" x="432" y="230.5859">IHE PEM / HL7 v2 ADT</text><polygon fill="#181818" points="432,260.6387,422,264.6387,432,268.6387,428,264.6387" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="426" x2="643" y1="264.6387" y2="264.6387" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="116" x="438" y="259.8965">Acknowledgement</text><path d="M293,286.6387 L355,286.6387 L355,293.9492 L345,303.9492 L293,303.9492 L293,286.6387 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.5;" /><rect fill="none" height="210.4844" style="stroke:#000000;stroke-width:1.5;" width="899" x="293" y="286.6387" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="17" x="308" y="300.207">alt</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="71" x="370" y="299.2734">[Check CPIS]</text><polygon fill="#181818" points="769,321.2598,779,325.2598,769,329.2598,773,325.2598" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="421" x2="775" y1="325.2598" y2="325.2598" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="70" x="428" y="320.5176">Check CPIS</text><path d="M303,340.2598 L365,340.2598 L365,347.5703 L355,357.5703 L303,357.5703 L303,340.2598 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.5;" /><rect fill="none" height="149.8633" style="stroke:#000000;stroke-width:1.5;" width="879" x="303" y="340.2598" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="17" x="318" y="353.8281">alt</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="123" x="380" y="352.8945">[if CPIS record found]</text><polygon fill="#181818" points="874.5,374.8809,884.5,378.8809,874.5,382.8809,878.5,378.8809" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="421" x2="880.5" y1="378.8809" y2="378.8809" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="294" x="428" y="374.1387">Send email alert (and update CarePlans on PAS)</text><polygon fill="#181818" points="1059,404.1914,1069,408.1914,1059,412.1914,1063,408.1914" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="781" x2="1065" y1="408.1914" y2="408.1914" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="257" x="788" y="403.4492">Alert Social Services of Patient Encounter</text><polygon fill="#181818" points="1059,448.8125,1069,452.8125,1059,456.8125,1063,452.8125" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="421" x2="1065" y1="452.8125" y2="452.8125" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="205" x="428" y="432.7598">Patient Encounter Feed HL7 FHIR</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="106" x="432" y="448.0703">POST /Encounter</text><polygon fill="#181818" points="432,478.123,422,482.123,432,486.123,428,482.123" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="426" x2="1070" y1="482.123" y2="482.123" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="116" x="438" y="477.3809">Acknowledgement</text></g></svg></figure>
+<p><br clear="all" /></p>
+
+<p>The previous implementation is mostly unchanged but it is joined by the <strong>Patient Encounter Management</strong> notification which goes to Social Services Safeguarding. This includes more encounter metadata:</p>
+
+<ul>
+  <li>type of encounter</li>
+  <li>encounter service code</li>
+  <li>encounter reason (optional)</li>
+  <li>encounter identifier which can be used to query encounter documents via Connection Care Records</li>
+  <li>encounter participants</li>
+</ul>
+
+<h3 id="hl7-fhir-and-ihe-events-notifications-via-pubsub">HL7 FHIR and IHE Events Notifications via Pub/Sub</h3>
+
+<p>At present this proposal is based on requirement from CPIS, the number of providers interested is probably more than just Social Services Safeguarding. As mentioned GP, Community, Mental Health teams may be also interested in these events. It is not a fixed list of interested parties and so is would likely use <a href="https://www.enterpriseintegrationpatterns.com/patterns/messaging/PublishSubscribeChannel.html">Publish-Subscribe Channel</a> patterns.</p>
+
+<p>This is the approach taken in</p>
+
+<ul>
+  <li><a href="https://profiles.ihe.net/ITI/PMIR/">IHE Patient Master Identity Registry (PMIR)</a> which could potentially be used with PDS for Patient Demographics notifications
+    <ul>
+      <li>Note this doesn’t use the <strong>Subscriptions R5 Backport</strong></li>
+    </ul>
+  </li>
+  <li><a href="https://build.fhir.org/ig/IHE/ITI.DSUBm/branches/master/index.html">IHE Document Subscription for Mobile (DSUBm)</a> which could potentially be used NRL for pointer notifications and IHE XDS/MHD for document notifications.
+    <ul>
+      <li>This makes use of the <strong>Subscriptions R5 Backport</strong>
+E.g.</li>
+    </ul>
+  </li>
+</ul>
+
+<figure><?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="385px" preserveAspectRatio="none" style="width:664px;height:385px;background:#FFFFFF;" version="1.1" viewBox="0 0 664 385" width="664px" zoomAndPan="magnify"><defs /><g><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="344" x="161.5" y="28.5352">Patient Encounter Feed with FHIR Subscriptions</text><rect fill="none" height="196.4844" style="stroke:#000000;stroke-width:1.5;" width="648" x="10" y="164.9082" /><rect fill="none" height="91.2422" style="stroke:#000000;stroke-width:1.5;" width="417" x="231" y="263.1504" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="113" x2="113" y1="73.9766" y2="378.3926" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="323" x2="323" y1="73.9766" y2="378.3926" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="533" x2="533" y1="73.9766" y2="378.3926" /><rect fill="#E2E2F0" height="30.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="186" x="20" y="42.4883" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="172" x="27" y="63.0234">Patient Encounter Source</text><rect fill="#E2E2F0" height="30.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="164" x="241" y="42.4883" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="150" x="248" y="63.0234">Subscription Manager</text><rect fill="#E2E2F0" height="30.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="210" x="428" y="42.4883" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="196" x="435" y="63.0234">Patient Encounter Consumer</text><polygon fill="#181818" points="334,116.5977,324,120.5977,334,124.5977,330,120.5977" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="328" x2="532" y1="120.5977" y2="120.5977" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="140" x="340" y="100.5449">Resource Subscription</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="122" x="340" y="115.8555">IHE DSUBm ITI-110</text><polygon fill="#181818" points="521,145.9082,531,149.9082,521,153.9082,525,149.9082" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="323" x2="527" y1="149.9082" y2="149.9082" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="116" x="330" y="145.166">Acknowledgement</text><path d="M10,164.9082 L77,164.9082 L77,172.2188 L67,182.2188 L10,182.2188 L10,164.9082 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.5;" /><rect fill="none" height="196.4844" style="stroke:#000000;stroke-width:1.5;" width="648" x="10" y="164.9082" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="22" x="25" y="178.4766">opt</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="121" x="92" y="177.543">[No matching Patient]</text><polygon fill="#181818" points="311,214.8398,321,218.8398,311,222.8398,315,218.8398" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="113" x2="317" y1="218.8398" y2="218.8398" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="107" x="120" y="198.7871">Resource Publish</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="186" x="120" y="214.0977">Similar to IHE DSUBm ITI-111</text><polygon fill="#181818" points="124,244.1504,114,248.1504,124,252.1504,120,248.1504" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="118" x2="322" y1="248.1504" y2="248.1504" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="60" x="130" y="243.4082">Response</text><path d="M231,263.1504 L305,263.1504 L305,270.4609 L295,280.4609 L231,280.4609 L231,263.1504 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.5;" /><rect fill="none" height="91.2422" style="stroke:#000000;stroke-width:1.5;" width="417" x="231" y="263.1504" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="29" x="246" y="276.7188">loop</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="184" x="320" y="275.7852">[for each matching Subscription]</text><polygon fill="#181818" points="521,313.082,531,317.082,521,321.082,525,317.082" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="323" x2="527" y1="317.082" y2="317.082" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="100" x="330" y="297.0293">Resource Notify</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="186" x="330" y="312.3398">Similar to IHE DSUBm ITI-112</text><polygon fill="#181818" points="334,342.3926,324,346.3926,334,350.3926,330,346.3926" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="328" x2="532" y1="346.3926" y2="346.3926" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="116" x="340" y="341.6504">Acknowledgement</text></g></svg></figure>
+<p><br clear="all" /></p>
+
+<ol>
+  <li>The Patient Encounter Consumer (e.g. Social Services Safeguarding) creates a <a href="Subscription-ex-Encounter-Subscription.html">Subscription for patient with a NHS Number of 3333333333</a></li>
+  <li>The Patient Encounter Source (e.g. an Acute NHS Trust) sends a <a href="Bundle-ex-ResourcePublish.html">Resource Publish Transaction Bundle</a> to the Subscription Manager.</li>
+  <li>The Subscription Manager checks for matching subscriptions</li>
+  <li>For each matching Subscription it sends an <a href="Bundle-ex-EventNotification.html">Resource Notify Event Notifiction</a></li>
+</ol>
+
+<p>The example above used a <code class="language-plaintext highlighter-rouge">REST-Hook</code> Subscription, the <a href="https://hl7.org/fhir/uv/subscriptions-backport/STU1.1/channels.html">Subscriptions R5 Backport</a> has several channels including:</p>
+
+<ul>
+  <li>REST-Hook (assumed to be default)</li>
+  <li>Websocket</li>
+  <li>Email (probably also a common option)</li>
+  <li>FHIR Messaging</li>
+  <li>Custom Channels</li>
+</ul>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.england.nhs.uk/">NHS England</a>.  Package uk.nhs.england.administration#0.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Mar 22, 2024 11:42+0000">2024-03-22</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+            <div style="color: #333333" >
+
+          Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
+                 <a style="color: #81BEF7" href="qa.html">QA Report</a> 
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
+<div>
+</div>
+
+</div>
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

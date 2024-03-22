@@ -1,0 +1,2 @@
+URL,Version,Status,OIDs,Name,Title,Descriptino,Used
+https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-treatment-function,0.0.1,draft,,NHSDataModelandDictionaryTreatmentFunction,null,"A CodeSystem to identify the specialty of the care professional or team. FHIR Version of NHS Data Dictionary Main Specialty Code and HSCIC ITK HL7v2 Table ZU012",

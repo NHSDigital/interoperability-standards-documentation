@@ -1,0 +1,45 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "NHSDigital-CareSettingType",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where constraint  =  memberOf 1127531000000102</li><li>Include all codes defined in <a href=\"CodeSystem-NHSDataModelAndDictionary-treatment-function.html\"><code>https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-treatment-function</code></a></li></ul></div>"
+  },
+  "url" : "https://fhir.nhs.uk/ValueSet/NHSDigital-CareSettingType",
+  "version" : "0.0.1",
+  "name" : "NHSDigitalCareSettingType",
+  "title" : "NHSDigital-CareSettingType",
+  "status" : "draft",
+  "date" : "2020-11-04T00:00:00+00:00",
+  "publisher" : "NHS England",
+  "contact" : [{
+    "name" : "NHS England",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.england.nhs.uk/"
+    }]
+  }],
+  "description" : "Cross Hl7 UK version of UKCore CareSetting",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "GB-ENG",
+      "display" : "England"
+    }]
+  }],
+  "copyright" : "Copyright © 2020 NHS Digital Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7  The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "constraint",
+        "op" : "=",
+        "value" : "memberOf 1127531000000102"
+      }]
+    },
+    {
+      "system" : "https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-treatment-function",
+      "version" : "1.2.1"
+    }]
+  }
+}
