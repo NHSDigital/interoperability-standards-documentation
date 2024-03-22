@@ -10,7 +10,7 @@ The scope of this document and proposals is national, regional, NHS Trust and su
 
 ### HL7 v2 and IHE PDQ
 
-<figure>{% include psq-sequence-notifications-current.svg %}</figure>
+<figure>{% include pdq-sequence-notifications-current.svg %}</figure>
 <br clear="all"/>
 
 #### QBP_Q21
