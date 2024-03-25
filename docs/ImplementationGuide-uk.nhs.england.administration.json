@@ -10,7 +10,7 @@
   "name" : "NHSEnglandInteroperabilitySkunkworks",
   "title" : "Health Administration Interoperability Standards - Skunkworks",
   "status" : "draft",
-  "date" : "2024-03-25T15:09:50+00:00",
+  "date" : "2024-03-25T16:04:49+00:00",
   "publisher" : "NHS England",
   "contact" : [{
     "name" : "NHS England",
@@ -887,9 +887,31 @@
         "valueString" : "Consent"
       }],
       "reference" : {
-        "reference" : "Consent/national-proxy"
+        "reference" : "Consent/national-proxy-confirmed"
       },
-      "name" : "national-proxy",
+      "name" : "national-proxy-confirmed",
+      "exampleCanonical" : "https://fhir.nhs.uk/England/StructureDefinition/ConsentNationalProxy"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Consent"
+      }],
+      "reference" : {
+        "reference" : "Consent/national-proxy-proposed"
+      },
+      "name" : "national-proxy-proposed",
+      "exampleCanonical" : "https://fhir.nhs.uk/England/StructureDefinition/ConsentNationalProxy"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Consent"
+      }],
+      "reference" : {
+        "reference" : "Consent/national-proxy-rejected"
+      },
+      "name" : "national-proxy-rejected",
       "exampleCanonical" : "https://fhir.nhs.uk/England/StructureDefinition/ConsentNationalProxy"
     },
     {

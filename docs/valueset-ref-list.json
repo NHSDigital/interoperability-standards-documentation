@@ -88,9 +88,9 @@
       ],
       "uses" : {
       },
-      "Questionnaire-Questionnaire-Proxy-Access-Request.html" : "Proxy Access Request Form",
+      "StructureDefinition-UKCore-Patient.html" : "UK Core Patient",
       "StructureDefinition-UKCore-RelatedPerson.html" : "UK Core RelatedPerson",
-      "StructureDefinition-UKCore-Patient.html" : "UK Core Patient"
+      "Questionnaire-Questionnaire-Proxy-Access-Request.html" : "Proxy Access Request Form"
     },
     {
       "url" : "https://fhir.nhs.uk/England/ValueSet/FlagConsentPurpose",

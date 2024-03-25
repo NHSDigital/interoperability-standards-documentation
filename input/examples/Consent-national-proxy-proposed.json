@@ -1,0 +1,73 @@
+{
+  "resourceType": "Consent",
+  "id": "national-proxy-proposed",
+  "meta": {
+    "profile": [
+      "https://fhir.nhs.uk/England/StructureDefinition/ConsentNationalProxy"
+    ]
+  },
+  "status": "proposed",
+  "scope": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/consentscope",
+        "code": "patient-privacy"
+      }
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "INFA"
+        }
+      ]
+    }
+  ],
+  "patient": {
+    "type": "Patient",
+    "reference": "Patient/Patient_NHS_9459304130",
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "9459304130"
+    }
+  },
+  "performer": [
+    {
+      "reference": "RelatedPerson/RelatedPerson-NHS-9449304130-Jane-Smith",
+      "type": "RelatedPerson",
+      "identifier": {
+        "system": "https://fhir.nhs.uk/Id/nhs-number",
+        "value": "9449304130"
+      }
+    },
+    {
+      "type": "Practitioner",
+      "identifier": {
+        "system": "https://fhir.nhs.uk/Id/sds-user-id",
+        "value": "3049449130"
+      }
+    }
+  ],
+  "policyRule": {
+    "text": "coding to be defined"
+  },
+  "provision": {
+    "actor": [
+      {
+        "role": {
+          "text": "coding to be defined"
+        },
+        "reference": {
+          "reference": "RelatedPerson/RelatedPerson-NHS-9449304130-Jane-Smith",
+          "type": "RelatedPerson",
+          "identifier": {
+            "system": "https://fhir.nhs.uk/Id/nhs-number",
+            "value": "9449304130"
+          }
+        }
+      }
+    ]
+  }
+}

@@ -92,8 +92,8 @@
       "oids" : ["2.16.840.1.113883.5.8"],
       "uses" : {
       },
-      "https://profiles.ihe.net/ITI/PCF/1.0.0/ValueSet-BasicPurposeVS.html" : "Basic Purpose ValueSet",
-      "http://terminology.hl7.org/5.0.0/ValueSet-v3-PurposeOfUse.html" : "PurposeOfUse"
+      "http://terminology.hl7.org/5.0.0/ValueSet-v3-PurposeOfUse.html" : "PurposeOfUse",
+      "https://profiles.ihe.net/ITI/PCF/1.0.0/ValueSet-BasicPurposeVS.html" : "Basic Purpose ValueSet"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",

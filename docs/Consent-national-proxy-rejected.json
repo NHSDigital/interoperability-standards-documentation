@@ -1,0 +1,66 @@
+{
+  "resourceType" : "Consent",
+  "id" : "national-proxy-rejected",
+  "meta" : {
+    "profile" : ["https://fhir.nhs.uk/England/StructureDefinition/ConsentNationalProxy"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Consent</b><a name=\"national-proxy-rejected\"> </a><a name=\"hcnational-proxy-rejected\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Consent &quot;national-proxy-rejected&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ConsentNationalProxy.html\">NHS England National Proxy Consent Profile</a></p></div><p><b>status</b>: rejected</p><p><b>scope</b>: Privacy Consent <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-consentscope.html\">Consent Scope Codes</a>#patient-privacy)</span></p><p><b>category</b>: information access <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-v3-ActCode.html\">ActCode</a>#INFA)</span></p><p><b>patient</b>: <a href=\"https://simplifier.net/resolve?scope=fhir.r4.ukcore.stu3.currentbuild@0.0.6-pre-release&amp;canonical=https://simplifier.net/guide/ukcoreversionhistory/Patient/Patient_NHS_9459304130\">Patient/Patient_NHS_9459304130</a></p><p><b>performer</b>: </p><ul><li><a href=\"RelatedPerson-RelatedPerson-NHS-9449304130-Jane-Smith.html\">RelatedPerson/RelatedPerson-NHS-9449304130-Jane-Smith</a></li><li><span><code>https://fhir.nhs.uk/Id/sds-user-id</code>/3049449130</span></li></ul><p><b>policyRule</b>: coding to be defined <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></p><blockquote><p><b>provision</b></p><p><b>type</b>: deny</p><h3>Actors</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Role</b></td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td>coding to be defined <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ()</span></td><td><a href=\"RelatedPerson-RelatedPerson-NHS-9449304130-Jane-Smith.html\">RelatedPerson/RelatedPerson-NHS-9449304130-Jane-Smith</a></td></tr></table></blockquote></div>"
+  },
+  "status" : "rejected",
+  "scope" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/consentscope",
+      "code" : "patient-privacy"
+    }]
+  },
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "code" : "INFA"
+    }]
+  }],
+  "patient" : {
+    "reference" : "Patient/Patient_NHS_9459304130",
+    "type" : "Patient",
+    "identifier" : {
+      "system" : "https://fhir.nhs.uk/Id/nhs-number",
+      "value" : "9459304130"
+    }
+  },
+  "performer" : [{
+    "reference" : "RelatedPerson/RelatedPerson-NHS-9449304130-Jane-Smith",
+    "type" : "RelatedPerson",
+    "identifier" : {
+      "system" : "https://fhir.nhs.uk/Id/nhs-number",
+      "value" : "9449304130"
+    }
+  },
+  {
+    "type" : "Practitioner",
+    "identifier" : {
+      "system" : "https://fhir.nhs.uk/Id/sds-user-id",
+      "value" : "3049449130"
+    }
+  }],
+  "policyRule" : {
+    "text" : "coding to be defined"
+  },
+  "provision" : {
+    "type" : "deny",
+    "actor" : [{
+      "role" : {
+        "text" : "coding to be defined"
+      },
+      "reference" : {
+        "reference" : "RelatedPerson/RelatedPerson-NHS-9449304130-Jane-Smith",
+        "type" : "RelatedPerson",
+        "identifier" : {
+          "system" : "https://fhir.nhs.uk/Id/nhs-number",
+          "value" : "9449304130"
+        }
+      }
+    }]
+  }
+}
