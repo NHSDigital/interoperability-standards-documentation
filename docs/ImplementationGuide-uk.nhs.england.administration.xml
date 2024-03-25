@@ -10,7 +10,7 @@
   <name value="NHSEnglandInteroperabilitySkunkworks"/>
   <title value="Health Administration Interoperability Standards - Skunkworks"/>
   <status value="draft"/>
-  <date value="2024-03-25T12:19:57+00:00"/>
+  <date value="2024-03-25T15:09:50+00:00"/>
   <publisher value="NHS England"/>
   <contact>
     <name value="NHS England"/>
@@ -504,6 +504,16 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Consent"/>
+      </extension>
+      <reference>
+        <reference value="Consent/CPISConsentExample1"/>
+      </reference>
+      <name value="CPISConsentExample1"/>
+      <exampleCanonical value="https://fhir.nhs.uk/England/StructureDefinition/FlagConsent"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -689,6 +699,16 @@
       <name value="National Proxy Related Person Mother Example"/>
       <description value="An example of a Related Person who is the mother of the subject/patient (Jane Smith)."/>
       <exampleCanonical value="https://fhir.nhs.uk/England/StructureDefinition/RelatedPerson"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Consent"/>
+      </extension>
+      <reference>
+        <reference value="Consent/national-proxy"/>
+      </reference>
+      <name value="national-proxy"/>
+      <exampleCanonical value="https://fhir.nhs.uk/England/StructureDefinition/ConsentNationalProxy"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

@@ -67,4 +67,10 @@
       <sch:assert test="count(f:assigner) &lt;= 1">assigner: maximum cardinality of 'assigner' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
+  <sch:pattern>
+    <sch:title>f:Consent/f:verification</sch:title>
+    <sch:rule context="f:Consent/f:verification">
+      <sch:assert test="count(f:verifiedWith) &gt;= 1">verifiedWith: minimum cardinality of 'verifiedWith' is 1</sch:assert>
+    </sch:rule>
+  </sch:pattern>
 </sch:schema>

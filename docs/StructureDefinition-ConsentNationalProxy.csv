@@ -46,7 +46,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Classification of the consent statement - for indexing/retrieval","A classification of the type of consents found in the statement. This element supports indexing and retrieval of consent statements.","","","","","","","","","",,"extensible","A classification of the type of consents found in a consent statement.","http://hl7.org/fhir/ValueSet/consent-category","","value:coding.system}
 ","",,"open","Consent.category",1,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.code","HL7 Table 0497 - Consent Type","CNTRCT","FiveWs.class"
-"Consent.category:privacy","Consent.category","privacy","","",1,1,"","","Y","CodeableConcept {[]} {[]}
+"Consent.category:information-access","Consent.category","information-access","","",1,1,"","","Y","CodeableConcept {[]} {[]}
 ","Classification of the consent statement - for indexing/retrieval","A classification of the type of consents found in the statement. This element supports indexing and retrieval of consent statements.","","","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
     <system value=""http://terminology.hl7.org/CodeSystem/v3-ActCode""/>
@@ -222,8 +222,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Consent.verification.verified","Consent.verification.verified","","","",1,1,"","","Y","boolean {[]} {[]}
 ","Has been verified","Has the instruction been verified.","","","","","","","","","",,,,,"",,,,"Consent.verification.verified",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Consent.verification.verifiedWith","Consent.verification.verifiedWith","","","",0,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient], CanonicalType[http://hl7.org/fhir/StructureDefinition/RelatedPerson]]}
-","Person who verified","Who verified the instruction (Patient, Relative or other Authorized Person).","","","","","","","","","",,,,,"",,,,"Consent.verification.verifiedWith",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"Consent.verification.verifiedWith","Consent.verification.verifiedWith","","","",1,1,"","","","Reference {[]} {[CanonicalType[https://fhir.nhs.uk/England/StructureDefinition/RelatedPerson]]}
+","Patient (if consent-based) or RelatedPerson.relationship (if based on a relationship)","Who verified the instruction (Patient, Relative or other Authorized Person).","","","","","","","","","",,,,,"",,,,"Consent.verification.verifiedWith",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "Consent.verification.verificationDate","Consent.verification.verificationDate","","","",0,1,"","","","dateTime {[]} {[]}
 ","When consent verified","Date verification was collected.","","","","","","","","","",,,,,"",,,,"Consent.verification.verificationDate",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}

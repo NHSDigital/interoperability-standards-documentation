@@ -10,7 +10,7 @@
   "name" : "NHSEnglandInteroperabilitySkunkworks",
   "title" : "Health Administration Interoperability Standards - Skunkworks",
   "status" : "draft",
-  "date" : "2024-03-25T12:19:57+00:00",
+  "date" : "2024-03-25T15:09:50+00:00",
   "publisher" : "NHS England",
   "contact" : [{
     "name" : "NHS England",
@@ -667,6 +667,17 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Consent"
+      }],
+      "reference" : {
+        "reference" : "Consent/CPISConsentExample1"
+      },
+      "name" : "CPISConsentExample1",
+      "exampleCanonical" : "https://fhir.nhs.uk/England/StructureDefinition/FlagConsent"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -869,6 +880,17 @@
       "name" : "National Proxy Related Person Mother Example",
       "description" : "An example of a Related Person who is the mother of the subject/patient (Jane Smith).",
       "exampleCanonical" : "https://fhir.nhs.uk/England/StructureDefinition/RelatedPerson"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Consent"
+      }],
+      "reference" : {
+        "reference" : "Consent/national-proxy"
+      },
+      "name" : "national-proxy",
+      "exampleCanonical" : "https://fhir.nhs.uk/England/StructureDefinition/ConsentNationalProxy"
     },
     {
       "extension" : [{

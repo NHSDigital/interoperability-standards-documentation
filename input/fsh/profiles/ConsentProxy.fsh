@@ -25,10 +25,13 @@ Description: "NHS England National Proxy Consent Profile from https://nhsd-confl
 * category ^slicing.discriminator.type = #value
 * category ^slicing.rules = #open
 * category ^slicing.discriminator.path = "coding.system"
-* category contains privacy 1..1
-* category[privacy] = http://terminology.hl7.org/CodeSystem/v3-ActCode#INFA
+* category contains information-access 1..1
+* category[information-access] = http://terminology.hl7.org/CodeSystem/v3-ActCode#INFA
 
 * provision 0..1
   * ^short = "Requested services"
 * verification 0..*
   * ^short = "Basis for access"
+* verification.verifiedWith 1..1
+  * ^short = "Patient (if consent-based) or RelatedPerson.relationship (if based on a relationship)"
+* verification.verifiedWith only Reference(RelatedPerson)

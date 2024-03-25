@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "NHSEnglandInteroperabilitySkunkworks"] ; # 
   fhir:title [ fhir:v "Health Administration Interoperability Standards - Skunkworks"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-03-25T12:19:57+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-03-25T15:09:50+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "NHS England"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "NHS England" ] ;
@@ -587,6 +587,20 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Consent" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.nhs.uk/England/Consent/CPISConsentExample1> ;
+         fhir:reference [ fhir:v "Consent/CPISConsentExample1" ]
+       ] ;
+       fhir:name [ fhir:v "CPISConsentExample1" ] ;
+       fhir:example [
+         fhir:v "https://fhir.nhs.uk/England/StructureDefinition/FlagConsent"^^xsd:anyURI ;
+         fhir:link <https://fhir.nhs.uk/England/StructureDefinition/FlagConsent>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
@@ -798,6 +812,20 @@
        fhir:example [
          fhir:v "https://fhir.nhs.uk/England/StructureDefinition/RelatedPerson"^^xsd:anyURI ;
          fhir:link <https://fhir.nhs.uk/England/StructureDefinition/RelatedPerson>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Consent" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.nhs.uk/England/Consent/national-proxy> ;
+         fhir:reference [ fhir:v "Consent/national-proxy" ]
+       ] ;
+       fhir:name [ fhir:v "national-proxy" ] ;
+       fhir:example [
+         fhir:v "https://fhir.nhs.uk/England/StructureDefinition/ConsentNationalProxy"^^xsd:anyURI ;
+         fhir:link <https://fhir.nhs.uk/England/StructureDefinition/ConsentNationalProxy>
        ]
      ] [
        fhir:extension ( [
