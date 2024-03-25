@@ -1,0 +1,54 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.nhs.uk/England/CodeSystem/PatientFlagCategory> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "PatientFlagCategory"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-sensitive code system <code>https://fhir.nhs.uk/England/CodeSystem/PatientFlagCategory</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">NRAF<a name=\"PatientFlagCategory-NRAF\"> </a></td><td>National Reasonable Adjustments Flag</td></tr><tr><td style=\"white-space:nowrap\">CP-IS<a name=\"PatientFlagCategory-CP-IS\"> </a></td><td>Child Protection - Information Sharing Flag</td></tr><tr><td style=\"white-space:nowrap\">FGM<a name=\"PatientFlagCategory-FGM\"> </a></td><td>Female Genital Mutilation Flag</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://fhir.nhs.uk/England/CodeSystem/PatientFlagCategory"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.1"] ; # 
+  fhir:name [ fhir:v "PatientFlagCategory"] ; # 
+  fhir:title [ fhir:v "NHSE Patient Flag Category"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-02-14"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "NHS England"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "NHS England" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.england.nhs.uk/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "A CodeSystem to identify the type/category of Flag."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "GB-ENG" ] ;
+       fhir:display [ fhir:v "England" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "Copyright © 2024+ NHS England Licensed under the Apache License, Version 2.0 (the \\\"License\\\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \\\"AS IS\\\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html."] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "3"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "NRAF" ] ;
+     fhir:display [ fhir:v "National Reasonable Adjustments Flag" ]
+  ] [
+     fhir:code [ fhir:v "CP-IS" ] ;
+     fhir:display [ fhir:v "Child Protection - Information Sharing Flag" ]
+  ] [
+     fhir:code [ fhir:v "FGM" ] ;
+     fhir:display [ fhir:v "Female Genital Mutilation Flag" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

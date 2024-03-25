@@ -10,7 +10,7 @@
   "name" : "NHSEnglandInteroperabilitySkunkworks",
   "title" : "Health Administration Interoperability Standards - Skunkworks",
   "status" : "draft",
-  "date" : "2024-03-22T16:20:37+00:00",
+  "date" : "2024-03-25T12:19:57+00:00",
   "publisher" : "NHS England",
   "contact" : [{
     "name" : "NHS England",
@@ -685,7 +685,7 @@
         "reference" : "Patient/donald-with-chi-number-and-mrn"
       },
       "name" : "donald-with-chi-number-and-mrn",
-      "exampleCanonical" : "https://fhir.nhs.uk/England/StructureDefinition/Patient"
+      "exampleBoolean" : true
     },
     {
       "extension" : [{
@@ -696,7 +696,7 @@
         "reference" : "Patient/donald-with-chi-number-mrn-and-nhs-number"
       },
       "name" : "donald-with-chi-number-mrn-and-nhs-number",
-      "exampleCanonical" : "https://fhir.nhs.uk/England/StructureDefinition/Patient"
+      "exampleBoolean" : true
     },
     {
       "extension" : [{
@@ -707,7 +707,7 @@
         "reference" : "Patient/donald-with-nhs-number"
       },
       "name" : "donald-with-nhs-number",
-      "exampleCanonical" : "https://fhir.nhs.uk/England/StructureDefinition/Patient"
+      "exampleBoolean" : true
     },
     {
       "extension" : [{
@@ -791,6 +791,42 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/Extension-ConsentCreateSummary"
+      },
+      "name" : "Extension for Consent Create Summary",
+      "description" : "Captures the additional information for a Best Interest decison when recording consent for a Reasonable Adjustment Flag.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/Extension-ConsentRemoveSummary"
+      },
+      "name" : "Extension for Consent Remove Summary",
+      "description" : "Captures the additional information for a Best Interest decison when removing consent for a Reasonable Adjustment Flag.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/FGM-ConsentPurpose"
+      },
+      "name" : "FGM Consent Purpose",
+      "description" : "A CodeSystem to identify the purpose of the consent given within FGM",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -861,18 +897,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/Consent"
-      },
-      "name" : "NHS England Consent Profile",
-      "description" : "Record consent to capture information for NHS England flags",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "CapabilityStatement"
       }],
       "reference" : {
@@ -880,6 +904,18 @@
       },
       "name" : "NHS England IHE Privacy Consent on FHIR (PCF)",
       "description" : "CapabilityStatement for the Consent Authorization Server Actor for use within the English NHS (Enterprise Architecture) and or NHS England (Solution Architecture). \nThis is part of the NHS England National Extension (Volume 4) for [Privacy Consent on FHIR (PCF)](https://profiles.ihe.net/ITI/PCF/index.html). \n\n This profile is implemented by \n - [National Proxy Service](https://digital.nhs.uk/developer/) \n\n These services are potentially used by \n\n**NHS England** \n\n - [National Record Locator](https://digital.nhs.uk/developer/api-catalogue/national-record-locator-fhir) \n - [Security and authorisation](https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation) \n\n**English NHS and NHS England Services** \n\n used in the implementation of the following profiles or services \n\n - [NRL producer system](https://digital.nhs.uk/developer/api-catalogue/national-record-locator-fhir/v3/producer) \n - [IHE Mobile access to Health Documents (MHD)](https://profiles.ihe.net/ITI/MHD/index.html) \n - [IHE Query for Existing Data for Mobile (QEDm)](https://build.fhir.org/ig/IHE/QEDm/branches/master/index.html)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ConsentNationalProxy"
+      },
+      "name" : "NHS England National Proxy Consent Profile",
+      "description" : "NHS England National Proxy Consent Profile from https://nhsd-confluence.digital.nhs.uk/display/NPA/Confirm+consent",
       "exampleBoolean" : false
     },
     {
@@ -905,6 +941,102 @@
       "name" : "NHSDigital-CareSettingType",
       "description" : "Cross Hl7 UK version of UKCore CareSetting",
       "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/FlagConsent"
+      },
+      "name" : "NHSE Flag Consent Profile",
+      "description" : "Record consent to capture information for NHS England flags",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/FlagConsentPurpose"
+      },
+      "name" : "NHSE Flag Consent Purpose",
+      "description" : "A ValueSet to identify the purpose of a consent given for an NHS England flag.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/FlagProvenance"
+      },
+      "name" : "NHSE Flag Provenance Profile",
+      "description" : "Record details of the practitioner recording or removing an individual Flag.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/FlagProvenanceRole"
+      },
+      "name" : "NHSE Flag Provenance Role",
+      "description" : "A ValueSet to identify the role in which someone recording provenance is acting",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/FlagProxyRole"
+      },
+      "name" : "NHSE Flag Proxy Role",
+      "description" : "A ValueSet to identify the type/role of the proxy involved.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/FlagProxyRole"
+      },
+      "name" : "NHSE Flag Proxy Role",
+      "description" : "A CodeSystem to identify the type/role of the proxy involved",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/PatientFlagCategory"
+      },
+      "name" : "NHSE Patient Flag Category",
+      "description" : "A ValueSet to identify the type/category of a flag.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/PatientFlagCategory"
+      },
+      "name" : "NHSE Patient Flag Category",
+      "description" : "A CodeSystem to identify the type/category of Flag.",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -956,25 +1088,13 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/Patient"
-      },
-      "name" : "Patient",
-      "description" : "England Patient",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Patient"
       }],
       "reference" : {
         "reference" : "Patient/Patient-NHS-9459304130-Jane-Smith"
       },
       "name" : "Patient-NHS-9459304130-Jane-Smith",
-      "exampleCanonical" : "https://fhir.nhs.uk/England/StructureDefinition/Patient"
+      "exampleBoolean" : true
     },
     {
       "extension" : [{
@@ -985,7 +1105,7 @@
         "reference" : "Patient/Patient-NHS-9912003814-Michael-SMITHIES"
       },
       "name" : "Patient-NHS-9912003814-Michael-SMITHIES",
-      "exampleCanonical" : "https://fhir.nhs.uk/England/StructureDefinition/Patient"
+      "exampleBoolean" : true
     },
     {
       "extension" : [{
@@ -1161,6 +1281,18 @@
       },
       "name" : "UK Core Organization",
       "description" : "This profile defines the UK constraints and extensions on the International FHIR resource [Organization](https://hl7.org/fhir/R4/Organization.html).",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/UKCore-Patient"
+      },
+      "name" : "UK Core Patient",
+      "description" : "Defines the UK Core constraints and extensions on the Patient resource for the minimal set of data to query and retrieve an individual’s demographic information.",
       "exampleBoolean" : false
     },
     {

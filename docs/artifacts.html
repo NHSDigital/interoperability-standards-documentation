@@ -254,10 +254,19 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <a href="#3">Structures: Resource Profiles</a>
       </li>
       <li>
-         <a href="#4">Example: Example Instances</a>
+         <a href="#4">Structures: Extension Definitions</a>
       </li>
       <li>
-         <a href="#5">Other</a>
+         <a href="#5">Terminology: Value Sets</a>
+      </li>
+      <li>
+         <a href="#6">Terminology: Code Systems</a>
+      </li>
+      <li>
+         <a href="#7">Example: Example Instances</a>
+      </li>
+      <li>
+         <a href="#8">Other</a>
       </li>
    </ul>
 </div>
@@ -425,11 +434,29 @@ This is part of the NHS England National Extension (Volume 4) for <a href="https
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-Consent.html"
-                  title="StructureDefinition/Consent">NHS England Consent Profile</a>
+               <a href="StructureDefinition-ConsentNationalProxy.html"
+                  title="StructureDefinition/ConsentNationalProxy">NHS England National Proxy Consent Profile</a>
+            </td>
+            <td>
+<p>NHS England National Proxy Consent Profile from https://nhsd-confluence.digital.nhs.uk/display/NPA/Confirm+consent</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-FlagConsent.html"
+                  title="StructureDefinition/FlagConsent">NHSE Flag Consent Profile</a>
             </td>
             <td>
 <p>Record consent to capture information for NHS England flags</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-FlagProvenance.html"
+                  title="StructureDefinition/FlagProvenance">NHSE Flag Provenance Profile</a>
+            </td>
+            <td>
+<p>Record details of the practitioner recording or removing an individual Flag.</p>
 </td>
          </tr>
          <tr>
@@ -457,15 +484,6 @@ This is part of the NHS England National Extension (Volume 4) for <a href="https
             </td>
             <td>
 <p>England OrganizationAffiliation</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-Patient.html"
-                  title="StructureDefinition/Patient">Patient</a>
-            </td>
-            <td>
-<p>England Patient</p>
 </td>
          </tr>
          <tr>
@@ -559,6 +577,15 @@ This is part of the NHS England National Extension (Volume 4) for <a href="https
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="StructureDefinition-UKCore-Patient.html"
+                  title="StructureDefinition/UKCore-Patient">UK Core Patient</a>
+            </td>
+            <td>
+<p>Defines the UK Core constraints and extensions on the Patient resource for the minimal set of data to query and retrieve an individual’s demographic information.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="StructureDefinition-UKCore-RelatedPerson.html"
                   title="StructureDefinition/UKCore-RelatedPerson">UK Core RelatedPerson</a>
             </td>
@@ -569,6 +596,109 @@ This is part of the NHS England National Extension (Volume 4) for <a href="https
       </tbody>
    </table>
    <a name="4"> </a>
+   <h3>Structures: Extension Definitions </h3>
+    <p>These define constraints on FHIR data types for systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Extension-ConsentCreateSummary.html"
+                  title="StructureDefinition/Extension-ConsentCreateSummary">Extension for Consent Create Summary</a>
+            </td>
+            <td>
+<p>Captures the additional information for a Best Interest decison when recording consent for a Reasonable Adjustment Flag.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Extension-ConsentRemoveSummary.html"
+                  title="StructureDefinition/Extension-ConsentRemoveSummary">Extension for Consent Remove Summary</a>
+            </td>
+            <td>
+<p>Captures the additional information for a Best Interest decison when removing consent for a Reasonable Adjustment Flag.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="5"> </a>
+   <h3>Terminology: Value Sets </h3>
+    <p>These define sets of codes used by systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-FlagConsentPurpose.html"
+                  title="ValueSet/FlagConsentPurpose">NHSE Flag Consent Purpose</a>
+            </td>
+            <td>
+<p>A ValueSet to identify the purpose of a consent given for an NHS England flag.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-FlagProvenanceRole.html"
+                  title="ValueSet/FlagProvenanceRole">NHSE Flag Provenance Role</a>
+            </td>
+            <td>
+<p>A ValueSet to identify the role in which someone recording provenance is acting</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-FlagProxyRole.html" title="ValueSet/FlagProxyRole">NHSE Flag Proxy Role</a>
+            </td>
+            <td>
+<p>A ValueSet to identify the type/role of the proxy involved.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-PatientFlagCategory.html"
+                  title="ValueSet/PatientFlagCategory">NHSE Patient Flag Category</a>
+            </td>
+            <td>
+<p>A ValueSet to identify the type/category of a flag.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="6"> </a>
+   <h3>Terminology: Code Systems </h3>
+    <p>These define new code systems used by systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-FGM-ConsentPurpose.html"
+                  title="CodeSystem/FGM-ConsentPurpose">FGM Consent Purpose</a>
+            </td>
+            <td>
+<p>A CodeSystem to identify the purpose of the consent given within FGM</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-FlagProxyRole.html" title="CodeSystem/FlagProxyRole">NHSE Flag Proxy Role</a>
+            </td>
+            <td>
+<p>A CodeSystem to identify the type/role of the proxy involved</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-PatientFlagCategory.html"
+                  title="CodeSystem/PatientFlagCategory">NHSE Patient Flag Category</a>
+            </td>
+            <td>
+<p>A CodeSystem to identify the type/category of Flag.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="7"> </a>
    <h3>Example: Example Instances </h3>
     <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
 <table class="grid">
@@ -755,7 +885,7 @@ This is part of the NHS England National Extension (Volume 4) for <a href="https
          </tr>
       </tbody>
    </table>
-   <a name="5"> </a>
+   <a name="8"> </a>
    <h3>Other </h3>
     <p>These are resources that are used within this implementation guide that do not fit into one of the other categories.</p>
 <table class="grid">
@@ -792,7 +922,7 @@ This is part of the NHS England National Extension (Volume 4) for <a href="https
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.england.nhs.uk/">NHS England</a>.  Package uk.nhs.england.administration#0.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Mar 22, 2024 16:20+0000">2024-03-22</span>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.england.nhs.uk/">NHS England</a>.  Package uk.nhs.england.administration#0.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Mar 25, 2024 12:19+0000">2024-03-25</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <div style="color: #333333" >

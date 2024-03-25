@@ -7,6 +7,30 @@
       "name" : "NHSDataModelandDictionaryTreatmentFunction",
       "title" : null,
       "description" : "A CodeSystem to identify the specialty of the care professional or team. FHIR Version of NHS Data Dictionary Main Specialty Code and HSCIC ITK HL7v2 Table ZU012"
+    },
+    {
+      "url" : "https://fhir.nhs.uk/England/CodeSystem/FGM-ConsentPurpose",
+      "version" : "0.0.1",
+      "status" : "draft",
+      "name" : "FGMConsentPurpose",
+      "title" : "FGM Consent Purpose",
+      "description" : "A CodeSystem to identify the purpose of the consent given within FGM"
+    },
+    {
+      "url" : "https://fhir.nhs.uk/England/CodeSystem/FlagProxyRole",
+      "version" : "0.0.1",
+      "status" : "draft",
+      "name" : "FlagProxyRole",
+      "title" : "NHSE Flag Proxy Role",
+      "description" : "A CodeSystem to identify the type/role of the proxy involved"
+    },
+    {
+      "url" : "https://fhir.nhs.uk/England/CodeSystem/PatientFlagCategory",
+      "version" : "0.0.1",
+      "status" : "draft",
+      "name" : "PatientFlagCategory",
+      "title" : "NHSE Patient Flag Category",
+      "description" : "A CodeSystem to identify the type/category of Flag."
     }
   ]
 }

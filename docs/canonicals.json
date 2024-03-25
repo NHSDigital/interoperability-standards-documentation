@@ -7,6 +7,13 @@
     "name" : "UKCoreOrganization"
   },
   {
+    "id" : "UKCore-Patient",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient",
+    "version" : "0.0.1",
+    "name" : "UKCorePatient"
+  },
+  {
     "id" : "UKCore-RelatedPerson",
     "type" : "StructureDefinition",
     "url" : "https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson",
@@ -45,6 +52,27 @@
     "version" : "0.0.1"
   },
   {
+    "id" : "FGM-ConsentPurpose",
+    "type" : "CodeSystem",
+    "url" : "https://fhir.nhs.uk/England/CodeSystem/FGM-ConsentPurpose",
+    "version" : "0.0.1",
+    "name" : "FGMConsentPurpose"
+  },
+  {
+    "id" : "FlagProxyRole",
+    "type" : "CodeSystem",
+    "url" : "https://fhir.nhs.uk/England/CodeSystem/FlagProxyRole",
+    "version" : "0.0.1",
+    "name" : "FlagProxyRole"
+  },
+  {
+    "id" : "PatientFlagCategory",
+    "type" : "CodeSystem",
+    "url" : "https://fhir.nhs.uk/England/CodeSystem/PatientFlagCategory",
+    "version" : "0.0.1",
+    "name" : "PatientFlagCategory"
+  },
+  {
     "id" : "uk.nhs.england.administration",
     "type" : "ImplementationGuide",
     "url" : "https://fhir.nhs.uk/England/ImplementationGuide/uk.nhs.england.administration",
@@ -78,11 +106,11 @@
     "name" : "AppointmentResponse"
   },
   {
-    "id" : "Consent",
+    "id" : "ConsentNationalProxy",
     "type" : "StructureDefinition",
-    "url" : "https://fhir.nhs.uk/England/StructureDefinition/Consent",
+    "url" : "https://fhir.nhs.uk/England/StructureDefinition/ConsentNationalProxy",
     "version" : "0.0.1",
-    "name" : "Consent"
+    "name" : "ConsentNationalProxy"
   },
   {
     "id" : "DocumentReference",
@@ -104,6 +132,34 @@
     "url" : "https://fhir.nhs.uk/England/StructureDefinition/Endpoint",
     "version" : "0.0.1",
     "name" : "Endpoint"
+  },
+  {
+    "id" : "Extension-ConsentCreateSummary",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.nhs.uk/England/StructureDefinition/Extension-ConsentCreateSummary",
+    "version" : "0.0.1",
+    "name" : "ExtensionConsentCreateSummary"
+  },
+  {
+    "id" : "Extension-ConsentRemoveSummary",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.nhs.uk/England/StructureDefinition/Extension-ConsentRemoveSummary",
+    "version" : "0.0.1",
+    "name" : "ExtensionConsentRemoveSummary"
+  },
+  {
+    "id" : "FlagConsent",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.nhs.uk/England/StructureDefinition/FlagConsent",
+    "version" : "0.0.1",
+    "name" : "FlagConsent"
+  },
+  {
+    "id" : "FlagProvenance",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.nhs.uk/England/StructureDefinition/FlagProvenance",
+    "version" : "0.0.1",
+    "name" : "FlagProvenance"
   },
   {
     "id" : "HealthcareService",
@@ -139,13 +195,6 @@
     "url" : "https://fhir.nhs.uk/England/StructureDefinition/OrganizationAffiliation",
     "version" : "0.0.1",
     "name" : "OrganizationAffiliation"
-  },
-  {
-    "id" : "Patient",
-    "type" : "StructureDefinition",
-    "url" : "https://fhir.nhs.uk/England/StructureDefinition/Patient",
-    "version" : "0.0.1",
-    "name" : "Patient"
   },
   {
     "id" : "PatientHL7v2",
@@ -209,6 +258,34 @@
     "url" : "https://fhir.nhs.uk/England/StructureDefinition/Slot",
     "version" : "0.0.1",
     "name" : "Slot"
+  },
+  {
+    "id" : "FlagConsentPurpose",
+    "type" : "ValueSet",
+    "url" : "https://fhir.nhs.uk/England/ValueSet/FlagConsentPurpose",
+    "version" : "0.0.1",
+    "name" : "FlagConsentPurpose"
+  },
+  {
+    "id" : "FlagProvenanceRole",
+    "type" : "ValueSet",
+    "url" : "https://fhir.nhs.uk/England/ValueSet/FlagProvenanceRole",
+    "version" : "0.0.1",
+    "name" : "FlagProvenanceRole"
+  },
+  {
+    "id" : "FlagProxyRole",
+    "type" : "ValueSet",
+    "url" : "https://fhir.nhs.uk/England/ValueSet/FlagProxyRole",
+    "version" : "0.0.1",
+    "name" : "FlagProxyRole"
+  },
+  {
+    "id" : "PatientFlagCategory",
+    "type" : "ValueSet",
+    "url" : "https://fhir.nhs.uk/England/ValueSet/PatientFlagCategory",
+    "version" : "0.0.1",
+    "name" : "PatientFlagCategory"
   },
   {
     "id" : "NHSDigital-CareSettingType",

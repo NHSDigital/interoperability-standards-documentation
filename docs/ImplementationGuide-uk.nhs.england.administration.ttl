@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "NHSEnglandInteroperabilitySkunkworks"] ; # 
   fhir:title [ fhir:v "Health Administration Interoperability Standards - Skunkworks"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-03-22T16:20:37+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-03-25T12:19:57+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "NHS England"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "NHS England" ] ;
@@ -606,10 +606,7 @@
          fhir:reference [ fhir:v "Patient/donald-with-chi-number-and-mrn" ]
        ] ;
        fhir:name [ fhir:v "donald-with-chi-number-and-mrn" ] ;
-       fhir:example [
-         fhir:v "https://fhir.nhs.uk/England/StructureDefinition/Patient"^^xsd:anyURI ;
-         fhir:link <https://fhir.nhs.uk/England/StructureDefinition/Patient>
-       ]
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -620,10 +617,7 @@
          fhir:reference [ fhir:v "Patient/donald-with-chi-number-mrn-and-nhs-number" ]
        ] ;
        fhir:name [ fhir:v "donald-with-chi-number-mrn-and-nhs-number" ] ;
-       fhir:example [
-         fhir:v "https://fhir.nhs.uk/England/StructureDefinition/Patient"^^xsd:anyURI ;
-         fhir:link <https://fhir.nhs.uk/England/StructureDefinition/Patient>
-       ]
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -634,10 +628,7 @@
          fhir:reference [ fhir:v "Patient/donald-with-nhs-number" ]
        ] ;
        fhir:name [ fhir:v "donald-with-nhs-number" ] ;
-       fhir:example [
-         fhir:v "https://fhir.nhs.uk/England/StructureDefinition/Patient"^^xsd:anyURI ;
-         fhir:link <https://fhir.nhs.uk/England/StructureDefinition/Patient>
-       ]
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -720,6 +711,42 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.nhs.uk/England/StructureDefinition/Extension-ConsentCreateSummary> ;
+         fhir:reference [ fhir:v "StructureDefinition/Extension-ConsentCreateSummary" ]
+       ] ;
+       fhir:name [ fhir:v "Extension for Consent Create Summary" ] ;
+       fhir:description [ fhir:v "Captures the additional information for a Best Interest decison when recording consent for a Reasonable Adjustment Flag." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.nhs.uk/England/StructureDefinition/Extension-ConsentRemoveSummary> ;
+         fhir:reference [ fhir:v "StructureDefinition/Extension-ConsentRemoveSummary" ]
+       ] ;
+       fhir:name [ fhir:v "Extension for Consent Remove Summary" ] ;
+       fhir:description [ fhir:v "Captures the additional information for a Best Interest decison when removing consent for a Reasonable Adjustment Flag." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.nhs.uk/England/CodeSystem/FGM-ConsentPurpose> ;
+         fhir:reference [ fhir:v "CodeSystem/FGM-ConsentPurpose" ]
+       ] ;
+       fhir:name [ fhir:v "FGM Consent Purpose" ] ;
+       fhir:description [ fhir:v "A CodeSystem to identify the purpose of the consent given within FGM" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
@@ -799,18 +826,6 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:resource" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://fhir.nhs.uk/England/StructureDefinition/Consent> ;
-         fhir:reference [ fhir:v "StructureDefinition/Consent" ]
-       ] ;
-       fhir:name [ fhir:v "NHS England Consent Profile" ] ;
-       fhir:description [ fhir:v "Record consent to capture information for NHS England flags" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "CapabilityStatement" ]
        ] ) ;
        fhir:reference [
@@ -819,6 +834,18 @@
        ] ;
        fhir:name [ fhir:v "NHS England IHE Privacy Consent on FHIR (PCF)" ] ;
        fhir:description [ fhir:v "CapabilityStatement for the Consent Authorization Server Actor for use within the English NHS (Enterprise Architecture) and or NHS England (Solution Architecture). \nThis is part of the NHS England National Extension (Volume 4) for [Privacy Consent on FHIR (PCF)](https://profiles.ihe.net/ITI/PCF/index.html). \n\n This profile is implemented by \n - [National Proxy Service](https://digital.nhs.uk/developer/) \n\n These services are potentially used by \n\n**NHS England** \n\n - [National Record Locator](https://digital.nhs.uk/developer/api-catalogue/national-record-locator-fhir) \n - [Security and authorisation](https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation) \n\n**English NHS and NHS England Services** \n\n used in the implementation of the following profiles or services \n\n - [NRL producer system](https://digital.nhs.uk/developer/api-catalogue/national-record-locator-fhir/v3/producer) \n - [IHE Mobile access to Health Documents (MHD)](https://profiles.ihe.net/ITI/MHD/index.html) \n - [IHE Query for Existing Data for Mobile (QEDm)](https://build.fhir.org/ig/IHE/QEDm/branches/master/index.html)" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.nhs.uk/England/StructureDefinition/ConsentNationalProxy> ;
+         fhir:reference [ fhir:v "StructureDefinition/ConsentNationalProxy" ]
+       ] ;
+       fhir:name [ fhir:v "NHS England National Proxy Consent Profile" ] ;
+       fhir:description [ fhir:v "NHS England National Proxy Consent Profile from https://nhsd-confluence.digital.nhs.uk/display/NPA/Confirm+consent" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -844,6 +871,102 @@
        fhir:name [ fhir:v "NHSDigital-CareSettingType" ] ;
        fhir:description [ fhir:v "Cross Hl7 UK version of UKCore CareSetting" ] ;
        fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.nhs.uk/England/StructureDefinition/FlagConsent> ;
+         fhir:reference [ fhir:v "StructureDefinition/FlagConsent" ]
+       ] ;
+       fhir:name [ fhir:v "NHSE Flag Consent Profile" ] ;
+       fhir:description [ fhir:v "Record consent to capture information for NHS England flags" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.nhs.uk/England/ValueSet/FlagConsentPurpose> ;
+         fhir:reference [ fhir:v "ValueSet/FlagConsentPurpose" ]
+       ] ;
+       fhir:name [ fhir:v "NHSE Flag Consent Purpose" ] ;
+       fhir:description [ fhir:v "A ValueSet to identify the purpose of a consent given for an NHS England flag." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.nhs.uk/England/StructureDefinition/FlagProvenance> ;
+         fhir:reference [ fhir:v "StructureDefinition/FlagProvenance" ]
+       ] ;
+       fhir:name [ fhir:v "NHSE Flag Provenance Profile" ] ;
+       fhir:description [ fhir:v "Record details of the practitioner recording or removing an individual Flag." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.nhs.uk/England/ValueSet/FlagProvenanceRole> ;
+         fhir:reference [ fhir:v "ValueSet/FlagProvenanceRole" ]
+       ] ;
+       fhir:name [ fhir:v "NHSE Flag Provenance Role" ] ;
+       fhir:description [ fhir:v "A ValueSet to identify the role in which someone recording provenance is acting" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.nhs.uk/England/ValueSet/FlagProxyRole> ;
+         fhir:reference [ fhir:v "ValueSet/FlagProxyRole" ]
+       ] ;
+       fhir:name [ fhir:v "NHSE Flag Proxy Role" ] ;
+       fhir:description [ fhir:v "A ValueSet to identify the type/role of the proxy involved." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.nhs.uk/England/CodeSystem/FlagProxyRole> ;
+         fhir:reference [ fhir:v "CodeSystem/FlagProxyRole" ]
+       ] ;
+       fhir:name [ fhir:v "NHSE Flag Proxy Role" ] ;
+       fhir:description [ fhir:v "A CodeSystem to identify the type/role of the proxy involved" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.nhs.uk/England/ValueSet/PatientFlagCategory> ;
+         fhir:reference [ fhir:v "ValueSet/PatientFlagCategory" ]
+       ] ;
+       fhir:name [ fhir:v "NHSE Patient Flag Category" ] ;
+       fhir:description [ fhir:v "A ValueSet to identify the type/category of a flag." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.nhs.uk/England/CodeSystem/PatientFlagCategory> ;
+         fhir:reference [ fhir:v "CodeSystem/PatientFlagCategory" ]
+       ] ;
+       fhir:name [ fhir:v "NHSE Patient Flag Category" ] ;
+       fhir:description [ fhir:v "A CodeSystem to identify the type/category of Flag." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -897,18 +1020,6 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:resource" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://fhir.nhs.uk/England/StructureDefinition/Patient> ;
-         fhir:reference [ fhir:v "StructureDefinition/Patient" ]
-       ] ;
-       fhir:name [ fhir:v "Patient" ] ;
-       fhir:description [ fhir:v "England Patient" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Patient" ]
        ] ) ;
        fhir:reference [
@@ -916,10 +1027,7 @@
          fhir:reference [ fhir:v "Patient/Patient-NHS-9459304130-Jane-Smith" ]
        ] ;
        fhir:name [ fhir:v "Patient-NHS-9459304130-Jane-Smith" ] ;
-       fhir:example [
-         fhir:v "https://fhir.nhs.uk/England/StructureDefinition/Patient"^^xsd:anyURI ;
-         fhir:link <https://fhir.nhs.uk/England/StructureDefinition/Patient>
-       ]
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -930,10 +1038,7 @@
          fhir:reference [ fhir:v "Patient/Patient-NHS-9912003814-Michael-SMITHIES" ]
        ] ;
        fhir:name [ fhir:v "Patient-NHS-9912003814-Michael-SMITHIES" ] ;
-       fhir:example [
-         fhir:v "https://fhir.nhs.uk/England/StructureDefinition/Patient"^^xsd:anyURI ;
-         fhir:link <https://fhir.nhs.uk/England/StructureDefinition/Patient>
-       ]
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -1118,6 +1223,18 @@
        ] ;
        fhir:name [ fhir:v "UK Core Organization" ] ;
        fhir:description [ fhir:v "This profile defines the UK constraints and extensions on the International FHIR resource [Organization](https://hl7.org/fhir/R4/Organization.html)." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.nhs.uk/England/StructureDefinition/UKCore-Patient> ;
+         fhir:reference [ fhir:v "StructureDefinition/UKCore-Patient" ]
+       ] ;
+       fhir:name [ fhir:v "UK Core Patient" ] ;
+       fhir:description [ fhir:v "Defines the UK Core constraints and extensions on the Patient resource for the minimal set of data to query and retrieve an individual’s demographic information." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [

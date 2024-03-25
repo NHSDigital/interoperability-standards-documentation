@@ -29,6 +29,20 @@
       "Questionnaire-permission.html" : "Permission"
     },
     {
+      "url" : "https://fhir.hl7.org.uk/ValueSet/UKCore-HumanLanguage",
+      "version" : "2.2.0",
+      "status" : "active",
+      "name" : "UKCoreHumanLanguage",
+      "title" : "UK Core Human Language",
+      "description" : "A set of codes that define a language used by a person.",
+      "systems" : ["https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage"],
+      "oids" : ["2.16.840.1.113883.2.1.3.2.4.17.70"],
+      "sources" : ["2.16.840.1.113883.2.1.3.2.4.17.70"],
+      "uses" : {
+      },
+      "StructureDefinition-UKCore-Patient.html" : "UK Core Patient"
+    },
+    {
       "url" : "https://fhir.hl7.org.uk/ValueSet/UKCore-OrganizationType",
       "version" : "1.0.0",
       "status" : "active",
@@ -44,6 +58,23 @@
       "StructureDefinition-UKCore-Organization.html" : "UK Core Organization"
     },
     {
+      "url" : "https://fhir.hl7.org.uk/ValueSet/UKCore-PersonMaritalStatusCode",
+      "version" : "2.3.0",
+      "status" : "active",
+      "name" : "UKCorePersonMaritalStatusCode",
+      "title" : "UK Core Person Marital Status Code",
+      "description" : "A set of codes that define the legal marital status of a person.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+        "https://fhir.hl7.org.uk/CodeSystem/UKCore-PersonMaritalStatusWales",
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+        "https://fhir.hl7.org.uk/CodeSystem/UKCore-PersonMaritalStatusEngland"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-UKCore-Patient.html" : "UK Core Patient"
+    },
+    {
       "url" : "https://fhir.hl7.org.uk/ValueSet/UKCore-PersonRelationshipType",
       "version" : "2.1.0",
       "status" : "active",
@@ -57,8 +88,63 @@
       ],
       "uses" : {
       },
-      "Questionnaire-Questionnaire-Proxy-Access-Request.html" : "Proxy Access Request Form",
-      "StructureDefinition-UKCore-RelatedPerson.html" : "UK Core RelatedPerson"
+      "StructureDefinition-UKCore-Patient.html" : "UK Core Patient",
+      "StructureDefinition-UKCore-RelatedPerson.html" : "UK Core RelatedPerson",
+      "Questionnaire-Questionnaire-Proxy-Access-Request.html" : "Proxy Access Request Form"
+    },
+    {
+      "url" : "https://fhir.nhs.uk/England/ValueSet/FlagConsentPurpose",
+      "version" : "0.0.1",
+      "status" : "draft",
+      "name" : "FlagConsentPurpose",
+      "title" : "NHSE Flag Consent Purpose",
+      "description" : "A ValueSet to identify the purpose of a consent given for an NHS England flag.",
+      "uses" : {
+      },
+      "StructureDefinition-FlagConsent.html" : "NHSE Flag Consent Profile"
+    },
+    {
+      "url" : "https://fhir.nhs.uk/England/ValueSet/FlagProvenanceRole",
+      "version" : "0.0.1",
+      "status" : "draft",
+      "name" : "FlagProvenanceRole",
+      "title" : "NHSE Flag Provenance Role",
+      "description" : "A ValueSet to identify the role in which someone recording provenance is acting",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/extra-security-role-type",
+        "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1",
+        "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+        "http://terminology.hl7.org/CodeSystem/v3-RoleClass",
+        "http://terminology.hl7.org/CodeSystem/v3-ParticipationFunction",
+        "http://terminology.hl7.org/CodeSystem/contractsignertypecodes",
+        "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+        "http://dicom.nema.org/resources/ontology/DCM"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-FlagProvenance.html" : "NHSE Flag Provenance Profile"
+    },
+    {
+      "url" : "https://fhir.nhs.uk/England/ValueSet/FlagProxyRole",
+      "version" : "0.0.1",
+      "status" : "draft",
+      "name" : "FlagProxyRole",
+      "title" : "NHSE Flag Proxy Role",
+      "description" : "A ValueSet to identify the type/role of the proxy involved.",
+      "uses" : {
+      },
+      "StructureDefinition-FlagConsent.html" : "NHSE Flag Consent Profile"
+    },
+    {
+      "url" : "https://fhir.nhs.uk/England/ValueSet/PatientFlagCategory",
+      "version" : "0.0.1",
+      "status" : "draft",
+      "name" : "PatientFlagCategory",
+      "title" : "NHSE Patient Flag Category",
+      "description" : "A ValueSet to identify the type/category of a flag.",
+      "uses" : {
+      },
+      "StructureDefinition-FlagConsent.html" : "NHSE Flag Consent Profile"
     },
     {
       "url" : "https://fhir.nhs.uk/ValueSet/NHSDigital-CareSettingType",

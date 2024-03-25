@@ -154,8 +154,7 @@ Title: "NHS England APIM Base API Definitions"
 
 
 //Patient
-* insert ResourceWithExpectation(#Patient, https://fhir.nhs.uk/England/StructureDefinition/Patient, #MAY)
-* insert WithSupportedProfile(https://fhir.nhs.uk/England/StructureDefinition/PatientPDS)
+* insert ResourceWithExpectation(#Patient, https://fhir.nhs.uk/England/StructureDefinition/PatientPDS, #MAY)
 * rest.resource[=]
   * documentation = "API present in: \n - [Personal Demographics Service FHIR API](https://digital.nhs.uk/developer/api-catalogue/personal-demographics-service-fhir) \n\n Used by \n\n - EPS consumers. \n\n SHOULD and SHALL conformance is taken from [UK Core FHIR Access](https://build.fhir.org/ig/HL7-UK/UK-Core-Access/index.html) - MAY is used to indicate no conformance (added due to rendering issue in the publisher)"
 * insert InteractionWithExpectation(#read, #SHOULD)

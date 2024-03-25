@@ -3,12 +3,41 @@
   "version": "0.0.1",
   "fhirVersion": "4.0.1",
   "jurisdiction": "GB-ENG",
-  "extensions": [],
+  "extensions": [
+    {
+      "url": "https://fhir.nhs.uk/England/StructureDefinition/Extension-ConsentCreateSummary",
+      "title": "Extension for Consent Create Summary",
+      "types": [
+        "Annotation"
+      ]
+    },
+    {
+      "url": "https://fhir.nhs.uk/England/StructureDefinition/Extension-ConsentRemoveSummary",
+      "title": "Extension for Consent Remove Summary",
+      "types": [
+        "Annotation"
+      ]
+    }
+  ],
   "profiles": {
     "Organization": [
       {
         "url": "https://fhir.nhs.uk/England/StructureDefinition/Organization",
         "title": "Organization"
+      }
+    ],
+    "Patient": [
+      {
+        "url": "https://fhir.nhs.uk/England/StructureDefinition/PatientHL7v2",
+        "title": "PatientHL7v2"
+      },
+      {
+        "url": "https://fhir.nhs.uk/England/StructureDefinition/PatientPDS",
+        "title": "PatientPDS"
+      },
+      {
+        "url": "https://fhir.nhs.uk/England/StructureDefinition/PatientPDSNHSNumberAllocation",
+        "title": "PatientPDSNHSNumberAllocation"
       }
     ],
     "RelatedPerson": [
@@ -53,6 +82,12 @@
         "title": "Endpoint"
       }
     ],
+    "Provenance": [
+      {
+        "url": "https://fhir.nhs.uk/England/StructureDefinition/FlagProvenance",
+        "title": "NHSE Flag Provenance Profile"
+      }
+    ],
     "HealthcareService": [
       {
         "url": "https://fhir.nhs.uk/England/StructureDefinition/HealthcareService",
@@ -69,24 +104,6 @@
       {
         "url": "https://fhir.nhs.uk/England/StructureDefinition/OrganizationAffiliation",
         "title": "OrganizationAffiliation"
-      }
-    ],
-    "Patient": [
-      {
-        "url": "https://fhir.nhs.uk/England/StructureDefinition/Patient",
-        "title": "Patient"
-      },
-      {
-        "url": "https://fhir.nhs.uk/England/StructureDefinition/PatientHL7v2",
-        "title": "PatientHL7v2"
-      },
-      {
-        "url": "https://fhir.nhs.uk/England/StructureDefinition/PatientPDS",
-        "title": "PatientPDS"
-      },
-      {
-        "url": "https://fhir.nhs.uk/England/StructureDefinition/PatientPDSNHSNumberAllocation",
-        "title": "PatientPDSNHSNumberAllocation"
       }
     ],
     "Practitioner": [
@@ -158,9 +175,18 @@
       "Bundle.entry.resource.entry.resource.birthDate",
       "Patient.birthDate"
     ],
+    "http://hl7.org/fhir/StructureDefinition/patient-cadavericDonor": [
+      "Patient"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired": [
+      "Patient"
+    ],
     "http://hl7.org/fhir/StructureDefinition/patient-nationality": [
       "Bundle.entry.resource.entry.resource",
       "Patient"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/patient-proficiency": [
+      "Patient.communication"
     ],
     "http://hl7.org/fhir/StructureDefinition/patient-religion": [
       "Bundle.entry.resource.entry.resource",
@@ -180,17 +206,15 @@
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
       "StructureDefinition.snapshot.element.type"
     ],
-    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm": [
-      "StructureDefinition"
-    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
       "StructureDefinition.snapshot.element.type"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version": [
+      "StructureDefinition.differential.element",
       "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
-      "StructureDefinition",
+      "StructureDefinition.differential.element",
       "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
@@ -222,14 +246,24 @@
       "Patient.address",
       "RelatedPerson.address"
     ],
+    "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-BirthSex": [
+      "Patient"
+    ],
     "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ContactPreference": [
       "Patient",
       "RelatedPerson"
     ],
+    "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ContactRank": [
+      "Patient.contact"
+    ],
     "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CopyCorrespondenceIndicator": [
+      "Patient.contact",
       "RelatedPerson"
     ],
     "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-DeathNotificationStatus": [
+      "Patient"
+    ],
+    "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-EthnicCategory": [
       "Patient"
     ],
     "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-MainLocation": [
@@ -242,6 +276,9 @@
       "Patient",
       "RelatedPerson"
     ],
+    "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberUnavailableReason": [
+      "Patient"
+    ],
     "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus": [
       "Patient.identifier"
     ],
@@ -249,11 +286,22 @@
       "Patient"
     ],
     "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-OtherContactSystem": [
+      "Patient.contact.telecom.system",
       "Patient.telecom",
+      "Patient.telecom.system",
       "RelatedPerson.telecom.system"
     ],
     "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-PreferredDispenserOrganization": [
       "Patient"
+    ],
+    "https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ResidentialStatus": [
+      "Patient"
+    ],
+    "https://fhir.nhs.uk/England/StructureDefinition/Extension-ConsentCreateSummary": [
+      "Consent"
+    ],
+    "https://fhir.nhs.uk/England/StructureDefinition/Extension-ConsentRemoveSummary": [
+      "Consent"
     ],
     "https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-ContactRank": [
       "RelatedPerson"

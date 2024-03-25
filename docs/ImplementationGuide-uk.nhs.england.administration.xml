@@ -10,7 +10,7 @@
   <name value="NHSEnglandInteroperabilitySkunkworks"/>
   <title value="Health Administration Interoperability Standards - Skunkworks"/>
   <status value="draft"/>
-  <date value="2024-03-22T16:20:37+00:00"/>
+  <date value="2024-03-25T12:19:57+00:00"/>
   <publisher value="NHS England"/>
   <contact>
     <name value="NHS England"/>
@@ -521,7 +521,7 @@
         <reference value="Patient/donald-with-chi-number-and-mrn"/>
       </reference>
       <name value="donald-with-chi-number-and-mrn"/>
-      <exampleCanonical value="https://fhir.nhs.uk/England/StructureDefinition/Patient"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -531,7 +531,7 @@
         <reference value="Patient/donald-with-chi-number-mrn-and-nhs-number"/>
       </reference>
       <name value="donald-with-chi-number-mrn-and-nhs-number"/>
-      <exampleCanonical value="https://fhir.nhs.uk/England/StructureDefinition/Patient"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -541,7 +541,7 @@
         <reference value="Patient/donald-with-nhs-number"/>
       </reference>
       <name value="donald-with-nhs-number"/>
-      <exampleCanonical value="https://fhir.nhs.uk/England/StructureDefinition/Patient"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -617,6 +617,39 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/Extension-ConsentCreateSummary"/>
+      </reference>
+      <name value="Extension for Consent Create Summary"/>
+      <description value="Captures the additional information for a Best Interest decison when recording consent for a Reasonable Adjustment Flag."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/Extension-ConsentRemoveSummary"/>
+      </reference>
+      <name value="Extension for Consent Remove Summary"/>
+      <description value="Captures the additional information for a Best Interest decison when removing consent for a Reasonable Adjustment Flag."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/FGM-ConsentPurpose"/>
+      </reference>
+      <name value="FGM Consent Purpose"/>
+      <description value="A CodeSystem to identify the purpose of the consent given within FGM"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -681,17 +714,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/Consent"/>
-      </reference>
-      <name value="NHS England Consent Profile"/>
-      <description value="Record consent to capture information for NHS England flags"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="CapabilityStatement"/>
       </extension>
       <reference>
@@ -699,6 +721,17 @@
       </reference>
       <name value="NHS England IHE Privacy Consent on FHIR (PCF)"/>
       <description value="CapabilityStatement for the Consent Authorization Server Actor for use within the English NHS (Enterprise Architecture) and or NHS England (Solution Architecture). &#xA;This is part of the NHS England National Extension (Volume 4) for [Privacy Consent on FHIR (PCF)](https://profiles.ihe.net/ITI/PCF/index.html). &#xA;&#xA; This profile is implemented by &#xA; - [National Proxy Service](https://digital.nhs.uk/developer/) &#xA;&#xA; These services are potentially used by &#xA;&#xA;**NHS England** &#xA;&#xA; - [National Record Locator](https://digital.nhs.uk/developer/api-catalogue/national-record-locator-fhir) &#xA; - [Security and authorisation](https://digital.nhs.uk/developer/guides-and-documentation/security-and-authorisation) &#xA;&#xA;**English NHS and NHS England Services** &#xA;&#xA; used in the implementation of the following profiles or services &#xA;&#xA; - [NRL producer system](https://digital.nhs.uk/developer/api-catalogue/national-record-locator-fhir/v3/producer) &#xA; - [IHE Mobile access to Health Documents (MHD)](https://profiles.ihe.net/ITI/MHD/index.html) &#xA; - [IHE Query for Existing Data for Mobile (QEDm)](https://build.fhir.org/ig/IHE/QEDm/branches/master/index.html)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/ConsentNationalProxy"/>
+      </reference>
+      <name value="NHS England National Proxy Consent Profile"/>
+      <description value="NHS England National Proxy Consent Profile from https://nhsd-confluence.digital.nhs.uk/display/NPA/Confirm+consent"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -722,6 +755,94 @@
       <name value="NHSDigital-CareSettingType"/>
       <description value="Cross Hl7 UK version of UKCore CareSetting"/>
       <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/FlagConsent"/>
+      </reference>
+      <name value="NHSE Flag Consent Profile"/>
+      <description value="Record consent to capture information for NHS England flags"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/FlagConsentPurpose"/>
+      </reference>
+      <name value="NHSE Flag Consent Purpose"/>
+      <description value="A ValueSet to identify the purpose of a consent given for an NHS England flag."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/FlagProvenance"/>
+      </reference>
+      <name value="NHSE Flag Provenance Profile"/>
+      <description value="Record details of the practitioner recording or removing an individual Flag."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/FlagProvenanceRole"/>
+      </reference>
+      <name value="NHSE Flag Provenance Role"/>
+      <description value="A ValueSet to identify the role in which someone recording provenance is acting"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/FlagProxyRole"/>
+      </reference>
+      <name value="NHSE Flag Proxy Role"/>
+      <description value="A ValueSet to identify the type/role of the proxy involved."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/FlagProxyRole"/>
+      </reference>
+      <name value="NHSE Flag Proxy Role"/>
+      <description value="A CodeSystem to identify the type/role of the proxy involved"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/PatientFlagCategory"/>
+      </reference>
+      <name value="NHSE Patient Flag Category"/>
+      <description value="A ValueSet to identify the type/category of a flag."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/PatientFlagCategory"/>
+      </reference>
+      <name value="NHSE Patient Flag Category"/>
+      <description value="A CodeSystem to identify the type/category of Flag."/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -768,24 +889,13 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/Patient"/>
-      </reference>
-      <name value="Patient"/>
-      <description value="England Patient"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Patient"/>
       </extension>
       <reference>
         <reference value="Patient/Patient-NHS-9459304130-Jane-Smith"/>
       </reference>
       <name value="Patient-NHS-9459304130-Jane-Smith"/>
-      <exampleCanonical value="https://fhir.nhs.uk/England/StructureDefinition/Patient"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -795,7 +905,7 @@
         <reference value="Patient/Patient-NHS-9912003814-Michael-SMITHIES"/>
       </reference>
       <name value="Patient-NHS-9912003814-Michael-SMITHIES"/>
-      <exampleCanonical value="https://fhir.nhs.uk/England/StructureDefinition/Patient"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -956,6 +1066,17 @@
       </reference>
       <name value="UK Core Organization"/>
       <description value="This profile defines the UK constraints and extensions on the International FHIR resource [Organization](https://hl7.org/fhir/R4/Organization.html)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/UKCore-Patient"/>
+      </reference>
+      <name value="UK Core Patient"/>
+      <description value="Defines the UK Core constraints and extensions on the Patient resource for the minimal set of data to query and retrieve an individual’s demographic information."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

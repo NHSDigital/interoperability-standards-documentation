@@ -11,7 +11,7 @@ Title: "UKCore Access Patient Index Provider"
 * rest.mode = #server
 
 //Patient
-* insert ResourceWithExpectation(#Patient, https://fhir.nhs.uk/England/StructureDefinition/Patient, #SHALL)
+* insert ResourceWithExpectation(#Patient, https://fhir.nhs.uk/England/StructureDefinition/PatientPDS, #SHALL)
 * insert InteractionWithExpectation(#search-type, #SHALL)
 * insert SearchParamWithExpectation(_id, #token, #SHOULD)
 * insert SearchParamWithExpectation(birthdate, #date, #SHOULD)

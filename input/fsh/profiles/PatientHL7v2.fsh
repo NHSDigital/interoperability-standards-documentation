@@ -1,5 +1,5 @@
 Profile: PatientHL7v2
-Parent: https://fhir.nhs.uk/England/StructureDefinition/Patient
+Parent: https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient
 Id: PatientHL7v2
 Description: "NHS England Patient HL7 v2 (ITK)"
 * extension contains

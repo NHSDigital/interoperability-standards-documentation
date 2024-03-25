@@ -10,7 +10,32 @@
       "oids" : ["1.2.840.10008.2.16.4"],
       "uses" : {
       },
+      "ValueSet-FlagProvenanceRole.html" : "NHSE Flag Provenance Role",
       "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
+    },
+    {
+      "url" : "http://hl7.org/fhir/address-type",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "AddressType",
+      "title" : "AddressType",
+      "description" : "The type of an address (physical / postal).",
+      "oids" : ["2.16.840.1.113883.4.642.4.70"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-address-type.html" : "AddressType"
+    },
+    {
+      "url" : "http://hl7.org/fhir/address-use",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "AddressUse",
+      "title" : "AddressUse",
+      "description" : "The use of an address.",
+      "oids" : ["2.16.840.1.113883.4.642.4.68"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-address-use.html" : "AddressUse"
     },
     {
       "url" : "http://hl7.org/fhir/administrative-gender",
@@ -253,6 +278,18 @@
       "http://hl7.org/fhir/R4/valueset-participationstatus.html" : "ParticipationStatus"
     },
     {
+      "url" : "http://hl7.org/fhir/provenance-entity-role",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ProvenanceEntityRole",
+      "title" : "ProvenanceEntityRole",
+      "description" : "How an entity was used in an activity.",
+      "oids" : ["2.16.840.1.113883.4.642.4.437"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-provenance-entity-role.html" : "ProvenanceEntityRole"
+    },
+    {
       "url" : "http://hl7.org/fhir/request-intent",
       "version" : "4.0.1",
       "status" : "draft",
@@ -297,8 +334,8 @@
       "description" : "One of the resource types defined as part of this version of FHIR.",
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-consent-content-class.html" : "Consent Content Class",
-      "http://hl7.org/fhir/R4/valueset-resource-types.html" : "ResourceType"
+      "http://hl7.org/fhir/R4/valueset-resource-types.html" : "ResourceType",
+      "http://hl7.org/fhir/R4/valueset-consent-content-class.html" : "Consent Content Class"
     },
     {
       "url" : "http://hl7.org/fhir/slotstatus",
@@ -322,11 +359,11 @@
       "oids" : ["2.16.840.1.113883.6.1"],
       "uses" : {
       },
+      "http://hl7.org/fhir/R4/valueset-consent-content-code.html" : "Consent Content Codes",
       "http://hl7.org/fhir/R4/valueset-c80-doc-typecodes.html" : "Document Type Value Set",
       "http://hl7.org/fhir/R4/valueset-observation-codes.html" : "LOINC Codes",
-      "http://hl7.org/fhir/R4/valueset-consent-content-code.html" : "Consent Content Codes",
-      "http://hl7.org/fhir/R4/valueset-document-classcodes.html" : "Document Class Value Set",
-      "http://hl7.org/fhir/R4/valueset-consent-category.html" : "Consent Category Codes"
+      "http://hl7.org/fhir/R4/valueset-consent-category.html" : "Consent Category Codes",
+      "http://hl7.org/fhir/R4/valueset-document-classcodes.html" : "Document Class Value Set"
     },
     {
       "url" : "http://snomed.info/sct",
@@ -338,20 +375,20 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "ValueSet-NHSDigital-CareSettingType.html" : "NHSDigital-CareSettingType",
-      "http://hl7.org/fhir/R4/valueset-c80-facilitycodes.html" : "Facility Type Code Value Set",
-      "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
-      "http://hl7.org/fhir/R4/valueset-practitioner-role.html" : "Practitioner role",
-      "http://hl7.org/fhir/R4/valueset-procedure-reason.html" : "Procedure Reason Codes",
-      "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
-      "http://hl7.org/fhir/R4/valueset-procedure-code.html" : "Procedure Codes (SNOMED CT)",
-      "http://hl7.org/fhir/R4/valueset-c80-practice-codes.html" : "Practice Setting Code Value Set",
-      "http://hl7.org/fhir/R4/valueset-participant-role.html" : "Participant Roles",
-      "http://hl7.org/fhir/R4/valueset-encounter-reason.html" : "Encounter Reason Codes",
       "http://hl7.org/fhir/R4/valueset-servicerequest-orderdetail.html" : "Service Request Order Details Codes",
-      "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
       "http://hl7.org/fhir/R4/valueset-servicerequest-category.html" : "Service Request Category Codes",
-      "http://hl7.org/fhir/R4/valueset-medication-as-needed-reason.html" : "SNOMED CT Medication As Needed Reason Codes"
+      "ValueSet-NHSDigital-CareSettingType.html" : "NHSDigital-CareSettingType",
+      "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
+      "http://hl7.org/fhir/R4/valueset-practitioner-role.html" : "Practitioner role",
+      "http://hl7.org/fhir/R4/valueset-medication-as-needed-reason.html" : "SNOMED CT Medication As Needed Reason Codes",
+      "http://hl7.org/fhir/R4/valueset-c80-practice-codes.html" : "Practice Setting Code Value Set",
+      "http://hl7.org/fhir/R4/valueset-c80-facilitycodes.html" : "Facility Type Code Value Set",
+      "http://hl7.org/fhir/R4/valueset-encounter-reason.html" : "Encounter Reason Codes",
+      "http://hl7.org/fhir/R4/valueset-procedure-code.html" : "Procedure Codes (SNOMED CT)",
+      "http://hl7.org/fhir/R4/valueset-procedure-reason.html" : "Procedure Reason Codes",
+      "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
+      "http://hl7.org/fhir/R4/valueset-participant-role.html" : "Participant Roles",
+      "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/admit-source",
@@ -447,6 +484,7 @@
       "oids" : ["2.16.840.1.113883.4.642.1.1201"],
       "uses" : {
       },
+      "ValueSet-FlagProvenanceRole.html" : "NHSE Flag Provenance Role",
       "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
     },
     {
@@ -554,6 +592,7 @@
       "description" : "This CodeSystem contains Additional FHIR-defined Security Role types not defined elsewhere",
       "uses" : {
       },
+      "ValueSet-FlagProvenanceRole.html" : "NHSE Flag Provenance Role",
       "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
     },
     {
@@ -627,6 +666,18 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4/valueset-program.html" : "Program"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ProvenanceParticipantType",
+      "title" : "Provenance participant type",
+      "description" : "The type of participation a provenance participant.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1131"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-provenance-agent-type.html" : "Provenance participant type"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/referencerange-meaning",
@@ -710,8 +761,7 @@
       "oids" : ["2.16.840.1.113883.18.58"],
       "uses" : {
       },
-      "https://simplifier.net/resolve?scope=fhir.r4.ukcore.stu3.currentbuild@0.0.6-pre-release&canonical=https://fhir.hl7.org.uk/ValueSet/UKCore-PersonRelationshipType" : "UK Core Person Relationship Type",
-      "http://hl7.org/fhir/R4/valueset-patient-contactrelationship.html" : "Patient Contact Relationship "
+      "https://simplifier.net/resolve?scope=fhir.r4.ukcore.stu3.currentbuild@0.0.6-pre-release&canonical=https://fhir.hl7.org.uk/ValueSet/UKCore-PersonRelationshipType" : "UK Core Person Relationship Type"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v2-0203",
@@ -748,6 +798,7 @@
       "uses" : {
       },
       "http://terminology.hl7.org/5.0.0/ValueSet-v3-ActCode.html" : "v3 Code System ActCode",
+      "http://hl7.org/fhir/R4/valueset-provenance-activity-type.html" : "Provenance activity type",
       "http://terminology.hl7.org/5.0.0/ValueSet-v3-ActEncounterCode.html" : "ActEncounterCode"
     },
     {
@@ -772,8 +823,32 @@
       "oids" : ["2.16.840.1.113883.5.8"],
       "uses" : {
       },
-      "http://terminology.hl7.org/5.0.0/ValueSet-v3-PurposeOfUse.html" : "PurposeOfUse",
-      "https://profiles.ihe.net/ITI/PCF/1.0.0/ValueSet-BasicPurposeVS.html" : "Basic Purpose ValueSet"
+      "https://profiles.ihe.net/ITI/PCF/1.0.0/ValueSet-BasicPurposeVS.html" : "Basic Purpose ValueSet",
+      "http://terminology.hl7.org/5.0.0/ValueSet-v3-PurposeOfUse.html" : "PurposeOfUse"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-DataOperation",
+      "version" : "4.1.0",
+      "status" : "active",
+      "name" : "DataOperation",
+      "title" : "DataOperation",
+      "description" : "**** MISSING DESCRIPTION ****",
+      "oids" : ["2.16.840.1.113883.5.1123"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-provenance-activity-type.html" : "Provenance activity type"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-DocumentCompletion",
+      "version" : "2.1.0",
+      "status" : "active",
+      "name" : "DocumentCompletion",
+      "title" : "DocumentCompletion",
+      "description" : "Identifies the current completion state of a clinical document.",
+      "oids" : ["2.16.840.1.113883.5.33"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-provenance-activity-type.html" : "Provenance activity type"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-EncounterSpecialCourtesy",
@@ -788,6 +863,30 @@
       "http://hl7.org/fhir/R4/valueset-encounter-special-courtesy.html" : "Special courtesy"
     },
     {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-LanguageAbilityMode",
+      "version" : "2.1.0",
+      "status" : "active",
+      "name" : "LanguageAbilityMode",
+      "title" : "LanguageAbilityMode",
+      "description" : "A value representing the method of expression of the language.\r\n\r\n*Example:*Expressed spoken, expressed written, expressed signed, received spoken, received written, received signed.\r\n\r\n*OpenIssue:* Description copied from Concept Domain of same name. Must be verified.",
+      "oids" : ["2.16.840.1.113883.5.60"],
+      "uses" : {
+      },
+      "http://terminology.hl7.org/5.0.0/ValueSet-v3-LanguageAbilityMode.html" : "LanguageAbilityMode"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-LanguageAbilityProficiency",
+      "version" : "2.1.0",
+      "status" : "active",
+      "name" : "LanguageAbilityProficiency",
+      "title" : "LanguageAbilityProficiency",
+      "description" : "A value representing the level of proficiency in a language.\r\n\r\n*Example:*Excellent, good, fair, poor.\r\n\r\n*OpenIssue:* Description copied from Concept Domain of same name. Must be verified.",
+      "oids" : ["2.16.840.1.113883.5.61"],
+      "uses" : {
+      },
+      "http://terminology.hl7.org/5.0.0/ValueSet-v3-LanguageAbilityProficiency.html" : "LanguageAbilityProficiency"
+    },
+    {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
       "version" : "2.1.0",
       "status" : "active",
@@ -797,7 +896,7 @@
       "oids" : ["2.16.840.1.113883.5.2"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-marital-status.html" : "MaritalStatus"
+      "https://simplifier.net/resolve?scope=fhir.r4.ukcore.stu3.currentbuild@0.0.6-pre-release&canonical=https://fhir.hl7.org.uk/ValueSet/UKCore-PersonMaritalStatusCode" : "UK Core Person Marital Status Code"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
@@ -810,7 +909,7 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4/valueset-encounter-special-courtesy.html" : "Special courtesy",
-      "http://hl7.org/fhir/R4/valueset-marital-status.html" : "MaritalStatus"
+      "https://simplifier.net/resolve?scope=fhir.r4.ukcore.stu3.currentbuild@0.0.6-pre-release&canonical=https://fhir.hl7.org.uk/ValueSet/UKCore-PersonMaritalStatusCode" : "UK Core Person Marital Status Code"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
@@ -834,6 +933,7 @@
       "oids" : ["2.16.840.1.113883.5.88"],
       "uses" : {
       },
+      "ValueSet-FlagProvenanceRole.html" : "NHSE Flag Provenance Role",
       "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
     },
     {
@@ -847,6 +947,8 @@
       "uses" : {
       },
       "http://hl7.org/fhir/R4/valueset-encounter-participant-type.html" : "Participant type",
+      "http://hl7.org/fhir/R4/valueset-provenance-activity-type.html" : "Provenance activity type",
+      "ValueSet-FlagProvenanceRole.html" : "NHSE Flag Provenance Role",
       "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
     },
     {
@@ -859,6 +961,7 @@
       "oids" : ["2.16.840.1.113883.5.110"],
       "uses" : {
       },
+      "ValueSet-FlagProvenanceRole.html" : "NHSE Flag Provenance Role",
       "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
     },
     {
@@ -871,9 +974,10 @@
       "oids" : ["2.16.840.1.113883.5.111"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType",
       "https://simplifier.net/resolve?scope=fhir.r4.ukcore.stu3.currentbuild@0.0.6-pre-release&canonical=https://fhir.hl7.org.uk/ValueSet/UKCore-PersonRelationshipType" : "UK Core Person Relationship Type",
-      "http://terminology.hl7.org/5.0.0/ValueSet-v3-ServiceDeliveryLocationRoleType.html" : "ServiceDeliveryLocationRoleType"
+      "ValueSet-FlagProvenanceRole.html" : "NHSE Flag Provenance Role",
+      "http://terminology.hl7.org/5.0.0/ValueSet-v3-ServiceDeliveryLocationRoleType.html" : "ServiceDeliveryLocationRoleType",
+      "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
     },
     {
       "url" : "https://fhir.hl7.org.uk/CodeSystem/UKCore-AdditionalPersonRelationshipRole",
@@ -887,6 +991,17 @@
       "https://simplifier.net/resolve?scope=fhir.r4.ukcore.stu3.currentbuild@0.0.6-pre-release&canonical=https://fhir.hl7.org.uk/ValueSet/UKCore-PersonRelationshipType" : "UK Core Person Relationship Type"
     },
     {
+      "url" : "https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage",
+      "version" : "2.1.0",
+      "status" : "active",
+      "name" : "UKCoreHumanLanguage",
+      "title" : "UK Core Human Language",
+      "description" : "A CodeSystem that identifies the language used by a person.",
+      "uses" : {
+      },
+      "https://simplifier.net/resolve?scope=fhir.r4.ukcore.stu3.currentbuild@0.0.6-pre-release&canonical=https://fhir.hl7.org.uk/ValueSet/UKCore-HumanLanguage" : "UK Core Human Language"
+    },
+    {
       "url" : "https://fhir.hl7.org.uk/CodeSystem/UKCore-OrganizationTypeGenomics",
       "version" : "1.0.0",
       "status" : "active",
@@ -896,6 +1011,28 @@
       "uses" : {
       },
       "https://simplifier.net/resolve?scope=fhir.r4.ukcore.stu3.currentbuild@0.0.6-pre-release&canonical=https://fhir.hl7.org.uk/ValueSet/UKCore-OrganizationType" : "UK Core Organization Type"
+    },
+    {
+      "url" : "https://fhir.hl7.org.uk/CodeSystem/UKCore-PersonMaritalStatusEngland",
+      "version" : "1.1.1",
+      "status" : "active",
+      "name" : "UKCorePersonMaritalStatusEngland",
+      "title" : "UK Core Person Marital Status England",
+      "description" : "A set of codes that define the marital status of a person, as specified by the person. These codes and their descriptions represent concepts used in England and are copied from the content of the [NHS Data Dictionary Person Marital Status](https://www.datadictionary.nhs.uk/data_elements/person_marital_status.html) web page on 16/12/2022.",
+      "uses" : {
+      },
+      "https://simplifier.net/resolve?scope=fhir.r4.ukcore.stu3.currentbuild@0.0.6-pre-release&canonical=https://fhir.hl7.org.uk/ValueSet/UKCore-PersonMaritalStatusCode" : "UK Core Person Marital Status Code"
+    },
+    {
+      "url" : "https://fhir.hl7.org.uk/CodeSystem/UKCore-PersonMaritalStatusWales",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "UKCorePersonMaritalStatusWales",
+      "title" : "UK Core Person Marital Status Wales",
+      "description" : "A set of codes that define the marital status of a person, as specified by the person. These codes and their descriptions represent concepts used in Wales and are copied from the content of the [Digital Health and Care Wales](https://dhcw.nhs.wales/information-services/information-standards/data-standards/data-standards-files/data-standard-change-notices-docs/dscns-2020/20200622-dscn-2020-06-core-reference-data-d2-3-pdf) web page on 17/11/2022.",
+      "uses" : {
+      },
+      "https://simplifier.net/resolve?scope=fhir.r4.ukcore.stu3.currentbuild@0.0.6-pre-release&canonical=https://fhir.hl7.org.uk/ValueSet/UKCore-PersonMaritalStatusCode" : "UK Core Person Marital Status Code"
     },
     {
       "url" : "https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-treatment-function",

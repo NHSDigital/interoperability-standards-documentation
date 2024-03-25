@@ -1,50 +1,61 @@
 NHSEnglandInteroperabilitySkunkworks : Validation Results
 =========================================
 
-err = 72, warn = 83, info = 44
+err = 84, warn = 97, info = 69
 IG Publisher Version: 1.6.3
-Generated Fri Mar 22 16:22:44 GMT 2024. FHIR version 4.0.1 for uk.nhs.england.administration#0.0.1 (canonical = https://fhir.nhs.uk/England)
+Generated Mon Mar 25 12:22:29 GMT 2024. FHIR version 4.0.1 for uk.nhs.england.administration#0.0.1 (canonical = https://fhir.nhs.uk/England)
  Build Errors : 5 / 23 / 0
  C:\Development\NHSEngland\interoperability-standards-discovery\fsh-generated\resources\CapabilityStatement-BookingProvider : 1 / 0 / 1
  C:\Development\NHSEngland\interoperability-standards-discovery\fsh-generated\resources\CapabilityStatement-IHE.PCF.consentAuthorizationServer : 1 / 0 / 1
  C:\Development\NHSEngland\interoperability-standards-discovery\fsh-generated\resources\CapabilityStatement-NHS-England-APIM-Provider : 1 / 0 / 1
  C:\Development\NHSEngland\interoperability-standards-discovery\fsh-generated\resources\CapabilityStatement-UKCoreAccessPatientIndexProvider : 1 / 0 / 5
+ C:\Development\NHSEngland\interoperability-standards-discovery\fsh-generated\resources\CodeSystem-FGM-ConsentPurpose : 1 / 0 / 1
+ C:\Development\NHSEngland\interoperability-standards-discovery\fsh-generated\resources\CodeSystem-FlagProxyRole : 1 / 0 / 1
+ C:\Development\NHSEngland\interoperability-standards-discovery\fsh-generated\resources\CodeSystem-PatientFlagCategory : 1 / 0 / 1
  C:\Development\NHSEngland\interoperability-standards-discovery\fsh-generated\resources\ImplementationGuide-uk.nhs.england.administration : 1 / 0 / 1
  C:\Development\NHSEngland\interoperability-standards-discovery\fsh-generated\resources\RelatedPerson-RelatedPerson-NHS-91000000009 : 1 / 0 / 1
  C:\Development\NHSEngland\interoperability-standards-discovery\fsh-generated\resources\StructureDefinition-Appointment : 1 / 1 / 1
  C:\Development\NHSEngland\interoperability-standards-discovery\fsh-generated\resources\StructureDefinition-AppointmentResponse : 1 / 1 / 1
- C:\Development\NHSEngland\interoperability-standards-discovery\fsh-generated\resources\StructureDefinition-Consent : 1 / 1 / 1
+ C:\Development\NHSEngland\interoperability-standards-discovery\fsh-generated\resources\StructureDefinition-ConsentNationalProxy : 1 / 1 / 1
  C:\Development\NHSEngland\interoperability-standards-discovery\fsh-generated\resources\StructureDefinition-DocumentReference : 1 / 1 / 1
  C:\Development\NHSEngland\interoperability-standards-discovery\fsh-generated\resources\StructureDefinition-Encounter : 1 / 0 / 1
  C:\Development\NHSEngland\interoperability-standards-discovery\fsh-generated\resources\StructureDefinition-Endpoint : 1 / 1 / 1
+ C:\Development\NHSEngland\interoperability-standards-discovery\fsh-generated\resources\StructureDefinition-Extension-ConsentCreateSummary : 1 / 1 / 1
+ C:\Development\NHSEngland\interoperability-standards-discovery\fsh-generated\resources\StructureDefinition-Extension-ConsentRemoveSummary : 1 / 1 / 1
+ C:\Development\NHSEngland\interoperability-standards-discovery\fsh-generated\resources\StructureDefinition-FlagConsent : 1 / 1 / 1
+ C:\Development\NHSEngland\interoperability-standards-discovery\fsh-generated\resources\StructureDefinition-FlagProvenance : 1 / 1 / 1
  C:\Development\NHSEngland\interoperability-standards-discovery\fsh-generated\resources\StructureDefinition-HealthcareService : 1 / 1 / 1
  C:\Development\NHSEngland\interoperability-standards-discovery\fsh-generated\resources\StructureDefinition-IHEPCF-Basic-Consent : 1 / 1 / 3
  C:\Development\NHSEngland\interoperability-standards-discovery\fsh-generated\resources\StructureDefinition-Observation : 1 / 1 / 1
  C:\Development\NHSEngland\interoperability-standards-discovery\fsh-generated\resources\StructureDefinition-Organization : 1 / 1 / 5
  C:\Development\NHSEngland\interoperability-standards-discovery\fsh-generated\resources\StructureDefinition-OrganizationAffiliation : 1 / 1 / 1
  C:\Development\NHSEngland\interoperability-standards-discovery\fsh-generated\resources\StructureDefinition-PatientHL7v2 : 1 / 0 / 1
- C:\Development\NHSEngland\interoperability-standards-discovery\fsh-generated\resources\StructureDefinition-PatientPDS : 1 / 0 / 1
- C:\Development\NHSEngland\interoperability-standards-discovery\fsh-generated\resources\StructureDefinition-PatientPDSNHSNumberAllocation : 1 / 1 / 1
+ C:\Development\NHSEngland\interoperability-standards-discovery\fsh-generated\resources\StructureDefinition-PatientPDS : 1 / 0 / 10
+ C:\Development\NHSEngland\interoperability-standards-discovery\fsh-generated\resources\StructureDefinition-PatientPDSNHSNumberAllocation : 1 / 1 / 10
  C:\Development\NHSEngland\interoperability-standards-discovery\fsh-generated\resources\StructureDefinition-Practitioner : 1 / 1 / 1
  C:\Development\NHSEngland\interoperability-standards-discovery\fsh-generated\resources\StructureDefinition-PractitionerRole : 1 / 1 / 1
- C:\Development\NHSEngland\interoperability-standards-discovery\fsh-generated\resources\StructureDefinition-RelatedPerson : 1 / 0 / 1
+ C:\Development\NHSEngland\interoperability-standards-discovery\fsh-generated\resources\StructureDefinition-RelatedPerson : 1 / 0 / 5
  C:\Development\NHSEngland\interoperability-standards-discovery\fsh-generated\resources\StructureDefinition-Schedule : 1 / 1 / 1
  C:\Development\NHSEngland\interoperability-standards-discovery\fsh-generated\resources\StructureDefinition-ServiceRequest : 1 / 1 / 1
  C:\Development\NHSEngland\interoperability-standards-discovery\fsh-generated\resources\StructureDefinition-Slot : 1 / 1 / 1
+ C:\Development\NHSEngland\interoperability-standards-discovery\fsh-generated\resources\ValueSet-FlagConsentPurpose : 1 / 0 / 1
+ C:\Development\NHSEngland\interoperability-standards-discovery\fsh-generated\resources\ValueSet-FlagProvenanceRole : 1 / 4 / 1
+ C:\Development\NHSEngland\interoperability-standards-discovery\fsh-generated\resources\ValueSet-FlagProxyRole : 1 / 0 / 1
+ C:\Development\NHSEngland\interoperability-standards-discovery\fsh-generated\resources\ValueSet-PatientFlagCategory : 1 / 0 / 1
  C:\Development\NHSEngland\interoperability-standards-discovery\input\examples\Bundle-ex-EventNotification : 2 / 1 / 5
- C:\Development\NHSEngland\interoperability-standards-discovery\input\examples\Bundle-ex-PMIRBundleCreate : 4 / 5 / 7
+ C:\Development\NHSEngland\interoperability-standards-discovery\input\examples\Bundle-ex-PMIRBundleCreate : 5 / 5 / 6
  C:\Development\NHSEngland\interoperability-standards-discovery\input\examples\Bundle-ex-ResourcePublish : 2 / 1 / 4
  C:\Development\NHSEngland\interoperability-standards-discovery\input\examples\Bundle-ex-subscription : 2 / 1 / 1
  C:\Development\NHSEngland\interoperability-standards-discovery\input\examples\Encounter-Outpatient-Francesca-Smith : 3 / 1 / 1
  C:\Development\NHSEngland\interoperability-standards-discovery\input\examples\NHSDataModelAndDictionary-treatment-function : 1 / 3 / 1
  C:\Development\NHSEngland\interoperability-standards-discovery\input\examples\NHSDigital-CareSettingType : 1 / 3 / 1
- C:\Development\NHSEngland\interoperability-standards-discovery\input\examples\Patient-Donald-Smith : 0 / 0 / 1
- C:\Development\NHSEngland\interoperability-standards-discovery\input\examples\Patient-Donald-Smith-LeedsTeaching : 0 / 0 / 1
- C:\Development\NHSEngland\interoperability-standards-discovery\input\examples\Patient-Donald-Smith-NHSEngland : 2 / 0 / 1
- C:\Development\NHSEngland\interoperability-standards-discovery\input\examples\Patient-NHS-3333333333-Fredrica-Smith : 1 / 1 / 2
- C:\Development\NHSEngland\interoperability-standards-discovery\input\examples\Patient-NHS-9459304130-Jane-Smith : 1 / 0 / 1
- C:\Development\NHSEngland\interoperability-standards-discovery\input\examples\Patient-NHS-9912003814-Michael-SMITHIES : 0 / 0 / 1
- C:\Development\NHSEngland\interoperability-standards-discovery\input\examples\Patient-PDS-NHS-9000000017-Jayne-Smith : 4 / 1 / 8
+ C:\Development\NHSEngland\interoperability-standards-discovery\input\examples\Patient-Donald-Smith : 0 / 1 / 1
+ C:\Development\NHSEngland\interoperability-standards-discovery\input\examples\Patient-Donald-Smith-LeedsTeaching : 0 / 1 / 1
+ C:\Development\NHSEngland\interoperability-standards-discovery\input\examples\Patient-Donald-Smith-NHSEngland : 0 / 1 / 1
+ C:\Development\NHSEngland\interoperability-standards-discovery\input\examples\Patient-NHS-3333333333-Fredrica-Smith : 2 / 1 / 1
+ C:\Development\NHSEngland\interoperability-standards-discovery\input\examples\Patient-NHS-9459304130-Jane-Smith : 0 / 1 / 1
+ C:\Development\NHSEngland\interoperability-standards-discovery\input\examples\Patient-NHS-9912003814-Michael-SMITHIES : 0 / 1 / 1
+ C:\Development\NHSEngland\interoperability-standards-discovery\input\examples\Patient-PDS-NHS-9000000017-Jayne-Smith : 4 / 1 / 13
  C:\Development\NHSEngland\interoperability-standards-discovery\input\examples\Questionnaire-Proxy-Access-Request : 3 / 0 / 10
  C:\Development\NHSEngland\interoperability-standards-discovery\input\examples\RelatedPerson-HL7v2-Francesca-Smith : 2 / 0 / 1
  C:\Development\NHSEngland\interoperability-standards-discovery\input\examples\RelatedPerson-NHS-9449304130-Jane-Smith : 2 / 0 / 1
@@ -52,8 +63,8 @@ Generated Fri Mar 22 16:22:44 GMT 2024. FHIR version 4.0.1 for uk.nhs.england.ad
  C:\Development\NHSEngland\interoperability-standards-discovery\input\examples\Subscription-ex-Encounter-Subscription : 4 / 0 / 1
  C:\Development\NHSEngland\interoperability-standards-discovery\input\history\h1 : 1 / 1 / 2
  C:\Development\NHSEngland\interoperability-standards-discovery\input\resources\Questionnaire.Permission.R4 : 1 / 23 / 10
- C:\Development\NHSEngland\interoperability-standards-discovery\input\resources\StructureDefinition-Patient : 1 / 0 / 1
  C:\Development\NHSEngland\interoperability-standards-discovery\input\resources\UKCore-Organization : 3 / 1 / 1
+ C:\Development\NHSEngland\interoperability-standards-discovery\input\resources\UKCore-Patient : 3 / 1 / 1
  C:\Development\NHSEngland\interoperability-standards-discovery\input\resources\UKCore-RelatedPerson : 3 / 1 / 1
 </table>
 == n/a ==
@@ -97,6 +108,12 @@ INFORMATION: CapabilityStatement/UKCoreAccessPatientIndexProvider: CapabilitySta
 INFORMATION: CapabilityStatement/UKCoreAccessPatientIndexProvider: CapabilityStatement.rest[0].resource[0].extension[2].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: CapabilityStatement/UKCoreAccessPatientIndexProvider: CapabilityStatement.rest[0].resource[0].extension[3].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: CapabilityStatement/UKCoreAccessPatientIndexProvider: CapabilityStatement.rest[0].resource[0].extension[4].extension[0]: This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination|4.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
+== fsh-generated\resources\CodeSystem-FGM-ConsentPurpose.json ==
+ERROR: CodeSystem/FGM-ConsentPurpose: CodeSystem.jurisdiction[0].coding[0].code: Unknown code 'GB-ENG' in the CodeSystem 'urn:iso:std:iso:3166' version '2018'
+== fsh-generated\resources\CodeSystem-FlagProxyRole.json ==
+ERROR: CodeSystem/FlagProxyRole: CodeSystem.jurisdiction[0].coding[0].code: Unknown code 'GB-ENG' in the CodeSystem 'urn:iso:std:iso:3166' version '2018'
+== fsh-generated\resources\CodeSystem-PatientFlagCategory.json ==
+ERROR: CodeSystem/PatientFlagCategory: CodeSystem.jurisdiction[0].coding[0].code: Unknown code 'GB-ENG' in the CodeSystem 'urn:iso:std:iso:3166' version '2018'
 == fsh-generated\resources\ImplementationGuide-uk.nhs.england.administration.json ==
 ERROR: ImplementationGuide/uk.nhs.england.administration: ImplementationGuide.jurisdiction[0].coding[0].code: Unknown code 'GB-ENG' in the CodeSystem 'urn:iso:std:iso:3166' version '2018'
 == fsh-generated\resources\RelatedPerson-RelatedPerson-NHS-91000000009.json ==
@@ -107,9 +124,9 @@ WARNING: StructureDefinition.where(url = 'https://fhir.nhs.uk/England/StructureD
 == fsh-generated\resources\StructureDefinition-AppointmentResponse.json ==
 ERROR: StructureDefinition/AppointmentResponse: StructureDefinition.jurisdiction[0].coding[0].code: Unknown code 'GB-ENG' in the CodeSystem 'urn:iso:std:iso:3166' version '2018'
 WARNING: StructureDefinition.where(url = 'https://fhir.nhs.uk/England/StructureDefinition/AppointmentResponse'): The Implementation Guide contains no examples for this profile
-== fsh-generated\resources\StructureDefinition-Consent.json ==
-ERROR: StructureDefinition/Consent: StructureDefinition.jurisdiction[0].coding[0].code: Unknown code 'GB-ENG' in the CodeSystem 'urn:iso:std:iso:3166' version '2018'
-WARNING: StructureDefinition.where(url = 'https://fhir.nhs.uk/England/StructureDefinition/Consent'): The Implementation Guide contains no examples for this profile
+== fsh-generated\resources\StructureDefinition-ConsentNationalProxy.json ==
+ERROR: StructureDefinition/ConsentNationalProxy: StructureDefinition.jurisdiction[0].coding[0].code: Unknown code 'GB-ENG' in the CodeSystem 'urn:iso:std:iso:3166' version '2018'
+WARNING: StructureDefinition.where(url = 'https://fhir.nhs.uk/England/StructureDefinition/ConsentNationalProxy'): The Implementation Guide contains no examples for this profile
 == fsh-generated\resources\StructureDefinition-DocumentReference.json ==
 ERROR: StructureDefinition/DocumentReference: StructureDefinition.jurisdiction[0].coding[0].code: Unknown code 'GB-ENG' in the CodeSystem 'urn:iso:std:iso:3166' version '2018'
 WARNING: StructureDefinition.where(url = 'https://fhir.nhs.uk/England/StructureDefinition/DocumentReference'): The Implementation Guide contains no examples for this profile
@@ -118,6 +135,18 @@ ERROR: StructureDefinition/Encounter: StructureDefinition.jurisdiction[0].coding
 == fsh-generated\resources\StructureDefinition-Endpoint.json ==
 ERROR: StructureDefinition/Endpoint: StructureDefinition.jurisdiction[0].coding[0].code: Unknown code 'GB-ENG' in the CodeSystem 'urn:iso:std:iso:3166' version '2018'
 WARNING: StructureDefinition.where(url = 'https://fhir.nhs.uk/England/StructureDefinition/Endpoint'): The Implementation Guide contains no examples for this profile
+== fsh-generated\resources\StructureDefinition-Extension-ConsentCreateSummary.json ==
+ERROR: StructureDefinition/Extension-ConsentCreateSummary: StructureDefinition.jurisdiction[0].coding[0].code: Unknown code 'GB-ENG' in the CodeSystem 'urn:iso:std:iso:3166' version '2018'
+WARNING: StructureDefinition.where(url = 'https://fhir.nhs.uk/England/StructureDefinition/Extension-ConsentCreateSummary'): The Implementation Guide contains no examples for this extension
+== fsh-generated\resources\StructureDefinition-Extension-ConsentRemoveSummary.json ==
+ERROR: StructureDefinition/Extension-ConsentRemoveSummary: StructureDefinition.jurisdiction[0].coding[0].code: Unknown code 'GB-ENG' in the CodeSystem 'urn:iso:std:iso:3166' version '2018'
+WARNING: StructureDefinition.where(url = 'https://fhir.nhs.uk/England/StructureDefinition/Extension-ConsentRemoveSummary'): The Implementation Guide contains no examples for this extension
+== fsh-generated\resources\StructureDefinition-FlagConsent.json ==
+ERROR: StructureDefinition/FlagConsent: StructureDefinition.jurisdiction[0].coding[0].code: Unknown code 'GB-ENG' in the CodeSystem 'urn:iso:std:iso:3166' version '2018'
+WARNING: StructureDefinition.where(url = 'https://fhir.nhs.uk/England/StructureDefinition/FlagConsent'): The Implementation Guide contains no examples for this profile
+== fsh-generated\resources\StructureDefinition-FlagProvenance.json ==
+ERROR: StructureDefinition/FlagProvenance: StructureDefinition.jurisdiction[0].coding[0].code: Unknown code 'GB-ENG' in the CodeSystem 'urn:iso:std:iso:3166' version '2018'
+WARNING: StructureDefinition.where(url = 'https://fhir.nhs.uk/England/StructureDefinition/FlagProvenance'): The Implementation Guide contains no examples for this profile
 == fsh-generated\resources\StructureDefinition-HealthcareService.json ==
 ERROR: StructureDefinition/HealthcareService: StructureDefinition.jurisdiction[0].coding[0].code: Unknown code 'GB-ENG' in the CodeSystem 'urn:iso:std:iso:3166' version '2018'
 WARNING: StructureDefinition.where(url = 'https://fhir.nhs.uk/England/StructureDefinition/HealthcareService'): The Implementation Guide contains no examples for this profile
@@ -143,8 +172,26 @@ WARNING: StructureDefinition.where(url = 'https://fhir.nhs.uk/England/StructureD
 ERROR: StructureDefinition/PatientHL7v2: StructureDefinition.jurisdiction[0].coding[0].code: Unknown code 'GB-ENG' in the CodeSystem 'urn:iso:std:iso:3166' version '2018'
 == fsh-generated\resources\StructureDefinition-PatientPDS.json ==
 ERROR: StructureDefinition/PatientPDS: StructureDefinition.jurisdiction[0].coding[0].code: Unknown code 'GB-ENG' in the CodeSystem 'urn:iso:std:iso:3166' version '2018'
+INFORMATION: StructureDefinition/PatientPDS: StructureDefinition.snapshot.element[39].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/PatientPDS: StructureDefinition.snapshot.element[54].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/PatientPDS: StructureDefinition.snapshot.element[79].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/PatientPDS: StructureDefinition.snapshot.element[102].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/PatientPDS: StructureDefinition.snapshot.element[117].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/PatientPDS: StructureDefinition.snapshot.element[120].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/PatientPDS: StructureDefinition.snapshot.element[154].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/PatientPDS: StructureDefinition.snapshot.element[169].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/PatientPDS: StructureDefinition.snapshot.element[188].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 == fsh-generated\resources\StructureDefinition-PatientPDSNHSNumberAllocation.json ==
 ERROR: StructureDefinition/PatientPDSNHSNumberAllocation: StructureDefinition.jurisdiction[0].coding[0].code: Unknown code 'GB-ENG' in the CodeSystem 'urn:iso:std:iso:3166' version '2018'
+INFORMATION: StructureDefinition/PatientPDSNHSNumberAllocation: StructureDefinition.snapshot.element[39].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/PatientPDSNHSNumberAllocation: StructureDefinition.snapshot.element[54].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/PatientPDSNHSNumberAllocation: StructureDefinition.snapshot.element[79].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/PatientPDSNHSNumberAllocation: StructureDefinition.snapshot.element[102].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/PatientPDSNHSNumberAllocation: StructureDefinition.snapshot.element[117].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/PatientPDSNHSNumberAllocation: StructureDefinition.snapshot.element[120].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/PatientPDSNHSNumberAllocation: StructureDefinition.snapshot.element[154].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/PatientPDSNHSNumberAllocation: StructureDefinition.snapshot.element[169].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/PatientPDSNHSNumberAllocation: StructureDefinition.snapshot.element[188].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 WARNING: StructureDefinition.where(url = 'https://fhir.nhs.uk/England/StructureDefinition/PatientPDSNHSNumberAllocation'): The Implementation Guide contains no examples for this profile
 == fsh-generated\resources\StructureDefinition-Practitioner.json ==
 ERROR: StructureDefinition/Practitioner: StructureDefinition.jurisdiction[0].coding[0].code: Unknown code 'GB-ENG' in the CodeSystem 'urn:iso:std:iso:3166' version '2018'
@@ -154,6 +201,10 @@ ERROR: StructureDefinition/PractitionerRole: StructureDefinition.jurisdiction[0]
 WARNING: StructureDefinition.where(url = 'https://fhir.nhs.uk/England/StructureDefinition/PractitionerRole'): The Implementation Guide contains no examples for this profile
 == fsh-generated\resources\StructureDefinition-RelatedPerson.json ==
 ERROR: StructureDefinition/RelatedPerson: StructureDefinition.jurisdiction[0].coding[0].code: Unknown code 'GB-ENG' in the CodeSystem 'urn:iso:std:iso:3166' version '2018'
+INFORMATION: StructureDefinition/RelatedPerson: StructureDefinition.snapshot.element[18].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/RelatedPerson: StructureDefinition.snapshot.element[33].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/RelatedPerson: StructureDefinition.snapshot.element[49].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+INFORMATION: StructureDefinition/RelatedPerson: StructureDefinition.snapshot.element[54].mapping[2].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 == fsh-generated\resources\StructureDefinition-Schedule.json ==
 ERROR: StructureDefinition/Schedule: StructureDefinition.jurisdiction[0].coding[0].code: Unknown code 'GB-ENG' in the CodeSystem 'urn:iso:std:iso:3166' version '2018'
 WARNING: StructureDefinition.where(url = 'https://fhir.nhs.uk/England/StructureDefinition/Schedule'): The Implementation Guide contains no examples for this profile
@@ -163,6 +214,18 @@ WARNING: StructureDefinition.where(url = 'https://fhir.nhs.uk/England/StructureD
 == fsh-generated\resources\StructureDefinition-Slot.json ==
 ERROR: StructureDefinition/Slot: StructureDefinition.jurisdiction[0].coding[0].code: Unknown code 'GB-ENG' in the CodeSystem 'urn:iso:std:iso:3166' version '2018'
 WARNING: StructureDefinition.where(url = 'https://fhir.nhs.uk/England/StructureDefinition/Slot'): The Implementation Guide contains no examples for this profile
+== fsh-generated\resources\ValueSet-FlagConsentPurpose.json ==
+ERROR: ValueSet/FlagConsentPurpose: ValueSet.jurisdiction[0].coding[0].code: Unknown code 'GB-ENG' in the CodeSystem 'urn:iso:std:iso:3166' version '2018'
+== fsh-generated\resources\ValueSet-FlagProvenanceRole.json ==
+ERROR: ValueSet/FlagProvenanceRole: ValueSet.jurisdiction[0].coding[0].code: Unknown code 'GB-ENG' in the CodeSystem 'urn:iso:std:iso:3166' version '2018'
+WARNING: ValueSet/FlagProvenanceRole: ValueSet.compose.include[0]: Unknown System 'https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1' specified, so Concepts and Filters can't be checked (Details: A definition for CodeSystem 'https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1' could not be found, so the code cannot be validated)
+WARNING: ValueSet/FlagProvenanceRole: ValueSet.compose.include[1]: There are multiple different potential matches for the url 'http://terminology.hl7.org/CodeSystem/contractsignertypecodes'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer. Using version '0.1.0', found versions: 0.1.0, 4.0.1
+WARNING: ValueSet/FlagProvenanceRole: ValueSet.compose.include[6]: There are multiple different potential matches for the url 'http://dicom.nema.org/resources/ontology/DCM'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer. Using version '01', found versions: 01, 3.0.1
+WARNING: ValueSet.where(id = 'FlagProvenanceRole'): Error from http://tx.fhir.org/r4: Unable to provide support for code system https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1
+== fsh-generated\resources\ValueSet-FlagProxyRole.json ==
+ERROR: ValueSet/FlagProxyRole: ValueSet.jurisdiction[0].coding[0].code: Unknown code 'GB-ENG' in the CodeSystem 'urn:iso:std:iso:3166' version '2018'
+== fsh-generated\resources\ValueSet-PatientFlagCategory.json ==
+ERROR: ValueSet/PatientFlagCategory: ValueSet.jurisdiction[0].coding[0].code: Unknown code 'GB-ENG' in the CodeSystem 'urn:iso:std:iso:3166' version '2018'
 == input\examples\Bundle-ex-EventNotification.json ==
 ERROR: Bundle.entry[1].resource.participant[0].individual.identifier: The property identifier must be an Object, not an Array (at Bundle.entry[1].resource.participant[0].individual.identifier)
 INFORMATION: Bundle/ex-EventNotification: Bundle.entry[1].resource/*Encounter/outpatient-fredrica-smith*/.serviceType: Reference to draft CodeSystem https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-treatment-function|0.0.1
@@ -173,7 +236,7 @@ ERROR: Bundle/ex-PMIRBundleCreate: Bundle.entry[0].resource/*MessageHeader/ex-me
 WARNING: Bundle/ex-PMIRBundleCreate: Bundle.entry[0].resource/*MessageHeader/ex-messageheader-create*/.meta.profile[0]: Profile reference 'https://profiles.ihe.net/ITI/PMIR/StructureDefinition/IHE.PMIR.MessageHeader' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
 WARNING: Bundle/ex-PMIRBundleCreate: Bundle.entry[1].resource/*Bundle/ex-bundle-history-create*/.entry[0].resource/*Patient/HL7v2-NHS-3333333333-Fredrica-Smith*/.extension[2].value.ofType(CodeableConcept).coding[0]: A definition for CodeSystem 'https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-religious-affiliation' could not be found, so the code cannot be validated
 WARNING: Bundle/ex-PMIRBundleCreate: Bundle.entry[1].resource/*Bundle/ex-bundle-history-create*/.entry[0].resource/*Patient/HL7v2-NHS-3333333333-Fredrica-Smith*/: Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)
-INFORMATION: Bundle/ex-PMIRBundleCreate: Bundle.entry[1].resource/*Bundle/ex-bundle-history-create*/.entry[0].resource/*Patient/HL7v2-NHS-3333333333-Fredrica-Smith*/.extension[0]: This element does not match any known slice defined in the profile https://fhir.nhs.uk/England/StructureDefinition/PatientHL7v2|0.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
+ERROR: Bundle/ex-PMIRBundleCreate: Bundle.entry[1].resource/*Bundle/ex-bundle-history-create*/.entry[0].resource/*Patient/HL7v2-NHS-3333333333-Fredrica-Smith*/.identifier[0]: Patient.identifier:nhsNumber.assigner: minimum required = 1, but only found 0 (from https://fhir.nhs.uk/England/StructureDefinition/PatientHL7v2|0.0.1)
 ERROR: Bundle/ex-PMIRBundleCreate: Bundle.entry[1].resource/*Bundle/ex-bundle-history-create*/.entry[0].resource/*Patient/HL7v2-NHS-3333333333-Fredrica-Smith*/.identifier[0]: Patient.identifier.assigner: minimum required = 1, but only found 0 (from https://fhir.nhs.uk/England/StructureDefinition/PatientHL7v2|0.0.1)
 WARNING: Bundle/ex-PMIRBundleCreate: Bundle.entry[1].resource/*Bundle/ex-bundle-history-create*/.meta.profile[0]: Profile reference 'https://profiles.ihe.net/ITI/PMIR/StructureDefinition/IHE.PMIR.Bundle.History' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
 INFORMATION: Bundle/ex-PMIRBundleCreate: Bundle: Can't find 'urn:ihe:iti:pmir:2019:patient-feed' in the bundle (Bundle.entry[0].resource.event[x])
@@ -205,18 +268,25 @@ WARNING: ValueSet/NHSDigital-CareSettingType: ValueSet: Published value sets SHO
 WARNING: Resource: This resource should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 WARNING: ValueSet.where(id = 'NHSDigital-CareSettingType'): Error from http://tx.fhir.org/r4: Unable to provide support for code system https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-treatment-function version 1.2.1
 == input\examples\Patient-Donald-Smith.json ==
+WARNING: Patient/donald-with-chi-number-and-mrn: Patient.meta.profile[0]: Profile reference 'https://fhir.nhs.uk/England/StructureDefinition/Patient' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
 == input\examples\Patient-Donald-Smith-LeedsTeaching.json ==
+WARNING: Patient/donald-with-chi-number-mrn-and-nhs-number: Patient.meta.profile[0]: Profile reference 'https://fhir.nhs.uk/England/StructureDefinition/Patient' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
 == input\examples\Patient-Donald-Smith-NHSEngland.json ==
-ERROR: Patient/donald-with-nhs-number: Patient.identifier[1]: Patient.identifier.system: minimum required = 1, but only found 0 (from https://fhir.nhs.uk/England/StructureDefinition/Patient|0.0.1)
-ERROR: Patient/donald-with-nhs-number: Patient.identifier[1]: Patient.identifier.value: minimum required = 1, but only found 0 (from https://fhir.nhs.uk/England/StructureDefinition/Patient|0.0.1)
+WARNING: Patient/donald-with-nhs-number: Patient.meta.profile[0]: Profile reference 'https://fhir.nhs.uk/England/StructureDefinition/Patient' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
 == input\examples\Patient-NHS-3333333333-Fredrica-Smith.json ==
-INFORMATION: Patient/HL7v2-NHS-3333333333-Fredrica-Smith: Patient.extension[0]: This element does not match any known slice defined in the profile https://fhir.nhs.uk/England/StructureDefinition/PatientHL7v2|0.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
 WARNING: Patient/HL7v2-NHS-3333333333-Fredrica-Smith: Patient.extension[2].value.ofType(CodeableConcept).coding[0]: A definition for CodeSystem 'https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-religious-affiliation' could not be found, so the code cannot be validated
+ERROR: Patient/HL7v2-NHS-3333333333-Fredrica-Smith: Patient.identifier[0]: Patient.identifier:nhsNumber.assigner: minimum required = 1, but only found 0 (from https://fhir.nhs.uk/England/StructureDefinition/PatientHL7v2|0.0.1)
 ERROR: Patient/HL7v2-NHS-3333333333-Fredrica-Smith: Patient.identifier[0]: Patient.identifier.assigner: minimum required = 1, but only found 0 (from https://fhir.nhs.uk/England/StructureDefinition/PatientHL7v2|0.0.1)
 == input\examples\Patient-NHS-9459304130-Jane-Smith.json ==
-ERROR: Patient/Patient-NHS-9459304130-Jane-Smith: Patient: Patient.gender: minimum required = 1, but only found 0 (from https://fhir.nhs.uk/England/StructureDefinition/Patient|0.0.1)
+WARNING: Patient/Patient-NHS-9459304130-Jane-Smith: Patient.meta.profile[0]: Profile reference 'https://fhir.nhs.uk/England/StructureDefinition/Patient' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
 == input\examples\Patient-NHS-9912003814-Michael-SMITHIES.json ==
+WARNING: Patient/Patient-NHS-9912003814-Michael-SMITHIES: Patient.meta.profile[0]: Profile reference 'https://fhir.nhs.uk/England/StructureDefinition/Patient' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
 == input\examples\Patient-PDS-NHS-9000000017-Jayne-Smith.json ==
+INFORMATION: Patient/Patient-PDS-NHS-9000000017-Jayne-Smith: Patient.extension[0]: This element does not match any known slice defined in the profile https://fhir.nhs.uk/England/StructureDefinition/PatientPDS|0.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Patient/Patient-PDS-NHS-9000000017-Jayne-Smith: Patient.extension[1]: This element does not match any known slice defined in the profile https://fhir.nhs.uk/England/StructureDefinition/PatientPDS|0.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Patient/Patient-PDS-NHS-9000000017-Jayne-Smith: Patient.extension[2]: This element does not match any known slice defined in the profile https://fhir.nhs.uk/England/StructureDefinition/PatientPDS|0.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Patient/Patient-PDS-NHS-9000000017-Jayne-Smith: Patient.extension[4]: This element does not match any known slice defined in the profile https://fhir.nhs.uk/England/StructureDefinition/PatientPDS|0.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Patient/Patient-PDS-NHS-9000000017-Jayne-Smith: Patient.extension[7]: This element does not match any known slice defined in the profile https://fhir.nhs.uk/England/StructureDefinition/PatientPDS|0.0.1 (this may not be a problem, but you should check that it's not intended to match a slice)
 ERROR: Patient/Patient-PDS-NHS-9000000017-Jayne-Smith: Patient: Patient.communication: minimum required = 1, but only found 0 (from https://fhir.nhs.uk/England/StructureDefinition/PatientPDS|0.0.1)
 INFORMATION: Patient/Patient-PDS-NHS-9000000017-Jayne-Smith: Patient.extension[0]: The extension https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NominatedPharmacy|2.0.0 is retired
 INFORMATION: Patient/Patient-PDS-NHS-9000000017-Jayne-Smith: Patient.extension[1]: The extension https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-PreferredDispenserOrganization|2.0.0 is retired
@@ -299,13 +369,16 @@ WARNING: Questionnaire/permission: Questionnaire.item[5].item[2].item[1].answerO
 WARNING: Questionnaire/permission: Questionnaire.item[5].item[2].item[1].answerOption[4].value.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
 INFORMATION: Questionnaire/permission: Questionnaire.item[5].item[2].item[2].extension[0].value.ofType(CodeableConcept): Reference to draft CodeSystem http://hl7.org/fhir/questionnaire-item-control|4.0.1
 WARNING: Questionnaire/permission: Questionnaire.item[5].item[2].item[2].code[0]: A code with no system has no defined meaning, and it cannot be validated. A system should be provided
-== input\resources\StructureDefinition-Patient.json ==
-ERROR: StructureDefinition/Patient: StructureDefinition.jurisdiction[0].coding[0].code: Unknown code 'GB-ENG' in the CodeSystem 'urn:iso:std:iso:3166' version '2018'
 == input\resources\UKCore-Organization.json ==
 ERROR: StructureDefinition.where(url = 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization'): Conformance resource C:\Development\NHSEngland\interoperability-standards-discovery\input\resources\UKCore-Organization.json - the canonical URL (https://fhir.nhs.uk/England/StructureDefinition/UKCore-Organization) does not match the URL (https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization)
 ERROR: StructureDefinition/UKCore-Organization: StructureDefinition.jurisdiction[0].coding[0].code: Unknown code 'GB-ENG' in the CodeSystem 'urn:iso:std:iso:3166' version '2018'
 WARNING: StructureDefinition.where(url = 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization'): The Implementation Guide contains no examples for this profile
 ERROR: C:\Development\NHSEngland\interoperability-standards-discovery\input\resources\UKCore-Organization: URL Mismatch https://fhir.nhs.uk/England/StructureDefinition/UKCore-Organization vs https://fhir.hl7.org.uk/StructureDefinition/UKCore-Organization
+== input\resources\UKCore-Patient.json ==
+ERROR: StructureDefinition.where(url = 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient'): Conformance resource C:\Development\NHSEngland\interoperability-standards-discovery\input\resources\UKCore-Patient.json - the canonical URL (https://fhir.nhs.uk/England/StructureDefinition/UKCore-Patient) does not match the URL (https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient)
+ERROR: StructureDefinition/UKCore-Patient: StructureDefinition.jurisdiction[0].coding[0].code: Unknown code 'GB-ENG' in the CodeSystem 'urn:iso:std:iso:3166' version '2018'
+WARNING: StructureDefinition.where(url = 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient'): The Implementation Guide contains no examples for this profile
+ERROR: C:\Development\NHSEngland\interoperability-standards-discovery\input\resources\UKCore-Patient: URL Mismatch https://fhir.nhs.uk/England/StructureDefinition/UKCore-Patient vs https://fhir.hl7.org.uk/StructureDefinition/UKCore-Patient
 == input\resources\UKCore-RelatedPerson.json ==
 ERROR: StructureDefinition.where(url = 'https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson'): Conformance resource C:\Development\NHSEngland\interoperability-standards-discovery\input\resources\UKCore-RelatedPerson.json - the canonical URL (https://fhir.nhs.uk/England/StructureDefinition/UKCore-RelatedPerson) does not match the URL (https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson)
 ERROR: StructureDefinition/UKCore-RelatedPerson: StructureDefinition.jurisdiction[0].coding[0].code: Unknown code 'GB-ENG' in the CodeSystem 'urn:iso:std:iso:3166' version '2018'

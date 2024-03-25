@@ -1,0 +1,61 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.nhs.uk/England/ValueSet/FlagProxyRole> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "FlagProxyRole"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set expansion contains 4 concepts.</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---fhir.nhs.uk-England-CodeSystem-FlagProxyRole-001\"> </a>  <a href=\"CodeSystem-FlagProxyRole.html#FlagProxyRole-001\">001</a></td><td>https://fhir.nhs.uk/England/CodeSystem/FlagProxyRole</td><td>Patient consent</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---fhir.nhs.uk-England-CodeSystem-FlagProxyRole-002\"> </a>  <a href=\"CodeSystem-FlagProxyRole.html#FlagProxyRole-002\">002</a></td><td>https://fhir.nhs.uk/England/CodeSystem/FlagProxyRole</td><td>Best interest decision made on behalf of the patient (Mental Capacity Act 2005)</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---fhir.nhs.uk-England-CodeSystem-FlagProxyRole-003\"> </a>  <a href=\"CodeSystem-FlagProxyRole.html#FlagProxyRole-003\">003</a></td><td>https://fhir.nhs.uk/England/CodeSystem/FlagProxyRole</td><td>Lasting power of attorney for health and welfare, or court-appointed deputy, or equivalent</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---fhir.nhs.uk-England-CodeSystem-FlagProxyRole-004\"> </a>  <a href=\"CodeSystem-FlagProxyRole.html#FlagProxyRole-004\">004</a></td><td>https://fhir.nhs.uk/England/CodeSystem/FlagProxyRole</td><td>Other legitimate patient representative - parental responsibility</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://fhir.nhs.uk/England/ValueSet/FlagProxyRole"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.1"] ; # 
+  fhir:name [ fhir:v "FlagProxyRole"] ; # 
+  fhir:title [ fhir:v "NHSE Flag Proxy Role"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-02-14"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "NHS England"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "NHS England" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.england.nhs.uk/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "A ValueSet to identify the type/role of the proxy involved."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "GB-ENG" ] ;
+       fhir:display [ fhir:v "England" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "Copyright © 2024+ NHS England Licensed under the Apache License, Version 2.0 (the \\\"License\\\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at  http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \\\"AS IS\\\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License. HL7® FHIR® standard Copyright © 2011+ HL7 The HL7® FHIR® standard is used under the FHIR license. You may obtain a copy of the FHIR license at  https://www.hl7.org/fhir/license.html."] ; # 
+  fhir:expansion [
+     fhir:timestamp [ fhir:v "2024-02-14T12:00:00+00:00"^^xsd:dateTime ] ;
+     fhir:contains ( [
+       fhir:system [ fhir:v "https://fhir.nhs.uk/England/CodeSystem/FlagProxyRole"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ] ;
+       fhir:display [ fhir:v "Patient consent" ]
+     ] [
+       fhir:system [ fhir:v "https://fhir.nhs.uk/England/CodeSystem/FlagProxyRole"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "002" ] ;
+       fhir:display [ fhir:v "Best interest decision made on behalf of the patient (Mental Capacity Act 2005)" ]
+     ] [
+       fhir:system [ fhir:v "https://fhir.nhs.uk/England/CodeSystem/FlagProxyRole"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "003" ] ;
+       fhir:display [ fhir:v "Lasting power of attorney for health and welfare, or court-appointed deputy, or equivalent" ]
+     ] [
+       fhir:system [ fhir:v "https://fhir.nhs.uk/England/CodeSystem/FlagProxyRole"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "004" ] ;
+       fhir:display [ fhir:v "Other legitimate patient representative - parental responsibility" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+
