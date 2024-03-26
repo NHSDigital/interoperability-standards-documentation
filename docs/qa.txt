@@ -3,8 +3,8 @@ NHSEnglandInteroperabilitySkunkworks : Validation Results
 
 err = 116, warn = 105, info = 73
 IG Publisher Version: 1.6.3
-Generated Tue Mar 26 14:32:50 GMT 2024. FHIR version 4.0.1 for uk.nhs.england.administration#0.0.1 (canonical = https://fhir.nhs.uk/England)
- Build Errors : 7 / 29 / 0
+Generated Tue Mar 26 14:55:42 GMT 2024. FHIR version 4.0.1 for uk.nhs.england.administration#0.0.1 (canonical = https://fhir.nhs.uk/England)
+ Build Errors : 6 / 29 / 0
  C:\Development\NHSEngland\interoperability-standards-discovery\fsh-generated\resources\CapabilityStatement-BookingProvider : 1 / 0 / 1
  C:\Development\NHSEngland\interoperability-standards-discovery\fsh-generated\resources\CapabilityStatement-IHE.PCF.consentAuthorizationServer : 1 / 0 / 1
  C:\Development\NHSEngland\interoperability-standards-discovery\fsh-generated\resources\CapabilityStatement-NHS-England-APIM-Provider : 1 / 0 / 1
@@ -107,7 +107,6 @@ ERROR: C:\Development\NHSEngland\interoperability-standards-discovery\output\Con
 ERROR: C:\Development\NHSEngland\interoperability-standards-discovery\output\Subscription-Bundle-ex-subscription.html#/html/body/div/div/div/div/div/div/div/p/a at Line 286, column 370: The link 'StructureDefinition-IHE.PMIR.Subscription.html' for "IHE Patient Master Identity Registry Subscription" cannot be resolved
 ERROR: C:\Development\NHSEngland\interoperability-standards-discovery\output\index.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 429, column 2611: The link 'http://hl7.org/fhir/R4B' for "R4B" cannot be resolved
 ERROR: C:\Development\NHSEngland\interoperability-standards-discovery\output\interoperability-standards.html#/html/body/div/div/div/div/div/p/a at Line 472, column 9: The link 'documents.html' for "Document Interoperability" cannot be resolved
-ERROR: C:\Development\NHSEngland\interoperability-standards-discovery\output\national-proxy-service.html#/html/body/div/div/div/div/div/ol/li/a at Line 299, column 41: The link 'Consent-national-proxy-confirmed.html' for "Example Consent active" cannot be resolved
 ERROR: C:\Development\NHSEngland\interoperability-standards-discovery\output\personal-demographics-service.html#/html/body/div/div/div/div/div/ol/li/p/a at Line 406, column 34: The link 'CapabilityStatement-Personal-Demographics-Service-Provider.html' for "CapabilityStatement-Personal-Demographics-Service-Provider" cannot be resolved
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide

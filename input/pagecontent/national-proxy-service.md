@@ -27,13 +27,13 @@ Add link to OAS Spec when published
 <figure>{% include national-proxy-service-activity-create-relationship.svg %}</figure>
 <br clear="all"/>
 
-1. The national proxy request is captured in a form which is based on [Proxy Access Request](Questionnaire-Questionnaire-Proxy-Access-Request.html), this is submitted to the National Proxy Service (example [completed national proxy request form](QuestionnaireResponse-questionnaireresponse-national-proxy-request.html))
-2. The National Proxy Service uses this form to create FHIR Consent resource which follows [National Proxy FHIR Consent profile](StructureDefinition-ConsentNationalProxy.html), example [proposed Consent](Consent-consent-national-proxy-proposed.html)
+1. The national proxy request is captured in a form which is based on [Proxy Access Request](Questionnaire-Questionnaire-Proxy-Access-Request.html), this is submitted to the National Proxy Service (example [completed national proxy request form](QuestionnaireResponse-QuestionnaireResponse-national-proxy-request.html))
+2. The National Proxy Service uses this form to create FHIR Consent resource which follows [National Proxy FHIR Consent profile](StructureDefinition-ConsentNationalProxy.html), example [proposed Consent](Consent-Consent-national-proxy-proposed.html)
 3. The National Proxy Service reviews this consent
 
-    a. If further verification is required. The patients GP will be asked to verify the Consent via a [Task](StructureDefinition-Task.html), example [Task national proxy request verification](Task-task-request-consent-verification.html)
+    a. If further verification is required. The patients GP will be asked to verify the Consent via a [Task](StructureDefinition-Task.html), example [Task national proxy request verification](Task-Task-request-consent-verification.html)
 
-4. The consent is now either active [Example Consent active](Consent-national-proxy-confirmed.html) or rejected [Example Consent rejected](Consent-consent-national-proxy-rejected.html)
+4. The consent is now either active [Example Consent active](Consent-Consent-national-proxy-confirmed.html) or rejected [Example Consent rejected](Consent-Consent-national-proxy-rejected.html)
 
 
 ### View a relationship

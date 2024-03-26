@@ -36,7 +36,7 @@ AL1|1|DA|Z88.5|5||199807011755
 ZU8|U|1|Yes|
 ```
 
-In FHIR this can convert into a FHIR Message following [HL7 Version 2 to FHIR](https://build.fhir.org/ig/HL7/v2-to-fhir/message_maps.html) but we recommend converting this for FHIR RESTful and so 
+In FHIR this can convert into a FHIR Message following [HL7 Version 2 to FHIR](https://build.fhir.org/ig/HL7/v2-to-fhir/message_maps.html), but we recommend converting this for FHIR RESTful and so 
 
 - PID + PD1 converts to a [FHIR Patient](Patient-Patient-HL7v2-NHS-3333333333-Fredrica-Smith.html). 
   - FHIR Profile (NHS England) based on previous HL7 v2 PID/PD1 profiles [Patient HL7 v2](StructureDefinition-PatientHL7v2.html)

@@ -103,7 +103,7 @@ With this proposal this interaction would change to the following:
 <figure>{% include patient-encounter-management-sequence-notifications-chft-cpis-new.svg %}</figure>
 <br clear="all"/>
 
-The previous implementation is mostly unchanged but it is joined by the **Patient Encounter Management** notification which goes to Social Services Safeguarding. This includes more encounter metadata:
+The previous implementation is mostly unchanged, but it is joined by the **Patient Encounter Management** notification which goes to Social Services Safeguarding. This includes more encounter metadata:
 
 - type of encounter
 - encounter service code
@@ -129,7 +129,7 @@ E.g.
 1. The Patient Encounter Consumer (e.g. Social Services Safeguarding) creates a [Subscription for patient with a NHS Number of 3333333333](Subscription-Subscription-ex-Encounter.html)
 2. The Patient Encounter Source (e.g. an Acute NHS Trust) sends a [Resource Publish Transaction Bundle](Bundle-Bundle-ex-ResourcePublish.html) to the Subscription Manager.
 3. The Subscription Manager checks for matching subscriptions
-4. For each matching Subscription it sends an [Resource Notify Event Notifiction](Bundle-Bundle-ex-EventNotification.html)
+4. For each matching Subscription it sends a [Resource Notify Event Notifiction](Bundle-Bundle-ex-EventNotification.html)
 
 The example above used a `REST-Hook` Subscription, the [Subscriptions R5 Backport](https://hl7.org/fhir/uv/subscriptions-backport/STU1.1/channels.html) has several channels including:
 
