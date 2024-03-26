@@ -1,9 +1,9 @@
 NHSEnglandInteroperabilitySkunkworks : Validation Results
 =========================================
 
-err = 122, warn = 105, info = 73
+err = 116, warn = 105, info = 73
 IG Publisher Version: 1.6.3
-Generated Tue Mar 26 12:40:09 GMT 2024. FHIR version 4.0.1 for uk.nhs.england.administration#0.0.1 (canonical = https://fhir.nhs.uk/England)
+Generated Tue Mar 26 14:32:50 GMT 2024. FHIR version 4.0.1 for uk.nhs.england.administration#0.0.1 (canonical = https://fhir.nhs.uk/England)
  Build Errors : 7 / 29 / 0
  C:\Development\NHSEngland\interoperability-standards-discovery\fsh-generated\resources\CapabilityStatement-BookingProvider : 1 / 0 / 1
  C:\Development\NHSEngland\interoperability-standards-discovery\fsh-generated\resources\CapabilityStatement-IHE.PCF.consentAuthorizationServer : 1 / 0 / 1
@@ -48,9 +48,9 @@ Generated Tue Mar 26 12:40:09 GMT 2024. FHIR version 4.0.1 for uk.nhs.england.ad
  C:\Development\NHSEngland\interoperability-standards-discovery\input\examples\Bundle-ex-ResourcePublish : 2 / 1 / 4
  C:\Development\NHSEngland\interoperability-standards-discovery\input\examples\Bundle-ex-subscription : 2 / 1 / 1
  C:\Development\NHSEngland\interoperability-standards-discovery\input\examples\Consent-CPISConsentExample1 : 5 / 2 / 3
- C:\Development\NHSEngland\interoperability-standards-discovery\input\examples\Consent-national-proxy-confirmed : 6 / 2 / 2
- C:\Development\NHSEngland\interoperability-standards-discovery\input\examples\Consent-national-proxy-deny : 6 / 2 / 2
- C:\Development\NHSEngland\interoperability-standards-discovery\input\examples\Consent-national-proxy-proposed : 6 / 2 / 2
+ C:\Development\NHSEngland\interoperability-standards-discovery\input\examples\Consent-national-proxy-confirmed : 4 / 2 / 2
+ C:\Development\NHSEngland\interoperability-standards-discovery\input\examples\Consent-national-proxy-deny : 4 / 2 / 2
+ C:\Development\NHSEngland\interoperability-standards-discovery\input\examples\Consent-national-proxy-proposed : 4 / 2 / 2
  C:\Development\NHSEngland\interoperability-standards-discovery\input\examples\Encounter-Outpatient-Francesca-Smith : 3 / 1 / 1
  C:\Development\NHSEngland\interoperability-standards-discovery\input\examples\Patient-Donald-Smith : 0 / 1 / 1
  C:\Development\NHSEngland\interoperability-standards-discovery\input\examples\Patient-Donald-Smith-LeedsTeaching : 0 / 1 / 1
@@ -277,8 +277,6 @@ ERROR: Consent.text.div: Hyperlink 'Patient-PatientExample1.html' at 'div/p/a' f
 == input\examples\Consent-national-proxy-confirmed.json ==
 ERROR: Consent/Consent-national-proxy-confirmed: Consent.category[0]: Slicing cannot be evaluated: Could not match discriminator (1) for slice [coding.system] in profile Consent.category:information-access - the discriminator https://fhir.nhs.uk/England/StructureDefinition/ConsentNationalProxy|0.0.1 does not have fixed value, binding or existence assertions
 INFORMATION: Consent/Consent-national-proxy-confirmed: Consent: Consent.category:information-access: Found 0 matches, but unable to check minimum required (Consent.category) due to lack of slicing validation (from https://fhir.nhs.uk/England/StructureDefinition/ConsentNationalProxy|0.0.1)
-ERROR: Consent/Consent-national-proxy-confirmed: Consent: Consent.source[x]: minimum required = 1, but only found 0 (from https://fhir.nhs.uk/England/StructureDefinition/ConsentNationalProxy|0.0.1)
-ERROR: Consent/Consent-national-proxy-confirmed: Consent: Slice 'Consent.source[x]:sourceReference': a matching slice is required, but not found (from https://fhir.nhs.uk/England/StructureDefinition/ConsentNationalProxy|0.0.1). Note that other slices are allowed in addition to this required slice
 ERROR: Consent/Consent-national-proxy-confirmed: Consent.patient: Unable to resolve resource with reference 'Patient/Patient_NHS_9459304130'
 ERROR: Consent/Consent-national-proxy-confirmed: Consent.performer[0]: Unable to resolve resource with reference 'RelatedPerson/RelatedPerson-NHS-9449304130-Jane-Smith'
 WARNING: Consent/Consent-national-proxy-confirmed: Consent.policyRule: No code provided, and a code should be provided from the value set 'Consent PolicyRule Codes' (http://hl7.org/fhir/ValueSet/consent-policy|4.0.1)
@@ -287,8 +285,6 @@ ERROR: Consent/Consent-national-proxy-confirmed: Consent.provision.actor[0].refe
 == input\examples\Consent-national-proxy-deny.json ==
 ERROR: Consent/Consent-national-proxy-rejected: Consent.category[0]: Slicing cannot be evaluated: Could not match discriminator (1) for slice [coding.system] in profile Consent.category:information-access - the discriminator https://fhir.nhs.uk/England/StructureDefinition/ConsentNationalProxy|0.0.1 does not have fixed value, binding or existence assertions
 INFORMATION: Consent/Consent-national-proxy-rejected: Consent: Consent.category:information-access: Found 0 matches, but unable to check minimum required (Consent.category) due to lack of slicing validation (from https://fhir.nhs.uk/England/StructureDefinition/ConsentNationalProxy|0.0.1)
-ERROR: Consent/Consent-national-proxy-rejected: Consent: Consent.source[x]: minimum required = 1, but only found 0 (from https://fhir.nhs.uk/England/StructureDefinition/ConsentNationalProxy|0.0.1)
-ERROR: Consent/Consent-national-proxy-rejected: Consent: Slice 'Consent.source[x]:sourceReference': a matching slice is required, but not found (from https://fhir.nhs.uk/England/StructureDefinition/ConsentNationalProxy|0.0.1). Note that other slices are allowed in addition to this required slice
 ERROR: Consent/Consent-national-proxy-rejected: Consent.patient: Unable to resolve resource with reference 'Patient/Patient_NHS_9459304130'
 ERROR: Consent/Consent-national-proxy-rejected: Consent.performer[0]: Unable to resolve resource with reference 'RelatedPerson/RelatedPerson-NHS-9449304130-Jane-Smith'
 WARNING: Consent/Consent-national-proxy-rejected: Consent.policyRule: No code provided, and a code should be provided from the value set 'Consent PolicyRule Codes' (http://hl7.org/fhir/ValueSet/consent-policy|4.0.1)
@@ -297,8 +293,6 @@ ERROR: Consent/Consent-national-proxy-rejected: Consent.provision.actor[0].refer
 == input\examples\Consent-national-proxy-proposed.json ==
 ERROR: Consent/Consent-national-proxy-proposed: Consent.category[0]: Slicing cannot be evaluated: Could not match discriminator (1) for slice [coding.system] in profile Consent.category:information-access - the discriminator https://fhir.nhs.uk/England/StructureDefinition/ConsentNationalProxy|0.0.1 does not have fixed value, binding or existence assertions
 INFORMATION: Consent/Consent-national-proxy-proposed: Consent: Consent.category:information-access: Found 0 matches, but unable to check minimum required (Consent.category) due to lack of slicing validation (from https://fhir.nhs.uk/England/StructureDefinition/ConsentNationalProxy|0.0.1)
-ERROR: Consent/Consent-national-proxy-proposed: Consent: Consent.source[x]: minimum required = 1, but only found 0 (from https://fhir.nhs.uk/England/StructureDefinition/ConsentNationalProxy|0.0.1)
-ERROR: Consent/Consent-national-proxy-proposed: Consent: Slice 'Consent.source[x]:sourceReference': a matching slice is required, but not found (from https://fhir.nhs.uk/England/StructureDefinition/ConsentNationalProxy|0.0.1). Note that other slices are allowed in addition to this required slice
 ERROR: Consent/Consent-national-proxy-proposed: Consent.patient: Unable to resolve resource with reference 'Patient/Patient_NHS_9459304130'
 ERROR: Consent/Consent-national-proxy-proposed: Consent.performer[0]: Unable to resolve resource with reference 'RelatedPerson/RelatedPerson-NHS-9449304130-Jane-Smith'
 WARNING: Consent/Consent-national-proxy-proposed: Consent.policyRule: No code provided, and a code should be provided from the value set 'Consent PolicyRule Codes' (http://hl7.org/fhir/ValueSet/consent-policy|4.0.1)

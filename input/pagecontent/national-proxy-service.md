@@ -61,6 +61,6 @@ GET /RelatedPerson?identifier=https://fhir.nhs.uk/Id/nhs-number|9000000017
 Search for RelatedPerson's that are related to a patient with a NHS Number of 9459304130
 
 ```
-GET /RelatedPerson?identifier=https://fhir.nhs.uk/Id/nhs-number|9459304130
+GET /RelatedPerson?patient:identifier=https://fhir.nhs.uk/Id/nhs-number|9459304130
 ```
 
