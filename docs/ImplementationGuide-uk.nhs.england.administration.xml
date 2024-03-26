@@ -10,7 +10,7 @@
   <name value="NHSEnglandInteroperabilitySkunkworks"/>
   <title value="Health Administration Interoperability Standards - Skunkworks"/>
   <status value="draft"/>
-  <date value="2024-03-26T07:33:19+00:00"/>
+  <date value="2024-03-26T12:37:11+00:00"/>
   <publisher value="NHS England"/>
   <contact>
     <name value="NHS England"/>
@@ -504,13 +504,83 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/Bundle-ex-EventNotification"/>
+      </reference>
+      <name value="Bundle-ex-EventNotification"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/Bundle-ex-PMIRBundleCreate"/>
+      </reference>
+      <name value="Bundle-ex-PMIRBundleCreate"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/Bundle-ex-ResourcePublish"/>
+      </reference>
+      <name value="Bundle-ex-ResourcePublish"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Subscription"/>
+      </extension>
+      <reference>
+        <reference value="Subscription/Bundle-ex-subscription"/>
+      </reference>
+      <name value="Bundle-ex-subscription"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Consent"/>
       </extension>
       <reference>
-        <reference value="Consent/CPISConsentExample1"/>
+        <reference value="Consent/Consent-CPISConsentExample1"/>
       </reference>
-      <name value="CPISConsentExample1"/>
+      <name value="Consent-CPISConsentExample1"/>
       <exampleCanonical value="https://fhir.nhs.uk/England/StructureDefinition/FlagConsent"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Consent"/>
+      </extension>
+      <reference>
+        <reference value="Consent/Consent-national-proxy-confirmed"/>
+      </reference>
+      <name value="Consent-national-proxy-confirmed"/>
+      <exampleCanonical value="https://fhir.nhs.uk/England/StructureDefinition/ConsentNationalProxy"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Consent"/>
+      </extension>
+      <reference>
+        <reference value="Consent/Consent-national-proxy-proposed"/>
+      </reference>
+      <name value="Consent-national-proxy-proposed"/>
+      <exampleCanonical value="https://fhir.nhs.uk/England/StructureDefinition/ConsentNationalProxy"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Consent"/>
+      </extension>
+      <reference>
+        <reference value="Consent/Consent-national-proxy-rejected"/>
+      </reference>
+      <name value="Consent-national-proxy-rejected"/>
+      <exampleCanonical value="https://fhir.nhs.uk/England/StructureDefinition/ConsentNationalProxy"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -525,36 +595,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Patient"/>
-      </extension>
-      <reference>
-        <reference value="Patient/donald-with-chi-number-and-mrn"/>
-      </reference>
-      <name value="donald-with-chi-number-and-mrn"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Patient"/>
-      </extension>
-      <reference>
-        <reference value="Patient/donald-with-chi-number-mrn-and-nhs-number"/>
-      </reference>
-      <name value="donald-with-chi-number-mrn-and-nhs-number"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Patient"/>
-      </extension>
-      <reference>
-        <reference value="Patient/donald-with-nhs-number"/>
-      </reference>
-      <name value="donald-with-nhs-number"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -566,6 +606,16 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/Encounter-outpatient-fredrica-smith"/>
+      </reference>
+      <name value="Encounter-outpatient-fredrica-smith"/>
+      <exampleCanonical value="https://fhir.nhs.uk/England/StructureDefinition/Encounter"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -574,56 +624,6 @@
       <name value="Endpoint"/>
       <description value="NHS England Endpoint"/>
       <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Subscription"/>
-      </extension>
-      <reference>
-        <reference value="Subscription/ex-Encounter-Subscription"/>
-      </reference>
-      <name value="ex-Encounter-Subscription"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Bundle"/>
-      </extension>
-      <reference>
-        <reference value="Bundle/ex-EventNotification"/>
-      </reference>
-      <name value="ex-EventNotification"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Bundle"/>
-      </extension>
-      <reference>
-        <reference value="Bundle/ex-PMIRBundleCreate"/>
-      </reference>
-      <name value="ex-PMIRBundleCreate"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Bundle"/>
-      </extension>
-      <reference>
-        <reference value="Bundle/ex-ResourcePublish"/>
-      </reference>
-      <name value="ex-ResourcePublish"/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Subscription"/>
-      </extension>
-      <reference>
-        <reference value="Subscription/ex-subscription"/>
-      </reference>
-      <name value="ex-subscription"/>
-      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -674,61 +674,11 @@
         <valueString value="RelatedPerson"/>
       </extension>
       <reference>
-        <reference value="RelatedPerson/HL7v2-Francesca-Smith"/>
-      </reference>
-      <name value="HL7v2-Francesca-Smith"/>
-      <exampleCanonical value="https://fhir.nhs.uk/England/StructureDefinition/RelatedPerson"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Patient"/>
-      </extension>
-      <reference>
-        <reference value="Patient/HL7v2-NHS-3333333333-Fredrica-Smith"/>
-      </reference>
-      <name value="HL7v2-NHS-3333333333-Fredrica-Smith"/>
-      <exampleCanonical value="https://fhir.nhs.uk/England/StructureDefinition/PatientHL7v2"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="RelatedPerson"/>
-      </extension>
-      <reference>
         <reference value="RelatedPerson/RelatedPerson-NHS-91000000009"/>
       </reference>
       <name value="National Proxy Related Person Mother Example"/>
       <description value="An example of a Related Person who is the mother of the subject/patient (Jane Smith)."/>
       <exampleCanonical value="https://fhir.nhs.uk/England/StructureDefinition/RelatedPerson"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Consent"/>
-      </extension>
-      <reference>
-        <reference value="Consent/national-proxy-confirmed"/>
-      </reference>
-      <name value="national-proxy-confirmed"/>
-      <exampleCanonical value="https://fhir.nhs.uk/England/StructureDefinition/ConsentNationalProxy"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Consent"/>
-      </extension>
-      <reference>
-        <reference value="Consent/national-proxy-proposed"/>
-      </reference>
-      <name value="national-proxy-proposed"/>
-      <exampleCanonical value="https://fhir.nhs.uk/England/StructureDefinition/ConsentNationalProxy"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Consent"/>
-      </extension>
-      <reference>
-        <reference value="Consent/national-proxy-rejected"/>
-      </reference>
-      <name value="national-proxy-rejected"/>
-      <exampleCanonical value="https://fhir.nhs.uk/England/StructureDefinition/ConsentNationalProxy"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -783,7 +733,7 @@
       </reference>
       <name value="NHSDataModelandDictionaryTreatmentFunction"/>
       <description value="A CodeSystem to identify the specialty of the care professional or team. FHIR Version of NHS Data Dictionary Main Specialty Code and HSCIC ITK HL7v2 Table ZU012"/>
-      <exampleBoolean value="true"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -794,7 +744,7 @@
       </reference>
       <name value="NHSDigital-CareSettingType"/>
       <description value="Cross Hl7 UK version of UKCore CareSetting"/>
-      <exampleBoolean value="true"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -919,13 +869,43 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Encounter"/>
+        <valueString value="Patient"/>
       </extension>
       <reference>
-        <reference value="Encounter/outpatient-fredrica-smith"/>
+        <reference value="Patient/Patient-donald-with-chi-number-and-mrn"/>
       </reference>
-      <name value="outpatient-fredrica-smith"/>
-      <exampleCanonical value="https://fhir.nhs.uk/England/StructureDefinition/Encounter"/>
+      <name value="Patient-donald-with-chi-number-and-mrn"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/Patient-donald-with-chi-number-mrn-and-nhs-number"/>
+      </reference>
+      <name value="Patient-donald-with-chi-number-mrn-and-nhs-number"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/Patient-donald-with-nhs-number"/>
+      </reference>
+      <name value="Patient-donald-with-nhs-number"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/Patient-HL7v2-NHS-3333333333-Fredrica-Smith"/>
+      </reference>
+      <name value="Patient-HL7v2-NHS-3333333333-Fredrica-Smith"/>
+      <exampleCanonical value="https://fhir.nhs.uk/England/StructureDefinition/PatientHL7v2"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1036,6 +1016,16 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="QuestionnaireResponse"/>
+      </extension>
+      <reference>
+        <reference value="QuestionnaireResponse/QuestionnaireResponse-national-proxy-request"/>
+      </reference>
+      <name value="QuestionnaireResponse-national-proxy-request"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -1050,9 +1040,19 @@
         <valueString value="RelatedPerson"/>
       </extension>
       <reference>
-        <reference value="RelatedPerson/RelatedPerson-NHS-9449304130-Jane-Smith"/>
+        <reference value="RelatedPerson/RelatedPerson-HL7v2-Francesca-Smith"/>
       </reference>
-      <name value="RelatedPerson-NHS-9449304130-Jane-Smith"/>
+      <name value="RelatedPerson-HL7v2-Francesca-Smith"/>
+      <exampleCanonical value="https://fhir.nhs.uk/England/StructureDefinition/RelatedPerson"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="RelatedPerson"/>
+      </extension>
+      <reference>
+        <reference value="RelatedPerson/RelatedPerson-NHS-9000000017-Jane-Smith"/>
+      </reference>
+      <name value="RelatedPerson-NHS-9000000017-Jane-Smith"/>
       <exampleCanonical value="https://fhir.nhs.uk/England/StructureDefinition/RelatedPerson"/>
     </resource>
     <resource>
@@ -1064,16 +1064,6 @@
       </reference>
       <name value="RelatedPerson-PDS-NHS-90000000009-Jane-Smith"/>
       <exampleCanonical value="https://fhir.nhs.uk/England/StructureDefinition/RelatedPerson"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Task"/>
-      </extension>
-      <reference>
-        <reference value="Task/request-consent-verification"/>
-      </reference>
-      <name value="request-consent-verification"/>
-      <exampleCanonical value="https://fhir.nhs.uk/England/StructureDefinition/Task"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1110,6 +1100,26 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Subscription"/>
+      </extension>
+      <reference>
+        <reference value="Subscription/Subscription-ex-Encounter"/>
+      </reference>
+      <name value="Subscription-ex-Encounter"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Subscription"/>
+      </extension>
+      <reference>
+        <reference value="Subscription/Subscription-ex-Patient"/>
+      </reference>
+      <name value="Subscription-ex-Patient"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -1118,6 +1128,16 @@
       <name value="Task"/>
       <description value="NHS England Task"/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Task"/>
+      </extension>
+      <reference>
+        <reference value="Task/Task-request-consent-verification"/>
+      </reference>
+      <name value="Task-request-consent-verification"/>
+      <exampleCanonical value="https://fhir.nhs.uk/England/StructureDefinition/Task"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

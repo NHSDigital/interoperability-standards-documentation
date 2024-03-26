@@ -5,7 +5,7 @@
       "https://fhir.nhs.uk/England/StructureDefinition/Patient"
     ]
   },
-  "id": "donald-with-nhs-number",
+  "id": "Patient-donald-with-nhs-number",
   "identifier": [
     {
       "system": "https://fhir.nhs.uk/Id/nhs-number",

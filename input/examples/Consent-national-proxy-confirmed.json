@@ -1,6 +1,6 @@
 {
   "resourceType": "Consent",
-  "id": "national-proxy-confirmed",
+  "id": "Consent-national-proxy-confirmed",
   "meta": {
     "profile": [
       "https://fhir.nhs.uk/England/StructureDefinition/ConsentNationalProxy"
@@ -39,7 +39,7 @@
       "type": "RelatedPerson",
       "identifier": {
         "system": "https://fhir.nhs.uk/Id/nhs-number",
-        "value": "9449304130"
+        "value": "9000000017"
       }
     },
     {

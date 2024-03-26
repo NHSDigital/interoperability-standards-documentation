@@ -1,0 +1,25 @@
+{
+  "resourceType" : "Subscription",
+  "id" : "Subscription-ex-Patient",
+  "status" : "requested",
+  "end" : "2023-12-31T12:00:00+00:00",
+  "reason" : "Patient Subscription for Patient with NHS Number of 3333333333",
+  "criteria" : "https://fhir.example.nhs.uk/SubscriptionTopic/ex-SubscriptionTopic",
+  "_criteria" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-filter-criteria",
+      "valueString" : "Patient?identifier=https://fhir.nhs.uk/Id/nhs-number|3333333333"
+    }]
+  },
+  "channel" : {
+    "type" : "message",
+    "endpoint" : "https://subscriptions.argo.run/fhir/r4/subscription-hook-df",
+    "payload" : "application/fhir+json",
+    "_payload" : {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-payload-content",
+        "valueCode" : "full-resource"
+      }]
+    }
+  }
+}

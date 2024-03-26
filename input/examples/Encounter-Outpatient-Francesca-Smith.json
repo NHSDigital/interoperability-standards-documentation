@@ -1,6 +1,6 @@
 {
     "resourceType": "Encounter",
-    "id": "outpatient-fredrica-smith",
+    "id": "Encounter-outpatient-fredrica-smith",
     "meta": {
         "profile" : [
             "https://fhir.nhs.uk/England/StructureDefinition/Encounter"

@@ -74,7 +74,7 @@ PR1|56||U19.2^24 hour ambulatory electrocardiography^OPCS4||201011011512|D|1440|
 ZU1||2|C|201011011530||300||||1|||GP|2|201011011624|201011011620|02|Y|0
 ```
 
-HL7 FHIR Encounter conversion [Encounter Outpatient Fredrica Smith](Encounter-outpatient-fredrica-smith.html)
+HL7 FHIR Encounter conversion [Encounter Outpatient Fredrica Smith](Encounter-Encounter-outpatient-fredrica-smith.html)
 
 ### Other Programme Considerations
 
@@ -126,10 +126,10 @@ E.g.
 <figure>{% include patient-encounter-management-sequence-notifications-subscriptions.svg %}</figure>
 <br clear="all"/>
 
-1. The Patient Encounter Consumer (e.g. Social Services Safeguarding) creates a [Subscription for patient with a NHS Number of 3333333333](Subscription-ex-Encounter-Subscription.html)
-2. The Patient Encounter Source (e.g. an Acute NHS Trust) sends a [Resource Publish Transaction Bundle](Bundle-ex-ResourcePublish.html) to the Subscription Manager.
+1. The Patient Encounter Consumer (e.g. Social Services Safeguarding) creates a [Subscription for patient with a NHS Number of 3333333333](Subscription-Subscription-ex-Encounter.html)
+2. The Patient Encounter Source (e.g. an Acute NHS Trust) sends a [Resource Publish Transaction Bundle](Bundle-Bundle-ex-ResourcePublish.html) to the Subscription Manager.
 3. The Subscription Manager checks for matching subscriptions
-4. For each matching Subscription it sends an [Resource Notify Event Notifiction](Bundle-ex-EventNotification.html)
+4. For each matching Subscription it sends an [Resource Notify Event Notifiction](Bundle-Bundle-ex-EventNotification.html)
 
 The example above used a `REST-Hook` Subscription, the [Subscriptions R5 Backport](https://hl7.org/fhir/uv/subscriptions-backport/STU1.1/channels.html) has several channels including:
 

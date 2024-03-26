@@ -5,7 +5,7 @@
       "https://fhir.nhs.uk/England/StructureDefinition/Patient"
     ]
   },
-  "id": "donald-with-chi-number-and-mrn",
+  "id": "Patient-donald-with-chi-number-and-mrn",
   "identifier": [
     {
       "system": "https://fhir.leedsth.nhs.uk/MRN",

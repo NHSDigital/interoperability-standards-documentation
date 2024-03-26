@@ -1,0 +1,95 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.nhs.uk/England/Patient/Patient-HL7v2-NHS-3333333333-Fredrica-Smith> a fhir:Patient ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Patient-HL7v2-NHS-3333333333-Fredrica-Smith"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://fhir.nhs.uk/England/StructureDefinition/PatientHL7v2"^^xsd:anyURI ;
+       fhir:link <https://fhir.nhs.uk/England/StructureDefinition/PatientHL7v2>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Fredrica J Smith </b> female, DoB: 1965-12-13 ( <code>https://fhir.nhs.uk/Id/nhs-number</code>/9459304130)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Known Marital status of Patient\">Marital Status:</td><td colspan=\"3\"><span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}\">Married</span></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail:</td><td colspan=\"3\">29 WEST AVENUE BURYTHORPE MALTON YO32 5TT (HOME)</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Patient Links\">Links:</td><td colspan=\"3\"><ul><li>General Practitioner: <span>: Dr Gregory Townley</span></li><li>General Practitioner: <span>: MALTON GP PRACTICE</span></li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"The nationality of the patient.\">nationality:</td><td colspan=\"3\"><ul><li>code: <span title=\"Codes: {urn:iso:std:iso:3166 DE}\">Germany</span></li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"The registered place of birth of the patient. A sytem may use the address.text if they don't store the birthPlace address in discrete elements.\"><a href=\"http://hl7.org/fhir/R4/extension-patient-birthplace.html\">Birth Place:</a></td><td colspan=\"3\"><ul><li>Berlin </li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"The patient's professed religious affiliations.\"><a href=\"http://hl7.org/fhir/R4/extension-patient-religion.html\">religion:</a></td><td colspan=\"3\"><ul><li><span title=\"Codes: {https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-religious-affiliation C22}\">C22</span></li></ul></td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/patient-birthPlace"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Address ;
+       fhir:city [ fhir:v "Berlin" ]
+     ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "DE" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/patient-nationality"^^xsd:anyURI ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/patient-religion"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-religious-affiliation"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "C22" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://fhir.nhs.uk/Id/nhs-number"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "9459304130" ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:use [ fhir:v "usual" ] ;
+     fhir:family [ fhir:v "Smith" ] ;
+     fhir:given ( [ fhir:v "Fredrica" ] [ fhir:v "J" ] ) ;
+     fhir:prefix ( [ fhir:v "Mrs" ] )
+  ] ) ; # 
+  fhir:gender [ fhir:v "female"] ; # 
+  fhir:birthDate [
+     fhir:v "1965-12-13"^^xsd:date ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/patient-birthTime"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "1965-12-13T12:15:00+00:00"^^xsd:dateTime ]
+     ] )
+  ] ; # 
+  fhir:address ( [
+     fhir:use [ fhir:v "home" ] ;
+     fhir:line ( [ fhir:v "29 WEST AVENUE" ] [ fhir:v "BURYTHORPE" ] ) ;
+     fhir:city [ fhir:v "MALTON" ] ;
+     fhir:district [ fhir:v "NORTH YORKSHIRE" ] ;
+     fhir:postalCode [ fhir:v "YO32 5TT" ]
+  ] ) ; # 
+  fhir:maritalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "M" ]
+     ] )
+  ] ; # 
+  fhir:generalPractitioner ( [
+     fhir:identifier [
+       fhir:system [ fhir:v "https://fhir.hl7.org.uk/Id/gmc-number"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "G5612908" ]
+     ] ;
+     fhir:display [ fhir:v "Dr Gregory Townley" ]
+  ] [
+     fhir:identifier [
+       fhir:system [ fhir:v "https://fhir.nhs.uk/Id/ods-organization-code"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Y06601" ]
+     ] ;
+     fhir:display [ fhir:v "MALTON GP PRACTICE" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

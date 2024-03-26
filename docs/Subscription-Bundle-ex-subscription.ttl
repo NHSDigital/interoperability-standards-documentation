@@ -1,0 +1,35 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.nhs.uk/England/Subscription/Bundle-ex-subscription> a fhir:Subscription ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Bundle-ex-subscription"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://profiles.ihe.net/ITI/PMIR/StructureDefinition/IHE.PMIR.Subscription"^^xsd:anyURI ;
+       fhir:link <https://profiles.ihe.net/ITI/PMIR/StructureDefinition/IHE.PMIR.Subscription>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Subscription</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Subscription \"ex-subscription\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-IHE.PMIR.Subscription.html\">IHE Patient Master Identity Registry Subscription</a></p></div><p><b>status</b>: active</p><p><b>contact</b>: <a href=\"tel:+1-555-555-1212\">+1-555-555-1212</a></p><p><b>reason</b>: To receive Patient changes.</p><p><b>criteria</b>: Patient</p><h3>Channels</h3><table class=\"grid\"><tr><td>-</td><td><b>Type</b></td><td><b>Endpoint</b></td><td><b>Payload</b></td></tr><tr><td>*</td><td>message</td><td><a href=\"http://example.org/pmir-message\">http://example.org/pmir-message</a></td><td>application/fhir+json</td></tr></table></div>"
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:contact ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "+44-555-555-1212" ]
+  ] ) ; # 
+  fhir:reason [ fhir:v "To receive Patient changes."] ; # 
+  fhir:criteria [ fhir:v "Patient"] ; # 
+  fhir:channel [
+     fhir:type [ fhir:v "message" ] ;
+     fhir:endpoint [ fhir:v "http://example.org/pmir-message"^^xsd:anyURI ] ;
+     fhir:payload [ fhir:v "application/fhir+json" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

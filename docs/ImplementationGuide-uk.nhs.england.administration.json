@@ -10,7 +10,7 @@
   "name" : "NHSEnglandInteroperabilitySkunkworks",
   "title" : "Health Administration Interoperability Standards - Skunkworks",
   "status" : "draft",
-  "date" : "2024-03-26T07:33:19+00:00",
+  "date" : "2024-03-26T12:37:11+00:00",
   "publisher" : "NHS England",
   "contact" : [{
     "name" : "NHS England",
@@ -667,13 +667,90 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/Bundle-ex-EventNotification"
+      },
+      "name" : "Bundle-ex-EventNotification",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/Bundle-ex-PMIRBundleCreate"
+      },
+      "name" : "Bundle-ex-PMIRBundleCreate",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/Bundle-ex-ResourcePublish"
+      },
+      "name" : "Bundle-ex-ResourcePublish",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Subscription"
+      }],
+      "reference" : {
+        "reference" : "Subscription/Bundle-ex-subscription"
+      },
+      "name" : "Bundle-ex-subscription",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Consent"
       }],
       "reference" : {
-        "reference" : "Consent/CPISConsentExample1"
+        "reference" : "Consent/Consent-CPISConsentExample1"
       },
-      "name" : "CPISConsentExample1",
+      "name" : "Consent-CPISConsentExample1",
       "exampleCanonical" : "https://fhir.nhs.uk/England/StructureDefinition/FlagConsent"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Consent"
+      }],
+      "reference" : {
+        "reference" : "Consent/Consent-national-proxy-confirmed"
+      },
+      "name" : "Consent-national-proxy-confirmed",
+      "exampleCanonical" : "https://fhir.nhs.uk/England/StructureDefinition/ConsentNationalProxy"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Consent"
+      }],
+      "reference" : {
+        "reference" : "Consent/Consent-national-proxy-proposed"
+      },
+      "name" : "Consent-national-proxy-proposed",
+      "exampleCanonical" : "https://fhir.nhs.uk/England/StructureDefinition/ConsentNationalProxy"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Consent"
+      }],
+      "reference" : {
+        "reference" : "Consent/Consent-national-proxy-rejected"
+      },
+      "name" : "Consent-national-proxy-rejected",
+      "exampleCanonical" : "https://fhir.nhs.uk/England/StructureDefinition/ConsentNationalProxy"
     },
     {
       "extension" : [{
@@ -690,39 +767,6 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Patient"
-      }],
-      "reference" : {
-        "reference" : "Patient/donald-with-chi-number-and-mrn"
-      },
-      "name" : "donald-with-chi-number-and-mrn",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Patient"
-      }],
-      "reference" : {
-        "reference" : "Patient/donald-with-chi-number-mrn-and-nhs-number"
-      },
-      "name" : "donald-with-chi-number-mrn-and-nhs-number",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Patient"
-      }],
-      "reference" : {
-        "reference" : "Patient/donald-with-nhs-number"
-      },
-      "name" : "donald-with-nhs-number",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -735,6 +779,17 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Encounter"
+      }],
+      "reference" : {
+        "reference" : "Encounter/Encounter-outpatient-fredrica-smith"
+      },
+      "name" : "Encounter-outpatient-fredrica-smith",
+      "exampleCanonical" : "https://fhir.nhs.uk/England/StructureDefinition/Encounter"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -743,61 +798,6 @@
       "name" : "Endpoint",
       "description" : "NHS England Endpoint",
       "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Subscription"
-      }],
-      "reference" : {
-        "reference" : "Subscription/ex-Encounter-Subscription"
-      },
-      "name" : "ex-Encounter-Subscription",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Bundle"
-      }],
-      "reference" : {
-        "reference" : "Bundle/ex-EventNotification"
-      },
-      "name" : "ex-EventNotification",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Bundle"
-      }],
-      "reference" : {
-        "reference" : "Bundle/ex-PMIRBundleCreate"
-      },
-      "name" : "ex-PMIRBundleCreate",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Bundle"
-      }],
-      "reference" : {
-        "reference" : "Bundle/ex-ResourcePublish"
-      },
-      "name" : "ex-ResourcePublish",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Subscription"
-      }],
-      "reference" : {
-        "reference" : "Subscription/ex-subscription"
-      },
-      "name" : "ex-subscription",
-      "exampleBoolean" : true
     },
     {
       "extension" : [{
@@ -853,66 +853,11 @@
         "valueString" : "RelatedPerson"
       }],
       "reference" : {
-        "reference" : "RelatedPerson/HL7v2-Francesca-Smith"
-      },
-      "name" : "HL7v2-Francesca-Smith",
-      "exampleCanonical" : "https://fhir.nhs.uk/England/StructureDefinition/RelatedPerson"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Patient"
-      }],
-      "reference" : {
-        "reference" : "Patient/HL7v2-NHS-3333333333-Fredrica-Smith"
-      },
-      "name" : "HL7v2-NHS-3333333333-Fredrica-Smith",
-      "exampleCanonical" : "https://fhir.nhs.uk/England/StructureDefinition/PatientHL7v2"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "RelatedPerson"
-      }],
-      "reference" : {
         "reference" : "RelatedPerson/RelatedPerson-NHS-91000000009"
       },
       "name" : "National Proxy Related Person Mother Example",
       "description" : "An example of a Related Person who is the mother of the subject/patient (Jane Smith).",
       "exampleCanonical" : "https://fhir.nhs.uk/England/StructureDefinition/RelatedPerson"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Consent"
-      }],
-      "reference" : {
-        "reference" : "Consent/national-proxy-confirmed"
-      },
-      "name" : "national-proxy-confirmed",
-      "exampleCanonical" : "https://fhir.nhs.uk/England/StructureDefinition/ConsentNationalProxy"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Consent"
-      }],
-      "reference" : {
-        "reference" : "Consent/national-proxy-proposed"
-      },
-      "name" : "national-proxy-proposed",
-      "exampleCanonical" : "https://fhir.nhs.uk/England/StructureDefinition/ConsentNationalProxy"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Consent"
-      }],
-      "reference" : {
-        "reference" : "Consent/national-proxy-rejected"
-      },
-      "name" : "national-proxy-rejected",
-      "exampleCanonical" : "https://fhir.nhs.uk/England/StructureDefinition/ConsentNationalProxy"
     },
     {
       "extension" : [{
@@ -972,7 +917,7 @@
       },
       "name" : "NHSDataModelandDictionaryTreatmentFunction",
       "description" : "A CodeSystem to identify the specialty of the care professional or team. FHIR Version of NHS Data Dictionary Main Specialty Code and HSCIC ITK HL7v2 Table ZU012",
-      "exampleBoolean" : true
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -984,7 +929,7 @@
       },
       "name" : "NHSDigital-CareSettingType",
       "description" : "Cross Hl7 UK version of UKCore CareSetting",
-      "exampleBoolean" : true
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -1121,13 +1066,46 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Encounter"
+        "valueString" : "Patient"
       }],
       "reference" : {
-        "reference" : "Encounter/outpatient-fredrica-smith"
+        "reference" : "Patient/Patient-donald-with-chi-number-and-mrn"
       },
-      "name" : "outpatient-fredrica-smith",
-      "exampleCanonical" : "https://fhir.nhs.uk/England/StructureDefinition/Encounter"
+      "name" : "Patient-donald-with-chi-number-and-mrn",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/Patient-donald-with-chi-number-mrn-and-nhs-number"
+      },
+      "name" : "Patient-donald-with-chi-number-mrn-and-nhs-number",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/Patient-donald-with-nhs-number"
+      },
+      "name" : "Patient-donald-with-nhs-number",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/Patient-HL7v2-NHS-3333333333-Fredrica-Smith"
+      },
+      "name" : "Patient-HL7v2-NHS-3333333333-Fredrica-Smith",
+      "exampleCanonical" : "https://fhir.nhs.uk/England/StructureDefinition/PatientHL7v2"
     },
     {
       "extension" : [{
@@ -1249,6 +1227,17 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "QuestionnaireResponse"
+      }],
+      "reference" : {
+        "reference" : "QuestionnaireResponse/QuestionnaireResponse-national-proxy-request"
+      },
+      "name" : "QuestionnaireResponse-national-proxy-request",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -1264,9 +1253,20 @@
         "valueString" : "RelatedPerson"
       }],
       "reference" : {
-        "reference" : "RelatedPerson/RelatedPerson-NHS-9449304130-Jane-Smith"
+        "reference" : "RelatedPerson/RelatedPerson-HL7v2-Francesca-Smith"
       },
-      "name" : "RelatedPerson-NHS-9449304130-Jane-Smith",
+      "name" : "RelatedPerson-HL7v2-Francesca-Smith",
+      "exampleCanonical" : "https://fhir.nhs.uk/England/StructureDefinition/RelatedPerson"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/RelatedPerson-NHS-9000000017-Jane-Smith"
+      },
+      "name" : "RelatedPerson-NHS-9000000017-Jane-Smith",
       "exampleCanonical" : "https://fhir.nhs.uk/England/StructureDefinition/RelatedPerson"
     },
     {
@@ -1279,17 +1279,6 @@
       },
       "name" : "RelatedPerson-PDS-NHS-90000000009-Jane-Smith",
       "exampleCanonical" : "https://fhir.nhs.uk/England/StructureDefinition/RelatedPerson"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Task"
-      }],
-      "reference" : {
-        "reference" : "Task/request-consent-verification"
-      },
-      "name" : "request-consent-verification",
-      "exampleCanonical" : "https://fhir.nhs.uk/England/StructureDefinition/Task"
     },
     {
       "extension" : [{
@@ -1330,6 +1319,28 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Subscription"
+      }],
+      "reference" : {
+        "reference" : "Subscription/Subscription-ex-Encounter"
+      },
+      "name" : "Subscription-ex-Encounter",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Subscription"
+      }],
+      "reference" : {
+        "reference" : "Subscription/Subscription-ex-Patient"
+      },
+      "name" : "Subscription-ex-Patient",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -1338,6 +1349,17 @@
       "name" : "Task",
       "description" : "NHS England Task",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Task"
+      }],
+      "reference" : {
+        "reference" : "Task/Task-request-consent-verification"
+      },
+      "name" : "Task-request-consent-verification",
+      "exampleCanonical" : "https://fhir.nhs.uk/England/StructureDefinition/Task"
     },
     {
       "extension" : [{

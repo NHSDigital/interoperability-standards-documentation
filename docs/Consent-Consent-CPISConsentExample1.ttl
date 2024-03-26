@@ -1,0 +1,103 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.nhs.uk/England/Consent/Consent-CPISConsentExample1> a fhir:Consent ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Consent-CPISConsentExample1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://fhir.nhs.uk/England/StructureDefinition/FlagConsent"^^xsd:anyURI ;
+       fhir:link <https://fhir.nhs.uk/England/StructureDefinition/FlagConsent>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Consent</b><a name=\"CPISConsentExample1\"> </a><a name=\"hcCPISConsentExample1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Consent &quot;CPISConsentExample1&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-FlagConsent.html\">NHSE Flag Consent Profile</a></p></div><p><b>Extension for Consent Create Summary</b>: Example of consent create summary extension text</p><p><b>Extension for Consent Remove Summary</b>: Example of consent remove summary extension text</p><p><b>status</b>: active</p><p><b>scope</b>: Privacy Consent <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-consentscope.html\">Consent Scope Codes</a>#patient-privacy)</span></p><p><b>category</b>: Child Protection - Information Sharing Flag <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-PatientFlagCategory.html\">NHSE Patient Flag Category</a>#CP-IS)</span></p><p><b>patient</b>: <a href=\"Patient-PatientExample1.html\">Patient/PatientExample1</a> &quot; MANN&quot;</p><h3>Policies</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Authority</b></td><td><b>Uri</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"https://www.gov.uk/\">https://www.gov.uk/</a></td><td><a href=\"https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/535024/data-security-review.pdf\">https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/535024/data-security-review.pdf</a></td></tr></table><p><b>policyRule</b>: Patient consent <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-FlagProxyRole.html\">NHSE Flag Proxy Role</a>#001)</span></p><h3>Provisions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Purpose</b></td></tr><tr><td style=\"display: none\">*</td><td>CPIS - Consent to record CPIS flags (Details: https://fhir.nhs.uk/England/CodeSystem/CPIS-ConsentPurpose code CPISCONSENT = 'CPIS - Consent to record CPIS flags', stated as 'CPIS - Consent to record CPIS flags')</td></tr></table><hr/><blockquote><p><b>Generated Narrative: Provenance #51a731b3-1c46-47ba-abad-04209bd264e6</b><a name=\"51a731b3-1c46-47ba-abad-04209bd264e6\"> </a><a name=\"hc51a731b3-1c46-47ba-abad-04209bd264e6\"> </a></p><p><b>target</b>: <a href=\"#\">#</a></p><p><b>recorded</b>: Jan 1, 2024, 11:00:00 AM</p><p><b>activity</b>: create <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-v3-DataOperation.html\">DataOperation</a>#CREATE)</span></p><h3>Agents</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Role</b></td><td><b>Who</b></td><td><b>OnBehalfOf</b></td></tr><tr><td style=\"display: none\">*</td><td>General Medical Practitioner <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1\">Care Connect SDS Job Role Name</a>#R0260)</span></td><td><a href=\"https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://sds.spineservices.nhs.uk/STU3/Practitioner/2ee4tr6a9\">https://sds.spineservices.nhs.uk/STU3/Practitioner/2ee4tr6a9</a></td><td><a href=\"https://simplifier.net/resolve?scope=careconnect.stu3.03.00.00@3.1.0&amp;canonical=https://directory.spineservices.nhs.uk/STU3/Organization/a3e5i7\">https://directory.spineservices.nhs.uk/STU3/Organization/a3e5i7</a></td></tr></table></blockquote></div>"
+  ] ; # 
+  fhir:contained ( [
+     a fhir:Provenance ;
+     fhir:id [ fhir:v "51a731b3-1c46-47ba-abad-04209bd264e6" ] ;
+     fhir:target ( [
+       fhir:reference [ fhir:v "#" ]
+     ] ) ;
+     fhir:recorded [ fhir:v "2024-01-01T11:00:00+00:00"^^xsd:dateTime ] ;
+     fhir:activity [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-DataOperation"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "CREATE" ] ;
+         fhir:display [ fhir:v "create" ]
+       ] )
+     ] ;
+     fhir:agent ( [
+       fhir:role ( [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "R0260" ] ;
+           fhir:display [ fhir:v "General Medical Practitioner" ]
+         ] )
+       ] ) ;
+       fhir:who [
+         fhir:link <https://sds.spineservices.nhs.uk/STU3/Practitioner/2ee4tr6a9> ;
+         fhir:reference [ fhir:v "https://sds.spineservices.nhs.uk/STU3/Practitioner/2ee4tr6a9" ]
+       ] ;
+       fhir:onBehalfOf [
+         fhir:link <https://directory.spineservices.nhs.uk/STU3/Organization/a3e5i7> ;
+         fhir:reference [ fhir:v "https://directory.spineservices.nhs.uk/STU3/Organization/a3e5i7" ]
+       ]
+     ] )
+  ] ) ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "https://fhir.nhs.uk/England/StructureDefinition/Extension-ConsentCreateSummary"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Annotation ;
+       fhir:text [ fhir:v "Example of consent create summary extension text" ]
+     ]
+  ] [
+     fhir:url [ fhir:v "https://fhir.nhs.uk/England/StructureDefinition/Extension-ConsentRemoveSummary"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:Annotation ;
+       fhir:text [ fhir:v "Example of consent remove summary extension text" ]
+     ]
+  ] ) ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:scope [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/consentscope"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "patient-privacy" ]
+     ] )
+  ] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://fhir.nhs.uk/England/CodeSystem/PatientFlagCategory"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "CP-IS" ] ;
+       fhir:display [ fhir:v "Child Protection - Information Sharing Flag" ]
+     ] )
+  ] ) ; # 
+  fhir:patient [
+     fhir:link <https://fhir.nhs.uk/England/Patient/PatientExample1> ;
+     fhir:reference [ fhir:v "Patient/PatientExample1" ]
+  ] ; # 
+  fhir:policy ( [
+     fhir:authority [ fhir:v "https://www.gov.uk/"^^xsd:anyURI ] ;
+     fhir:uri [ fhir:v "https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/535024/data-security-review.pdf"^^xsd:anyURI ]
+  ] ) ; # 
+  fhir:policyRule [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://fhir.nhs.uk/England/CodeSystem/FlagProxyRole"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ]
+     ] )
+  ] ; # 
+  fhir:provision [
+     fhir:purpose ( [
+       fhir:system [ fhir:v "https://fhir.nhs.uk/England/CodeSystem/CPIS-ConsentPurpose"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "CPISCONSENT" ] ;
+       fhir:display [ fhir:v "CPIS - Consent to record CPIS flags" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

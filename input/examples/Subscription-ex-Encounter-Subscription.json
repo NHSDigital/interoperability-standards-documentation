@@ -1,6 +1,6 @@
 {
   "resourceType" : "Subscription",
-  "id" : "ex-Encounter-Subscription",
+  "id" : "Subscription-ex-Encounter",
   "status" : "requested",
   "end" : "2023-12-31T12:00:00+00:00",
   "reason" : "Encounter Subscription for Patient with NHS Number of 3333333333",

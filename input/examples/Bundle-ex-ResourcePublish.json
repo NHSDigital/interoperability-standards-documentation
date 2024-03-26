@@ -1,6 +1,6 @@
 {
   "resourceType" : "Bundle",
-  "id" : "ex-ResourcePublish",
+  "id" : "Bundle-ex-ResourcePublish",
   "type" : "transaction",
   "entry" : [
   {

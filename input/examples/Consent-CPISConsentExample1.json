@@ -1,6 +1,6 @@
 {
   "resourceType" : "Consent",
-  "id" : "CPISConsentExample1",
+  "id" : "Consent-CPISConsentExample1",
   "meta" : {
     "profile" : ["https://fhir.nhs.uk/England/StructureDefinition/FlagConsent"]
   },

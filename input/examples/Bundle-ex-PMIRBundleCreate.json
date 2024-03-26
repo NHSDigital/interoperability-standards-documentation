@@ -1,6 +1,6 @@
 {
   "resourceType": "Bundle",
-  "id": "ex-PMIRBundleCreate",
+  "id": "Bundle-ex-PMIRBundleCreate",
   "meta": {
     "profile": [
       "https://profiles.ihe.net/ITI/PMIR/StructureDefinition/IHE.PMIR.Bundle"

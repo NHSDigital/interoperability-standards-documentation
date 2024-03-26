@@ -57,9 +57,9 @@ Although PDS is not IHE PDQm compliant it has followed this pattern. Please see 
 
    a. If Donald is found on the PAS, Donalds demographics record would be updated.
    
-   b. If Donalds is not found, Donald would registered Donald as a Patient on the PAS. They would have allocated a Medical Record Number (MRN) to identify Donald across the trusts computer systems and possibly record his (NHS Scotland) CHI Number. In addition, a Task would be created to obtain a NHS Number for Donald. 
+   b. If Donalds is not found, Donald is registered Donald as a Patient on the PAS. They would have allocated a Medical Record Number (MRN) to identify Donald across the trusts computer systems and possibly record his (NHS Scotland) CHI Number. In addition, a Task would be created to obtain a NHS Number for Donald. 
 
-As HL7 FHIR Donalds record would look like [Patient Donald with CHI Number and MRN](Patient-donald-with-chi-number-and-mrn.html). The updating/creating of this record will generate event notifications to inform other systems of this change, (Leeds Teaching Trust follows <a href="HSCIC ITK HL7 V2 Message Specifications.pdf" target="_blank">NHS England (ADT) ITK HL7 v2 (2.4) Message Specification</a>).
+As HL7 FHIR Donalds record would look like [Patient Donald with CHI Number and MRN](Patient-Patient-donald-with-chi-number-and-mrn.html). The updating/creating of this record will generate event notifications to inform other systems of this change, (Leeds Teaching Trust follows <a href="HSCIC ITK HL7 V2 Message Specifications.pdf" target="_blank">NHS England (ADT) ITK HL7 v2 (2.4) Message Specification</a>).
 
 Leeds Teaching NHS Trust registering Donald with NHS England looks like this: 
 
@@ -71,9 +71,9 @@ Leeds Teaching NHS Trust registering Donald with NHS England looks like this:
 
    a. If Donald is found on PDS, the Leeds Teaching Trust PAS is updated with the NHS Number. Leeds Teaching Trust will likely update the record on PDS with Donalds new address.
    
-   b. If Donald is not found on PDS, a NHS Number allocation request (register Donald for care in NHS England) is sent and the returned NHS Number is used to update Leeds Teaching Trusts PAS. The FHIR Patient record returned from PDS looks something like this  [Patient Donald with NHS Number](Patient-donald-with-nhs-number.html)
+   b. If Donald is not found on PDS, a NHS Number allocation request (register Donald for care in NHS England) is sent and the returned NHS Number is used to update Leeds Teaching Trusts PAS. The FHIR Patient record returned from PDS looks something like this  [Patient Donald with NHS Number](Patient-Patient-donald-with-nhs-number.html)
 
-3. In either case Leeds Teaching Trust need to inform all systems within the trust of the NHS Number. For this they will use the Trust Integration Engine (TIE) which will distribute both HL7 v2 ADT_A31 and/or FHIR Patient updates to the trusts systems. The FHIR Patient could look like this  [Patient Donald with NHS Number, CHI and MRN](Patient-donald-with-chi-number-mrn-and-nhs-number.html). For more details on this see [Patient Identity Management (PIX)](patient-identity-management.html)
+3. In either case Leeds Teaching Trust need to inform all systems within the trust of the NHS Number. For this they will use the Trust Integration Engine (TIE) which will distribute both HL7 v2 ADT_A31 and/or FHIR Patient updates to the trusts systems. The FHIR Patient could look like this  [Patient Donald with NHS Number, CHI and MRN](Patient-Patient-donald-with-chi-number-mrn-and-nhs-number.html). For more details on this see [Patient Identity Management (PIX)](patient-identity-management.html)
 
 
 

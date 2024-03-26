@@ -38,9 +38,9 @@ ZU8|U|1|Yes|
 
 In FHIR this can convert into a FHIR Message following [HL7 Version 2 to FHIR](https://build.fhir.org/ig/HL7/v2-to-fhir/message_maps.html) but we recommend converting this for FHIR RESTful and so 
 
-- PID + PD1 converts to a [FHIR Patient](Patient-HL7v2-NHS-3333333333-Fredrica-Smith.html). 
+- PID + PD1 converts to a [FHIR Patient](Patient-Patient-HL7v2-NHS-3333333333-Fredrica-Smith.html). 
   - FHIR Profile (NHS England) based on previous HL7 v2 PID/PD1 profiles [Patient HL7 v2](StructureDefinition-PatientHL7v2.html)
-- NK1 converts to a [FHIR RelatedPerson](RelatedPerson-HL7v2-Francesca-Smith.html)
+- NK1 converts to a [FHIR RelatedPerson](RelatedPerson-RelatedPerson-HL7v2-Francesca-Smith.html)
   - FHIR Profile (UK Core) based on previous HL7 v2 NK1 profile [RelatedPerson HL7 v2](https://simplifier.net/hl7fhirukcorer4/ukcore-relatedperson)
 
 ### HL7 FHIR and IHE Modernisation
@@ -63,8 +63,8 @@ Note:
 <figure>{% include pix-sequence-notifications-subscriptions.svg %}</figure>
 <br clear="all"/>
 
-1. The Patient Identity Consumer creates a [Subscription for all patients](Subscription-ex-Subscription.html)
-2. The Patient Identity Source (e.g. an Acute NHS Trust) sends a [Patient Identity Feed Message](Bundle-ex-PMIRBundleCreate.html) to the Subscription Manager.
+1. The Patient Identity Consumer creates a [Subscription for patients with NHS Number of 3333333333](Subscription-Subscription-ex-Patient.html)
+2. The Patient Identity Source (e.g. an Acute NHS Trust) sends a [Patient Identity Feed Message](Bundle-Bundle-ex-PMIRBundleCreate.html) to the Subscription Manager.
 3. The Subscription Manager checks for matching subscriptions
-4. For each matching Subscription it sends a [Patient Identity Feed Message](Bundle-ex-PMIRBundleCreate.html) to the recipient.
+4. For each matching Subscription it sends a [Patient Identity Feed Message](Bundle-Bundle-ex-PMIRBundleCreate.html) to the recipient.
 

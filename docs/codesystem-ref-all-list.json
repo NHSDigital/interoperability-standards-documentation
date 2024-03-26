@@ -10,8 +10,8 @@
       "oids" : ["1.2.840.10008.2.16.4"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType",
-      "ValueSet-FlagProvenanceRole.html" : "NHSE Flag Provenance Role"
+      "ValueSet-FlagProvenanceRole.html" : "NHSE Flag Provenance Role",
+      "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
     },
     {
       "url" : "http://hl7.org/fhir/CodeSystem/task-code",
@@ -218,18 +218,6 @@
       "http://hl7.org/fhir/R4/valueset-endpoint-status.html" : "EndpointStatus"
     },
     {
-      "url" : "http://hl7.org/fhir/fhir-types",
-      "version" : "5.0.0",
-      "status" : "active",
-      "name" : "FHIRTypes",
-      "title" : "All FHIR Types",
-      "description" : "One of the types defined as part of this version of FHIR.",
-      "oids" : ["2.16.840.1.113883.4.642.4.1802"],
-      "uses" : {
-      },
-      "http://hl7.org/fhir/R5/valueset-resource-types.html" : "Resource Types"
-    },
-    {
       "url" : "http://hl7.org/fhir/identifier-use",
       "version" : "4.0.1",
       "status" : "active",
@@ -359,6 +347,7 @@
       "description" : "One of the resource types defined as part of this version of FHIR.",
       "uses" : {
       },
+      "http://hl7.org/fhir/R4/valueset-resource-types.html" : "ResourceType",
       "http://hl7.org/fhir/R4/valueset-consent-content-class.html" : "Consent Content Class"
     },
     {
@@ -407,11 +396,11 @@
       "oids" : ["2.16.840.1.113883.6.1"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-consent-category.html" : "Consent Category Codes",
-      "http://hl7.org/fhir/R4/valueset-consent-content-code.html" : "Consent Content Codes",
       "http://hl7.org/fhir/R4/valueset-c80-doc-typecodes.html" : "Document Type Value Set",
+      "http://hl7.org/fhir/R4/valueset-observation-codes.html" : "LOINC Codes",
+      "http://hl7.org/fhir/R4/valueset-consent-content-code.html" : "Consent Content Codes",
       "http://hl7.org/fhir/R4/valueset-document-classcodes.html" : "Document Class Value Set",
-      "http://hl7.org/fhir/R4/valueset-observation-codes.html" : "LOINC Codes"
+      "http://hl7.org/fhir/R4/valueset-consent-category.html" : "Consent Category Codes"
     },
     {
       "url" : "http://snomed.info/sct",
@@ -423,21 +412,21 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
-      "http://hl7.org/fhir/R4/valueset-practitioner-role.html" : "Practitioner role",
-      "http://hl7.org/fhir/R4/valueset-c80-practice-codes.html" : "Practice Setting Code Value Set",
-      "http://hl7.org/fhir/R4/valueset-encounter-reason.html" : "Encounter Reason Codes",
-      "http://hl7.org/fhir/R4/valueset-procedure-reason.html" : "Procedure Reason Codes",
-      "http://hl7.org/fhir/R4/valueset-c80-facilitycodes.html" : "Facility Type Code Value Set",
-      "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
-      "http://hl7.org/fhir/R4/valueset-servicerequest-category.html" : "Service Request Category Codes",
-      "http://hl7.org/fhir/R4/valueset-servicerequest-orderdetail.html" : "Service Request Order Details Codes",
-      "http://hl7.org/fhir/R4/valueset-participant-role.html" : "Participant Roles",
-      "http://hl7.org/fhir/R4/valueset-procedure-code.html" : "Procedure Codes (SNOMED CT)",
-      "ValueSet-NHSDigital-CareSettingType.html" : "NHSDigital-CareSettingType",
       "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
+      "http://hl7.org/fhir/R4/valueset-c80-practice-codes.html" : "Practice Setting Code Value Set",
+      "ValueSet-NHSDigital-CareSettingType.html" : "NHSDigital-CareSettingType",
+      "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
+      "http://hl7.org/fhir/R4/valueset-servicerequest-orderdetail.html" : "Service Request Order Details Codes",
+      "http://hl7.org/fhir/R4/valueset-c80-facilitycodes.html" : "Facility Type Code Value Set",
+      "http://hl7.org/fhir/R4/valueset-procedure-code.html" : "Procedure Codes (SNOMED CT)",
+      "http://hl7.org/fhir/R4/valueset-participant-role.html" : "Participant Roles",
       "http://hl7.org/fhir/R4/valueset-medication-as-needed-reason.html" : "SNOMED CT Medication As Needed Reason Codes",
-      "http://hl7.org/fhir/R4/valueset-performer-role.html" : "Procedure Performer Role Codes"
+      "http://hl7.org/fhir/R4/valueset-encounter-reason.html" : "Encounter Reason Codes",
+      "http://hl7.org/fhir/R4/valueset-practitioner-role.html" : "Practitioner role",
+      "http://hl7.org/fhir/R4/valueset-servicerequest-category.html" : "Service Request Category Codes",
+      "http://hl7.org/fhir/R4/valueset-performer-role.html" : "Procedure Performer Role Codes",
+      "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
+      "http://hl7.org/fhir/R4/valueset-procedure-reason.html" : "Procedure Reason Codes"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/admit-source",
@@ -533,8 +522,8 @@
       "oids" : ["2.16.840.1.113883.4.642.1.1201"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType",
-      "ValueSet-FlagProvenanceRole.html" : "NHSE Flag Provenance Role"
+      "ValueSet-FlagProvenanceRole.html" : "NHSE Flag Provenance Role",
+      "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/data-absent-reason",
@@ -641,8 +630,8 @@
       "description" : "This CodeSystem contains Additional FHIR-defined Security Role types not defined elsewhere",
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType",
-      "ValueSet-FlagProvenanceRole.html" : "NHSE Flag Provenance Role"
+      "ValueSet-FlagProvenanceRole.html" : "NHSE Flag Provenance Role",
+      "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/location-physical-type",
@@ -957,8 +946,8 @@
       "oids" : ["2.16.840.1.113883.5.1008"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-encounter-special-courtesy.html" : "Special courtesy",
-      "https://simplifier.net/resolve?scope=fhir.r4.ukcore.stu3.currentbuild@0.0.6-pre-release&canonical=https://fhir.hl7.org.uk/ValueSet/UKCore-PersonMaritalStatusCode" : "UK Core Person Marital Status Code"
+      "https://simplifier.net/resolve?scope=fhir.r4.ukcore.stu3.currentbuild@0.0.6-pre-release&canonical=https://fhir.hl7.org.uk/ValueSet/UKCore-PersonMaritalStatusCode" : "UK Core Person Marital Status Code",
+      "http://hl7.org/fhir/R4/valueset-encounter-special-courtesy.html" : "Special courtesy"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
@@ -982,8 +971,8 @@
       "oids" : ["2.16.840.1.113883.5.88"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType",
-      "ValueSet-FlagProvenanceRole.html" : "NHSE Flag Provenance Role"
+      "ValueSet-FlagProvenanceRole.html" : "NHSE Flag Provenance Role",
+      "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
@@ -995,10 +984,10 @@
       "oids" : ["2.16.840.1.113883.5.90"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType",
       "ValueSet-FlagProvenanceRole.html" : "NHSE Flag Provenance Role",
-      "http://hl7.org/fhir/R4/valueset-encounter-participant-type.html" : "Participant type",
-      "http://hl7.org/fhir/R4/valueset-provenance-activity-type.html" : "Provenance activity type"
+      "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType",
+      "http://hl7.org/fhir/R4/valueset-provenance-activity-type.html" : "Provenance activity type",
+      "http://hl7.org/fhir/R4/valueset-encounter-participant-type.html" : "Participant type"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-RoleClass",
@@ -1010,8 +999,8 @@
       "oids" : ["2.16.840.1.113883.5.110"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType",
-      "ValueSet-FlagProvenanceRole.html" : "NHSE Flag Provenance Role"
+      "ValueSet-FlagProvenanceRole.html" : "NHSE Flag Provenance Role",
+      "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
@@ -1023,9 +1012,9 @@
       "oids" : ["2.16.840.1.113883.5.111"],
       "uses" : {
       },
+      "ValueSet-FlagProvenanceRole.html" : "NHSE Flag Provenance Role",
       "http://terminology.hl7.org/5.0.0/ValueSet-v3-ServiceDeliveryLocationRoleType.html" : "ServiceDeliveryLocationRoleType",
       "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType",
-      "ValueSet-FlagProvenanceRole.html" : "NHSE Flag Provenance Role",
       "https://simplifier.net/resolve?scope=fhir.r4.ukcore.stu3.currentbuild@0.0.6-pre-release&canonical=https://fhir.hl7.org.uk/ValueSet/UKCore-PersonRelationshipType" : "UK Core Person Relationship Type"
     },
     {

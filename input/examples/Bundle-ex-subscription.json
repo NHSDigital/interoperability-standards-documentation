@@ -1,6 +1,6 @@
 {
   "resourceType": "Subscription",
-  "id": "ex-subscription",
+  "id": "Bundle-ex-subscription",
   "meta": {
     "profile": [
       "https://profiles.ihe.net/ITI/PMIR/StructureDefinition/IHE.PMIR.Subscription"

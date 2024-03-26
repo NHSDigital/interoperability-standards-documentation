@@ -1,6 +1,6 @@
 {
   "resourceType" : "Bundle",
-  "id" : "ex-EventNotification",
+  "id" : "Bundle-ex-EventNotification",
   "type" : "history",
   "entry" : [{
     "fullUrl" : "urn:uuid:aaaaaaaa-bbbb-cccc-dddd-e00111100007",

@@ -1,6 +1,6 @@
 {
   "resourceType": "Patient",
-  "id": "HL7v2-NHS-3333333333-Fredrica-Smith",
+  "id": "Patient-HL7v2-NHS-3333333333-Fredrica-Smith",
   "meta" : {
     "profile" : [
       "https://fhir.nhs.uk/England/StructureDefinition/PatientHL7v2"
