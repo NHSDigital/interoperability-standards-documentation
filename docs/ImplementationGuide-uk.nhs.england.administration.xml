@@ -10,7 +10,7 @@
   <name value="NHSEnglandInteroperabilitySkunkworks"/>
   <title value="Health Administration Interoperability Standards - Skunkworks"/>
   <status value="draft"/>
-  <date value="2024-03-25T16:04:49+00:00"/>
+  <date value="2024-03-26T07:33:19+00:00"/>
   <publisher value="NHS England"/>
   <contact>
     <name value="NHS England"/>
@@ -1031,7 +1031,8 @@
         <reference value="Questionnaire/Questionnaire-Proxy-Access-Request"/>
       </reference>
       <name value="Proxy Access Request Form"/>
-      <exampleBoolean value="true"/>
+      <description value="A form definition to request proxy access via the national proxy service"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1066,6 +1067,16 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Task"/>
+      </extension>
+      <reference>
+        <reference value="Task/request-consent-verification"/>
+      </reference>
+      <name value="request-consent-verification"/>
+      <exampleCanonical value="https://fhir.nhs.uk/England/StructureDefinition/Task"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -1095,6 +1106,17 @@
       </reference>
       <name value="Slot"/>
       <description value="NHS England Slot"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/Task"/>
+      </reference>
+      <name value="Task"/>
+      <description value="NHS England Task"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

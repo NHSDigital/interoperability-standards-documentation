@@ -4,7 +4,7 @@
   "url": "https://fhir.nhs.uk/England/Questionnaire/Proxy-Access-Request",
   "title": "Proxy Access Request Form",
   "status": "draft",
-  "purpose": "To request proxy access",
+  "description": "A form definition to request proxy access via the national proxy service",
   "code": [
     {
       "system": "https://fhir.nhs.uk/England/CodeSystem/ToBeDetermind",

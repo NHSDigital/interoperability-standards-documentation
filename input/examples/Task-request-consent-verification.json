@@ -1,0 +1,49 @@
+{
+  "resourceType": "Task",
+  "id": "request-consent-verification",
+  "meta": {
+    "profile" : [
+      "https://fhir.nhs.uk/England/StructureDefinition/Task"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "https://tools.ietf.org/html/rfc4122",
+      "value": "41bf06bf-83f3-4004-98d3-480e3f048d55"
+    }
+  ],
+  "status": "requested",
+  "intent": "order",
+  "code": {
+    "text": "Presume this is a SNOMED CT code to request consent verification"
+  },
+  "focus": {
+    "reference" : "Consent/national-proxy-proposed"
+  },
+  "for": {
+    "type": "Patient",
+    "reference": "Patient/Patient_NHS_9459304130",
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/nhs-number",
+      "value": "9459304130"
+    }
+  },
+  "authoredOn": "2024-03-26T06:26:00+00:00",
+  "owner": {
+    "identifier": {
+        "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+        "value": "Y12345"
+    }
+  },
+  "requester": {
+    "identifier": {
+      "system": "https://fhir.nhs.uk/Id/ods-organization-code",
+      "value": "X26"
+    }
+  },
+  "note": [
+    {
+      "text": "Please verify the national proxy request for Jayne Smith to access Jayne Smith records. Relationship is MOTHER"
+    }
+  ]
+}

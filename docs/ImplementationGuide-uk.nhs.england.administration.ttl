@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "NHSEnglandInteroperabilitySkunkworks"] ; # 
   fhir:title [ fhir:v "Health Administration Interoperability Standards - Skunkworks"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-03-25T16:04:49+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-03-26T07:33:19+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "NHS England"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "NHS England" ] ;
@@ -1191,7 +1191,8 @@
          fhir:reference [ fhir:v "Questionnaire/Questionnaire-Proxy-Access-Request" ]
        ] ;
        fhir:name [ fhir:v "Proxy Access Request Form" ] ;
-       fhir:example [ fhir:v "true"^^xsd:boolean ]
+       fhir:description [ fhir:v "A form definition to request proxy access via the national proxy service" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -1235,6 +1236,20 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Task" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.nhs.uk/England/Task/request-consent-verification> ;
+         fhir:reference [ fhir:v "Task/request-consent-verification" ]
+       ] ;
+       fhir:name [ fhir:v "request-consent-verification" ] ;
+       fhir:example [
+         fhir:v "https://fhir.nhs.uk/England/StructureDefinition/Task"^^xsd:anyURI ;
+         fhir:link <https://fhir.nhs.uk/England/StructureDefinition/Task>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
@@ -1267,6 +1282,18 @@
        ] ;
        fhir:name [ fhir:v "Slot" ] ;
        fhir:description [ fhir:v "NHS England Slot" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.nhs.uk/England/StructureDefinition/Task> ;
+         fhir:reference [ fhir:v "StructureDefinition/Task" ]
+       ] ;
+       fhir:name [ fhir:v "Task" ] ;
+       fhir:description [ fhir:v "NHS England Task" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [

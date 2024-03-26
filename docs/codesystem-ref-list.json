@@ -13,15 +13,16 @@
       "ValueSet-FlagProvenanceRole.html" : "NHSE Flag Provenance Role"
     },
     {
-      "url" : "http://hl7.org/fhir/resource-types",
-      "version" : "4.0.1",
+      "url" : "http://hl7.org/fhir/fhir-types",
+      "version" : "5.0.0",
       "status" : "active",
-      "name" : "ResourceType",
-      "title" : "ResourceType",
-      "description" : "One of the resource types defined as part of this version of FHIR.",
+      "name" : "FHIRTypes",
+      "title" : "All FHIR Types",
+      "description" : "One of the types defined as part of this version of FHIR.",
+      "oids" : ["2.16.840.1.113883.4.642.4.1802"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-resource-types.html" : "ResourceType"
+      "http://hl7.org/fhir/R5/valueset-resource-types.html" : "Resource Types"
     },
     {
       "url" : "http://snomed.info/sct",

@@ -5,14 +5,10 @@ title National Proxy Service
 
 object Consent {
   * status: proposed | active | rejected
-  * scope : TBD
-  * category: code to represent Proxy Access
-  * policy.uri: link to permissions
   * policyRule: code to represent type of Proxy Access
-  * dateTime: Data of consent
   * patient.identifier: NHSNumber of the subject of the proxy access request
   * performer: who agreed to the proxy access
-  * organization: custodian of the consent, NHS England?
+
   * source: proxy access request form (ProxyAccessRequest:QuestionnaireResponse)
   * provision.type: permit
   provision.period: timeframe this proxy request is valid (and then needs to be reviewed)
@@ -35,17 +31,6 @@ object "RelatedPerson:Patient" as p1 {
   * identifier: NHSNumber
 }
 
-
-object "ProxyAccessRequestValidation:Task" as task1 {
-    use _history for a record of the conversations
-    * focus: Consent
-    * requester: NHS England
-    * owner: GP, etc who needs to validate the Consent request
-    * code: 'validation' of Consent request (code TBD)
-    * for: can add NHSNumber of the subject of the proxy access request
-    note: use this for communication, i.e. the conversation
-}
-
 object "ProxyAccessRequest:QuestionnaireResponse" as qr1 {
     * questionnaire: url of the ProxyAccessRequestFormDefinition
 }
@@ -54,38 +39,19 @@ object "ProxyAccessRequestFormDefinition:Questionnaire" as q1 {
     * url: url of the ProxyAccessRequestFormDefinition
 }
 
-object "PermissionDefinition:Questionnaire" as permissionDefinition {
-    * url: url of the ProxyAccessRequestFormDefinition
-    item : provision
-    item.item: type
-    item.item: action
-}
-
-object "Permission:QuestionnaireResponse" as permission {
-    * questionnaire: url of the ProxyAccessRequestFormDefinition
-    item : provision
-    item.answer :
-    item.item: type
-    item.answer:
-    item.item: action
-    item.answer:
-}
 
 Consent "provision.actor.reference.identifier" ||--||> "identifier" RelatedPerson
 Consent "patient.identifier" }|--||> "identifier" Patient
 Consent "source" ||--||> "id" qr1
-Consent "policy.uri" |o--o| permission
 
 RelatedPerson "identifier" ||--||> "identifier" p1
 RelatedPerson "patient.identifier" }|--||> "identifier" Patient
 
 q1 "url"  <--* "questionnaire" qr1
-permissionDefinition "url"  <--* "questionnaire" permission
 
-task1 ||--||> Consent: Task.code
 
-note "This is essentially the same as PDS but with a Consent" as PDSOverlap
-note "This is retrieved via PDS" as PDS
+note "This is the same as PDS Patient" as PDSOverlap
+note "This is similar to PDS RelatedPerson" as PDS
 
 PDS .. Patient
 PDS .. p1

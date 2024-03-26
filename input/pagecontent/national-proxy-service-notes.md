@@ -2,30 +2,7 @@
 
 
 
-### Overview
 
-<div>
-<img src="National-Proxy-Process-Overview.png"  alt="National Proxy Overview" width="60%">
-<p>Figure 1 - National Proxy Overview</p>
-<p></p>
-</div>
-
-[Internal Confluence Page](https://nhsd-confluence.digital.nhs.uk/display/NPA/Overview+-+NPA)
-
-### Enterprise Architecture and System Architecture Links
-
-It is believed this service contains [IHE Privacy Consent on FHIR (PCF)](https://profiles.ihe.net/ITI/PCF/index.html), it is the first known service in this category. Links to this IHE Profile will be identified in the relevant sections below. 
-This section is similar (but not same) [advanced consent](https://profiles.ihe.net/ITI/PCF/content.html#3584-advanced)  
-So this would apply to NHS England Services following [IHE Mobile Health Document Sharing (MHDS)](https://wiki.ihe.net/index.php/Mobile_Health_Document_Sharing_(MHDS)). Systems identified in this category are:
-
-[National Record Locator](https://digital.nhs.uk/developer/api-catalogue/national-record-locator-fhir/v3/producer)
-
-It also uses [Personal Demographics Service](https://digital.nhs.uk/developer/api-catalogue/personal-demographics-service-fhir) and shares a similar `RelatedPerson' API.
-
-### Entity Relationship Diagram
-
-<figure>{% include national-proxy-service-relationship.svg %}</figure>
-<br clear="all"/>
 
 ### Create a relationship
 

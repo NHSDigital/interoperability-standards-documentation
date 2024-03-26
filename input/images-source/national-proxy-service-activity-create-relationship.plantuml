@@ -3,13 +3,14 @@
 
 title Create Relationship
 
-:Create a relationship;
-if (Needs Validating?) is (validate) then
-:Validate Relationship;
+:Step 1 - Create a relationship (POST /QuestionnaireResponse);
+:Step 2 - Consent resource is created from the submitted form \n(Consent is proposed);
+if (Step 3 - Needs Validating?) is (validate) then
+:Step 3a - Validate Relationship. \nGP is asked to verify the Consent ;
 else
-:Automatically Validated;
+:Step 3b - Automatically Validated or Rejected. ;
 endif
-:Relationship is created;
-:View a relationship;
+:Step 4 - Consent is now either active or rejected;
+
 
 @enduml

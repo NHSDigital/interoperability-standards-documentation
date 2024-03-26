@@ -10,7 +10,7 @@
   "name" : "NHSEnglandInteroperabilitySkunkworks",
   "title" : "Health Administration Interoperability Standards - Skunkworks",
   "status" : "draft",
-  "date" : "2024-03-25T16:04:49+00:00",
+  "date" : "2024-03-26T07:33:19+00:00",
   "publisher" : "NHS England",
   "contact" : [{
     "name" : "NHS England",
@@ -1243,7 +1243,8 @@
         "reference" : "Questionnaire/Questionnaire-Proxy-Access-Request"
       },
       "name" : "Proxy Access Request Form",
-      "exampleBoolean" : true
+      "description" : "A form definition to request proxy access via the national proxy service",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -1282,6 +1283,17 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Task"
+      }],
+      "reference" : {
+        "reference" : "Task/request-consent-verification"
+      },
+      "name" : "request-consent-verification",
+      "exampleCanonical" : "https://fhir.nhs.uk/England/StructureDefinition/Task"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -1313,6 +1325,18 @@
       },
       "name" : "Slot",
       "description" : "NHS England Slot",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/Task"
+      },
+      "name" : "Task",
+      "description" : "NHS England Task",
       "exampleBoolean" : false
     },
     {

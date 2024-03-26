@@ -260,6 +260,13 @@
     "name" : "Slot"
   },
   {
+    "id" : "Task",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.nhs.uk/England/StructureDefinition/Task",
+    "version" : "0.0.1",
+    "name" : "Task"
+  },
+  {
     "id" : "FlagConsentPurpose",
     "type" : "ValueSet",
     "url" : "https://fhir.nhs.uk/England/ValueSet/FlagConsentPurpose",
