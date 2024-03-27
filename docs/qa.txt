@@ -3,7 +3,7 @@ NHSEnglandInteroperabilitySkunkworks : Validation Results
 
 err = 116, warn = 105, info = 73
 IG Publisher Version: 1.6.3
-Generated Wed Mar 27 10:49:24 GMT 2024. FHIR version 4.0.1 for uk.nhs.england.administration#0.0.1 (canonical = https://fhir.nhs.uk/England)
+Generated Wed Mar 27 12:05:47 GMT 2024. FHIR version 4.0.1 for uk.nhs.england.administration#0.0.1 (canonical = https://fhir.nhs.uk/England)
  Build Errors : 6 / 29 / 0
  C:\Development\NHSEngland\interoperability-standards-discovery\fsh-generated\resources\CapabilityStatement-BookingProvider : 1 / 0 / 1
  C:\Development\NHSEngland\interoperability-standards-discovery\fsh-generated\resources\CapabilityStatement-IHE.PCF.consentAuthorizationServer : 1 / 0 / 1

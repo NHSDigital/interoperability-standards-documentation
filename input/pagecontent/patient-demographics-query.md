@@ -87,13 +87,13 @@ Notes:
 
 To improve the use of the NHS Number and automate NHS Number verification processes, Calderdale and Huddersfield NHS Foundation Trust connected their Trust Integration Engine to NHS England's Personnel Demographics Service.
 
-The existing HL7 v2 ADT feeds included a `wire tap` which would call ODS if:
+The existing HL7 v2 ADT feeds included a `wire tap` which would call PDS if:
 - The patient didn't have a verified NHS Number
 - The patient didn't have a NHS Number
 
 If results were found the Patient Administration System (PAS) was updated with verification status or a found NHS Number.
 
-<figure>{% include pds-online-consultation-register-patient.svg %}</figure>
+<figure>{% include pds-chft-tie.svg %}</figure>
 <br clear="all"/>
 
 ### Online Consultation Provider
@@ -102,7 +102,7 @@ This use case is from an Online Consultation providers use case supplied to PDS.
 
 #### Patient Registration 
 
-<figure>{% include pds-chft-tie.svg %}</figure>
+<figure>{% include pds-online-consultation-register-patient.svg %}</figure>
 <br clear="all"/>
 
 1. The patient would have completed a registration details in the providers application, these details are used to obtain the demographics record from the local GP system
