@@ -1,0 +1,27 @@
+@startuml
+
+hide footbox
+
+title "PDS use in a Patient Identity Feed"
+
+participant "Patient Identity Source \n(e.g. Patient Administration System (PAS))" as PEMSource
+participant "Trust Integration Engine (TIE)\nor Orchestration Engine" as PEMManager
+participant "Patient Identity Consumer" as PEMConsumer
+participant "Personnel Demographics Service" as PDS
+participant "Patient Administration Server" as PAS
+
+
+PEMSource -> PEMManager : Patient Identity Feed \n IHE PIX ITI-8 / HL7 v2 ADT A31
+PEMManager -> PEMSource : Acknowledgement
+loop for each recipient
+  PEMManager -> PEMConsumer : Patient Identity Feed \n IHE PIX ITI-8 / HL7 v2 ADT A31
+  PEMConsumer -> PEMManager : Acknowledgement
+end
+opt if not verified or NHS Number present
+  PEMManager -> PDS: Find Patient
+  opt record found
+    PEMManager -> PAS: Update Patient record
+  end
+end
+
+@enduml

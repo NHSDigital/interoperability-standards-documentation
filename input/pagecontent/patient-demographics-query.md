@@ -45,7 +45,9 @@ The HL7 v2/IHE PDQ is probably not going to be favoured by third party applicati
 
 Although PDS is not IHE PDQm compliant it has followed this pattern. Please see [NHS England Personal Demographics Service - FHIR API: Search for a patient](https://digital.nhs.uk/developer/api-catalogue/personal-demographics-service-fhir#get-/Patient)
 
-#### NHS Acute Trust Example
+### NHS Acute Trust Examples
+
+#### Patient Registration
 
 `Donald has moved from Edinburgh (Scotland) to Leeds (England) for work reasons. Donald has a series condition and was recieving treatment from NHS Lothian, NHS Lothian has liased with Leeds Foundation NHS Trust to continue his care. As Donald is a UK citizen he is eligible for care from NHS England and so Leeds Foundation NHS Trust apply for an English NHS Number`
 
@@ -75,11 +77,47 @@ Leeds Teaching NHS Trust registering Donald with NHS England looks like this:
 
 3. In either case Leeds Teaching Trust need to inform all systems within the trust of the NHS Number. For this they will use the Trust Integration Engine (TIE) which will distribute both HL7 v2 ADT_A31 and/or FHIR Patient updates to the trusts systems. The FHIR Patient could look like this  [Patient Donald with NHS Number, CHI and MRN](Patient-Patient-donald-with-chi-number-mrn-and-nhs-number.html). For more details on this see [Patient Identity Management (PIX)](patient-identity-management.html)
 
-
-
 Notes:
 
 1. Leeds Teaching NHS Trust is following NHS England HL7 v2 standards, these standards also follow [Patient Identifier Cross-referencing (PIX)](https://profiles.ihe.net/ITI/TF/Volume1/ch-5.html)
 2. Leeds Teaching NHS Trust PAS is the main source for patient demographics, it also contains identifiers from both NHS England and Scotland.
 3. Leeds Teaching NHS Trust systems are using MRN to identify the Donald, not CHI or NHS Number. After the NHS Number allocation request, most systems will also know Donalds NHS Number.
 
+#### NHS Number Verification and Finding Patient's NHS Number (using PDS)
+
+To improve the use of the NHS Number and automate NHS Number verification processes, Calderdale and Huddersfield NHS Foundation Trust connected their Trust Integration Engine to NHS England's Personnel Demographics Service.
+
+The existing HL7 v2 ADT feeds included a `wire tap` which would call ODS if:
+- The patient didn't have a verified NHS Number
+- The patient didn't have a NHS Number
+
+If results were found the Patient Administration System (PAS) was updated with verification status or a found NHS Number.
+
+<figure>{% include pds-online-consultation-register-patient.svg %}</figure>
+<br clear="all"/>
+
+### Online Consultation Provider
+
+This use case is from an Online Consultation providers use case supplied to PDS.
+
+#### Patient Registration 
+
+<figure>{% include pds-chft-tie.svg %}</figure>
+<br clear="all"/>
+
+1. The patient would have completed a registration details in the providers application, these details are used to obtain the demographics record from the local GP system
+2. If a patient record is found then the local providers systems is updated with returned demographic details and the GP System `id` of the patient. Demographic records on the GP system may be updated.
+3. If the patient is not found, then NHS England's Personnel Demographics Service is searched.
+4. If a record is found then the patient's NHS Number is recorded on the local system
+5. If the record is found or not found, a Task is created to register the patient (this is administration task)
+6. If the local record and PDS record do not match, then the PDS record is updated (currently this is an administration task)
+
+#### Record Locator Service (PDS)
+
+<figure>{% include pds-online-consultation-record-locator.svg %}</figure>
+<br clear="all"/>
+
+1. NHS England's Personnel Demographics Service is searched (probably by NHS Number) to obtain the national demographics record.
+2. From the registered GP Practice which is located in the returned FHIR Patient resource, a care directory service is called to return the FHIR API for this organisation.
+3. The Patient API on this Endpoint is called to retrieve the `patientId` of the patient with this NHS Number returned in the first call.
+4. The API for the GP system is then accessed as required using the `patientId` from the previous step as a query parameter.

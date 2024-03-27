@@ -1,0 +1,20 @@
+@startuml
+
+hide footbox
+
+title "Locating Patient Records"
+
+participant "Online Consultation Provider" as PDQConsumer
+participant "Personnel Demographics Service" as PDS
+participant "Care Directory Service \n SDS or local" as mCSD
+participant "GP System" as IPASupplier
+
+
+PDQConsumer -> PDS : Find Patient \nGET /Patient?{queryParameters)
+PDQConsumer -> mCSD: Get Endpoint for organisation (GP Practice) \nGET /Endpoint?organization={odsCode}
+PDQConsumer -> IPASupplier : Get Patient by NHSNumber (IHE PDQm) \nGET /Patient?identifier={nhsNumber}
+loop as required
+PDQConsumer -> IPASupplier: Get medical records \n(IM1 API's facaded following HL7 International Patient Access) \nGET /{resource}/patient={id}
+end
+
+@enduml
