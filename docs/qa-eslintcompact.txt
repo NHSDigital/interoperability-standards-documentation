@@ -148,7 +148,6 @@ Generic: line 0, col 0, Warning - The HTML fragment 'globals-table.xhtml' is not
 /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/input/examples/Consent-national-proxy-proposed.json: line 62, col 10, Warning - No code provided, and a code should be provided from the value set 'SecurityRoleType' (http://hl7.org/fhir/ValueSet/security-role-type|4.0.1) (CODEINVALID)
 /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/input/examples/Consent-national-proxy-proposed.json: line 65, col 10, Error - Unable to resolve resource with reference 'RelatedPerson/RelatedPerson-NHS-9449304130-Jane-Smith' (STRUCTURE)
 /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/input/examples/Encounter-Inpatient-Discharge-Francesca-Smith.json: line 60, col 18, Error - The property identifier must be an Object, not an Array (at Encounter.participant[0].individual.identifier) (INVALID)
-/Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/input/examples/Encounter-Inpatient-Discharge-Francesca-Smith.json: line 75, col 10, Error - Unrecognized property 'dischargeDestination' (STRUCTURE)
 /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/input/examples/Encounter-Inpatient-Discharge-Francesca-Smith.json: line 21, col 6, Warning - A definition for CodeSystem 'https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-treatment-function' could not be found, so the code cannot be validated (NOTFOUND)
 /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/input/examples/Encounter-Inpatient-Discharge-Francesca-Smith.json: line 21, col 6, Error - Error from http://tx.fhir.org/r4: The filter "constraint = memberOf 1127531000000102" from the value set https://fhir.nhs.uk/ValueSet/NHSDigital-CareSettingType was not understood in the context of http://snomed.info/sct (CODEINVALID)
 /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/input/examples/Encounter-Inpatient-Discharge-Francesca-Smith.json: line 29, col 6, Error - Unable to resolve resource with reference 'Patient/Patient-NHS-3333333333-Fredrica-Smith' (STRUCTURE)
@@ -278,5 +277,5 @@ Generic: line 0, col 0, Warning - The HTML fragment 'globals-table.xhtml' is not
 /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/input/resources/UKCore-RelatedPerson.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this profile (BUSINESSRULE)
 /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/input/resources/UKCore-RelatedPerson.json: line 0, col 0, Error - URL Mismatch https://fhir.nhs.uk/England/StructureDefinition/UKCore-RelatedPerson vs https://fhir.hl7.org.uk/StructureDefinition/UKCore-RelatedPerson (BUSINESSRULE)
 
-err = 117, warn = 105, info = 48
+err = 116, warn = 105, info = 48
 IG Publisher Version: 1.5.16

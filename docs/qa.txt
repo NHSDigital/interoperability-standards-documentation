@@ -1,9 +1,9 @@
 NHSEnglandInteroperabilitySkunkworks : Validation Results
 =========================================
 
-err = 117, warn = 105, info = 48
+err = 116, warn = 105, info = 48
 IG Publisher Version: 1.5.16 Out of date - current version is 1.6.3
-Generated Thu Mar 28 07:03:38 GMT 2024. FHIR version 4.0.1 for uk.nhs.england.administration#0.0.1 (canonical = https://fhir.nhs.uk/England)
+Generated Thu Mar 28 07:31:57 GMT 2024. FHIR version 4.0.1 for uk.nhs.england.administration#0.0.1 (canonical = https://fhir.nhs.uk/England)
  Build Errors : 6 / 30 / 0
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/fsh-generated/resources/CapabilityStatement-BookingProvider : 1 / 0 / 1
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/fsh-generated/resources/CapabilityStatement-IHE.PCF.consentAuthorizationServer : 1 / 0 / 1
@@ -51,7 +51,7 @@ Generated Thu Mar 28 07:03:38 GMT 2024. FHIR version 4.0.1 for uk.nhs.england.ad
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/input/examples/Consent-national-proxy-confirmed : 4 / 2 / 2
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/input/examples/Consent-national-proxy-deny : 4 / 2 / 2
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/input/examples/Consent-national-proxy-proposed : 4 / 2 / 2
- /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/input/examples/Encounter-Inpatient-Discharge-Francesca-Smith : 4 / 1 / 1
+ /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/input/examples/Encounter-Inpatient-Discharge-Francesca-Smith : 3 / 1 / 1
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/input/examples/Encounter-Outpatient-Francesca-Smith : 3 / 1 / 1
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/input/examples/Patient-Donald-Smith : 0 / 1 / 1
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/input/examples/Patient-Donald-Smith-LeedsTeaching : 0 / 1 / 1
@@ -271,7 +271,6 @@ WARNING: Consent/Consent-national-proxy-proposed: Consent.provision.actor[0].rol
 ERROR: Consent/Consent-national-proxy-proposed: Consent.provision.actor[0].reference: Unable to resolve resource with reference 'RelatedPerson/RelatedPerson-NHS-9449304130-Jane-Smith'
 == input/examples/Encounter-Inpatient-Discharge-Francesca-Smith.json ==
 ERROR: Encounter.participant[0].individual.identifier: The property identifier must be an Object, not an Array (at Encounter.participant[0].individual.identifier)
-ERROR: Encounter.hospitalization: Unrecognized property 'dischargeDestination'
 WARNING: Encounter/Encounter-inpatient-discharge-fredrica-smith: Encounter.serviceType.coding[0].system: A definition for CodeSystem 'https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-treatment-function' could not be found, so the code cannot be validated
 ERROR: Encounter/Encounter-inpatient-discharge-fredrica-smith: Encounter.serviceType: Error from http://tx.fhir.org/r4: The filter "constraint = memberOf 1127531000000102" from the value set https://fhir.nhs.uk/ValueSet/NHSDigital-CareSettingType was not understood in the context of http://snomed.info/sct
 ERROR: Encounter/Encounter-inpatient-discharge-fredrica-smith: Encounter.subject: Unable to resolve resource with reference 'Patient/Patient-NHS-3333333333-Fredrica-Smith'

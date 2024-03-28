@@ -72,7 +72,7 @@
         "end": "2010-10-21T17:06:00+00:00"
     },
     "hospitalization": {
-        "dischargeDestination": {
+        "destination": {
             "identifier" : {
                 "type": {
                     "coding": [
@@ -83,7 +83,8 @@
                     ],
                     "text": "This may be better as an extension"
                 }
-            }
+            },
+            "display": "Usual place of residence"
         },
         "dischargeDisposition": {
             "coding": [
