@@ -10,14 +10,14 @@ participant "Patient Encounter Consumer" as PEMConsumer
 
 
 PEMSource -> PEMManager : Patient Encounter Feed \n IHE PEM / HL7 v2 ADT
-PEMManager -> PEMSource : Acknowledgement
+PEMManager --> PEMSource : Acknowledgement
 loop for each recipient
   alt internal
   PEMManager -> PEMConsumer : Patient Encounter Feed \n IHE PEM / HL7 v2 ADT
-  PEMConsumer -> PEMManager : Acknowledgement
+  PEMConsumer --> PEMManager : Acknowledgement
   else external (e.g. Social Services, Primary Care, etc)
    PEMManager -> PEMConsumer : Patient Encounter Feed HL7 FHIR \n POST /Encounter
-   PEMConsumer -> PEMManager : Acknowledgement
+   PEMConsumer --> PEMManager : Acknowledgement
   end
 end
 

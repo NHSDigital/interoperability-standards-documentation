@@ -6,14 +6,11 @@
   "status" : "draft",
   "package-id" : "uk.nhs.england.administration",
   "ig-ver" : "0.0.1",
-  "date" : "Wed, 27 Mar, 2024 12:02:55 +0000",
-  "dateISO8601" : "2024-03-27T12:02:55+00:00",
-  "errs" : 116,
+  "date" : "Thu, 28 Mar, 2024 06:59:04 +0000",
+  "errs" : 117,
   "warnings" : 105,
-  "hints" : 73,
-  "suppressed-hints" : 0,
-  "suppressed-warnings" : 0,
+  "hints" : 48,
   "version" : "4.0.1",
   "tool" : "5.0.0 (3)",
-  "maxMemory" : 4985485752
+  "maxMemory" : 3810535856
 }

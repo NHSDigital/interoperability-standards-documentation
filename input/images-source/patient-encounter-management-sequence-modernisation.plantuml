@@ -1,0 +1,20 @@
+@startuml
+
+hide footbox
+
+title "Patient Encounter Notifications and Record Sharing"
+
+participant "Patient Encounter Source \n(e.g. Electronic Patient Record)" as PEMSource
+participant "Patient Encounter Consumer" as PEMConsumer
+
+== This can be replaced by HL7 v2 ADT/IHE PEM \n(recommended: NHS England IHE PEM/HL7 v2 ADT Messaging Specification)==
+loop for all key events/changes on the patients journey
+  PEMSource -> PEMConsumer : Patient admitted, discharged, transferred, etc \nPatient Encounter Feed HL7 FHIR \n POST /Encounter or PUT /Encounter?identifier={visitId}
+  PEMConsumer --> PEMSource  : Acknowledgement
+end
+== Should the consumer require clinical data they can ask for it ==
+
+loop as required
+PEMConsumer -> PEMSource  : Retrieve clinical data \n IHE XDS/MHD/QEDm, IPS/IPA, NRL, GP Connect/IM1, etc
+end
+@enduml

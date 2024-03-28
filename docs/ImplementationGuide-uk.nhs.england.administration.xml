@@ -10,7 +10,7 @@
   <name value="NHSEnglandInteroperabilitySkunkworks"/>
   <title value="Health Administration Interoperability Standards - Skunkworks"/>
   <status value="draft"/>
-  <date value="2024-03-27T12:02:55+00:00"/>
+  <date value="2024-03-28T06:59:04+00:00"/>
   <publisher value="NHS England"/>
   <contact>
     <name value="NHS England"/>
@@ -603,6 +603,16 @@
       <name value="Encounter"/>
       <description value="NHS England Encounter"/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/Encounter-inpatient-discharge-fredrica-smith"/>
+      </reference>
+      <name value="Encounter-inpatient-discharge-fredrica-smith"/>
+      <exampleCanonical value="https://fhir.nhs.uk/England/StructureDefinition/Encounter"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

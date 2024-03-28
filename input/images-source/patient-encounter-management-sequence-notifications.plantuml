@@ -11,10 +11,10 @@ participant "Patient Encounter Consumer" as PEMConsumer
 
 alt Patient Encounter Feed FHIR
 PEMSource -> PEMManager : Patient Encounter Feed FHIR \n\n PUT PUT /Encounter?identifier={identifier}
-PEMManager -> PEMSource : Response
+PEMManager --> PEMSource : Response
 else IHE PEM / HL7 v2 ADT
 PEMSource -> PEMManager : Patient Encounter Feed ADT A03
-PEMManager -> PEMSource : Response
+PEMManager --> PEMSource : Response
 end
 note over PEMManager,PEMConsumer : Notification Methods
 alt FHIR Subscription
