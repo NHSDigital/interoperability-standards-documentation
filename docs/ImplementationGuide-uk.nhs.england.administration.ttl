@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "NHSEnglandInteroperabilitySkunkworks"] ; # 
   fhir:title [ fhir:v "Health Administration Interoperability Standards - Skunkworks"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-03-28T07:27:12+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-03-28T15:35:10+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "NHS England"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "NHS England" ] ;
@@ -92,6 +92,14 @@
      ] ;
      fhir:packageId [ fhir:v "ihe.iti.pcf" ] ;
      fhir:version [ fhir:v "1.0.0" ]
+  ] [
+     fhir:id [ fhir:v "hl7_fhir_uv_subscriptions_backport_r4" ] ;
+     fhir:uri [
+       fhir:v "http://hl7.org/fhir/uv/subscriptions-backport/ImplementationGuide/hl7.fhir.uv.subscriptions-backport"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/uv/subscriptions-backport/ImplementationGuide/hl7.fhir.uv.subscriptions-backport>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.fhir.uv.subscriptions-backport.r4" ] ;
+     fhir:version [ fhir:v "1.1.x" ]
   ] ) ; # 
   fhir:definition [
      fhir:extension ( [
@@ -1286,6 +1294,18 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.nhs.uk/England/StructureDefinition/Subscription> ;
+         fhir:reference [ fhir:v "StructureDefinition/Subscription" ]
+       ] ;
+       fhir:name [ fhir:v "Subscription" ] ;
+       fhir:description [ fhir:v "NHS England Subscription" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Subscription" ]
        ] ) ;
        fhir:reference [
@@ -1293,7 +1313,10 @@
          fhir:reference [ fhir:v "Subscription/Subscription-ex-Encounter" ]
        ] ;
        fhir:name [ fhir:v "Subscription-ex-Encounter" ] ;
-       fhir:example [ fhir:v "true"^^xsd:boolean ]
+       fhir:example [
+         fhir:v "https://fhir.nhs.uk/England/StructureDefinition/Subscription"^^xsd:anyURI ;
+         fhir:link <https://fhir.nhs.uk/England/StructureDefinition/Subscription>
+       ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -1304,7 +1327,10 @@
          fhir:reference [ fhir:v "Subscription/Subscription-ex-Patient" ]
        ] ;
        fhir:name [ fhir:v "Subscription-ex-Patient" ] ;
-       fhir:example [ fhir:v "true"^^xsd:boolean ]
+       fhir:example [
+         fhir:v "https://fhir.nhs.uk/England/StructureDefinition/Subscription"^^xsd:anyURI ;
+         fhir:link <https://fhir.nhs.uk/England/StructureDefinition/Subscription>
+       ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;

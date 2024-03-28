@@ -1,9 +1,9 @@
 NHSEnglandInteroperabilitySkunkworks : Validation Results
 =========================================
 
-err = 116, warn = 105, info = 48
+err = 109, warn = 105, info = 48
 IG Publisher Version: 1.5.16 Out of date - current version is 1.6.3
-Generated Thu Mar 28 07:31:57 GMT 2024. FHIR version 4.0.1 for uk.nhs.england.administration#0.0.1 (canonical = https://fhir.nhs.uk/England)
+Generated Thu Mar 28 15:39:28 GMT 2024. FHIR version 4.0.1 for uk.nhs.england.administration#0.0.1 (canonical = https://fhir.nhs.uk/England)
  Build Errors : 6 / 30 / 0
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/fsh-generated/resources/CapabilityStatement-BookingProvider : 1 / 0 / 1
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/fsh-generated/resources/CapabilityStatement-IHE.PCF.consentAuthorizationServer : 1 / 0 / 1
@@ -38,6 +38,7 @@ Generated Thu Mar 28 07:31:57 GMT 2024. FHIR version 4.0.1 for uk.nhs.england.ad
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/fsh-generated/resources/StructureDefinition-Schedule : 1 / 1 / 1
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/fsh-generated/resources/StructureDefinition-ServiceRequest : 1 / 1 / 1
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/fsh-generated/resources/StructureDefinition-Slot : 1 / 1 / 1
+ /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/fsh-generated/resources/StructureDefinition-Subscription : 1 / 0 / 1
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/fsh-generated/resources/StructureDefinition-Task : 1 / 0 / 1
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/fsh-generated/resources/ValueSet-FlagConsentPurpose : 1 / 0 / 1
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/fsh-generated/resources/ValueSet-FlagProvenanceRole : 1 / 2 / 1
@@ -64,8 +65,8 @@ Generated Thu Mar 28 07:31:57 GMT 2024. FHIR version 4.0.1 for uk.nhs.england.ad
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/input/examples/RelatedPerson-HL7v2-Francesca-Smith : 2 / 0 / 1
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/input/examples/RelatedPerson-NHS-9000000017-Jayne-Smith : 2 / 0 / 1
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/input/examples/RelatedPerson-PDS-NHS-90000000009-Jane-Smith : 3 / 1 / 5
- /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/input/examples/Subscription-ex-Encounter-Subscription : 4 / 0 / 1
- /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/input/examples/Subscription-ex-Patient-Identity : 4 / 0 / 1
+ /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/input/examples/Subscription-ex-Encounter-Subscription : 0 / 0 / 1
+ /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/input/examples/Subscription-ex-Patient-Identity : 0 / 0 / 1
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/input/examples/Task-request-consent-verification : 2 / 0 / 1
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/input/history/h1 : 1 / 1 / 2
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/input/resources/NHSDataModelAndDictionary-treatment-function : 3 / 2 / 1
@@ -107,7 +108,7 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 ERROR: /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/output/Bundle-Bundle-ex-PMIRBundleCreate.html#/html/body/div/div/div/div/div/div/blockquote/p/div/p/a at Line 286, column 619: The link 'StructureDefinition-IHE.PMIR.MessageHeader.html' for "IHE Patient Master Identity Registry MessageHeader" cannot be resolved
 ERROR: /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/output/Consent-Consent-CPISConsentExample1.html#/html/body/div/div/div/div/div/div/p/a at Line 286, column 1257: The link 'Patient-PatientExample1.html' for "Patient/PatientExample1" cannot be resolved
 ERROR: /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/output/Subscription-Bundle-ex-subscription.html#/html/body/div/div/div/div/div/div/div/p/a at Line 286, column 370: The link 'StructureDefinition-IHE.PMIR.Subscription.html' for "IHE Patient Master Identity Registry Subscription" cannot be resolved
-ERROR: /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/output/index.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 429, column 2624: The link 'http://hl7.org/fhir/R4B' for "R4B" cannot be resolved
+ERROR: /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/output/index.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 429, column 2632: The link 'http://hl7.org/fhir/R4B' for "R4B" cannot be resolved
 ERROR: /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/output/interoperability-standards.html#/html/body/div/div/div/div/div/p/a at Line 472, column 9: The link 'documents.html' for "Document Interoperability" cannot be resolved
 ERROR: /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/output/personal-demographics-service.html#/html/body/div/div/div/div/div/ol/li/p/a at Line 406, column 34: The link 'CapabilityStatement-Personal-Demographics-Service-Provider.html' for "CapabilityStatement-Personal-Demographics-Service-Provider" cannot be resolved
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
@@ -201,6 +202,8 @@ WARNING: StructureDefinition.where(url = 'https://fhir.nhs.uk/England/StructureD
 == fsh-generated/resources/StructureDefinition-Slot.json ==
 ERROR: StructureDefinition/Slot: StructureDefinition.jurisdiction[0].coding[0].code: Unknown code 'GB-ENG' in the CodeSystem 'urn:iso:std:iso:3166' version '2018'
 WARNING: StructureDefinition.where(url = 'https://fhir.nhs.uk/England/StructureDefinition/Slot'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-Subscription.json ==
+ERROR: StructureDefinition/Subscription: StructureDefinition.jurisdiction[0].coding[0].code: Unknown code 'GB-ENG' in the CodeSystem 'urn:iso:std:iso:3166' version '2018'
 == fsh-generated/resources/StructureDefinition-Task.json ==
 ERROR: StructureDefinition/Task: StructureDefinition.jurisdiction[0].coding[0].code: Unknown code 'GB-ENG' in the CodeSystem 'urn:iso:std:iso:3166' version '2018'
 == fsh-generated/resources/ValueSet-FlagConsentPurpose.json ==
@@ -332,15 +335,7 @@ ERROR: RelatedPerson/RelatedPerson-PDS-NHS-90000000009-Jane-Smith: RelatedPerson
 INFORMATION: RelatedPerson/RelatedPerson-PDS-NHS-90000000009-Jane-Smith: RelatedPerson.extension[3].extension[0].value.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'https://fhir.hl7.org.uk/CodeSystem/UKCore-HumanLanguage' version '1.0.0' could not be found, so the code cannot be validated. Valid versions: []
 WARNING: RelatedPerson/RelatedPerson-PDS-NHS-90000000009-Jane-Smith: RelatedPerson.relationship[0].coding[0].system: A definition for CodeSystem 'https://fhir.nhs.uk/R4/CodeSystem/UKCore-AdditionalRelatedPersonRole' could not be found, so the code cannot be validated
 == input/examples/Subscription-ex-Encounter-Subscription.json ==
-ERROR: Subscription/Subscription-ex-Encounter: Subscription.criteria.extension[0]: The extension http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-filter-criteria could not be found so is not allowed here
-ERROR: Subscription/Subscription-ex-Encounter: Subscription.criteria.extension[0].url: URL value 'http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-filter-criteria' does not resolve
-ERROR: Subscription/Subscription-ex-Encounter: Subscription.channel.payload.extension[0]: The extension http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-payload-content could not be found so is not allowed here
-ERROR: Subscription/Subscription-ex-Encounter: Subscription.channel.payload.extension[0].url: URL value 'http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-payload-content' does not resolve
 == input/examples/Subscription-ex-Patient-Identity.json ==
-ERROR: Subscription/Subscription-ex-Patient: Subscription.criteria.extension[0]: The extension http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-filter-criteria could not be found so is not allowed here
-ERROR: Subscription/Subscription-ex-Patient: Subscription.criteria.extension[0].url: URL value 'http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-filter-criteria' does not resolve
-ERROR: Subscription/Subscription-ex-Patient: Subscription.channel.payload.extension[0]: The extension http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-payload-content could not be found so is not allowed here
-ERROR: Subscription/Subscription-ex-Patient: Subscription.channel.payload.extension[0].url: URL value 'http://hl7.org/fhir/uv/subscriptions-backport/StructureDefinition/backport-payload-content' does not resolve
 == input/examples/Task-request-consent-verification.json ==
 ERROR: Task/Task-request-consent-verification: Task.focus: Unable to resolve resource with reference 'Consent/national-proxy-proposed'
 ERROR: Task/Task-request-consent-verification: Task.for: Unable to resolve resource with reference 'Patient/Patient_NHS_9459304130'

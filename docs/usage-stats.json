@@ -136,6 +136,12 @@
         "title": "Slot"
       }
     ],
+    "Subscription": [
+      {
+        "url": "https://fhir.nhs.uk/England/StructureDefinition/Subscription",
+        "title": "Subscription"
+      }
+    ],
     "Task": [
       {
         "url": "https://fhir.nhs.uk/England/StructureDefinition/Task",

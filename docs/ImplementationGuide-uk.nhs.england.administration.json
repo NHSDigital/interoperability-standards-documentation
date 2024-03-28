@@ -10,7 +10,7 @@
   "name" : "NHSEnglandInteroperabilitySkunkworks",
   "title" : "Health Administration Interoperability Standards - Skunkworks",
   "status" : "draft",
-  "date" : "2024-03-28T07:27:12+00:00",
+  "date" : "2024-03-28T15:35:10+00:00",
   "publisher" : "NHS England",
   "contact" : [{
     "name" : "NHS England",
@@ -72,6 +72,12 @@
     "uri" : "https://profiles.ihe.net/ITI/PCF/ImplementationGuide/ihe.iti.pcf",
     "packageId" : "ihe.iti.pcf",
     "version" : "1.0.0"
+  },
+  {
+    "id" : "hl7_fhir_uv_subscriptions_backport_r4",
+    "uri" : "http://hl7.org/fhir/uv/subscriptions-backport/ImplementationGuide/hl7.fhir.uv.subscriptions-backport",
+    "packageId" : "hl7.fhir.uv.subscriptions-backport.r4",
+    "version" : "1.1.x"
   }],
   "definition" : {
     "extension" : [{
@@ -1330,13 +1336,25 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/Subscription"
+      },
+      "name" : "Subscription",
+      "description" : "NHS England Subscription",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Subscription"
       }],
       "reference" : {
         "reference" : "Subscription/Subscription-ex-Encounter"
       },
       "name" : "Subscription-ex-Encounter",
-      "exampleBoolean" : true
+      "exampleCanonical" : "https://fhir.nhs.uk/England/StructureDefinition/Subscription"
     },
     {
       "extension" : [{
@@ -1347,7 +1365,7 @@
         "reference" : "Subscription/Subscription-ex-Patient"
       },
       "name" : "Subscription-ex-Patient",
-      "exampleBoolean" : true
+      "exampleCanonical" : "https://fhir.nhs.uk/England/StructureDefinition/Subscription"
     },
     {
       "extension" : [{

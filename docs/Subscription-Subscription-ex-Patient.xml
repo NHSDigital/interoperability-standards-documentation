@@ -2,8 +2,11 @@
 
 <Subscription xmlns="http://hl7.org/fhir">
   <id value="Subscription-ex-Patient"/>
+  <meta>
+    <profile value="https://fhir.nhs.uk/England/StructureDefinition/Subscription"/>
+  </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Subscription</b><a name="Subscription-ex-Patient"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Subscription &quot;Subscription-ex-Patient&quot; </p></div><p><b>status</b>: requested</p><p><b>end</b>: 31 Dec 2023, 12:00:00</p><p><b>reason</b>: Patient Subscription for Patient with NHS Number of 3333333333</p><p><b>criteria</b>: https://fhir.example.nhs.uk/SubscriptionTopic/ex-SubscriptionTopic</p><h3>Channels</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Endpoint</b></td><td><b>Payload</b></td></tr><tr><td style="display: none">*</td><td>message</td><td><a href="https://subscriptions.argo.run/fhir/r4/subscription-hook-df">https://subscriptions.argo.run/fhir/r4/subscription-hook-df</a></td><td>application/fhir+json</td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Subscription</b><a name="Subscription-ex-Patient"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Subscription &quot;Subscription-ex-Patient&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-Subscription.html">Subscription</a></p></div><p><b>status</b>: requested</p><p><b>end</b>: 31 Dec 2023, 12:00:00</p><p><b>reason</b>: Patient Subscription for Patient with NHS Number of 3333333333</p><p><b>criteria</b>: https://fhir.example.nhs.uk/SubscriptionTopic/ex-SubscriptionTopic</p><h3>Channels</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Type</b></td><td><b>Endpoint</b></td><td><b>Payload</b></td></tr><tr><td style="display: none">*</td><td>message</td><td><a href="https://subscriptions.argo.run/fhir/r4/subscription-hook-df">https://subscriptions.argo.run/fhir/r4/subscription-hook-df</a></td><td>application/fhir+json</td></tr></table></div>
   </text>
   <status value="requested"/>
   <end value="2023-12-31T12:00:00+00:00"/>

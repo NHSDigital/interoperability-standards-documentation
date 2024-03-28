@@ -260,6 +260,13 @@
     "name" : "Slot"
   },
   {
+    "id" : "Subscription",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.nhs.uk/England/StructureDefinition/Subscription",
+    "version" : "0.0.1",
+    "name" : "Subscription"
+  },
+  {
     "id" : "Task",
     "type" : "StructureDefinition",
     "url" : "https://fhir.nhs.uk/England/StructureDefinition/Task",

@@ -1,6 +1,11 @@
 {
   "resourceType" : "Subscription",
   "id" : "Subscription-ex-Encounter",
+  "meta" : {
+    "profile" : [
+      "https://fhir.nhs.uk/England/StructureDefinition/Subscription"
+    ]
+  },
   "status" : "requested",
   "end" : "2023-12-31T12:00:00+00:00",
   "reason" : "Encounter Subscription for Patient with NHS Number of 3333333333",

@@ -38,8 +38,11 @@ dependencies:
     version: 1.1.0
   hl7.fhir.uv.sdc: 3.0.0
   ihe.iti.pcf: 1.0.0
-  # ihe.iti.pdqm: 2.4.0
- # hl7.fhir.eu.laboratory: 0.1.0-ballot
+  hl7.fhir.uv.subscriptions-backport.r4:
+    version: 1.1.x
+    uri: http://hl7.org/fhir/uv/subscriptions-backport/ImplementationGuide/hl7.fhir.uv.subscriptions-backport
+
+
 
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │ The menu property will be used to generate the input/menu.xml file. The menu is represented    │
