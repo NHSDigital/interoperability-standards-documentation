@@ -6,3 +6,5 @@ Description: "NHS England Encounter"
 * serviceType 1..1 MS
 * serviceType from https://fhir.nhs.uk/ValueSet/NHSDigital-CareSettingType (required)
 * subject 1..1 MS
+* participant.individual.identifier.system 1..1
+* participant.individual.identifier.value 1..1

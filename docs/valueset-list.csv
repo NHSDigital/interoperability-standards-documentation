@@ -3,4 +3,4 @@ https://fhir.nhs.uk/England/ValueSet/FlagConsentPurpose,0.0.1,draft,,FlagConsent
 https://fhir.nhs.uk/England/ValueSet/FlagProvenanceRole,0.0.1,draft,,FlagProvenanceRole,NHSE Flag Provenance Role,"A ValueSet to identify the role in which someone recording provenance is acting",,"THO (V3),THO,DICOM,Other"
 https://fhir.nhs.uk/England/ValueSet/FlagProxyRole,0.0.1,draft,,FlagProxyRole,NHSE Flag Proxy Role,"A ValueSet to identify the type/role of the proxy involved.",,
 https://fhir.nhs.uk/England/ValueSet/PatientFlagCategory,0.0.1,draft,,PatientFlagCategory,NHSE Patient Flag Category,"A ValueSet to identify the type/category of a flag.",,
-https://fhir.nhs.uk/ValueSet/NHSDigital-CareSettingType,0.0.1,draft,,NHSDigitalCareSettingType,NHSDigital-CareSettingType,"Cross Hl7 UK version of UKCore CareSetting",,"SCT,Internal"
+https://fhir.nhs.uk/ValueSet/NHSDigital-CareSettingType,0.0.1,draft,,NHSDigitalCareSettingType,NHSDigital Treatment Function Code,"Cross Hl7 UK version of UKCore CareSetting",,"SCT,Internal"

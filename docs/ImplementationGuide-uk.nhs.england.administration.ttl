@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "NHSEnglandInteroperabilitySkunkworks"] ; # 
   fhir:title [ fhir:v "Health Administration Interoperability Standards - Skunkworks"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-03-28T15:35:10+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-04-04T07:58:12+01:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "NHS England"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "NHS England" ] ;
@@ -571,6 +571,21 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Appointment" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.nhs.uk/England/Appointment/appointment-wayfinder-inpatient> ;
+         fhir:reference [ fhir:v "Appointment/appointment-wayfinder-inpatient" ]
+       ] ;
+       fhir:name [ fhir:v "appointment-wayfinder-inpatient" ] ;
+       fhir:description [ fhir:v "Dermatology Procedure" ] ;
+       fhir:example [
+         fhir:v "https://fhir.nhs.uk/England/StructureDefinition/Appointment"^^xsd:anyURI ;
+         fhir:link <https://fhir.nhs.uk/England/StructureDefinition/Appointment>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
@@ -888,7 +903,7 @@
          fhir:link <https://fhir.nhs.uk/England/ValueSet/NHSDigital-CareSettingType> ;
          fhir:reference [ fhir:v "ValueSet/NHSDigital-CareSettingType" ]
        ] ;
-       fhir:name [ fhir:v "NHSDigital-CareSettingType" ] ;
+       fhir:name [ fhir:v "NHSDigital Treatment Function Code" ] ;
        fhir:description [ fhir:v "Cross Hl7 UK version of UKCore CareSetting" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [

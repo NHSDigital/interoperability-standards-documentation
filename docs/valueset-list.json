@@ -47,7 +47,7 @@
       "version" : "0.0.1",
       "status" : "draft",
       "name" : "NHSDigitalCareSettingType",
-      "title" : "NHSDigital-CareSettingType",
+      "title" : "NHSDigital Treatment Function Code",
       "description" : "Cross Hl7 UK version of UKCore CareSetting",
       "systems" : [
         "https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-treatment-function",

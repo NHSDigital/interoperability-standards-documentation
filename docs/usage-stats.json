@@ -316,8 +316,20 @@
     "https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-CopyCorrespondenceIndicator": [
       "RelatedPerson"
     ],
+    "https://fhir.nhs.uk/StructureDefinition/Extension-Consultation-Medium": [
+      "Appointment"
+    ],
     "https://fhir.nhs.uk/StructureDefinition/Extension-PDS-RemovalFromRegistration": [
       "Patient"
+    ],
+    "https://fhir.nhs.uk/StructureDefinition/Extension-Portal-Link": [
+      "Appointment"
+    ],
+    "https://fhir.nhs.uk/StructureDefinition/Extension-ServiceRequest-Priority": [
+      "Appointment"
+    ],
+    "https://servita.com/fhir/StructureDefinition/ExtensionAppointmentStatus": [
+      "Appointment"
     ]
   }
 }

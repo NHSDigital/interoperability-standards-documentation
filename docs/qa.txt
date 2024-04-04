@@ -1,9 +1,9 @@
 NHSEnglandInteroperabilitySkunkworks : Validation Results
 =========================================
 
-err = 109, warn = 105, info = 48
-IG Publisher Version: 1.5.16 Out of date - current version is 1.6.3
-Generated Thu Mar 28 15:39:28 GMT 2024. FHIR version 4.0.1 for uk.nhs.england.administration#0.0.1 (canonical = https://fhir.nhs.uk/England)
+err = 116, warn = 105, info = 50
+IG Publisher Version: 1.5.16 Out of date - current version is 1.6.4
+Generated Thu Apr 04 08:02:18 BST 2024. FHIR version 4.0.1 for uk.nhs.england.administration#0.0.1 (canonical = https://fhir.nhs.uk/England)
  Build Errors : 6 / 30 / 0
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/fsh-generated/resources/CapabilityStatement-BookingProvider : 1 / 0 / 1
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/fsh-generated/resources/CapabilityStatement-IHE.PCF.consentAuthorizationServer : 1 / 0 / 1
@@ -14,7 +14,7 @@ Generated Thu Mar 28 15:39:28 GMT 2024. FHIR version 4.0.1 for uk.nhs.england.ad
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/fsh-generated/resources/CodeSystem-PatientFlagCategory : 1 / 0 / 1
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/fsh-generated/resources/ImplementationGuide-uk.nhs.england.administration : 1 / 0 / 1
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/fsh-generated/resources/RelatedPerson-RelatedPerson-NHS-91000000009 : 1 / 0 / 1
- /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/fsh-generated/resources/StructureDefinition-Appointment : 1 / 1 / 1
+ /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/fsh-generated/resources/StructureDefinition-Appointment : 1 / 0 / 1
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/fsh-generated/resources/StructureDefinition-AppointmentResponse : 1 / 1 / 1
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/fsh-generated/resources/StructureDefinition-ConsentNationalProxy : 1 / 0 / 1
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/fsh-generated/resources/StructureDefinition-DocumentReference : 1 / 1 / 1
@@ -44,6 +44,7 @@ Generated Thu Mar 28 15:39:28 GMT 2024. FHIR version 4.0.1 for uk.nhs.england.ad
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/fsh-generated/resources/ValueSet-FlagProvenanceRole : 1 / 2 / 1
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/fsh-generated/resources/ValueSet-FlagProxyRole : 1 / 0 / 1
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/fsh-generated/resources/ValueSet-PatientFlagCategory : 1 / 0 / 1
+ /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/input/examples/Appointment-wayfiinder-inpatient : 7 / 1 / 3
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/input/examples/Bundle-ex-EventNotification : 2 / 1 / 5
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/input/examples/Bundle-ex-PMIRBundleCreate : 4 / 5 / 7
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/input/examples/Bundle-ex-ResourcePublish : 2 / 1 / 4
@@ -138,7 +139,6 @@ ERROR: ImplementationGuide/uk.nhs.england.administration: ImplementationGuide.ju
 ERROR: RelatedPerson/RelatedPerson-NHS-91000000009: RelatedPerson.patient: Unable to resolve resource with reference 'Patient-PDS-NHS-9000000017-Jayne-Smith'
 == fsh-generated/resources/StructureDefinition-Appointment.json ==
 ERROR: StructureDefinition/Appointment: StructureDefinition.jurisdiction[0].coding[0].code: Unknown code 'GB-ENG' in the CodeSystem 'urn:iso:std:iso:3166' version '2018'
-WARNING: StructureDefinition.where(url = 'https://fhir.nhs.uk/England/StructureDefinition/Appointment'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-AppointmentResponse.json ==
 ERROR: StructureDefinition/AppointmentResponse: StructureDefinition.jurisdiction[0].coding[0].code: Unknown code 'GB-ENG' in the CodeSystem 'urn:iso:std:iso:3166' version '2018'
 WARNING: StructureDefinition.where(url = 'https://fhir.nhs.uk/England/StructureDefinition/AppointmentResponse'): The Implementation Guide contains no examples for this profile
@@ -216,6 +216,17 @@ WARNING: ValueSet.where(id = 'FlagProvenanceRole'): Error from http://tx.fhir.or
 ERROR: ValueSet/FlagProxyRole: ValueSet.jurisdiction[0].coding[0].code: Unknown code 'GB-ENG' in the CodeSystem 'urn:iso:std:iso:3166' version '2018'
 == fsh-generated/resources/ValueSet-PatientFlagCategory.json ==
 ERROR: ValueSet/PatientFlagCategory: ValueSet.jurisdiction[0].coding[0].code: Unknown code 'GB-ENG' in the CodeSystem 'urn:iso:std:iso:3166' version '2018'
+== input/examples/Appointment-wayfiinder-inpatient.json ==
+ERROR: Appointment/appointment-wayfinder-inpatient: Appointment.serviceCategory[0]: Slicing cannot be evaluated: Could not match discriminator (1) for slice [coding.system] in profile Appointment.serviceCategory:class - the discriminator https://fhir.nhs.uk/England/StructureDefinition/Appointment|0.0.1 does not have fixed value, binding or existence assertions
+INFORMATION: Appointment/appointment-wayfinder-inpatient: Appointment: Appointment.serviceCategory:class: Found 0 matches, but unable to check minimum required (Appointment.serviceCategory) due to lack of slicing validation (from https://fhir.nhs.uk/England/StructureDefinition/Appointment|0.0.1)
+ERROR: Appointment/appointment-wayfinder-inpatient: Appointment.extension[0]: The extension https://fhir.nhs.uk/StructureDefinition/Extension-ServiceRequest-Priority could not be found so is not allowed here
+INFORMATION: Appointment/appointment-wayfinder-inpatient: Appointment.extension[0].value.ofType(Coding): A definition for CodeSystem 'https://fhir.nhs.uk/CodeSystem/eRS-Priority' could not be found, so the code cannot be validated
+ERROR: Appointment/appointment-wayfinder-inpatient: Appointment.extension[1]: The extension https://servita.com/fhir/StructureDefinition/ExtensionAppointmentStatus could not be found so is not allowed here
+ERROR: Appointment/appointment-wayfinder-inpatient: Appointment.extension[2]: The extension https://fhir.nhs.uk/StructureDefinition/Extension-Consultation-Medium could not be found so is not allowed here
+ERROR: Appointment/appointment-wayfinder-inpatient: Appointment.extension[3]: The extension https://fhir.nhs.uk/StructureDefinition/Extension-Portal-Link could not be found so is not allowed here
+WARNING: Appointment/appointment-wayfinder-inpatient: Appointment.serviceType[0].coding[0].system: A definition for CodeSystem 'https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-treatment-function' could not be found, so the code cannot be validated
+ERROR: Appointment/appointment-wayfinder-inpatient: Appointment.serviceType[0]: Error from http://tx.fhir.org/r4: The filter "constraint = memberOf 1127531000000102" from the value set https://fhir.nhs.uk/ValueSet/NHSDigital-CareSettingType was not understood in the context of http://snomed.info/sct
+ERROR: Appointment/appointment-wayfinder-inpatient: Appointment.basedOn[1]: Unable to resolve resource with reference 'https://fhir-open.cerner.com/dstu2/ec2458f2-1e24-41c8-b71b-0e701af7583d/ServiceRequest/265413'
 == input/examples/Bundle-ex-EventNotification.json ==
 ERROR: Bundle.entry[1].resource.participant[0].individual.identifier: The property identifier must be an Object, not an Array (at Bundle.entry[1].resource.participant[0].individual.identifier)
 INFORMATION: Bundle/Bundle-ex-EventNotification: Bundle.entry[1].resource/*Encounter/outpatient-fredrica-smith*/.serviceType: Reference to draft CodeSystem https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-treatment-function|0.0.1

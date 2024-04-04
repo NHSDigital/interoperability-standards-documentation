@@ -4,7 +4,7 @@
   "url": "https://fhir.nhs.uk/ValueSet/NHSDigital-CareSettingType",
   "version": "1.0.0",
   "name": "NHSDigitalCareSettingType",
-  "title": "NHSDigital-CareSettingType",
+  "title": "NHSDigital Treatment Function Code",
   "status": "draft",
   "date": "2020-11-04T00:00:00+00:00",
   "publisher": "NHS Digital",

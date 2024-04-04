@@ -15,7 +15,7 @@
   fhir:url [ fhir:v "https://fhir.nhs.uk/ValueSet/NHSDigital-CareSettingType"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.0.1"] ; # 
   fhir:name [ fhir:v "NHSDigitalCareSettingType"] ; # 
-  fhir:title [ fhir:v "NHSDigital-CareSettingType"] ; # 
+  fhir:title [ fhir:v "NHSDigital Treatment Function Code"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:date [ fhir:v "2020-11-04T00:00:00+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "NHS England"] ; # 

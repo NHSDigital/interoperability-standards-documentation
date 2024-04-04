@@ -34,7 +34,7 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "ValueSet-NHSDigital-CareSettingType.html" : "NHSDigital-CareSettingType"
+      "ValueSet-NHSDigital-CareSettingType.html" : "NHSDigital Treatment Function Code"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/contractsignertypecodes",
@@ -82,6 +82,18 @@
       "uses" : {
       },
       "https://simplifier.net/resolve?scope=fhir.r4.ukcore.stu3.currentbuild@0.0.6-pre-release&canonical=https://fhir.hl7.org.uk/ValueSet/UKCore-PersonRelationshipType" : "UK Core Person Relationship Type"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+      "version" : "8.0.1",
+      "status" : "active",
+      "name" : "ActCode",
+      "title" : "ActCode",
+      "description" : "A code specifying the particular kind of Act that the Act-instance represents within its class.\r\n\r\n*Constraints:* The kind of Act (e.g. physical examination, serum potassium, inpatient encounter, charge financial transaction, etc.) is specified with a code from one of several, typically external, coding systems. The coding system will depend on the class of Act, such as LOINC for observations, etc.\r\n\r\nConceptually, the Act.code must be a specialization of the Act.classCode. This is why the structure of ActClass domain should be reflected in the superstructure of the ActCode domain and then individual codes or externally referenced vocabularies subordinated under these domains that reflect the ActClass structure.\r\n\r\nAct.classCode and Act.code are not modifiers of each other but the Act.code concept should really imply the Act.classCode concept. For a negative example, it is not appropriate to use an Act.code \"potassium\" together with and Act.classCode for \"laboratory observation\" to somehow mean \"potassium laboratory observation\" and then use the same Act.code for \"potassium\" together with Act.classCode for \"medication\" to mean \"substitution of potassium\". This mutually modifying use of Act.code and Act.classCode is not permitted.",
+      "oids" : ["2.16.840.1.113883.5.4"],
+      "uses" : {
+      },
+      "http://terminology.hl7.org/5.0.0/ValueSet-v3-ActEncounterCode.html" : "ActEncounterCode"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
@@ -166,8 +178,8 @@
       "oids" : ["2.16.840.1.113883.5.111"],
       "uses" : {
       },
-      "https://simplifier.net/resolve?scope=fhir.r4.ukcore.stu3.currentbuild@0.0.6-pre-release&canonical=https://fhir.hl7.org.uk/ValueSet/UKCore-PersonRelationshipType" : "UK Core Person Relationship Type",
-      "ValueSet-FlagProvenanceRole.html" : "NHSE Flag Provenance Role"
+      "ValueSet-FlagProvenanceRole.html" : "NHSE Flag Provenance Role",
+      "https://simplifier.net/resolve?scope=fhir.r4.ukcore.stu3.currentbuild@0.0.6-pre-release&canonical=https://fhir.hl7.org.uk/ValueSet/UKCore-PersonRelationshipType" : "UK Core Person Relationship Type"
     },
     {
       "url" : "https://fhir.hl7.org.uk/CodeSystem/UKCore-AdditionalPersonRelationshipRole",
@@ -225,6 +237,17 @@
       "https://simplifier.net/resolve?scope=fhir.r4.ukcore.stu3.currentbuild@0.0.6-pre-release&canonical=https://fhir.hl7.org.uk/ValueSet/UKCore-PersonMaritalStatusCode" : "UK Core Person Marital Status Code"
     },
     {
+      "url" : "https://fhir.hl7.org.uk/CodeSystem/UKCore-PracticeSettingCode",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "UKCorePracticeSettingCode",
+      "title" : "UKCore Practice Setting Code",
+      "description" : "This is the code representing the clinical specialty of the clinician or provider who interacted with, treated, or provided a service to/for the patient. These codes and their descriptions represent concepts used in England and Wales and are copied from the content of the [NHS Data Dictionary](https://www.datadictionary.nhs.uk/attributes/main_specialty_code.html) web page and [NHS Wales Data Dictionary](http://www.datadictionary.wales.nhs.uk/#!WordDocuments/mainspecialtyconsultant.htm) page on 20/10/2022.",
+      "uses" : {
+      },
+      "https://simplifier.net/resolve?scope=fhir.r4.ukcore.stu3.currentbuild@0.0.6-pre-release&canonical=https://fhir.hl7.org.uk/ValueSet/UKCore-PracticeSettingCode" : "UK Core Practice Setting Code"
+    },
+    {
       "url" : "https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-treatment-function",
       "version" : "0.0.1",
       "status" : "draft",
@@ -233,7 +256,7 @@
       "description" : "A CodeSystem to identify the specialty of the care professional or team. FHIR Version of NHS Data Dictionary Main Specialty Code and HSCIC ITK HL7v2 Table ZU012",
       "uses" : {
       },
-      "ValueSet-NHSDigital-CareSettingType.html" : "NHSDigital-CareSettingType"
+      "ValueSet-NHSDigital-CareSettingType.html" : "NHSDigital Treatment Function Code"
     }
   ]
 }

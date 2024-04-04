@@ -10,7 +10,7 @@
   "name" : "NHSEnglandInteroperabilitySkunkworks",
   "title" : "Health Administration Interoperability Standards - Skunkworks",
   "status" : "draft",
-  "date" : "2024-03-28T15:35:10+00:00",
+  "date" : "2024-04-04T07:58:12+01:00",
   "publisher" : "NHS England",
   "contact" : [{
     "name" : "NHS England",
@@ -649,6 +649,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Appointment"
+      }],
+      "reference" : {
+        "reference" : "Appointment/appointment-wayfinder-inpatient"
+      },
+      "name" : "appointment-wayfinder-inpatient",
+      "description" : "Dermatology Procedure",
+      "exampleCanonical" : "https://fhir.nhs.uk/England/StructureDefinition/Appointment"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -944,7 +956,7 @@
       "reference" : {
         "reference" : "ValueSet/NHSDigital-CareSettingType"
       },
-      "name" : "NHSDigital-CareSettingType",
+      "name" : "NHSDigital Treatment Function Code",
       "description" : "Cross Hl7 UK version of UKCore CareSetting",
       "exampleBoolean" : false
     },
