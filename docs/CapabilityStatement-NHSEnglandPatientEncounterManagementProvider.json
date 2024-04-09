@@ -90,6 +90,7 @@
         }],
         "code" : "search-type"
       }],
+      "conditionalUpdate" : true,
       "searchParam" : [{
         "extension" : [{
           "url" : "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation",

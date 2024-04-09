@@ -102,9 +102,9 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-UKCore-Patient.html" : "UK Core Patient",
+      "StructureDefinition-UKCore-RelatedPerson.html" : "UK Core RelatedPerson",
       "Questionnaire-Questionnaire-Proxy-Access-Request.html" : "Proxy Access Request Form",
-      "StructureDefinition-UKCore-RelatedPerson.html" : "UK Core RelatedPerson"
+      "StructureDefinition-UKCore-Patient.html" : "UK Core Patient"
     },
     {
       "url" : "https://fhir.hl7.org.uk/ValueSet/UKCore-PracticeSettingCode",

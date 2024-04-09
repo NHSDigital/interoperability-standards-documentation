@@ -14,6 +14,8 @@ Title: "NHS England Patient Encounter Management"
 * insert ResourceWithExpectation(#Patient, https://fhir.nhs.uk/England/StructureDefinition/Encounter, #SHALL)
 * rest.resource[=]
   * documentation = "The update expects an identifier parameter i.e. ```PUT [base]/Encounter?identifier={system|}[code]```. \n\n Example: \n\n PUT [base]/Encounter?identifier=https://fhir.leedsth.nhs.uk/YrVisit|YOR123456    \n\n This is the same **upsert** behaviour as described [IHE PIXm](https://profiles.ihe.net/ITI/PIXm/ITI-104.html#2310441-add-or-revise-patient) around the Patient resource."
+* rest.resource[=]
+  * conditionalUpdate = true
 * insert InteractionWithExpectation(#update, #SHALL)
 * insert InteractionWithExpectation(#read, #SHALL)
 * insert InteractionWithExpectation(#search-type, #SHALL)

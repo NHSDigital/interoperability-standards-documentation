@@ -92,6 +92,7 @@
          ] ) ;
          fhir:code [ fhir:v "search-type" ]
        ] ) ;
+       fhir:conditionalUpdate [ fhir:v "true"^^xsd:boolean ] ;
        fhir:searchParam ( [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
