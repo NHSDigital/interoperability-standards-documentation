@@ -1,0 +1,132 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.nhs.uk/England/CapabilityStatement/NHSEnglandPatientEncounterManagementProvider> a fhir:CapabilityStatement ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "NHSEnglandPatientEncounterManagementProvider"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2 id=\"title\">NHS England Patient Encounter Management</h2><ul><li>Implementation Guide Version: 0.0.1</li><li>FHIR Version: 4.0.1</li><li>Supported Formats: <code>json</code></li><li>Supported Patch Formats: </li><li>Published on: Wed Feb 01 00:00:00 GMT 2023</li><li>Published by: NHS England</li></ul><blockquote class=\"impl-note\"><p><strong>Note to Implementers: FHIR Capabilities</strong></p><p>Any FHIR capability may be 'allowed' by the system unless explicitly marked as &quot;SHALL NOT&quot;. A few items are marked as MAY in the Implementation Guide to highlight their potential relevance to the use case.</p></blockquote><h2 id=\"rest\">FHIR RESTful Capabilities</h2><div class=\"panel panel-default\"><div class=\"panel-heading\"><h3 id=\"mode1\" class=\"panel-title\">Mode: <code>server</code></h3></div><div class=\"panel-body\"><div class=\"lead\"><em>Summary of System-wide Interactions</em></div></div></div><h3 id=\"resourcesCap1\">Capabilities by Resource/Profile</h3><h4 id=\"resourcesSummary1\">Summary</h4><p>The summary table lists the resources that are part of this configuration, and for each resource it lists:</p><ul><li>The relevant profiles (if any)</li><li>The interactions supported by each resource (<b><span class=\"bg-info\">R</span></b>ead, <b><span class=\"bg-info\">S</span></b>earch, <b><span class=\"bg-info\">U</span></b>pdate, and <b><span class=\"bg-info\">C</span></b>reate, are always shown, while <b><span class=\"bg-info\">VR</span></b>ead, <b><span class=\"bg-info\">P</span></b>atch, <b><span class=\"bg-info\">D</span></b>elete, <b><span class=\"bg-info\">H</span></b>istory on <b><span class=\"bg-info\">I</span></b>nstance, or <b><span class=\"bg-info\">H</span></b>istory on <b><span class=\"bg-info\">T</span></b>ype are only present if at least one of the resources has support for them.</li><li><span>The required, recommended, and some optional search parameters (if any). </span></li><li>The linked resources enabled for <code>_include</code></li><li>The other resources enabled for <code>_revinclude</code></li><li>The operations on the resource (if any)</li></ul><div class=\"table-responsive\"><table class=\"table table-condensed table-hover\"><thead><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th class=\"text-center\"><b title=\"GET a resource (read interaction)\">R</b></th><th class=\"text-center\"><b title=\"GET all set of resources of the type (search interaction)\">S</b></th><th class=\"text-center\"><b title=\"PUT a new resource version (update interaction)\">U</b></th><th class=\"text-center\"><b title=\"POST a new resource (create interaction)\">C</b></th><th><b title=\"Required and recommended search parameters\">Searches</b></th><th><code><b>_include</b></code></th><th><code><b>_revinclude</b></code></th><th><b>Operations</b></th></tr></thead><tbody><tr><td><a href=\"#Patient1-1\">Patient</a></td><td><a href=\"StructureDefinition-Encounter.html\">https://fhir.nhs.uk/England/StructureDefinition/Encounter</a></td><td>y</td><td class=\"text-center\">y</td><td class=\"text-center\">y</td><td class=\"text-center\"></td><td>_id, patient, patient:identifier, date, date+patient, date+patient:identifier</td><td/><td/><td/></tr></tbody></table></div><hr/><div class=\"panel panel-default\"><div class=\"panel-heading\"><h4 id=\"Patient1-1\" class=\"panel-title\"><span style=\"float: right;\">Resource Conformance: SHALL</span>Patient</h4></div><div class=\"panel-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Base System Profile</span><br/><a href=\"StructureDefinition-Encounter.html\">https://fhir.nhs.uk/England/StructureDefinition/Encounter</a></div><div class=\"col-lg-3\"><span class=\"lead\">Profile Conformance</span><br/><b>SHALL</b></div><div class=\"col-lg-3\"><span class=\"lead\">Reference Policy</span><br/></div></div><p/><div class=\"row\"><div class=\"col-lg-6\"><span class=\"lead\">Interaction summary</span><br/><ul><li><strong>SHALL</strong> support <code>update</code>, <code>read</code>, <code>search-type</code>.</li></ul></div></div><p/><div class=\"row\"><div class=\"col-12\"><span class=\"lead\">Documentation</span><blockquote><div><p>The update expects an identifier parameter i.e. <code>PUT [base]/Encounter?identifier={system|}[code]</code>.</p>\n<p>Example:</p>\n<p>PUT [base]/Encounter?identifier=https://fhir.leedsth.nhs.uk/YrVisit|YOR123456</p>\n<p>This is the same <strong>upsert</strong> behaviour as described <a href=\"https://profiles.ihe.net/ITI/PIXm/ITI-104.html#2310441-add-or-revise-patient\">IHE PIXm</a> around the Patient resource.</p>\n</div></blockquote></div></div><div class=\"row\"><div class=\"col-lg-7\"><span class=\"lead\">Search Parameters</span><table class=\"table table-condensed table-hover\"><thead><tr><th>Conformance</th><th>Parameter</th><th>Type</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td>_id</td><td><code>token</code></td><td><div><p><code>GET [base]/Encounter/[id] or GET [base]/Encounter?_id=[id]</code></p>\n<p>e.g. GET [base]/Encounter?_id=12354</p>\n</div></td></tr><tr><td><b>SHALL</b></td><td>patient</td><td><code>reference</code></td><td><div><p><code>GET [base]/Encounter?patient={Type/}[id]</code></p>\n<p>e.g. GET [base]/Encounter?patient=1137192</p>\n</div></td></tr><tr><td><b>SHOULD</b></td><td>patient:identifier</td><td><code>token</code></td><td><div><p><code>GET [base]/Encounter?patient:identifier={system|}[code]</code></p>\n<p>e.g. GET /Encounter?patient:identifier=https://fhir.nhs.uk/Id/nhs-number|9459304130</p>\n</div></td></tr><tr><td><b>SHOULD</b></td><td>date</td><td><code>date</code></td><td><div><ul>\n<li>including support for these date comparators: gt,lt,ge,le</li>\n<li>including optional support for AND search on date (e.g.date=[date]&amp;date=[date]]&amp;...)</li>\n</ul>\n<p><code>GET [base]/Encounter?date={gt|lt|ge|le}[date]{&amp;date={gt|lt|ge|le}[date]&amp;...}&amp;patient={Type/}[id]</code></p>\n<p>or</p>\n<p><code>GET [base]/Encounter?date={gt|lt|ge|le}[date]{&amp;date={gt|lt|ge|le}[date]&amp;...}&amp;patient:identifier={system/}[code]</code></p>\n<p>e.g. GET /Encounter?date=ge2019-01-01T00:00:00Z&amp;patient:identifier=https://fhir.nhs.uk/Id/nhs-number|9459304130</p>\n</div></td></tr></tbody></table></div><div class=\"col-lg-5\"><span class=\"lead\">Combined Search Parameters</span><table class=\"table table-condensed table-hover\"><thead><tr><th>Conformance</th><th>Parameters</th><th>Types</th></tr></thead><tbody><tr><td><b>SHOULD</b></td><td>date+patient</td><td><code>date</code>+<code>reference</code></td></tr><tr><td><b>SHOULD</b></td><td>date+patient:identifier</td><td><code>date</code>+<code>token</code></td></tr></tbody></table></div></div></div></div></div></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://fhir.nhs.uk/England/CapabilityStatement/NHSEnglandPatientEncounterManagementProvider"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.0.1"] ; # 
+  fhir:title [ fhir:v "NHS England Patient Encounter Management"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2023-02-01"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "NHS England"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "NHS England" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.england.nhs.uk/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Provider query and update management of a encounter registry. Based on mandatory queries from [US Core Encounter - Mandatory search parameters](https://build.fhir.org/ig/HL7/US-Core/StructureDefinition-us-core-encounter.html) and [IHE PIXm](https://profiles.ihe.net/ITI/PIXm/ITI-104.html#2310441-add-or-revise-patient) upsert"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "GB-ENG" ] ;
+       fhir:display [ fhir:v "England" ]
+     ] )
+  ] ) ; # 
+  fhir:kind [ fhir:v "requirements"] ; # 
+  fhir:fhirVersion [ fhir:v "4.0.1"] ; # 
+  fhir:format ( [ fhir:v "json"] ) ; # 
+  fhir:rest ( [
+     fhir:mode [ fhir:v "server" ] ;
+     fhir:resource ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "SHALL" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHOULD" ]
+         ] [
+           fhir:url [ fhir:v "required"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "date" ]
+         ] [
+           fhir:url [ fhir:v "required"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "patient" ]
+         ] ) ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"^^xsd:anyURI ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHOULD" ]
+         ] [
+           fhir:url [ fhir:v "required"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "date" ]
+         ] [
+           fhir:url [ fhir:v "required"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "patient:identifier" ]
+         ] ) ;
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-search-parameter-combination"^^xsd:anyURI ]
+       ] ) ;
+       fhir:type [ fhir:v "Patient" ] ;
+       fhir:profile [
+         fhir:v "https://fhir.nhs.uk/England/StructureDefinition/Encounter"^^xsd:anyURI ;
+         fhir:link <https://fhir.nhs.uk/England/StructureDefinition/Encounter>
+       ] ;
+       fhir:documentation [ fhir:v "The update expects an identifier parameter i.e. ```PUT [base]/Encounter?identifier={system|}[code]```. \n\n Example: \n\n PUT [base]/Encounter?identifier=https://fhir.leedsth.nhs.uk/YrVisit|YOR123456    \n\n This is the same **upsert** behaviour as described [IHE PIXm](https://profiles.ihe.net/ITI/PIXm/ITI-104.html#2310441-add-or-revise-patient) around the Patient resource." ] ;
+       fhir:interaction ( [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:code [ fhir:v "update" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:code [ fhir:v "read" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:code [ fhir:v "search-type" ]
+       ] ) ;
+       fhir:searchParam ( [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:name [ fhir:v "_id" ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "```GET [base]/Encounter/[id] or GET [base]/Encounter?_id=[id]``` \n\n e.g. GET [base]/Encounter?_id=12354" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHALL" ]
+         ] ) ;
+         fhir:name [ fhir:v "patient" ] ;
+         fhir:type [ fhir:v "reference" ] ;
+         fhir:documentation [ fhir:v "```GET [base]/Encounter?patient={Type/}[id]``` \n\n e.g. GET [base]/Encounter?patient=1137192" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHOULD" ]
+         ] ) ;
+         fhir:name [ fhir:v "patient:identifier" ] ;
+         fhir:type [ fhir:v "token" ] ;
+         fhir:documentation [ fhir:v "```GET [base]/Encounter?patient:identifier={system|}[code]``` \n\n e.g. GET /Encounter?patient:identifier=https://fhir.nhs.uk/Id/nhs-number|9459304130" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "SHOULD" ]
+         ] ) ;
+         fhir:name [ fhir:v "date" ] ;
+         fhir:type [ fhir:v "date" ] ;
+         fhir:documentation [ fhir:v "- including support for these date comparators: gt,lt,ge,le \n- including optional support for AND search on date (e.g.date=[date]&date=[date]]&...) \n\n ```GET [base]/Encounter?date={gt|lt|ge|le}[date]{&date={gt|lt|ge|le}[date]&...}&patient={Type/}[id]``` \n\n or \n\n ```GET [base]/Encounter?date={gt|lt|ge|le}[date]{&date={gt|lt|ge|le}[date]&...}&patient:identifier={system/}[code]``` \n\n e.g. GET /Encounter?date=ge2019-01-01T00:00:00Z&patient:identifier=https://fhir.nhs.uk/Id/nhs-number|9459304130" ]
+       ] )
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

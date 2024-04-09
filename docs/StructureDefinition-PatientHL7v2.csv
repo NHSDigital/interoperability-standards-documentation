@@ -43,7 +43,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Patient.extension:birthSex","Patient.extension","birthSex","","",0,1,"","","","Extension {[CanonicalType[https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-BirthSex]]} {[]}
 ","The patient's phenotypic sex at birth.","The patient's phenotypic sex at birth.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
 "Patient.extension:cadavericDonor","Patient.extension","cadavericDonor","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/patient-cadavericDonor]]} {[]}
 ","Post-mortem donor status.","Flag indicating whether the patient authorized the donation of body parts after death.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -62,19 +62,19 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Patient.extension:contactPreference","Patient.extension","contactPreference","","",0,1,"","","","Extension {[CanonicalType[https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ContactPreference]]} {[]}
 ","The preferred method of contact, contact times and written communication format given by a Patient or Related Person.","The preferred method of contact, contact times and written communication format given by a Patient or Related Person.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
 "Patient.extension:deathNotificationStatus","Patient.extension","deathNotificationStatus","","",0,1,"","","","Extension {[CanonicalType[https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-DeathNotificationStatus]]} {[]}
 ","The patient's death notification status.","The patient's death notification status.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
 "Patient.extension:ethnicCategory","Patient.extension","ethnicCategory","","",0,1,"","","","Extension {[CanonicalType[https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-EthnicCategory]]} {[]}
 ","The ethnicity of the subject","The ethnicity of the subject.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
 "Patient.extension:residentialStatus","Patient.extension","residentialStatus","","",0,1,"","","","Extension {[CanonicalType[https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ResidentialStatus]]} {[]}
 ","The residential status of the patient.","The residential status of the patient. For example if this patient is a UK resident.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
 "Patient.extension:patientInterpreterRequired","Patient.extension","patientInterpreterRequired","","",0,1,"","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/patient-interpreterRequired]]} {[]}
 ","Whether the patient needs an interpreter","This Patient requires an interpreter to communicate healthcare information to the practitioner.","The Patient does not speak the default language of the organization, and hence requires an interpreter. If the patient has other languages in the Communications list, then that would be the type of interpreter required.","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -170,7 +170,7 @@ Reference is intended to point to a structure that can potentially be expressed 
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Patient.identifier:nhsNumber.extension:nhsNumberVerificationStatus","Patient.identifier.extension","nhsNumberVerificationStatus","","",0,1,"","","","Extension {[CanonicalType[https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-NHSNumberVerificationStatus]]} {[]}
 ","NHS number verification status","The verification/tracing status of the NHS number.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
 "Patient.identifier:nhsNumber.use","Patient.identifier.use","","","",0,1,"","Y","Y","code {[]} {[]}
 ","usual | official | temp | secondary | old (If known)","The purpose of this identifier.","Applications can assume that an identifier is permanent unless it explicitly says that it is temporary.","Allows the appropriate identifier for a particular context of use to be selected from among a set of identifiers.","","","","","","","",,"required","Identifies the purpose for this identifier, if known .","http://hl7.org/fhir/ValueSet/identifier-use|4.0.1","",,,,"Identifier.use",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Role.code or implied by context","N/A"
@@ -223,7 +223,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Patient.telecom.system.extension:otherContactSystem","Patient.telecom.system.extension","otherContactSystem","","",0,1,"","","","Extension {[CanonicalType[https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-OtherContactSystem]]} {[]}
 ","Other contact system","Other contact system value which extends the system element in the ContactPoint datatype.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
 "Patient.telecom.system.value","Patient.telecom.system.value","","","",0,1,"","","","string {[]} {[]}
 ","Primitive value for code","Primitive value for code","","","","","","","","","",,,,,"",,,,"string.value",0,1,"",""
 "Patient.telecom.value","Patient.telecom.value","","","",0,1,"","","Y","string {[]} {[]}
@@ -281,7 +281,7 @@ dateTime {[]} {[]}","Indicates if the individual is deceased or not","Indicates 
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Patient.address.extension:addressKey","Patient.address.extension","addressKey","","",0,*,"","","","Extension {[CanonicalType[https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-AddressKey]]} {[]}
 ","A patient's address key and type","A patient's address key and type.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
 "Patient.address.use","Patient.address.use","","","",0,1,"","Y","Y","code {[]} {[]}
 ","home | work | temp | old | billing - purpose of this address","The purpose of this address.","Applications can assume that an address is current unless it explicitly says that it is temporary or old.","Allows an appropriate address to be chosen from a list of many.","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""home""/>","","",,"required","The use of an address.","http://hl7.org/fhir/ValueSet/address-use|4.0.1","",,,,"Address.use",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","unique(./use)","XAD.7"
@@ -343,11 +343,11 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Patient.contact.extension:contactRank","Patient.contact.extension","contactRank","","",0,1,"","","","Extension {[CanonicalType[https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ContactRank]]} {[]}
 ","Preferred ranking or order of contact applied to a contact on a patient's contact list","The preferred ranking or order of contact applied to a contact on a patient's contact list.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
 "Patient.contact.extension:copyCorrespondenceIndicator","Patient.contact.extension","copyCorrespondenceIndicator","","",0,1,"","","","Extension {[CanonicalType[https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CopyCorrespondenceIndicator]]} {[]}
 ","Indicator showing that a patient's contact or related person SHALL be copied in to patient correspondence","Extension carrying a boolean indicator showing that a patient's contact or related person SHALL be copied in to patient correspondence.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
 "Patient.contact.modifierExtension","Patient.contact.modifierExtension","","extensions
 user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
 ","Extensions that cannot be ignored even if unrecognized","May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
@@ -383,7 +383,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Patient.contact.telecom.system.extension:otherContactSystem","Patient.contact.telecom.system.extension","otherContactSystem","","",0,1,"","","","Extension {[CanonicalType[https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-OtherContactSystem]]} {[]}
 ","Other contact system","Other contact system value which extends the system element in the ContactPoint datatype.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
 "Patient.contact.telecom.system.value","Patient.contact.telecom.system.value","","","",0,1,"","","","string {[]} {[]}
 ","Primitive value for code","Primitive value for code","","","","","","","","","",,,,,"",,,,"string.value",0,1,"",""
 "Patient.contact.telecom.value","Patient.contact.telecom.value","","","",0,1,"","","Y","string {[]} {[]}

@@ -10,7 +10,7 @@
   <name value="NHSEnglandInteroperabilitySkunkworks"/>
   <title value="Health Administration Interoperability Standards - Skunkworks"/>
   <status value="draft"/>
-  <date value="2024-04-04T07:58:12+01:00"/>
+  <date value="2024-04-09T11:34:38+01:00"/>
   <publisher value="NHS England"/>
   <contact>
     <name value="NHS England"/>
@@ -748,6 +748,17 @@
       </reference>
       <name value="NHS England National Proxy Consent Profile"/>
       <description value="NHS England National Proxy Consent Profile from https://nhsd-confluence.digital.nhs.uk/display/NPA/Confirm+consent"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CapabilityStatement"/>
+      </extension>
+      <reference>
+        <reference value="CapabilityStatement/NHSEnglandPatientEncounterManagementProvider"/>
+      </reference>
+      <name value="NHS England Patient Encounter Management"/>
+      <description value="Provider query and update management of a encounter registry. Based on mandatory queries from [US Core Encounter - Mandatory search parameters](https://build.fhir.org/ig/HL7/US-Core/StructureDefinition-us-core-encounter.html) and [IHE PIXm](https://profiles.ihe.net/ITI/PIXm/ITI-104.html#2310441-add-or-revise-patient) upsert"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

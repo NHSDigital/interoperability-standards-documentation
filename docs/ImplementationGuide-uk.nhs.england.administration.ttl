@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "NHSEnglandInteroperabilitySkunkworks"] ; # 
   fhir:title [ fhir:v "Health Administration Interoperability Standards - Skunkworks"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-04-04T07:58:12+01:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-04-09T11:34:38+01:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "NHS England"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "NHS England" ] ;
@@ -881,6 +881,18 @@
        ] ;
        fhir:name [ fhir:v "NHS England National Proxy Consent Profile" ] ;
        fhir:description [ fhir:v "NHS England National Proxy Consent Profile from https://nhsd-confluence.digital.nhs.uk/display/NPA/Confirm+consent" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CapabilityStatement" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.nhs.uk/England/CapabilityStatement/NHSEnglandPatientEncounterManagementProvider> ;
+         fhir:reference [ fhir:v "CapabilityStatement/NHSEnglandPatientEncounterManagementProvider" ]
+       ] ;
+       fhir:name [ fhir:v "NHS England Patient Encounter Management" ] ;
+       fhir:description [ fhir:v "Provider query and update management of a encounter registry. Based on mandatory queries from [US Core Encounter - Mandatory search parameters](https://build.fhir.org/ig/HL7/US-Core/StructureDefinition-us-core-encounter.html) and [IHE PIXm](https://profiles.ihe.net/ITI/PIXm/ITI-104.html#2310441-add-or-revise-patient) upsert" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [

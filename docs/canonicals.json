@@ -46,6 +46,12 @@
     "version" : "0.0.1"
   },
   {
+    "id" : "NHSEnglandPatientEncounterManagementProvider",
+    "type" : "CapabilityStatement",
+    "url" : "https://fhir.nhs.uk/England/CapabilityStatement/NHSEnglandPatientEncounterManagementProvider",
+    "version" : "0.0.1"
+  },
+  {
     "id" : "UKCoreAccessPatientIndexProvider",
     "type" : "CapabilityStatement",
     "url" : "https://fhir.nhs.uk/England/CapabilityStatement/UKCoreAccessPatientIndexProvider",

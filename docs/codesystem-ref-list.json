@@ -13,16 +13,15 @@
       "ValueSet-FlagProvenanceRole.html" : "NHSE Flag Provenance Role"
     },
     {
-      "url" : "http://hl7.org/fhir/fhir-types",
-      "version" : "5.0.0",
+      "url" : "http://hl7.org/fhir/resource-types",
+      "version" : "4.0.1",
       "status" : "active",
-      "name" : "FHIRTypes",
-      "title" : "All FHIR Types",
-      "description" : "One of the types defined as part of this version of FHIR.",
-      "oids" : ["2.16.840.1.113883.4.642.4.1802"],
+      "name" : "ResourceType",
+      "title" : "ResourceType",
+      "description" : "One of the resource types defined as part of this version of FHIR.",
       "uses" : {
       },
-      "http://hl7.org/fhir/R5/valueset-resource-types.html" : "Resource Types"
+      "http://hl7.org/fhir/R4/valueset-resource-types.html" : "ResourceType"
     },
     {
       "url" : "http://snomed.info/sct",
@@ -178,8 +177,8 @@
       "oids" : ["2.16.840.1.113883.5.111"],
       "uses" : {
       },
-      "ValueSet-FlagProvenanceRole.html" : "NHSE Flag Provenance Role",
-      "https://simplifier.net/resolve?scope=fhir.r4.ukcore.stu3.currentbuild@0.0.6-pre-release&canonical=https://fhir.hl7.org.uk/ValueSet/UKCore-PersonRelationshipType" : "UK Core Person Relationship Type"
+      "https://simplifier.net/resolve?scope=fhir.r4.ukcore.stu3.currentbuild@0.0.6-pre-release&canonical=https://fhir.hl7.org.uk/ValueSet/UKCore-PersonRelationshipType" : "UK Core Person Relationship Type",
+      "ValueSet-FlagProvenanceRole.html" : "NHSE Flag Provenance Role"
     },
     {
       "url" : "https://fhir.hl7.org.uk/CodeSystem/UKCore-AdditionalPersonRelationshipRole",
