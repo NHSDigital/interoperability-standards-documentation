@@ -22,12 +22,12 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:1519
 content-type:application/fhir+json
-date:Fri, 12 Apr 2024 07:32:02 GMT
+date:Fri, 12 Apr 2024 09:29:56 GMT
 pragma:no-cache
 server:nginx
-x-request-id:136-834530
+x-request-id:136-840826
 
-{"resourceType" : "CapabilityStatement","id" : "FhirServer","meta" : {"tag" : [{"system" : "http://hl7.org/fhir/v3/ObservationValue","code" : "SUBSETTED","display" : "Subsetted"}]},"url" : "http://tx.fhir.org/r4/metadata","version" : "4.0.1-3.5.0","name" : "FHIR Reference Server Conformance Statement","status" : "active","date" : "2024-04-12T07:32:02.603Z","contact" : [{"telecom" : [{"system" : "other","value" : "http://healthintersections.com.au/"}]}],"kind" : "instance","instantiates" : ["http://hl7.org/fhir/CapabilityStatement/terminology-server"],"software" : {"name" : "Reference Server","version" : "3.5.0","releaseDate" : "2024-03-29T08:29:59.571Z"},"implementation" : {"description" : "FHIR Server running at http://tx.fhir.org/r4","url" : "http://tx.fhir.org/r4"},"fhirVersion" : "4.0.1","format" : ["application/fhir+xml","application/fhir+json"],"rest" : [{"mode" : "server","security" : {"cors" : true},"operation" : [{"name" : "expand","definition" : "http://hl7.org/fhir/OperationDefinition/ValueSet-expand"},{"name" : "lookup","definition" : "http://hl7.org/fhir/OperationDefinition/ValueSet-lookup"},{"name" : "validate-code","definition" : "http://hl7.org/fhir/OperationDefinition/Resource-validate"},{"name" : "translate","definition" : "http://hl7.org/fhir/OperationDefinition/ConceptMap-translate"},{"name" : "closure","definition" : "http://hl7.org/fhir/OperationDefinition/ConceptMap-closure"},{"name" : "versions","definition" : "http://tx.fhir.org/r4/OperationDefinition/fso-versions"}]}]}
+{"resourceType" : "CapabilityStatement","id" : "FhirServer","meta" : {"tag" : [{"system" : "http://hl7.org/fhir/v3/ObservationValue","code" : "SUBSETTED","display" : "Subsetted"}]},"url" : "http://tx.fhir.org/r4/metadata","version" : "4.0.1-3.5.0","name" : "FHIR Reference Server Conformance Statement","status" : "active","date" : "2024-04-12T09:29:56.243Z","contact" : [{"telecom" : [{"system" : "other","value" : "http://healthintersections.com.au/"}]}],"kind" : "instance","instantiates" : ["http://hl7.org/fhir/CapabilityStatement/terminology-server"],"software" : {"name" : "Reference Server","version" : "3.5.0","releaseDate" : "2024-03-29T08:29:59.571Z"},"implementation" : {"description" : "FHIR Server running at http://tx.fhir.org/r4","url" : "http://tx.fhir.org/r4"},"fhirVersion" : "4.0.1","format" : ["application/fhir+xml","application/fhir+json"],"rest" : [{"mode" : "server","security" : {"cors" : true},"operation" : [{"name" : "expand","definition" : "http://hl7.org/fhir/OperationDefinition/ValueSet-expand"},{"name" : "lookup","definition" : "http://hl7.org/fhir/OperationDefinition/ValueSet-lookup"},{"name" : "validate-code","definition" : "http://hl7.org/fhir/OperationDefinition/Resource-validate"},{"name" : "translate","definition" : "http://hl7.org/fhir/OperationDefinition/ConceptMap-translate"},{"name" : "closure","definition" : "http://hl7.org/fhir/OperationDefinition/ConceptMap-closure"},{"name" : "versions","definition" : "http://tx.fhir.org/r4/OperationDefinition/fso-versions"}]}]}
 
 </pre><hr/>
 <a name="l2"> </a><h3>2</h3>
@@ -40,7 +40,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-religious-affiliation","code":"C22"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"300e33a8-2c2b-4f0e-8ed7-2c44f69cf38b"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-religious-affiliation","code":"C22"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"850e5c11-a7f3-406e-b739-7553aaeab994"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
 
 
 Response: 
@@ -53,11 +53,11 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:1059
 content-type:application/fhir+json
-date:Fri, 12 Apr 2024 07:32:33 GMT
-last-modified:Fri, 12 Apr 2024 07:32:33 GMT
+date:Fri, 12 Apr 2024 09:30:13 GMT
+last-modified:Fri, 12 Apr 2024 09:30:13 GMT
 pragma:no-cache
 server:nginx
-x-request-id:136-834535
+x-request-id:136-840829
 
 {"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "system","valueUri" : "https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-religious-affiliation"},{"name" : "x-caused-by-unknown-system","valueCanonical" : "https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-religious-affiliation"},{"name" : "code","valueCode" : "C22"},{"name" : "message","valueString" : "A definition for CodeSystem 'https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-religious-affiliation' could not be found, so the code cannot be validated"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"coding" : [{"system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type","code" : "not-found"}],"text" : "A definition for CodeSystem 'https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-religious-affiliation' could not be found, so the code cannot be validated"},"location" : ["Coding.system"],"expression" : ["Coding.system"]}]}}]}
 
@@ -72,7 +72,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1","code":"R0010"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"300e33a8-2c2b-4f0e-8ed7-2c44f69cf38b"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1","code":"R0010"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"850e5c11-a7f3-406e-b739-7553aaeab994"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
 
 
 Response: 
@@ -85,11 +85,11 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:1021
 content-type:application/fhir+json
-date:Fri, 12 Apr 2024 07:32:35 GMT
-last-modified:Fri, 12 Apr 2024 07:32:35 GMT
+date:Fri, 12 Apr 2024 09:30:14 GMT
+last-modified:Fri, 12 Apr 2024 09:30:14 GMT
 pragma:no-cache
 server:nginx
-x-request-id:136-834537
+x-request-id:136-840830
 
 {"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "system","valueUri" : "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"},{"name" : "x-caused-by-unknown-system","valueCanonical" : "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"},{"name" : "code","valueCode" : "R0010"},{"name" : "message","valueString" : "A definition for CodeSystem 'https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1' could not be found, so the code cannot be validated"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"coding" : [{"system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type","code" : "not-found"}],"text" : "A definition for CodeSystem 'https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1' could not be found, so the code cannot be validated"},"location" : ["Coding.system"],"expression" : ["Coding.system"]}]}}]}
 
@@ -104,7 +104,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-treatment-function","code":"330","display":"DERMATOLOGY"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"300e33a8-2c2b-4f0e-8ed7-2c44f69cf38b"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-treatment-function","code":"330","display":"DERMATOLOGY"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"850e5c11-a7f3-406e-b739-7553aaeab994"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
 
 
 Response: 
@@ -117,11 +117,11 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:1047
 content-type:application/fhir+json
-date:Fri, 12 Apr 2024 07:32:49 GMT
-last-modified:Fri, 12 Apr 2024 07:32:49 GMT
+date:Fri, 12 Apr 2024 09:30:36 GMT
+last-modified:Fri, 12 Apr 2024 09:30:36 GMT
 pragma:no-cache
 server:nginx
-x-request-id:136-834541
+x-request-id:136-840840
 
 {"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "system","valueUri" : "https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-treatment-function"},{"name" : "x-caused-by-unknown-system","valueCanonical" : "https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-treatment-function"},{"name" : "code","valueCode" : "330"},{"name" : "message","valueString" : "A definition for CodeSystem 'https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-treatment-function' could not be found, so the code cannot be validated"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"coding" : [{"system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type","code" : "not-found"}],"text" : "A definition for CodeSystem 'https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-treatment-function' could not be found, so the code cannot be validated"},"location" : ["Coding.system"],"expression" : ["Coding.system"]}]}}]}
 
@@ -136,7 +136,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-treatment-function","code":"300"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"300e33a8-2c2b-4f0e-8ed7-2c44f69cf38b"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-treatment-function","code":"300"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"850e5c11-a7f3-406e-b739-7553aaeab994"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
 
 
 Response: 
@@ -149,11 +149,11 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:1047
 content-type:application/fhir+json
-date:Fri, 12 Apr 2024 07:32:50 GMT
-last-modified:Fri, 12 Apr 2024 07:32:50 GMT
+date:Fri, 12 Apr 2024 09:30:36 GMT
+last-modified:Fri, 12 Apr 2024 09:30:36 GMT
 pragma:no-cache
 server:nginx
-x-request-id:136-834542
+x-request-id:136-840841
 
 {"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "system","valueUri" : "https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-treatment-function"},{"name" : "x-caused-by-unknown-system","valueCanonical" : "https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-treatment-function"},{"name" : "code","valueCode" : "300"},{"name" : "message","valueString" : "A definition for CodeSystem 'https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-treatment-function' could not be found, so the code cannot be validated"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"coding" : [{"system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type","code" : "not-found"}],"text" : "A definition for CodeSystem 'https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-treatment-function' could not be found, so the code cannot be validated"},"location" : ["Coding.system"],"expression" : ["Coding.system"]}]}}]}
 
@@ -168,7 +168,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-treatment-function","code":"300"}},{"name":"displayLanguage","valueString":"en"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"300e33a8-2c2b-4f0e-8ed7-2c44f69cf38b"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-treatment-function","code":"300"}},{"name":"displayLanguage","valueString":"en"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"850e5c11-a7f3-406e-b739-7553aaeab994"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
 
 
 Response: 
@@ -181,11 +181,11 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:1047
 content-type:application/fhir+json
-date:Fri, 12 Apr 2024 07:32:50 GMT
-last-modified:Fri, 12 Apr 2024 07:32:50 GMT
+date:Fri, 12 Apr 2024 09:30:37 GMT
+last-modified:Fri, 12 Apr 2024 09:30:37 GMT
 pragma:no-cache
 server:nginx
-x-request-id:136-834543
+x-request-id:136-840842
 
 {"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "system","valueUri" : "https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-treatment-function"},{"name" : "x-caused-by-unknown-system","valueCanonical" : "https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-treatment-function"},{"name" : "code","valueCode" : "300"},{"name" : "message","valueString" : "A definition for CodeSystem 'https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-treatment-function' could not be found, so the code cannot be validated"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"coding" : [{"system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type","code" : "not-found"}],"text" : "A definition for CodeSystem 'https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-treatment-function' could not be found, so the code cannot be validated"},"location" : ["Coding.system"],"expression" : ["Coding.system"]}]}}]}
 
@@ -200,7 +200,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"https://fhir.nhs.uk/CodeSystem/PDS-RemovalReasonExitCode","code":"SCT","display":"Transferred to Scotland"}},{"name":"displayLanguage","valueString":"en"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"300e33a8-2c2b-4f0e-8ed7-2c44f69cf38b"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"https://fhir.nhs.uk/CodeSystem/PDS-RemovalReasonExitCode","code":"SCT","display":"Transferred to Scotland"}},{"name":"displayLanguage","valueString":"en"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"850e5c11-a7f3-406e-b739-7553aaeab994"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
 
 
 Response: 
@@ -213,11 +213,11 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:971
 content-type:application/fhir+json
-date:Fri, 12 Apr 2024 07:32:50 GMT
-last-modified:Fri, 12 Apr 2024 07:32:50 GMT
+date:Fri, 12 Apr 2024 09:30:37 GMT
+last-modified:Fri, 12 Apr 2024 09:30:37 GMT
 pragma:no-cache
 server:nginx
-x-request-id:136-834545
+x-request-id:136-840843
 
 {"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "system","valueUri" : "https://fhir.nhs.uk/CodeSystem/PDS-RemovalReasonExitCode"},{"name" : "x-caused-by-unknown-system","valueCanonical" : "https://fhir.nhs.uk/CodeSystem/PDS-RemovalReasonExitCode"},{"name" : "code","valueCode" : "SCT"},{"name" : "message","valueString" : "A definition for CodeSystem 'https://fhir.nhs.uk/CodeSystem/PDS-RemovalReasonExitCode' could not be found, so the code cannot be validated"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"coding" : [{"system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type","code" : "not-found"}],"text" : "A definition for CodeSystem 'https://fhir.nhs.uk/CodeSystem/PDS-RemovalReasonExitCode' could not be found, so the code cannot be validated"},"location" : ["Coding.system"],"expression" : ["Coding.system"]}]}}]}
 
@@ -232,7 +232,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"https://fhir.nhs.uk/R4/CodeSystem/UKCore-AdditionalRelatedPersonRole","code":"Guardian","display":"Guardian of patient"}},{"name":"displayLanguage","valueString":"en"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"300e33a8-2c2b-4f0e-8ed7-2c44f69cf38b"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"https://fhir.nhs.uk/R4/CodeSystem/UKCore-AdditionalRelatedPersonRole","code":"Guardian","display":"Guardian of patient"}},{"name":"displayLanguage","valueString":"en"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"850e5c11-a7f3-406e-b739-7553aaeab994"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
 
 
 Response: 
@@ -245,11 +245,11 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:1024
 content-type:application/fhir+json
-date:Fri, 12 Apr 2024 07:32:51 GMT
-last-modified:Fri, 12 Apr 2024 07:32:51 GMT
+date:Fri, 12 Apr 2024 09:30:38 GMT
+last-modified:Fri, 12 Apr 2024 09:30:38 GMT
 pragma:no-cache
 server:nginx
-x-request-id:136-834546
+x-request-id:136-840844
 
 {"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "system","valueUri" : "https://fhir.nhs.uk/R4/CodeSystem/UKCore-AdditionalRelatedPersonRole"},{"name" : "x-caused-by-unknown-system","valueCanonical" : "https://fhir.nhs.uk/R4/CodeSystem/UKCore-AdditionalRelatedPersonRole"},{"name" : "code","valueCode" : "Guardian"},{"name" : "message","valueString" : "A definition for CodeSystem 'https://fhir.nhs.uk/R4/CodeSystem/UKCore-AdditionalRelatedPersonRole' could not be found, so the code cannot be validated"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"coding" : [{"system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type","code" : "not-found"}],"text" : "A definition for CodeSystem 'https://fhir.nhs.uk/R4/CodeSystem/UKCore-AdditionalRelatedPersonRole' could not be found, so the code cannot be validated"},"location" : ["Coding.system"],"expression" : ["Coding.system"]}]}}]}
 
@@ -273,12 +273,12 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:1519
 content-type:application/fhir+json
-date:Fri, 12 Apr 2024 07:32:02 GMT
+date:Fri, 12 Apr 2024 09:29:56 GMT
 pragma:no-cache
 server:nginx
-x-request-id:136-834530
+x-request-id:136-840826
 
-{"resourceType" : "CapabilityStatement","id" : "FhirServer","meta" : {"tag" : [{"system" : "http://hl7.org/fhir/v3/ObservationValue","code" : "SUBSETTED","display" : "Subsetted"}]},"url" : "http://tx.fhir.org/r4/metadata","version" : "4.0.1-3.5.0","name" : "FHIR Reference Server Conformance Statement","status" : "active","date" : "2024-04-12T07:32:02.603Z","contact" : [{"telecom" : [{"system" : "other","value" : "http://healthintersections.com.au/"}]}],"kind" : "instance","instantiates" : ["http://hl7.org/fhir/CapabilityStatement/terminology-server"],"software" : {"name" : "Reference Server","version" : "3.5.0","releaseDate" : "2024-03-29T08:29:59.571Z"},"implementation" : {"description" : "FHIR Server running at http://tx.fhir.org/r4","url" : "http://tx.fhir.org/r4"},"fhirVersion" : "4.0.1","format" : ["application/fhir+xml","application/fhir+json"],"rest" : [{"mode" : "server","security" : {"cors" : true},"operation" : [{"name" : "expand","definition" : "http://hl7.org/fhir/OperationDefinition/ValueSet-expand"},{"name" : "lookup","definition" : "http://hl7.org/fhir/OperationDefinition/ValueSet-lookup"},{"name" : "validate-code","definition" : "http://hl7.org/fhir/OperationDefinition/Resource-validate"},{"name" : "translate","definition" : "http://hl7.org/fhir/OperationDefinition/ConceptMap-translate"},{"name" : "closure","definition" : "http://hl7.org/fhir/OperationDefinition/ConceptMap-closure"},{"name" : "versions","definition" : "http://tx.fhir.org/r4/OperationDefinition/fso-versions"}]}]}
+{"resourceType" : "CapabilityStatement","id" : "FhirServer","meta" : {"tag" : [{"system" : "http://hl7.org/fhir/v3/ObservationValue","code" : "SUBSETTED","display" : "Subsetted"}]},"url" : "http://tx.fhir.org/r4/metadata","version" : "4.0.1-3.5.0","name" : "FHIR Reference Server Conformance Statement","status" : "active","date" : "2024-04-12T09:29:56.243Z","contact" : [{"telecom" : [{"system" : "other","value" : "http://healthintersections.com.au/"}]}],"kind" : "instance","instantiates" : ["http://hl7.org/fhir/CapabilityStatement/terminology-server"],"software" : {"name" : "Reference Server","version" : "3.5.0","releaseDate" : "2024-03-29T08:29:59.571Z"},"implementation" : {"description" : "FHIR Server running at http://tx.fhir.org/r4","url" : "http://tx.fhir.org/r4"},"fhirVersion" : "4.0.1","format" : ["application/fhir+xml","application/fhir+json"],"rest" : [{"mode" : "server","security" : {"cors" : true},"operation" : [{"name" : "expand","definition" : "http://hl7.org/fhir/OperationDefinition/ValueSet-expand"},{"name" : "lookup","definition" : "http://hl7.org/fhir/OperationDefinition/ValueSet-lookup"},{"name" : "validate-code","definition" : "http://hl7.org/fhir/OperationDefinition/Resource-validate"},{"name" : "translate","definition" : "http://hl7.org/fhir/OperationDefinition/ConceptMap-translate"},{"name" : "closure","definition" : "http://hl7.org/fhir/OperationDefinition/ConceptMap-closure"},{"name" : "versions","definition" : "http://tx.fhir.org/r4/OperationDefinition/fso-versions"}]}]}
 
 --- 2 -----------------
 Request: 
@@ -289,7 +289,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-religious-affiliation","code":"C22"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"300e33a8-2c2b-4f0e-8ed7-2c44f69cf38b"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-religious-affiliation","code":"C22"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"850e5c11-a7f3-406e-b739-7553aaeab994"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
 
 
 Response: 
@@ -302,11 +302,11 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:1059
 content-type:application/fhir+json
-date:Fri, 12 Apr 2024 07:32:33 GMT
-last-modified:Fri, 12 Apr 2024 07:32:33 GMT
+date:Fri, 12 Apr 2024 09:30:13 GMT
+last-modified:Fri, 12 Apr 2024 09:30:13 GMT
 pragma:no-cache
 server:nginx
-x-request-id:136-834535
+x-request-id:136-840829
 
 {"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "system","valueUri" : "https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-religious-affiliation"},{"name" : "x-caused-by-unknown-system","valueCanonical" : "https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-religious-affiliation"},{"name" : "code","valueCode" : "C22"},{"name" : "message","valueString" : "A definition for CodeSystem 'https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-religious-affiliation' could not be found, so the code cannot be validated"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"coding" : [{"system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type","code" : "not-found"}],"text" : "A definition for CodeSystem 'https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-religious-affiliation' could not be found, so the code cannot be validated"},"location" : ["Coding.system"],"expression" : ["Coding.system"]}]}}]}
 
@@ -319,7 +319,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1","code":"R0010"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"300e33a8-2c2b-4f0e-8ed7-2c44f69cf38b"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1","code":"R0010"}},{"name":"displayLanguage","valueString":"en, en-US"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"850e5c11-a7f3-406e-b739-7553aaeab994"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
 
 
 Response: 
@@ -332,11 +332,11 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:1021
 content-type:application/fhir+json
-date:Fri, 12 Apr 2024 07:32:35 GMT
-last-modified:Fri, 12 Apr 2024 07:32:35 GMT
+date:Fri, 12 Apr 2024 09:30:14 GMT
+last-modified:Fri, 12 Apr 2024 09:30:14 GMT
 pragma:no-cache
 server:nginx
-x-request-id:136-834537
+x-request-id:136-840830
 
 {"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "system","valueUri" : "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"},{"name" : "x-caused-by-unknown-system","valueCanonical" : "https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1"},{"name" : "code","valueCode" : "R0010"},{"name" : "message","valueString" : "A definition for CodeSystem 'https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1' could not be found, so the code cannot be validated"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"coding" : [{"system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type","code" : "not-found"}],"text" : "A definition for CodeSystem 'https://fhir.hl7.org.uk/STU3/CodeSystem/CareConnect-SDSJobRoleName-1' could not be found, so the code cannot be validated"},"location" : ["Coding.system"],"expression" : ["Coding.system"]}]}}]}
 
@@ -349,7 +349,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-treatment-function","code":"330","display":"DERMATOLOGY"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"300e33a8-2c2b-4f0e-8ed7-2c44f69cf38b"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-treatment-function","code":"330","display":"DERMATOLOGY"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"850e5c11-a7f3-406e-b739-7553aaeab994"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
 
 
 Response: 
@@ -362,11 +362,11 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:1047
 content-type:application/fhir+json
-date:Fri, 12 Apr 2024 07:32:49 GMT
-last-modified:Fri, 12 Apr 2024 07:32:49 GMT
+date:Fri, 12 Apr 2024 09:30:36 GMT
+last-modified:Fri, 12 Apr 2024 09:30:36 GMT
 pragma:no-cache
 server:nginx
-x-request-id:136-834541
+x-request-id:136-840840
 
 {"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "system","valueUri" : "https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-treatment-function"},{"name" : "x-caused-by-unknown-system","valueCanonical" : "https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-treatment-function"},{"name" : "code","valueCode" : "330"},{"name" : "message","valueString" : "A definition for CodeSystem 'https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-treatment-function' could not be found, so the code cannot be validated"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"coding" : [{"system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type","code" : "not-found"}],"text" : "A definition for CodeSystem 'https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-treatment-function' could not be found, so the code cannot be validated"},"location" : ["Coding.system"],"expression" : ["Coding.system"]}]}}]}
 
@@ -379,7 +379,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-treatment-function","code":"300"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"300e33a8-2c2b-4f0e-8ed7-2c44f69cf38b"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-treatment-function","code":"300"}},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"850e5c11-a7f3-406e-b739-7553aaeab994"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
 
 
 Response: 
@@ -392,11 +392,11 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:1047
 content-type:application/fhir+json
-date:Fri, 12 Apr 2024 07:32:50 GMT
-last-modified:Fri, 12 Apr 2024 07:32:50 GMT
+date:Fri, 12 Apr 2024 09:30:36 GMT
+last-modified:Fri, 12 Apr 2024 09:30:36 GMT
 pragma:no-cache
 server:nginx
-x-request-id:136-834542
+x-request-id:136-840841
 
 {"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "system","valueUri" : "https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-treatment-function"},{"name" : "x-caused-by-unknown-system","valueCanonical" : "https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-treatment-function"},{"name" : "code","valueCode" : "300"},{"name" : "message","valueString" : "A definition for CodeSystem 'https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-treatment-function' could not be found, so the code cannot be validated"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"coding" : [{"system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type","code" : "not-found"}],"text" : "A definition for CodeSystem 'https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-treatment-function' could not be found, so the code cannot be validated"},"location" : ["Coding.system"],"expression" : ["Coding.system"]}]}}]}
 
@@ -409,7 +409,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-treatment-function","code":"300"}},{"name":"displayLanguage","valueString":"en"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"300e33a8-2c2b-4f0e-8ed7-2c44f69cf38b"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-treatment-function","code":"300"}},{"name":"displayLanguage","valueString":"en"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"850e5c11-a7f3-406e-b739-7553aaeab994"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
 
 
 Response: 
@@ -422,11 +422,11 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:1047
 content-type:application/fhir+json
-date:Fri, 12 Apr 2024 07:32:50 GMT
-last-modified:Fri, 12 Apr 2024 07:32:50 GMT
+date:Fri, 12 Apr 2024 09:30:37 GMT
+last-modified:Fri, 12 Apr 2024 09:30:37 GMT
 pragma:no-cache
 server:nginx
-x-request-id:136-834543
+x-request-id:136-840842
 
 {"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "system","valueUri" : "https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-treatment-function"},{"name" : "x-caused-by-unknown-system","valueCanonical" : "https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-treatment-function"},{"name" : "code","valueCode" : "300"},{"name" : "message","valueString" : "A definition for CodeSystem 'https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-treatment-function' could not be found, so the code cannot be validated"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"coding" : [{"system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type","code" : "not-found"}],"text" : "A definition for CodeSystem 'https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-treatment-function' could not be found, so the code cannot be validated"},"location" : ["Coding.system"],"expression" : ["Coding.system"]}]}}]}
 
@@ -439,7 +439,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"https://fhir.nhs.uk/CodeSystem/PDS-RemovalReasonExitCode","code":"SCT","display":"Transferred to Scotland"}},{"name":"displayLanguage","valueString":"en"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"300e33a8-2c2b-4f0e-8ed7-2c44f69cf38b"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"https://fhir.nhs.uk/CodeSystem/PDS-RemovalReasonExitCode","code":"SCT","display":"Transferred to Scotland"}},{"name":"displayLanguage","valueString":"en"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"850e5c11-a7f3-406e-b739-7553aaeab994"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
 
 
 Response: 
@@ -452,11 +452,11 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:971
 content-type:application/fhir+json
-date:Fri, 12 Apr 2024 07:32:50 GMT
-last-modified:Fri, 12 Apr 2024 07:32:50 GMT
+date:Fri, 12 Apr 2024 09:30:37 GMT
+last-modified:Fri, 12 Apr 2024 09:30:37 GMT
 pragma:no-cache
 server:nginx
-x-request-id:136-834545
+x-request-id:136-840843
 
 {"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "system","valueUri" : "https://fhir.nhs.uk/CodeSystem/PDS-RemovalReasonExitCode"},{"name" : "x-caused-by-unknown-system","valueCanonical" : "https://fhir.nhs.uk/CodeSystem/PDS-RemovalReasonExitCode"},{"name" : "code","valueCode" : "SCT"},{"name" : "message","valueString" : "A definition for CodeSystem 'https://fhir.nhs.uk/CodeSystem/PDS-RemovalReasonExitCode' could not be found, so the code cannot be validated"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"coding" : [{"system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type","code" : "not-found"}],"text" : "A definition for CodeSystem 'https://fhir.nhs.uk/CodeSystem/PDS-RemovalReasonExitCode' could not be found, so the code cannot be validated"},"location" : ["Coding.system"],"expression" : ["Coding.system"]}]}}]}
 
@@ -469,7 +469,7 @@ Accept: application/fhir+json; fhirVersion=4.0
 Content-Type: application/fhir+json; fhirVersion=4.0;charset=UTF-8
 User-Agent: fhir/publisher
 
-{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"https://fhir.nhs.uk/R4/CodeSystem/UKCore-AdditionalRelatedPersonRole","code":"Guardian","display":"Guardian of patient"}},{"name":"displayLanguage","valueString":"en"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"300e33a8-2c2b-4f0e-8ed7-2c44f69cf38b"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
+{"resourceType":"Parameters","parameter":[{"name":"coding","valueCoding":{"system":"https://fhir.nhs.uk/R4/CodeSystem/UKCore-AdditionalRelatedPersonRole","code":"Guardian","display":"Guardian of patient"}},{"name":"displayLanguage","valueString":"en"},{"name":"default-to-latest-version","valueBoolean":true},{"name":"cache-id","valueId":"850e5c11-a7f3-406e-b739-7553aaeab994"},{"name":"x-system-cache-id","valueString":"dc8fd4bc-091a-424a-8a3b-6198ef146891"}]}
 
 
 Response: 
@@ -482,11 +482,11 @@ cache-control:public, max-age=600
 connection:keep-alive
 content-length:1024
 content-type:application/fhir+json
-date:Fri, 12 Apr 2024 07:32:51 GMT
-last-modified:Fri, 12 Apr 2024 07:32:51 GMT
+date:Fri, 12 Apr 2024 09:30:38 GMT
+last-modified:Fri, 12 Apr 2024 09:30:38 GMT
 pragma:no-cache
 server:nginx
-x-request-id:136-834546
+x-request-id:136-840844
 
 {"resourceType" : "Parameters","parameter" : [{"name" : "result","valueBoolean" : false},{"name" : "system","valueUri" : "https://fhir.nhs.uk/R4/CodeSystem/UKCore-AdditionalRelatedPersonRole"},{"name" : "x-caused-by-unknown-system","valueCanonical" : "https://fhir.nhs.uk/R4/CodeSystem/UKCore-AdditionalRelatedPersonRole"},{"name" : "code","valueCode" : "Guardian"},{"name" : "message","valueString" : "A definition for CodeSystem 'https://fhir.nhs.uk/R4/CodeSystem/UKCore-AdditionalRelatedPersonRole' could not be found, so the code cannot be validated"},{"name" : "issues","resource" : {"resourceType" : "OperationOutcome","issue" : [{"severity" : "error","code" : "not-found","details" : {"coding" : [{"system" : "http://hl7.org/fhir/tools/CodeSystem/tx-issue-type","code" : "not-found"}],"text" : "A definition for CodeSystem 'https://fhir.nhs.uk/R4/CodeSystem/UKCore-AdditionalRelatedPersonRole' could not be found, so the code cannot be validated"},"location" : ["Coding.system"],"expression" : ["Coding.system"]}]}}]}
 </pre></head></html>

@@ -2,12 +2,12 @@
   "codeSystems" : [
     {
       "url" : "http://hl7.org/fhir/ValueSet/resource-types",
-      "version" : "5.0.0",
+      "version" : "4.0.1",
       "status" : "active",
       "name" : "ResourceType",
-      "title" : "Resource Types",
-      "description" : "Concrete FHIR Resource Types",
-      "systems" : ["http://hl7.org/fhir/fhir-types"],
+      "title" : "ResourceType",
+      "description" : "One of the resource types defined as part of this version of FHIR.",
+      "systems" : ["http://hl7.org/fhir/resource-types"],
       "oids" : ["2.16.840.1.113883.4.642.3.27"],
       "sources" : ["2.16.840.1.113883.4.642.3.27"],
       "uses" : {
@@ -102,9 +102,9 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-UKCore-Patient.html" : "UK Core Patient",
       "StructureDefinition-UKCore-RelatedPerson.html" : "UK Core RelatedPerson",
-      "Questionnaire-Questionnaire-Proxy-Access-Request.html" : "Proxy Access Request Form"
+      "Questionnaire-Questionnaire-Proxy-Access-Request.html" : "Proxy Access Request Form",
+      "StructureDefinition-UKCore-Patient.html" : "UK Core Patient"
     },
     {
       "url" : "https://fhir.hl7.org.uk/ValueSet/UKCore-PracticeSettingCode",
