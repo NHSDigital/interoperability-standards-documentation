@@ -62,12 +62,12 @@
         ]
       }
     },
-    "/Patient": {
-      "summary": "manage the collection of resources of type Patient",
-      "description": "Access to services to manage the collection of all resources of type Patient",
+    "/Encounter": {
+      "summary": "manage the collection of resources of type Encounter",
+      "description": "Access to services to manage the collection of all resources of type Encounter",
       "get": {
-        "summary": "Search all resources of type Patient based on a set of criteria",
-        "operationId": "searchPatient",
+        "summary": "Search all resources of type Encounter based on a set of criteria",
+        "operationId": "searchEncounter",
         "responses": {
           "default": {
             "description": "Error, with details",
@@ -139,12 +139,12 @@
         ]
       }
     },
-    "/Patient/{rid}": {
-      "summary": "Read/Write/etc resource instance of type Patient",
-      "description": "Access to services to manage the state of a single resource of type Patient",
+    "/Encounter/{rid}": {
+      "summary": "Read/Write/etc resource instance of type Encounter",
+      "description": "Access to services to manage the state of a single resource of type Encounter",
       "get": {
         "summary": "Read the current state of the resource",
-        "operationId": "readPatient",
+        "operationId": "readEncounter",
         "responses": {
           "default": {
             "description": "Error, with details",
@@ -169,7 +169,7 @@
             "content": {
               "application/fhir+json": {
                 "schema": {
-                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/Patient"
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/Encounter"
                 }
               }
             }
@@ -195,14 +195,14 @@
       },
       "put": {
         "summary": "Update the current state of the resource",
-        "operationId": "updatePatient",
+        "operationId": "updateEncounter",
         "requestBody": {
           "description": "The new state of the resource",
           "required": true,
           "content": {
             "application/fhir+json": {
               "schema": {
-                "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/Patient"
+                "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/Encounter"
               }
             }
           }
@@ -231,7 +231,7 @@
             "content": {
               "application/fhir+json": {
                 "schema": {
-                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/Patient"
+                  "$ref": "https://hl7.org/fhir/R4/fhir.schema.json#/definitions/Encounter"
                 }
               }
             }
