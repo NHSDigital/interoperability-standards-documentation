@@ -10,7 +10,7 @@
   <name value="NHSEnglandInteroperabilitySkunkworks"/>
   <title value="Health Administration Interoperability Standards - Skunkworks"/>
   <status value="draft"/>
-  <date value="2024-04-09T14:59:55+01:00"/>
+  <date value="2024-04-12T08:32:19+01:00"/>
   <publisher value="NHS England"/>
   <contact>
     <name value="NHS England"/>
@@ -642,6 +642,16 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/Encounter-pre-admission-fredrica-smith"/>
+      </reference>
+      <name value="Encounter-pre-admission-fredrica-smith"/>
+      <exampleCanonical value="https://fhir.nhs.uk/England/StructureDefinition/Encounter"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -758,7 +768,7 @@
         <reference value="CapabilityStatement/NHSEnglandPatientEncounterManagementProvider"/>
       </reference>
       <name value="NHS England Patient Encounter Management"/>
-      <description value="Provider query and update management of a encounter registry. Based on mandatory queries from [US Core Encounter - Mandatory search parameters](https://build.fhir.org/ig/HL7/US-Core/StructureDefinition-us-core-encounter.html) and [IHE PIXm](https://profiles.ihe.net/ITI/PIXm/ITI-104.html#2310441-add-or-revise-patient) upsert"/>
+      <description value="Provider query and update management of a encounter registry. Based on mandatory queries from [IHE Query for Existing Data for Mobile (QEDm)](https://build.fhir.org/ig/IHE/QEDm/branches/master/PCC-44.html#234441218-encounters-option-search-parameters) and also [US Core Encounter - Mandatory search parameters](https://build.fhir.org/ig/HL7/US-Core/StructureDefinition-us-core-encounter.html), plus [IHE PIXm](https://profiles.ihe.net/ITI/PIXm/ITI-104.html#2310441-add-or-revise-patient) upsert"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1357,6 +1367,14 @@
         </extension>
         <nameUrl value="national-proxy-service.html"/>
         <title value="National Proxy Service"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="patient-appointment-management.html"/>
+        </extension>
+        <nameUrl value="patient-appointment-management.html"/>
+        <title value="Patient Appointment Management"/>
         <generation value="markdown"/>
       </page>
       <page>

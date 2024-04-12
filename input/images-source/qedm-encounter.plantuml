@@ -1,0 +1,13 @@
+@startuml
+
+hide footbox
+
+participant Consumer
+
+participant "Data Repository" as DataRepository
+
+
+  Consumer -> DataRepository : Query Data  \n GET /Encounter?{queryParameters}
+  DataRepository --> Consumer: Matching Encounters
+
+@enduml

@@ -1,0 +1,91 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.nhs.uk/England/Encounter/Encounter-pre-admission-fredrica-smith> a fhir:Encounter ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Encounter-pre-admission-fredrica-smith"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://fhir.nhs.uk/England/StructureDefinition/Encounter"^^xsd:anyURI ;
+       fhir:link <https://fhir.nhs.uk/England/StructureDefinition/Encounter>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Encounter</b><a name=\"Encounter-pre-admission-fredrica-smith\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Encounter &quot;Encounter-pre-admission-fredrica-smith&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-Encounter.html\">Encounter</a></p></div><p><b>identifier</b>: <code>https://fhir.leedsth.nhs.uk/YrVisit</code>/2131</p><p><b>status</b>: planned</p><p><b>class</b>: pre-admission (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code PRENC = 'pre-admission', stated as 'pre-admission')</p><p><b>serviceType</b>: GENERAL MEDICINE <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-NHSDataModelAndDictionary-treatment-function.html\">NHSDataModelandDictionaryTreatmentFunction</a>#300)</span></p><p><b>subject</b>: <a href=\"https://simplifier.net/resolve?scope=fhir.r4.ukcore.stu3.currentbuild@0.0.6-pre-release&amp;canonical=https://simplifier.net/guide/ukcoreversionhistory/Patient/Patient-NHS-3333333333-Fredrica-Smith\">Patient/Patient-NHS-3333333333-Fredrica-Smith: Fredrica Smith</a></p><h3>Participants</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Individual</b></td></tr><tr><td style=\"display: none\">*</td><td>attender <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-v3-ParticipationType.html\">ParticipationType</a>#ATND)</span>, consultant <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-v3-ParticipationType.html\">ParticipationType</a>#CON)</span></td><td><span>: Dr Samuel Darwin</span></td></tr></table><p><b>period</b>: 2010-10-20 17:16:00+0000 --&gt; 2010-10-21 17:06:00+0000</p><h3>Locations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Location</b></td></tr><tr><td style=\"display: none\">*</td><td><span><code>https://fhir.nhs.uk/Id/ods-site-code</code>/RCB55</span></td></tr></table><p><b>serviceProvider</b>: <span><code>https://fhir.nhs.uk/Id/ods-organization-code</code>/RCB</span></p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "https://fhir.nhs.uk/England/StructureDefinition/Extension-Encounter-plannedStartDate"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "2010-10-20T17:16:00+00:00"^^xsd:dateTime ]
+  ] [
+     fhir:url [ fhir:v "https://fhir.nhs.uk/England/StructureDefinition/Extension-Encounter-plannedEndDate"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "2010-10-21T17:06:00+00:00"^^xsd:dateTime ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "https://fhir.leedsth.nhs.uk/YrVisit"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "2131" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "planned"] ; # 
+  fhir:class [
+     fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "PRENC" ] ;
+     fhir:display [ fhir:v "pre-admission" ]
+  ] ; # 
+  fhir:serviceType [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-treatment-function"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "300" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://fhir.nhs.uk/England/Patient/Patient-NHS-3333333333-Fredrica-Smith> ;
+     fhir:reference [ fhir:v "Patient/Patient-NHS-3333333333-Fredrica-Smith" ] ;
+     fhir:identifier [
+       fhir:system [ fhir:v "https://fhir.nhs.uk/Id/nhs-number"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "3333333333" ]
+     ] ;
+     fhir:display [ fhir:v "Fredrica Smith" ]
+  ] ; # 
+  fhir:participant ( [
+     fhir:type ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "ATND" ] ;
+         fhir:display [ fhir:v "attender" ]
+       ] )
+     ] [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "CON" ] ;
+         fhir:display [ fhir:v "consultant" ]
+       ] )
+     ] ) ;
+     fhir:individual [
+       fhir:display [ fhir:v "Dr Samuel Darwin" ]
+     ]
+  ] ) ; # 
+  fhir:period [
+     fhir:start [ fhir:v "2010-10-20T17:16:00+00:00"^^xsd:dateTime ] ;
+     fhir:end [ fhir:v "2010-10-21T17:06:00+00:00"^^xsd:dateTime ]
+  ] ; # 
+  fhir:location ( [
+     fhir:location [
+       fhir:identifier [
+         fhir:system [ fhir:v "https://fhir.nhs.uk/Id/ods-site-code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "RCB55" ]
+       ]
+     ]
+  ] ) ; # 
+  fhir:serviceProvider [
+     fhir:identifier [
+       fhir:system [ fhir:v "https://fhir.nhs.uk/Id/ods-organization-code"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "RCB" ]
+     ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

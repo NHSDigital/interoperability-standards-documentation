@@ -10,7 +10,7 @@
   "name" : "NHSEnglandInteroperabilitySkunkworks",
   "title" : "Health Administration Interoperability Standards - Skunkworks",
   "status" : "draft",
-  "date" : "2024-04-09T14:59:55+01:00",
+  "date" : "2024-04-12T08:32:19+01:00",
   "publisher" : "NHS England",
   "contact" : [{
     "name" : "NHS England",
@@ -819,6 +819,17 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Encounter"
+      }],
+      "reference" : {
+        "reference" : "Encounter/Encounter-pre-admission-fredrica-smith"
+      },
+      "name" : "Encounter-pre-admission-fredrica-smith",
+      "exampleCanonical" : "https://fhir.nhs.uk/England/StructureDefinition/Encounter"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -945,7 +956,7 @@
         "reference" : "CapabilityStatement/NHSEnglandPatientEncounterManagementProvider"
       },
       "name" : "NHS England Patient Encounter Management",
-      "description" : "Provider query and update management of a encounter registry. Based on mandatory queries from [US Core Encounter - Mandatory search parameters](https://build.fhir.org/ig/HL7/US-Core/StructureDefinition-us-core-encounter.html) and [IHE PIXm](https://profiles.ihe.net/ITI/PIXm/ITI-104.html#2310441-add-or-revise-patient) upsert",
+      "description" : "Provider query and update management of a encounter registry. Based on mandatory queries from [IHE Query for Existing Data for Mobile (QEDm)](https://build.fhir.org/ig/IHE/QEDm/branches/master/PCC-44.html#234441218-encounters-option-search-parameters) and also [US Core Encounter - Mandatory search parameters](https://build.fhir.org/ig/HL7/US-Core/StructureDefinition-us-core-encounter.html), plus [IHE PIXm](https://profiles.ihe.net/ITI/PIXm/ITI-104.html#2310441-add-or-revise-patient) upsert",
       "exampleBoolean" : false
     },
     {
@@ -1604,6 +1615,15 @@
         }],
         "nameUrl" : "national-proxy-service.html",
         "title" : "National Proxy Service",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "patient-appointment-management.html"
+        }],
+        "nameUrl" : "patient-appointment-management.html",
+        "title" : "Patient Appointment Management",
         "generation" : "markdown"
       },
       {

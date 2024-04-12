@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "NHSEnglandInteroperabilitySkunkworks"] ; # 
   fhir:title [ fhir:v "Health Administration Interoperability Standards - Skunkworks"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-04-09T14:59:55+01:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-04-12T08:32:19+01:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "NHS England"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "NHS England" ] ;
@@ -762,6 +762,20 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Encounter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.nhs.uk/England/Encounter/Encounter-pre-admission-fredrica-smith> ;
+         fhir:reference [ fhir:v "Encounter/Encounter-pre-admission-fredrica-smith" ]
+       ] ;
+       fhir:name [ fhir:v "Encounter-pre-admission-fredrica-smith" ] ;
+       fhir:example [
+         fhir:v "https://fhir.nhs.uk/England/StructureDefinition/Encounter"^^xsd:anyURI ;
+         fhir:link <https://fhir.nhs.uk/England/StructureDefinition/Encounter>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
@@ -892,7 +906,7 @@
          fhir:reference [ fhir:v "CapabilityStatement/NHSEnglandPatientEncounterManagementProvider" ]
        ] ;
        fhir:name [ fhir:v "NHS England Patient Encounter Management" ] ;
-       fhir:description [ fhir:v "Provider query and update management of a encounter registry. Based on mandatory queries from [US Core Encounter - Mandatory search parameters](https://build.fhir.org/ig/HL7/US-Core/StructureDefinition-us-core-encounter.html) and [IHE PIXm](https://profiles.ihe.net/ITI/PIXm/ITI-104.html#2310441-add-or-revise-patient) upsert" ] ;
+       fhir:description [ fhir:v "Provider query and update management of a encounter registry. Based on mandatory queries from [IHE Query for Existing Data for Mobile (QEDm)](https://build.fhir.org/ig/IHE/QEDm/branches/master/PCC-44.html#234441218-encounters-option-search-parameters) and also [US Core Encounter - Mandatory search parameters](https://build.fhir.org/ig/HL7/US-Core/StructureDefinition-us-core-encounter.html), plus [IHE PIXm](https://profiles.ihe.net/ITI/PIXm/ITI-104.html#2310441-add-or-revise-patient) upsert" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1562,6 +1576,14 @@
          ] ) ;
          fhir:name [ fhir:v "national-proxy-service.html"^^xsd:anyURI ] ;
          fhir:title [ fhir:v "National Proxy Service" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "patient-appointment-management.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "patient-appointment-management.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Patient Appointment Management" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:extension ( [

@@ -65,8 +65,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"24.48"}
-    h3,h4,h5,h6{--heading-prefix:"24.48"}</style>
+    <style type="text/css">h2{--heading-prefix:"25.48"}
+    h3,h4,h5,h6{--heading-prefix:"25.48"}</style>
     <div id="segment-header" class="segment nhsuk-header">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -178,6 +178,9 @@
       </li>
       <li>
         <a href="patient-encounter-management.html">Patient Encounter Management</a>
+      </li>
+      <li>
+        <a href="patient-appointment-management.html">Patient Appointment Management</a>
       </li>
       <li>
         <a href="patient-demographics-query.html">Patient Demographics Query</a>
@@ -294,7 +297,7 @@
 
  a fhir:Bundle ;
   <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
-  <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Bundle-ex-PMIRBundleCreate&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;Bundle-ex-PMIRBundleCreate&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.meta">fhir:meta</a> [
     ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;https://profiles.ihe.net/ITI/PMIR/StructureDefinition/IHE.PMIR.Bundle&quot;^^xsd:anyURI ;
@@ -310,7 +313,7 @@
   ] ) . # 
 
 &lt;MessageHeader/ex-messageheader-create&gt; <a href="http://hl7.org/fhir/R4/messageheader.html">a</a> fhir:MessageHeader ;
-  <a href="http://hl7.org/fhir/R4/messageheader.html#MessageHeader.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;ex-messageheader-create&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/messageheader.html#MessageHeader.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;ex-messageheader-create&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/messageheader.html#MessageHeader.meta">fhir:meta</a> [
     ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;https://profiles.ihe.net/ITI/PMIR/StructureDefinition/IHE.PMIR.MessageHeader&quot;^^xsd:anyURI ;
@@ -332,7 +335,7 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
   ] ) . # 
 
 &lt;Bundle/ex-bundle-history-create&gt; <a href="http://hl7.org/fhir/R4/bundle.html">a</a> fhir:Bundle ;
-  <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;ex-bundle-history-create&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#id">fhir:v</a> &quot;ex-bundle-history-create&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/bundle.html#Bundle.meta">fhir:meta</a> [
     ( <a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">fhir:profile</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">fhir:v</a> &quot;https://profiles.ihe.net/ITI/PMIR/StructureDefinition/IHE.PMIR.Bundle.History&quot;^^xsd:anyURI ;
@@ -451,7 +454,7 @@ fhir:div &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.england.nhs.uk/">NHS England</a>.  Package uk.nhs.england.administration#0.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Apr 9, 2024 14:59+0100">2024-04-09</span>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.england.nhs.uk/">NHS England</a>.  Package uk.nhs.england.administration#0.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Apr 12, 2024 08:32+0100">2024-04-12</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <div style="color: #333333" >

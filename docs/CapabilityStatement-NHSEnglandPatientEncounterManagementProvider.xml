@@ -36,7 +36,7 @@
       <value value="https://www.england.nhs.uk/"/>
     </telecom>
   </contact>
-  <description value="Provider query and update management of a encounter registry. Based on mandatory queries from [US Core Encounter - Mandatory search parameters](https://build.fhir.org/ig/HL7/US-Core/StructureDefinition-us-core-encounter.html) and [IHE PIXm](https://profiles.ihe.net/ITI/PIXm/ITI-104.html#2310441-add-or-revise-patient) upsert"/>
+  <description value="Provider query and update management of a encounter registry. Based on mandatory queries from [IHE Query for Existing Data for Mobile (QEDm)](https://build.fhir.org/ig/IHE/QEDm/branches/master/PCC-44.html#234441218-encounters-option-search-parameters) and also [US Core Encounter - Mandatory search parameters](https://build.fhir.org/ig/HL7/US-Core/StructureDefinition-us-core-encounter.html), plus [IHE PIXm](https://profiles.ihe.net/ITI/PIXm/ITI-104.html#2310441-add-or-revise-patient) upsert"/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>

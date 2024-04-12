@@ -167,9 +167,6 @@
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
       "StructureDefinition.snapshot.element.binding"
     ],
-    "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding": [
-      "StructureDefinition.snapshot.element.binding"
-    ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
       "StructureDefinition.snapshot.element.binding"
     ],
@@ -222,12 +219,10 @@
       "StructureDefinition.snapshot.element.type"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version": [
-      "StructureDefinition.differential.element",
-      "StructureDefinition.snapshot.element"
+      "StructureDefinition.differential.element"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
-      "StructureDefinition.differential.element",
-      "StructureDefinition.snapshot.element"
+      "StructureDefinition.differential.element"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
       "ImplementationGuide.definition"
@@ -314,6 +309,12 @@
     ],
     "https://fhir.nhs.uk/England/StructureDefinition/Extension-ConsentRemoveSummary": [
       "Consent"
+    ],
+    "https://fhir.nhs.uk/England/StructureDefinition/Extension-Encounter-plannedEndDate": [
+      "Encounter"
+    ],
+    "https://fhir.nhs.uk/England/StructureDefinition/Extension-Encounter-plannedStartDate": [
+      "Encounter"
     ],
     "https://fhir.nhs.uk/R4/StructureDefinition/Extension-UKCore-ContactRank": [
       "RelatedPerson"
