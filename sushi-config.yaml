@@ -65,10 +65,10 @@ menu:
   Build:
     National Proxy Service: national-proxy-service.html
     NHS Number Allocation and PDS: personal-demographics-service.html
-    Patient Encounter Management: patient-encounter-management.html
-    Patient Appointment Management: patient-appointment-management.html
     Patient Demographics Query: patient-demographics-query.html
     Patient Identity Management: patient-identity-management.html
+    Patient Encounter Management: patient-encounter-management.html
+    Scheduling: scheduling.html
     Booking: booking.html
   FHIR Assets: artifacts.html
   Support:

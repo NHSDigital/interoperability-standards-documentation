@@ -1,0 +1,25 @@
+@startuml
+
+hide footbox
+
+actor "Patient or Consultant" as user
+participant "Scheduling Client" as client
+participant "Scheduling Server" as server
+
+
+
+  user -> client : Begin bookng
+
+  client -> server : Find Existing Appointments [ITI-118] \n GET /Appointment?{queryParameters}
+  server --> client: Matching Appointments
+
+  client -> server : Find Potential Appointments [ITI-115] \n GET /Appointment/$find
+  server --> client: Matching Appointments
+
+  user -> client : Select Appointments
+
+  client -> server : Book Appointment [ITI-117] \n POST /Appointment ???
+  server --> client: Ok
+
+
+@enduml
