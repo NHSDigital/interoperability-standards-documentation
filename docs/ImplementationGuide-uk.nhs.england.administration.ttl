@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "NHSEnglandInteroperabilitySkunkworks"] ; # 
   fhir:title [ fhir:v "Health Administration Interoperability Standards - Skunkworks"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-04-12T11:43:38+01:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-04-15T10:54:06+01:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "NHS England"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "NHS England" ] ;
@@ -1580,14 +1580,6 @@
        ] [
          fhir:extension ( [
            fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
-           fhir:value [ fhir:v "patient-appointment-management.html"^^xsd:anyURI ]
-         ] ) ;
-         fhir:name [ fhir:v "patient-appointment-management.html"^^xsd:anyURI ] ;
-         fhir:title [ fhir:v "Patient Appointment Management" ] ;
-         fhir:generation [ fhir:v "markdown" ]
-       ] [
-         fhir:extension ( [
-           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
            fhir:value [ fhir:v "patient-demographics-query.html"^^xsd:anyURI ]
          ] ) ;
          fhir:name [ fhir:v "patient-demographics-query.html"^^xsd:anyURI ] ;
@@ -1624,6 +1616,14 @@
          ] ) ;
          fhir:name [ fhir:v "restful-api.html"^^xsd:anyURI ] ;
          fhir:title [ fhir:v "Restful Api" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "scheduling.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "scheduling.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Scheduling" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:extension ( [

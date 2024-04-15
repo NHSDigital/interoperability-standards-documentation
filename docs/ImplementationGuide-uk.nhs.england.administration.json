@@ -10,7 +10,7 @@
   "name" : "NHSEnglandInteroperabilitySkunkworks",
   "title" : "Health Administration Interoperability Standards - Skunkworks",
   "status" : "draft",
-  "date" : "2024-04-12T11:43:38+01:00",
+  "date" : "2024-04-15T10:54:06+01:00",
   "publisher" : "NHS England",
   "contact" : [{
     "name" : "NHS England",
@@ -1620,15 +1620,6 @@
       {
         "extension" : [{
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "patient-appointment-management.html"
-        }],
-        "nameUrl" : "patient-appointment-management.html",
-        "title" : "Patient Appointment Management",
-        "generation" : "markdown"
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
           "valueUrl" : "patient-demographics-query.html"
         }],
         "nameUrl" : "patient-demographics-query.html",
@@ -1669,6 +1660,15 @@
         }],
         "nameUrl" : "restful-api.html",
         "title" : "Restful Api",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "scheduling.html"
+        }],
+        "nameUrl" : "scheduling.html",
+        "title" : "Scheduling",
         "generation" : "markdown"
       },
       {
