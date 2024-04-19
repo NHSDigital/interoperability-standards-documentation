@@ -70,6 +70,7 @@ menu:
     Patient Encounter Management: patient-encounter-management.html
     Scheduling: scheduling.html
     Booking: booking.html
+    Care Planning: care-planning.html
   FHIR Assets: artifacts.html
   Support:
     Downloads: downloads.html

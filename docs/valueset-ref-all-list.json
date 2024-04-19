@@ -12,10 +12,10 @@
       "sources" : ["2.16.840.1.113883.4.642.3.69"],
       "uses" : {
       },
-      "StructureDefinition-PatientPDSNHSNumberAllocation.html" : "PatientPDSNHSNumberAllocation",
-      "StructureDefinition-UKCore-Patient.html" : "UK Core Patient",
       "StructureDefinition-PatientHL7v2.html" : "PatientHL7v2",
-      "StructureDefinition-PatientPDS.html" : "PatientPDS"
+      "StructureDefinition-UKCore-Patient.html" : "UK Core Patient",
+      "StructureDefinition-PatientPDS.html" : "PatientPDS",
+      "StructureDefinition-PatientPDSNHSNumberAllocation.html" : "PatientPDSNHSNumberAllocation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/address-use",
@@ -29,10 +29,10 @@
       "sources" : ["2.16.840.1.113883.4.642.3.67"],
       "uses" : {
       },
-      "StructureDefinition-PatientPDSNHSNumberAllocation.html" : "PatientPDSNHSNumberAllocation",
-      "StructureDefinition-UKCore-Patient.html" : "UK Core Patient",
       "StructureDefinition-PatientHL7v2.html" : "PatientHL7v2",
-      "StructureDefinition-PatientPDS.html" : "PatientPDS"
+      "StructureDefinition-UKCore-Patient.html" : "UK Core Patient",
+      "StructureDefinition-PatientPDS.html" : "PatientPDS",
+      "StructureDefinition-PatientPDSNHSNumberAllocation.html" : "PatientPDSNHSNumberAllocation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/administrative-gender",
@@ -46,13 +46,13 @@
       "sources" : ["2.16.840.1.113883.4.642.3.1"],
       "uses" : {
       },
+      "StructureDefinition-RelatedPerson.html" : "RelatedPerson",
       "StructureDefinition-Practitioner.html" : "Practitioner",
-      "StructureDefinition-UKCore-RelatedPerson.html" : "UK Core RelatedPerson",
-      "StructureDefinition-PatientPDSNHSNumberAllocation.html" : "PatientPDSNHSNumberAllocation",
-      "StructureDefinition-UKCore-Patient.html" : "UK Core Patient",
       "StructureDefinition-PatientHL7v2.html" : "PatientHL7v2",
+      "StructureDefinition-UKCore-Patient.html" : "UK Core Patient",
+      "StructureDefinition-UKCore-RelatedPerson.html" : "UK Core RelatedPerson",
       "StructureDefinition-PatientPDS.html" : "PatientPDS",
-      "StructureDefinition-RelatedPerson.html" : "RelatedPerson"
+      "StructureDefinition-PatientPDSNHSNumberAllocation.html" : "PatientPDSNHSNumberAllocation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/appointment-cancellation-reason",
@@ -139,12 +139,12 @@
       "sources" : ["2.16.840.1.113883.3.88.12.80.72"],
       "uses" : {
       },
-      "StructureDefinition-PractitionerRole.html" : "PractitionerRole",
       "StructureDefinition-Schedule.html" : "Schedule",
-      "StructureDefinition-OrganizationAffiliation.html" : "OrganizationAffiliation",
-      "StructureDefinition-HealthcareService.html" : "HealthcareService",
       "StructureDefinition-DocumentReference.html" : "DocumentReference",
-      "StructureDefinition-Slot.html" : "Slot"
+      "StructureDefinition-PractitionerRole.html" : "PractitionerRole",
+      "StructureDefinition-HealthcareService.html" : "HealthcareService",
+      "StructureDefinition-Slot.html" : "Slot",
+      "StructureDefinition-OrganizationAffiliation.html" : "OrganizationAffiliation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/composition-status",
@@ -172,9 +172,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.753"],
       "uses" : {
       },
-      "StructureDefinition-ConsentNationalProxy.html" : "NHS England National Proxy Consent Profile",
       "StructureDefinition-FlagConsent.html" : "NHSE Flag Consent Profile",
-      "StructureDefinition-IHEPCF-Basic-Consent.html" : "BasicConsent"
+      "StructureDefinition-IHEPCF-Basic-Consent.html" : "BasicConsent",
+      "StructureDefinition-ConsentNationalProxy.html" : "NHS England National Proxy Consent Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/consent-category",
@@ -192,8 +192,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.751"],
       "uses" : {
       },
-      "StructureDefinition-ConsentNationalProxy.html" : "NHS England National Proxy Consent Profile",
-      "StructureDefinition-IHEPCF-Basic-Consent.html" : "BasicConsent"
+      "StructureDefinition-IHEPCF-Basic-Consent.html" : "BasicConsent",
+      "StructureDefinition-ConsentNationalProxy.html" : "NHS England National Proxy Consent Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/consent-content-class",
@@ -212,9 +212,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.747"],
       "uses" : {
       },
-      "StructureDefinition-ConsentNationalProxy.html" : "NHS England National Proxy Consent Profile",
       "StructureDefinition-FlagConsent.html" : "NHSE Flag Consent Profile",
-      "StructureDefinition-IHEPCF-Basic-Consent.html" : "BasicConsent"
+      "StructureDefinition-IHEPCF-Basic-Consent.html" : "BasicConsent",
+      "StructureDefinition-ConsentNationalProxy.html" : "NHS England National Proxy Consent Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/consent-content-code",
@@ -228,9 +228,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.748"],
       "uses" : {
       },
-      "StructureDefinition-ConsentNationalProxy.html" : "NHS England National Proxy Consent Profile",
       "StructureDefinition-FlagConsent.html" : "NHSE Flag Consent Profile",
-      "StructureDefinition-IHEPCF-Basic-Consent.html" : "BasicConsent"
+      "StructureDefinition-IHEPCF-Basic-Consent.html" : "BasicConsent",
+      "StructureDefinition-ConsentNationalProxy.html" : "NHS England National Proxy Consent Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/consent-data-meaning",
@@ -244,9 +244,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.759"],
       "uses" : {
       },
-      "StructureDefinition-ConsentNationalProxy.html" : "NHS England National Proxy Consent Profile",
       "StructureDefinition-FlagConsent.html" : "NHSE Flag Consent Profile",
-      "StructureDefinition-IHEPCF-Basic-Consent.html" : "BasicConsent"
+      "StructureDefinition-IHEPCF-Basic-Consent.html" : "BasicConsent",
+      "StructureDefinition-ConsentNationalProxy.html" : "NHS England National Proxy Consent Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/consent-policy",
@@ -260,8 +260,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.1014"],
       "uses" : {
       },
-      "StructureDefinition-ConsentNationalProxy.html" : "NHS England National Proxy Consent Profile",
-      "StructureDefinition-IHEPCF-Basic-Consent.html" : "BasicConsent"
+      "StructureDefinition-IHEPCF-Basic-Consent.html" : "BasicConsent",
+      "StructureDefinition-ConsentNationalProxy.html" : "NHS England National Proxy Consent Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/consent-provision-type",
@@ -275,9 +275,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.757"],
       "uses" : {
       },
-      "StructureDefinition-ConsentNationalProxy.html" : "NHS England National Proxy Consent Profile",
       "StructureDefinition-FlagConsent.html" : "NHSE Flag Consent Profile",
-      "StructureDefinition-IHEPCF-Basic-Consent.html" : "BasicConsent"
+      "StructureDefinition-IHEPCF-Basic-Consent.html" : "BasicConsent",
+      "StructureDefinition-ConsentNationalProxy.html" : "NHS England National Proxy Consent Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/consent-scope",
@@ -291,9 +291,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.761"],
       "uses" : {
       },
-      "StructureDefinition-ConsentNationalProxy.html" : "NHS England National Proxy Consent Profile",
       "StructureDefinition-FlagConsent.html" : "NHSE Flag Consent Profile",
-      "StructureDefinition-IHEPCF-Basic-Consent.html" : "BasicConsent"
+      "StructureDefinition-IHEPCF-Basic-Consent.html" : "BasicConsent",
+      "StructureDefinition-ConsentNationalProxy.html" : "NHS England National Proxy Consent Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/consent-state-codes",
@@ -307,9 +307,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.755"],
       "uses" : {
       },
-      "StructureDefinition-ConsentNationalProxy.html" : "NHS England National Proxy Consent Profile",
       "StructureDefinition-FlagConsent.html" : "NHSE Flag Consent Profile",
-      "StructureDefinition-IHEPCF-Basic-Consent.html" : "BasicConsent"
+      "StructureDefinition-IHEPCF-Basic-Consent.html" : "BasicConsent",
+      "StructureDefinition-ConsentNationalProxy.html" : "NHS England National Proxy Consent Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/contact-point-system",
@@ -323,12 +323,12 @@
       "sources" : ["2.16.840.1.113883.4.642.3.71"],
       "uses" : {
       },
-      "StructureDefinition-UKCore-RelatedPerson.html" : "UK Core RelatedPerson",
-      "StructureDefinition-PatientPDSNHSNumberAllocation.html" : "PatientPDSNHSNumberAllocation",
-      "StructureDefinition-UKCore-Patient.html" : "UK Core Patient",
+      "StructureDefinition-RelatedPerson.html" : "RelatedPerson",
       "StructureDefinition-PatientHL7v2.html" : "PatientHL7v2",
+      "StructureDefinition-UKCore-Patient.html" : "UK Core Patient",
+      "StructureDefinition-UKCore-RelatedPerson.html" : "UK Core RelatedPerson",
       "StructureDefinition-PatientPDS.html" : "PatientPDS",
-      "StructureDefinition-RelatedPerson.html" : "RelatedPerson"
+      "StructureDefinition-PatientPDSNHSNumberAllocation.html" : "PatientPDSNHSNumberAllocation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/contact-point-use",
@@ -342,12 +342,12 @@
       "sources" : ["2.16.840.1.113883.4.642.3.73"],
       "uses" : {
       },
-      "StructureDefinition-UKCore-RelatedPerson.html" : "UK Core RelatedPerson",
-      "StructureDefinition-PatientPDSNHSNumberAllocation.html" : "PatientPDSNHSNumberAllocation",
-      "StructureDefinition-UKCore-Patient.html" : "UK Core Patient",
+      "StructureDefinition-RelatedPerson.html" : "RelatedPerson",
       "StructureDefinition-PatientHL7v2.html" : "PatientHL7v2",
+      "StructureDefinition-UKCore-Patient.html" : "UK Core Patient",
+      "StructureDefinition-UKCore-RelatedPerson.html" : "UK Core RelatedPerson",
       "StructureDefinition-PatientPDS.html" : "PatientPDS",
-      "StructureDefinition-RelatedPerson.html" : "RelatedPerson"
+      "StructureDefinition-PatientPDSNHSNumberAllocation.html" : "PatientPDSNHSNumberAllocation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/contactentity-type",
@@ -675,17 +675,17 @@
       "sources" : ["2.16.840.1.113883.4.642.3.45"],
       "uses" : {
       },
-      "StructureDefinition-ConsentNationalProxy.html" : "NHS England National Proxy Consent Profile",
-      "StructureDefinition-UKCore-Organization.html" : "UK Core Organization",
+      "StructureDefinition-RelatedPerson.html" : "RelatedPerson",
       "StructureDefinition-Encounter.html" : "Encounter",
-      "StructureDefinition-Appointment.html" : "Appointment",
-      "StructureDefinition-UKCore-RelatedPerson.html" : "UK Core RelatedPerson",
-      "StructureDefinition-PatientPDSNHSNumberAllocation.html" : "PatientPDSNHSNumberAllocation",
-      "StructureDefinition-Organization.html" : "Organization",
-      "StructureDefinition-UKCore-Patient.html" : "UK Core Patient",
       "StructureDefinition-PatientHL7v2.html" : "PatientHL7v2",
+      "StructureDefinition-Appointment.html" : "Appointment",
+      "StructureDefinition-UKCore-Patient.html" : "UK Core Patient",
+      "StructureDefinition-UKCore-Organization.html" : "UK Core Organization",
+      "StructureDefinition-UKCore-RelatedPerson.html" : "UK Core RelatedPerson",
       "StructureDefinition-PatientPDS.html" : "PatientPDS",
-      "StructureDefinition-RelatedPerson.html" : "RelatedPerson"
+      "StructureDefinition-Organization.html" : "Organization",
+      "StructureDefinition-ConsentNationalProxy.html" : "NHS England National Proxy Consent Profile",
+      "StructureDefinition-PatientPDSNHSNumberAllocation.html" : "PatientPDSNHSNumberAllocation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
@@ -699,17 +699,17 @@
       "sources" : ["2.16.840.1.113883.4.642.3.57"],
       "uses" : {
       },
-      "StructureDefinition-ConsentNationalProxy.html" : "NHS England National Proxy Consent Profile",
-      "StructureDefinition-UKCore-Organization.html" : "UK Core Organization",
+      "StructureDefinition-RelatedPerson.html" : "RelatedPerson",
       "StructureDefinition-Encounter.html" : "Encounter",
-      "StructureDefinition-Appointment.html" : "Appointment",
-      "StructureDefinition-UKCore-RelatedPerson.html" : "UK Core RelatedPerson",
-      "StructureDefinition-PatientPDSNHSNumberAllocation.html" : "PatientPDSNHSNumberAllocation",
-      "StructureDefinition-Organization.html" : "Organization",
-      "StructureDefinition-UKCore-Patient.html" : "UK Core Patient",
       "StructureDefinition-PatientHL7v2.html" : "PatientHL7v2",
+      "StructureDefinition-Appointment.html" : "Appointment",
+      "StructureDefinition-UKCore-Patient.html" : "UK Core Patient",
+      "StructureDefinition-UKCore-Organization.html" : "UK Core Organization",
+      "StructureDefinition-UKCore-RelatedPerson.html" : "UK Core RelatedPerson",
       "StructureDefinition-PatientPDS.html" : "PatientPDS",
-      "StructureDefinition-RelatedPerson.html" : "RelatedPerson"
+      "StructureDefinition-Organization.html" : "Organization",
+      "StructureDefinition-ConsentNationalProxy.html" : "NHS England National Proxy Consent Profile",
+      "StructureDefinition-PatientPDSNHSNumberAllocation.html" : "PatientPDSNHSNumberAllocation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/languages",
@@ -723,33 +723,33 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-FlagConsent.html" : "NHSE Flag Consent Profile",
-      "StructureDefinition-PractitionerRole.html" : "PractitionerRole",
-      "StructureDefinition-UKCore-Organization.html" : "UK Core Organization",
-      "StructureDefinition-Practitioner.html" : "Practitioner",
-      "StructureDefinition-AppointmentResponse.html" : "AppointmentResponse",
-      "StructureDefinition-Organization.html" : "Organization",
-      "StructureDefinition-RelatedPerson.html" : "RelatedPerson",
-      "StructureDefinition-Schedule.html" : "Schedule",
       "StructureDefinition-Encounter.html" : "Encounter",
+      "StructureDefinition-Schedule.html" : "Schedule",
+      "StructureDefinition-DocumentReference.html" : "DocumentReference",
+      "StructureDefinition-Subscription.html" : "Subscription",
+      "StructureDefinition-Organization.html" : "Organization",
+      "StructureDefinition-FlagProvenance.html" : "NHSE Flag Provenance Profile",
+      "StructureDefinition-ServiceRequest.html" : "ServiceRequest",
+      "StructureDefinition-RelatedPerson.html" : "RelatedPerson",
+      "StructureDefinition-PatientHL7v2.html" : "PatientHL7v2",
+      "StructureDefinition-Appointment.html" : "Appointment",
       "StructureDefinition-Observation.html" : "Observation",
+      "StructureDefinition-HealthcareService.html" : "HealthcareService",
+      "StructureDefinition-PatientPDS.html" : "PatientPDS",
+      "StructureDefinition-FlagConsent.html" : "NHSE Flag Consent Profile",
+      "StructureDefinition-Practitioner.html" : "Practitioner",
+      "StructureDefinition-UKCore-Patient.html" : "UK Core Patient",
+      "StructureDefinition-Endpoint.html" : "Endpoint",
+      "StructureDefinition-AppointmentResponse.html" : "AppointmentResponse",
+      "StructureDefinition-Slot.html" : "Slot",
       "StructureDefinition-OrganizationAffiliation.html" : "OrganizationAffiliation",
       "StructureDefinition-Task.html" : "Task",
-      "StructureDefinition-UKCore-Patient.html" : "UK Core Patient",
-      "StructureDefinition-PatientHL7v2.html" : "PatientHL7v2",
-      "StructureDefinition-Slot.html" : "Slot",
-      "StructureDefinition-PatientPDS.html" : "PatientPDS",
       "StructureDefinition-IHEPCF-Basic-Consent.html" : "BasicConsent",
-      "StructureDefinition-Endpoint.html" : "Endpoint",
-      "StructureDefinition-ConsentNationalProxy.html" : "NHS England National Proxy Consent Profile",
-      "StructureDefinition-Subscription.html" : "Subscription",
-      "StructureDefinition-Appointment.html" : "Appointment",
+      "StructureDefinition-PractitionerRole.html" : "PractitionerRole",
+      "StructureDefinition-UKCore-Organization.html" : "UK Core Organization",
       "StructureDefinition-UKCore-RelatedPerson.html" : "UK Core RelatedPerson",
-      "StructureDefinition-PatientPDSNHSNumberAllocation.html" : "PatientPDSNHSNumberAllocation",
-      "StructureDefinition-HealthcareService.html" : "HealthcareService",
-      "StructureDefinition-ServiceRequest.html" : "ServiceRequest",
-      "StructureDefinition-FlagProvenance.html" : "NHSE Flag Provenance Profile",
-      "StructureDefinition-DocumentReference.html" : "DocumentReference"
+      "StructureDefinition-ConsentNationalProxy.html" : "NHS England National Proxy Consent Profile",
+      "StructureDefinition-PatientPDSNHSNumberAllocation.html" : "PatientPDSNHSNumberAllocation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/link-type",
@@ -763,10 +763,10 @@
       "sources" : ["2.16.840.1.113883.4.642.3.423"],
       "uses" : {
       },
-      "StructureDefinition-PatientPDSNHSNumberAllocation.html" : "PatientPDSNHSNumberAllocation",
-      "StructureDefinition-UKCore-Patient.html" : "UK Core Patient",
       "StructureDefinition-PatientHL7v2.html" : "PatientHL7v2",
-      "StructureDefinition-PatientPDS.html" : "PatientPDS"
+      "StructureDefinition-UKCore-Patient.html" : "UK Core Patient",
+      "StructureDefinition-PatientPDS.html" : "PatientPDS",
+      "StructureDefinition-PatientPDSNHSNumberAllocation.html" : "PatientPDSNHSNumberAllocation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/location-physical-type",
@@ -1142,28 +1142,28 @@
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/resource-types",
-      "version" : "4.0.1",
+      "version" : "5.0.0",
       "status" : "active",
       "name" : "ResourceType",
-      "title" : "ResourceType",
-      "description" : "One of the resource types defined as part of this version of FHIR.",
-      "systems" : ["http://hl7.org/fhir/resource-types"],
+      "title" : "Resource Types",
+      "description" : "Concrete FHIR Resource Types",
+      "systems" : ["http://hl7.org/fhir/fhir-types"],
       "oids" : ["2.16.840.1.113883.4.642.3.27"],
       "sources" : ["2.16.840.1.113883.4.642.3.27"],
       "uses" : {
       },
-      "StructureDefinition-ConsentNationalProxy.html" : "NHS England National Proxy Consent Profile",
-      "StructureDefinition-UKCore-Organization.html" : "UK Core Organization",
+      "StructureDefinition-RelatedPerson.html" : "RelatedPerson",
       "StructureDefinition-Encounter.html" : "Encounter",
-      "StructureDefinition-Appointment.html" : "Appointment",
-      "StructureDefinition-UKCore-RelatedPerson.html" : "UK Core RelatedPerson",
-      "StructureDefinition-PatientPDSNHSNumberAllocation.html" : "PatientPDSNHSNumberAllocation",
-      "Questionnaire-permission.html" : "Permission",
-      "StructureDefinition-Organization.html" : "Organization",
-      "StructureDefinition-UKCore-Patient.html" : "UK Core Patient",
       "StructureDefinition-PatientHL7v2.html" : "PatientHL7v2",
+      "StructureDefinition-Appointment.html" : "Appointment",
+      "StructureDefinition-UKCore-Patient.html" : "UK Core Patient",
+      "StructureDefinition-UKCore-Organization.html" : "UK Core Organization",
+      "StructureDefinition-UKCore-RelatedPerson.html" : "UK Core RelatedPerson",
       "StructureDefinition-PatientPDS.html" : "PatientPDS",
-      "StructureDefinition-RelatedPerson.html" : "RelatedPerson"
+      "StructureDefinition-Organization.html" : "Organization",
+      "Questionnaire-permission.html" : "Permission",
+      "StructureDefinition-ConsentNationalProxy.html" : "NHS England National Proxy Consent Profile",
+      "StructureDefinition-PatientPDSNHSNumberAllocation.html" : "PatientPDSNHSNumberAllocation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/security-labels",
@@ -1183,10 +1183,10 @@
       "sources" : ["2.16.840.1.113883.4.642.3.47"],
       "uses" : {
       },
-      "StructureDefinition-ConsentNationalProxy.html" : "NHS England National Proxy Consent Profile",
       "StructureDefinition-FlagConsent.html" : "NHSE Flag Consent Profile",
+      "StructureDefinition-DocumentReference.html" : "DocumentReference",
       "StructureDefinition-IHEPCF-Basic-Consent.html" : "BasicConsent",
-      "StructureDefinition-DocumentReference.html" : "DocumentReference"
+      "StructureDefinition-ConsentNationalProxy.html" : "NHS England National Proxy Consent Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/security-role-type",
@@ -1208,9 +1208,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.978"],
       "uses" : {
       },
-      "StructureDefinition-ConsentNationalProxy.html" : "NHS England National Proxy Consent Profile",
       "StructureDefinition-FlagConsent.html" : "NHSE Flag Consent Profile",
-      "StructureDefinition-IHEPCF-Basic-Consent.html" : "BasicConsent"
+      "StructureDefinition-IHEPCF-Basic-Consent.html" : "BasicConsent",
+      "StructureDefinition-ConsentNationalProxy.html" : "NHS England National Proxy Consent Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/service-category",
@@ -1488,10 +1488,10 @@
       "sources" : ["2.16.840.1.113883.1.11.12249"],
       "uses" : {
       },
-      "StructureDefinition-PatientPDSNHSNumberAllocation.html" : "PatientPDSNHSNumberAllocation",
-      "StructureDefinition-UKCore-Patient.html" : "UK Core Patient",
       "StructureDefinition-PatientHL7v2.html" : "PatientHL7v2",
-      "StructureDefinition-PatientPDS.html" : "PatientPDS"
+      "StructureDefinition-UKCore-Patient.html" : "UK Core Patient",
+      "StructureDefinition-PatientPDS.html" : "PatientPDS",
+      "StructureDefinition-PatientPDSNHSNumberAllocation.html" : "PatientPDSNHSNumberAllocation"
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/v3-LanguageAbilityProficiency",
@@ -1507,10 +1507,10 @@
       "sources" : ["2.16.840.1.113883.1.11.12199"],
       "uses" : {
       },
-      "StructureDefinition-PatientPDSNHSNumberAllocation.html" : "PatientPDSNHSNumberAllocation",
-      "StructureDefinition-UKCore-Patient.html" : "UK Core Patient",
       "StructureDefinition-PatientHL7v2.html" : "PatientHL7v2",
-      "StructureDefinition-PatientPDS.html" : "PatientPDS"
+      "StructureDefinition-UKCore-Patient.html" : "UK Core Patient",
+      "StructureDefinition-PatientPDS.html" : "PatientPDS",
+      "StructureDefinition-PatientPDSNHSNumberAllocation.html" : "PatientPDSNHSNumberAllocation"
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/v3-PurposeOfUse",
@@ -1524,8 +1524,8 @@
       "sources" : ["2.16.840.1.113883.1.11.20448"],
       "uses" : {
       },
-      "StructureDefinition-ConsentNationalProxy.html" : "NHS England National Proxy Consent Profile",
       "Questionnaire-permission.html" : "Permission",
+      "StructureDefinition-ConsentNationalProxy.html" : "NHS England National Proxy Consent Profile",
       "StructureDefinition-FlagProvenance.html" : "NHSE Flag Provenance Profile"
     },
     {
@@ -1554,10 +1554,10 @@
       "sources" : ["2.16.840.1.113883.2.1.3.2.4.17.70"],
       "uses" : {
       },
-      "StructureDefinition-PatientPDSNHSNumberAllocation.html" : "PatientPDSNHSNumberAllocation",
-      "StructureDefinition-UKCore-Patient.html" : "UK Core Patient",
       "StructureDefinition-PatientHL7v2.html" : "PatientHL7v2",
-      "StructureDefinition-PatientPDS.html" : "PatientPDS"
+      "StructureDefinition-UKCore-Patient.html" : "UK Core Patient",
+      "StructureDefinition-PatientPDS.html" : "PatientPDS",
+      "StructureDefinition-PatientPDSNHSNumberAllocation.html" : "PatientPDSNHSNumberAllocation"
     },
     {
       "url" : "https://fhir.hl7.org.uk/ValueSet/UKCore-OrganizationType",
@@ -1590,10 +1590,10 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-PatientPDSNHSNumberAllocation.html" : "PatientPDSNHSNumberAllocation",
-      "StructureDefinition-UKCore-Patient.html" : "UK Core Patient",
       "StructureDefinition-PatientHL7v2.html" : "PatientHL7v2",
-      "StructureDefinition-PatientPDS.html" : "PatientPDS"
+      "StructureDefinition-UKCore-Patient.html" : "UK Core Patient",
+      "StructureDefinition-PatientPDS.html" : "PatientPDS",
+      "StructureDefinition-PatientPDSNHSNumberAllocation.html" : "PatientPDSNHSNumberAllocation"
     },
     {
       "url" : "https://fhir.hl7.org.uk/ValueSet/UKCore-PersonRelationshipType",
@@ -1609,13 +1609,13 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-UKCore-RelatedPerson.html" : "UK Core RelatedPerson",
-      "StructureDefinition-PatientPDSNHSNumberAllocation.html" : "PatientPDSNHSNumberAllocation",
-      "Questionnaire-Questionnaire-Proxy-Access-Request.html" : "Proxy Access Request Form",
-      "StructureDefinition-UKCore-Patient.html" : "UK Core Patient",
+      "StructureDefinition-RelatedPerson.html" : "RelatedPerson",
       "StructureDefinition-PatientHL7v2.html" : "PatientHL7v2",
+      "StructureDefinition-UKCore-Patient.html" : "UK Core Patient",
+      "StructureDefinition-UKCore-RelatedPerson.html" : "UK Core RelatedPerson",
       "StructureDefinition-PatientPDS.html" : "PatientPDS",
-      "StructureDefinition-RelatedPerson.html" : "RelatedPerson"
+      "Questionnaire-Questionnaire-Proxy-Access-Request.html" : "Proxy Access Request Form",
+      "StructureDefinition-PatientPDSNHSNumberAllocation.html" : "PatientPDSNHSNumberAllocation"
     },
     {
       "url" : "https://fhir.hl7.org.uk/ValueSet/UKCore-PracticeSettingCode",

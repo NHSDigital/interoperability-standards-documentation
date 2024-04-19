@@ -1,0 +1,12 @@
+@startuml
+skinparam svgDimensionStyle false
+hide footbox
+participant "Care Plan Contributor" as Client
+participant "Care Plan Definition Service" as Server
+activate "Client"
+"Client" -> "Server" : Search for Care Plan Definition [PCC-65] \nRetrieve Care Plan Definition [PCC-64]\nUpdate Plan Definition [PCC-66]
+activate "Server"
+"Server" --> "Client" : Response
+deactivate "Client"
+deactivate "Server"
+@enduml

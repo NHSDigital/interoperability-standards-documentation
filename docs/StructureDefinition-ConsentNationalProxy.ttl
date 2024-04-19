@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "ConsentNationalProxy"] ; # 
   fhir:title [ fhir:v "NHS England National Proxy Consent Profile"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-04-15T10:54:06+01:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-04-19T04:03:07+01:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "NHS England"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "NHS England" ] ;

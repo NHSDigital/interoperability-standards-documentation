@@ -27,11 +27,11 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "RelatedPerson.extension:contactPreference","RelatedPerson.extension","contactPreference","","",0,1,"","","","Extension {[CanonicalType[https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-ContactPreference]]} {[]}
 ","The preferred method of contact, contact times and written communication format given by a Patient or Related Person.","The preferred method of contact, contact times and written communication format given by a Patient or Related Person.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "RelatedPerson.extension:copyCorrespondenceIndicator","RelatedPerson.extension","copyCorrespondenceIndicator","","",0,1,"","","","Extension {[CanonicalType[https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-CopyCorrespondenceIndicator]]} {[]}
 ","Indicator showing that a patient's contact or related person SHALL be copied in to patient correspondence","Extension carrying a boolean indicator showing that a patient's contact or related person SHALL be copied in to patient correspondence.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "RelatedPerson.modifierExtension","RelatedPerson.modifierExtension","","extensions
 user content","",0,*,"","Y","","Extension {[]} {[]}
 ","Extensions that cannot be ignored","May be used to represent additional information that is not part of the basic definition of the resource and that modifies the understanding of the element that contains it and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
@@ -154,7 +154,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "RelatedPerson.telecom.system.extension:otherContactSystem","RelatedPerson.telecom.system.extension","otherContactSystem","","",0,1,"","","","Extension {[CanonicalType[https://fhir.hl7.org.uk/StructureDefinition/Extension-UKCore-OtherContactSystem]]} {[]}
 ","Other contact system","Other contact system value which extends the system element in the ContactPoint datatype.","","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a","N/A"
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "RelatedPerson.telecom.system.value","RelatedPerson.telecom.system.value","","","",0,1,"","","","string {[]} {[]}
 ","Primitive value for code","Primitive value for code","","","","","","","","","",,,,,"",,,,"string.value",0,1,"",""
 "RelatedPerson.telecom.value","RelatedPerson.telecom.value","","","",0,1,"","","Y","string {[]} {[]}
