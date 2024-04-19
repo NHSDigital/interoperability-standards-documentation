@@ -38,6 +38,9 @@ dependencies:
     version: 1.1.0
   hl7.fhir.uv.sdc: 3.0.0
   ihe.iti.pcf: 1.0.0
+  ihe.iti.pixm: 3.0.4
+  ihe.iti.pdqm: 3.0.0
+  ihe.iti.mcsd: 3.8.0
   hl7.fhir.uv.subscriptions-backport.r4:
     version: 1.1.x
     uri: http://hl7.org/fhir/uv/subscriptions-backport/ImplementationGuide/hl7.fhir.uv.subscriptions-backport
