@@ -1,0 +1,20 @@
+@startuml
+
+
+title Patient Administration
+
+
+:Find Patient;
+if (Patient Found?) is (found) then
+: Update Patient (if required) ;
+: Merge Patient (if required);
+else
+  if (Additional details required?) is (yes) then
+    :Patient Registration Form ;
+    :Create Patient;
+  else
+    :Create Patient;
+  endif
+endif
+
+@enduml

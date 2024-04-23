@@ -16,7 +16,7 @@
   fhir:version [ fhir:v "0.0.1"] ; # 
   fhir:name [ fhir:v "Practitioner"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-04-19T04:03:07+01:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-04-23T08:00:23+01:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "NHS England"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "NHS England" ] ;

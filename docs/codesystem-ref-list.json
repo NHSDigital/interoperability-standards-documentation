@@ -38,7 +38,7 @@
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/contractsignertypecodes",
-      "version" : "0.1.0",
+      "version" : "1.0.0",
       "status" : "draft",
       "name" : "ContractSignerTypeCodes",
       "title" : "Contract Signer Type Codes",
@@ -50,7 +50,7 @@
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/extra-security-role-type",
-      "version" : "0.2.0",
+      "version" : "1.0.0",
       "status" : "draft",
       "name" : "SecurityRoleType",
       "title" : "Security Role Type",
@@ -61,7 +61,7 @@
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/organization-type",
-      "version" : "0.1.0",
+      "version" : "2.0.0",
       "status" : "draft",
       "name" : "OrganizationType",
       "title" : "Organization type",
@@ -85,7 +85,7 @@
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-      "version" : "8.0.1",
+      "version" : "9.0.0",
       "status" : "active",
       "name" : "ActCode",
       "title" : "ActCode",
@@ -93,11 +93,11 @@
       "oids" : ["2.16.840.1.113883.5.4"],
       "uses" : {
       },
-      "http://terminology.hl7.org/5.0.0/ValueSet-v3-ActEncounterCode.html" : "ActEncounterCode"
+      "http://terminology.hl7.org/5.5.0/ValueSet-v3-ActEncounterCode.html" : "ActEncounterCode"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-      "version" : "2.1.0",
+      "version" : "3.0.0",
       "status" : "active",
       "name" : "ActReason",
       "title" : "ActReason",
@@ -105,12 +105,12 @@
       "oids" : ["2.16.840.1.113883.5.8"],
       "uses" : {
       },
-      "http://terminology.hl7.org/5.0.0/ValueSet-v3-PurposeOfUse.html" : "PurposeOfUse",
-      "https://profiles.ihe.net/ITI/PCF/1.0.0/ValueSet-BasicPurposeVS.html" : "Basic Purpose ValueSet"
+      "https://profiles.ihe.net/ITI/PCF/1.0.0/ValueSet-BasicPurposeVS.html" : "Basic Purpose ValueSet",
+      "http://terminology.hl7.org/5.5.0/ValueSet-v3-PurposeOfUse.html" : "PurposeOfUse"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
-      "version" : "2.1.0",
+      "version" : "3.0.0",
       "status" : "active",
       "name" : "MaritalStatus",
       "title" : "MaritalStatus",
@@ -122,7 +122,7 @@
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
-      "version" : "2.1.0",
+      "version" : "3.0.0",
       "status" : "active",
       "name" : "NullFlavor",
       "title" : "NullFlavor",
@@ -134,7 +134,7 @@
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationFunction",
-      "version" : "2.1.0",
+      "version" : "3.0.0",
       "status" : "active",
       "name" : "ParticipationFunction",
       "title" : "ParticipationFunction",
@@ -146,7 +146,7 @@
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
-      "version" : "4.0.0",
+      "version" : "5.0.0",
       "status" : "active",
       "name" : "ParticipationType",
       "title" : "ParticipationType",
@@ -158,7 +158,7 @@
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-RoleClass",
-      "version" : "3.1.0",
+      "version" : "4.0.0",
       "status" : "active",
       "name" : "RoleClass",
       "title" : "RoleClass",
@@ -170,7 +170,7 @@
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
-      "version" : "2.2.0",
+      "version" : "3.0.0",
       "status" : "active",
       "name" : "RoleCode",
       "title" : "RoleCode",

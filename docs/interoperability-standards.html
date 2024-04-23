@@ -154,6 +154,9 @@
         <a href="administration-module.html">Administration</a>
       </li>
       <li>
+        <a href="patient-administration.html">Patient</a>
+      </li>
+      <li>
         <a href="validation.html">FHIR Validation</a>
       </li>
     </ul>
@@ -470,7 +473,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p><a href="https://profiles.ihe.net/ITI/TF/Volume1/ch-10.html">Cross-Enterprise Document Sharing (XDS.b) </a> is not based on HL7 Standards and uses a XML+SOAP based interactions.</p>
 
-<p><a name="l911">​</a>See <a href="documents.html">Document Interoperability</a> for details on how XDS relates to other data and interoperability standards.</p>
+<p><a name="l917">​</a>See <a href="documents.html">Document Interoperability</a> for details on how XDS relates to other data and interoperability standards.</p>
 
 <h5 id="xds-and-xca-modernisation">XDS and XCA Modernisation</h5>
 
@@ -519,20 +522,14 @@ Many openEHR implementations will utilise interoperability standards listed on t
   <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
 
-  <script type="text/javascript">
-    $(document).ready(function(){
-      if(window.location.hash != "") {
-          $('a[href="' + window.location.hash + '"]').click()
-      }
-    });
-  </script>
+  <script src="assets/js/window-hash.js" type="text/javascript"> </script>
   <a name="bottom"> </a>
   <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
     <div class="container">    <!-- container -->
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.england.nhs.uk/">NHS England</a>.  Package uk.nhs.england.administration#0.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Apr 19, 2024 04:03+0100">2024-04-19</span>
+          IG &copy; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.england.nhs.uk/">NHS England</a>.  Package uk.nhs.england.administration#0.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Apr 23, 2024 08:00+0100">2024-04-23</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <div style="color: #333333">
@@ -564,16 +561,8 @@ Many openEHR implementations will utilise interoperability standards listed on t
   <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
   <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
   <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
-  <script>anchors.options.visible = 'hover'
-anchors.add()</script>
+  <script src="assets/js/anchor-hover.js" type="text/javascript"> </script>
   
-  <!-- feedback form - Google forms -->
-  <!-- v0.1, 2021-01-09 -->
-
-
-
-  <!-- / feedback form -->
-
     <!-- Analytics Below
   ================================================== -->
   </body>

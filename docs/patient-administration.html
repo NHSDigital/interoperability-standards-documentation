@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Patient Administration - Health Administration Interoperability Standards - Skunkworks v0.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+
+    <!--  <script src="assets/nhsuk.js" defer></script> -->
+
+      <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<!-- Project extras
+<link
+        type="font/woff2"
+        href="assets/fonts/FrutigerLTW01-55Roman.woff2"
+        rel="preload"
+        as="font"
+        crossorigin
+/>
+<link
+        type="font/woff2"
+        href="assets/fonts/FrutigerLTW01-65Bold.woff2"
+        rel="preload"
+        as="font"
+        crossorigin
+/>
+<link href="assets/css/nhsuk.css" rel="stylesheet" />
+-->
+
+<!-- Bootstrap core CSS overrides to bootstrap-fhir.css -->
+<link href="assets/css/nhse.css" rel="stylesheet"/>
+
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/favicons/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"15"}
+    h3,h4,h5,h6{--heading-prefix:"15"}</style>
+    <div id="segment-header" class="segment nhsuk-header">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+<!-- Left logo - typically the publisher's logo - project or affiliate -->
+        <div id="project-nav">
+          <a id="project-logo" no-external="true" href="https://www.england.nhs.uk">
+            <img height="61" alt="Project home" src="assets/images/skunk.png"/>
+          </a>
+        </div>
+
+<!-- Right logo - for example the FHIR logo -->
+<!-- Make sure you have authorization to use the FHIR logo -->
+
+        <div id="family-nav">
+            <!--
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="60" alt="FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+          -->
+        </div> 
+      
+
+<!-- search icon - if you want -->
+<!--
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+-->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Health Administration Interoperability Standards - Skunkworks</span>
+            <br/>
+            <span style="display:inline-block;">0.0.1 - ci-build
+
+
+
+   <img alt="England flag" src="assets/images/GB-ENG.svg" height="16" title="England"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Documentation
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="background.html">Background</a>
+      </li>
+      <li>
+        <a href="interoperability-standards.html">Interoperability Standards</a>
+      </li>
+      <li>
+        <a href="testing.html">Conformance and Testing (FHIR)</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Design
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="administration-module.html">Administration</a>
+      </li>
+      <li>
+        <a href="patient-administration.html">Patient</a>
+      </li>
+      <li>
+        <a href="validation.html">FHIR Validation</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Build
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="national-proxy-service.html">National Proxy Service</a>
+      </li>
+      <li>
+        <a href="personal-demographics-service.html">NHS Number Allocation and PDS</a>
+      </li>
+      <li>
+        <a href="patient-demographics-query.html">Patient Demographics Query</a>
+      </li>
+      <li>
+        <a href="patient-identity-management.html">Patient Identity Management</a>
+      </li>
+      <li>
+        <a href="patient-encounter-management.html">Patient Encounter Management</a>
+      </li>
+      <li>
+        <a href="scheduling.html">Scheduling</a>
+      </li>
+      <li>
+        <a href="booking.html">Booking</a>
+      </li>
+      <li>
+        <a href="care-planning.html">Care Planning</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">FHIR Assets</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Patient Administration</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Health Administration Interoperability Standards - Skunkworks - Local Development build (v0.0.1) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://fhir.nhs.uk/England/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Patient Administration</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#actors-transactions-and-content-modules" id="markdown-toc-actors-transactions-and-content-modules">Actors, Transactions, and Content Modules</a></li>
+  <li><a href="#overview" id="markdown-toc-overview">Overview</a>    <ul>
+      <li><a href="#find-patient" id="markdown-toc-find-patient">Find Patient</a></li>
+      <li><a href="#create-patient" id="markdown-toc-create-patient">Create Patient</a></li>
+      <li><a href="#update-patient" id="markdown-toc-update-patient">Update Patient</a></li>
+      <li><a href="#merge-patient" id="markdown-toc-merge-patient">Merge Patient</a></li>
+      <li><a href="#patient-registration-forms" id="markdown-toc-patient-registration-forms">Patient Registration Forms</a></li>
+    </ul>
+  </li>
+</ul>
+
+</div>
+
+<h2 id="actors-transactions-and-content-modules">Actors, Transactions, and Content Modules</h2>
+
+<ul>
+  <li>Actors
+    <ul>
+      <li><strong>Patient Demographics Consumer</strong> A 3rd party system or application which is a client to a source of patient demographics such as an
+        <ul>
+          <li>Patient Administration System (PAS)</li>
+          <li>Electronic Patient Record (EPR)</li>
+          <li>Master Patient Index (MPI) e.g. Personnel Demographics Service (PDS)</li>
+        </ul>
+      </li>
+      <li><strong>Patient Identity Source</strong> A source system of patient demographics such as a PAS, EPR, MPI or PDS. Systems such as MPI or PDS may also be
+        <ul>
+          <li><strong>Patient Identity Registry</strong> a master patient index of patient demographics and identity.</li>
+        </ul>
+      </li>
+      <li><strong>Patient Identity Consumer</strong> A client system to <strong>Patient Identity Source</strong> and/or <strong>Patient Identity Registry</strong> such as a Electronic Document Management System (EDMS/XDS), Laboratory Information Managment System (LIMS), etc. These systems do not normally manage patient demographics.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="overview">Overview</h2>
+
+<figure><?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="345px" preserveAspectRatio="none" style="width:563px;height:345px;background:#FFFFFF;" version="1.1" viewBox="0 0 563 345" width="563px" zoomAndPan="magnify"><defs /><g><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="165" x="197.75" y="33.5352">Patient Administration</text><rect fill="#F1F1F1" height="34.1328" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="87" x="211.75" y="48.4883" /><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="67" x="221.75" y="70.0898">Find Patient</text><polygon fill="#F1F1F1" points="216.25,102.6211,294.25,102.6211,306.25,114.6211,294.25,126.6211,216.25,126.6211,204.25,114.6211,216.25,102.6211" style="stroke:#181818;stroke-width:0.5;" /><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="78" x="216.25" y="118.7783">Patient Found?</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="32" x="172.25" y="112.3008">found</text><rect fill="#F1F1F1" height="34.1328" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="186" x="11" y="136.6211" /><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="158" x="25" y="158.2227">Update Patient (if required)</text><rect fill="#F1F1F1" height="34.1328" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="176" x="16" y="205.7539" /><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="152" x="30" y="227.3555">Merge Patient (if required)</text><polygon fill="#F1F1F1" points="333,136.6211,480,136.6211,492,148.6211,480,160.6211,333,160.6211,321,148.6211,333,136.6211" style="stroke:#181818;stroke-width:0.5;" /><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="147" x="333" y="152.7783">Additional details required?</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="18" x="303" y="146.3008">yes</text><rect fill="#F1F1F1" height="34.1328" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="168" x="227" y="170.6211" /><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="144" x="237" y="192.2227">Patient Registration Form</text><rect fill="#F1F1F1" height="34.1328" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="101" x="260.5" y="239.7539" /><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="81" x="270.5" y="261.3555">Create Patient</text><rect fill="#F1F1F1" height="34.1328" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="101" x="451.5" y="170.6211" /><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="81" x="461.5" y="192.2227">Create Patient</text><polygon fill="#F1F1F1" points="406.5,279.8867,418.5,291.8867,406.5,303.8867,394.5,291.8867,406.5,279.8867" style="stroke:#181818;stroke-width:0.5;" /><polygon fill="#F1F1F1" points="255.25,309.8867,267.25,321.8867,255.25,333.8867,243.25,321.8867,255.25,309.8867" style="stroke:#181818;stroke-width:0.5;" /><line style="stroke:#181818;stroke-width:1.0;" x1="104" x2="104" y1="170.7539" y2="205.7539" /><polygon fill="#181818" points="100,195.7539,104,205.7539,108,195.7539,104,199.7539" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="311" x2="311" y1="204.7539" y2="239.7539" /><polygon fill="#181818" points="307,229.7539,311,239.7539,315,229.7539,311,233.7539" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="321" x2="311" y1="148.6211" y2="148.6211" /><line style="stroke:#181818;stroke-width:1.0;" x1="311" x2="311" y1="148.6211" y2="170.6211" /><polygon fill="#181818" points="307,160.6211,311,170.6211,315,160.6211,311,164.6211" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="492" x2="502" y1="148.6211" y2="148.6211" /><line style="stroke:#181818;stroke-width:1.0;" x1="502" x2="502" y1="148.6211" y2="170.6211" /><polygon fill="#181818" points="498,160.6211,502,170.6211,506,160.6211,502,164.6211" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="311" x2="311" y1="273.8867" y2="291.8867" /><line style="stroke:#181818;stroke-width:1.0;" x1="311" x2="394.5" y1="291.8867" y2="291.8867" /><polygon fill="#181818" points="384.5,287.8867,394.5,291.8867,384.5,295.8867,388.5,291.8867" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="502" x2="502" y1="204.7539" y2="291.8867" /><line style="stroke:#181818;stroke-width:1.0;" x1="502" x2="418.5" y1="291.8867" y2="291.8867" /><polygon fill="#181818" points="428.5,287.8867,418.5,291.8867,428.5,295.8867,424.5,291.8867" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="204.25" x2="104" y1="114.6211" y2="114.6211" /><line style="stroke:#181818;stroke-width:1.0;" x1="104" x2="104" y1="114.6211" y2="136.6211" /><polygon fill="#181818" points="100,126.6211,104,136.6211,108,126.6211,104,130.6211" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="306.25" x2="406.5" y1="114.6211" y2="114.6211" /><line style="stroke:#181818;stroke-width:1.0;" x1="406.5" x2="406.5" y1="114.6211" y2="136.6211" /><polygon fill="#181818" points="402.5,126.6211,406.5,136.6211,410.5,126.6211,406.5,130.6211" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="104" x2="104" y1="239.8867" y2="321.8867" /><line style="stroke:#181818;stroke-width:1.0;" x1="104" x2="243.25" y1="321.8867" y2="321.8867" /><polygon fill="#181818" points="233.25,317.8867,243.25,321.8867,233.25,325.8867,237.25,321.8867" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="406.5" x2="406.5" y1="303.8867" y2="321.8867" /><line style="stroke:#181818;stroke-width:1.0;" x1="406.5" x2="267.25" y1="321.8867" y2="321.8867" /><polygon fill="#181818" points="277.25,317.8867,267.25,321.8867,277.25,325.8867,273.25,321.8867" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="255.25" x2="255.25" y1="82.6211" y2="102.6211" /><polygon fill="#181818" points="251.25,92.6211,255.25,102.6211,259.25,92.6211,255.25,96.6211" style="stroke:#181818;stroke-width:1.0;" /></g></svg></figure>
+<p><br clear="all" /></p>
+
+<h3 id="find-patient">Find Patient</h3>
+
+<h4 id="use-case">Use Case</h4>
+
+<hr />
+
+<p>A Mosa visits is pregnant and visits the local maternity ward for the first time.</p>
+
+<p>The maternity nurse needs to register the patient; in doing so, it is desired to record the patient’s demographic data in the Electronic Patient Record (EPR). 
+The hospital is connected to a NHS England Personnel Demographic Service (PDS). The nurse issues a patient demographic query request to PDS acting as a <strong>Patient Identity Source</strong>, with some basic patient demographics data as search criteria.</p>
+
+<p>In the returned patient list, she picks an appropriate record for the patient and this is used to create a local patient demographic record in the EPR.
+Other local systems (<strong>Patient Identity Consumer</strong>) are informed of this new patient record via Patient Identity Feeds.</p>
+
+<p><strong>Note:</strong> PDS may be replaced with a local Patient Administration System (PAS) or regional Master Patient Index (MPI) systems.</p>
+
+<hr />
+
+<h4 id="process-flow">Process Flow</h4>
+
+<figure><?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="204px" preserveAspectRatio="none" style="width:425px;height:204px;background:#FFFFFF;" version="1.1" viewBox="0 0 425 204" width="425px" zoomAndPan="magnify"><defs /><g><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="87" x="170.5" y="28.5352">Find Patient</text><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="120" x2="120" y1="118.9766" y2="197.5977" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="344" x2="344" y1="118.9766" y2="197.5977" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="225" x="5" y="116.0234">Patient Demographics Consumer</text><ellipse cx="120.5" cy="50.9883" fill="#E2E2F0" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;" /><path d="M120.5,58.9883 L120.5,85.9883 M107.5,66.9883 L133.5,66.9883 M120.5,85.9883 L107.5,100.9883 M120.5,85.9883 L133.5,100.9883 " fill="none" style="stroke:#181818;stroke-width:0.5;" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="153" x="265" y="116.0234">Patient Identity Source</text><ellipse cx="344.5" cy="50.9883" fill="#E2E2F0" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;" /><path d="M344.5,58.9883 L344.5,85.9883 M331.5,66.9883 L357.5,66.9883 M344.5,85.9883 L331.5,100.9883 M344.5,85.9883 L357.5,100.9883 " fill="none" style="stroke:#181818;stroke-width:0.5;" /><polygon fill="#181818" points="332.5,146.2871,342.5,150.2871,332.5,154.2871,336.5,150.2871" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="120.5" x2="338.5" y1="150.2871" y2="150.2871" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="172" x="127.5" y="145.5449">Patient Demographic Query</text><polygon fill="#181818" points="131.5,175.5977,121.5,179.5977,131.5,183.5977,127.5,179.5977" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="125.5" x2="343.5" y1="179.5977" y2="179.5977" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="200" x="137.5" y="174.8555">Matching Patient Demographics</text></g></svg></figure>
+<p><br clear="all" /></p>
+
+<h3 id="create-patient">Create Patient</h3>
+
+<h4 id="use-case-1">Use Case</h4>
+
+<hr />
+
+<p>Following a healthy pregnancy, Mosa gives birth to her new baby, Joshua. Information is captured about Joshua and about the relationship between him and his parents in the hospitals electronic patient records (EPR) system. Leveraging the information in the EPR, a new patient master identity record is created for baby Joshua in NHS England’s Personnel Demographics System (PDS).</p>
+
+<p>Joshua’s patient master identity in NHS England PDS establishes his unique identity across the English NHS.</p>
+
+<p>Joshua now has his unique master identifier (NHS Number) for health purposes, which affords care in the English NHS.</p>
+
+<p>Other local systems and the new GP (<strong>Patient Identity Consumer</strong>) are informed of this new patient record via Patient Identity Feeds.</p>
+
+<hr />
+
+<h4 id="process-flow-1">Process Flow</h4>
+
+<figure><?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="263px" preserveAspectRatio="none" style="width:417px;height:263px;background:#FFFFFF;" version="1.1" viewBox="0 0 417 263" width="417px" zoomAndPan="magnify"><defs /><g><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="102" x="159" y="28.5352">Create Patient</text><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="90" x2="90" y1="135.4648" y2="256.3965" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="324" x2="324" y1="135.4648" y2="256.3965" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="153" x="9" y="116.0234">Patient Identity Source</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="161" x="9" y="132.5117">Patient Identity Registry</text><ellipse cx="90.5" cy="50.9883" fill="#E2E2F0" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;" /><path d="M90.5,58.9883 L90.5,85.9883 M77.5,66.9883 L103.5,66.9883 M90.5,85.9883 L77.5,100.9883 M90.5,85.9883 L103.5,100.9883 " fill="none" style="stroke:#181818;stroke-width:0.5;" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="177" x="233" y="132.5117">Patient Identity Consumer</text><ellipse cx="324.5" cy="67.4766" fill="#E2E2F0" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;" /><path d="M324.5,75.4766 L324.5,102.4766 M311.5,83.4766 L337.5,83.4766 M324.5,102.4766 L311.5,117.4766 M324.5,102.4766 L337.5,117.4766 " fill="none" style="stroke:#181818;stroke-width:0.5;" /><line style="stroke:#181818;stroke-width:1.0;" x1="90.5" x2="132.5" y1="166.7754" y2="166.7754" /><line style="stroke:#181818;stroke-width:1.0;" x1="132.5" x2="132.5" y1="166.7754" y2="179.7754" /><line style="stroke:#181818;stroke-width:1.0;" x1="91.5" x2="132.5" y1="179.7754" y2="179.7754" /><polygon fill="#181818" points="101.5,175.7754,91.5,179.7754,101.5,183.7754,97.5,179.7754" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="131" x="97.5" y="162.0332">Create Patient record</text><polygon fill="#181818" points="312.5,205.0859,322.5,209.0859,312.5,213.0859,316.5,209.0859" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="90.5" x2="318.5" y1="209.0859" y2="209.0859" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="210" x="97.5" y="204.3438">Patient Created event notification</text><polygon fill="#181818" points="101.5,234.3965,91.5,238.3965,101.5,242.3965,97.5,238.3965" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="95.5" x2="323.5" y1="238.3965" y2="238.3965" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="116" x="107.5" y="233.6543">Acknowledgement</text></g></svg></figure>
+<p><br clear="all" /></p>
+
+<h3 id="update-patient">Update Patient</h3>
+
+<h4 id="use-case-2">Use Case</h4>
+
+<hr />
+
+<p>Following a healthy childhood and after completing his schooling, Joshua leaves home to start a new job in a nearby city. As part of starting his new job at his new company, Joshua registers with a local GP.</p>
+
+<p>Joshua’s identity details are created in the GP’s EPR with his new address and his new mobile phone number. The EPR searches NHS England PDS for Joshua’s master patient identity and then updates NHS England PDS with Joshua’s updated demographic details.</p>
+
+<hr />
+
+<h4 id="process-flow-2">Process Flow</h4>
+
+<figure><?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="263px" preserveAspectRatio="none" style="width:417px;height:263px;background:#FFFFFF;" version="1.1" viewBox="0 0 417 263" width="417px" zoomAndPan="magnify"><defs /><g><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="102" x="159" y="28.5352">Create Patient</text><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="90" x2="90" y1="135.4648" y2="256.3965" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="324" x2="324" y1="135.4648" y2="256.3965" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="153" x="9" y="116.0234">Patient Identity Source</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="161" x="9" y="132.5117">Patient Identity Registry</text><ellipse cx="90.5" cy="50.9883" fill="#E2E2F0" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;" /><path d="M90.5,58.9883 L90.5,85.9883 M77.5,66.9883 L103.5,66.9883 M90.5,85.9883 L77.5,100.9883 M90.5,85.9883 L103.5,100.9883 " fill="none" style="stroke:#181818;stroke-width:0.5;" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="177" x="233" y="132.5117">Patient Identity Consumer</text><ellipse cx="324.5" cy="67.4766" fill="#E2E2F0" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;" /><path d="M324.5,75.4766 L324.5,102.4766 M311.5,83.4766 L337.5,83.4766 M324.5,102.4766 L311.5,117.4766 M324.5,102.4766 L337.5,117.4766 " fill="none" style="stroke:#181818;stroke-width:0.5;" /><line style="stroke:#181818;stroke-width:1.0;" x1="90.5" x2="132.5" y1="166.7754" y2="166.7754" /><line style="stroke:#181818;stroke-width:1.0;" x1="132.5" x2="132.5" y1="166.7754" y2="179.7754" /><line style="stroke:#181818;stroke-width:1.0;" x1="91.5" x2="132.5" y1="179.7754" y2="179.7754" /><polygon fill="#181818" points="101.5,175.7754,91.5,179.7754,101.5,183.7754,97.5,179.7754" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="131" x="97.5" y="162.0332">Create Patient record</text><polygon fill="#181818" points="312.5,205.0859,322.5,209.0859,312.5,213.0859,316.5,209.0859" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="90.5" x2="318.5" y1="209.0859" y2="209.0859" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="210" x="97.5" y="204.3438">Patient Created event notification</text><polygon fill="#181818" points="101.5,234.3965,91.5,238.3965,101.5,242.3965,97.5,238.3965" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="95.5" x2="323.5" y1="238.3965" y2="238.3965" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="116" x="107.5" y="233.6543">Acknowledgement</text></g></svg></figure>
+<p><br clear="all" /></p>
+
+<h3 id="merge-patient">Merge Patient</h3>
+
+<h4 id="use-case-3">Use Case</h4>
+
+<hr />
+
+<p>Joshua becomes concerned and travels to a different city to visit a Sexual Health clinic to be tested for HIV. He provides inaccurate demographic information at the clinic, who set up a new record for him in their EPR. The EPR communicates this demographic information to NHS England PDS where the NHS Number is not found and so the local demographic record is used instead.</p>
+
+<p>Joshua completes the HIV rapid test, which is positive. A confirmatory test is taken, which must be sent to the regional lab for processing. Both the results of the rapid test and the results of the confirmatory test reference Joshua’s duplicate patient demographic record. The test results are not shared on the Shared Health Record (SHR) as the patient master identity was not found.</p>
+
+<p>When Joshua returns to the clinic to receive his confirmatory lab results, and after receiving counseling regarding confidentiality rules and the importance of care continuity, Joshua corrects his patient demographic record. The EPR now sucessfully identifies Joshua’s record on NHS England PDS and this identifies another record for Joshua on the local EPR. The two lcoal records are merged on the EPR and the EPR sends a merge message to all <strong>Patient Identity Consumers</strong>.</p>
+
+<p><strong>Note:</strong> An unmerge would be handled as an administrative function.</p>
+
+<p>The various (external) databases that store health information about Joshua have subscribed to patient update transactions on the local EPR. To ensure patient safety for Joshua, these systems ensure that a query using Joshua’s resolved patient master identity would, correctly, return all of the health information associated with him – whether it was originally persisted under his correct (surviving) patient master identity or under the duplicate (subsumed) patient master identity.</p>
+
+<hr />
+
+<h4 id="process-flow-3">Process Flow</h4>
+
+<figure><?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="263px" preserveAspectRatio="none" style="width:536px;height:263px;background:#FFFFFF;" version="1.1" viewBox="0 0 536 263" width="536px" zoomAndPan="magnify"><defs /><g><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="100" x="219.5" y="28.5352">Merge Patient</text><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="90" x2="90" y1="135.4648" y2="256.3965" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="443" x2="443" y1="135.4648" y2="256.3965" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="153" x="9" y="116.0234">Patient Identity Source</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="161" x="9" y="132.5117">Patient Identity Registry</text><ellipse cx="90.5" cy="50.9883" fill="#E2E2F0" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;" /><path d="M90.5,58.9883 L90.5,85.9883 M77.5,66.9883 L103.5,66.9883 M90.5,85.9883 L77.5,100.9883 M90.5,85.9883 L103.5,100.9883 " fill="none" style="stroke:#181818;stroke-width:0.5;" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="177" x="352" y="132.5117">Patient Identity Consumer</text><ellipse cx="443.5" cy="67.4766" fill="#E2E2F0" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;" /><path d="M443.5,75.4766 L443.5,102.4766 M430.5,83.4766 L456.5,83.4766 M443.5,102.4766 L430.5,117.4766 M443.5,102.4766 L456.5,117.4766 " fill="none" style="stroke:#181818;stroke-width:0.5;" /><line style="stroke:#181818;stroke-width:1.0;" x1="90.5" x2="132.5" y1="166.7754" y2="166.7754" /><line style="stroke:#181818;stroke-width:1.0;" x1="132.5" x2="132.5" y1="166.7754" y2="179.7754" /><line style="stroke:#181818;stroke-width:1.0;" x1="91.5" x2="132.5" y1="179.7754" y2="179.7754" /><polygon fill="#181818" points="101.5,175.7754,91.5,179.7754,101.5,183.7754,97.5,179.7754" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="339" x="97.5" y="162.0332">Patient records are identified as duplicate and merged</text><polygon fill="#181818" points="431.5,205.0859,441.5,209.0859,431.5,213.0859,435.5,209.0859" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="90.5" x2="437.5" y1="209.0859" y2="209.0859" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="208" x="97.5" y="204.3438">Patient Merged event notification</text><polygon fill="#181818" points="101.5,234.3965,91.5,238.3965,101.5,242.3965,97.5,238.3965" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="95.5" x2="442.5" y1="238.3965" y2="238.3965" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="116" x="107.5" y="233.6543">Acknowledgement</text></g></svg></figure>
+<p><br clear="all" /></p>
+
+<h3 id="patient-registration-forms">Patient Registration Forms</h3>
+
+<hr />
+
+<p>Following a healthy childhood and after completing his schooling, Joshua leaves home to start a new job in a nearby city. As part of starting his new job at his new company, Joshua registers with a local GP.</p>
+
+<p>The GP receptionist will begin a patient registration process and this will often include completion of a form e.g. <a href="https://www.gov.uk/government/publications/gms1">GMS1 Form</a>. Once completed details on the form are used to retrieve the NHS England Patient Demographic record from PDS which is used to create a local demographic record. Other details on the form are used to populate the local EPR record (e.g. weight, smoking status, etc)</p>
+
+<hr />
+
+<h4 id="process-flow-4">Process Flow</h4>
+
+<figure><?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="465px" preserveAspectRatio="none" style="width:808px;height:465px;background:#FFFFFF;" version="1.1" viewBox="0 0 808 465" width="808px" zoomAndPan="magnify"><defs /><g><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="145" x="333.25" y="28.5352">Patient Registration</text><rect fill="none" height="59.6211" style="stroke:#000000;stroke-width:1.5;" width="349.5" x="10" y="165.2871" /><rect fill="none" height="59.6211" style="stroke:#000000;stroke-width:1.5;" width="532.5" x="270" y="382.1504" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="46" x2="46" y1="118.9766" y2="458.7715" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="359" x2="359" y1="118.9766" y2="458.7715" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="47" x="20" y="116.0234">Patient</text><ellipse cx="46.5" cy="50.9883" fill="#E2E2F0" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;" /><path d="M46.5,58.9883 L46.5,85.9883 M33.5,66.9883 L59.5,66.9883 M46.5,85.9883 L33.5,100.9883 M46.5,85.9883 L59.5,100.9883 " fill="none" style="stroke:#181818;stroke-width:0.5;" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="153" x="280" y="116.0234">Patient Identity Source</text><ellipse cx="359.5" cy="50.9883" fill="#E2E2F0" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;" /><path d="M359.5,58.9883 L359.5,85.9883 M346.5,66.9883 L372.5,66.9883 M359.5,85.9883 L346.5,100.9883 M359.5,85.9883 L372.5,100.9883 " fill="none" style="stroke:#181818;stroke-width:0.5;" /><polygon fill="#181818" points="57.5,146.2871,47.5,150.2871,57.5,154.2871,53.5,150.2871" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="51.5" x2="358.5" y1="150.2871" y2="150.2871" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="289" x="63.5" y="145.5449">Patient is asked to complete registration form</text><path d="M10,165.2871 L77,165.2871 L77,172.5977 L67,182.5977 L10,182.5977 L10,165.2871 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.5;" /><rect fill="none" height="59.6211" style="stroke:#000000;stroke-width:1.5;" width="349.5" x="10" y="165.2871" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="22" x="25" y="178.8555">opt</text><line style="stroke:#181818;stroke-width:1.0;" x1="46.5" x2="88.5" y1="203.9082" y2="203.9082" /><line style="stroke:#181818;stroke-width:1.0;" x1="88.5" x2="88.5" y1="203.9082" y2="216.9082" /><line style="stroke:#181818;stroke-width:1.0;" x1="47.5" x2="88.5" y1="216.9082" y2="216.9082" /><polygon fill="#181818" points="57.5,212.9082,47.5,216.9082,57.5,220.9082,53.5,216.9082" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="294" x="53.5" y="199.166">Patient registration form can be pre-populated</text><line style="stroke:#181818;stroke-width:1.0;" x1="46.5" x2="88.5" y1="253.2188" y2="253.2188" /><line style="stroke:#181818;stroke-width:1.0;" x1="88.5" x2="88.5" y1="253.2188" y2="266.2188" /><line style="stroke:#181818;stroke-width:1.0;" x1="47.5" x2="88.5" y1="266.2188" y2="266.2188" /><polygon fill="#181818" points="57.5,262.2188,47.5,266.2188,57.5,270.2188,53.5,266.2188" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="146" x="53.5" y="248.4766">Patient completes form</text><polygon fill="#181818" points="347.5,291.5293,357.5,295.5293,347.5,299.5293,351.5,295.5293" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="46.5" x2="353.5" y1="295.5293" y2="295.5293" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="231" x="53.5" y="290.7871">Completed Patient Registration Form</text><polygon fill="#181818" points="57.5,320.8398,47.5,324.8398,57.5,328.8398,53.5,324.8398" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="51.5" x2="358.5" y1="324.8398" y2="324.8398" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="116" x="63.5" y="320.0977">Acknowledgement</text><line style="stroke:#181818;stroke-width:1.0;" x1="359.5" x2="401.5" y1="354.1504" y2="354.1504" /><line style="stroke:#181818;stroke-width:1.0;" x1="401.5" x2="401.5" y1="354.1504" y2="367.1504" /><line style="stroke:#181818;stroke-width:1.0;" x1="360.5" x2="401.5" y1="367.1504" y2="367.1504" /><polygon fill="#181818" points="370.5,363.1504,360.5,367.1504,370.5,371.1504,366.5,367.1504" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="88" x="366.5" y="349.4082">Create patient</text><path d="M270,382.1504 L337,382.1504 L337,389.4609 L327,399.4609 L270,399.4609 L270,382.1504 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.5;" /><rect fill="none" height="59.6211" style="stroke:#000000;stroke-width:1.5;" width="532.5" x="270" y="382.1504" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="22" x="285" y="395.7188">opt</text><line style="stroke:#181818;stroke-width:1.0;" x1="359.5" x2="401.5" y1="420.7715" y2="420.7715" /><line style="stroke:#181818;stroke-width:1.0;" x1="401.5" x2="401.5" y1="420.7715" y2="433.7715" /><line style="stroke:#181818;stroke-width:1.0;" x1="360.5" x2="401.5" y1="433.7715" y2="433.7715" /><polygon fill="#181818" points="370.5,429.7715,360.5,433.7715,370.5,437.7715,366.5,433.7715" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="424" x="366.5" y="416.0293">Extract health record data from form and add to the patients record</text></g></svg></figure>
+<p><br clear="all" /></p>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.england.nhs.uk/">NHS England</a>.  Package uk.nhs.england.administration#0.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Apr 23, 2024 08:00+0100">2024-04-23</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+            <div style="color: #333333" >
+
+          Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
+                 <a style="color: #81BEF7" href="qa.html">QA Report</a> 
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
+<div>
+</div>
+
+</div>
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

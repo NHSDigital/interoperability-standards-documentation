@@ -10,7 +10,7 @@
   "name" : "NHSEnglandInteroperabilitySkunkworks",
   "title" : "Health Administration Interoperability Standards - Skunkworks",
   "status" : "draft",
-  "date" : "2024-04-19T04:03:07+01:00",
+  "date" : "2024-04-23T08:00:23+01:00",
   "publisher" : "NHS England",
   "contact" : [{
     "name" : "NHS England",
@@ -37,7 +37,7 @@
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "5.3.0"
+    "version" : "5.5.0"
   },
   {
     "id" : "hl7ext",
@@ -72,6 +72,24 @@
     "uri" : "https://profiles.ihe.net/ITI/PCF/ImplementationGuide/ihe.iti.pcf",
     "packageId" : "ihe.iti.pcf",
     "version" : "1.0.0"
+  },
+  {
+    "id" : "ihe_iti_pixm",
+    "uri" : "https://profiles.ihe.net/ITI/PIXm/ImplementationGuide/ihe.iti.pixm",
+    "packageId" : "ihe.iti.pixm",
+    "version" : "3.0.4"
+  },
+  {
+    "id" : "ihe_iti_pdqm",
+    "uri" : "https://profiles.ihe.net/ITI/PDQm/ImplementationGuide/ihe.iti.pdqm",
+    "packageId" : "ihe.iti.pdqm",
+    "version" : "3.0.0"
+  },
+  {
+    "id" : "ihe_iti_mcsd",
+    "uri" : "https://profiles.ihe.net/ITI/mCSD/ImplementationGuide/ihe.iti.mcsd",
+    "packageId" : "ihe.iti.mcsd",
+    "version" : "3.8.0"
   },
   {
     "id" : "hl7_fhir_uv_subscriptions_backport_r4",
@@ -1615,6 +1633,15 @@
         }],
         "nameUrl" : "national-proxy-service.html",
         "title" : "National Proxy Service",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "patient-administration.html"
+        }],
+        "nameUrl" : "patient-administration.html",
+        "title" : "Patient Administration",
         "generation" : "markdown"
       },
       {

@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "NHSEnglandInteroperabilitySkunkworks"] ; # 
   fhir:title [ fhir:v "Health Administration Interoperability Standards - Skunkworks"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-04-19T04:03:07+01:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-04-23T08:00:23+01:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "NHS England"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "NHS England" ] ;
@@ -47,7 +47,7 @@
        fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
      ] ;
      fhir:packageId [ fhir:v "hl7.terminology.r4" ] ;
-     fhir:version [ fhir:v "5.3.0" ]
+     fhir:version [ fhir:v "5.5.0" ]
   ] [
      fhir:id [ fhir:v "hl7ext" ] ;
      fhir:extension ( [
@@ -92,6 +92,30 @@
      ] ;
      fhir:packageId [ fhir:v "ihe.iti.pcf" ] ;
      fhir:version [ fhir:v "1.0.0" ]
+  ] [
+     fhir:id [ fhir:v "ihe_iti_pixm" ] ;
+     fhir:uri [
+       fhir:v "https://profiles.ihe.net/ITI/PIXm/ImplementationGuide/ihe.iti.pixm"^^xsd:anyURI ;
+       fhir:link <https://profiles.ihe.net/ITI/PIXm/ImplementationGuide/ihe.iti.pixm>
+     ] ;
+     fhir:packageId [ fhir:v "ihe.iti.pixm" ] ;
+     fhir:version [ fhir:v "3.0.4" ]
+  ] [
+     fhir:id [ fhir:v "ihe_iti_pdqm" ] ;
+     fhir:uri [
+       fhir:v "https://profiles.ihe.net/ITI/PDQm/ImplementationGuide/ihe.iti.pdqm"^^xsd:anyURI ;
+       fhir:link <https://profiles.ihe.net/ITI/PDQm/ImplementationGuide/ihe.iti.pdqm>
+     ] ;
+     fhir:packageId [ fhir:v "ihe.iti.pdqm" ] ;
+     fhir:version [ fhir:v "3.0.0" ]
+  ] [
+     fhir:id [ fhir:v "ihe_iti_mcsd" ] ;
+     fhir:uri [
+       fhir:v "https://profiles.ihe.net/ITI/mCSD/ImplementationGuide/ihe.iti.mcsd"^^xsd:anyURI ;
+       fhir:link <https://profiles.ihe.net/ITI/mCSD/ImplementationGuide/ihe.iti.mcsd>
+     ] ;
+     fhir:packageId [ fhir:v "ihe.iti.mcsd" ] ;
+     fhir:version [ fhir:v "3.8.0" ]
   ] [
      fhir:id [ fhir:v "hl7_fhir_uv_subscriptions_backport_r4" ] ;
      fhir:uri [
@@ -1576,6 +1600,14 @@
          ] ) ;
          fhir:name [ fhir:v "national-proxy-service.html"^^xsd:anyURI ] ;
          fhir:title [ fhir:v "National Proxy Service" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "patient-administration.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "patient-administration.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Patient Administration" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:extension ( [
