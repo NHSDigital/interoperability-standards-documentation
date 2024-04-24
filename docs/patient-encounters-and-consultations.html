@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Patient Encounters and Consultations - Health Administration Interoperability Standards - Skunkworks v0.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+
+    <!--  <script src="assets/nhsuk.js" defer></script> -->
+
+      <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<!-- Project extras
+<link
+        type="font/woff2"
+        href="assets/fonts/FrutigerLTW01-55Roman.woff2"
+        rel="preload"
+        as="font"
+        crossorigin
+/>
+<link
+        type="font/woff2"
+        href="assets/fonts/FrutigerLTW01-65Bold.woff2"
+        rel="preload"
+        as="font"
+        crossorigin
+/>
+<link href="assets/css/nhsuk.css" rel="stylesheet" />
+-->
+
+<!-- Bootstrap core CSS overrides to bootstrap-fhir.css -->
+<link href="assets/css/nhse.css" rel="stylesheet"/>
+
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/favicons/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"18"}
+    h3,h4,h5,h6{--heading-prefix:"18"}</style>
+    <div id="segment-header" class="segment nhsuk-header">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+<!-- Left logo - typically the publisher's logo - project or affiliate -->
+        <div id="project-nav">
+          <a id="project-logo" no-external="true" href="https://www.england.nhs.uk">
+            <img height="61" alt="Project home" src="assets/images/skunk.png"/>
+          </a>
+        </div>
+
+<!-- Right logo - for example the FHIR logo -->
+<!-- Make sure you have authorization to use the FHIR logo -->
+
+        <div id="family-nav">
+            <!--
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="60" alt="FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+          -->
+        </div> 
+      
+
+<!-- search icon - if you want -->
+<!--
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+-->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Health Administration Interoperability Standards - Skunkworks</span>
+            <br/>
+            <span style="display:inline-block;">0.0.1 - ci-build
+
+
+
+   <img alt="England flag" src="assets/images/GB-ENG.svg" height="16" title="England"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Documentation
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="background.html">Background</a>
+      </li>
+      <li>
+        <a href="interoperability-standards.html">Interoperability Standards</a>
+      </li>
+      <li>
+        <a href="testing.html">Conformance and Testing (FHIR)</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Design
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="administration-module.html">Administration</a>
+      </li>
+      <li>
+        <a href="patient-administration.html">Patient Administration</a>
+      </li>
+      <li>
+        <a href="patient-encounters-and-consultations.html">Patient Encounters and Consultations</a>
+      </li>
+      <li>
+        <a href="validation.html">FHIR Validation</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Build
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="national-proxy-service.html">National Proxy Service</a>
+      </li>
+      <li>
+        <a href="personal-demographics-service.html">NHS Number Allocation and PDS</a>
+      </li>
+      <li>
+        <a href="patient-demographics-query.html">Patient Demographics Query</a>
+      </li>
+      <li>
+        <a href="patient-identity-management.html">Patient Identity Management</a>
+      </li>
+      <li>
+        <a href="patient-encounter-management.html">Patient Encounter Management</a>
+      </li>
+      <li>
+        <a href="scheduling.html">Scheduling</a>
+      </li>
+      <li>
+        <a href="booking.html">Booking</a>
+      </li>
+      <li>
+        <a href="care-planning.html">Care Planning</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">FHIR Assets</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Patient Encounters and Consultations</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Health Administration Interoperability Standards - Skunkworks - Local Development build (v0.0.1) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://fhir.nhs.uk/England/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Patient Encounters and Consultations</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#actors-transactions-and-content-modules" id="markdown-toc-actors-transactions-and-content-modules">Actors, Transactions, and Content Modules</a></li>
+  <li><a href="#overview" id="markdown-toc-overview">Overview</a>    <ul>
+      <li><a href="#general-practice-consultation" id="markdown-toc-general-practice-consultation">General Practice Consultation</a></li>
+      <li><a href="#outpatient-inc-virtual-encounters" id="markdown-toc-outpatient-inc-virtual-encounters">Outpatient (inc. Virtual) Encounters</a></li>
+      <li><a href="#inpatient-encounters" id="markdown-toc-inpatient-encounters">Inpatient Encounters</a></li>
+      <li><a href="#sharing-encounter-data" id="markdown-toc-sharing-encounter-data">Sharing Encounter Data</a></li>
+      <li><a href="#sharing-discharge-reports-and-clinic-letters" id="markdown-toc-sharing-discharge-reports-and-clinic-letters">Sharing Discharge Reports and Clinic Letters</a></li>
+    </ul>
+  </li>
+</ul>
+
+</div>
+
+<h2 id="actors-transactions-and-content-modules">Actors, Transactions, and Content Modules</h2>
+
+<ul>
+  <li>Actors
+    <ul>
+      <li><strong>Patient Encounter Supplier</strong> The healthcare provider system used to manage the encounter, this will often be known as
+        <ul>
+          <li>Patient Administration System (PAS)</li>
+          <li>Electronic Patient Record (EPR)</li>
+          <li>Personal Health Record (PHR)</li>
+        </ul>
+      </li>
+      <li><strong>Patient Encounter Consumer</strong> The patient and other practitioners involved in the delivery of care to the patient both internal and external to the healthcare provider.</li>
+      <li><strong>Clinical Data Source</strong> A system for recording health care data. This is often a
+        <ul>
+          <li>Electronic Patient Record (EPR)</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="overview">Overview</h2>
+
+<h3 id="general-practice-consultation">General Practice Consultation</h3>
+
+<h4 id="use-case">Use Case</h4>
+
+<hr />
+
+<p>Joshua, now 40, has been asked to book a <a href="https://www.nhs.uk/conditions/nhs-health-check/">NHS Health Check</a>.</p>
+
+<p>Following the booking, Joshua is notified of the appointment.</p>
+
+<p>He attends the appointment with nurse Aube, Aube takes a number of measurements tests which recorded in the Electronic Patient Record. Aube notes Joshua is overweight and so performs a Blood Sugar tests and also a diabetes risk assesment. 
+The diabetes risk assesment indicates elevated risk of <strong>type 2 diabetes</strong> 
+The results are discussed with Joshua which includes advice loosing weight and options for help such as physical activity and <a href="https://www.england.nhs.uk/diabetes/diabetes-prevention/">NHS Diabetes Prevention Programme (NHS DPP)</a></p>
+
+<p>On completion of the health check, other care providers are notified the health check has been performed. The results of health check are automatically shared via <strong>GP Connect API’s</strong></p>
+
+<hr />
+
+<h4 id="process-flow">Process Flow</h4>
+
+<figure><?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="477px" preserveAspectRatio="none" style="width:647px;height:477px;background:#FFFFFF;" version="1.1" viewBox="0 0 647 477" width="647px" zoomAndPan="magnify"><defs /><g><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="111" x="269.5" y="28.5352">GP Consulation</text><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="101" x2="101" y1="135.4648" y2="470.2598" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="545" x2="545" y1="135.4648" y2="470.2598" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="182" x="5" y="116.0234">Patient Encounter Supplier</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="146" x="27" y="132.5117">(Clinical Data Source)</text><ellipse cx="101" cy="50.9883" fill="#E2E2F0" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;" /><path d="M101,58.9883 L101,85.9883 M88,66.9883 L114,66.9883 M101,85.9883 L88,100.9883 M101,85.9883 L114,100.9883 " fill="none" style="stroke:#181818;stroke-width:0.5;" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="196" x="444" y="132.5117">Patient Encounter Consumer</text><ellipse cx="545" cy="67.4766" fill="#E2E2F0" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;" /><path d="M545,75.4766 L545,102.4766 M532,83.4766 L558,83.4766 M545,102.4766 L532,117.4766 M545,102.4766 L558,117.4766 " fill="none" style="stroke:#181818;stroke-width:0.5;" /><polygon fill="#181818" points="533,162.7754,543,166.7754,533,170.7754,537,166.7754" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="101" x2="539" y1="166.7754" y2="166.7754" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="253" x="108" y="162.0332">Appointment booking event notification</text><polygon fill="#181818" points="112,192.0859,102,196.0859,112,200.0859,108,196.0859" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="106" x2="544" y1="196.0859" y2="196.0859" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="116" x="118" y="191.3438">Acknowledgement</text><path d="M32,209.0859 L32,234.0859 L170,234.0859 L170,219.0859 L160,209.0859 L32,209.0859 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;" /><path d="M160,209.0859 L160,219.0859 L170,219.0859 L160,209.0859 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="117" x="38" y="226.6543">Begin consultation</text><line style="stroke:#181818;stroke-width:1.0;" x1="101" x2="143" y1="260.707" y2="260.707" /><line style="stroke:#181818;stroke-width:1.0;" x1="143" x2="143" y1="260.707" y2="273.707" /><line style="stroke:#181818;stroke-width:1.0;" x1="102" x2="143" y1="273.707" y2="273.707" /><polygon fill="#181818" points="112,269.707,102,273.707,112,277.707,108,273.707" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="126" x="108" y="255.9648">Record consultation</text><path d="M37,286.707 L37,311.707 L164,311.707 L164,296.707 L154,286.707 L37,286.707 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;" /><path d="M154,286.707 L154,296.707 L164,296.707 L154,286.707 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="106" x="43" y="304.2754">End consultation</text><line style="stroke:#181818;stroke-width:1.0;" x1="101" x2="143" y1="338.3281" y2="338.3281" /><line style="stroke:#181818;stroke-width:1.0;" x1="143" x2="143" y1="338.3281" y2="351.3281" /><line style="stroke:#181818;stroke-width:1.0;" x1="102" x2="143" y1="351.3281" y2="351.3281" /><polygon fill="#181818" points="112,347.3281,102,351.3281,112,355.3281,108,351.3281" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="399" x="108" y="333.5859">Record is automatically shared with patient and other providers</text><polygon fill="#181818" points="533,376.6387,543,380.6387,533,384.6387,537,380.6387" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="101" x2="539" y1="380.6387" y2="380.6387" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="216" x="108" y="375.8965">GP Consultation event notification</text><polygon fill="#181818" points="112,405.9492,102,409.9492,112,413.9492,108,409.9492" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="106" x2="544" y1="409.9492" y2="409.9492" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="116" x="118" y="405.207">Acknowledgement</text><line style="stroke:#181818;stroke-width:1.0;" x1="101" x2="143" y1="439.2598" y2="439.2598" /><line style="stroke:#181818;stroke-width:1.0;" x1="143" x2="143" y1="439.2598" y2="452.2598" /><line style="stroke:#181818;stroke-width:1.0;" x1="102" x2="143" y1="452.2598" y2="452.2598" /><polygon fill="#181818" points="112,448.2598,102,452.2598,112,456.2598,108,452.2598" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="430" x="108" y="434.5176">Encounter record is shared via API's with patient and other providers</text></g></svg></figure>
+<p><br clear="all" /></p>
+
+<h4 id="standards">Standards</h4>
+
+<ul>
+  <li><a href="https://profiles.ihe.net/ITI/TF/Volume1/ch-14.html#14.5.2">IHE PEM</a></li>
+  <li><a href="HSCIC ITK HL7 V2 Message Specifications.pdf">NHS England (ADT) ITK HL7 v2 (2.4) Message Specification</a> this is a framework based on IHE PEM.</li>
+</ul>
+
+<h4 id="services">Services</h4>
+
+<p>nil</p>
+
+<h3 id="outpatient-inc-virtual-encounters">Outpatient (inc. Virtual) Encounters</h3>
+
+<h4 id="use-case-1">Use Case</h4>
+
+<hr />
+
+<p>Joshua has followed Aube’s advice and started on a <a href="https://www.england.nhs.uk/diabetes/diabetes-prevention/">NHS Diabetes Prevention Programme (NHS DPP)</a> and a <a href="https://www.nice.org.uk/guidance/ph54">Physical Activity</a> programme with a social provider in order to improve his health condition.</p>
+
+<p>Both programmes involve a series of face to face consultations and can be supported by digital tools such as wearable technologies that monitor levels of exercise, apps where users can access health coaches, online peer support groups and the ability to set and monitor goals electronically. Online consultations may be known as virtual consultations.
+Each consultation whether online or face 2 face will be recorded on a EPR or PHR.</p>
+
+<p>As each provider, the patient and the GP are concurrently working on similar pathways they will keep each other informed of key events and share data with each other via Query API’s.</p>
+
+<p>On completion of each programme a discharge event notification is generated and a discharge report completed.</p>
+
+<hr />
+
+<h4 id="process-flow-1">Process Flow</h4>
+
+<figure><?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="280px" preserveAspectRatio="none" style="width:358px;height:280px;background:#FFFFFF;" version="1.1" viewBox="0 0 358 280" width="358px" zoomAndPan="magnify"><defs /><g><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="224" x="65.5" y="33.5352">Patient Encounter - Outpatient</text><rect fill="#F1F1F1" height="34.1328" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="336" x="11" y="48.4883" /><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="316" x="21" y="70.0898">Transferred/Referred to Outpatient (inc virtual) service</text><rect fill="#F1F1F1" height="34.1328" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="218" x="70" y="158.7559" /><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="198" x="80" y="180.3574">Outpatient (inc. virtual) Encounters</text><polygon fill="#F1F1F1" points="129.5,102.6211,228.5,102.6211,240.5,114.6211,228.5,126.6211,129.5,126.6211,117.5,114.6211,129.5,102.6211" style="stroke:#181818;stroke-width:0.5;" /><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="18" x="183" y="137.2559">yes</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="99" x="129.5" y="118.7783">care still required?</text><rect fill="#F1F1F1" height="34.1328" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="128" x="115" y="234.8887" /><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="108" x="125" y="256.4902">Patient Discharged</text><line style="stroke:#181818;stroke-width:1.0;" x1="179" x2="179" y1="126.6211" y2="158.7559" /><polygon fill="#181818" points="175,148.7559,179,158.7559,183,148.7559,179,152.7559" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="179" x2="179" y1="192.8887" y2="202.8887" /><line style="stroke:#181818;stroke-width:1.0;" x1="179" x2="300" y1="202.8887" y2="202.8887" /><polygon fill="#181818" points="296,167.3447,300,157.3447,304,167.3447,300,163.3447" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="300" x2="300" y1="114.6211" y2="202.8887" /><line style="stroke:#181818;stroke-width:1.0;" x1="300" x2="240.5" y1="114.6211" y2="114.6211" /><polygon fill="#181818" points="250.5,110.6211,240.5,114.6211,250.5,118.6211,246.5,114.6211" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="117.5" x2="58" y1="114.6211" y2="114.6211" /><polygon fill="#181818" points="54,153.3447,58,163.3447,62,153.3447,58,157.3447" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="58" x2="58" y1="114.6211" y2="214.8887" /><line style="stroke:#181818;stroke-width:1.0;" x1="58" x2="179" y1="214.8887" y2="214.8887" /><line style="stroke:#181818;stroke-width:1.0;" x1="179" x2="179" y1="214.8887" y2="234.8887" /><polygon fill="#181818" points="175,224.8887,179,234.8887,183,224.8887,179,228.8887" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="179" x2="179" y1="82.6211" y2="102.6211" /><polygon fill="#181818" points="175,92.6211,179,102.6211,183,92.6211,179,96.6211" style="stroke:#181818;stroke-width:1.0;" /></g></svg></figure>
+<p><br clear="all" /></p>
+
+<figure><?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="709px" preserveAspectRatio="none" style="width:705px;height:709px;background:#FFFFFF;" version="1.1" viewBox="0 0 705 709" width="705px" zoomAndPan="magnify"><defs /><g><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="255" x="226.5" y="28.5352">Outpatient (inc. Virtual) Encounters</text><rect fill="none" height="347.416" style="stroke:#000000;stroke-width:1.5;" width="689" x="10" y="194.7754" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="116" x2="116" y1="135.4648" y2="702.4336" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="588" x2="588" y1="135.4648" y2="702.4336" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="182" x="20" y="116.0234">Patient Encounter Supplier</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="146" x="42" y="132.5117">(Clinical Data Source)</text><ellipse cx="116" cy="50.9883" fill="#E2E2F0" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;" /><path d="M116,58.9883 L116,85.9883 M103,66.9883 L129,66.9883 M116,85.9883 L103,100.9883 M116,85.9883 L129,100.9883 " fill="none" style="stroke:#181818;stroke-width:0.5;" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="196" x="487" y="132.5117">Patient Encounter Consumer</text><ellipse cx="588" cy="67.4766" fill="#E2E2F0" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;" /><path d="M588,75.4766 L588,102.4766 M575,83.4766 L601,83.4766 M588,102.4766 L575,117.4766 M588,102.4766 L601,117.4766 " fill="none" style="stroke:#181818;stroke-width:0.5;" /><line style="stroke:#181818;stroke-width:1.0;" x1="116" x2="158" y1="166.7754" y2="166.7754" /><line style="stroke:#181818;stroke-width:1.0;" x1="158" x2="158" y1="166.7754" y2="179.7754" /><line style="stroke:#181818;stroke-width:1.0;" x1="117" x2="158" y1="179.7754" y2="179.7754" /><polygon fill="#181818" points="127,175.7754,117,179.7754,127,183.7754,123,179.7754" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="176" x="123" y="162.0332">Patient is referred to service</text><path d="M10,194.7754 L84,194.7754 L84,202.0859 L74,212.0859 L10,212.0859 L10,194.7754 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.5;" /><rect fill="none" height="347.416" style="stroke:#000000;stroke-width:1.5;" width="689" x="10" y="194.7754" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="29" x="25" y="208.3438">loop</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="165" x="99" y="207.4102">[until programme completed]</text><polygon fill="#181818" points="576,229.3965,586,233.3965,576,237.3965,580,233.3965" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="116" x2="582" y1="233.3965" y2="233.3965" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="253" x="123" y="228.6543">Appointment booking event notification</text><polygon fill="#181818" points="127,258.707,117,262.707,127,266.707,123,262.707" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="121" x2="587" y1="262.707" y2="262.707" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="116" x="133" y="257.9648">Acknowledgement</text><path d="M47,275.707 L47,300.707 L185,300.707 L185,285.707 L175,275.707 L47,275.707 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;" /><path d="M175,275.707 L175,285.707 L185,285.707 L175,275.707 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="117" x="53" y="293.2754">Begin consultation</text><line style="stroke:#181818;stroke-width:1.0;" x1="116" x2="158" y1="327.3281" y2="327.3281" /><line style="stroke:#181818;stroke-width:1.0;" x1="158" x2="158" y1="327.3281" y2="340.3281" /><line style="stroke:#181818;stroke-width:1.0;" x1="117" x2="158" y1="340.3281" y2="340.3281" /><polygon fill="#181818" points="127,336.3281,117,340.3281,127,344.3281,123,340.3281" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="110" x="123" y="322.5859">Record encounter</text><path d="M52,353.3281 L52,378.3281 L179,378.3281 L179,363.3281 L169,353.3281 L52,353.3281 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;" /><path d="M169,353.3281 L169,363.3281 L179,363.3281 L169,353.3281 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="106" x="58" y="370.8965">End consultation</text><line style="stroke:#181818;stroke-width:1.0;" x1="116" x2="158" y1="404.9492" y2="404.9492" /><line style="stroke:#181818;stroke-width:1.0;" x1="158" x2="158" y1="404.9492" y2="417.9492" /><line style="stroke:#181818;stroke-width:1.0;" x1="117" x2="158" y1="417.9492" y2="417.9492" /><polygon fill="#181818" points="127,413.9492,117,417.9492,127,421.9492,123,417.9492" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="399" x="123" y="400.207">Record is automatically shared with patient and other providers</text><polygon fill="#181818" points="576,443.2598,586,447.2598,576,451.2598,580,447.2598" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="116" x2="582" y1="447.2598" y2="447.2598" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="297" x="123" y="442.5176">Outpatient/Virtual Encounter event notification</text><polygon fill="#181818" points="127,472.5703,117,476.5703,127,480.5703,123,476.5703" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="121" x2="587" y1="476.5703" y2="476.5703" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="116" x="133" y="471.8281">Acknowledgement</text><line style="stroke:#181818;stroke-width:1.0;" x1="116" x2="158" y1="521.1914" y2="521.1914" /><line style="stroke:#181818;stroke-width:1.0;" x1="158" x2="158" y1="521.1914" y2="534.1914" /><line style="stroke:#181818;stroke-width:1.0;" x1="117" x2="158" y1="534.1914" y2="534.1914" /><polygon fill="#181818" points="127,530.1914,117,534.1914,127,538.1914,123,534.1914" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="430" x="123" y="501.1387">Encounter record is shared via API's with patient and other providers</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="454" x="127" y="516.4492">Alternatively the record of the encounter can be shared as a clinic letter.</text><polygon fill="#181818" points="576,566.502,586,570.502,576,574.502,580,570.502" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="116" x2="582" y1="570.502" y2="570.502" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="178" x="123" y="565.7598">Discharge event notification</text><polygon fill="#181818" points="127,595.8125,117,599.8125,127,603.8125,123,599.8125" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="121" x2="587" y1="599.8125" y2="599.8125" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="116" x="133" y="595.0703">Acknowledgement</text><line style="stroke:#181818;stroke-width:1.0;" x1="116" x2="158" y1="629.123" y2="629.123" /><line style="stroke:#181818;stroke-width:1.0;" x1="158" x2="158" y1="629.123" y2="642.123" /><line style="stroke:#181818;stroke-width:1.0;" x1="117" x2="158" y1="642.123" y2="642.123" /><polygon fill="#181818" points="127,638.123,117,642.123,127,646.123,123,642.123" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="172" x="123" y="624.3809">Complete Discharge Report</text><line style="stroke:#181818;stroke-width:1.0;" x1="116" x2="158" y1="671.4336" y2="671.4336" /><line style="stroke:#181818;stroke-width:1.0;" x1="158" x2="158" y1="671.4336" y2="684.4336" /><line style="stroke:#181818;stroke-width:1.0;" x1="117" x2="158" y1="684.4336" y2="684.4336" /><polygon fill="#181818" points="127,680.4336,117,684.4336,127,688.4336,123,684.4336" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="431" x="123" y="666.6914">Discharge Report is shared via API's with patient and other providers</text></g></svg></figure>
+<p><br clear="all" /></p>
+
+<h4 id="standards-1">Standards</h4>
+
+<ul>
+  <li><a href="https://profiles.ihe.net/ITI/TF/Volume1/ch-14.html#14.5.2">IHE PEM</a></li>
+  <li><a href="HSCIC ITK HL7 V2 Message Specifications.pdf">NHS England (ADT) ITK HL7 v2 (2.4) Message Specification</a> this is a framework based on IHE PEM.</li>
+</ul>
+
+<h4 id="services-1">Services</h4>
+
+<ul>
+  <li><a href="https://digital.nhs.uk/services/transfer-of-care-initiative/apis">NHS England Transfer of Care API’s</a> This is a method of sending Encounter documentation to primary care providers, it also notifies them of the encounter event.
+    <ul>
+      <li>Outpatient attendance</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="inpatient-encounters">Inpatient Encounters</h3>
+
+<p>Also, applicable to emergency and daycases.</p>
+
+<hr />
+
+<p>Joshua blah blah - some condition (diabetes related) which gets him hospital and requires outpatient care</p>
+
+<p>build up the case for care planning elaboration and XDS/QEDm requirement for sharing care records</p>
+
+<hr />
+
+<h4 id="process-flow-2">Process Flow</h4>
+
+<figure><?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="802px" preserveAspectRatio="none" style="width:561px;height:802px;background:#FFFFFF;" version="1.1" viewBox="0 0 561 802" width="561px" zoomAndPan="magnify"><defs /><g><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="211" x="173.5" y="33.5352">Patient Encounter - Inpatient</text><rect fill="#F1F1F1" height="34.1328" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="102" x="212" y="48.4883" /><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="82" x="222" y="70.0898">Pre Admission</text><rect fill="#F1F1F1" height="34.1328" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="116" x="205" y="102.6211" /><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="96" x="215" y="124.2227">Patient Admitted</text><rect fill="#F1F1F1" height="34.1328" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="148" x="189" y="156.7539" /><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="128" x="199" y="178.3555">Provide Inpatient Care</text><rect fill="#F1F1F1" height="34.1328" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="128" x="199" y="210.8867" /><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="108" x="209" y="232.4883">Patient Discharged</text><rect fill="#F1F1F1" height="34.1328" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="174" x="176" y="309.0195" /><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="154" x="186" y="330.6211">Inpatient Patient Discharge</text><rect fill="#555555" height="6" rx="2.5" ry="2.5" style="stroke:#555555;stroke-width:1.0;" width="514" x="11" y="363.1523" /><rect fill="#F1F1F1" height="34.1328" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="248" x="24" y="437.6299" /><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="228" x="34" y="459.2314">Transfer to Outpatient (inc virtual) ward</text><rect fill="#F1F1F1" height="34.1328" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="218" x="39" y="558.7178" /><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="198" x="49" y="580.3193">Outpatient (inc. virtual) Encounters</text><polygon fill="#F1F1F1" points="98.5,497.7627,197.5,497.7627,209.5,509.7627,197.5,521.7627,98.5,521.7627,86.5,509.7627,98.5,497.7627" style="stroke:#181818;stroke-width:0.5;" /><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="18" x="152" y="532.3975">yes</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="99" x="98.5" y="513.9199">care still required?</text><rect fill="#F1F1F1" height="34.1328" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="198" x="49" y="642.8506" /><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="178" x="59" y="664.4521">Patient Discharged (outpatient)</text><polygon fill="#F1F1F1" points="60,389.1523,236,389.1523,248,401.1523,236,413.1523,60,413.1523,48,401.1523,60,389.1523" style="stroke:#181818;stroke-width:0.5;" /><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="18" x="152" y="423.7871">yes</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="176" x="60" y="405.3096">hospital/internally provided care</text><polygon fill="#F1F1F1" points="148,696.9834,160,708.9834,148,720.9834,136,708.9834,148,696.9834" style="stroke:#181818;stroke-width:0.5;" /><rect fill="#F1F1F1" height="34.1328" rx="12.5" ry="12.5" style="stroke:#181818;stroke-width:0.5;" width="167" x="332" y="540.2402" /><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="147" x="342" y="561.8418">Refer to other provider(s)</text><polygon fill="#F1F1F1" points="350.5,491.7627,480.5,491.7627,492.5,503.7627,480.5,515.7627,350.5,515.7627,338.5,503.7627,350.5,491.7627" style="stroke:#181818;stroke-width:0.5;" /><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="18" x="419.5" y="526.3975">yes</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="130" x="350.5" y="507.9199">externally provided care</text><polygon fill="#F1F1F1" points="415.5,598.8506,427.5,610.8506,415.5,622.8506,403.5,610.8506,415.5,598.8506" style="stroke:#181818;stroke-width:0.5;" /><rect fill="#555555" height="6" rx="2.5" ry="2.5" style="stroke:#555555;stroke-width:1.0;" width="514" x="11" y="740.9834" /><polygon fill="#F1F1F1" points="224,265.0195,302,265.0195,314,277.0195,302,289.0195,224,289.0195,212,277.0195,224,265.0195" style="stroke:#181818;stroke-width:0.5;" /><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="78" x="224" y="281.1768">Ongoing care?</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="14" x="314" y="274.6992">no</text><polygon fill="#F1F1F1" points="263,766.9834,275,778.9834,263,790.9834,251,778.9834,263,766.9834" style="stroke:#181818;stroke-width:0.5;" /><line style="stroke:#181818;stroke-width:1.0;" x1="263" x2="263" y1="82.6211" y2="102.6211" /><polygon fill="#181818" points="259,92.6211,263,102.6211,267,92.6211,263,96.6211" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="263" x2="263" y1="136.7539" y2="156.7539" /><polygon fill="#181818" points="259,146.7539,263,156.7539,267,146.7539,263,150.7539" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="263" x2="263" y1="190.8867" y2="210.8867" /><polygon fill="#181818" points="259,200.8867,263,210.8867,267,200.8867,263,204.8867" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="148" x2="148" y1="521.7627" y2="558.7178" /><polygon fill="#181818" points="144,548.7178,148,558.7178,152,548.7178,148,552.7178" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="148" x2="148" y1="592.8506" y2="604.8506" /><line style="stroke:#181818;stroke-width:1.0;" x1="148" x2="269" y1="604.8506" y2="604.8506" /><polygon fill="#181818" points="265,567.3066,269,557.3066,273,567.3066,269,563.3066" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="269" x2="269" y1="509.7627" y2="604.8506" /><line style="stroke:#181818;stroke-width:1.0;" x1="269" x2="209.5" y1="509.7627" y2="509.7627" /><polygon fill="#181818" points="219.5,505.7627,209.5,509.7627,219.5,513.7627,215.5,509.7627" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="86.5" x2="27" y1="509.7627" y2="509.7627" /><polygon fill="#181818" points="23,553.3066,27,563.3066,31,553.3066,27,557.3066" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="27" x2="27" y1="509.7627" y2="616.8506" /><line style="stroke:#181818;stroke-width:1.0;" x1="27" x2="148" y1="616.8506" y2="616.8506" /><line style="stroke:#181818;stroke-width:1.0;" x1="148" x2="148" y1="616.8506" y2="642.8506" /><polygon fill="#181818" points="144,632.8506,148,642.8506,152,632.8506,148,636.8506" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="148" x2="148" y1="471.7627" y2="497.7627" /><polygon fill="#181818" points="144,487.7627,148,497.7627,152,487.7627,148,491.7627" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="148" x2="148" y1="413.1523" y2="437.6299" /><polygon fill="#181818" points="144,427.6299,148,437.6299,152,427.6299,148,431.6299" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="248" x2="282" y1="401.1523" y2="401.1523" /><polygon fill="#181818" points="278,547.3066,282,557.3066,286,547.3066,282,551.3066" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="282" x2="282" y1="401.1523" y2="708.9834" /><line style="stroke:#181818;stroke-width:1.0;" x1="282" x2="160" y1="708.9834" y2="708.9834" /><polygon fill="#181818" points="170,704.9834,160,708.9834,170,712.9834,166,708.9834" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="148" x2="148" y1="676.9834" y2="696.9834" /><polygon fill="#181818" points="144,686.9834,148,696.9834,152,686.9834,148,690.9834" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="415.5" x2="415.5" y1="515.7627" y2="540.2402" /><polygon fill="#181818" points="411.5,530.2402,415.5,540.2402,419.5,530.2402,415.5,534.2402" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="492.5" x2="509" y1="503.7627" y2="503.7627" /><polygon fill="#181818" points="505,547.3066,509,557.3066,513,547.3066,509,551.3066" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="509" x2="509" y1="503.7627" y2="610.8506" /><line style="stroke:#181818;stroke-width:1.0;" x1="509" x2="427.5" y1="610.8506" y2="610.8506" /><polygon fill="#181818" points="437.5,606.8506,427.5,610.8506,437.5,614.8506,433.5,610.8506" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="415.5" x2="415.5" y1="574.373" y2="598.8506" /><polygon fill="#181818" points="411.5,588.8506,415.5,598.8506,419.5,588.8506,415.5,592.8506" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="148" x2="148" y1="369.1523" y2="389.1523" /><polygon fill="#181818" points="144,379.1523,148,389.1523,152,379.1523,148,383.1523" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="415.5" x2="415.5" y1="369.1523" y2="491.7627" /><polygon fill="#181818" points="411.5,481.7627,415.5,491.7627,419.5,481.7627,415.5,485.7627" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="148" x2="148" y1="720.9834" y2="740.9834" /><polygon fill="#181818" points="144,730.9834,148,740.9834,152,730.9834,148,734.9834" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="415.5" x2="415.5" y1="622.8506" y2="740.9834" /><polygon fill="#181818" points="411.5,730.9834,415.5,740.9834,419.5,730.9834,415.5,734.9834" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="263" x2="263" y1="343.1523" y2="363.1523" /><polygon fill="#181818" points="259,353.1523,263,363.1523,267,353.1523,263,357.1523" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="263" x2="263" y1="289.0195" y2="309.0195" /><polygon fill="#181818" points="259,299.0195,263,309.0195,267,299.0195,263,303.0195" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="314" x2="535" y1="277.0195" y2="277.0195" /><polygon fill="#181818" points="531,512.7402,535,522.7402,539,512.7402,535,516.7402" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="535" x2="535" y1="277.0195" y2="778.9834" /><line style="stroke:#181818;stroke-width:1.0;" x1="535" x2="275" y1="778.9834" y2="778.9834" /><polygon fill="#181818" points="285,774.9834,275,778.9834,285,782.9834,281,778.9834" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="263" x2="263" y1="746.9834" y2="766.9834" /><polygon fill="#181818" points="259,756.9834,263,766.9834,267,756.9834,263,760.9834" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="263" x2="263" y1="245.0195" y2="265.0195" /><polygon fill="#181818" points="259,255.0195,263,265.0195,267,255.0195,263,259.0195" style="stroke:#181818;stroke-width:1.0;" /></g></svg></figure>
+<p><br clear="all" /></p>
+
+<figure><?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="793px" preserveAspectRatio="none" style="width:800px;height:793px;background:#FFFFFF;" version="1.1" viewBox="0 0 800 793" width="800px" zoomAndPan="magnify"><defs /><g><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="149" x="327" y="28.5352">Inpatient Encounters</text><rect fill="none" height="75.9316" style="stroke:#000000;stroke-width:1.5;" width="753" x="41" y="389.6387" /><rect fill="none" height="111.2422" style="stroke:#000000;stroke-width:1.5;" width="700" x="9" y="658.123" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="147" x2="147" y1="135.4648" y2="786.3652" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="598" x2="598" y1="135.4648" y2="786.3652" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="746" x2="746" y1="135.4648" y2="786.3652" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="182" x="51" y="116.0234">Patient Encounter Supplier</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="146" x="73" y="132.5117">(Clinical Data Source)</text><ellipse cx="147" cy="50.9883" fill="#E2E2F0" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;" /><path d="M147,58.9883 L147,85.9883 M134,66.9883 L160,66.9883 M147,85.9883 L134,100.9883 M147,85.9883 L160,100.9883 " fill="none" style="stroke:#181818;stroke-width:0.5;" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="196" x="497" y="132.5117">Patient Encounter Consumer</text><ellipse cx="598" cy="67.4766" fill="#E2E2F0" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;" /><path d="M598,75.4766 L598,102.4766 M585,83.4766 L611,83.4766 M598,102.4766 L585,117.4766 M598,102.4766 L611,117.4766 " fill="none" style="stroke:#181818;stroke-width:0.5;" /><rect fill="#E2E2F0" height="30.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="75" x="709" y="103.9766" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="61" x="716" y="124.5117">onsumer</text><line style="stroke:#181818;stroke-width:1.0;" x1="147" x2="189" y1="166.7754" y2="166.7754" /><line style="stroke:#181818;stroke-width:1.0;" x1="189" x2="189" y1="166.7754" y2="179.7754" /><line style="stroke:#181818;stroke-width:1.0;" x1="148" x2="189" y1="179.7754" y2="179.7754" /><polygon fill="#181818" points="158,175.7754,148,179.7754,158,183.7754,154,179.7754" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="176" x="154" y="162.0332">Patient is referred to service</text><polygon fill="#181818" points="586,205.0859,596,209.0859,586,213.0859,590,209.0859" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="147" x2="592" y1="209.0859" y2="209.0859" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="224" x="154" y="204.3438">Pre-Admission event notification(s)</text><polygon fill="#181818" points="158,234.3965,148,238.3965,158,242.3965,154,238.3965" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="152" x2="597" y1="238.3965" y2="238.3965" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="116" x="164" y="233.6543">Acknowledgement</text><path d="M56,251.3965 L56,276.3965 L237,276.3965 L237,261.3965 L227,251.3965 L56,251.3965 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;" /><path d="M227,251.3965 L227,261.3965 L237,261.3965 L227,251.3965 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="160" x="62" y="268.9648">Patient arrives at hospital</text><polygon fill="#181818" points="586,299.0176,596,303.0176,586,307.0176,590,303.0176" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="147" x2="592" y1="303.0176" y2="303.0176" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="244" x="154" y="298.2754">Patient Admission event notification(s)</text><polygon fill="#181818" points="158,328.3281,148,332.3281,158,336.3281,154,332.3281" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="152" x2="597" y1="332.3281" y2="332.3281" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="116" x="164" y="327.5859">Acknowledgement</text><line style="stroke:#181818;stroke-width:1.0;" x1="147" x2="189" y1="361.6387" y2="361.6387" /><line style="stroke:#181818;stroke-width:1.0;" x1="189" x2="189" y1="361.6387" y2="374.6387" /><line style="stroke:#181818;stroke-width:1.0;" x1="148" x2="189" y1="374.6387" y2="374.6387" /><polygon fill="#181818" points="158,370.6387,148,374.6387,158,378.6387,154,374.6387" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="76" x="154" y="356.8965">Provide care</text><path d="M41,389.6387 L108,389.6387 L108,396.9492 L98,406.9492 L41,406.9492 L41,389.6387 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.5;" /><rect fill="none" height="75.9316" style="stroke:#000000;stroke-width:1.5;" width="753" x="41" y="389.6387" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="22" x="56" y="403.207">opt</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="90" x="123" y="402.2734">[Ward transfers]</text><polygon fill="#181818" points="586,424.2598,596,428.2598,586,432.2598,590,428.2598" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="147" x2="592" y1="428.2598" y2="428.2598" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="214" x="154" y="423.5176">Transfer Patient event notification</text><polygon fill="#181818" points="158,453.5703,148,457.5703,158,461.5703,154,457.5703" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="152" x2="745.5" y1="457.5703" y2="457.5703" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="116" x="164" y="452.8281">Acknowledgement</text><path d="M66,477.5703 L66,502.5703 L228,502.5703 L228,487.5703 L218,477.5703 L66,477.5703 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;" /><path d="M218,477.5703 L218,487.5703 L228,487.5703 L218,477.5703 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="141" x="72" y="495.1387">Patient leaves hospital</text><polygon fill="#181818" points="586,525.1914,596,529.1914,586,533.1914,590,529.1914" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="147" x2="592" y1="529.1914" y2="529.1914" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="233" x="154" y="524.4492">Patient Discharged event notification</text><polygon fill="#181818" points="158,554.502,148,558.502,158,562.502,154,558.502" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="152" x2="597" y1="558.502" y2="558.502" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="116" x="164" y="553.7598">Acknowledgement</text><line style="stroke:#181818;stroke-width:1.0;" x1="147" x2="189" y1="587.8125" y2="587.8125" /><line style="stroke:#181818;stroke-width:1.0;" x1="189" x2="189" y1="587.8125" y2="600.8125" /><line style="stroke:#181818;stroke-width:1.0;" x1="148" x2="189" y1="600.8125" y2="600.8125" /><polygon fill="#181818" points="158,596.8125,148,600.8125,158,604.8125,154,600.8125" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="172" x="154" y="583.0703">Complete Discharge Report</text><line style="stroke:#181818;stroke-width:1.0;" x1="147" x2="189" y1="630.123" y2="630.123" /><line style="stroke:#181818;stroke-width:1.0;" x1="189" x2="189" y1="630.123" y2="643.123" /><line style="stroke:#181818;stroke-width:1.0;" x1="148" x2="189" y1="643.123" y2="643.123" /><polygon fill="#181818" points="158,639.123,148,643.123,158,647.123,154,643.123" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="431" x="154" y="625.3809">Discharge Report is shared via API's with patient and other providers</text><path d="M9,658.123 L76,658.123 L76,665.4336 L66,675.4336 L9,675.4336 L9,658.123 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.5;" /><rect fill="none" height="111.2422" style="stroke:#000000;stroke-width:1.5;" width="700" x="9" y="658.123" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="22" x="24" y="671.6914">opt</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="234" x="91" y="670.7578">[further care required (internal provided)]</text><polygon fill="#181818" points="586,692.7441,596,696.7441,586,700.7441,590,696.7441" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="147" x2="592" y1="696.7441" y2="696.7441" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="427" x="154" y="692.002">Transfer Patient (inpatient to outpatient (/virtual)) event notification</text><polygon fill="#181818" points="158,722.0547,148,726.0547,158,730.0547,154,726.0547" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="152" x2="597" y1="726.0547" y2="726.0547" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="116" x="164" y="721.3125">Acknowledgement</text><path d="M19,739.0547 L19,764.0547 L274,764.0547 L274,749.0547 L264,739.0547 L19,739.0547 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;" /><path d="M264,739.0547 L264,749.0547 L274,749.0547 L264,739.0547 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="234" x="25" y="756.623">See Outpatient Encounters for details</text></g></svg></figure>
+<p><br clear="all" /></p>
+
+<h4 id="standards-2">Standards</h4>
+
+<ul>
+  <li><a href="https://profiles.ihe.net/ITI/TF/Volume1/ch-14.html#14.5.2">IHE PEM</a></li>
+  <li><a href="HSCIC ITK HL7 V2 Message Specifications.pdf">NHS England (ADT) ITK HL7 v2 (2.4) Message Specification</a> this is a framework based on IHE PEM.</li>
+</ul>
+
+<h4 id="services-2">Services</h4>
+
+<ul>
+  <li><a href="https://digital.nhs.uk/services/transfer-of-care-initiative/apis">NHS England Transfer of Care API’s</a> This is a method of sending Encounter documentation to primary care providers, it also notifies them of the encounter event.
+    <ul>
+      <li>Inpatient/daycase (acute) discharge</li>
+      <li>Emergency care discharge</li>
+      <li>Mental health discharge</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="sharing-encounter-data">Sharing Encounter Data</h3>
+
+<hr />
+
+<p>Joshua blah blah - concurrent care from multiple providers so it is important for all providers to share records (and not wait for clinic letters and discharge reports)</p>
+
+<hr />
+
+<h4 id="process-flow-3">Process Flow</h4>
+
+<figure><?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" preserveAspectRatio="none" version="1.1" viewBox="0 0 314 159" zoomAndPan="magnify"><defs /><g><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="215" x="48.75" y="28.5352">Query Existing Data [PCC-44]</text><rect fill="#FFFFFF" height="50.6211" style="stroke:#181818;stroke-width:1.0;" width="10" x="27" y="83.9766" /><rect fill="#FFFFFF" height="50.6211" style="stroke:#181818;stroke-width:1.0;" width="10" x="275" y="83.9766" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="32" x2="32" y1="73.9766" y2="152.5977" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="279.5" x2="279.5" y1="73.9766" y2="152.5977" /><rect fill="#E2E2F0" height="30.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="54" x="5" y="42.4883" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="40" x="12" y="63.0234">Client</text><rect fill="#E2E2F0" height="30.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="57" x="251.5" y="42.4883" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="43" x="258.5" y="63.0234">Server</text><rect fill="#FFFFFF" height="50.6211" style="stroke:#181818;stroke-width:1.0;" width="10" x="27" y="83.9766" /><rect fill="#FFFFFF" height="50.6211" style="stroke:#181818;stroke-width:1.0;" width="10" x="275" y="83.9766" /><polygon fill="#181818" points="263,101.2871,273,105.2871,263,109.2871,267,105.2871" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="37" x2="269" y1="105.2871" y2="105.2871" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="158" x="44" y="100.5449">Find [Resource] Request [</text><a href="https://build.fhir.org/ig/IHE/QEDm/branches/master/PCC-44.html" target="_top" title="https://build.fhir.org/ig/IHE/QEDm/branches/master/PCC-44.html" xlink:actuate="onRequest" xlink:href="https://build.fhir.org/ig/IHE/QEDm/branches/master/PCC-44.html" xlink:show="new" xlink:title="https://build.fhir.org/ig/IHE/QEDm/branches/master/PCC-44.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" text-decoration="underline" textLength="49" x="202" y="100.5449">PCC-44</text></a><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="4" x="251" y="100.5449">]</text><polygon fill="#181818" points="43,130.5977,33,134.5977,43,138.5977,39,134.5977" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="37" x2="279" y1="134.5977" y2="134.5977" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="214" x="49" y="129.8555">2. Matching [Resources] Response</text></g></svg></figure>
+<p><br clear="all" /></p>
+
+<h4 id="standards-3">Standards</h4>
+
+<ul>
+  <li><a href="https://build.fhir.org/ig/HL7/fhir-ipa/">HL7 International Patient Access (IPA)</a> FHIR R4</li>
+  <li><a href="https://build.fhir.org/ig/IHE/QEDm/branches/master/index.html">IHE Query for Existing Data for Mobile (QEDm)</a> FHIR R4
+    <ul>
+      <li>Is likely to become aligned with HL7 IPA.</li>
+    </ul>
+  </li>
+  <li><a href="https://nhsconnect.github.io/CareConnectAPI/">Care Connect FHIR API</a> FHIR STU3</li>
+</ul>
+
+<h4 id="services-3">Services</h4>
+
+<ul>
+  <li>Primary Care/GP Connect
+    <ul>
+      <li><a href="https://digital.nhs.uk/developer/api-catalogue/gp-connect-patient-facing-access-record-fhir">GP Connect (Patient Facing) Access Record - FHIR API</a></li>
+      <li><a href="https://digital.nhs.uk/developer/api-catalogue/gp-connect-access-record-structured-fhir">GP Connect Access Record: Structured - FHIR API</a></li>
+      <li><a href="https://digital.nhs.uk/developer/api-catalogue/interface-mechanism-1-standards">Interface Mechanism 1 API standards</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="sharing-discharge-reports-and-clinic-letters">Sharing Discharge Reports and Clinic Letters</h3>
+
+<p>Probably makes sense to include standards around sharing encounter documentation.</p>
+
+<p>We probably have a recommendation in not following the previous transfer of care send method and recommending this is <strong>shared instead</strong> (and used in conjunction with the event notifications).
+The reason for splitting up ToC is to make it easier to solve and remove the decoupling plus the GP only focus. 
+Document should be shared with ALL care providers</p>
+
+<p>Need to hint this was technically an anti-pattern? (We need to decouple tech from informatics data standards)
+It is probably still viable method of sharing clinical documentation via NRL/IHE XDS</p>
+
+<h4 id="process-flow-4">Process Flow</h4>
+
+<figure><?xml version="1.0" encoding="us-ascii" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="367px" preserveAspectRatio="none" style="width:706px;height:367px;background:#FFFFFF;" version="1.1" viewBox="0 0 706 367" width="706px" zoomAndPan="magnify"><defs /><g><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="411" x="149.25" y="28.5352">Cross Enterprise Document Sharing (XDS on FHIR (MHD))</text><rect fill="none" height="91.2422" style="stroke:#000000;stroke-width:1.5;" width="690.5" x="10" y="252.2188" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="38" x2="38" y1="118.9766" y2="360.4609" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="449.5" x2="449.5" y1="118.9766" y2="360.4609" /><line style="stroke:#181818;stroke-width:0.5;stroke-dasharray:5.0,5.0;" x1="609.5" x2="609.5" y1="118.9766" y2="360.4609" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="30" x="20" y="116.0234">user</text><ellipse cx="38" cy="50.9883" fill="#E2E2F0" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;" /><path d="M38,58.9883 L38,85.9883 M25,66.9883 L51,66.9883 M38,85.9883 L25,100.9883 M38,85.9883 L51,100.9883 " fill="none" style="stroke:#181818;stroke-width:0.5;" /><rect fill="#E2E2F0" height="30.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="139" x="380.5" y="87.4883" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="125" x="387.5" y="108.0234">DocumentRegistry</text><rect fill="#E2E2F0" height="30.4883" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="161" x="529.5" y="87.4883" /><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="147" x="536.5" y="108.0234">Document Repository</text><polygon fill="#181818" points="438,161.5977,448,165.5977,438,169.5977,442,165.5977" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="38" x2="444" y1="165.5977" y2="165.5977" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="168" x="45" y="145.5449">Find Document References</text><a href="https://profiles.ihe.net/ITI/MHD/ITI-67.html" target="_top" title="https://profiles.ihe.net/ITI/MHD/ITI-67.html" xlink:actuate="onRequest" xlink:href="https://profiles.ihe.net/ITI/MHD/ITI-67.html" xlink:show="new" xlink:title="https://profiles.ihe.net/ITI/MHD/ITI-67.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" text-decoration="underline" textLength="40" x="45" y="160.8555">ITI-67</text></a><polygon fill="#181818" points="49,190.9082,39,194.9082,49,198.9082,45,194.9082" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="43" x2="449" y1="194.9082" y2="194.9082" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="388" x="55" y="190.166">Matching IHE Document metadata / FHIR DocumentReference</text><line style="stroke:#181818;stroke-width:1.0;" x1="38" x2="80" y1="224.2188" y2="224.2188" /><line style="stroke:#181818;stroke-width:1.0;" x1="80" x2="80" y1="224.2188" y2="237.2188" /><line style="stroke:#181818;stroke-width:1.0;" x1="39" x2="80" y1="237.2188" y2="237.2188" /><polygon fill="#181818" points="49,233.2188,39,237.2188,49,241.2188,45,237.2188" style="stroke:#181818;stroke-width:1.0;" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="106" x="45" y="219.4766">Select Document</text><path d="M10,252.2188 L77,252.2188 L77,259.5293 L67,269.5293 L10,269.5293 L10,252.2188 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.5;" /><rect fill="none" height="91.2422" style="stroke:#000000;stroke-width:1.5;" width="690.5" x="10" y="252.2188" /><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="22" x="25" y="265.7871">opt</text><polygon fill="#181818" points="598,302.1504,608,306.1504,598,310.1504,602,306.1504" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="38" x2="604" y1="306.1504" y2="306.1504" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="119" x="45" y="286.0977">Retrieve Document</text><a href="https://profiles.ihe.net/ITI/MHD/ITI-68.html" target="_top" title="https://profiles.ihe.net/ITI/MHD/ITI-68.html" xlink:actuate="onRequest" xlink:href="https://profiles.ihe.net/ITI/MHD/ITI-68.html" xlink:show="new" xlink:title="https://profiles.ihe.net/ITI/MHD/ITI-68.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" text-decoration="underline" textLength="40" x="45" y="301.4082">ITI-68</text></a><polygon fill="#181818" points="49,331.4609,39,335.4609,49,339.4609,45,335.4609" style="stroke:#181818;stroke-width:1.0;" /><line style="stroke:#181818;stroke-width:1.0;" x1="43" x2="609" y1="335.4609" y2="335.4609" /><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="41" x="55" y="330.7188">PDF or</text><a href="https://hl7.org/fhir/R4/documents.html" target="_top" title="https://hl7.org/fhir/R4/documents.html" xlink:actuate="onRequest" xlink:href="https://hl7.org/fhir/R4/documents.html" xlink:show="new" xlink:title="https://hl7.org/fhir/R4/documents.html" xlink:type="simple"><text fill="#0000FF" font-family="sans-serif" font-size="13" lengthAdjust="spacing" text-decoration="underline" textLength="98" x="100" y="330.7188">FHIR Document</text></a><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="237" x="202" y="330.7188">(Discharge Reports and Clinic Letters)</text></g></svg></figure>
+<p><br clear="all" /></p>
+
+<h4 id="data-standards">Data Standards</h4>
+
+<p>NHS England STU3 <a href="https://hl7.org/fhir/STU3/documents.html">FHIR Documents</a> which are based on <a href="https://theprsb.org/standards/">PRSB Standards</a></p>
+
+<ul>
+  <li><a href="https://developer.nhs.uk/apis/itk3tocedischarge-2-9-0/">Inpatient/daycase (acute) discharge</a></li>
+  <li><a href="https://developer.nhs.uk/apis/itk3emergencycareedischarge-2-9-0/">Emergency care discharge</a></li>
+  <li><a href="https://developer.nhs.uk/apis/itk3tocmentalhealthedischarge-2-9-0/">Mental health discharge</a></li>
+  <li><a href="https://developer.nhs.uk/apis/itk3tocoutpatientletter-2-9-0/">Outpatient Letter</a></li>
+</ul>
+
+<p>HL7 Europe (Hospital) Discharge Report - ETA 2024/25. This is likely to be a derivative of <a href="https://build.fhir.org/ig/HL7/fhir-ips/index.html">HL7 International Patient Summary</a></p>
+
+<h4 id="standards-4">Standards</h4>
+
+<ul>
+  <li><a href="https://profiles.ihe.net/ITI/MHD/index.html">IHE Mobile access to Health Documents (MHD)</a> XDS on FHIR. FHIR R4</li>
+  <li><a href="https://profiles.ihe.net/ITI/TF/Volume1/ch-10.html">IHE Cross Enterprise Document Sharing (XDS.b)</a></li>
+</ul>
+
+<h4 id="services-4">Services</h4>
+
+<ul>
+  <li><a href="https://digital.nhs.uk/developer/api-catalogue/national-record-locator-fhir">NHS England National Record Locator Service</a></li>
+</ul>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.england.nhs.uk/">NHS England</a>.  Package uk.nhs.england.administration#0.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Apr 24, 2024 08:46+0100">2024-04-24</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+            <div style="color: #333333" >
+
+          Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
+                 <a style="color: #81BEF7" href="qa.html">QA Report</a> 
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
+<div>
+</div>
+
+</div>
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

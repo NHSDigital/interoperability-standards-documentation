@@ -2,8 +2,8 @@ NHSEnglandInteroperabilitySkunkworks : Validation Results
 =========================================
 
 err = 121, warn = 107, info = 52
-IG Publisher Version: 1.5.16 Out of date - current version is 1.6.5
-Generated Tue Apr 23 08:05:16 BST 2024. FHIR version 4.0.1 for uk.nhs.england.administration#0.0.1 (canonical = https://fhir.nhs.uk/England)
+IG Publisher Version: 1.5.16 Out of date - current version is 1.6.6
+Generated Wed Apr 24 08:51:57 BST 2024. FHIR version 4.0.1 for uk.nhs.england.administration#0.0.1 (canonical = https://fhir.nhs.uk/England)
  Build Errors : 6 / 31 / 0
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/fsh-generated/resources/CapabilityStatement-BookingProvider : 1 / 0 / 1
  /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/fsh-generated/resources/CapabilityStatement-IHE.PCF.consentAuthorizationServer : 1 / 0 / 1
@@ -109,12 +109,12 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Subscription/Subscription-ex-Patient.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Task/Task-request-consent-verification.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/h1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/output/Bundle-Bundle-ex-PMIRBundleCreate.html#/html/body/div/div/div/div/div/div/blockquote/p/div/p/a at Line 295, column 619: The link 'StructureDefinition-IHE.PMIR.MessageHeader.html' for "IHE Patient Master Identity Registry MessageHeader" cannot be resolved
-ERROR: /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/output/Consent-Consent-CPISConsentExample1.html#/html/body/div/div/div/div/div/div/p/a at Line 295, column 1257: The link 'Patient-PatientExample1.html' for "Patient/PatientExample1" cannot be resolved
-ERROR: /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/output/Subscription-Bundle-ex-subscription.html#/html/body/div/div/div/div/div/div/div/p/a at Line 295, column 370: The link 'StructureDefinition-IHE.PMIR.Subscription.html' for "IHE Patient Master Identity Registry Subscription" cannot be resolved
-ERROR: /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/output/index.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 438, column 2632: The link 'http://hl7.org/fhir/R4B' for "R4B" cannot be resolved
-ERROR: /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/output/interoperability-standards.html#/html/body/div/div/div/div/div/p/a at Line 481, column 9: The link 'documents.html' for "Document Interoperability" cannot be resolved
-ERROR: /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/output/personal-demographics-service.html#/html/body/div/div/div/div/div/ol/li/p/a at Line 415, column 34: The link 'CapabilityStatement-Personal-Demographics-Service-Provider.html' for "CapabilityStatement-Personal-Demographics-Service-Provider" cannot be resolved
+ERROR: /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/output/Bundle-Bundle-ex-PMIRBundleCreate.html#/html/body/div/div/div/div/div/div/blockquote/p/div/p/a at Line 298, column 619: The link 'StructureDefinition-IHE.PMIR.MessageHeader.html' for "IHE Patient Master Identity Registry MessageHeader" cannot be resolved
+ERROR: /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/output/Consent-Consent-CPISConsentExample1.html#/html/body/div/div/div/div/div/div/p/a at Line 298, column 1257: The link 'Patient-PatientExample1.html' for "Patient/PatientExample1" cannot be resolved
+ERROR: /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/output/Subscription-Bundle-ex-subscription.html#/html/body/div/div/div/div/div/div/div/p/a at Line 298, column 370: The link 'StructureDefinition-IHE.PMIR.Subscription.html' for "IHE Patient Master Identity Registry Subscription" cannot be resolved
+ERROR: /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/output/index.html#/html/body/div/div/div/div/div/div/table/tr/td/a at Line 441, column 2632: The link 'http://hl7.org/fhir/R4B' for "R4B" cannot be resolved
+ERROR: /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/output/interoperability-standards.html#/html/body/div/div/div/div/div/p/a at Line 484, column 9: The link 'documents.html' for "Document Interoperability" cannot be resolved
+ERROR: /Users/kevinmayfield/github/NHSEngland/interoperability-standards-discovery/output/personal-demographics-service.html#/html/body/div/div/div/div/div/ol/li/p/a at Line 418, column 34: The link 'CapabilityStatement-Personal-Demographics-Service-Provider.html' for "CapabilityStatement-Personal-Demographics-Service-Provider" cannot be resolved
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide

@@ -1,0 +1,41 @@
+@startuml
+
+hide footbox
+
+title Inpatient Encounters
+
+actor "Patient Encounter Supplier \n (Clinical Data Source)" as supplier
+actor "Patient Encounter Consumer" as consumer
+
+supplier -> supplier: Patient is referred to service
+
+supplier -> consumer : Pre-Admission event notification(s)
+consumer --> supplier: Acknowledgement
+
+note over supplier: Patient arrives at hospital
+
+supplier -> consumer : Patient Admission event notification(s)
+consumer --> supplier: Acknowledgement
+
+supplier -> supplier: Provide care
+opt Ward transfers
+supplier -> consumer: Transfer Patient event notification
+onsumer --> supplier: Acknowledgement
+
+end
+
+note over supplier: Patient leaves hospital
+
+supplier -> consumer: Patient Discharged event notification
+consumer --> supplier: Acknowledgement
+supplier -> supplier : Complete Discharge Report
+supplier -> supplier: Discharge Report is shared via API's with patient and other providers
+
+opt further care required (internal provided)
+supplier -> consumer: Transfer Patient (inpatient to outpatient (/virtual)) event notification
+consumer --> supplier: Acknowledgement
+
+note over supplier: See Outpatient Encounters for details
+
+end
+@enduml

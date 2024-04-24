@@ -64,7 +64,8 @@ menu:
     Conformance and Testing (FHIR): testing.html
   Design:
     Administration : administration-module.html
-    Patient: patient-administration.html
+    Patient Administration: patient-administration.html
+    Patient Encounters and Consultations: patient-encounters-and-consultations.html
     FHIR Validation: validation.html
   Build:
     National Proxy Service: national-proxy-service.html

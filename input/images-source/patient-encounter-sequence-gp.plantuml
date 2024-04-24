@@ -1,0 +1,23 @@
+@startuml
+
+hide footbox
+
+title GP Consulation
+
+actor "Patient Encounter Supplier \n (Clinical Data Source)" as supplier
+actor "Patient Encounter Consumer" as consumer
+
+
+supplier -> consumer : Appointment booking event notification
+consumer --> supplier: Acknowledgement
+
+note over supplier: Begin consultation
+supplier -> supplier: Record consultation
+note over supplier: End consultation
+supplier -> supplier: Record is automatically shared with patient and other providers
+supplier -> consumer: GP Consultation event notification
+consumer --> supplier: Acknowledgement
+supplier -> supplier: Encounter record is shared via API's with patient and other providers
+
+
+@enduml

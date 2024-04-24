@@ -10,7 +10,7 @@
   <name value="NHSEnglandInteroperabilitySkunkworks"/>
   <title value="Health Administration Interoperability Standards - Skunkworks"/>
   <status value="draft"/>
-  <date value="2024-04-23T08:00:23+01:00"/>
+  <date value="2024-04-24T08:46:57+01:00"/>
   <publisher value="NHS England"/>
   <contact>
     <name value="NHS England"/>
@@ -1406,6 +1406,14 @@
         </extension>
         <nameUrl value="patient-encounter-management.html"/>
         <title value="Patient Encounter Management"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="patient-encounters-and-consultations.html"/>
+        </extension>
+        <nameUrl value="patient-encounters-and-consultations.html"/>
+        <title value="Patient Encounters and Consultations"/>
         <generation value="markdown"/>
       </page>
       <page>

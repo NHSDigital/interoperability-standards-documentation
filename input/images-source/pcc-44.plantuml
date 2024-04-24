@@ -1,0 +1,16 @@
+@startuml
+skinparam svgDimensionStyle false
+hide footbox
+
+title Query Existing Data [PCC-44]
+
+participant "Client" as Client
+participant "Server" as Server
+activate "Client"
+activate "Server"
+"Client" -> "Server" :Find [Resource] Request [[[https://build.fhir.org/ig/IHE/QEDm/branches/master/PCC-44.html PCC-44]]]
+"Server" --> "Client" : 2. Matching [Resources] Response
+deactivate "Client"
+deactivate "Server"
+
+@enduml

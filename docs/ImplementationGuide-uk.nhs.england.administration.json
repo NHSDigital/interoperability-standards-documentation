@@ -10,7 +10,7 @@
   "name" : "NHSEnglandInteroperabilitySkunkworks",
   "title" : "Health Administration Interoperability Standards - Skunkworks",
   "status" : "draft",
-  "date" : "2024-04-23T08:00:23+01:00",
+  "date" : "2024-04-24T08:46:57+01:00",
   "publisher" : "NHS England",
   "contact" : [{
     "name" : "NHS England",
@@ -1660,6 +1660,15 @@
         }],
         "nameUrl" : "patient-encounter-management.html",
         "title" : "Patient Encounter Management",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "patient-encounters-and-consultations.html"
+        }],
+        "nameUrl" : "patient-encounters-and-consultations.html",
+        "title" : "Patient Encounters and Consultations",
         "generation" : "markdown"
       },
       {

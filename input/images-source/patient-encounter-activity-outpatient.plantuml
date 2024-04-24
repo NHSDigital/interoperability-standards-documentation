@@ -1,0 +1,13 @@
+@startuml
+
+
+title Patient Encounter - Outpatient
+
+
+  :Transferred/Referred to Outpatient (inc virtual) service;
+  while (care still required?) is (yes)
+    :Outpatient (inc. virtual) Encounters;
+  endwhile
+  :Patient Discharged;
+
+@enduml
