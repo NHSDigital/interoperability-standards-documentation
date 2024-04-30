@@ -1,68 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
-  <head>
-    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>{{site.data.pages[page.path].title | escape_once}} - {{site.data.fhir.ig.title | escape_once}} v{{site.data.fhir.ig.version | escape_once}}</title>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="author" content="http://hl7.org/fhir"/>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
 
-    <link href="{{site.data.info.assets}}fhir.css" rel="stylesheet"/>
+  <title>The NHS website - NHS</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="{{site.data.info.assets}}assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+  <link rel="preload" as="font" href="assets/fonts/FrutigerLTW01-55Roman.woff2" type="font/woff2">
+  <link rel="preload" as="font" href="assets/fonts/FrutigerLTW01-65Bold.woff2" type="font/woff2">
 
+  <link rel="stylesheet" href="assets/css/main.css">
 
-    <!--  <script src="{{site.data.info.assets}}assets/nhsuk.js" defer></script> -->
+  <script src="assets/nhsuk-5.0.0.min.js" defer></script>
+  <link href="assets/css/project-nhs.css" rel="stylesheet" />
+  <link href="assets/nhsuk.css" rel="stylesheet" />
 
-      <link href="{{site.data.info.assets}}assets/css/project.css" rel="stylesheet"/>
-    <link href="{{site.data.info.assets}}assets/css/pygments-manni.css" rel="stylesheet"/>
-    <link href="{{site.data.info.assets}}assets/css/jquery-ui.css" rel="stylesheet"/>
-  	<link href="{{site.data.info.assets}}assets/css/prism.css" rel="stylesheet" />
-    {% include fragment-css.html %}
+  <script src="assets/nhsuk.js" defer></script>
 
-    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+  <link rel="shortcut icon" href="assets/favicons/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="assets/favicons/apple-touch-icon-180x180.png">
+  <link rel="mask-icon" href="assets/favicons/favicon.svg" color="#005eb8">
+  <link rel="icon" sizes="192x192" href="assets/favicons/favicon-192x192.png">
+  <meta name="msapplication-TileImage" content="assets/favicons/mediumtile-144x144.png">
+  <meta name="msapplication-TileColor" content="#005eb8">
+  <meta name="msapplication-square70x70logo" content="assets/favicons/smalltile-70x70.png">
+  <meta name="msapplication-square150x150logo" content="assets/favicons/mediumtile-150x150.png">
+  <meta name="msapplication-wide310x150logo" content="assets/favicons/widetile-310x150.png">
+  <meta name="msapplication-square310x310logo" content="assets/favicons/largetile-310x310.png">
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-    <script src="assets/js/html5shiv.js"></script>
-    <script src="assets/js/respond.min.js"></script>
-    <![endif]-->
+</head>
 
-    <!-- Favicons -->
-    <link rel="fhir-logo" sizes="144x144" href="{{site.data.info.assets}}assets/ico/icon-fhir-144.png"/>
-    <link rel="fhir-logo" sizes="114x114" href="{{site.data.info.assets}}assets/ico/icon-fhir-114.png"/>
-    <link rel="fhir-logo" sizes="72x72" href="{{site.data.info.assets}}assets/ico/icon-fhir-72.png"/>
-    <link rel="fhir-logo" href="{{site.data.info.assets}}assets/ico/icon-fhir-57.png"/>
-    <link rel="shortcut icon" href="{{site.data.info.assets}}assets/favicons/favicon.png"/>
-  </head>
-  <body onload="document.body.style.opacity='1'">
+<body onload="document.body.style.opacity='1'">
 {% assign label = {{site.data.pages[page.path].label}} | split: '.0' %}
-	  <script src="{{site.data.info.assets}}assets/js/prism.js"></script>
+<script>
+  document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');
 
-    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+</script>
 
-      <div class="container">  <!-- container -->
-        <!-- HEADER CONTENT -->
+<a class="nhsuk-skip-link" href="#maincontent">Skip to main content</a>
 
-        <nav class="navbar navbar-inverse">
+<header class="nhsuk-header" role="banner">
+  <div class="nhsuk-width-container nhsuk-header__container">
+    <div class="nhsuk-header__logo nhsuk-header__logo--only"><a class="nhsuk-header__link" href="/" aria-label="NHS homepage">
+      <svg class="nhsuk-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 16">
+        <path class="nhsuk-logo__background" d="M0 0h40v16H0z"></path>
+        <path class="nhsuk-logo__text" d="M3.9 1.5h4.4l2.6 9h.1l1.8-9h3.3l-2.8 13H9l-2.7-9h-.1l-1.8 9H1.1M17.3 1.5h3.6l-1 4.9h4L25 1.5h3.5l-2.7 13h-3.5l1.1-5.6h-4.1l-1.2 5.6h-3.4M37.7 4.4c-.7-.3-1.6-.6-2.9-.6-1.4 0-2.5.2-2.5 1.3 0 1.8 5.1 1.2 5.1 5.1 0 3.6-3.3 4.5-6.4 4.5-1.3 0-2.9-.3-4-.7l.8-2.7c.7.4 2.1.7 3.2.7s2.8-.2 2.8-1.5c0-2.1-5.1-1.3-5.1-5 0-3.4 2.9-4.4 5.8-4.4 1.6 0 3.1.2 4 .6"></path>
+      </svg>
+    </a>
+    </div>
+
+  </div>
+
+</header>
+
+
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark p-1">
           <!--status-bar-->
-          <div class="container">
-            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
-              <span class="icon-bar"> </span>
-              <span class="icon-bar"> </span>
-              <span class="icon-bar"> </span>
+          <div class="nhsuk-width-container-fluid">
+            <a class="navbar-brand" href="#">{{ site.title | default: site.github.repository_name }}</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand hidden" href="{{site.data.fhir.path}}index.html">FHIR</a>
-            <div class="nav-collapse collapse navbar-inverse-collapse">
+            <div class="collapse navbar-collapse">
+              <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
               {% include menu.xml %}
+              </ul>
             </div>  <!-- /.nav-collapse -->
           </div>  <!-- /.container -->
         </nav>  <!-- /.navbar -->
-      <!-- /HEADER CONTENT -->
-      </div>  <!-- /container -->
-    </div>  <!-- /segment-navbar -->
 
 
     <a name="top"> </a>

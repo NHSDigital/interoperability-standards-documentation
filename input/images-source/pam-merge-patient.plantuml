@@ -1,0 +1,15 @@
+@startuml
+
+hide footbox
+
+title Merge Patient
+
+actor "Patient Identity Source \n Patient Identity Registry" as source
+actor "Patient Identity Consumer" as consumer
+
+source -> source: Patient Update event received
+source -> source: Patient records are identified as duplicate and merged
+source -> consumer: Patient Merged event notification
+consumer --> source: Acknowledgement
+
+@enduml

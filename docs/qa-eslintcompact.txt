@@ -1,0 +1,28 @@
+NHSEnglandInteroperabilityDocumentation
+=========================================
+
+Generic: line 0, col 0, Warning - The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole (INVALID)
+Generic: line 0, col 0, Warning - The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole (INVALID)
+Generic: line 0, col 0, Warning - Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/h1.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list. (INVARIANT)
+Generic: line 0, col 0, Error - The <script> tag containing the javascript 'document.body.classN'... is illegal and not allowed on the HL7 cibuild - put the script in a  .js file in a trusted template (also in 10 other files) (INVALID)
+Generic: line 0, col 0, Error - The link '#maincontent' for "Skip to main content" cannot be resolved (valid targets: [top, publish-box, bottom, root, segment-footer, segment-post-footer, -bundleh1-change-history, segment-content, nhsuk-footer]) (NOTFOUND)
+Generic: line 0, col 0, Error - The link '#maincontent' for "Skip to main content" cannot be resolved (valid targets: [top, publish-box, bottom, root, bundle-null-bundle, segment-footer, segment-post-footer, segment-content, nhsuk-footer]) (NOTFOUND)
+Generic: line 0, col 0, Error - The link '#maincontent' for "Skip to main content" cannot be resolved (valid targets: [-null-bundle-json-representation, top, publish-box, bottom, root, end-xhtml, segment-footer, segment-post-footer, segment-content, nhsuk-footer]) (NOTFOUND)
+Generic: line 0, col 0, Error - The link '#maincontent' for "Skip to main content" cannot be resolved (valid targets: [top, publish-box, bottom, root, segment-footer, segment-post-footer, -null-bundle-ttl-representation, segment-content, nhsuk-footer]) (NOTFOUND)
+Generic: line 0, col 0, Error - The link '#maincontent' for "Skip to main content" cannot be resolved (valid targets: [top, publish-box, bottom, root, end-xhtml, segment-footer, segment-post-footer, -null-bundle-xml-representation, segment-content, nhsuk-footer]) (NOTFOUND)
+Generic: line 0, col 0, Error - The link '#maincontent' for "Skip to main content" cannot be resolved (valid targets: [artifacts-summary, 1, other, top, publish-box, bottom, segment-footer, segment-post-footer, segment-content, nhsuk-footer]) (NOTFOUND)
+Generic: line 0, col 0, Error - The link '#maincontent' for "Skip to main content" cannot be resolved (valid targets: [top, frameworks, publish-box, bottom, segment-footer, segment-post-footer, why-common-frameworks, what-are-common-frameworks, segment-content, nhsuk-footer]) (NOTFOUND)
+Generic: line 0, col 0, Error - The link '#maincontent' for "Skip to main content" cannot be resolved (valid targets: [top, publish-box, bottom, segment-footer, segment-post-footer, segment-content, nhsuk-footer, home]) (NOTFOUND)
+Generic: line 0, col 0, Error - The link '#maincontent' for "Skip to main content" cannot be resolved (valid targets: 48 targets) (NOTFOUND)
+Generic: line 0, col 0, Error - The link '#maincontent' for "Skip to main content" cannot be resolved (valid targets: [!, !", !#, !$, !%, !&, publish-box, bottom, segment-post-footer, table-of-contents, nhsuk-footer, top, segment-footer, segment-content, !&"]) (NOTFOUND)
+Generic: line 0, col 0, Error - The link '#maincontent' for "Skip to main content" cannot be resolved (valid targets: [top, publish-box, bottom, segment-footer, segment-post-footer, segment-content, validation, nhsuk-footer]) (NOTFOUND)
+Generic: line 0, col 0, Warning - The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide (NOTFOUND)
+Generic: line 0, col 0, Warning - An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide (NOTFOUND)
+Generic: line 0, col 0, Warning - An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide (NOTFOUND)
+Generic: line 0, col 0, Warning - The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide (NOTFOUND)
+C:\Development\NHSEngland\interoperability-standards-documentation\fsh-generated\resources\ImplementationGuide-uk.nhs.england.documentation.json: line 1, col 825, Error - Unknown code 'GB-ENG' in the CodeSystem 'urn:iso:std:iso:3166' version '2018' (CODEINVALID)
+C:\Development\NHSEngland\interoperability-standards-documentation\input\history\h1.json: line 11, col 75, Error - Unable to resolve resource with reference 'StructureDefinition/myObservation' (STRUCTURE)
+C:\Development\NHSEngland\interoperability-standards-documentation\input\history\h1.json: line 15, col 12, Warning - No code provided, and a code should be provided from the value set 'PurposeOfUse' (http://terminology.hl7.org/ValueSet/v3-PurposeOfUse|3.0.0) (CODEINVALID)
+
+err = 3, warn = 8, info = 0
+IG Publisher Version: 1.6.6

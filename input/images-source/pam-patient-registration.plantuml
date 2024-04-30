@@ -1,0 +1,21 @@
+@startuml
+
+hide footbox
+
+title Patient Registration
+
+actor "Patient" as patient
+actor "Patient Identity Source" as source
+
+source -> patient: Patient is asked to complete registration form
+opt
+  patient -> patient: Patient registration form can be pre-populated
+end
+patient -> patient : Patient completes form
+patient -> source: Completed Patient Registration Form
+source --> patient: Acknowledgement
+source -> source: Create patient
+opt
+source -> source: Extract health record data from form and add to the patients record
+end
+@enduml
