@@ -1,6 +1,0 @@
-Mrs Francesca Smith’s GP Dr Townley decides she needs to be admitted to the hospital for general medical checks and stronger medication. The Malton GP practice receptionist rings up the York Hospital to organise a referral. 
-
-Miss Cortana the hospital receptionist takes the details of Mrs Smith's surname, first initial, date of birth, street number and postcode. When she searches on the system, she can only find two Mrs F Smith's with the same date of birth and postcode and chooses the first one. The inpatient admission is scheduled with Dr Darwin.
-
-Miss Cortana realises that upon opening the full record view which shows full surnames, she had chosen Mrs Fredrica Smith. Both were born in the same month, live at the same address and have estimated date of birth flags. Whoever had entered their original details had set both the patient’s default date of birth the same. Miss Cortana undid the inpatient admission triggering an HL7 A11 message.
-

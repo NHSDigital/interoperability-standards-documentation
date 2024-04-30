@@ -1,1 +1,0 @@
-Mrs Smith was to be transferred to the recovery ward following her interval appendicectomy procedure. Following the successful surgery, Dr Darwin, who had performed the procedure, used the functionality of the surgery and anaesthesia dashboard system to transfer the patient to the recovery ward. This triggered a A02 message to the main PAS system.

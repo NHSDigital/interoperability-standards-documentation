@@ -1,1 +1,0 @@
-Mrs Smith was due to be discharged from care facility. In advance of discharge Mrs Smith, a pending dsicharge was set up in the PAS by Miss Cortana the receptionist, to inform the pharmacy to prepare for discharge. This triggered a A16 HL7 message.
