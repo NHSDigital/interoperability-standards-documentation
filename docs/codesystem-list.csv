@@ -1,5 +1,0 @@
-URL,Version,Status,OIDs,Name,Title,Descriptino,Used
-https://fhir.nhs.uk/CodeSystem/NHSDataModelAndDictionary-treatment-function,0.0.1,draft,,NHSDataModelandDictionaryTreatmentFunction,null,"A CodeSystem to identify the specialty of the care professional or team. FHIR Version of NHS Data Dictionary Main Specialty Code and HSCIC ITK HL7v2 Table ZU012",
-https://fhir.nhs.uk/England/CodeSystem/FGM-ConsentPurpose,0.0.1,draft,,FGMConsentPurpose,FGM Consent Purpose,"A CodeSystem to identify the purpose of the consent given within FGM",
-https://fhir.nhs.uk/England/CodeSystem/FlagProxyRole,0.0.1,draft,,FlagProxyRole,NHSE Flag Proxy Role,"A CodeSystem to identify the type/role of the proxy involved",
-https://fhir.nhs.uk/England/CodeSystem/PatientFlagCategory,0.0.1,draft,,PatientFlagCategory,NHSE Patient Flag Category,"A CodeSystem to identify the type/category of Flag.",

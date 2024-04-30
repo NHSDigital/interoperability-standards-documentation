@@ -46,4 +46,10 @@ dependencies:
 # │ property below.                                                                                │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
-  Home: index.html
+  Home:
+    Introduction: index.html
+    Frameworks: frameworks.html
+  Design:
+    Patient Administration: patient-administration.html
+  Test:
+    FHIR Validation: validation.html
